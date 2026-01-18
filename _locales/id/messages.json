@@ -243,6 +243,18 @@
     "message": "Pengaturan",
     "description": "Settings title"
   },
+  "customizedBehavior": {
+    "message": "Perilaku kustom",
+    "description": "Customized behavior section title"
+  },
+  "disableMouseGesturesForSites": {
+    "message": "Nonaktifkan gestur mouse dan super seret untuk situs ini",
+    "description": "Label for the list of sites where gestures and super drag are disabled"
+  },
+  "disabledSitesHint": {
+    "message": "Satu situs per baris. Domain (mis. youtube.com) atau URL lengkap.",
+    "description": "Hint for the disabled sites textarea"
+  },
   "enableGesture": {
     "message": "Aktifkan Gerakan Mouse",
     "description": "Enable mouse gesture option"
@@ -294,6 +306,34 @@
   "reset": {
     "message": "Atur Ulang",
     "description": "Reset settings button"
+  },
+  "exportSettings": {
+    "message": "Ekspor",
+    "description": "Export settings button"
+  },
+  "importSettings": {
+    "message": "Impor",
+    "description": "Import settings button"
+  },
+  "exportSuccess": {
+    "message": "Pengaturan berhasil diekspor",
+    "description": "Export success notification"
+  },
+  "exportError": {
+    "message": "Gagal mengekspor pengaturan",
+    "description": "Export error notification"
+  },
+  "importSuccess": {
+    "message": "Pengaturan berhasil diimpor",
+    "description": "Import success notification"
+  },
+  "importError": {
+    "message": "Gagal mengimpor pengaturan",
+    "description": "Import error notification"
+  },
+  "syncInfo": {
+    "message": "Pengaturan secara otomatis disinkronkan ke akun Google Anda (Chrome) atau akun Microsoft (Edge)",
+    "description": "Auto-sync information"
   },
   "settingsSaved": {
     "message": "Pengaturan Diterapkan",
@@ -358,6 +398,14 @@
   "backgroundAction": {
     "message": "Buka di Latar Belakang",
     "description": "Open in background action"
+  },
+  "copyAction": {
+    "message": "Salin",
+    "description": "Copy selected text or link URL to clipboard"
+  },
+  "copiedToClipboard": {
+    "message": "Disalin ke papan klip",
+    "description": "Hint after copy action"
   },
   "dragSearchEngine": {
     "message": "URL Mesin Pencari untuk Seret",

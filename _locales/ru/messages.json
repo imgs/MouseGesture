@@ -243,6 +243,18 @@
     "message": "Настройки",
     "description": "Settings title"
   },
+  "customizedBehavior": {
+    "message": "Пользовательское поведение",
+    "description": "Customized behavior section title"
+  },
+  "disableMouseGesturesForSites": {
+    "message": "Отключить жесты мыши и супер перетаскивание на этих сайтах",
+    "description": "Label for the list of sites where gestures and super drag are disabled"
+  },
+  "disabledSitesHint": {
+    "message": "Один сайт в строке. Домен (напр. youtube.com) или полный URL.",
+    "description": "Hint for the disabled sites textarea"
+  },
   "enableGesture": {
     "message": "Включить жесты мыши",
     "description": "Enable mouse gesture option"
@@ -294,6 +306,34 @@
   "reset": {
     "message": "Сбросить",
     "description": "Reset settings button"
+  },
+  "exportSettings": {
+    "message": "Экспорт",
+    "description": "Export settings button"
+  },
+  "importSettings": {
+    "message": "Импорт",
+    "description": "Import settings button"
+  },
+  "exportSuccess": {
+    "message": "Настройки успешно экспортированы",
+    "description": "Export success notification"
+  },
+  "exportError": {
+    "message": "Не удалось экспортировать настройки",
+    "description": "Export error notification"
+  },
+  "importSuccess": {
+    "message": "Настройки успешно импортированы",
+    "description": "Import success notification"
+  },
+  "importError": {
+    "message": "Не удалось импортировать настройки",
+    "description": "Import error notification"
+  },
+  "syncInfo": {
+    "message": "Настройки автоматически синхронизируются с вашей учетной записью Google (Chrome) или учетной записью Microsoft (Edge)",
+    "description": "Auto-sync information"
   },
   "settingsSaved": {
     "message": "Настройки применены",
@@ -358,6 +398,14 @@
   "backgroundAction": {
     "message": "Открыть в фоне",
     "description": "Open in background action"
+  },
+  "copyAction": {
+    "message": "Копировать",
+    "description": "Copy selected text or link URL to clipboard"
+  },
+  "copiedToClipboard": {
+    "message": "Скопировано в буфер обмена",
+    "description": "Hint after copy action"
   },
   "dragSearchEngine": {
     "message": "URL поисковой системы для перетаскивания",

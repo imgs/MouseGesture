@@ -243,6 +243,18 @@
     "message": "সেটিংস",
     "description": "Settings title"
   },
+  "customizedBehavior": {
+    "message": "কাস্টমাইজড আচরণ",
+    "description": "Customized behavior section title"
+  },
+  "disableMouseGesturesForSites": {
+    "message": "এই সাইটগুলিতে মাউস জেসচার এবং সুপার ড্র্যাগ নিষ্ক্রিয় করুন",
+    "description": "Label for the list of sites where gestures and super drag are disabled"
+  },
+  "disabledSitesHint": {
+    "message": "প্রতিটি লাইনে একটি সাইট। ডোমেইন (যেমন youtube.com) বা সম্পূর্ণ URL।",
+    "description": "Hint for the disabled sites textarea"
+  },
   "enableGesture": {
     "message": "মাউস জেসচার সক্রিয় করুন",
     "description": "Enable mouse gesture option"
@@ -294,6 +306,34 @@
   "reset": {
     "message": "রিসেট",
     "description": "Reset settings button"
+  },
+  "exportSettings": {
+    "message": "রপ্তানি",
+    "description": "Export settings button"
+  },
+  "importSettings": {
+    "message": "আমদানি",
+    "description": "Import settings button"
+  },
+  "exportSuccess": {
+    "message": "সেটিংস সফলভাবে রপ্তানি করা হয়েছে",
+    "description": "Export success notification"
+  },
+  "exportError": {
+    "message": "সেটিংস রপ্তানি করতে ব্যর্থ",
+    "description": "Export error notification"
+  },
+  "importSuccess": {
+    "message": "সেটিংস সফলভাবে আমদানি করা হয়েছে",
+    "description": "Import success notification"
+  },
+  "importError": {
+    "message": "সেটিংস আমদানি করতে ব্যর্থ",
+    "description": "Import error notification"
+  },
+  "syncInfo": {
+    "message": "সেটিংস স্বয়ংক্রিয়ভাবে আপনার Google অ্যাকাউন্ট (Chrome) বা Microsoft অ্যাকাউন্ট (Edge) এ সিঙ্ক হয়",
+    "description": "Auto-sync information"
   },
   "settingsSaved": {
     "message": "সেটিংস প্রয়োগ করা হয়েছে",
@@ -358,6 +398,14 @@
   "backgroundAction": {
     "message": "পেছনে খুলুন",
     "description": "Open in background action"
+  },
+  "copyAction": {
+    "message": "অনুলিপি করুন",
+    "description": "Copy selected text or link URL to clipboard"
+  },
+  "copiedToClipboard": {
+    "message": "ক্লিপবোর্ডে অনুলিপি করা হয়েছে",
+    "description": "Hint after copy action"
   },
   "dragSearchEngine": {
     "message": "ড্র্যাগ অনুসন্ধান ইঞ্জিন URL",

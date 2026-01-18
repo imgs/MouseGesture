@@ -243,6 +243,18 @@
     "message": "Nastavení",
     "description": "Settings title"
   },
+  "customizedBehavior": {
+    "message": "Vlastní chování",
+    "description": "Customized behavior section title"
+  },
+  "disableMouseGesturesForSites": {
+    "message": "Na těchto webech zakázat mouse gesta a super přetažení",
+    "description": "Label for the list of sites where gestures and super drag are disabled"
+  },
+  "disabledSitesHint": {
+    "message": "Jeden web na řádek. Doména (např. youtube.com) nebo celá URL.",
+    "description": "Hint for the disabled sites textarea"
+  },
   "enableGesture": {
     "message": "Povolit myší gesta",
     "description": "Enable mouse gesture option"
@@ -294,6 +306,34 @@
   "reset": {
     "message": "Obnovit",
     "description": "Reset settings button"
+  },
+  "exportSettings": {
+    "message": "Exportovat",
+    "description": "Export settings button"
+  },
+  "importSettings": {
+    "message": "Importovat",
+    "description": "Import settings button"
+  },
+  "exportSuccess": {
+    "message": "Nastavení bylo úspěšně exportováno",
+    "description": "Export success notification"
+  },
+  "exportError": {
+    "message": "Export nastavení selhal",
+    "description": "Export error notification"
+  },
+  "importSuccess": {
+    "message": "Nastavení bylo úspěšně importováno",
+    "description": "Import success notification"
+  },
+  "importError": {
+    "message": "Import nastavení selhal",
+    "description": "Import error notification"
+  },
+  "syncInfo": {
+    "message": "Nastavení se automaticky synchronizují s vaším účtem Google (Chrome) nebo účtem Microsoft (Edge)",
+    "description": "Auto-sync information"
   },
   "settingsSaved": {
     "message": "Nastavení použito",
@@ -358,6 +398,14 @@
   "backgroundAction": {
     "message": "Otevřít na pozadí",
     "description": "Open in background action"
+  },
+  "copyAction": {
+    "message": "Kopírovat",
+    "description": "Copy selected text or link URL to clipboard"
+  },
+  "copiedToClipboard": {
+    "message": "Zkopírováno do schránky",
+    "description": "Hint after copy action"
   },
   "dragSearchEngine": {
     "message": "URL vyhledávače pro přetažení",

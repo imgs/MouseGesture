@@ -243,6 +243,18 @@
     "message": "設定",
     "description": "Settings title"
   },
+  "customizedBehavior": {
+    "message": "カスタム動作",
+    "description": "Customized behavior section title"
+  },
+  "disableMouseGesturesForSites": {
+    "message": "これらのサイトでマウスジェスチャーとスーパードラッグを無効にする",
+    "description": "Label for the list of sites where gestures and super drag are disabled"
+  },
+  "disabledSitesHint": {
+    "message": "1行に1サイト。ドメイン（例：youtube.com）または完全なURL。",
+    "description": "Hint for the disabled sites textarea"
+  },
   "enableGesture": {
     "message": "マウスジェスチャーを有効化",
     "description": "Enable mouse gesture option"
@@ -294,6 +306,34 @@
   "reset": {
     "message": "リセット",
     "description": "Reset settings button"
+  },
+  "exportSettings": {
+    "message": "エクスポート",
+    "description": "Export settings button"
+  },
+  "importSettings": {
+    "message": "インポート",
+    "description": "Import settings button"
+  },
+  "exportSuccess": {
+    "message": "設定のエクスポートに成功しました",
+    "description": "Export success notification"
+  },
+  "exportError": {
+    "message": "設定のエクスポートに失敗しました",
+    "description": "Export error notification"
+  },
+  "importSuccess": {
+    "message": "設定のインポートに成功しました",
+    "description": "Import success notification"
+  },
+  "importError": {
+    "message": "設定のインポートに失敗しました",
+    "description": "Import error notification"
+  },
+  "syncInfo": {
+    "message": "設定は自動的にGoogleアカウント（Chrome）またはMicrosoftアカウント（Edge）に同期されます",
+    "description": "Auto-sync information"
   },
   "settingsSaved": {
     "message": "設定が適用されました",
@@ -358,6 +398,14 @@
   "backgroundAction": {
     "message": "バックグラウンドで開く",
     "description": "Open in background action"
+  },
+  "copyAction": {
+    "message": "コピー",
+    "description": "Copy selected text or link URL to clipboard"
+  },
+  "copiedToClipboard": {
+    "message": "クリップボードにコピーしました",
+    "description": "Hint after copy action"
   },
   "dragSearchEngine": {
     "message": "ドラッグ検索エンジンURL",

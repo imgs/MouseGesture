@@ -391,7 +391,7 @@
 - **作者：** CGQA
 - **项目：** 鼠标手势扩展
 
-**版权：** 2025 CGQA <license@cgqa.com>
+**版权：** 2025-2026 CGQA <license@cgqa.com>
 
 ---
 

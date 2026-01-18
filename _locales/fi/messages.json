@@ -243,6 +243,18 @@
     "message": "Asetukset",
     "description": "Settings title"
   },
+  "customizedBehavior": {
+    "message": "Mukautettu toiminta",
+    "description": "Customized behavior section title"
+  },
+  "disableMouseGesturesForSites": {
+    "message": "Poista hiirellä tehdyt eleet ja superveto käytöstä näillä sivustoilla",
+    "description": "Label for the list of sites where gestures and super drag are disabled"
+  },
+  "disabledSitesHint": {
+    "message": "Yksi sivusto per rivi. Verkkotunnus (esim. youtube.com) tai täysi URL.",
+    "description": "Hint for the disabled sites textarea"
+  },
   "enableGesture": {
     "message": "Ota Hiiren Eleet Käyttöön",
     "description": "Enable mouse gesture option"
@@ -294,6 +306,34 @@
   "reset": {
     "message": "Palauta",
     "description": "Reset settings button"
+  },
+  "exportSettings": {
+    "message": "Vie",
+    "description": "Export settings button"
+  },
+  "importSettings": {
+    "message": "Tuo",
+    "description": "Import settings button"
+  },
+  "exportSuccess": {
+    "message": "Asetukset vienti onnistui",
+    "description": "Export success notification"
+  },
+  "exportError": {
+    "message": "Asetusten vienti epäonnistui",
+    "description": "Export error notification"
+  },
+  "importSuccess": {
+    "message": "Asetukset tuonti onnistui",
+    "description": "Import success notification"
+  },
+  "importError": {
+    "message": "Asetusten tuonti epäonnistui",
+    "description": "Import error notification"
+  },
+  "syncInfo": {
+    "message": "Asetukset synkronoidaan automaattisesti Google-tilillesi (Chrome) tai Microsoft-tilillesi (Edge)",
+    "description": "Auto-sync information"
   },
   "settingsSaved": {
     "message": "Asetukset Sovellettu",
@@ -358,6 +398,14 @@
   "backgroundAction": {
     "message": "Avaa Taustalla",
     "description": "Open in background action"
+  },
+  "copyAction": {
+    "message": "Kopioi",
+    "description": "Copy selected text or link URL to clipboard"
+  },
+  "copiedToClipboard": {
+    "message": "Kopioitu leikepöydälle",
+    "description": "Hint after copy action"
   },
   "dragSearchEngine": {
     "message": "Raahaa Hakukone URL",

@@ -415,6 +415,24 @@ h2:active {
   overflow: hidden;
 }
 
+.setting-item-info {
+  justify-content: flex-start;
+  padding: 8px 4px;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 4px;
+}
+
+.sync-info {
+  font-size: 11px;
+  color: var(--text-muted, #888);
+  line-height: 1.4;
+  font-style: italic;
+}
+
+[data-theme="dark"] .sync-info {
+  color: #999;
+}
+
 .setting-item:hover {
   padding-left: 8px;
   padding-right: 8px;
@@ -710,7 +728,9 @@ button:hover::before {
   background-size: 200% 200%;
 }
 
-#reset-btn {
+#reset-btn,
+#export-btn,
+#import-btn {
   background-color: transparent;
   color: var(--text-color);
   letter-spacing: 0.5px;
@@ -718,30 +738,44 @@ button:hover::before {
   box-shadow: none;
   transition: var(--transition);
   opacity: 0.85; /* 默认状态下稍微降低不透明度 */
+  padding-left: 8px !important; /* 减小左右内边距 */
+  padding-right: 8px !important;
 }
 
-#reset-btn:hover {
+#reset-btn:hover,
+#export-btn:hover,
+#import-btn:hover {
   background-color: rgba(168, 230, 207, 0.1); /* 使用半透明背景 */
   border: 1px solid var(--button-reset) !important; /* 使用变量设置边框 */
   color: var(--button-reset-hover); /* 使用变量设置悬停文字颜色 */
   box-shadow: 0 2px 6px var(--button-reset-shadow); /* 添加轻微阴影 */
   opacity: 1; /* 悬停时恢复完全不透明 */
+  padding-left: 8px !important; /* 悬停时保持较小的左右内边距 */
+  padding-right: 8px !important;
 }
 
-/* 深色主题下的重置按钮 */
-[data-theme="dark"] #reset-btn {
+/* 深色主题下的重置按钮、导出按钮、导入按钮 */
+[data-theme="dark"] #reset-btn,
+[data-theme="dark"] #export-btn,
+[data-theme="dark"] #import-btn {
   color: var(--text-color);
   border: 1px solid transparent !important; /* 强制设置透明边框 */
   background-color: transparent;
   opacity: 0.85; /* 与普通主题保持一致 */
+  padding-left: 8px !important; /* 减小左右内边距 */
+  padding-right: 8px !important;
 }
 
-[data-theme="dark"] #reset-btn:hover {
+[data-theme="dark"] #reset-btn:hover,
+[data-theme="dark"] #export-btn:hover,
+[data-theme="dark"] #import-btn:hover {
   background-color: rgba(168, 230, 207, 0.08); /* 深色主题下使用更暗的背景 */
   border: 1px solid var(--button-reset) !important; /* 使用变量设置边框 */
   color: var(--button-reset); /* 使用变量设置悬停文字颜色 */
   box-shadow: 0 2px 8px rgba(168, 230, 207, 0.2); /* 深色主题下的阴影 */
   opacity: 1; /* 悬停时恢复完全不透明 */
+  padding-left: 8px !important; /* 悬停时保持较小的左右内边距 */
+  padding-right: 8px !important;
 }
 
 .status-message {
@@ -821,6 +855,16 @@ button:hover::before {
   display: flex;
   align-items: center;
   gap: 10px;
+  height: 30px; /* 固定高度，保持按钮和提示消息的高度一致 */
+  box-sizing: border-box;
+  margin-right: 10px; /* 与其他位置的提示消息右侧距离保持一致 */
+}
+
+/* 缩小导入、导出、重设按钮之间的间距 */
+#export-btn,
+#import-btn,
+#reset-btn {
+  margin-right: -6px;
 }
 
 /* 保存状态显示的样式 */
@@ -830,6 +874,15 @@ button:hover::before {
   opacity: 0;
   transition: opacity 0.3s ease;
   color: #4CAF50;
+  line-height: 30px; /* 与按钮高度保持一致 */
+  height: 30px; /* 固定高度，与按钮高度一致 */
+  display: flex;
+  align-items: center;
+  white-space: nowrap; /* 防止文本换行 */
+  overflow: hidden; /* 隐藏溢出内容 */
+  text-overflow: ellipsis; /* 超长文本显示省略号 */
+  flex-shrink: 0; /* 防止被压缩 */
+  margin-left: auto; /* 当显示时自动靠右，与其他位置的提示消息位置一致 */
 }
 
 .save-status.show {
@@ -888,6 +941,11 @@ button:hover::before {
   color: #34495e;
   box-shadow: none;
   border: none; /* 移除默认边框 */
+  height: 30px; /* 固定高度，与提示消息保持一致 */
+  box-sizing: border-box; /* 确保 padding 包含在高度内 */
+  display: flex;
+  align-items: center;
+  white-space: nowrap; /* 防止文本换行 */
 }
 
 .small-button:hover {
@@ -2519,9 +2577,11 @@ input[type="checkbox"]:checked::after {
   box-shadow: none !important;
 }
 
-/* 深色主题下的重置按钮 - 合并重复的定义 */
+/* 深色主题下的重置按钮、导出按钮、导入按钮 - 合并重复的定义 */
 /* 修复重置按钮悬停时的布局跳动问题 */
-#reset-btn {
+#reset-btn,
+#export-btn,
+#import-btn {
   background-color: transparent;
   color: var(--text-color);
   letter-spacing: 0.5px;
@@ -2529,30 +2589,44 @@ input[type="checkbox"]:checked::after {
   box-shadow: none;
   transition: var(--transition);
   opacity: 0.85; /* 默认状态下稍微降低不透明度 */
+  padding-left: 8px !important; /* 减小左右内边距 */
+  padding-right: 8px !important;
 }
 
-#reset-btn:hover {
+#reset-btn:hover,
+#export-btn:hover,
+#import-btn:hover {
   background-color: rgba(168, 230, 207, 0.1); /* 使用半透明背景 */
   border: 1px solid var(--button-reset) !important; /* 使用变量设置边框 */
   color: var(--button-reset-hover); /* 使用变量设置悬停文字颜色 */
   box-shadow: 0 2px 6px var(--button-reset-shadow); /* 添加轻微阴影 */
   opacity: 1; /* 悬停时恢复完全不透明 */
+  padding-left: 8px !important; /* 悬停时保持较小的左右内边距 */
+  padding-right: 8px !important;
 }
 
-/* 深色主题下的重置按钮 */
-[data-theme="dark"] #reset-btn {
+/* 深色主题下的重置按钮、导出按钮、导入按钮 */
+[data-theme="dark"] #reset-btn,
+[data-theme="dark"] #export-btn,
+[data-theme="dark"] #import-btn {
   color: var(--text-color);
   border: 1px solid transparent !important; /* 强制设置透明边框 */
   background-color: transparent;
   opacity: 0.85; /* 与普通主题保持一致 */
+  padding-left: 8px !important; /* 减小左右内边距 */
+  padding-right: 8px !important;
 }
 
-[data-theme="dark"] #reset-btn:hover {
+[data-theme="dark"] #reset-btn:hover,
+[data-theme="dark"] #export-btn:hover,
+[data-theme="dark"] #import-btn:hover {
   background-color: rgba(168, 230, 207, 0.08); /* 深色主题下使用更暗的背景 */
   border: 1px solid var(--button-reset) !important; /* 使用变量设置边框 */
   color: var(--button-reset); /* 使用变量设置悬停文字颜色 */
   box-shadow: 0 2px 8px rgba(168, 230, 207, 0.2); /* 深色主题下的阴影 */
   opacity: 1; /* 悬停时恢复完全不透明 */
+  padding-left: 8px !important; /* 悬停时保持较小的左右内边距 */
+  padding-right: 8px !important;
 }
 
 /* 深色主题下超级拖拽悬停效果 */
@@ -2892,6 +2966,69 @@ input[type="range"].wheel-adjusted {
 [data-theme="dark"] .search-engine-input:focus {
   border-color: var(--button-hover);
   box-shadow: 0 0 4px rgba(255, 107, 107, 0.3);
+}
+
+/* Customized behavior: 上-标题 中-输入框 下-说明 */
+.customized-behavior-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 2px;
+}
+
+.customized-behavior-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-color);
+  line-height: 1.4;
+}
+
+.customized-behavior-hint {
+  font-size: 11px;
+  color: var(--text-muted, #888);
+  line-height: 1.5;
+}
+
+[data-theme="dark"] .customized-behavior-hint {
+  color: #999;
+}
+
+.disabled-sites-textarea {
+  width: 100%;
+  min-height: 72px;
+  padding: 6px 8px;
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+  background-color: var(--background);
+  color: var(--text-color);
+  font-size: 12px;
+  font-family: inherit;
+  box-sizing: border-box;
+  transition: var(--transition);
+  resize: vertical;
+}
+
+.disabled-sites-textarea:hover,
+.disabled-sites-textarea:focus {
+  border-color: var(--button-bg);
+  outline: none;
+}
+
+[data-theme="dark"] .disabled-sites-textarea {
+  background-color: #333;
+  color: #fff;
+  border-color: #555;
+}
+
+.setting-hint {
+  display: block;
+  margin-top: 4px;
+  font-size: 11px;
+  color: var(--text-muted, #888);
+}
+
+[data-theme="dark"] .setting-hint {
+  color: #999;
 }
 
 .like-button {

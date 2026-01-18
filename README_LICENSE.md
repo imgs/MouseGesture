@@ -4,7 +4,7 @@
 
 **Project:** Mouse Gesture Extension
 **Author:** CGQA <license@cgqa.com>  
-**Copyright:** 2025  
+**Copyright:** 2025-2026  
 **Licenses:** GPL v3 + Commercial License  
 
 ## License Options

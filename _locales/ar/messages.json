@@ -243,6 +243,18 @@
     "message": "الإعدادات",
     "description": "Settings title"
   },
+  "customizedBehavior": {
+    "message": "سلوك مخصص",
+    "description": "Customized behavior section title"
+  },
+  "disableMouseGesturesForSites": {
+    "message": "تعطيل إيماءات الماوس والسحب الفائق لهذه المواقع",
+    "description": "Label for the list of sites where gestures and super drag are disabled"
+  },
+  "disabledSitesHint": {
+    "message": "موقع واحد في كل سطر. النطاق (مثل youtube.com) أو الرابط الكامل.",
+    "description": "Hint for the disabled sites textarea"
+  },
   "enableGesture": {
     "message": "تمكين إيماءة الماوس",
     "description": "Enable mouse gesture option"
@@ -294,6 +306,34 @@
   "reset": {
     "message": "إعادة تعيين",
     "description": "Reset settings button"
+  },
+  "exportSettings": {
+    "message": "تصدير",
+    "description": "Export settings button"
+  },
+  "importSettings": {
+    "message": "استيراد",
+    "description": "Import settings button"
+  },
+  "exportSuccess": {
+    "message": "تم تصدير الإعدادات بنجاح",
+    "description": "Export success notification"
+  },
+  "exportError": {
+    "message": "فشل في تصدير الإعدادات",
+    "description": "Export error notification"
+  },
+  "importSuccess": {
+    "message": "تم استيراد الإعدادات بنجاح",
+    "description": "Import success notification"
+  },
+  "importError": {
+    "message": "فشل في استيراد الإعدادات",
+    "description": "Import error notification"
+  },
+  "syncInfo": {
+    "message": "تتم مزامنة الإعدادات تلقائيًا إلى حساب Google الخاص بك (Chrome) أو حساب Microsoft (Edge)",
+    "description": "Auto-sync information"
   },
   "settingsSaved": {
     "message": "تم تطبيق الإعدادات",
@@ -358,6 +398,14 @@
   "backgroundAction": {
     "message": "فتح في الخلفية",
     "description": "Open in background action"
+  },
+  "copyAction": {
+    "message": "نسخ",
+    "description": "Copy selected text or link URL to clipboard"
+  },
+  "copiedToClipboard": {
+    "message": "تم النسخ إلى الحافظة",
+    "description": "Hint after copy action"
   },
   "dragSearchEngine": {
     "message": "رابط محرك البحث للسحب",

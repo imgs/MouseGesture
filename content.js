@@ -1096,6 +1096,31 @@ function safeSendMessage(message) {
   });
 }
 
+// 检查当前网址是否在禁用列表（禁用鼠标手势、超级拖拽、小窗预览）
+function isSiteInDisabledList(href) {
+  const list = settings.disabledSites;
+  if (!list || !Array.isArray(list) || list.length === 0) return false;
+  let h;
+  try {
+    const u = new URL(href);
+    h = u.hostname.toLowerCase().replace(/^www\./, '');
+  } catch (e) {
+    h = String(href || '').toLowerCase().replace(/^www\./, '');
+  }
+  for (const entry of list) {
+    const v = String(entry).trim().toLowerCase();
+    if (!v) continue;
+    let entryHost = v;
+    if (v.startsWith('http://') || v.startsWith('https://')) {
+      try { entryHost = new URL(v).hostname.toLowerCase().replace(/^www\./, ''); } catch (_) { entryHost = v; }
+    } else {
+      entryHost = v.replace(/^www\./, '');
+    }
+    if (h === entryHost || h.endsWith('.' + entryHost)) return true;
+  }
+  return false;
+}
+
 // 加载设置
 function loadSettings() {
   if (!isExtensionValid) return;
@@ -1136,7 +1161,8 @@ function loadSettings() {
       gestureUpThenDownAction: 'scrollToBottom',
       gestureDownThenUpAction: 'scrollToTop',
       gestureLeftThenRightAction: 'closeTab',
-      gestureRightThenLeftAction: 'reopenClosedTab'
+      gestureRightThenLeftAction: 'reopenClosedTab',
+      disabledSites: []
     }, (loadedSettings) => {
       if (chrome.runtime.lastError) {
         console.log('加载设置错误:', chrome.runtime.lastError.message);
@@ -3637,10 +3663,10 @@ function handleMouseDown(e) {
         linkElement = linkElement.parentElement;
       }
       
-      // 如果是链接元素且超级拖拽功能已启用，记录为潜在拖拽链接
+      // 如果是链接元素且超级拖拽功能已启用，且当前网站未在禁用列表，记录为潜在拖拽链接
       // 但不阻止默认行为，这样拖拽可以正常开始
       if (linkElement && linkElement.tagName === 'A' && linkElement.href && 
-          isExtensionValid && settings.enableSuperDrag) {
+          isExtensionValid && settings.enableSuperDrag && !isSiteInDisabledList(window.location.href)) {
         
         potentialDragLink = linkElement;
         
@@ -3663,6 +3689,11 @@ function handleMouseDown(e) {
     
     // 检查鼠标手势功能是否启用
     if (!settings || !settings.enableGesture) {
+      return;
+    }
+    
+    // 检查当前网站是否在禁用列表
+    if (isSiteInDisabledList(window.location.href)) {
       return;
     }
     
@@ -4085,6 +4116,9 @@ function handleDragStart(e) {
   // 首先检查扩展是否有效和超级拖拽功能是否启用
   if (!isExtensionValid || !settings.enableSuperDrag) return;
   
+  // 检查当前网站是否在禁用列表
+  if (isSiteInDisabledList(window.location.href)) return;
+  
   // 如果有正在等待的链接点击，立即取消它
   // 因为拖拽事件已经开始，说明用户的意图是拖拽而非点击
   if (linkClickPending) {
@@ -4298,6 +4332,33 @@ function handleDragEnd(e) {
   // 如果操作类型为'none'，不执行任何操作
   if (actionType === 'none') {
     console.log(`拖拽方向 ${dragInfo.direction} 设置为不执行操作`);
+    resetDragInfo();
+    return;
+  }
+  
+  // 复制动作：将选中的文本或链接/图片URL复制到剪贴板
+  if (actionType === 'copy') {
+    let toCopy = '';
+    if (dragInfo.type === 'link' || dragInfo.type === 'image') toCopy = dragInfo.url || '';
+    else if (dragInfo.type === 'text') toCopy = dragInfo.text || '';
+    if (toCopy) {
+      if (navigator.clipboard && typeof navigator.clipboard.writeText === 'function') {
+        navigator.clipboard.writeText(toCopy).then(() => {
+          showGestureHint(getI18nMessage('copiedToClipboard', 'Copied to clipboard'));
+        }).catch(() => {});
+      } else {
+        try {
+          const ta = document.createElement('textarea');
+          ta.value = toCopy;
+          ta.style.cssText = 'position:fixed;left:-9999px;';
+          document.body.appendChild(ta);
+          ta.select();
+          document.execCommand('copy');
+          document.body.removeChild(ta);
+          showGestureHint(getI18nMessage('copiedToClipboard', 'Copied to clipboard'));
+        } catch (e) {}
+      }
+    }
     resetDragInfo();
     return;
   }

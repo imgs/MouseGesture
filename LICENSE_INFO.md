@@ -3,8 +3,8 @@
 ## Project Details
 
 - **Project Name:** Mouse Gesture Extension
-- **Version:** 2.3.9
-- **Copyright Year:** 2025
+- **Version:** 2.3.10
+- **Copyright Year:** 2025-2026
 - **Author:** CGQA <license@cgqa.com>
 - **License Options:** GPL v3 + Commercial License
 

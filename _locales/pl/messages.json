@@ -243,6 +243,18 @@
     "message": "Ustawienia",
     "description": "Tytuł ustawień"
   },
+  "customizedBehavior": {
+    "message": "Niestandardowe zachowanie",
+    "description": "Customized behavior section title"
+  },
+  "disableMouseGesturesForSites": {
+    "message": "Wyłącz gesty myszy i super przeciąganie na tych witrynach",
+    "description": "Label for the list of sites where gestures and super drag are disabled"
+  },
+  "disabledSitesHint": {
+    "message": "Jedna witryna na linię. Domena (np. youtube.com) lub pełny adres URL.",
+    "description": "Hint for the disabled sites textarea"
+  },
   "enableGesture": {
     "message": "Włącz Gesty Myszy",
     "description": "Opcja włącz gesty myszy"
@@ -294,6 +306,34 @@
   "reset": {
     "message": "Resetuj",
     "description": "Przycisk resetuj ustawienia"
+  },
+  "exportSettings": {
+    "message": "Eksportuj",
+    "description": "Export settings button"
+  },
+  "importSettings": {
+    "message": "Importuj",
+    "description": "Import settings button"
+  },
+  "exportSuccess": {
+    "message": "Ustawienia zostały pomyślnie wyeksportowane",
+    "description": "Export success notification"
+  },
+  "exportError": {
+    "message": "Nie udało się wyeksportować ustawień",
+    "description": "Export error notification"
+  },
+  "importSuccess": {
+    "message": "Ustawienia zostały pomyślnie zaimportowane",
+    "description": "Import success notification"
+  },
+  "importError": {
+    "message": "Nie udało się zaimportować ustawień",
+    "description": "Import error notification"
+  },
+  "syncInfo": {
+    "message": "Ustawienia są automatycznie synchronizowane z kontem Google (Chrome) lub kontem Microsoft (Edge)",
+    "description": "Auto-sync information"
   },
   "settingsSaved": {
     "message": "Ustawienia Zastosowane",
@@ -358,6 +398,14 @@
   "backgroundAction": {
     "message": "Otwórz w Tle",
     "description": "Akcja otwórz w tle"
+  },
+  "copyAction": {
+    "message": "Kopiuj",
+    "description": "Copy selected text or link URL to clipboard"
+  },
+  "copiedToClipboard": {
+    "message": "Skopiowano do schowka",
+    "description": "Hint after copy action"
   },
   "dragSearchEngine": {
     "message": "URL Wyszukiwarki Przeciągania",

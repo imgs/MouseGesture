@@ -23,6 +23,8 @@
         <h2 data-i18n="settings">设置</h2>
         <div class="settings-controls">
           <span id="save-status" class="save-status"></span>
+          <button id="export-btn" class="small-button" data-i18n="exportSettings" data-i18n-title="exportSettings">📥 <span data-i18n="exportSettings">导出</span></button>
+          <button id="import-btn" class="small-button" data-i18n="importSettings" data-i18n-title="importSettings">📤 <span data-i18n="importSettings">导入</span></button>
           <button id="reset-btn" class="small-button" data-i18n="reset">重置默认</button>
         </div>
       </div>
@@ -76,6 +78,21 @@
           <label for="show-tab-count-badge" data-i18n="showTabCountBadge">显示标签页数量徽章</label>
           <input type="checkbox" id="show-tab-count-badge" checked>
         </div>
+      </div>
+    </div>
+    
+    <!-- 自定义行为：在指定网站禁用鼠标手势和超级拖拽 -->
+    <div class="section" id="customized-behavior-feature">
+      <div class="section-header">
+        <h2 data-i18n="customizedBehavior">Customized behavior</h2>
+        <div class="status-container">
+          <span id="customized-save-status" class="save-status section-save-status"></span>
+        </div>
+      </div>
+      <div class="customized-behavior-body">
+        <label for="disabled-sites-list" class="customized-behavior-title" data-i18n="disableMouseGesturesForSites">Disable mouse gestures for these sites</label>
+        <textarea id="disabled-sites-list" class="disabled-sites-textarea" rows="4" placeholder="youtube.com"></textarea>
+        <small class="customized-behavior-hint" data-i18n="disabledSitesHint">One site per line. Domain (e.g. youtube.com) or full URL.</small>
       </div>
     </div>
     
@@ -861,6 +878,7 @@
               <select id="drag-up-action" class="drag-action-select">
                 <option value="foreground" data-i18n="foregroundAction">前台打开</option>
                 <option value="background" data-i18n="backgroundAction">后台打开</option>
+                <option value="copy" data-i18n="copyAction">复制</option>
                 <option value="none" data-i18n="noAction">不执行操作</option>
               </select>
             </div>
@@ -878,6 +896,7 @@
               <select id="drag-right-action" class="drag-action-select">
                 <option value="foreground" data-i18n="foregroundAction">前台打开</option>
                 <option value="background" data-i18n="backgroundAction">后台打开</option>
+                <option value="copy" data-i18n="copyAction">复制</option>
                 <option value="none" data-i18n="noAction">不执行操作</option>
               </select>
             </div>
@@ -895,6 +914,7 @@
               <select id="drag-down-action" class="drag-action-select">
                 <option value="foreground" data-i18n="foregroundAction">前台打开</option>
                 <option value="background" data-i18n="backgroundAction">后台打开</option>
+                <option value="copy" data-i18n="copyAction">复制</option>
                 <option value="none" data-i18n="noAction">不执行操作</option>
               </select>
             </div>
@@ -912,6 +932,7 @@
               <select id="drag-left-action" class="drag-action-select">
                 <option value="foreground" data-i18n="foregroundAction">前台打开</option>
                 <option value="background" data-i18n="backgroundAction">后台打开</option>
+                <option value="copy" data-i18n="copyAction">复制</option>
                 <option value="none" data-i18n="noAction">不执行操作</option>
               </select>
             </div>

@@ -243,6 +243,18 @@
     "message": "Inställningar",
     "description": "Settings title"
   },
+  "customizedBehavior": {
+    "message": "Anpassat beteende",
+    "description": "Customized behavior section title"
+  },
+  "disableMouseGesturesForSites": {
+    "message": "Inaktivera musgester och superdra för dessa webbplatser",
+    "description": "Label for the list of sites where gestures and super drag are disabled"
+  },
+  "disabledSitesHint": {
+    "message": "En webbplats per rad. Domän (t.ex. youtube.com) eller fullständig URL.",
+    "description": "Hint for the disabled sites textarea"
+  },
   "enableGesture": {
     "message": "Aktivera Musgestus",
     "description": "Enable mouse gesture option"
@@ -294,6 +306,34 @@
   "reset": {
     "message": "Återställ",
     "description": "Reset settings button"
+  },
+  "exportSettings": {
+    "message": "Exportera",
+    "description": "Export settings button"
+  },
+  "importSettings": {
+    "message": "Importera",
+    "description": "Import settings button"
+  },
+  "exportSuccess": {
+    "message": "Inställningar exporterades framgångsrikt",
+    "description": "Export success notification"
+  },
+  "exportError": {
+    "message": "Kunde inte exportera inställningar",
+    "description": "Export error notification"
+  },
+  "importSuccess": {
+    "message": "Inställningar importerades framgångsrikt",
+    "description": "Import success notification"
+  },
+  "importError": {
+    "message": "Kunde inte importera inställningar",
+    "description": "Import error notification"
+  },
+  "syncInfo": {
+    "message": "Inställningar synkroniseras automatiskt till ditt Google-konto (Chrome) eller Microsoft-konto (Edge)",
+    "description": "Auto-sync information"
   },
   "settingsSaved": {
     "message": "Inställningar Tillämpade",
@@ -358,6 +398,14 @@
   "backgroundAction": {
     "message": "Öppna i Bakgrund",
     "description": "Open in background action"
+  },
+  "copyAction": {
+    "message": "Kopiera",
+    "description": "Copy selected text or link URL to clipboard"
+  },
+  "copiedToClipboard": {
+    "message": "Kopierat till urklipp",
+    "description": "Hint after copy action"
   },
   "dragSearchEngine": {
     "message": "Drag Sökmotor URL",

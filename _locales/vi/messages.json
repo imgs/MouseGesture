@@ -243,6 +243,18 @@
     "message": "Cài Đặt",
     "description": "Settings title"
   },
+  "customizedBehavior": {
+    "message": "Hành vi tùy chỉnh",
+    "description": "Customized behavior section title"
+  },
+  "disableMouseGesturesForSites": {
+    "message": "Tắt cử chỉ chuột và siêu kéo trên các trang web này",
+    "description": "Label for the list of sites where gestures and super drag are disabled"
+  },
+  "disabledSitesHint": {
+    "message": "Một trang mỗi dòng. Tên miền (vd. youtube.com) hoặc URL đầy đủ.",
+    "description": "Hint for the disabled sites textarea"
+  },
   "enableGesture": {
     "message": "Bật Cử Chỉ Chuột",
     "description": "Enable mouse gesture option"
@@ -294,6 +306,34 @@
   "reset": {
     "message": "Đặt Lại",
     "description": "Reset settings button"
+  },
+  "exportSettings": {
+    "message": "Xuất",
+    "description": "Export settings button"
+  },
+  "importSettings": {
+    "message": "Nhập",
+    "description": "Import settings button"
+  },
+  "exportSuccess": {
+    "message": "Xuất cài đặt thành công",
+    "description": "Export success notification"
+  },
+  "exportError": {
+    "message": "Xuất cài đặt thất bại",
+    "description": "Export error notification"
+  },
+  "importSuccess": {
+    "message": "Nhập cài đặt thành công",
+    "description": "Import success notification"
+  },
+  "importError": {
+    "message": "Nhập cài đặt thất bại",
+    "description": "Import error notification"
+  },
+  "syncInfo": {
+    "message": "Cài đặt được đồng bộ tự động với tài khoản Google (Chrome) hoặc tài khoản Microsoft (Edge) của bạn",
+    "description": "Auto-sync information"
   },
   "settingsSaved": {
     "message": "Đã Áp Dụng Cài Đặt",
@@ -358,6 +398,14 @@
   "backgroundAction": {
     "message": "Mở Ở Nền Sau",
     "description": "Open in background action"
+  },
+  "copyAction": {
+    "message": "Sao chép",
+    "description": "Copy selected text or link URL to clipboard"
+  },
+  "copiedToClipboard": {
+    "message": "Đã sao chép vào bảng tạm",
+    "description": "Hint after copy action"
   },
   "dragSearchEngine": {
     "message": "URL Công Cụ Tìm Kiếm Kéo Thả",

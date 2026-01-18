@@ -243,6 +243,18 @@
     "message": "Configurações",
     "description": "Settings title"
   },
+  "customizedBehavior": {
+    "message": "Comportamento personalizado",
+    "description": "Customized behavior section title"
+  },
+  "disableMouseGesturesForSites": {
+    "message": "Desativar gestos do mouse e super arrastar nestes sites",
+    "description": "Label for the list of sites where gestures and super drag are disabled"
+  },
+  "disabledSitesHint": {
+    "message": "Um site por linha. Domínio (ex.: youtube.com) ou URL completa.",
+    "description": "Hint for the disabled sites textarea"
+  },
   "enableGesture": {
     "message": "Habilitar Gestos do Mouse",
     "description": "Enable mouse gesture option"
@@ -294,6 +306,34 @@
   "reset": {
     "message": "Redefinir",
     "description": "Reset settings button"
+  },
+  "exportSettings": {
+    "message": "Exportar",
+    "description": "Export settings button"
+  },
+  "importSettings": {
+    "message": "Importar",
+    "description": "Import settings button"
+  },
+  "exportSuccess": {
+    "message": "Configurações exportadas com sucesso",
+    "description": "Export success notification"
+  },
+  "exportError": {
+    "message": "Falha ao exportar configurações",
+    "description": "Export error notification"
+  },
+  "importSuccess": {
+    "message": "Configurações importadas com sucesso",
+    "description": "Import success notification"
+  },
+  "importError": {
+    "message": "Falha ao importar configurações",
+    "description": "Import error notification"
+  },
+  "syncInfo": {
+    "message": "As configurações são sincronizadas automaticamente com sua conta do Google (Chrome) ou conta da Microsoft (Edge)",
+    "description": "Auto-sync information"
   },
   "settingsSaved": {
     "message": "Configurações Aplicadas",
@@ -358,6 +398,14 @@
   "backgroundAction": {
     "message": "Abrir em Segundo Plano",
     "description": "Open in background action"
+  },
+  "copyAction": {
+    "message": "Copiar",
+    "description": "Copy selected text or link URL to clipboard"
+  },
+  "copiedToClipboard": {
+    "message": "Copiado para a área de transferência",
+    "description": "Hint after copy action"
   },
   "dragSearchEngine": {
     "message": "URL do Motor de Busca de Arrastar",

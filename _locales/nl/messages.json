@@ -243,6 +243,18 @@
     "message": "Instellingen",
     "description": "Instellingen titel"
   },
+  "customizedBehavior": {
+    "message": "Aangepast gedrag",
+    "description": "Customized behavior section title"
+  },
+  "disableMouseGesturesForSites": {
+    "message": "Schakel muisgebaren en superslepen uit op deze sites",
+    "description": "Label for the list of sites where gestures and super drag are disabled"
+  },
+  "disabledSitesHint": {
+    "message": "Eén site per regel. Domein (bijv. youtube.com) of volledige URL.",
+    "description": "Hint for the disabled sites textarea"
+  },
   "enableGesture": {
     "message": "Muisgebaren Inschakelen",
     "description": "Muisgebaren inschakelen optie"
@@ -294,6 +306,34 @@
   "reset": {
     "message": "Herstellen",
     "description": "Instellingen herstellen knop"
+  },
+  "exportSettings": {
+    "message": "Exporteren",
+    "description": "Export settings button"
+  },
+  "importSettings": {
+    "message": "Importeren",
+    "description": "Import settings button"
+  },
+  "exportSuccess": {
+    "message": "Instellingen succesvol geëxporteerd",
+    "description": "Export success notification"
+  },
+  "exportError": {
+    "message": "Instellingen exporteren mislukt",
+    "description": "Export error notification"
+  },
+  "importSuccess": {
+    "message": "Instellingen succesvol geïmporteerd",
+    "description": "Import success notification"
+  },
+  "importError": {
+    "message": "Instellingen importeren mislukt",
+    "description": "Import error notification"
+  },
+  "syncInfo": {
+    "message": "Instellingen worden automatisch gesynchroniseerd met uw Google-account (Chrome) of Microsoft-account (Edge)",
+    "description": "Auto-sync information"
   },
   "settingsSaved": {
     "message": "Instellingen Toegepast",
@@ -358,6 +398,14 @@
   "backgroundAction": {
     "message": "Open op Achtergrond",
     "description": "Open op achtergrond actie"
+  },
+  "copyAction": {
+    "message": "Kopiëren",
+    "description": "Copy selected text or link URL to clipboard"
+  },
+  "copiedToClipboard": {
+    "message": "Gekopieerd naar klembord",
+    "description": "Hint after copy action"
   },
   "dragSearchEngine": {
     "message": "Sleep Zoekmachine URL",

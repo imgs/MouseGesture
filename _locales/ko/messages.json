@@ -243,6 +243,18 @@
     "message": "설정",
     "description": "Settings title"
   },
+  "customizedBehavior": {
+    "message": "맞춤 동작",
+    "description": "Customized behavior section title"
+  },
+  "disableMouseGesturesForSites": {
+    "message": "이 사이트에서 마우스 제스처 및 슈퍼 드래그 비활성화",
+    "description": "Label for the list of sites where gestures and super drag are disabled"
+  },
+  "disabledSitesHint": {
+    "message": "한 줄에 하나의 사이트. 도메인(예: youtube.com) 또는 전체 URL.",
+    "description": "Hint for the disabled sites textarea"
+  },
   "enableGesture": {
     "message": "마우스 제스처 활성화",
     "description": "Enable mouse gesture option"
@@ -294,6 +306,34 @@
   "reset": {
     "message": "초기화",
     "description": "Reset settings button"
+  },
+  "exportSettings": {
+    "message": "내보내기",
+    "description": "Export settings button"
+  },
+  "importSettings": {
+    "message": "가져오기",
+    "description": "Import settings button"
+  },
+  "exportSuccess": {
+    "message": "설정 내보내기 성공",
+    "description": "Export success notification"
+  },
+  "exportError": {
+    "message": "설정 내보내기 실패",
+    "description": "Export error notification"
+  },
+  "importSuccess": {
+    "message": "설정 가져오기 성공",
+    "description": "Import success notification"
+  },
+  "importError": {
+    "message": "설정 가져오기 실패",
+    "description": "Import error notification"
+  },
+  "syncInfo": {
+    "message": "설정이 자동으로 Google 계정(Chrome) 또는 Microsoft 계정(Edge)에 동기화됩니다",
+    "description": "Auto-sync information"
   },
   "settingsSaved": {
     "message": "설정 적용됨",
@@ -358,6 +398,14 @@
   "backgroundAction": {
     "message": "백그라운드에서 열기",
     "description": "Open in background action"
+  },
+  "copyAction": {
+    "message": "복사",
+    "description": "Copy selected text or link URL to clipboard"
+  },
+  "copiedToClipboard": {
+    "message": "클립보드에 복사됨",
+    "description": "Hint after copy action"
   },
   "dragSearchEngine": {
     "message": "드래그 검색 엔진 URL",

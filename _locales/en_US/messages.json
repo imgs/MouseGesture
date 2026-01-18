@@ -243,6 +243,18 @@
     "message": "Settings",
     "description": "Settings title"
   },
+  "customizedBehavior": {
+    "message": "Customized behavior",
+    "description": "Customized behavior section title"
+  },
+  "disableMouseGesturesForSites": {
+    "message": "Disable mouse gestures for these sites",
+    "description": "Label for the list of sites where gestures and super drag are disabled"
+  },
+  "disabledSitesHint": {
+    "message": "One site per line. Domain (e.g. youtube.com) or full URL.",
+    "description": "Hint for the disabled sites textarea"
+  },
   "enableGesture": {
     "message": "Enable Mouse Gesture",
     "description": "Enable mouse gesture option"
@@ -294,6 +306,34 @@
   "reset": {
     "message": "Reset",
     "description": "Reset settings button"
+  },
+  "exportSettings": {
+    "message": "Export",
+    "description": "Export settings button"
+  },
+  "importSettings": {
+    "message": "Import",
+    "description": "Import settings button"
+  },
+  "exportSuccess": {
+    "message": "Settings exported successfully",
+    "description": "Export success notification"
+  },
+  "exportError": {
+    "message": "Failed to export settings",
+    "description": "Export error notification"
+  },
+  "importSuccess": {
+    "message": "Settings imported successfully",
+    "description": "Import success notification"
+  },
+  "importError": {
+    "message": "Failed to import settings",
+    "description": "Import error notification"
+  },
+  "syncInfo": {
+    "message": "Settings automatically sync to your Google account (Chrome) or Microsoft account (Edge)",
+    "description": "Auto-sync information"
   },
   "settingsSaved": {
     "message": "Settings Applied",
@@ -358,6 +398,14 @@
   "backgroundAction": {
     "message": "Open in Background",
     "description": "Open in background action"
+  },
+  "copyAction": {
+    "message": "Copy",
+    "description": "Copy selected text or link URL to clipboard"
+  },
+  "copiedToClipboard": {
+    "message": "Copied to clipboard",
+    "description": "Hint after copy action"
   },
   "dragSearchEngine": {
     "message": "Drag Search Engine URL",

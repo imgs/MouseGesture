@@ -243,6 +243,18 @@
     "message": "Einstellungen",
     "description": "Settings title"
   },
+  "customizedBehavior": {
+    "message": "Angepasstes Verhalten",
+    "description": "Customized behavior section title"
+  },
+  "disableMouseGesturesForSites": {
+    "message": "Mausgesten und Super-Drag für diese Websites deaktivieren",
+    "description": "Label for the list of sites where gestures and super drag are disabled"
+  },
+  "disabledSitesHint": {
+    "message": "Eine Website pro Zeile. Domäne (z.B. youtube.com) oder vollständige URL.",
+    "description": "Hint for the disabled sites textarea"
+  },
   "enableGesture": {
     "message": "Mausgesten aktivieren",
     "description": "Enable mouse gesture option"
@@ -294,6 +306,34 @@
   "reset": {
     "message": "Zurücksetzen",
     "description": "Reset settings button"
+  },
+  "exportSettings": {
+    "message": "Exportieren",
+    "description": "Export settings button"
+  },
+  "importSettings": {
+    "message": "Importieren",
+    "description": "Import settings button"
+  },
+  "exportSuccess": {
+    "message": "Einstellungen erfolgreich exportiert",
+    "description": "Export success notification"
+  },
+  "exportError": {
+    "message": "Einstellungen konnten nicht exportiert werden",
+    "description": "Export error notification"
+  },
+  "importSuccess": {
+    "message": "Einstellungen erfolgreich importiert",
+    "description": "Import success notification"
+  },
+  "importError": {
+    "message": "Einstellungen konnten nicht importiert werden",
+    "description": "Import error notification"
+  },
+  "syncInfo": {
+    "message": "Einstellungen werden automatisch mit Ihrem Google-Konto (Chrome) oder Microsoft-Konto (Edge) synchronisiert",
+    "description": "Auto-sync information"
   },
   "settingsSaved": {
     "message": "Einstellungen angewendet",
@@ -358,6 +398,14 @@
   "backgroundAction": {
     "message": "Im Hintergrund öffnen",
     "description": "Open in background action"
+  },
+  "copyAction": {
+    "message": "Kopieren",
+    "description": "Copy selected text or link URL to clipboard"
+  },
+  "copiedToClipboard": {
+    "message": "In die Zwischenablage kopiert",
+    "description": "Hint after copy action"
   },
   "dragSearchEngine": {
     "message": "Ziehen-Suchmaschinen-URL",

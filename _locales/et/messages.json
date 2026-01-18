@@ -243,6 +243,18 @@
     "message": "Seaded",
     "description": "Settings title"
   },
+  "customizedBehavior": {
+    "message": "Kohandatud käitumine",
+    "description": "Customized behavior section title"
+  },
+  "disableMouseGesturesForSites": {
+    "message": "Keela hiirežestid ja üli lohistamine nendel saiditel",
+    "description": "Label for the list of sites where gestures and super drag are disabled"
+  },
+  "disabledSitesHint": {
+    "message": "Üks sait rea kohta. Domeen (nt youtube.com) või täielik URL.",
+    "description": "Hint for the disabled sites textarea"
+  },
   "enableGesture": {
     "message": "Luba Hiire Žestid",
     "description": "Enable mouse gesture option"
@@ -294,6 +306,34 @@
   "reset": {
     "message": "Lähtesta",
     "description": "Reset settings button"
+  },
+  "exportSettings": {
+    "message": "Ekspordi",
+    "description": "Export settings button"
+  },
+  "importSettings": {
+    "message": "Impordi",
+    "description": "Import settings button"
+  },
+  "exportSuccess": {
+    "message": "Seaded eksporditi edukalt",
+    "description": "Export success notification"
+  },
+  "exportError": {
+    "message": "Seadete eksportimine ebaõnnestus",
+    "description": "Export error notification"
+  },
+  "importSuccess": {
+    "message": "Seaded imporditi edukalt",
+    "description": "Import success notification"
+  },
+  "importError": {
+    "message": "Seadete importimine ebaõnnestus",
+    "description": "Import error notification"
+  },
+  "syncInfo": {
+    "message": "Seaded sünkroonitakse automaatselt teie Google kontoga (Chrome) või Microsoft kontoga (Edge)",
+    "description": "Auto-sync information"
   },
   "settingsSaved": {
     "message": "Seaded Rakendatud",
@@ -358,6 +398,14 @@
   "backgroundAction": {
     "message": "Avaa Taustal",
     "description": "Open in background action"
+  },
+  "copyAction": {
+    "message": "Kopeeri",
+    "description": "Copy selected text or link URL to clipboard"
+  },
+  "copiedToClipboard": {
+    "message": "Kopeeritud lõikelauale",
+    "description": "Hint after copy action"
   },
   "dragSearchEngine": {
     "message": "Halvi Otsimootori URL",

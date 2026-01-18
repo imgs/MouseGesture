@@ -243,6 +243,18 @@
     "message": "Ayarlar",
     "description": "Ayarlar başlığı"
   },
+  "customizedBehavior": {
+    "message": "Özelleştirilmiş davranış",
+    "description": "Customized behavior section title"
+  },
+  "disableMouseGesturesForSites": {
+    "message": "Bu sitelerde fare hareketlerini ve süper sürüklemeyi devre dışı bırak",
+    "description": "Label for the list of sites where gestures and super drag are disabled"
+  },
+  "disabledSitesHint": {
+    "message": "Satır başına bir site. Alan adı (örn. youtube.com) veya tam URL.",
+    "description": "Hint for the disabled sites textarea"
+  },
   "enableGesture": {
     "message": "Fare Hareketlerini Etkinleştir",
     "description": "Fare hareketlerini etkinleştirme seçeneği"
@@ -294,6 +306,34 @@
   "reset": {
     "message": "Sıfırla",
     "description": "Sıfırlama düğmesi"
+  },
+  "exportSettings": {
+    "message": "Dışa Aktar",
+    "description": "Export settings button"
+  },
+  "importSettings": {
+    "message": "İçe Aktar",
+    "description": "Import settings button"
+  },
+  "exportSuccess": {
+    "message": "Ayarlar başarıyla dışa aktarıldı",
+    "description": "Export success notification"
+  },
+  "exportError": {
+    "message": "Ayarları dışa aktarma başarısız",
+    "description": "Export error notification"
+  },
+  "importSuccess": {
+    "message": "Ayarlar başarıyla içe aktarıldı",
+    "description": "Import success notification"
+  },
+  "importError": {
+    "message": "Ayarları içe aktarma başarısız",
+    "description": "Import error notification"
+  },
+  "syncInfo": {
+    "message": "Ayarlar otomatik olarak Google hesabınıza (Chrome) veya Microsoft hesabınıza (Edge) senkronize edilir",
+    "description": "Auto-sync information"
   },
   "settingsSaved": {
     "message": "Ayarlar Kaydedildi",
@@ -358,6 +398,14 @@
   "backgroundAction": {
     "message": "Arka Planda Aç",
     "description": "Arka planda açma eylemi"
+  },
+  "copyAction": {
+    "message": "Kopyala",
+    "description": "Copy selected text or link URL to clipboard"
+  },
+  "copiedToClipboard": {
+    "message": "Panoya kopyalandı",
+    "description": "Hint after copy action"
   },
   "dragSearchEngine": {
     "message": "Sürükleme Arama Motoru URL'si",

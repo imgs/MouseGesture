@@ -243,6 +243,18 @@
     "message": "การตั้งค่า",
     "description": "Settings title"
   },
+  "customizedBehavior": {
+    "message": "พฤติกรรมการกำหนดเอง",
+    "description": "Customized behavior section title"
+  },
+  "disableMouseGesturesForSites": {
+    "message": "ปิดการทำงานของเมาส์เจสเจอร์และซูเปอร์แดรกในไซต์เหล่านี้",
+    "description": "Label for the list of sites where gestures and super drag are disabled"
+  },
+  "disabledSitesHint": {
+    "message": "หนึ่งไซต์ต่อบรรทัด โดเมน (เช่น youtube.com) หรือ URL เต็ม",
+    "description": "Hint for the disabled sites textarea"
+  },
   "enableGesture": {
     "message": "เปิดใช้ท่าทางเมาส์",
     "description": "Enable mouse gesture option"
@@ -294,6 +306,34 @@
   "reset": {
     "message": "รีเซ็ต",
     "description": "Reset settings button"
+  },
+  "exportSettings": {
+    "message": "ส่งออก",
+    "description": "Export settings button"
+  },
+  "importSettings": {
+    "message": "นำเข้า",
+    "description": "Import settings button"
+  },
+  "exportSuccess": {
+    "message": "ส่งออกการตั้งค่าสำเร็จ",
+    "description": "Export success notification"
+  },
+  "exportError": {
+    "message": "ส่งออกการตั้งค่าล้มเหลว",
+    "description": "Export error notification"
+  },
+  "importSuccess": {
+    "message": "นำเข้าการตั้งค่าสำเร็จ",
+    "description": "Import success notification"
+  },
+  "importError": {
+    "message": "นำเข้าการตั้งค่าล้มเหลว",
+    "description": "Import error notification"
+  },
+  "syncInfo": {
+    "message": "การตั้งค่าจะซิงค์อัตโนมัติไปยังบัญชี Google (Chrome) หรือบัญชี Microsoft (Edge) ของคุณ",
+    "description": "Auto-sync information"
   },
   "settingsSaved": {
     "message": "บันทึกการตั้งค่าแล้ว",
@@ -358,6 +398,14 @@
   "backgroundAction": {
     "message": "เปิดในเบื้องหลัง",
     "description": "Open in background action"
+  },
+  "copyAction": {
+    "message": "คัดลอก",
+    "description": "Copy selected text or link URL to clipboard"
+  },
+  "copiedToClipboard": {
+    "message": "คัดลอกไปยังคลิปบอร์ดแล้ว",
+    "description": "Hint after copy action"
   },
   "dragSearchEngine": {
     "message": "URL เครื่องมือค้นหาสำหรับการลาก",

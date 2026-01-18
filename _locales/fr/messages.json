@@ -243,6 +243,18 @@
     "message": "Paramètres",
     "description": "Settings title"
   },
+  "customizedBehavior": {
+    "message": "Comportement personnalisé",
+    "description": "Customized behavior section title"
+  },
+  "disableMouseGesturesForSites": {
+    "message": "Désactiver les gestes souris et le super glisser sur ces sites",
+    "description": "Label for the list of sites where gestures and super drag are disabled"
+  },
+  "disabledSitesHint": {
+    "message": "Un site par ligne. Domaine (ex. youtube.com) ou URL complète.",
+    "description": "Hint for the disabled sites textarea"
+  },
   "enableGesture": {
     "message": "Activer les Gestes de Souris",
     "description": "Enable mouse gesture option"
@@ -294,6 +306,34 @@
   "reset": {
     "message": "Réinitialiser",
     "description": "Reset settings button"
+  },
+  "exportSettings": {
+    "message": "Exporter",
+    "description": "Export settings button"
+  },
+  "importSettings": {
+    "message": "Importer",
+    "description": "Import settings button"
+  },
+  "exportSuccess": {
+    "message": "Paramètres exportés avec succès",
+    "description": "Export success notification"
+  },
+  "exportError": {
+    "message": "Échec de l'exportation des paramètres",
+    "description": "Export error notification"
+  },
+  "importSuccess": {
+    "message": "Paramètres importés avec succès",
+    "description": "Import success notification"
+  },
+  "importError": {
+    "message": "Échec de l'importation des paramètres",
+    "description": "Import error notification"
+  },
+  "syncInfo": {
+    "message": "Les paramètres se synchronisent automatiquement avec votre compte Google (Chrome) ou compte Microsoft (Edge)",
+    "description": "Auto-sync information"
   },
   "settingsSaved": {
     "message": "Paramètres Appliqués",
@@ -358,6 +398,14 @@
   "backgroundAction": {
     "message": "Ouvrir en Arrière-plan",
     "description": "Open in background action"
+  },
+  "copyAction": {
+    "message": "Copier",
+    "description": "Copy selected text or link URL to clipboard"
+  },
+  "copiedToClipboard": {
+    "message": "Copié dans le presse-papiers",
+    "description": "Hint after copy action"
   },
   "dragSearchEngine": {
     "message": "URL du Moteur de Recherche de Glissement",

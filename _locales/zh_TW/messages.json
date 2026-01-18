@@ -243,6 +243,18 @@
     "message": "設定",
     "description": "Settings title"
   },
+  "customizedBehavior": {
+    "message": "自訂行為",
+    "description": "Customized behavior section title"
+  },
+  "disableMouseGesturesForSites": {
+    "message": "在以下網站停用滑鼠手勢與超級拖曳",
+    "description": "Label for the list of sites where gestures and super drag are disabled"
+  },
+  "disabledSitesHint": {
+    "message": "每行一個，可填網域（如 youtube.com）或完整網址。",
+    "description": "Hint for the disabled sites textarea"
+  },
   "enableGesture": {
     "message": "啟用滑鼠手勢",
     "description": "Enable mouse gesture option"
@@ -294,6 +306,34 @@
   "reset": {
     "message": "重設",
     "description": "Reset settings button"
+  },
+  "exportSettings": {
+    "message": "匯出",
+    "description": "Export settings button"
+  },
+  "importSettings": {
+    "message": "匯入",
+    "description": "Import settings button"
+  },
+  "exportSuccess": {
+    "message": "設定匯出成功",
+    "description": "Export success notification"
+  },
+  "exportError": {
+    "message": "設定匯出失敗",
+    "description": "Export error notification"
+  },
+  "importSuccess": {
+    "message": "設定匯入成功",
+    "description": "Import success notification"
+  },
+  "importError": {
+    "message": "設定匯入失敗",
+    "description": "Import error notification"
+  },
+  "syncInfo": {
+    "message": "設定會自動同步到您的 Google 帳戶（Chrome）或 Microsoft 帳戶（Edge）",
+    "description": "Auto-sync information"
   },
   "settingsSaved": {
     "message": "設定已套用",
@@ -358,6 +398,14 @@
   "backgroundAction": {
     "message": "在背景開啟",
     "description": "Open in background action"
+  },
+  "copyAction": {
+    "message": "複製",
+    "description": "Copy selected text or link URL to clipboard"
+  },
+  "copiedToClipboard": {
+    "message": "已複製到剪貼簿",
+    "description": "Hint after copy action"
   },
   "dragSearchEngine": {
     "message": "拖曳搜尋引擎 URL",

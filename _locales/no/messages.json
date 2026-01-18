@@ -243,6 +243,18 @@
     "message": "Innstillinger",
     "description": "Settings title"
   },
+  "customizedBehavior": {
+    "message": "Tilpasset oppførsel",
+    "description": "Customized behavior section title"
+  },
+  "disableMouseGesturesForSites": {
+    "message": "Deaktiver musebevegelser og superdra for disse nettstedene",
+    "description": "Label for the list of sites where gestures and super drag are disabled"
+  },
+  "disabledSitesHint": {
+    "message": "Ett nettsted per linje. Domene (f.eks. youtube.com) eller full URL.",
+    "description": "Hint for the disabled sites textarea"
+  },
   "enableGesture": {
     "message": "Aktiver Musegestus",
     "description": "Enable mouse gesture option"
@@ -294,6 +306,34 @@
   "reset": {
     "message": "Tilbakestill",
     "description": "Reset settings button"
+  },
+  "exportSettings": {
+    "message": "Eksporter",
+    "description": "Export settings button"
+  },
+  "importSettings": {
+    "message": "Importer",
+    "description": "Import settings button"
+  },
+  "exportSuccess": {
+    "message": "Innstillinger eksportert vellykket",
+    "description": "Export success notification"
+  },
+  "exportError": {
+    "message": "Kunne ikke eksportere innstillinger",
+    "description": "Export error notification"
+  },
+  "importSuccess": {
+    "message": "Innstillinger importert vellykket",
+    "description": "Import success notification"
+  },
+  "importError": {
+    "message": "Kunne ikke importere innstillinger",
+    "description": "Import error notification"
+  },
+  "syncInfo": {
+    "message": "Innstillinger synkroniseres automatisk til Google-kontoen din (Chrome) eller Microsoft-kontoen din (Edge)",
+    "description": "Auto-sync information"
   },
   "settingsSaved": {
     "message": "Innstillinger Anvendt",
@@ -358,6 +398,14 @@
   "backgroundAction": {
     "message": "Åpne i Bakgrunnen",
     "description": "Open in background action"
+  },
+  "copyAction": {
+    "message": "Kopier",
+    "description": "Copy selected text or link URL to clipboard"
+  },
+  "copiedToClipboard": {
+    "message": "Kopiert til utklippstavle",
+    "description": "Hint after copy action"
   },
   "dragSearchEngine": {
     "message": "Drag Søkemotor URL",

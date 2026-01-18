@@ -243,6 +243,18 @@
     "message": "Налаштування",
     "description": "Заголовок налаштувань"
   },
+  "customizedBehavior": {
+    "message": "Користувацька поведінка",
+    "description": "Customized behavior section title"
+  },
+  "disableMouseGesturesForSites": {
+    "message": "Вимкнути жест миші та супер перетягування на цих сайтах",
+    "description": "Label for the list of sites where gestures and super drag are disabled"
+  },
+  "disabledSitesHint": {
+    "message": "Один сайт у рядку. Домен (напр. youtube.com) або повна URL-адреса.",
+    "description": "Hint for the disabled sites textarea"
+  },
   "enableGesture": {
     "message": "Увімкнути Жести Миші",
     "description": "Опція увімкнути жести миші"
@@ -294,6 +306,34 @@
   "reset": {
     "message": "Скинути",
     "description": "Кнопка скинути налаштування"
+  },
+  "exportSettings": {
+    "message": "Експорт",
+    "description": "Export settings button"
+  },
+  "importSettings": {
+    "message": "Імпорт",
+    "description": "Import settings button"
+  },
+  "exportSuccess": {
+    "message": "Налаштування успішно експортовано",
+    "description": "Export success notification"
+  },
+  "exportError": {
+    "message": "Не вдалося експортувати налаштування",
+    "description": "Export error notification"
+  },
+  "importSuccess": {
+    "message": "Налаштування успішно імпортовано",
+    "description": "Import success notification"
+  },
+  "importError": {
+    "message": "Не вдалося імпортувати налаштування",
+    "description": "Import error notification"
+  },
+  "syncInfo": {
+    "message": "Налаштування автоматично синхронізуються з вашим обліковим записом Google (Chrome) або обліковим записом Microsoft (Edge)",
+    "description": "Auto-sync information"
   },
   "settingsSaved": {
     "message": "Налаштування Застосовано",
@@ -358,6 +398,14 @@
   "backgroundAction": {
     "message": "Відкрити у Фоні",
     "description": "Дія відкрити у фоні"
+  },
+  "copyAction": {
+    "message": "Копіювати",
+    "description": "Copy selected text or link URL to clipboard"
+  },
+  "copiedToClipboard": {
+    "message": "Скопійовано в буфер обміну",
+    "description": "Hint after copy action"
   },
   "dragSearchEngine": {
     "message": "URL Пошукової Системи Перетягування",

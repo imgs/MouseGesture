@@ -144,7 +144,8 @@ const defaultSettings = {
   gestureUpThenDownAction: 'scrollToBottom',
   gestureDownThenUpAction: 'scrollToTop',
   gestureLeftThenRightAction: 'closeTab',
-  gestureRightThenLeftAction: 'reopenClosedTab'
+  gestureRightThenLeftAction: 'reopenClosedTab',
+  disabledSites: []
 };
 
 // 获取浏览器语言
@@ -227,6 +228,9 @@ let duplicateCheckCheckbox = null;
 let autoCloseDuplicatesCheckbox = null;
 let saveStatus = null;
 let resetButton = null;
+let exportButton = null;
+let importButton = null;
+let importFileInput = null;
 let themeToggle = null;
 let debugEnabledState = false; // 调试面板开关状态（无需复选框）
 
@@ -274,6 +278,13 @@ function toggleTheme() {
   });
 }
 
+// 隐藏/显示控制按钮
+function toggleControlButtonsVisibility(hide = true) {
+  if (exportButton) exportButton.style.display = hide ? 'none' : '';
+  if (importButton) importButton.style.display = hide ? 'none' : '';
+  if (resetButton) resetButton.style.display = hide ? 'none' : '';
+}
+
 // 显示状态消息
 function showStatusMessage(messageKey, isError = false) {
   // 使用saveStatus元素显示状态消息
@@ -282,6 +293,9 @@ function showStatusMessage(messageKey, isError = false) {
   saveStatus.style.color = isError ? '#F44336' : '#4CAF50'; // 红色表示错误，绿色表示成功
   saveStatus.classList.add('show');
   
+  // 隐藏导入、导出、重设按钮（使用 visibility 避免布局抖动）
+  toggleControlButtonsVisibility(true);
+  
   // 使用配置常量替代硬编码
   setTimeout(() => {
     saveStatus.classList.remove('show');
@@ -289,6 +303,9 @@ function showStatusMessage(messageKey, isError = false) {
     setTimeout(() => {
       saveStatus.style.color = '#4CAF50';
       saveStatus.textContent = '';
+      
+      // 恢复显示导入、导出、重设按钮
+      toggleControlButtonsVisibility(false);
     }, CONFIG.FADE_DURATION);
   }, CONFIG.STATUS_MESSAGE_DURATION);
 }
@@ -312,6 +329,9 @@ function showSectionSaveStatus(sectionId, messageKey, isError = false) {
     operationHint.style.opacity = '0';
   }
   
+  // 隐藏导入、导出、重设按钮（使用 visibility 避免布局抖动）
+  toggleControlButtonsVisibility(true);
+  
   // 使用配置常量替代硬编码
   setTimeout(() => {
     statusElement.classList.remove('show');
@@ -323,6 +343,8 @@ function showSectionSaveStatus(sectionId, messageKey, isError = false) {
       if (operationHint) {
         operationHint.style.opacity = '0.9';
       }
+      // 恢复显示导入、导出、重设按钮
+      toggleControlButtonsVisibility(false);
     }, CONFIG.FADE_DURATION);
   }, CONFIG.STATUS_MESSAGE_DURATION - 1000); // 区域消息显示时间稍短
 }
@@ -372,6 +394,9 @@ function setButtonState(button, isLoading, isDisabled = false, successMessage = 
       saveStatus.style.color = '#4CAF50';
       saveStatus.classList.add('show');
       
+      // 隐藏导入、导出、重设按钮（使用 visibility 避免布局抖动）
+      toggleControlButtonsVisibility(true);
+      
       // 使用配置常量替代硬编码
       setTimeout(() => {
         saveStatus.classList.remove('show');
@@ -379,6 +404,8 @@ function setButtonState(button, isLoading, isDisabled = false, successMessage = 
         setTimeout(() => {
           saveStatus.style.color = '#4CAF50';
           saveStatus.textContent = '';
+          // 恢复显示导入、导出、重设按钮
+          toggleControlButtonsVisibility(false);
         }, CONFIG.FADE_DURATION);
       }, CONFIG.STATUS_MESSAGE_DURATION - 1000);
     }
@@ -439,7 +466,8 @@ function loadSettings() {
       gestureUpThenDownAction: 'scrollToBottom',
       gestureDownThenUpAction: 'scrollToTop',
       gestureLeftThenRightAction: 'closeTab',
-      gestureRightThenLeftAction: 'reopenClosedTab'
+      gestureRightThenLeftAction: 'reopenClosedTab',
+      disabledSites: []
     }, function(items) {
       // 应用鼠标手势设置
       document.getElementById('enable-gesture').checked = items.enableGesture; // 从存储中读取真实状态
@@ -502,6 +530,10 @@ function loadSettings() {
       document.getElementById('gesture-downThenUp-action').value = items.gestureDownThenUpAction || 'scrollToTop';
       document.getElementById('gesture-leftThenRight-action').value = items.gestureLeftThenRightAction || 'closeTab';
       document.getElementById('gesture-rightThenLeft-action').value = items.gestureRightThenLeftAction || 'reopenClosedTab';
+      
+      // 自定义行为：禁用网站列表
+      const disabledSitesEl = document.getElementById('disabled-sites-list');
+      if (disabledSitesEl) disabledSitesEl.value = (items.disabledSites || []).join('\n');
       
       // 根据触发按键设置调整小窗延迟范围
       updatePreviewDelayRange(items.previewModifierKey);
@@ -887,7 +919,8 @@ function getSettingsSnapshot() {
     gestureUpThenDownAction: document.getElementById('gesture-upThenDown-action').value,
     gestureDownThenUpAction: document.getElementById('gesture-downThenUp-action').value,
     gestureLeftThenRightAction: document.getElementById('gesture-leftThenRight-action').value,
-    gestureRightThenLeftAction: document.getElementById('gesture-rightThenLeft-action').value
+    gestureRightThenLeftAction: document.getElementById('gesture-rightThenLeft-action').value,
+    disabledSites: (document.getElementById('disabled-sites-list')?.value || '').split(/\n/).map(s => s.trim()).filter(Boolean)
   };
 }
 
@@ -928,6 +961,9 @@ function resetSettings() {
     saveStatus.style.color = '#FFA500'; // 橙色，表示进行中
     saveStatus.classList.add('show');
     
+    // 隐藏导入、导出、重设按钮（使用 visibility 避免布局抖动）
+    toggleControlButtonsVisibility(true);
+    
     // 创建一个深拷贝的默认设置对象
     const resetConfig = JSON.parse(JSON.stringify(defaultSettings));
     
@@ -943,6 +979,15 @@ function resetSettings() {
         resetButton.disabled = false;
         saveStatus.textContent = getI18nMessage('resetError');
         saveStatus.style.color = '#F44336'; // 红色，表示错误
+        // 保持按钮隐藏状态，等待消息消失后恢复
+        setTimeout(() => {
+          saveStatus.classList.remove('show');
+          setTimeout(() => {
+            saveStatus.style.color = '#4CAF50';
+            saveStatus.textContent = '';
+            toggleControlButtonsVisibility(false);
+          }, CONFIG.FADE_DURATION);
+        }, CONFIG.STATUS_MESSAGE_DURATION);
         return;
       }
       
@@ -991,13 +1036,142 @@ function resetSettings() {
       // 使用配置常量恢复原始状态
       setTimeout(() => {
         saveStatus.classList.remove('show');
-        saveStatus.style.color = '#4CAF50'; // 恢复默认颜色
+        setTimeout(() => {
+          saveStatus.style.color = '#4CAF50'; // 恢复默认颜色
+          saveStatus.textContent = '';
+          // 恢复显示导入、导出、重设按钮
+          toggleControlButtonsVisibility(false);
+        }, CONFIG.FADE_DURATION);
       }, CONFIG.RESET_BUTTON_DISABLE_DURATION);
     });
   } catch (e) {
     console.log('重置设置异常:', e.message);
     resetButton.disabled = false;
     saveStatus.classList.remove('show');
+    // 恢复显示按钮
+    toggleControlButtonsVisibility(false);
+  }
+}
+
+// 导出设置到 JSON 文件
+function exportSettings() {
+  try {
+    chrome.storage.sync.get(null, (items) => {
+      if (chrome.runtime.lastError) {
+        showStatusMessage('exportError', true);
+        return;
+      }
+      
+      // 添加导出元数据
+      const exportData = {
+        version: chrome.runtime.getManifest().version,
+        exportDate: new Date().toISOString(),
+        settings: items
+      };
+      
+      // 创建 JSON 字符串
+      const jsonString = JSON.stringify(exportData, null, 2);
+      
+      // 创建 Blob 并下载
+      const blob = new Blob([jsonString], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `mouse-gesture-settings-${new Date().toISOString().split('T')[0]}.json`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+      
+      showStatusMessage('exportSuccess');
+    });
+  } catch (e) {
+    console.error('导出设置错误:', e.message);
+    showStatusMessage('exportError', true);
+  }
+}
+
+// 处理导入文件选择
+function handleImportFile(event) {
+  const file = event.target.files[0];
+  if (!file) return;
+  
+  const reader = new FileReader();
+  reader.onload = (e) => {
+    try {
+      const importData = JSON.parse(e.target.result);
+      
+      // 验证数据格式
+      if (!importData.settings || typeof importData.settings !== 'object') {
+        showStatusMessage('importError', true);
+        return;
+      }
+      
+      // 导入设置
+      importSettings(importData.settings);
+    } catch (error) {
+      console.error('解析导入文件错误:', error.message);
+      showStatusMessage('importError', true);
+    }
+  };
+  
+  reader.onerror = () => {
+    showStatusMessage('importError', true);
+  };
+  
+  reader.readAsText(file);
+  
+  // 清空文件输入，允许重复选择同一文件
+  event.target.value = '';
+}
+
+// 导入设置
+function importSettings(settings) {
+  try {
+    // 验证并清理设置数据
+    const validSettings = {};
+    const allowedKeys = [
+      'enableGesture', 'showGestureTrail', 'showGestureHint', 'trailColor', 'trailWidth',
+      'enableSuperDrag', 'enableDragTextSearch', 'enableImagePreview', 'enableDuplicateCheck',
+      'autoCloseDetectedTabs', 'enableSmoothScroll', 'enableDebugPanel', 'showTabCountBadge',
+      'language', 'theme',
+      'dragUpAction', 'dragRightAction', 'dragDownAction', 'dragLeftAction', 'dragSearchEngine',
+      'previewEnabled', 'previewHoverDelay', 'previewModifierKey', 'previewMaxWindows',
+      'previewDefaultWidth', 'previewDefaultHeight', 'previewPosition', 'previewSearchEngine',
+      'enableTextSearchPreview',
+      'gestureLeftAction', 'gestureRightAction', 'gestureUpAction', 'gestureDownAction',
+      'gestureDownThenRightAction', 'gestureLeftThenUpAction', 'gestureRightThenUpAction',
+      'gestureRightThenDownAction', 'gestureUpThenLeftAction', 'gestureUpThenRightAction',
+      'gestureDownThenLeftAction', 'gestureLeftThenDownAction', 'gestureUpThenDownAction',
+      'gestureDownThenUpAction', 'gestureLeftThenRightAction', 'gestureRightThenLeftAction',
+      'disabledSites'
+    ];
+    
+    // 只导入允许的设置项
+    for (const key of allowedKeys) {
+      if (key in settings) {
+        validSettings[key] = settings[key];
+      }
+    }
+    
+    // 保存到 storage
+    chrome.storage.sync.set(validSettings, () => {
+      if (chrome.runtime.lastError) {
+        showStatusMessage('importError', true);
+        return;
+      }
+      
+      // 重新加载设置到界面
+      loadSettings();
+      
+      // 通知所有标签页设置已更新
+      notifySettingsUpdated();
+      
+      showStatusMessage('importSuccess');
+    });
+  } catch (e) {
+    console.error('导入设置错误:', e.message);
+    showStatusMessage('importError', true);
   }
 }
 
@@ -1040,6 +1214,13 @@ document.addEventListener('DOMContentLoaded', function() {
   autoCloseDuplicatesCheckbox = document.getElementById('auto-close-duplicates');
   saveStatus = document.getElementById('save-status');
   resetButton = document.getElementById('reset-btn');
+  exportButton = document.getElementById('export-btn');
+  importButton = document.getElementById('import-btn');
+  importFileInput = document.createElement('input');
+  importFileInput.type = 'file';
+  importFileInput.accept = '.json';
+  importFileInput.style.display = 'none';
+  document.body.appendChild(importFileInput);
   themeToggle = document.getElementById('theme-toggle');
 
   // 加载设置
@@ -1101,6 +1282,15 @@ document.addEventListener('DOMContentLoaded', function() {
   
   CommonUtils.addChangeListener('auto-close-duplicates', saveSettings);
   
+  // 自定义行为：禁用网站列表（失焦时保存）
+  const disabledSitesListEl = document.getElementById('disabled-sites-list');
+  if (disabledSitesListEl) {
+    disabledSitesListEl.addEventListener('change', function() {
+      saveSettingsImmediate();
+      showSectionSaveStatus('customized-save-status', 'settingsSaved');
+    });
+  }
+  
   // 平滑滚动设置需要立即保存
   document.getElementById('smooth-scroll').addEventListener('change', function() {
     saveSettingsImmediate();
@@ -1122,6 +1312,13 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   
   resetButton.addEventListener('click', resetSettings);
+  if (exportButton) {
+    exportButton.addEventListener('click', exportSettings);
+  }
+  if (importButton) {
+    importButton.addEventListener('click', () => importFileInput.click());
+  }
+  importFileInput.addEventListener('change', handleImportFile);
   themeToggle.addEventListener('click', toggleTheme);
   
   // 小窗视图设置相关的事件监听器 - 使用公共函数重构
@@ -1178,6 +1375,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // 快速定位功能 - 点击标题进行快速定位
   const sections = [
     { id: 'settings-feature', nameKey: 'settings' },
+    { id: 'customized-behavior-feature', nameKey: 'customizedBehavior' },
     { id: 'gesture-actions-feature', nameKey: 'builtInGestures' },
     { id: 'super-drag-feature', nameKey: 'superDragFeature' },
     { id: 'link-preview-feature', nameKey: 'linkPreview' }

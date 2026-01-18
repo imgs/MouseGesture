@@ -243,6 +243,18 @@
     "message": "设置",
     "description": "设置标题"
   },
+  "customizedBehavior": {
+    "message": "自定义行为",
+    "description": "自定义行为区块标题"
+  },
+  "disableMouseGesturesForSites": {
+    "message": "在以下网站禁用鼠标手势和超级拖拽",
+    "description": "禁用鼠标手势与超级拖拽的网站列表标签"
+  },
+  "disabledSitesHint": {
+    "message": "每行一个，可填域名（如 youtube.com）或完整网址。",
+    "description": "禁用网站列表输入框的提示"
+  },
   "enableGesture": {
     "message": "启用鼠标手势",
     "description": "启用鼠标手势选项"
@@ -294,6 +306,34 @@
   "reset": {
     "message": "重置",
     "description": "重置设置按钮"
+  },
+  "exportSettings": {
+    "message": "导出",
+    "description": "导出设置按钮"
+  },
+  "importSettings": {
+    "message": "导入",
+    "description": "导入设置按钮"
+  },
+  "exportSuccess": {
+    "message": "设置导出成功",
+    "description": "导出成功提示"
+  },
+  "exportError": {
+    "message": "导出设置失败",
+    "description": "导出失败提示"
+  },
+  "importSuccess": {
+    "message": "设置导入成功",
+    "description": "导入成功提示"
+  },
+  "importError": {
+    "message": "导入设置失败",
+    "description": "导入失败提示"
+  },
+  "syncInfo": {
+    "message": "设置会自动同步到您的 Google 账户（Chrome）或 Microsoft 账户（Edge）",
+    "description": "自动同步说明"
   },
   "settingsSaved": {
     "message": "设置已生效",
@@ -358,6 +398,14 @@
   "backgroundAction": {
     "message": "后台打开",
     "description": "后台打开操作"
+  },
+  "copyAction": {
+    "message": "复制",
+    "description": "将选中文本或链接复制到剪贴板"
+  },
+  "copiedToClipboard": {
+    "message": "已复制到剪贴板",
+    "description": "复制操作后的提示"
   },
   "dragSearchEngine": {
     "message": "拖拽搜索引擎URL",

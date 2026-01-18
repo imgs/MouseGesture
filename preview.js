@@ -114,6 +114,7 @@ let previewSettings = {
   position: 'cursor',         // 位置: 'cursor', 'center', 'corner'
   searchEngine: 'https://www.google.com/search?q={q}', // 默认搜索引擎
   enableTextSearchPreview: true, // 选中文字触发搜索功能开关
+  disabledSites: [] // 在此列表中的网站禁用小窗预览
 };
 
 // 当前活动的预览窗口
@@ -143,7 +144,8 @@ function loadPreviewSettings() {
       previewDefaultHeight: 640,
       previewPosition: 'cursor',
       previewSearchEngine: 'https://www.google.com/search?q={q}',
-      enableTextSearchPreview: true
+      enableTextSearchPreview: true,
+      disabledSites: []
     }, (items) => {
       // 检查chrome.runtime.lastError，可能是扩展上下文失效
       if (chrome.runtime.lastError) {
@@ -166,6 +168,7 @@ function loadPreviewSettings() {
       previewSettings.position = items.previewPosition;
       previewSettings.searchEngine = items.previewSearchEngine;
       previewSettings.enableTextSearchPreview = items.enableTextSearchPreview;
+      previewSettings.disabledSites = items.disabledSites || [];
       
       console.log('预览设置已加载:', previewSettings);
     });
@@ -185,6 +188,31 @@ function isModifierKeyMatch(e) {
   if (previewSettings.modifierKey === 'Alt') return e.altKey;
   if (previewSettings.modifierKey === 'Shift') return e.shiftKey;
   
+  return false;
+}
+
+// 检查当前网址是否在禁用列表（与小窗预览共用 disabledSites）
+function isSiteInDisabledListForPreview(href) {
+  const list = previewSettings.disabledSites;
+  if (!list || !Array.isArray(list) || list.length === 0) return false;
+  let h;
+  try {
+    const u = new URL(href);
+    h = u.hostname.toLowerCase().replace(/^www\./, '');
+  } catch (e) {
+    h = String(href || '').toLowerCase().replace(/^www\./, '');
+  }
+  for (const entry of list) {
+    const v = String(entry).trim().toLowerCase();
+    if (!v) continue;
+    let entryHost = v;
+    if (v.startsWith('http://') || v.startsWith('https://')) {
+      try { entryHost = new URL(v).hostname.toLowerCase().replace(/^www\./, ''); } catch (_) { entryHost = v; }
+    } else {
+      entryHost = v.replace(/^www\./, '');
+    }
+    if (h === entryHost || h.endsWith('.' + entryHost)) return true;
+  }
   return false;
 }
 
@@ -233,6 +261,7 @@ function initLinkPreview() {
             if (changes.previewPosition) previewSettings.position = changes.previewPosition.newValue;
             if (changes.previewSearchEngine) previewSettings.searchEngine = changes.previewSearchEngine.newValue;
             if (changes.enableTextSearchPreview) previewSettings.enableTextSearchPreview = changes.enableTextSearchPreview.newValue;
+            if (changes.disabledSites) previewSettings.disabledSites = changes.disabledSites.newValue || [];
             
             console.log('预览设置已更新:', previewSettings);
           }
@@ -298,6 +327,9 @@ function initLinkPreview() {
       try {
         // 如果预览功能被禁用，直接返回
         if (!previewSettings.enabled) return;
+        
+        // 如果当前网站在禁用列表，不显示小窗预览
+        if (isSiteInDisabledListForPreview(window.location.href)) return;
         
         // 先检查修饰键状态，确保同步
         checkModifierKeyState();

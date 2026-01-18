@@ -243,6 +243,18 @@
     "message": "सेटिंग्स",
     "description": "Settings title"
   },
+  "customizedBehavior": {
+    "message": "अनुकूलित व्यवहार",
+    "description": "Customized behavior section title"
+  },
+  "disableMouseGesturesForSites": {
+    "message": "इन साइटों पर माउस जेस्चर और सुपर ड्रैग अक्षम करें",
+    "description": "Label for the list of sites where gestures and super drag are disabled"
+  },
+  "disabledSitesHint": {
+    "message": "प्रति पंक्ति एक साइट। डोमेन (जैसे youtube.com) या पूर्ण URL।",
+    "description": "Hint for the disabled sites textarea"
+  },
   "enableGesture": {
     "message": "माउस जेस्चर सक्षम करें",
     "description": "Enable mouse gesture option"
@@ -294,6 +306,34 @@
   "reset": {
     "message": "रीसेट करें",
     "description": "Reset settings button"
+  },
+  "exportSettings": {
+    "message": "निर्यात",
+    "description": "Export settings button"
+  },
+  "importSettings": {
+    "message": "आयात",
+    "description": "Import settings button"
+  },
+  "exportSuccess": {
+    "message": "सेटिंग्स सफलतापूर्वक निर्यात की गईं",
+    "description": "Export success notification"
+  },
+  "exportError": {
+    "message": "सेटिंग्स निर्यात करने में विफल",
+    "description": "Export error notification"
+  },
+  "importSuccess": {
+    "message": "सेटिंग्स सफलतापूर्वक आयात की गईं",
+    "description": "Import success notification"
+  },
+  "importError": {
+    "message": "सेटिंग्स आयात करने में विफल",
+    "description": "Import error notification"
+  },
+  "syncInfo": {
+    "message": "सेटिंग्स स्वचालित रूप से आपके Google खाते (Chrome) या Microsoft खाते (Edge) में सिंक होती हैं",
+    "description": "Auto-sync information"
   },
   "settingsSaved": {
     "message": "सेटिंग्स लागू की गईं",
@@ -358,6 +398,14 @@
   "backgroundAction": {
     "message": "पृष्ठभूमि में खोलें",
     "description": "Open in background action"
+  },
+  "copyAction": {
+    "message": "कॉपी करें",
+    "description": "Copy selected text or link URL to clipboard"
+  },
+  "copiedToClipboard": {
+    "message": "क्लिपबोर्ड में कॉपी किया गया",
+    "description": "Hint after copy action"
   },
   "dragSearchEngine": {
     "message": "ड्रैग खोज इंजन URL",

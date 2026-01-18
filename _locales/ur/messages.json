@@ -243,6 +243,18 @@
     "message": "ترتیبات",
     "description": "ترتیبات کا عنوان"
   },
+  "customizedBehavior": {
+    "message": "حسب ضرورت رویہ",
+    "description": "Customized behavior section title"
+  },
+  "disableMouseGesturesForSites": {
+    "message": "ان سائٹس پر ماؤس جسچر اور سوپر ڈریگ غیر فعال کریں",
+    "description": "Label for the list of sites where gestures and super drag are disabled"
+  },
+  "disabledSitesHint": {
+    "message": "ہر سطر پر ایک سائٹ۔ ڈومین (مثلاً youtube.com) یا مکمل URL۔",
+    "description": "Hint for the disabled sites textarea"
+  },
   "enableGesture": {
     "message": "ماؤس جیسچرز فعال کریں",
     "description": "ماؤس جیسچرز فعال کرنے کا آپشن"
@@ -294,6 +306,34 @@
   "reset": {
     "message": "ری سیٹ",
     "description": "ری سیٹ کرنے کا بٹن"
+  },
+  "exportSettings": {
+    "message": "برآمد",
+    "description": "Export settings button"
+  },
+  "importSettings": {
+    "message": "درآمد",
+    "description": "Import settings button"
+  },
+  "exportSuccess": {
+    "message": "ترتیبات کامیابی سے برآمد ہو گئیں",
+    "description": "Export success notification"
+  },
+  "exportError": {
+    "message": "ترتیبات برآمد کرنے میں ناکام",
+    "description": "Export error notification"
+  },
+  "importSuccess": {
+    "message": "ترتیبات کامیابی سے درآمد ہو گئیں",
+    "description": "Import success notification"
+  },
+  "importError": {
+    "message": "ترتیبات درآمد کرنے میں ناکام",
+    "description": "Import error notification"
+  },
+  "syncInfo": {
+    "message": "ترتیبات خودکار طور پر آپ کے Google اکاؤنٹ (Chrome) یا Microsoft اکاؤنٹ (Edge) میں مطابقت پذیر ہوتی ہیں",
+    "description": "Auto-sync information"
   },
   "settingsSaved": {
     "message": "ترتیبات محفوظ ہو گئیں",
@@ -358,6 +398,14 @@
   "backgroundAction": {
     "message": "بیک گراؤنڈ میں کھولیں",
     "description": "بیک گراؤنڈ میں کھولنے کا عمل"
+  },
+  "copyAction": {
+    "message": "کاپی کریں",
+    "description": "Copy selected text or link URL to clipboard"
+  },
+  "copiedToClipboard": {
+    "message": "کلپ بورڈ میں کاپی ہو گیا",
+    "description": "Hint after copy action"
   },
   "dragSearchEngine": {
     "message": "ڈریگ سرچ انجن URL",

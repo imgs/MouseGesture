@@ -243,6 +243,18 @@
     "message": "Indstillinger",
     "description": "Settings title"
   },
+  "customizedBehavior": {
+    "message": "Tilpasset adfærd",
+    "description": "Customized behavior section title"
+  },
+  "disableMouseGesturesForSites": {
+    "message": "Deaktivér musepatruljer og supertræk for disse websteder",
+    "description": "Label for the list of sites where gestures and super drag are disabled"
+  },
+  "disabledSitesHint": {
+    "message": "Et websted per linje. Domæne (f.eks. youtube.com) eller fuld URL.",
+    "description": "Hint for the disabled sites textarea"
+  },
   "enableGesture": {
     "message": "Aktiver Musegestus",
     "description": "Enable mouse gesture option"
@@ -294,6 +306,34 @@
   "reset": {
     "message": "Nulstil",
     "description": "Reset settings button"
+  },
+  "exportSettings": {
+    "message": "Eksporter",
+    "description": "Export settings button"
+  },
+  "importSettings": {
+    "message": "Importer",
+    "description": "Import settings button"
+  },
+  "exportSuccess": {
+    "message": "Indstillinger eksporteret succesfuldt",
+    "description": "Export success notification"
+  },
+  "exportError": {
+    "message": "Kunne ikke eksportere indstillinger",
+    "description": "Export error notification"
+  },
+  "importSuccess": {
+    "message": "Indstillinger importeret succesfuldt",
+    "description": "Import success notification"
+  },
+  "importError": {
+    "message": "Kunne ikke importere indstillinger",
+    "description": "Import error notification"
+  },
+  "syncInfo": {
+    "message": "Indstillinger synkroniseres automatisk til din Google-konto (Chrome) eller Microsoft-konto (Edge)",
+    "description": "Auto-sync information"
   },
   "settingsSaved": {
     "message": "Indstillinger Anvendt",
@@ -358,6 +398,14 @@
   "backgroundAction": {
     "message": "Åbn i Baggrund",
     "description": "Open in background action"
+  },
+  "copyAction": {
+    "message": "Kopier",
+    "description": "Copy selected text or link URL to clipboard"
+  },
+  "copiedToClipboard": {
+    "message": "Kopieret til udklipsholder",
+    "description": "Hint after copy action"
   },
   "dragSearchEngine": {
     "message": "Træk Søgemaskine URL",

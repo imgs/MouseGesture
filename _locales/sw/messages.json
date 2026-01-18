@@ -243,6 +243,18 @@
     "message": "Mipangilio",
     "description": "Kichwa cha mipangilio"
   },
+  "customizedBehavior": {
+    "message": "Tabia maalum",
+    "description": "Customized behavior section title"
+  },
+  "disableMouseGesturesForSites": {
+    "message": "Zima ishara ya kipanya na kuburuta kwa tovuti hizi",
+    "description": "Label for the list of sites where gestures and super drag are disabled"
+  },
+  "disabledSitesHint": {
+    "message": "Tovuti moja kwa mstari. Kikoa (mf. youtube.com) au URL kamili.",
+    "description": "Hint for the disabled sites textarea"
+  },
   "enableGesture": {
     "message": "Washa Vivyo vya Panya",
     "description": "Chaguo la kuwasha vivyo vya panya"
@@ -294,6 +306,34 @@
   "reset": {
     "message": "Weka Upya",
     "description": "Kitufe cha kuweka upya mipangilio"
+  },
+  "exportSettings": {
+    "message": "Hamisha",
+    "description": "Export settings button"
+  },
+  "importSettings": {
+    "message": "Ingiza",
+    "description": "Import settings button"
+  },
+  "exportSuccess": {
+    "message": "Mipangilio imehamishwa kwa mafanikio",
+    "description": "Export success notification"
+  },
+  "exportError": {
+    "message": "Imeshindwa kuhamisha mipangilio",
+    "description": "Export error notification"
+  },
+  "importSuccess": {
+    "message": "Mipangilio imeingizwa kwa mafanikio",
+    "description": "Import success notification"
+  },
+  "importError": {
+    "message": "Imeshindwa kuingiza mipangilio",
+    "description": "Import error notification"
+  },
+  "syncInfo": {
+    "message": "Mipangilio inasawazishwa kiotomatiki kwenye akaunti yako ya Google (Chrome) au akaunti ya Microsoft (Edge)",
+    "description": "Auto-sync information"
   },
   "settingsSaved": {
     "message": "Mipangilio Imetumika",
@@ -358,6 +398,14 @@
   "backgroundAction": {
     "message": "Fungua kwa Mazingira ya Nyuma",
     "description": "Kitendo cha kufungua kwa mazingira ya nyuma"
+  },
+  "copyAction": {
+    "message": "Nakili",
+    "description": "Copy selected text or link URL to clipboard"
+  },
+  "copiedToClipboard": {
+    "message": "Imenakiliwa kwenye ubao wa kunakili",
+    "description": "Hint after copy action"
   },
   "dragSearchEngine": {
     "message": "URL ya Injini ya Utafutaji ya Kuburuta",
