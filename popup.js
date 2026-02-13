@@ -100,6 +100,7 @@ const defaultSettings = {
   trailWidth: 3,
   enableSuperDrag: true,
   enableDragTextSearch: true,
+  autoDownloadOnDragFile: false,
   enableImagePreview: true,
   enableDuplicateCheck: true,
   autoCloseDetectedTabs: false,
@@ -423,6 +424,7 @@ function loadSettings() {
       trailWidth: 3,
       enableSuperDrag: true,
       enableDragTextSearch: true,
+      autoDownloadOnDragFile: false,
       enableImagePreview: true,
       enableDuplicateCheck: true,
       autoCloseDetectedTabs: false,
@@ -478,6 +480,7 @@ function loadSettings() {
       document.getElementById('trail-width-value').textContent = items.trailWidth;
       document.getElementById('super-drag').checked = items.enableSuperDrag;
       document.getElementById('drag-text-search').checked = items.enableDragTextSearch;
+      document.getElementById('auto-download-on-drag-file').checked = !!items.autoDownloadOnDragFile;
       document.getElementById('image-preview').checked = items.enableImagePreview;
       document.getElementById('duplicate-check').checked = items.enableDuplicateCheck;
       document.getElementById('auto-close-duplicates').checked = items.autoCloseDetectedTabs;
@@ -492,10 +495,10 @@ function loadSettings() {
       }
       
       // 应用超级拖拽方向自定义
-      document.getElementById('drag-up-action').value = items.dragUpAction;
-      document.getElementById('drag-right-action').value = items.dragRightAction;
-      document.getElementById('drag-down-action').value = items.dragDownAction;
-      document.getElementById('drag-left-action').value = items.dragLeftAction;
+      document.getElementById('drag-up-action').value = items.dragUpAction || 'background';
+      document.getElementById('drag-right-action').value = items.dragRightAction || 'background';
+      document.getElementById('drag-down-action').value = items.dragDownAction || 'background';
+      document.getElementById('drag-left-action').value = items.dragLeftAction || 'background';
       document.getElementById('drag-search-engine').value = items.dragSearchEngine;
       
       // 应用链接预览设置
@@ -879,6 +882,7 @@ function getSettingsSnapshot() {
     trailWidth: parseInt(trailWidthInput.value),
     enableSuperDrag: superDragCheckbox.checked,
     enableDragTextSearch: document.getElementById('drag-text-search').checked,
+    autoDownloadOnDragFile: document.getElementById('auto-download-on-drag-file').checked,
     enableImagePreview: imagePreviewCheckbox.checked,
     enableDuplicateCheck: duplicateCheckCheckbox.checked,
     autoCloseDetectedTabs: autoCloseDuplicatesCheckbox.checked,
@@ -1132,7 +1136,7 @@ function importSettings(settings) {
     const validSettings = {};
     const allowedKeys = [
       'enableGesture', 'showGestureTrail', 'showGestureHint', 'trailColor', 'trailWidth',
-      'enableSuperDrag', 'enableDragTextSearch', 'enableImagePreview', 'enableDuplicateCheck',
+      'enableSuperDrag', 'enableDragTextSearch', 'autoDownloadOnDragFile', 'enableImagePreview', 'enableDuplicateCheck',
       'autoCloseDetectedTabs', 'enableSmoothScroll', 'enableDebugPanel', 'showTabCountBadge',
       'language', 'theme',
       'dragUpAction', 'dragRightAction', 'dragDownAction', 'dragLeftAction', 'dragSearchEngine',
@@ -1273,6 +1277,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   
   CommonUtils.addChangeListener('drag-text-search', saveSettings);
+  CommonUtils.addChangeListener('auto-download-on-drag-file', saveSettings);
   
   // 重复标签检测开关 - 需要特殊处理
   duplicateCheckCheckbox.addEventListener('change', function() {

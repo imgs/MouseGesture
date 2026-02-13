@@ -12,7 +12,7 @@
     <div class="header">
       <h1><a href="https://abcrk.com/420.html" target="_blank" data-i18n="title">鼠标手势</a></h1>
       <div class="header-buttons">
-        <a href="https://112345.xyz" target="_blank" class="header-button like-button" data-i18n-title="likeSupportAuthor" data-i18n-aria-label="likeSupportAuthor" title="通过该网站链接购买商品支持作者" aria-label="通过该网站链接购买商品支持作者">🫶</a>
+        <a href="https://112345.xyz" target="_blank" class="header-button like-button" data-i18n-title="likeSupportAuthor" data-i18n-aria-label="likeSupportAuthor" title="通过该网站链接购买商品支持作者" aria-label="通过该网站链接购买商品支持作者">⭐</a>
         <a href="https://abcrk.com/reward" target="_blank" class="header-button kofi-button" data-i18n-title="buyMeACoffee">☕</a>
         <button id="theme-toggle" class="header-button theme-toggle" data-i18n-title="toggleTheme">🌙</button>
       </div>
@@ -59,6 +59,10 @@
           <input type="checkbox" id="drag-text-search" checked>
         </div>
         <div class="setting-item">
+          <label for="auto-download-on-drag-file" data-i18n="autoDownloadOnDragFile">拖拽图片/文件自动下载</label>
+          <input type="checkbox" id="auto-download-on-drag-file">
+        </div>
+        <div class="setting-item">
           <label for="image-preview" data-i18n="enableImagePreview">启用图片预览</label>
           <input type="checkbox" id="image-preview" checked>
         </div>
@@ -84,13 +88,13 @@
     <!-- 自定义行为：在指定网站禁用鼠标手势和超级拖拽 -->
     <div class="section" id="customized-behavior-feature">
       <div class="section-header">
-        <h2 data-i18n="customizedBehavior">Customized behavior</h2>
+        <h2 data-i18n="customizedBehavior">Block list</h2>
         <div class="status-container">
           <span id="customized-save-status" class="save-status section-save-status"></span>
+          <span class="operation-hint" data-i18n="disableMouseGesturesForSites">Disable mouse gestures for these sites</span>
         </div>
       </div>
       <div class="customized-behavior-body">
-        <label for="disabled-sites-list" class="customized-behavior-title" data-i18n="disableMouseGesturesForSites">Disable mouse gestures for these sites</label>
         <textarea id="disabled-sites-list" class="disabled-sites-textarea" rows="4" placeholder="youtube.com"></textarea>
         <small class="customized-behavior-hint" data-i18n="disabledSitesHint">One site per line. Domain (e.g. youtube.com) or full URL.</small>
       </div>
@@ -878,6 +882,10 @@
               <select id="drag-up-action" class="drag-action-select">
                 <option value="foreground" data-i18n="foregroundAction">前台打开</option>
                 <option value="background" data-i18n="backgroundAction">后台打开</option>
+                <option value="splitLeft" data-i18n="splitViewLeft">分屏-左侧</option>
+                <option value="splitRight" data-i18n="splitViewRight">分屏-右侧</option>
+                <option value="splitUp" data-i18n="splitViewUp">分屏-上方</option>
+                <option value="splitDown" data-i18n="splitViewDown">分屏-下方</option>
                 <option value="copy" data-i18n="copyAction">复制</option>
                 <option value="none" data-i18n="noAction">不执行操作</option>
               </select>
@@ -896,6 +904,10 @@
               <select id="drag-right-action" class="drag-action-select">
                 <option value="foreground" data-i18n="foregroundAction">前台打开</option>
                 <option value="background" data-i18n="backgroundAction">后台打开</option>
+                <option value="splitLeft" data-i18n="splitViewLeft">分屏-左侧</option>
+                <option value="splitRight" data-i18n="splitViewRight">分屏-右侧</option>
+                <option value="splitUp" data-i18n="splitViewUp">分屏-上方</option>
+                <option value="splitDown" data-i18n="splitViewDown">分屏-下方</option>
                 <option value="copy" data-i18n="copyAction">复制</option>
                 <option value="none" data-i18n="noAction">不执行操作</option>
               </select>
@@ -914,6 +926,10 @@
               <select id="drag-down-action" class="drag-action-select">
                 <option value="foreground" data-i18n="foregroundAction">前台打开</option>
                 <option value="background" data-i18n="backgroundAction">后台打开</option>
+                <option value="splitLeft" data-i18n="splitViewLeft">分屏-左侧</option>
+                <option value="splitRight" data-i18n="splitViewRight">分屏-右侧</option>
+                <option value="splitUp" data-i18n="splitViewUp">分屏-上方</option>
+                <option value="splitDown" data-i18n="splitViewDown">分屏-下方</option>
                 <option value="copy" data-i18n="copyAction">复制</option>
                 <option value="none" data-i18n="noAction">不执行操作</option>
               </select>
@@ -932,6 +948,10 @@
               <select id="drag-left-action" class="drag-action-select">
                 <option value="foreground" data-i18n="foregroundAction">前台打开</option>
                 <option value="background" data-i18n="backgroundAction">后台打开</option>
+                <option value="splitLeft" data-i18n="splitViewLeft">分屏-左侧</option>
+                <option value="splitRight" data-i18n="splitViewRight">分屏-右侧</option>
+                <option value="splitUp" data-i18n="splitViewUp">分屏-上方</option>
+                <option value="splitDown" data-i18n="splitViewDown">分屏-下方</option>
                 <option value="copy" data-i18n="copyAction">复制</option>
                 <option value="none" data-i18n="noAction">不执行操作</option>
               </select>
@@ -955,7 +975,7 @@
           <li data-i18n="localSearchExample">百度搜索: https://www.baidu.com/s?wd={q}</li>
           <li data-i18n="bingExample">必应搜索: https://www.bing.com/search?q={q}</li>
         </ul>
-        <small data-i18n="superDragDescription">超级拖拽功能可用于链接、图片和选中的文本。拖拽方向决定新标签页的打开方式。</small>
+        <small data-i18n="superDragDescription">超级拖拽功能可用于链接、图片和选中的文本。可为上/下/左/右各方向分别设置打开方式（前台、后台或分屏左/右/上/下）。</small>
       </div>
     </div>
     

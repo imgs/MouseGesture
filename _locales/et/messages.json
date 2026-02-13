@@ -44,7 +44,7 @@
     "description": "Open link in background"
   },
   "superDragDescription": {
-    "message": "Super-halvimise funktsioon töötab linkide, piltide ja valitud teksti jaoks. Kui valitud tekst on URL, avatakse see linkina; muidu otsitakse seda. Halvimise suund määrab, kuidas uued kaardid avatakse.",
+    "message": "Super-halvimine töötab linkide, piltide ja valitud teksti jaoks. Saate iga žesti suuna (üles/alla/vasakule/paremale) jaoks seada avamise meetodi, sealhulgas esiplaani, tausta või poolitatud vaadet (vasakule/paremale/üles/alla).",
     "description": "Super drag feature description"
   },
   "left": {
@@ -244,8 +244,8 @@
     "description": "Settings title"
   },
   "customizedBehavior": {
-    "message": "Kohandatud käitumine",
-    "description": "Customized behavior section title"
+    "message": "Blokeerimisloend",
+    "description": "Block list section title"
   },
   "disableMouseGesturesForSites": {
     "message": "Keela hiirežestid ja üli lohistamine nendel saiditel",
@@ -282,6 +282,10 @@
   "enableDragTextSearch": {
     "message": "Luba Halvi Teksti Otsing",
     "description": "Enable drag text search option"
+  },
+  "autoDownloadOnDragFile": {
+    "message": "Laadi pilt/fail alla tõmbamisel",
+    "description": "When the drag target is an image or other downloadable file, start download automatically"
   },
   "enableImagePreview": {
     "message": "Luba Pildi Eelvaade",
@@ -922,5 +926,25 @@
   "showTabCountBadge": {
     "message": "Näita Kaartide Arvu",
     "description": "Show tab count badge option"
+  },
+  "splitViewAction": {
+    "message": "Jagatud vaade",
+    "description": "Ava jagatud vaate aknas"
+  },
+  "splitViewLeft": {
+    "message": "Jaga - vasak",
+    "description": "Jagatud vaade, uus aken vasakul poolel"
+  },
+  "splitViewRight": {
+    "message": "Jaga - parem",
+    "description": "Jagatud vaade, uus aken paremal poolel"
+  },
+  "splitViewUp": {
+    "message": "Jaga - üles",
+    "description": "Jagatud vaade, uus aken ülemisel poolel"
+  },
+  "splitViewDown": {
+    "message": "Jaga - alla",
+    "description": "Jagatud vaade, uus aken alumisel poolel"
   }
 }

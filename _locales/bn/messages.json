@@ -44,7 +44,7 @@
     "description": "Open link in background"
   },
   "superDragDescription": {
-    "message": "সুপার ড্র্যাগ বৈশিষ্ট্য লিঙ্ক, ছবি এবং নির্বাচিত টেক্সটের জন্য কাজ করে। যখন নির্বাচিত টেক্সট একটি URL হয়, এটি একটি লিঙ্ক হিসেবে খুলবে; অন্যথায় এটি অনুসন্ধান করা হবে। ড্র্যাগের দিক নির্ধারণ করে নতুন ট্যাব কিভাবে খোলা হয়।",
+    "message": "সুপার ড্র্যাগ লিঙ্ক, ছবি এবং নির্বাচিত টেক্সটের জন্য কাজ করে। আপনি প্রতিটি জেসচার দিকের (উপর/নিচ/বাম/ডান) জন্য ওপেনিং পদ্ধতি সেট করতে পারেন, ফোরগ্রাউন্ড, ব্যাকগ্রাউন্ড বা স্প্লিট ভিউ (বাম/ডান/উপর/নিচ) সহ।",
     "description": "Super drag feature description"
   },
   "left": {
@@ -244,8 +244,8 @@
     "description": "Settings title"
   },
   "customizedBehavior": {
-    "message": "কাস্টমাইজড আচরণ",
-    "description": "Customized behavior section title"
+    "message": "ব্লক তালিকা",
+    "description": "Block list section title"
   },
   "disableMouseGesturesForSites": {
     "message": "এই সাইটগুলিতে মাউস জেসচার এবং সুপার ড্র্যাগ নিষ্ক্রিয় করুন",
@@ -282,6 +282,10 @@
   "enableDragTextSearch": {
     "message": "ড্র্যাগ টেক্সট অনুসন্ধান সক্রিয় করুন",
     "description": "Enable drag text search option"
+  },
+  "autoDownloadOnDragFile": {
+    "message": "ড্র্যাগে ছবি/ফাইল অটো ডাউনলোড",
+    "description": "When the drag target is an image or other downloadable file, start download automatically"
   },
   "enableImagePreview": {
     "message": "ছবি প্রিভিউ সক্রিয় করুন",
@@ -922,5 +926,25 @@
   "showTabCountBadge": {
     "message": "ট্যাব সংখ্যা দেখান",
     "description": "Show tab count badge option"
+  },
+  "splitViewAction": {
+    "message": "বিভক্ত দৃশ্য",
+    "description": "বিভক্ত দৃশ্য উইন্ডোতে খুলুন"
+  },
+  "splitViewLeft": {
+    "message": "বিভক্ত - বাম",
+    "description": "বিভক্ত দৃশ্য, বাম অর্ধে নতুন উইন্ডো"
+  },
+  "splitViewRight": {
+    "message": "বিভক্ত - ডান",
+    "description": "বিভক্ত দৃশ্য, ডান অর্ধে নতুন উইন্ডো"
+  },
+  "splitViewUp": {
+    "message": "বিভক্ত - উপর",
+    "description": "বিভক্ত দৃশ্য, উপরের অর্ধে নতুন উইন্ডো"
+  },
+  "splitViewDown": {
+    "message": "বিভক্ত - নিচে",
+    "description": "বিভক্ত দৃশ্য, নিচের অর্ধে নতুন উইন্ডো"
   }
 }

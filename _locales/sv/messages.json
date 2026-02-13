@@ -44,7 +44,7 @@
     "description": "Open link in background"
   },
   "superDragDescription": {
-    "message": "Super-drag funktionen fungerar för länkar, bilder och markerad text. När markerad text är en URL öppnas den som en länk; annars söks den. Dragriktningen avgör hur nya flikar öppnas.",
+    "message": "Super-drag fungerar för länkar, bilder och markerad text. Du kan ställa in öppningsmetoden för varje gestriktning (upp/ner/vänster/höger), inklusive förgrund, bakgrund eller delad vy (vänster/höger/upp/ner).",
     "description": "Super drag feature description"
   },
   "left": {
@@ -244,8 +244,8 @@
     "description": "Settings title"
   },
   "customizedBehavior": {
-    "message": "Anpassat beteende",
-    "description": "Customized behavior section title"
+    "message": "Blockeringslista",
+    "description": "Block list section title"
   },
   "disableMouseGesturesForSites": {
     "message": "Inaktivera musgester och superdra för dessa webbplatser",
@@ -282,6 +282,10 @@
   "enableDragTextSearch": {
     "message": "Aktivera Drag Text Sökning",
     "description": "Enable drag text search option"
+  },
+  "autoDownloadOnDragFile": {
+    "message": "Ladda ner bild/fil automatiskt vid dragning",
+    "description": "When the drag target is an image or other downloadable file, start download automatically"
   },
   "enableImagePreview": {
     "message": "Aktivera Bild Förhandsvisning",
@@ -922,5 +926,25 @@
   "showTabCountBadge": {
     "message": "Visa Flikantal",
     "description": "Show tab count badge option"
+  },
+  "splitViewAction": {
+    "message": "Delad vy",
+    "description": "Öppna i delat vyfönster"
+  },
+  "splitViewLeft": {
+    "message": "Dela - vänster",
+    "description": "Delad vy, nytt fönster i vänstra halvan"
+  },
+  "splitViewRight": {
+    "message": "Dela - höger",
+    "description": "Delad vy, nytt fönster i högra halvan"
+  },
+  "splitViewUp": {
+    "message": "Dela - över",
+    "description": "Delad vy, nytt fönster i övre halvan"
+  },
+  "splitViewDown": {
+    "message": "Dela - under",
+    "description": "Delad vy, nytt fönster i nedre halvan"
   }
 }

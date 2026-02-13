@@ -44,7 +44,7 @@
     "description": "Apri link in sfondo"
   },
   "superDragDescription": {
-    "message": "La funzione Super Trascinamento funziona per link, immagini e testo selezionato. Quando il testo selezionato è un URL, si aprirà come link; altrimenti verrà cercato. La direzione del trascinamento determina come vengono aperte le nuove schede.",
+    "message": "Super Trascinamento funziona per link, immagini e testo selezionato. Puoi impostare il metodo di apertura per ogni direzione del gesto (su/giù/sinistra/destra), inclusi primo piano, sfondo o vista divisa (sinistra/destra/su/giù).",
     "description": "Descrizione funzione super trascinamento"
   },
   "left": {
@@ -244,8 +244,8 @@
     "description": "Titolo impostazioni"
   },
   "customizedBehavior": {
-    "message": "Comportamento personalizzato",
-    "description": "Customized behavior section title"
+    "message": "Elenco blocchi",
+    "description": "Block list section title"
   },
   "disableMouseGesturesForSites": {
     "message": "Disattiva gesti del mouse e super trascinamento per questi siti",
@@ -282,6 +282,10 @@
   "enableDragTextSearch": {
     "message": "Abilita Ricerca Testo Trascinamento",
     "description": "Opzione abilita ricerca testo trascinamento"
+  },
+  "autoDownloadOnDragFile": {
+    "message": "Scarica immagine/file al trascinare",
+    "description": "When the drag target is an image or other downloadable file, start download automatically"
   },
   "enableImagePreview": {
     "message": "Abilita Anteprima Immagini",
@@ -922,5 +926,25 @@
   "showTabCountBadge": {
     "message": "Mostra Numero di Schede",
     "description": "Show tab count badge option"
+  },
+  "splitViewAction": {
+    "message": "Vista divisa",
+    "description": "Apri in finestra a vista divisa"
+  },
+  "splitViewLeft": {
+    "message": "Dividi - sinistra",
+    "description": "Vista divisa, nuova finestra a sinistra"
+  },
+  "splitViewRight": {
+    "message": "Dividi - destra",
+    "description": "Vista divisa, nuova finestra a destra"
+  },
+  "splitViewUp": {
+    "message": "Dividi - sopra",
+    "description": "Vista divisa, nuova finestra in alto"
+  },
+  "splitViewDown": {
+    "message": "Dividi - sotto",
+    "description": "Vista divisa, nuova finestra in basso"
   }
 }

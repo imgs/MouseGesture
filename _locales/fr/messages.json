@@ -44,7 +44,7 @@
     "description": "Open link in background"
   },
   "superDragDescription": {
-    "message": "La fonction de super glissement fonctionne pour les liens, images et texte sélectionné. Lorsque le texte sélectionné est une URL, il s'ouvrira comme un lien ; sinon, il sera recherché. La direction de glissement détermine la façon dont les nouveaux onglets s'ouvrent.",
+    "message": "Super Glissement fonctionne pour les liens, images et texte sélectionné. Vous pouvez définir la méthode d'ouverture pour chaque direction de geste (haut/bas/gauche/droite), y compris premier plan, arrière-plan ou vue partagée (gauche/droite/haut/bas).",
     "description": "Super drag feature description"
   },
   "left": {
@@ -244,8 +244,8 @@
     "description": "Settings title"
   },
   "customizedBehavior": {
-    "message": "Comportement personnalisé",
-    "description": "Customized behavior section title"
+    "message": "Liste de blocage",
+    "description": "Block list section title"
   },
   "disableMouseGesturesForSites": {
     "message": "Désactiver les gestes souris et le super glisser sur ces sites",
@@ -282,6 +282,10 @@
   "enableDragTextSearch": {
     "message": "Activer la Recherche de Texte par Glissement",
     "description": "Enable drag text search option"
+  },
+  "autoDownloadOnDragFile": {
+    "message": "Télécharger image/fichier en glissant",
+    "description": "When the drag target is an image or other downloadable file, start download automatically"
   },
   "enableImagePreview": {
     "message": "Activer l'Aperçu d'Image",
@@ -922,6 +926,26 @@
   "showTabCountBadge": {
     "message": "Afficher le Nombre de Tabs",
     "description": "Show tab count badge option"
+  },
+  "splitViewAction": {
+    "message": "Vue partagée",
+    "description": "Ouvrir dans une fenêtre en vue partagée"
+  },
+  "splitViewLeft": {
+    "message": "Partager - gauche",
+    "description": "Vue partagée, nouvelle fenêtre à gauche"
+  },
+  "splitViewRight": {
+    "message": "Partager - droite",
+    "description": "Vue partagée, nouvelle fenêtre à droite"
+  },
+  "splitViewUp": {
+    "message": "Partager - haut",
+    "description": "Vue partagée, nouvelle fenêtre en haut"
+  },
+  "splitViewDown": {
+    "message": "Partager - bas",
+    "description": "Vue partagée, nouvelle fenêtre en bas"
   }
 }
 

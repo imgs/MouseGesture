@@ -44,7 +44,7 @@
     "description": "Open link in background"
   },
   "superDragDescription": {
-    "message": "Super-træk funktionen virker for links, billeder og valgt tekst. Når valgt tekst er en URL, åbnes den som et link; ellers søges der. Trækretningen bestemmer hvordan nye faner åbnes.",
+    "message": "Super-træk virker for links, billeder og valgt tekst. Du kan indstille åbningsmetoden for hver gestretning (op/ned/venstre/højre), inkl. forgrund, baggrund eller splitvisning (venstre/højre/op/ned).",
     "description": "Super drag feature description"
   },
   "left": {
@@ -244,8 +244,8 @@
     "description": "Settings title"
   },
   "customizedBehavior": {
-    "message": "Tilpasset adfærd",
-    "description": "Customized behavior section title"
+    "message": "Blokeringsliste",
+    "description": "Block list section title"
   },
   "disableMouseGesturesForSites": {
     "message": "Deaktivér musepatruljer og supertræk for disse websteder",
@@ -282,6 +282,10 @@
   "enableDragTextSearch": {
     "message": "Aktiver Træk Tekst Søgning",
     "description": "Enable drag text search option"
+  },
+  "autoDownloadOnDragFile": {
+    "message": "Auto-download billede/fil ved træk",
+    "description": "When the drag target is an image or other downloadable file, start download automatically"
   },
   "enableImagePreview": {
     "message": "Aktiver Billede Forhåndsvisning",
@@ -922,5 +926,25 @@
   "showTabCountBadge": {
     "message": "Vis Tab Antal",
     "description": "Show tab count badge option"
+  },
+  "splitViewAction": {
+    "message": "Opdelt visning",
+    "description": "Åbn i opdelt visningsvindue"
+  },
+  "splitViewLeft": {
+    "message": "Opdel - venstre",
+    "description": "Opdelt visning, nyt vindue i venstre halvdel"
+  },
+  "splitViewRight": {
+    "message": "Opdel - højre",
+    "description": "Opdelt visning, nyt vindue i højre halvdel"
+  },
+  "splitViewUp": {
+    "message": "Opdel - top",
+    "description": "Opdelt visning, nyt vindue i øverste halvdel"
+  },
+  "splitViewDown": {
+    "message": "Opdel - bund",
+    "description": "Opdelt visning, nyt vindue i nederste halvdel"
   }
 }

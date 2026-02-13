@@ -44,7 +44,7 @@
     "description": "Open link in background"
   },
   "superDragDescription": {
-    "message": "Funkce super přetažení funguje pro odkazy, obrázky a vybraný text. Pokud je vybraný text URL, otevře se jako odkaz; jinak bude vyhledán. Směr přetažení určuje, jak budou nové karty otevřeny.",
+    "message": "Super přetažení funguje pro odkazy, obrázky a vybraný text. Pro každý směr gesta (nahoře/dole/vlevo/vpravo) můžete nastavit způsob otevření včetně popředí, pozadí nebo rozděleného zobrazení (vlevo/vpravo/nahoře/dole).",
     "description": "Super drag feature description"
   },
   "left": {
@@ -244,8 +244,8 @@
     "description": "Settings title"
   },
   "customizedBehavior": {
-    "message": "Vlastní chování",
-    "description": "Customized behavior section title"
+    "message": "Blokovací seznam",
+    "description": "Block list section title"
   },
   "disableMouseGesturesForSites": {
     "message": "Na těchto webech zakázat mouse gesta a super přetažení",
@@ -282,6 +282,10 @@
   "enableDragTextSearch": {
     "message": "Povolit vyhledávání tažením textu",
     "description": "Enable drag text search option"
+  },
+  "autoDownloadOnDragFile": {
+    "message": "Auto stáhnout obrázek/soubor při přetažení",
+    "description": "When the drag target is an image or other downloadable file, start download automatically"
   },
   "enableImagePreview": {
     "message": "Povolit náhled obrázku",
@@ -922,5 +926,25 @@
   "showTabCountBadge": {
     "message": "Zobrazit počet karet",
     "description": "Show tab count badge option"
+  },
+  "splitViewAction": {
+    "message": "Rozdělené zobrazení",
+    "description": "Otevřít v okně rozděleného zobrazení"
+  },
+  "splitViewLeft": {
+    "message": "Rozdělit - vlevo",
+    "description": "Rozdělené zobrazení, nové okno v levé polovině"
+  },
+  "splitViewRight": {
+    "message": "Rozdělit - vpravo",
+    "description": "Rozdělené zobrazení, nové okno v pravé polovině"
+  },
+  "splitViewUp": {
+    "message": "Rozdělit - nahoře",
+    "description": "Rozdělené zobrazení, nové okno v horní polovině"
+  },
+  "splitViewDown": {
+    "message": "Rozdělit - dole",
+    "description": "Rozdělené zobrazení, nové okno v dolní polovině"
   }
 }

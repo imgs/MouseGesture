@@ -44,7 +44,7 @@
     "description": "Open link in background"
   },
   "superDragDescription": {
-    "message": "Super-raahaus toiminto toimii linkeille, kuville ja valitulle tekstille. Kun valittu teksti on URL, se avataan linkkinä; muuten siitä haetaan. Raahaussuunta määrittää, miten uudet välilehdet avataan.",
+    "message": "Super-raahaus toimii linkeille, kuville ja valitulle tekstille. Voit asettaa avausmenetelmän jokaiselle eleen suunnalle (ylös/alas/vasen/oikea), mukaan lukien etualalla, taustalla tai jaketun näkymän (vasen/oikea/ylös/alas).",
     "description": "Super drag feature description"
   },
   "left": {
@@ -244,8 +244,8 @@
     "description": "Settings title"
   },
   "customizedBehavior": {
-    "message": "Mukautettu toiminta",
-    "description": "Customized behavior section title"
+    "message": "Estolista",
+    "description": "Block list section title"
   },
   "disableMouseGesturesForSites": {
     "message": "Poista hiirellä tehdyt eleet ja superveto käytöstä näillä sivustoilla",
@@ -282,6 +282,10 @@
   "enableDragTextSearch": {
     "message": "Ota Raahaa Teksti Haku Käyttöön",
     "description": "Enable drag text search option"
+  },
+  "autoDownloadOnDragFile": {
+    "message": "Lataa kuva/tiedosto raahaamalla",
+    "description": "When the drag target is an image or other downloadable file, start download automatically"
   },
   "enableImagePreview": {
     "message": "Ota Kuva Esikatselu Käyttöön",
@@ -922,5 +926,25 @@
   "showTabCountBadge": {
     "message": "Näytä Välilehtien Luku",
     "description": "Show tab count badge option"
+  },
+  "splitViewAction": {
+    "message": "Jaettu näkymä",
+    "description": "Ava jaetun näkymän ikkunassa"
+  },
+  "splitViewLeft": {
+    "message": "Jaa - vasen",
+    "description": "Jaettu näkymä, uusi ikkuna vasemmalla puoliskolla"
+  },
+  "splitViewRight": {
+    "message": "Jaa - oikea",
+    "description": "Jaettu näkymä, uusi ikkuna oikealla puoliskolla"
+  },
+  "splitViewUp": {
+    "message": "Jaa - ylä",
+    "description": "Jaettu näkymä, uusi ikkuna yläpuoliskolla"
+  },
+  "splitViewDown": {
+    "message": "Jaa - ala",
+    "description": "Jaettu näkymä, uusi ikkuna alapuoliskolla"
   }
 }

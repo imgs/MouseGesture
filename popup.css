@@ -90,7 +90,7 @@ body {
 }
 
 .container {
-  width: 420px;
+  width: 460px;
   padding: 10px 12px;
   border-radius: 16px;
   box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 
@@ -895,11 +895,13 @@ button:hover::before {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  flex-shrink: 0;
+  flex-shrink: 1;
+  flex-grow: 0;
   order: 2;
   margin-right: 10px;
   min-height: 20px;
   min-width: 150px;
+  max-width: none;
 }
 
 /* 区域保存状态样式 */
@@ -2174,9 +2176,6 @@ button:hover::before {
   pointer-events: none;
   transition: opacity 0.3s ease;
   white-space: nowrap;
-  max-width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
   z-index: 1;
 }
 

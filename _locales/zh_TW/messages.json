@@ -44,7 +44,7 @@
     "description": "Open link in background"
   },
   "superDragDescription": {
-    "message": "超級拖曳功能適用於連結、圖片和選取的文字。當選取的文字是 URL 時，會作為連結開啟；否則會進行搜尋。拖曳方向決定新分頁的開啟方式。",
+    "message": "超級拖曳功能適用於連結、圖片和選取的文字。可為上/下/左/右各方向分別設定開啟方式（前景、背景或分屏左/右/上/下）。",
     "description": "Super drag feature description"
   },
   "left": {
@@ -244,8 +244,8 @@
     "description": "Settings title"
   },
   "customizedBehavior": {
-    "message": "自訂行為",
-    "description": "Customized behavior section title"
+    "message": "黑名單",
+    "description": "黑名單區塊標題"
   },
   "disableMouseGesturesForSites": {
     "message": "在以下網站停用滑鼠手勢與超級拖曳",
@@ -282,6 +282,10 @@
   "enableDragTextSearch": {
     "message": "啟用拖曳文字搜尋",
     "description": "Enable drag text search option"
+  },
+  "autoDownloadOnDragFile": {
+    "message": "拖曳圖片/檔案自動下載",
+    "description": "當檢測到拖曳對象為圖片或其它可下載檔案時自動開始下載"
   },
   "enableImagePreview": {
     "message": "啟用圖片預覽",
@@ -922,5 +926,25 @@
   "showTabCountBadge": {
     "message": "顯示分頁數量徽章",
     "description": "Show tab count badge option"
+  },
+  "splitViewAction": {
+    "message": "分屏視圖",
+    "description": "在分屏視窗中開啟"
+  },
+  "splitViewLeft": {
+    "message": "分屏-左側",
+    "description": "分屏視圖，新視窗在左半屏"
+  },
+  "splitViewRight": {
+    "message": "分屏-右側",
+    "description": "分屏視圖，新視窗在右半屏"
+  },
+  "splitViewUp": {
+    "message": "分屏-上方",
+    "description": "分屏視圖，新視窗在上方半屏"
+  },
+  "splitViewDown": {
+    "message": "分屏-下方",
+    "description": "分屏視圖，新視窗在下方半屏"
   }
 } 

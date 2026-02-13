@@ -44,7 +44,7 @@
     "description": "Open link in background"
   },
   "superDragDescription": {
-    "message": "スーパードラッグ機能は、リンク、画像、選択したテキストに対して動作します。選択したテキストがURLの場合はリンクとして開き、そうでなければ検索されます。ドラッグ方向によって新しいタブの開き方が決まります。",
+    "message": "スーパードラッグはリンク、画像、選択テキストに対応しています。各ジェスチャー方向（上/下/左/右）ごとに、フォアグラウンド、バックグラウンド、分割表示（左/右/上/下）を含む開き方を設定できます。",
     "description": "Super drag feature description"
   },
   "left": {
@@ -244,8 +244,8 @@
     "description": "Settings title"
   },
   "customizedBehavior": {
-    "message": "カスタム動作",
-    "description": "Customized behavior section title"
+    "message": "ブロックリスト",
+    "description": "Block list section title"
   },
   "disableMouseGesturesForSites": {
     "message": "これらのサイトでマウスジェスチャーとスーパードラッグを無効にする",
@@ -282,6 +282,10 @@
   "enableDragTextSearch": {
     "message": "ドラッグテキスト検索を有効化",
     "description": "Enable drag text search option"
+  },
+  "autoDownloadOnDragFile": {
+    "message": "ドラッグで画像/ファイルを自動ダウンロード",
+    "description": "When the drag target is an image or other downloadable file, start download automatically"
   },
   "enableImagePreview": {
     "message": "画像プレビューを有効化",
@@ -922,6 +926,26 @@
   "showTabCountBadge": {
     "message": "タブ数を表示",
     "description": "Show tab count badge option"
+  },
+  "splitViewAction": {
+    "message": "分割表示",
+    "description": "分割表示ウィンドウで開く"
+  },
+  "splitViewLeft": {
+    "message": "分割 - 左",
+    "description": "分割表示、左半分に新しいウィンドウ"
+  },
+  "splitViewRight": {
+    "message": "分割 - 右",
+    "description": "分割表示、右半分に新しいウィンドウ"
+  },
+  "splitViewUp": {
+    "message": "分割 - 上",
+    "description": "分割表示、上半分に新しいウィンドウ"
+  },
+  "splitViewDown": {
+    "message": "分割 - 下",
+    "description": "分割表示、下半分に新しいウィンドウ"
   }
 } 
 

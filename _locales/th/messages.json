@@ -44,7 +44,7 @@
     "description": "Open link in background"
   },
   "superDragDescription": {
-    "message": "ฟีเจอร์ลากแบบซูเปอร์ทำงานกับลิงก์ รูปภาพ และข้อความที่เลือก เมื่อข้อความที่เลือกเป็น URL จะเปิดเป็นลิงก์ มิฉะนั้นจะค้นหา ทิศทางการลากกำหนดวิธีการเปิดแท็บใหม่",
+    "message": "ฟีเจอร์ลากแบบซูเปอร์ทำงานกับลิงก์ รูปภาพ และข้อความที่เลือก คุณสามารถตั้งค่าวิธีการเปิดสำหรับแต่ละทิศทางของท่าทาง (บน/ล่าง/ซ้าย/ขวา) รวมถึง foreground, background หรือมุมมองแบบแบ่ง (ซ้าย/ขวา/บน/ล่าง)",
     "description": "Super drag feature description"
   },
   "left": {
@@ -244,8 +244,8 @@
     "description": "Settings title"
   },
   "customizedBehavior": {
-    "message": "พฤติกรรมการกำหนดเอง",
-    "description": "Customized behavior section title"
+    "message": "รายการบล็อก",
+    "description": "Block list section title"
   },
   "disableMouseGesturesForSites": {
     "message": "ปิดการทำงานของเมาส์เจสเจอร์และซูเปอร์แดรกในไซต์เหล่านี้",
@@ -282,6 +282,10 @@
   "enableDragTextSearch": {
     "message": "เปิดใช้การค้นหาข้อความแบบลาก",
     "description": "Enable drag text search option"
+  },
+  "autoDownloadOnDragFile": {
+    "message": "ดาวน์โหลดรูป/ไฟล์อัตโนมัติเมื่อลาก",
+    "description": "When the drag target is an image or other downloadable file, start download automatically"
   },
   "enableImagePreview": {
     "message": "เปิดใช้การแสดงตัวอย่างรูปภาพ",
@@ -922,5 +926,25 @@
   "showTabCountBadge": {
     "message": "แสดงจำนวนแท็บ",
     "description": "Show tab count badge option"
+  },
+  "splitViewAction": {
+    "message": "มุมมองแยก",
+    "description": "เปิดในหน้าต่างมุมมองแยก"
+  },
+  "splitViewLeft": {
+    "message": "แยก - ซ้าย",
+    "description": "มุมมองแยก หน้าต่างใหม่ทางซ้ายครึ่ง"
+  },
+  "splitViewRight": {
+    "message": "แยก - ขวา",
+    "description": "มุมมองแยก หน้าต่างใหม่ทางขวาครึ่ง"
+  },
+  "splitViewUp": {
+    "message": "แยก - บน",
+    "description": "มุมมองแยก หน้าต่างใหม่ครึ่งบน"
+  },
+  "splitViewDown": {
+    "message": "แยก - ล่าง",
+    "description": "มุมมองแยก หน้าต่างใหม่ครึ่งล่าง"
   }
 }

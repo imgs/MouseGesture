@@ -44,7 +44,7 @@
     "description": "Відкрити посилання у фоні"
   },
   "superDragDescription": {
-    "message": "Функція Супер Перетягування працює для посилань, зображень і виділеного тексту. Коли виділений текст є URL, він відкриється як посилання; інакше він буде знайдений. Напрямок перетягування визначає, як відкриваються нові вкладки.",
+    "message": "Супер Перетягування працює для посилань, зображень і виділеного тексту. Ви можете встановити спосіб відкриття для кожного напрямку жесту (вгору/вниз/ліворуч/праворуч), зокрема передній план, фон або розділений вигляд (ліворуч/праворуч/вгору/вниз).",
     "description": "Опис функції супер перетягування"
   },
   "left": {
@@ -244,8 +244,8 @@
     "description": "Заголовок налаштувань"
   },
   "customizedBehavior": {
-    "message": "Користувацька поведінка",
-    "description": "Customized behavior section title"
+    "message": "Чорний список",
+    "description": "Block list section title"
   },
   "disableMouseGesturesForSites": {
     "message": "Вимкнути жест миші та супер перетягування на цих сайтах",
@@ -282,6 +282,10 @@
   "enableDragTextSearch": {
     "message": "Увімкнути Пошук Тексту Перетягуванням",
     "description": "Опція увімкнути пошук тексту перетягуванням"
+  },
+  "autoDownloadOnDragFile": {
+    "message": "Автозавантаження зображення/файлу при перетягуванні",
+    "description": "When the drag target is an image or other downloadable file, start download automatically"
   },
   "enableImagePreview": {
     "message": "Увімкнути Попередній Перегляд Зображень",
@@ -922,5 +926,25 @@
   "showTabCountBadge": {
     "message": "Показати число вкладок",
     "description": "Show tab count badge option"
+  },
+  "splitViewAction": {
+    "message": "Розділений вигляд",
+    "description": "Відкрити у вікні з розділеним виглядом"
+  },
+  "splitViewLeft": {
+    "message": "Розділити - зліва",
+    "description": "Розділений вигляд, нове вікно в лівій половині"
+  },
+  "splitViewRight": {
+    "message": "Розділити - справа",
+    "description": "Розділений вигляд, нове вікно в правій половині"
+  },
+  "splitViewUp": {
+    "message": "Розділити - зверху",
+    "description": "Розділений вигляд, нове вікно у верхній половині"
+  },
+  "splitViewDown": {
+    "message": "Розділити - знизу",
+    "description": "Розділений вигляд, нове вікно в нижній половині"
   }
 }

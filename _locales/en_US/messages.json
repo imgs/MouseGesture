@@ -44,7 +44,7 @@
     "description": "Open link in background"
   },
   "superDragDescription": {
-    "message": "Super Drag feature works for links, images, and selected text. When selected text is a URL, it will open as a link; otherwise, it will be searched. Drag direction determines how new tabs are opened.",
+    "message": "Super Drag works for links, images, and selected text. You can set the opening method for each gesture direction (up/down/left/right), including foreground, background, or split view (left/right/up/down).",
     "description": "Super drag feature description"
   },
   "left": {
@@ -244,8 +244,8 @@
     "description": "Settings title"
   },
   "customizedBehavior": {
-    "message": "Customized behavior",
-    "description": "Customized behavior section title"
+    "message": "Block list",
+    "description": "Block list section title"
   },
   "disableMouseGesturesForSites": {
     "message": "Disable mouse gestures for these sites",
@@ -282,6 +282,10 @@
   "enableDragTextSearch": {
     "message": "Enable Drag Text Search",
     "description": "Enable drag text search option"
+  },
+  "autoDownloadOnDragFile": {
+    "message": "Auto download image/file on drag",
+    "description": "When the drag target is an image or other downloadable file, start download automatically"
   },
   "enableImagePreview": {
     "message": "Enable Image Preview",
@@ -922,5 +926,25 @@
   "showTabCountBadge": {
     "message": "Show Tab Count Badge",
     "description": "Show tab count badge setting"
+  },
+  "splitViewAction": {
+    "message": "Split View",
+    "description": "Open in split view window"
+  },
+  "splitViewLeft": {
+    "message": "Split - Left",
+    "description": "Split view, new window on left half"
+  },
+  "splitViewRight": {
+    "message": "Split - Right",
+    "description": "Split view, new window on right half"
+  },
+  "splitViewUp": {
+    "message": "Split - Top",
+    "description": "Split view, new window on top half"
+  },
+  "splitViewDown": {
+    "message": "Split - Bottom",
+    "description": "Split view, new window on bottom half"
   }
 }

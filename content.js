@@ -552,7 +552,8 @@ let settings = {
   trailColor: '#FF9ECD',
   trailWidth: 3,
   enableSuperDrag: true,
-  enableDragTextSearch: true, // 添加拖拽文本搜索功能开关
+  enableDragTextSearch: true,
+  autoDownloadOnDragFile: false,
   enableImagePreview: true,
   enableDuplicateCheck: true,
   // 添加超级拖拽方向自定义，全部设为后台打开
@@ -567,6 +568,25 @@ let isExtensionValid = true; // 跟踪扩展上下文是否有效
 let gestureHint = null; // 用于存储手势提示元素
 let lastGestureEndTime = 0; // 添加一个变量来记录手势结束时间
 let imagePreview = null; // 用于存储图片预览元素
+
+// N 卡检测缓存：为兼容 HDR/RTX VSR，N 卡时自动使用简化手势提示（无 backdrop-filter）
+let isNvidiaGpuCached = null;
+function isNvidiaGpu() {
+  if (isNvidiaGpuCached !== null) return isNvidiaGpuCached;
+  try {
+    const canvas = document.createElement('canvas');
+    const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+    if (!gl) { isNvidiaGpuCached = false; return false; }
+    const ext = gl.getExtension('WEBGL_debug_renderer_info');
+    if (!ext) { isNvidiaGpuCached = false; return false; }
+    const renderer = (gl.getParameter(ext.UNMASKED_RENDERER_WEBGL) || '');
+    isNvidiaGpuCached = /nvidia/i.test(renderer);
+    return isNvidiaGpuCached;
+  } catch (e) {
+    isNvidiaGpuCached = false;
+    return false;
+  }
+}
 
 // 添加提示节流相关变量
 let lastHintTime = 0;
@@ -1133,7 +1153,8 @@ function loadSettings() {
       trailColor: '#FF9ECD',
       trailWidth: 3,
       enableSuperDrag: true,
-      enableDragTextSearch: true, // 添加拖拽文本搜索功能开关
+      enableDragTextSearch: true,
+      autoDownloadOnDragFile: false,
       enableImagePreview: true,
       enableDuplicateCheck: true,
       enableSmoothScroll: true,
@@ -3087,8 +3108,9 @@ function showGestureHint(action) {
   gestureHint.style.left = '50%';
   gestureHint.style.bottom = '100px';
   gestureHint.style.transform = 'translateX(-50%) translateY(20px)';
-  // 增强透明效果 - 提高透明度
-  gestureHint.style.backgroundColor = 'rgba(0, 0, 0, 0.35)'; // 从0.45改为0.35，进一步增加透明度
+  // N 卡时自动简化样式（无 backdrop-filter）以兼容 HDR/RTX VSR
+  const useSimplifiedHint = isNvidiaGpu();
+  gestureHint.style.backgroundColor = useSimplifiedHint ? 'rgba(0, 0, 0, 0.7)' : 'rgba(0, 0, 0, 0.35)';
   gestureHint.style.color = 'white';
   gestureHint.style.padding = '5px 10px 5px 4px'; 
   gestureHint.style.borderRadius = '22px';
@@ -3098,9 +3120,11 @@ function showGestureHint(action) {
   gestureHint.style.pointerEvents = 'none';
   // 优化阴影效果 - 减轻阴影
   gestureHint.style.boxShadow = '0 6px 16px rgba(0, 0, 0, 0.15), 0 2px 6px rgba(0, 0, 0, 0.1)'; // 进一步减轻阴影
-  // 降低模糊效果
+  // N 卡时不用 backdrop-filter，避免 HDR/RTX VSR 失效
+  if (!useSimplifiedHint) {
   gestureHint.style.backdropFilter = 'blur(8px)'; // 从16px降低到8px
   gestureHint.style.webkitBackdropFilter = 'blur(8px)'; // 从16px降低到8px
+  }
   // 增加边框透明度
   gestureHint.style.border = '1px solid rgba(255, 255, 255, 0.08)'; // 从0.15降低到0.08，使边框颜色更淡
   // 添加过渡效果
@@ -3165,7 +3189,7 @@ function showGestureHint(action) {
   
   // 如果是亮色背景，调整提示框样式
   if (isLightBg && !isDarkMode) {
-    gestureHint.style.backgroundColor = 'rgba(255, 255, 255, 0.65)'; // 从0.75降低到0.65，增加透明度
+    gestureHint.style.backgroundColor = useSimplifiedHint ? 'rgba(255, 255, 255, 0.92)' : 'rgba(255, 255, 255, 0.65)';
     gestureHint.style.border = '1px solid rgba(0, 0, 0, 0.02)'; // 从0.04降低到0.02，进一步减淡边框颜色
     gestureHint.style.boxShadow = '0 6px 16px rgba(0, 0, 0, 0.08), 0 2px 6px rgba(0, 0, 0, 0.04)'; // 减轻阴影
     text.style.color = 'rgba(0, 0, 0, 0.85)';
@@ -4259,6 +4283,26 @@ function handleDragMove(moveEvent) {
   }
 }
 
+// 判断链接是否为可下载文件（根据 URL 路径扩展名）
+function isDownloadableFileUrl(url) {
+  try {
+    const path = new URL(url).pathname.toLowerCase();
+    const extMatch = path.match(/\.([a-z0-9]+)$/i);
+    if (!extMatch) return false;
+    const ext = extMatch[1].toLowerCase();
+    const downloadableExts = [
+      'jpg', 'jpeg', 'png', 'gif', 'webp', 'bmp', 'svg', 'ico',
+      'pdf', 'doc', 'docx', 'xls', 'xlsx', 'ppt', 'pptx',
+      'zip', 'rar', '7z', 'tar', 'gz', 'bz2',
+      'exe', 'dmg', 'pkg', 'apk', 'msi',
+      'mp3', 'mp4', 'wav', 'avi', 'mov', 'webm', 'mkv', 'flac'
+    ];
+    return downloadableExts.includes(ext);
+  } catch (e) {
+    return false;
+  }
+}
+
 // 超级拖拽功能 - 处理拖拽结束
 function handleDragEnd(e) {
   // 移除事件监听
@@ -4335,6 +4379,14 @@ function handleDragEnd(e) {
     resetDragInfo();
     return;
   }
+
+  // 开关开启时：拖拽图片或可下载文件链接则自动下载
+  if (settings.autoDownloadOnDragFile && dragInfo.url &&
+      (dragInfo.type === 'image' || (dragInfo.type === 'link' && isDownloadableFileUrl(dragInfo.url)))) {
+    chrome.runtime.sendMessage({ action: 'downloadUrl', url: dragInfo.url }, () => {});
+    resetDragInfo();
+    return;
+  }
   
   // 复制动作：将选中的文本或链接/图片URL复制到剪贴板
   if (actionType === 'copy') {
@@ -4363,10 +4415,21 @@ function handleDragEnd(e) {
     return;
   }
   
+  // 分屏方向选项：splitLeft / splitRight / splitUp / splitDown
+  const isSplitView = ['splitLeft', 'splitRight', 'splitUp', 'splitDown'].includes(actionType);
+
   // 根据类型和设置的操作类型决定打开方式
   switch (dragInfo.type) {
     case 'link':
-      if (actionType === 'foreground') {
+      if (isSplitView) {
+        // 分屏视图（四向）：通过后台脚本在新的浏览器窗口中分屏打开链接
+        chrome.runtime.sendMessage({
+          action: 'superDrag',
+          type: 'link',
+          url: dragInfo.url,
+          actionType: actionType
+        });
+      } else if (actionType === 'foreground') {
         // 前台打开链接
         window.open(dragInfo.url, '_blank', 'noopener');
       } else if (actionType === 'background') {
@@ -4379,7 +4442,15 @@ function handleDragEnd(e) {
       break;
     
     case 'image':
-      if (actionType === 'foreground') {
+      if (isSplitView) {
+        // 分屏视图（四向）：通过后台脚本在新的浏览器窗口中分屏打开图片
+        chrome.runtime.sendMessage({
+          action: 'superDrag',
+          type: 'image',
+          url: dragInfo.url,
+          actionType: actionType
+        });
+      } else if (actionType === 'foreground') {
         // 前台打开图片
         window.open(dragInfo.url, '_blank', 'noopener');
       } else if (actionType === 'background') {
@@ -4399,8 +4470,7 @@ function handleDragEnd(e) {
           action: 'superDrag',
           type: 'text',
           text: dragInfo.text,
-          direction: dragInfo.direction,
-          actionType: actionType  // 传递操作类型给background.js
+          actionType: actionType
         });
       }
       break;
@@ -5560,7 +5630,8 @@ function loadSettingsWithLanguageChange(newLanguage) {
       trailColor: '#FF9ECD',
       trailWidth: 3,
       enableSuperDrag: true,
-      enableDragTextSearch: true, // 添加拖拽文本搜索功能开关
+      enableDragTextSearch: true,
+      autoDownloadOnDragFile: false,
       enableImagePreview: true,
       enableDuplicateCheck: true,
       dragUpAction: 'background', // 向上拖拽动作：后台打开

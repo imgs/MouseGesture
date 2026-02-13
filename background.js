@@ -46,6 +46,9 @@ let lastCheckedTab = {
   processedUrls: new Map()
 };
 
+// 分屏视图会话跟踪：记录新窗口与原窗口及原始尺寸的对应关系
+const splitViewSessions = {};
+
 // URL标准化缓存
 const urlNormalizeCache = new Map();
 const MAX_CACHE_SIZE = 2000; // 增加到2000条
@@ -1909,6 +1912,27 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
         }
         sendResponse({ success: true });
         break;
+
+      // 拖拽图片或可下载文件时自动下载
+      case 'downloadUrl':
+        if (message.url) {
+          try {
+            chrome.downloads.download({ url: message.url }, (downloadId) => {
+              if (chrome.runtime.lastError) {
+                console.warn('下载失败:', chrome.runtime.lastError.message);
+                sendResponse({ success: false, error: chrome.runtime.lastError.message });
+              } else {
+                sendResponse({ success: true });
+              }
+            });
+          } catch (e) {
+            console.warn('下载请求异常:', e.message);
+            sendResponse({ success: false, error: e.message });
+          }
+        } else {
+          sendResponse({ success: false, error: 'URL 为空' });
+        }
+        return true; // 异步响应
         
       case 'fetchUrlContent':
         fetchUrlContent(message.url)
@@ -2109,9 +2133,19 @@ function handleSuperDrag(message) {
         openInForeground = false;
       }
       
+      const actionType = message.actionType || (openInForeground ? 'foreground' : 'background');
+
+      // 分屏四向：actionType -> 方向（splitLeft->left, splitRight->right, splitUp->up, splitDown->down）
+      const splitDirectionMap = { splitLeft: 'left', splitRight: 'right', splitUp: 'up', splitDown: 'down' };
+      const splitDirection = splitDirectionMap[actionType];
+      
       if (message.type === 'text') {
         // 处理文本拖拽
-        if (openInForeground) {
+        if (splitDirection) {
+          // 分屏视图（四向）：在新窗口中分屏打开搜索结果
+          let finalSearchUrl = searchEngineUrl.replace('{q}', encodeURIComponent(message.text));
+          openUrlInSplitView(finalSearchUrl, splitDirection);
+        } else if (openInForeground) {
           try {
             // 前台打开：首先尝试使用chrome.search.query API
             chrome.search.query({
@@ -2159,9 +2193,15 @@ function handleSuperDrag(message) {
         
         // 处理不同类型的拖拽
         if (message.type === 'link' || message.type === 'image') {
-          // 处理链接或图片拖拽 - 前台或后台打开取决于拖拽方向和设置
-          console.log(`准备${openInForeground ? '前台' : '后台'}打开链接:`, url);
-          smartCreateTab(url, openInForeground);
+          // 处理链接或图片拖拽
+          if (splitDirection) {
+            // 分屏视图（四向）：在新窗口中分屏打开链接或图片
+            openUrlInSplitView(url, splitDirection);
+          } else {
+            // 前台或后台打开取决于用户选择的操作类型
+            console.log(`准备${openInForeground ? '前台' : '后台'}打开链接:`, url);
+            smartCreateTab(url, openInForeground);
+          }
         }
       } catch (e) {
         console.error('超级拖拽URL格式无效:', url, e.message);
@@ -2170,6 +2210,159 @@ function handleSuperDrag(message) {
     });
   } catch (e) {
     console.error('处理超级拖拽错误:', e.message);
+  }
+}
+
+// 在新窗口中打开URL并进行简单的分屏布局
+function openUrlInSplitView(url, direction) {
+  try {
+    chrome.windows.getCurrent((currentWindow) => {
+      if (chrome.runtime.lastError) {
+        console.error('获取当前窗口信息错误:', chrome.runtime.lastError.message);
+        // 回退：正常在新标签页中打开
+        smartCreateTab(url, true);
+        return;
+      }
+      
+      try {
+        const isFullscreen = currentWindow.state === 'fullscreen';
+        const totalWidth = currentWindow.width || 1200;
+        const totalHeight = currentWindow.height || 800;
+        const baseLeft = currentWindow.left || 0;
+        const baseTop = currentWindow.top || 0;
+
+        // 记录原始窗口大小和状态，用于分屏窗口关闭后恢复
+        const originalBounds = {
+          left: baseLeft,
+          top: baseTop,
+          width: totalWidth,
+          height: totalHeight,
+          state: currentWindow.state || 'normal'
+        };
+        
+        const halfWidth = Math.max(Math.round(totalWidth / 2), 400);
+        const halfHeight = Math.max(Math.round(totalHeight / 2), 300);
+
+        // 先计算两个区域：currentWindowRect / newWindowRect
+        let currentRect = {
+          left: baseLeft,
+          top: baseTop,
+          width: totalWidth,
+          height: totalHeight
+        };
+        let newRect = { ...currentRect };
+
+        // 左/右分屏（方向来自用户在下拉中的选择）
+        if (direction === 'left' || direction === 'right') {
+          currentRect.width = halfWidth;
+          newRect.width = halfWidth;
+          currentRect.height = totalHeight;
+          newRect.height = totalHeight;
+
+          if (direction === 'right') {
+            // 当前窗口在左，新窗口在右
+            currentRect.left = baseLeft;
+            newRect.left = baseLeft + totalWidth - halfWidth;
+          } else {
+            // 左分屏：当前窗口在右，新窗口在左
+            currentRect.left = baseLeft + totalWidth - halfWidth;
+            newRect.left = baseLeft;
+          }
+        }
+        // 上/下分屏（方向来自用户在下拉中的选择）
+        else if (direction === 'up' || direction === 'down') {
+          currentRect.height = halfHeight;
+          newRect.height = halfHeight;
+          currentRect.width = totalWidth;
+          newRect.width = totalWidth;
+
+          if (direction === 'down') {
+            // 当前窗口在上，新窗口在下
+            currentRect.top = baseTop;
+            newRect.top = baseTop + totalHeight - halfHeight;
+          } else {
+            // 上分屏：当前窗口在下，新窗口在上
+            currentRect.top = baseTop + totalHeight - halfHeight;
+            newRect.top = baseTop;
+          }
+        }
+
+        // 如果是全屏窗口，出于安全限制通常不能强制退出全屏，这里只新建分屏窗口，不调整原窗口
+        if (isFullscreen) {
+          chrome.windows.create({
+            url,
+            left: newRect.left,
+            top: newRect.top,
+            width: newRect.width,
+            height: newRect.height,
+            focused: true,
+            type: 'normal'
+          }, (createdWindow) => {
+            if (chrome.runtime.lastError) {
+              console.error('全屏模式下创建分屏窗口错误:', chrome.runtime.lastError.message);
+              smartCreateTab(url, true);
+            } else {
+              console.log('全屏模式下已在新窗口中打开URL:', url, '窗口ID:', createdWindow.id);
+            }
+          });
+          return;
+        }
+
+        // 构造一个函数，用于在窗口为 normal 状态时执行真正的分屏更新+新建窗口逻辑
+        const doSplitUpdate = () => {
+          chrome.windows.update(currentWindow.id, {
+            left: currentRect.left,
+            top: currentRect.top,
+            width: currentRect.width,
+            height: currentRect.height,
+            focused: true,
+            state: 'normal'
+          }, (updatedWindow) => {
+            if (chrome.runtime.lastError) {
+              console.error('更新当前窗口为分屏大小错误:', chrome.runtime.lastError.message);
+              // 回退：直接新标签页
+              smartCreateTab(url, true);
+              return;
+            }
+
+            chrome.windows.create({
+              url,
+              left: newRect.left,
+              top: newRect.top,
+              width: newRect.width,
+              height: newRect.height,
+              focused: true,
+              type: 'normal'
+            }, (createdWindow) => {
+              if (chrome.runtime.lastError) {
+                console.error('创建分屏窗口错误:', chrome.runtime.lastError.message);
+                // 回退：正常打开标签页
+                smartCreateTab(url, true);
+              } else {
+                console.log('已在分屏窗口中打开URL:', url, '窗口ID:', createdWindow.id);
+                // 仅在非全屏模式下记录会话信息（全屏时原窗口未改变，无需恢复）
+                if (!isFullscreen) {
+                  splitViewSessions[createdWindow.id] = {
+                    originalWindowId: currentWindow.id,
+                    originalBounds
+                  };
+                }
+              }
+            });
+          });
+        };
+
+        // 普通/最大化窗口：直接基于当前窗口尺寸计算好的矩形执行分屏逻辑
+        // （最大化时 totalWidth/totalHeight 即为当前占满屏幕的大小）
+        doSplitUpdate();
+      } catch (e) {
+        console.error('计算分屏窗口大小/位置时出错:', e.message);
+        smartCreateTab(url, true);
+      }
+    });
+  } catch (e) {
+    console.error('openUrlInSplitView 执行错误:', e.message);
+    smartCreateTab(url, true);
   }
 }
 
@@ -2454,6 +2647,96 @@ chrome.windows.onCreated.addListener((window) => {
 chrome.windows.onRemoved.addListener((windowId) => {
   console.log('窗口移除:', windowId);
   debouncedUpdateTabCount();
+});
+
+// 监听窗口关闭以恢复分屏前的原始窗口大小
+chrome.windows.onRemoved.addListener((windowId) => {
+  try {
+    // 情况一：当前被关闭的是“分屏窗口”（新窗口），需要恢复原窗口大小
+    const session = splitViewSessions[windowId];
+    if (session) {
+      // 使用后立即删除会话记录，避免重复恢复
+      delete splitViewSessions[windowId];
+
+      const { originalWindowId, originalBounds } = session;
+      if (originalWindowId && originalBounds) {
+        chrome.windows.get(originalWindowId, (win) => {
+          if (chrome.runtime.lastError || !win) {
+            console.log('原窗口已不存在或获取失败，无法恢复:', chrome.runtime.lastError?.message);
+            return;
+          }
+
+          const updateInfo = { focused: true };
+
+          // 如果原始状态是最大化，则恢复为最大化；否则按记录的尺寸恢复
+          if (originalBounds.state === 'maximized') {
+            updateInfo.state = 'maximized';
+          } else {
+            updateInfo.state = 'normal';
+            updateInfo.left = originalBounds.left;
+            updateInfo.top = originalBounds.top;
+            updateInfo.width = originalBounds.width;
+            updateInfo.height = originalBounds.height;
+          }
+
+          chrome.windows.update(originalWindowId, updateInfo, () => {
+            if (chrome.runtime.lastError) {
+              console.log('恢复原窗口大小时出错:', chrome.runtime.lastError.message);
+            } else {
+              console.log('已恢复原窗口到分屏前大小，窗口ID(原窗口):', originalWindowId);
+            }
+          });
+        });
+      }
+    }
+
+    // 情况二：当前被关闭的是“原窗口”，需要让分屏窗口恢复到原始大小/状态
+    const sessionWindowIds = Object.keys(splitViewSessions);
+    if (sessionWindowIds.length === 0) return;
+
+    for (const splitId of sessionWindowIds) {
+      const s = splitViewSessions[splitId];
+      if (!s || s.originalWindowId !== windowId) continue;
+
+      // 找到与被关闭原窗口对应的分屏窗口
+      const targetWindowId = parseInt(splitId, 10);
+      const originalBounds = s.originalBounds;
+
+      // 使用后立即删除会话记录
+      delete splitViewSessions[splitId];
+
+      if (!originalBounds) continue;
+
+      chrome.windows.get(targetWindowId, (win) => {
+        if (chrome.runtime.lastError || !win) {
+          console.log('分屏窗口已不存在或获取失败，无法恢复:', chrome.runtime.lastError?.message);
+          return;
+        }
+
+        const updateInfo = { focused: true };
+
+        if (originalBounds.state === 'maximized') {
+          updateInfo.state = 'maximized';
+        } else {
+          updateInfo.state = 'normal';
+          updateInfo.left = originalBounds.left;
+          updateInfo.top = originalBounds.top;
+          updateInfo.width = originalBounds.width;
+          updateInfo.height = originalBounds.height;
+        }
+
+        chrome.windows.update(targetWindowId, updateInfo, () => {
+          if (chrome.runtime.lastError) {
+            console.log('恢复分屏窗口为原始大小时出错:', chrome.runtime.lastError.message);
+          } else {
+            console.log('原窗口关闭后，已将分屏窗口恢复到分屏前大小，窗口ID(剩余窗口):', targetWindowId);
+          }
+        });
+      });
+    }
+  } catch (e) {
+    console.error('处理分屏窗口关闭恢复时出错:', e.message);
+  }
 });
 
 // 监听消息

@@ -3,7 +3,7 @@
 ## License Information
 
 **Project Name:** Mouse Gesture Extension  
-**Version:** 2.3.10  
+**Version:** All Releases  
 **Copyright Year:** 2025-2026  
 **Author:** CGQA <license@cgqa.com>  
 **License Type:** Commercial License  

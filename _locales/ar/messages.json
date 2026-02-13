@@ -44,7 +44,7 @@
     "description": "Open link in background"
   },
   "superDragDescription": {
-    "message": "تعمل ميزة السحب الفائق مع الروابط والصور والنص المحدد. عندما يكون النص المحدد عبارة عن رابط، سيتم فتحه كرابط؛ وإلا فسيتم البحث عنه. اتجاه السحب يحدد كيفية فتح علامات التبويب الجديدة.",
+    "message": "يعمل السحب الفائق مع الروابط والصور والنص المحدد. يمكنك تعيين طريقة الفتح لكل اتجاه إيماءة (أعلى/أسفل/يسار/يمين)، بما في ذلك المقدمة أو الخلفية أو عرض التقسيم (يسار/يمين/أعلى/أسفل).",
     "description": "Super drag feature description"
   },
   "left": {
@@ -244,8 +244,8 @@
     "description": "Settings title"
   },
   "customizedBehavior": {
-    "message": "سلوك مخصص",
-    "description": "Customized behavior section title"
+    "message": "قائمة الحظر",
+    "description": "Block list section title"
   },
   "disableMouseGesturesForSites": {
     "message": "تعطيل إيماءات الماوس والسحب الفائق لهذه المواقع",
@@ -282,6 +282,10 @@
   "enableDragTextSearch": {
     "message": "تمكين البحث بسحب النص",
     "description": "Enable drag text search option"
+  },
+  "autoDownloadOnDragFile": {
+    "message": "تحميل تلقائي للصورة/الملف عند السحب",
+    "description": "When the drag target is an image or other downloadable file, start download automatically"
   },
   "enableImagePreview": {
     "message": "تمكين معاينة الصورة",
@@ -922,5 +926,25 @@
   "showTabCountBadge": {
     "message": "عرض عدد الألسنة",
     "description": "Show tab count badge option"
+  },
+  "splitViewAction": {
+    "message": "عرض مقسوم",
+    "description": "فتح في نافذة العرض المقسوم"
+  },
+  "splitViewLeft": {
+    "message": "قسم - يسار",
+    "description": "عرض مقسوم، نافذة جديدة في النصف الأيسر"
+  },
+  "splitViewRight": {
+    "message": "قسم - يمين",
+    "description": "عرض مقسوم، نافذة جديدة في النصف الأيمن"
+  },
+  "splitViewUp": {
+    "message": "قسم - أعلى",
+    "description": "عرض مقسوم، نافذة جديدة في النصف العلوي"
+  },
+  "splitViewDown": {
+    "message": "قسم - أسفل",
+    "description": "عرض مقسوم، نافذة جديدة في النصف السفلي"
   }
 }

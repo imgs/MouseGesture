@@ -44,7 +44,7 @@
     "description": "لنک کو بیک گراؤنڈ میں کھولنے کا عمل"
   },
   "superDragDescription": {
-    "message": "سپر ڈریگ فنکشن لنکس، تصاویر اور منتخب متن کے لیے کام کرتا ہے۔ اگر منتخب متن URL ہے تو لنک کے طور پر کھلتا ہے، ورنہ تلاش کرتا ہے۔ ڈریگ کی سمت نئے ٹیبز کے کھلنے کے طریقے کا تعین کرتی ہے۔",
+    "message": "سپر ڈریگ لنکس، تصاویر اور منتخب متن کے لیے کام کرتا ہے۔ آپ ہر اشارہ سمت (اوپر/نیچے/بائیں/دائیں) کے لیے کھولنے کا طریقہ سیٹ کر سکتے ہیں، بشمول فار گراؤنڈ، بیک گراؤنڈ یا تقسیم شدہ منظر (بائیں/دائیں/اوپر/نیچے)۔",
     "description": "سپر ڈریگ کی تفصیل"
   },
   "left": {
@@ -244,8 +244,8 @@
     "description": "ترتیبات کا عنوان"
   },
   "customizedBehavior": {
-    "message": "حسب ضرورت رویہ",
-    "description": "Customized behavior section title"
+    "message": "بلاک فہرست",
+    "description": "Block list section title"
   },
   "disableMouseGesturesForSites": {
     "message": "ان سائٹس پر ماؤس جسچر اور سوپر ڈریگ غیر فعال کریں",
@@ -282,6 +282,10 @@
   "enableDragTextSearch": {
     "message": "ڈریگ ٹیکسٹ سرچ فعال کریں",
     "description": "ڈریگ ٹیکسٹ سرچ فعال کرنے کا آپشن"
+  },
+  "autoDownloadOnDragFile": {
+    "message": "ڈریگ پر تصویر/فائل خود ڈاؤن لوڈ",
+    "description": "When the drag target is an image or other downloadable file, start download automatically"
   },
   "enableImagePreview": {
     "message": "تصویر پریویو فعال کریں",
@@ -922,5 +926,25 @@
   "showTabCountBadge": {
     "message": "ٹیب کا ڈیگر لکھیں",
     "description": "Show tab count badge option"
+  },
+  "splitViewAction": {
+    "message": "تقسیم شدہ منظر",
+    "description": "تقسیم شدہ منظر کی ونڈو میں کھولیں"
+  },
+  "splitViewLeft": {
+    "message": "تقسیم - بائیں",
+    "description": "تقسیم شدہ منظر، بائیں نصف میں نئی ونڈو"
+  },
+  "splitViewRight": {
+    "message": "تقسیم - دائیں",
+    "description": "تقسیم شدہ منظر، دائیں نصف میں نئی ونڈو"
+  },
+  "splitViewUp": {
+    "message": "تقسیم - اوپر",
+    "description": "تقسیم شدہ منظر، اوپر والے نصف میں نئی ونڈو"
+  },
+  "splitViewDown": {
+    "message": "تقسیم - نیچے",
+    "description": "تقسیم شدہ منظر، نیچے والے نصف میں نئی ونڈو"
   }
 }

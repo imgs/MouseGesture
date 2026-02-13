@@ -44,7 +44,7 @@
     "description": "Bağlantıyı arka planda açma eylemi"
   },
   "superDragDescription": {
-    "message": "Süper sürükleme işlevi bağlantılar, resimler ve seçili metinler için çalışır. Seçili metin bir URL ise, bağlantı olarak açılır; değilse aranır. Sürükleme yönü, yeni sekmelerin nasıl açılacağını belirler.",
+    "message": "Süper Sürükleme bağlantılar, resimler ve seçili metinler için çalışır. Her hareket yönü (yukarı/aşağı/sol/sağ) için açma yöntemini ayarlayabilirsiniz; ön plan, arka plan veya bölünmüş görünüm (sol/sağ/yukarı/aşağı) dahil.",
     "description": "Süper sürükleme açıklaması"
   },
   "left": {
@@ -244,8 +244,8 @@
     "description": "Ayarlar başlığı"
   },
   "customizedBehavior": {
-    "message": "Özelleştirilmiş davranış",
-    "description": "Customized behavior section title"
+    "message": "Engelleme listesi",
+    "description": "Block list section title"
   },
   "disableMouseGesturesForSites": {
     "message": "Bu sitelerde fare hareketlerini ve süper sürüklemeyi devre dışı bırak",
@@ -282,6 +282,10 @@
   "enableDragTextSearch": {
     "message": "Sürükleme Metin Aramasını Etkinleştir",
     "description": "Sürükleme metin aramasını etkinleştirme seçeneği"
+  },
+  "autoDownloadOnDragFile": {
+    "message": "Sürüklerken resim/dosyayı otomatik indir",
+    "description": "When the drag target is an image or other downloadable file, start download automatically"
   },
   "enableImagePreview": {
     "message": "Resim Önizlemeyi Etkinleştir",
@@ -922,5 +926,25 @@
   "showTabCountBadge": {
     "message": "Sekme Sayısı Göster",
     "description": "Show tab count badge option"
+  },
+  "splitViewAction": {
+    "message": "Bölünmüş görünüm",
+    "description": "Bölünmüş görünüm penceresinde aç"
+  },
+  "splitViewLeft": {
+    "message": "Böl - sol",
+    "description": "Bölünmüş görünüm, sol yarıda yeni pencere"
+  },
+  "splitViewRight": {
+    "message": "Böl - sağ",
+    "description": "Bölünmüş görünüm, sağ yarıda yeni pencere"
+  },
+  "splitViewUp": {
+    "message": "Böl - üst",
+    "description": "Bölünmüş görünüm, üst yarıda yeni pencere"
+  },
+  "splitViewDown": {
+    "message": "Böl - alt",
+    "description": "Bölünmüş görünüm, alt yarıda yeni pencere"
   }
 }

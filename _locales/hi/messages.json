@@ -44,7 +44,7 @@
     "description": "Open link in background"
   },
   "superDragDescription": {
-    "message": "सुपर ड्रैग सुविधा लिंक, छवियों और चयनित टेक्स्ट के लिए काम करती है। जब चयनित टेक्स्ट एक URL है, तो यह एक लिंक के रूप में खुलेगा; अन्यथा, इसे खोजा जाएगा। ड्रैग दिशा निर्धारित करती है कि नए टैब कैसे खोले जाते हैं।",
+    "message": "सुपर ड्रैग लिंक, छवियों और चयनित टेक्स्ट के लिए काम करता है। आप प्रत्येक जेस्चर दिशा (ऊपर/नीचे/बाएं/दाएं) के लिए ओपनिंग विधि सेट कर सकते हैं, जिसमें फोरग्राउंड, बैकग्राउंड या स्प्लिट व्यू (बाएं/दाएं/ऊपर/नीचे) शामिल है।",
     "description": "Super drag feature description"
   },
   "left": {
@@ -244,8 +244,8 @@
     "description": "Settings title"
   },
   "customizedBehavior": {
-    "message": "अनुकूलित व्यवहार",
-    "description": "Customized behavior section title"
+    "message": "ब्लॉक सूची",
+    "description": "Block list section title"
   },
   "disableMouseGesturesForSites": {
     "message": "इन साइटों पर माउस जेस्चर और सुपर ड्रैग अक्षम करें",
@@ -282,6 +282,10 @@
   "enableDragTextSearch": {
     "message": "ड्रैग टेक्स्ट खोज सक्षम करें",
     "description": "Enable drag text search option"
+  },
+  "autoDownloadOnDragFile": {
+    "message": "ड्रैग पर छवि/फ़ाइल ऑटो डाउनलोड",
+    "description": "When the drag target is an image or other downloadable file, start download automatically"
   },
   "enableImagePreview": {
     "message": "छवि पूर्वावलोकन सक्षम करें",
@@ -922,5 +926,25 @@
   "showTabCountBadge": {
     "message": "टैब संख्या दिखाएं",
     "description": "Show tab count badge option"
+  },
+  "splitViewAction": {
+    "message": "विभाजित दृश्य",
+    "description": "विभाजित दृश्य विंडो में खोलें"
+  },
+  "splitViewLeft": {
+    "message": "विभाजित - बाएं",
+    "description": "विभाजित दृश्य, बाएं आधे में नई विंडो"
+  },
+  "splitViewRight": {
+    "message": "विभाजित - दाएं",
+    "description": "विभाजित दृश्य, दाएं आधे में नई विंडो"
+  },
+  "splitViewUp": {
+    "message": "विभाजित - ऊपर",
+    "description": "विभाजित दृश्य, ऊपरी आधे में नई विंडो"
+  },
+  "splitViewDown": {
+    "message": "विभाजित - नीचे",
+    "description": "विभाजित दृश्य, निचले आधे में नई विंडो"
   }
 }

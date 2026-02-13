@@ -44,7 +44,7 @@
     "description": "Open link op achtergrond"
   },
   "superDragDescription": {
-    "message": "Super Sleep functie werkt voor links, afbeeldingen en geselecteerde tekst. Wanneer geselecteerde tekst een URL is, opent het als een link; anders wordt het gezocht. Sleeprichting bepaalt hoe nieuwe tabbladen worden geopend.",
+    "message": "Super Sleep werkt voor links, afbeeldingen en geselecteerde tekst. U kunt de openmethode instellen voor elke gebaarrichting (omhoog/omlaag/links/rechts), inclusief voorgrond, achtergrond of gesplitste weergave (links/rechts/omhoog/omlaag).",
     "description": "Beschrijving super sleep functie"
   },
   "left": {
@@ -244,8 +244,8 @@
     "description": "Instellingen titel"
   },
   "customizedBehavior": {
-    "message": "Aangepast gedrag",
-    "description": "Customized behavior section title"
+    "message": "Blokkeerlijst",
+    "description": "Block list section title"
   },
   "disableMouseGesturesForSites": {
     "message": "Schakel muisgebaren en superslepen uit op deze sites",
@@ -282,6 +282,10 @@
   "enableDragTextSearch": {
     "message": "Tekst Slepen Zoeken Inschakelen",
     "description": "Tekst slepen zoeken inschakelen optie"
+  },
+  "autoDownloadOnDragFile": {
+    "message": "Afbeelding/bestand bij slepen downloaden",
+    "description": "When the drag target is an image or other downloadable file, start download automatically"
   },
   "enableImagePreview": {
     "message": "Afbeeldingsvoorbeeld Inschakelen",
@@ -922,5 +926,25 @@
   "showTabCountBadge": {
     "message": "Toon Tab Aantal",
     "description": "Show tab count badge option"
+  },
+  "splitViewAction": {
+    "message": "Gesplitste weergave",
+    "description": "Openen in gesplitst weergavevenster"
+  },
+  "splitViewLeft": {
+    "message": "Splitsen - links",
+    "description": "Gesplitste weergave, nieuw venster links"
+  },
+  "splitViewRight": {
+    "message": "Splitsen - rechts",
+    "description": "Gesplitste weergave, nieuw venster rechts"
+  },
+  "splitViewUp": {
+    "message": "Splitsen - boven",
+    "description": "Gesplitste weergave, nieuw venster boven"
+  },
+  "splitViewDown": {
+    "message": "Splitsen - onder",
+    "description": "Gesplitste weergave, nieuw venster onder"
   }
 }

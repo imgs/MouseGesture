@@ -44,7 +44,7 @@
     "description": "Open link in background"
   },
   "superDragDescription": {
-    "message": "Super-drag funksjonen fungerer for lenker, bilder og markert tekst. Når markert tekst er en URL åpnes den som en lenke; ellers søkes den. Dragretningen bestemmer hvordan nye faner åpnes.",
+    "message": "Super-drag fungerer for lenker, bilder og markert tekst. Du kan sette åpningsmetoden for hver gestretning (opp/ned/venstre/høyre), inkludert forgrunn, bakgrunn eller delt visning (venstre/høyre/opp/ned).",
     "description": "Super drag feature description"
   },
   "left": {
@@ -244,8 +244,8 @@
     "description": "Settings title"
   },
   "customizedBehavior": {
-    "message": "Tilpasset oppførsel",
-    "description": "Customized behavior section title"
+    "message": "Blokkeringsliste",
+    "description": "Block list section title"
   },
   "disableMouseGesturesForSites": {
     "message": "Deaktiver musebevegelser og superdra for disse nettstedene",
@@ -282,6 +282,10 @@
   "enableDragTextSearch": {
     "message": "Aktiver Drag Tekst Søk",
     "description": "Enable drag text search option"
+  },
+  "autoDownloadOnDragFile": {
+    "message": "Auto-last ned bilde/fil ved dragging",
+    "description": "When the drag target is an image or other downloadable file, start download automatically"
   },
   "enableImagePreview": {
     "message": "Aktiver Bilde Forhåndsvisning",
@@ -922,5 +926,25 @@
   "showTabCountBadge": {
     "message": "Vis Flikantall",
     "description": "Show tab count badge option"
+  },
+  "splitViewAction": {
+    "message": "Delt visning",
+    "description": "Åpne i delt visningsvindu"
+  },
+  "splitViewLeft": {
+    "message": "Del - venstre",
+    "description": "Delt visning, nytt vindu i venstre halvdel"
+  },
+  "splitViewRight": {
+    "message": "Del - høyre",
+    "description": "Delt visning, nytt vindu i høyre halvdel"
+  },
+  "splitViewUp": {
+    "message": "Del - topp",
+    "description": "Delt visning, nytt vindu i øvre halvdel"
+  },
+  "splitViewDown": {
+    "message": "Del - bunn",
+    "description": "Delt visning, nytt vindu i nedre halvdel"
   }
 }

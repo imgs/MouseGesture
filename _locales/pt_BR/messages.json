@@ -44,7 +44,7 @@
     "description": "Open link in background"
   },
   "superDragDescription": {
-    "message": "O recurso de super arrastar funciona para links, imagens e texto selecionado. Quando o texto selecionado é uma URL, será aberto como um link; caso contrário, será pesquisado. A direção do arrastar determina como as novas abas são abertas.",
+    "message": "Super Arrastar funciona para links, imagens e texto selecionado. Você pode definir o método de abertura para cada direção do gesto (cima/baixo/esquerda/direita), incluindo primeiro plano, segundo plano ou vista dividida (esquerda/direita/cima/baixo).",
     "description": "Super drag feature description"
   },
   "left": {
@@ -244,8 +244,8 @@
     "description": "Settings title"
   },
   "customizedBehavior": {
-    "message": "Comportamento personalizado",
-    "description": "Customized behavior section title"
+    "message": "Lista de bloqueio",
+    "description": "Block list section title"
   },
   "disableMouseGesturesForSites": {
     "message": "Desativar gestos do mouse e super arrastar nestes sites",
@@ -282,6 +282,10 @@
   "enableDragTextSearch": {
     "message": "Habilitar Busca de Texto Arrastado",
     "description": "Enable drag text search option"
+  },
+  "autoDownloadOnDragFile": {
+    "message": "Baixar imagem/arquivo ao arrastar",
+    "description": "When the drag target is an image or other downloadable file, start download automatically"
   },
   "enableImagePreview": {
     "message": "Habilitar Pré-visualização de Imagem",
@@ -922,5 +926,25 @@
   "showTabCountBadge": {
     "message": "Mostrar Número de Abas",
     "description": "Show tab count badge option"
+  },
+  "splitViewAction": {
+    "message": "Visualização dividida",
+    "description": "Abrir em janela de visualização dividida"
+  },
+  "splitViewLeft": {
+    "message": "Dividir - esquerda",
+    "description": "Visualização dividida, nova janela na metade esquerda"
+  },
+  "splitViewRight": {
+    "message": "Dividir - direita",
+    "description": "Visualização dividida, nova janela na metade direita"
+  },
+  "splitViewUp": {
+    "message": "Dividir - superior",
+    "description": "Visualização dividida, nova janela na metade superior"
+  },
+  "splitViewDown": {
+    "message": "Dividir - inferior",
+    "description": "Visualização dividida, nova janela na metade inferior"
   }
 }

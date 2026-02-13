@@ -44,7 +44,7 @@
     "description": "Open link in background"
   },
   "superDragDescription": {
-    "message": "슈퍼 드래그 기능은 링크, 이미지 및 선택된 텍스트에 작동합니다. 선택된 텍스트가 URL인 경우 링크로 열리고, 그렇지 않으면 검색됩니다. 드래그 방향에 따라 새 탭이 열리는 방식이 결정됩니다.",
+    "message": "슈퍼 드래그는 링크, 이미지 및 선택된 텍스트에서 작동합니다. 각 제스처 방향(위/아래/왼쪽/오른쪽)에 대해 포그라운드, 백그라운드 또는 분할 보기(왼쪽/오른쪽/위/아래)를 포함한 열기 방법을 설정할 수 있습니다.",
     "description": "Super drag feature description"
   },
   "left": {
@@ -244,8 +244,8 @@
     "description": "Settings title"
   },
   "customizedBehavior": {
-    "message": "맞춤 동작",
-    "description": "Customized behavior section title"
+    "message": "차단 목록",
+    "description": "Block list section title"
   },
   "disableMouseGesturesForSites": {
     "message": "이 사이트에서 마우스 제스처 및 슈퍼 드래그 비활성화",
@@ -282,6 +282,10 @@
   "enableDragTextSearch": {
     "message": "드래그 텍스트 검색 활성화",
     "description": "Enable drag text search option"
+  },
+  "autoDownloadOnDragFile": {
+    "message": "드래그 시 이미지/파일 자동 다운로드",
+    "description": "When the drag target is an image or other downloadable file, start download automatically"
   },
   "enableImagePreview": {
     "message": "이미지 미리보기 활성화",
@@ -922,6 +926,26 @@
   "showTabCountBadge": {
     "message": "탭 수 표시",
     "description": "Show tab count badge option"
+  },
+  "splitViewAction": {
+    "message": "분할 보기",
+    "description": "분할 보기 창에서 열기"
+  },
+  "splitViewLeft": {
+    "message": "분할 - 왼쪽",
+    "description": "분할 보기, 왼쪽 절반에 새 창"
+  },
+  "splitViewRight": {
+    "message": "분할 - 오른쪽",
+    "description": "분할 보기, 오른쪽 절반에 새 창"
+  },
+  "splitViewUp": {
+    "message": "분할 - 위",
+    "description": "분할 보기, 위쪽 절반에 새 창"
+  },
+  "splitViewDown": {
+    "message": "분할 - 아래",
+    "description": "분할 보기, 아래쪽 절반에 새 창"
   }
 }
 

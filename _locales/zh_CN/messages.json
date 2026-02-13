@@ -44,7 +44,7 @@
     "description": "在后台打开链接"
   },
   "superDragDescription": {
-    "message": "超级拖拽功能可用于链接、图片和选中的文本。当选中的文本是URL时，会直接打开链接；否则会进行搜索。拖拽方向决定新标签页的打开方式。",
+    "message": "超级拖拽功能可用于链接、图片和选中的文本。可为上/下/左/右各方向分别设置打开方式（前台、后台或分屏左/右/上/下）。",
     "description": "超级拖拽功能描述"
   },
   "left": {
@@ -244,8 +244,8 @@
     "description": "设置标题"
   },
   "customizedBehavior": {
-    "message": "自定义行为",
-    "description": "自定义行为区块标题"
+    "message": "禁用列表",
+    "description": "禁用列表区块标题"
   },
   "disableMouseGesturesForSites": {
     "message": "在以下网站禁用鼠标手势和超级拖拽",
@@ -282,6 +282,10 @@
   "enableDragTextSearch": {
     "message": "启用拖拽文本搜索",
     "description": "启用拖拽文本搜索选项"
+  },
+  "autoDownloadOnDragFile": {
+    "message": "拖拽图片/文件自动下载",
+    "description": "当检测到拖拽对象为图片或其它可下载文件时自动开始下载"
   },
   "enableImagePreview": {
     "message": "启用图片预览",
@@ -922,5 +926,25 @@
   "showTabCountBadge": {
     "message": "显示标签页数量徽章",
     "description": "显示标签页数量徽章设置"
+  },
+  "splitViewAction": {
+    "message": "分屏视图",
+    "description": "在分屏窗口中打开"
+  },
+  "splitViewLeft": {
+    "message": "分屏-左侧",
+    "description": "分屏视图，新窗口在左侧半屏"
+  },
+  "splitViewRight": {
+    "message": "分屏-右侧",
+    "description": "分屏视图，新窗口在右侧半屏"
+  },
+  "splitViewUp": {
+    "message": "分屏-上方",
+    "description": "分屏视图，新窗口在上方半屏"
+  },
+  "splitViewDown": {
+    "message": "分屏-下方",
+    "description": "分屏视图，新窗口在下方半屏"
   }
 }

@@ -44,7 +44,7 @@
     "description": "Open link in background"
   },
   "superDragDescription": {
-    "message": "Функция супер-перетаскивания работает со ссылками, изображениями и выделенным текстом. Когда выделенный текст является URL, он откроется как ссылка; в противном случае будет выполнен поиск. Направление перетаскивания определяет, как открываются новые вкладки.",
+    "message": "Супер-перетаскивание работает со ссылками, изображениями и выделенным текстом. Вы можете задать способ открытия для каждого направления жеста (вверх/вниз/влево/вправо), включая передний план, фон или разделённый вид (влево/вправо/вверх/вниз).",
     "description": "Super drag feature description"
   },
   "left": {
@@ -244,8 +244,8 @@
     "description": "Settings title"
   },
   "customizedBehavior": {
-    "message": "Пользовательское поведение",
-    "description": "Customized behavior section title"
+    "message": "Чёрный список",
+    "description": "Block list section title"
   },
   "disableMouseGesturesForSites": {
     "message": "Отключить жесты мыши и супер перетаскивание на этих сайтах",
@@ -282,6 +282,10 @@
   "enableDragTextSearch": {
     "message": "Включить поиск перетаскиваемого текста",
     "description": "Enable drag text search option"
+  },
+  "autoDownloadOnDragFile": {
+    "message": "Автозагрузка изображения/файла при перетаскивании",
+    "description": "When the drag target is an image or other downloadable file, start download automatically"
   },
   "enableImagePreview": {
     "message": "Включить предварительный просмотр изображений",
@@ -922,5 +926,25 @@
   "showTabCountBadge": {
     "message": "Показать количество вкладок",
     "description": "Show tab count badge option"
+  },
+  "splitViewAction": {
+    "message": "Разделённый вид",
+    "description": "Открыть в окне с разделённым видом"
+  },
+  "splitViewLeft": {
+    "message": "Разделить - слева",
+    "description": "Разделённый вид, новое окно в левой половине"
+  },
+  "splitViewRight": {
+    "message": "Разделить - справа",
+    "description": "Разделённый вид, новое окно в правой половине"
+  },
+  "splitViewUp": {
+    "message": "Разделить - сверху",
+    "description": "Разделённый вид, новое окно в верхней половине"
+  },
+  "splitViewDown": {
+    "message": "Разделить - снизу",
+    "description": "Разделённый вид, новое окно в нижней половине"
   }
 }

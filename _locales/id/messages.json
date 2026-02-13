@@ -44,7 +44,7 @@
     "description": "Open link in background"
   },
   "superDragDescription": {
-    "message": "Fitur Seret Super bekerja untuk tautan, gambar, dan teks yang dipilih. Ketika teks yang dipilih adalah URL, akan dibuka sebagai tautan; jika tidak, akan dicari. Arah seret menentukan cara membuka tab baru.",
+    "message": "Super Drag bekerja untuk tautan, gambar, dan teks yang dipilih. Anda dapat mengatur metode pembukaan untuk setiap arah gestur (atas/bawah/kiri/kanan), termasuk foreground, background, atau tampilan terpisah (kiri/kanan/atas/bawah).",
     "description": "Super drag feature description"
   },
   "left": {
@@ -244,8 +244,8 @@
     "description": "Settings title"
   },
   "customizedBehavior": {
-    "message": "Perilaku kustom",
-    "description": "Customized behavior section title"
+    "message": "Daftar blokir",
+    "description": "Block list section title"
   },
   "disableMouseGesturesForSites": {
     "message": "Nonaktifkan gestur mouse dan super seret untuk situs ini",
@@ -282,6 +282,10 @@
   "enableDragTextSearch": {
     "message": "Aktifkan Pencarian Teks Seret",
     "description": "Enable drag text search option"
+  },
+  "autoDownloadOnDragFile": {
+    "message": "Unduh otomatis gambar/file saat seret",
+    "description": "When the drag target is an image or other downloadable file, start download automatically"
   },
   "enableImagePreview": {
     "message": "Aktifkan Pratinjau Gambar",
@@ -922,5 +926,25 @@
   "showTabCountBadge": {
     "message": "Tampilkan Jumlah Tab",
     "description": "Show tab count badge option"
+  },
+  "splitViewAction": {
+    "message": "Tampilan terbagi",
+    "description": "Buka di jendela tampilan terbagi"
+  },
+  "splitViewLeft": {
+    "message": "Bagi - kiri",
+    "description": "Tampilan terbagi, jendela baru di setengah kiri"
+  },
+  "splitViewRight": {
+    "message": "Bagi - kanan",
+    "description": "Tampilan terbagi, jendela baru di setengah kanan"
+  },
+  "splitViewUp": {
+    "message": "Bagi - atas",
+    "description": "Tampilan terbagi, jendela baru di setengah atas"
+  },
+  "splitViewDown": {
+    "message": "Bagi - bawah",
+    "description": "Tampilan terbagi, jendela baru di setengah bawah"
   }
 }

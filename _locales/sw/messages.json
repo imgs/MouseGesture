@@ -44,7 +44,7 @@
     "description": "Fungua kiungo kwa mazingira ya nyuma"
   },
   "superDragDescription": {
-    "message": "Utendaji wa kuburuta unafanya kazi kwa viungo, picha na maandishi yaliyochaguliwa. Wakati maandishi yaliyochaguliwa ni URL, yanafungua kama kiungo; vinginevyo yanatafuta. Mwelekeo wa kuburuta unaamua jinsi tabo mpya zinafunguliwa.",
+    "message": "Super Drag inafanya kazi kwa viungo, picha na maandishi yaliyochaguliwa. Unaweza kuweka njia ya kufungua kwa kila mwelekeo wa ishara (juu/chini/kushoto/kulia), ikiwa ni pamoja na mandharinyuma, usuli au maonyesho yaliyogawanyika (kushoto/kulia/juu/chini).",
     "description": "Maelezo ya utendaji wa kuburuta"
   },
   "left": {
@@ -244,8 +244,8 @@
     "description": "Kichwa cha mipangilio"
   },
   "customizedBehavior": {
-    "message": "Tabia maalum",
-    "description": "Customized behavior section title"
+    "message": "Orodha ya kuzuia",
+    "description": "Block list section title"
   },
   "disableMouseGesturesForSites": {
     "message": "Zima ishara ya kipanya na kuburuta kwa tovuti hizi",
@@ -282,6 +282,10 @@
   "enableDragTextSearch": {
     "message": "Washa Kutafuta Maandishi ya Kuburuta",
     "description": "Chaguo la kuwasha kutafuta maandishi ya kuburuta"
+  },
+  "autoDownloadOnDragFile": {
+    "message": "Pakua picha/faili kwa kuburuta",
+    "description": "When the drag target is an image or other downloadable file, start download automatically"
   },
   "enableImagePreview": {
     "message": "Washa Onyesho la Picha",
@@ -922,5 +926,25 @@
   "showTabCountBadge": {
     "message": "Onyesha Idadi ya Tabo",
     "description": "Show tab count badge option"
+  },
+  "splitViewAction": {
+    "message": "Mtazamo mgawanyiko",
+    "description": "Fungua kwenye dirisha la mtazamo mgawanyiko"
+  },
+  "splitViewLeft": {
+    "message": "Gawanya - kushoto",
+    "description": "Mtazamo mgawanyiko, dirisha jipya kushoto"
+  },
+  "splitViewRight": {
+    "message": "Gawanya - kulia",
+    "description": "Mtazamo mgawanyiko, dirisha jipya kulia"
+  },
+  "splitViewUp": {
+    "message": "Gawanya - juu",
+    "description": "Mtazamo mgawanyiko, dirisha jipya juu"
+  },
+  "splitViewDown": {
+    "message": "Gawanya - chini",
+    "description": "Mtazamo mgawanyiko, dirisha jipya chini"
   }
 }

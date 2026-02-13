@@ -44,7 +44,7 @@
     "description": "Open link in background"
   },
   "superDragDescription": {
-    "message": "Die Super-Drag-Funktion funktioniert für Links, Bilder und ausgewählten Text. Wenn der ausgewählte Text eine URL ist, wird sie als Link geöffnet; andernfalls wird danach gesucht. Die Ziehrichtung bestimmt, wie neue Tabs geöffnet werden.",
+    "message": "Super Drag funktioniert für Links, Bilder und ausgewählten Text. Sie können die Öffnungsmethode für jede Geste-Richtung (oben/unten/links/rechts) festlegen, inkl. Vordergrund, Hintergrund oder geteilter Ansicht (links/rechts/oben/unten).",
     "description": "Super drag feature description"
   },
   "left": {
@@ -244,8 +244,8 @@
     "description": "Settings title"
   },
   "customizedBehavior": {
-    "message": "Angepasstes Verhalten",
-    "description": "Customized behavior section title"
+    "message": "Blockierliste",
+    "description": "Block list section title"
   },
   "disableMouseGesturesForSites": {
     "message": "Mausgesten und Super-Drag für diese Websites deaktivieren",
@@ -282,6 +282,10 @@
   "enableDragTextSearch": {
     "message": "Text-Ziehen-Suche aktivieren",
     "description": "Enable drag text search option"
+  },
+  "autoDownloadOnDragFile": {
+    "message": "Bild/Datei beim Ziehen automatisch herunterladen",
+    "description": "When the drag target is an image or other downloadable file, start download automatically"
   },
   "enableImagePreview": {
     "message": "Bildvorschau aktivieren",
@@ -922,6 +926,26 @@
   "showTabCountBadge": {
     "message": "Anzahl der Tabs anzeigen",
     "description": "Show tab count badge option"
+  },
+  "splitViewAction": {
+    "message": "Geteilter Bildschirm",
+    "description": "In Fenster mit geteiltem Bildschirm öffnen"
+  },
+  "splitViewLeft": {
+    "message": "Teilen - links",
+    "description": "Geteilter Bildschirm, neues Fenster in linker Hälfte"
+  },
+  "splitViewRight": {
+    "message": "Teilen - rechts",
+    "description": "Geteilter Bildschirm, neues Fenster in rechter Hälfte"
+  },
+  "splitViewUp": {
+    "message": "Teilen - oben",
+    "description": "Geteilter Bildschirm, neues Fenster in oberer Hälfte"
+  },
+  "splitViewDown": {
+    "message": "Teilen - unten",
+    "description": "Geteilter Bildschirm, neues Fenster in unterer Hälfte"
   }
 }
 

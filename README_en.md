@@ -392,7 +392,7 @@ This project is available under a **dual licensing model**:
 - **Author:** CGQA
 - **Project:** Mouse Gesture Extension
 
-**Copyright:** 2025 CGQA <license@cgqa.com>
+**Copyright:** 2025-2026 CGQA <license@cgqa.com>
 
 ---
 

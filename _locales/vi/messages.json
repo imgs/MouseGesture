@@ -44,7 +44,7 @@
     "description": "Open link in background"
   },
   "superDragDescription": {
-    "message": "Tính năng kéo thả siêu tốc hoạt động với liên kết, hình ảnh và văn bản được chọn. Khi văn bản được chọn là URL, nó sẽ mở như một liên kết; nếu không, nó sẽ được tìm kiếm. Hướng kéo xác định cách mở tab mới.",
+    "message": "Kéo thả siêu tốc hoạt động với liên kết, hình ảnh và văn bản được chọn. Bạn có thể đặt phương thức mở cho từng hướng cử chỉ (lên/xuống/trái/phải), bao gồm nền trước, nền sau hoặc chế độ xem chia (trái/phải/lên/xuống).",
     "description": "Super drag feature description"
   },
   "left": {
@@ -244,8 +244,8 @@
     "description": "Settings title"
   },
   "customizedBehavior": {
-    "message": "Hành vi tùy chỉnh",
-    "description": "Customized behavior section title"
+    "message": "Danh sách chặn",
+    "description": "Block list section title"
   },
   "disableMouseGesturesForSites": {
     "message": "Tắt cử chỉ chuột và siêu kéo trên các trang web này",
@@ -282,6 +282,10 @@
   "enableDragTextSearch": {
     "message": "Bật Tìm Kiếm Văn Bản Kéo Thả",
     "description": "Enable drag text search option"
+  },
+  "autoDownloadOnDragFile": {
+    "message": "Tự tải ảnh/tệp khi kéo thả",
+    "description": "When the drag target is an image or other downloadable file, start download automatically"
   },
   "enableImagePreview": {
     "message": "Bật Xem Trước Hình Ảnh",
@@ -922,5 +926,25 @@
   "showTabCountBadge": {
     "message": "Hiển thị số lượng tab",
     "description": "Show tab count badge option"
+  },
+  "splitViewAction": {
+    "message": "Chế độ xem chia đôi",
+    "description": "Mở trong cửa sổ chế độ xem chia đôi"
+  },
+  "splitViewLeft": {
+    "message": "Chia - trái",
+    "description": "Chế độ xem chia đôi, cửa sổ mới bên trái"
+  },
+  "splitViewRight": {
+    "message": "Chia - phải",
+    "description": "Chế độ xem chia đôi, cửa sổ mới bên phải"
+  },
+  "splitViewUp": {
+    "message": "Chia - trên",
+    "description": "Chế độ xem chia đôi, cửa sổ mới phía trên"
+  },
+  "splitViewDown": {
+    "message": "Chia - dưới",
+    "description": "Chế độ xem chia đôi, cửa sổ mới phía dưới"
   }
 }

@@ -44,7 +44,7 @@
     "description": "Otwórz link w tle"
   },
   "superDragDescription": {
-    "message": "Funkcja Super Przeciągania działa dla linków, obrazów i zaznaczonego tekstu. Gdy zaznaczony tekst to URL, zostanie otwarty jako link; w przeciwnym razie będzie wyszukany. Kierunek przeciągnięcia określa sposób otwierania nowych kart.",
+    "message": "Super Przeciąganie działa dla linków, obrazów i zaznaczonego tekstu. Możesz ustawić metodę otwierania dla każdego kierunku gestu (góra/dół/lewo/prawo), w tym na pierwszym planie, w tle lub w widoku podzielonym (lewo/prawo/góra/dół).",
     "description": "Opis funkcji super przeciągania"
   },
   "left": {
@@ -244,8 +244,8 @@
     "description": "Tytuł ustawień"
   },
   "customizedBehavior": {
-    "message": "Niestandardowe zachowanie",
-    "description": "Customized behavior section title"
+    "message": "Lista blokowanych",
+    "description": "Block list section title"
   },
   "disableMouseGesturesForSites": {
     "message": "Wyłącz gesty myszy i super przeciąganie na tych witrynach",
@@ -282,6 +282,10 @@
   "enableDragTextSearch": {
     "message": "Włącz Wyszukiwanie Tekstu Przeciąganiem",
     "description": "Opcja włącz wyszukiwanie tekstu przeciąganiem"
+  },
+  "autoDownloadOnDragFile": {
+    "message": "Auto-pobieranie obrazu/pliku przy przeciąganiu",
+    "description": "When the drag target is an image or other downloadable file, start download automatically"
   },
   "enableImagePreview": {
     "message": "Włącz Podgląd Obrazów",
@@ -922,5 +926,25 @@
   "showTabCountBadge": {
     "message": "Pokaż Liczbę Kart",
     "description": "Show tab count badge option"
+  },
+  "splitViewAction": {
+    "message": "Widok podzielony",
+    "description": "Otwórz w oknie widoku podzielonego"
+  },
+  "splitViewLeft": {
+    "message": "Podziel - lewo",
+    "description": "Widok podzielony, nowe okno w lewej połowie"
+  },
+  "splitViewRight": {
+    "message": "Podziel - prawo",
+    "description": "Widok podzielony, nowe okno w prawej połowie"
+  },
+  "splitViewUp": {
+    "message": "Podziel - góra",
+    "description": "Widok podzielony, nowe okno w górnej połowie"
+  },
+  "splitViewDown": {
+    "message": "Podziel - dół",
+    "description": "Widok podzielony, nowe okno w dolnej połowie"
   }
 }
