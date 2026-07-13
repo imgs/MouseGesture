@@ -106,4 +106,5 @@ This release consolidates gesture recognition, super drag, native scrolling, scr
 *   修复页面限制解除逻辑中的内联样式 CSP 和禁止 unload 监听警告。
 *   受限协议统一拦截，无法注入的浏览器内部页面不会重复尝试执行内容脚本。
 
-
+### 赞赏码（感谢支持）：  
+<img src="./images/qrcode/mm_reward_qrcode_w.png" alt="赞赏码 感谢支持" style="width: 50%; max-width: 50%; border: 1px solid black; display: block;">
