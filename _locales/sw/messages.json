@@ -4,7 +4,7 @@
     "description": "Jina la kifaa cha nyongeza"
   },
   "extDesc": {
-    "message": "Kifaa cha nyongeza cha Chrome/Edge kinachounga mkono vivyo vya panya na utendaji wa kuburuta na onyesho la kiungo",
+    "message": "Mienendo ya kipanya, buruta kuu, onyesho la kiotomatiki la picha na viungo na zaidi.",
     "description": "Maelezo ya kifaa cha nyongeza"
   },
   "title": {
@@ -35,13 +35,21 @@
     "message": "Buruta Kushoto",
     "description": "Kitendo cha kuburuta kushoto"
   },
-  "openInForeground": {
-    "message": "Fungua Kiungo kwa Mazingira ya Juu",
-    "description": "Fungua kiungo kwa mazingira ya juu"
+  "dragUpRight": {
+    "message": "Buruta juu-kulia",
+    "description": "Super drag diagonal direction"
   },
-  "openInBackground": {
-    "message": "Fungua Kiungo kwa Mazingira ya Nyuma",
-    "description": "Fungua kiungo kwa mazingira ya nyuma"
+  "dragDownRight": {
+    "message": "Buruta chini-kulia",
+    "description": "Super drag diagonal direction"
+  },
+  "dragDownLeft": {
+    "message": "Buruta chini-kushoto",
+    "description": "Super drag diagonal direction"
+  },
+  "dragUpLeft": {
+    "message": "Buruta juu-kushoto",
+    "description": "Super drag diagonal direction"
   },
   "superDragDescription": {
     "message": "Super Drag inafanya kazi kwa viungo, picha na maandishi yaliyochaguliwa. Unaweza kuweka njia ya kufungua kwa kila mwelekeo wa ishara (juu/chini/kushoto/kulia), ikiwa ni pamoja na mandharinyuma, usuli au maonyesho yaliyogawanyika (kushoto/kulia/juu/chini).",
@@ -64,52 +72,76 @@
     "description": "Mwelekeo wa chini"
   },
   "downThenRight": {
-    "message": "Chini Kisha Kulia",
+    "message": "Chini kisha kulia",
     "description": "Kivyo chini kisha kulia"
   },
   "leftThenUp": {
-    "message": "Kushoto Kisha Juu",
+    "message": "Kushoto kisha juu",
     "description": "Kivyo kushoto kisha juu"
   },
   "rightThenUp": {
-    "message": "Kulia Kisha Juu",
+    "message": "Kulia kisha juu",
     "description": "Kivyo kulia kisha juu"
   },
   "rightThenDown": {
-    "message": "Kulia Kisha Chini",
+    "message": "Kulia kisha chini",
     "description": "Kivyo kulia kisha chini"
   },
   "upThenLeft": {
-    "message": "Juu Kisha Kushoto",
+    "message": "Juu kisha kushoto",
     "description": "Kivyo juu kisha kushoto"
   },
   "upThenRight": {
-    "message": "Juu Kisha Kulia",
+    "message": "Juu kisha kulia",
     "description": "Kivyo juu kisha kulia"
   },
   "downThenLeft": {
-    "message": "Chini Kisha Kushoto",
+    "message": "Chini kisha kushoto",
     "description": "Kivyo chini kisha kushoto"
   },
   "leftThenDown": {
-    "message": "Kushoto Kisha Chini",
+    "message": "Kushoto kisha chini",
     "description": "Kivyo kushoto kisha chini"
   },
   "upThenDown": {
-    "message": "Juu Kisha Chini",
+    "message": "Juu kisha chini",
     "description": "Kivyo juu kisha chini"
   },
   "downThenUp": {
-    "message": "Chini Kisha Juu",
+    "message": "Chini kisha juu",
     "description": "Kivyo chini kisha juu"
   },
   "leftThenRight": {
-    "message": "Kushoto Kisha Kulia",
+    "message": "Kushoto kisha kulia",
     "description": "Kivyo kushoto kisha kulia"
   },
   "rightThenLeft": {
-    "message": "Kulia Kisha Kushoto",
+    "message": "Kulia kisha kushoto",
     "description": "Kivyo kulia kisha kushoto"
+  },
+  "rightHoldWheelUp": {
+    "message": "Shikilia kulia + gurudumu juu",
+    "description": "Shikilia kitufe cha kulia na gurudumu juu"
+  },
+  "rightHoldWheelDown": {
+    "message": "Shikilia kulia + gurudumu chini",
+    "description": "Shikilia kitufe cha kulia na gurudumu chini"
+  },
+  "leftHoldWheelUp": {
+    "message": "Shikilia kushoto + kete juu",
+    "description": "Kitufe cha kushoto na kete juu"
+  },
+  "leftHoldWheelDown": {
+    "message": "Shikilia kushoto + kete chini",
+    "description": "Kitufe cha kushoto na kete chini"
+  },
+  "rightHoldLeftClick": {
+    "message": "Shikilia kulia + kubofya kushoto",
+    "description": "Shikilia kitufe cha kulia na kubofya kushoto"
+  },
+  "leftHoldRightClick": {
+    "message": "Shikilia kushoto + bonyeza kulia",
+    "description": "Shikilia kitufe cha kushoto na bonyeza kulia"
   },
   "back": {
     "message": "Rudi Nyuma",
@@ -158,6 +190,18 @@
   "prevTab": {
     "message": "Tabo Iliyopita",
     "description": "Kitendo cha tabo iliyopita"
+  },
+  "previousActiveTab": {
+    "message": "Kichupo kilichokuwa amilifu awali",
+    "description": "Kitendo cha ishara: badili kwenda kwenye kichupo kilichokuwa amilifu awali"
+  },
+  "goToParentUrl": {
+    "message": "URL ya mzazi",
+    "description": "Kitendo cha ishara: nenda kwenye njia ya URL ya mzazi"
+  },
+  "goToRootUrl": {
+    "message": "URL ya mzizi",
+    "description": "Kitendo cha ishara: nenda kwenye URL ya mzizi wa tovuti"
   },
   "nextTab": {
     "message": "Tabo Inayofuata",
@@ -211,6 +255,14 @@
     "message": "Badilisha Skrini Kamili",
     "description": "Toggle fullscreen action"
   },
+  "zoomIn": {
+    "message": "Kuza",
+    "description": "Ongeza kuzingatia ukubwa wa kichupo cha sasa"
+  },
+  "zoomOut": {
+    "message": "Kupungua",
+    "description": "Punguza kuzingatia ukubwa wa kichupo cha sasa"
+  },
   "closeTabsToLeft": {
     "message": "Funga Tabo za Kushoto",
     "description": "Close tabs to left action"
@@ -218,6 +270,474 @@
   "reloadAllTabs": {
     "message": "Pakia Upya Tabo Zote",
     "description": "Reload all tabs action"
+  },
+  "stopLoadingAllTabs": {
+    "message": "Simisha upakiaji wa tab zote",
+    "description": "Stop loading in all tabs"
+  },
+  "screenshotRegion": {
+    "message": "Picha ya skrini (eneo la mkondo)",
+    "description": "Screenshot gesture action"
+  },
+  "screenshotRegionOrLink": {
+    "message": "Picha ya skrini au fungua kiungo",
+    "description": "Trail region hint when links are inside selection"
+  },
+  "trailRegionChooseTitle": {
+    "message": "Viungo katika uteuzi — picha au fungua",
+    "description": "Trail region chooser dialog title"
+  },
+  "trailRegionLinkSingle": {
+    "message": "Kiungo 1",
+    "description": "Trail region link count"
+  },
+  "trailRegionLinkMultiple": {
+    "message": "Viungo {count}",
+    "description": "Trail region link count"
+  },
+  "trailRegionActionScreenshot": {
+    "message": "Picha (S)",
+    "description": "Trail region chooser button"
+  },
+  "trailRegionActionOpenLink": {
+    "message": "Fungua kwenye tabo mpya (O)",
+    "description": "Trail region chooser button"
+  },
+  "trailRegionActionOpenLinks": {
+    "message": "Fungua kwenye tabo mpya (O)",
+    "description": "Trail region chooser button"
+  },
+  "trailRegionActionOpenSelected": {
+    "message": "Fungua {n} kwenye tabo mpya (O)",
+    "description": "Trail region open checked links"
+  },
+  "trailRegionActionOpenNone": {
+    "message": "Fungua uteuzi (O)",
+    "description": "Trail region open button when none checked"
+  },
+  "trailRegionActionCopy": {
+    "message": "Nakili (C)",
+    "description": "Trail region chooser copy button"
+  },
+  "trailRegionActionCopySelected": {
+    "message": "Nakili {n} (C)",
+    "description": "Trail region copy checked links"
+  },
+  "trailRegionActionCopyNone": {
+    "message": "Nakili (C)",
+    "description": "Trail region copy button when none checked"
+  },
+  "trailRegionCopyFailed": {
+    "message": "Unakili imeshindwa",
+    "description": "Trail region copy to clipboard failed"
+  },
+  "trailRegionSelectAll": {
+    "message": "Chagua zote",
+    "description": "Trail region link list select all"
+  },
+  "trailRegionNoLinkSelected": {
+    "message": "Chagua angalau kiungo kimoja",
+    "description": "Trail region no selection hint"
+  },
+  "trailRegionChooseHint": {
+    "message": "Esc kughairi · chagua viungo vya kunakili/kufungua · buruta kingo kubadilisha ukubwa",
+    "description": "Trail region chooser footer"
+  },
+  "trailRegionLinkOpened": {
+    "message": "Kiungo kimefunguliwa kwenye tabo mpya",
+    "description": "Trail region open link feedback"
+  },
+  "trailRegionLinksOpened": {
+    "message": "Viungo vimefunguliwa kwenye tabo mpya",
+    "description": "Trail region open links feedback"
+  },
+  "trailRegionLinksTruncated": {
+    "message": "Viungo {n} vya kwanza pekee vimefunguliwa",
+    "description": "Trail region open links cap"
+  },
+  "screenshotScrollCaptureActive": {
+    "message": "Sogeza ukurasa kwa mkono, kisha njia fupi ile ile au Esc kumaliza na kuunganisha",
+    "description": "Manual scroll capture in progress"
+  },
+  "screenshotCopied": {
+    "message": "Picha imenakiliwa kwenye ubao wa kunakili",
+    "description": "Screenshot feedback"
+  },
+  "screenshotFailed": {
+    "message": "Picha imeshindwa",
+    "description": "Screenshot feedback"
+  },
+  "screenshotNeedTrail": {
+    "message": "Chora mkondo mrefu zaidi kuchagua eneo",
+    "description": "Screenshot feedback"
+  },
+  "screenshotUnavailable": {
+    "message": "Moduli ya picha haipatikani",
+    "description": "Screenshot feedback"
+  },
+  "screenshotTopFrameOnly": {
+    "message": "Picha ya ukurasa mzima tu kwenye fremu kuu",
+    "description": "Screenshot feedback"
+  },
+  "screenshotFeature": {
+    "message": "Picha ya skrini",
+    "description": "Screenshot settings section title"
+  },
+  "enableScreenshotFeature": {
+    "message": "Washa picha ya skrini",
+    "description": "Master toggle for screenshot feature"
+  },
+  "enableScreenshotTrailCapture": {
+    "message": "Eneo la mkondo (mzunguko / kujikata)",
+    "description": "Capture when trail loops or crosses; skipped if another gesture action matches"
+  },
+  "enableScreenshotClipboard": {
+    "message": "Nakili kiotomatiki kwenye ubao wa kunakili",
+    "description": "Copy screenshot to clipboard after capture"
+  },
+  "enableScreenshotPreview": {
+    "message": "Onyesha hakikisho baada ya kupiga",
+    "description": "Open preview window when a screenshot is captured"
+  },
+  "enableScreenshotHistory": {
+    "message": "Hifadhi historia ya picha",
+    "description": "Keep captured screenshots in local history"
+  },
+  "screenshotHistoryMaxCount": {
+    "message": "Kikomo cha historia",
+    "description": "Maximum screenshot history entries to keep"
+  },
+  "screenshotHistoryMaxCountHint": {
+    "message": "0 = bila kikomo; 1–200 hufuta za zamani zaidi ya kikomo",
+    "description": "Screenshot history limit hint"
+  },
+  "screenshotHistoryUnlimited": {
+    "message": "Bila kikomo",
+    "description": "Label when screenshot history limit is 0"
+  },
+  "screenshotHistoryView": {
+    "message": "Tazama historia",
+    "description": "Open screenshot history window"
+  },
+  "screenshotHistoryTitle": {
+    "message": "Historia ya picha",
+    "description": "Screenshot history window title"
+  },
+  "screenshotHistoryEmpty": {
+    "message": "Hakuna picha bado",
+    "description": "Empty screenshot history state"
+  },
+  "screenshotHistoryClearAll": {
+    "message": "Futa zote",
+    "description": "Delete all screenshot history entries"
+  },
+  "screenshotHistoryClearConfirm": {
+    "message": "Futa historia yote ya picha?",
+    "description": "Confirm clearing screenshot history"
+  },
+  "screenshotHistoryDelete": {
+    "message": "Futa",
+    "description": "Delete one screenshot history entry"
+  },
+  "screenshotHistoryPinToPage": {
+    "message": "Bandika kwenye ukurasa",
+    "description": "Pin history thumbnail onto the web page"
+  },
+  "screenshotHistoryPinFailed": {
+    "message": "Imeshindwa kubandika (fungua tabo lengwa au ruhusu tovuti hii).",
+    "description": "Error when pinning from screenshot history"
+  },
+  "screenshotHistoryCount": {
+    "message": "Vipengele $1",
+    "description": "Number of items in screenshot history",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "screenshotHistoryModeViewport": {
+    "message": "Eneo linaloonekana",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeFullPage": {
+    "message": "Ukurasa mzima",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeRegion": {
+    "message": "Eneo",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeScroll": {
+    "message": "Sogeza kwa mkono",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeUnknown": {
+    "message": "Picha",
+    "description": "Screenshot history capture mode fallback label"
+  },
+  "screenshotDone": {
+    "message": "Picha iko tayari",
+    "description": "Hint when capture finished without clipboard copy"
+  },
+  "screenshotPreviewTitle": {
+    "message": "Hakikisho la picha",
+    "description": "Screenshot preview window title"
+  },
+  "screenshotPreviewClose": {
+    "message": "Funga",
+    "description": "Close screenshot preview window"
+  },
+  "screenshotPreviewCopyAgain": {
+    "message": "Nakili",
+    "description": "Copy screenshot to clipboard from preview window"
+  },
+  "screenshotPreviewSave": {
+    "message": "Hifadhi kama faili",
+    "description": "Save annotated screenshot to disk"
+  },
+  "screenshotPreviewSaved": {
+    "message": "Imehifadhiwa",
+    "description": "Screenshot file save succeeded"
+  },
+  "screenshotPreviewPinToPage": {
+    "message": "Bandika kwenye ukurasa",
+    "description": "Pin annotated screenshot onto the source web page"
+  },
+  "screenshotPreviewPinned": {
+    "message": "Imebandikwa",
+    "description": "Screenshot pin placed on page"
+  },
+  "screenshotPreviewPinning": {
+    "message": "Inabandika…",
+    "description": "Screenshot pin in progress"
+  },
+  "screenshotPinTitle": {
+    "message": "Picha",
+    "description": "Title on pinned screenshot sticker"
+  },
+  "screenshotPinClose": {
+    "message": "Ondoa bandiko",
+    "description": "Close button on pinned screenshot"
+  },
+  "screenshotPinResize": {
+    "message": "Badilisha ukubwa",
+    "description": "Resize handle on pinned screenshot"
+  },
+  "screenshotPinZoomFit": {
+    "message": "Linganisha",
+    "description": "Fit pinned screenshot to view"
+  },
+  "screenshotPinZoomOriginal": {
+    "message": "1:1",
+    "description": "Show pinned screenshot at original pixel size"
+  },
+  "screenshotPinOrderLabel": {
+    "message": "Bandiko $1$",
+    "description": "Pinned screenshot order number",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "screenshotPreviewLoadFailed": {
+    "message": "Hakikisho halikupakiwa",
+    "description": "Screenshot preview load error"
+  },
+  "screenshotPreviewZoomFit": {
+    "message": "Linganisha",
+    "description": "Fit screenshot to preview window"
+  },
+  "screenshotPreviewZoomFitTitle": {
+    "message": "Linganisha na dirisha",
+    "description": "Tooltip for fit zoom button"
+  },
+  "screenshotPreviewZoomOneToOne": {
+    "message": "1:1",
+    "description": "Actual-size zoom button label"
+  },
+  "screenshotPreviewZoomOneToOneTitle": {
+    "message": "Ukubwa halisi (1:1)",
+    "description": "Tooltip for 1:1 zoom button"
+  },
+  "screenshotPreviewZoomLevel": {
+    "message": "Kuza $1$%",
+    "description": "Current zoom percentage in preview",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "screenshotAnnotHand": {
+    "message": "Mkono (songesha)",
+    "description": "Pan the preview by dragging"
+  },
+  "screenshotAnnotPen": {
+    "message": "Kalamu",
+    "description": "Annotation tool: freehand"
+  },
+  "screenshotAnnotArrow": {
+    "message": "Mshale (Shift: H/V)",
+    "description": "Annotation tool: arrow; Shift constrains to horizontal or vertical"
+  },
+  "screenshotAnnotLine": {
+    "message": "Mstari (Shift: H/V)",
+    "description": "Annotation tool: line; Shift constrains to horizontal or vertical"
+  },
+  "screenshotAnnotRect": {
+    "message": "Mstatili (Shift: mraba)",
+    "description": "Annotation tool: rectangle; Shift draws a square"
+  },
+  "screenshotAnnotEllipse": {
+    "message": "Duara la mviringo",
+    "description": "Annotation tool: ellipse"
+  },
+  "screenshotAnnotRoundRect": {
+    "message": "Mstatili uliozunguka",
+    "description": "Annotation tool: rounded rectangle"
+  },
+  "screenshotAnnotHighlighter": {
+    "message": "Kalamu ya kuangazia",
+    "description": "Annotation tool: highlighter marker"
+  },
+  "screenshotAnnotHighlight": {
+    "message": "Fremu ya kuangazia",
+    "description": "Annotation tool: highlight rectangle"
+  },
+  "screenshotAnnotFillRect": {
+    "message": "Mstatili uliojazwa",
+    "description": "Annotation tool: filled rectangle"
+  },
+  "screenshotAnnotFillEllipse": {
+    "message": "Duara la mviringo uliojazwa",
+    "description": "Annotation tool: filled ellipse"
+  },
+  "screenshotAnnotBlur": {
+    "message": "Fificha",
+    "description": "Annotation tool: blur brush"
+  },
+  "screenshotAnnotArrow2": {
+    "message": "Mshale maradufu (Shift: H/V)",
+    "description": "Annotation tool: line with arrowheads at both ends; Shift constrains H/V"
+  },
+  "screenshotAnnotNumber": {
+    "message": "Nambari",
+    "description": "Annotation tool: sequential number markers"
+  },
+  "screenshotAnnotStampStart": {
+    "message": "Mwanzo #",
+    "description": "Starting number for sequential stamps"
+  },
+  "screenshotAnnotStampNext": {
+    "message": "Inayofuata #: $1$",
+    "description": "Next number stamp to place (tooltip)",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "screenshotAnnotCrop": {
+    "message": "Kata",
+    "description": "Annotation tool: crop image"
+  },
+  "screenshotAnnotCropApply": {
+    "message": "Tekeleza kukata",
+    "description": "Confirm crop selection"
+  },
+  "screenshotAnnotCropCancel": {
+    "message": "Ghairi",
+    "description": "Cancel crop selection"
+  },
+  "screenshotAnnotText": {
+    "message": "Maandishi",
+    "description": "Annotation tool: text"
+  },
+  "screenshotAnnotMosaic": {
+    "message": "Mosaiki",
+    "description": "Annotation tool: mosaic blur"
+  },
+  "screenshotAnnotEraser": {
+    "message": "Rubber",
+    "description": "Annotation tool: eraser"
+  },
+  "screenshotAnnotSize": {
+    "message": "Ukubwa",
+    "description": "Annotation stroke size"
+  },
+  "screenshotAnnotResetAll": {
+    "message": "Weka upya uhariri wote",
+    "description": "Clear all annotations and restore original screenshot"
+  },
+  "screenshotAnnotStepCount": {
+    "message": "$1 / $2",
+    "description": "History step indicator: current / total"
+  },
+  "screenshotAnnotStepCountTitle": {
+    "message": "Hatua zilizotumika / jumla (0 = picha asili)",
+    "description": "Tooltip for history step indicator"
+  },
+  "screenshotAnnotUndo": {
+    "message": "Tendua",
+    "description": "Undo annotation"
+  },
+  "screenshotAnnotRedo": {
+    "message": "Rudia",
+    "description": "Redo annotation"
+  },
+  "screenshotAnnotTextPlaceholder": {
+    "message": "Andika hapa…",
+    "description": "Placeholder in inline text editor on screenshot preview"
+  },
+  "screenshotOptRegion": {
+    "message": "Chagua eneo",
+    "description": "Screenshot bind row: keyboard drag rectangle region"
+  },
+  "screenshotOptViewport": {
+    "message": "Eneo linaloonekana",
+    "description": "Screenshot bind row: current visible tab area"
+  },
+  "screenshotOptFullPage": {
+    "message": "Ukurasa mzima",
+    "description": "Screenshot bind row: full page"
+  },
+  "screenshotOptScrollStitch": {
+    "message": "Sogeza kwa mkono",
+    "description": "Screenshot bind row: manual scroll capture"
+  },
+  "screenshotOptOpenHistory": {
+    "message": "Fungua historia",
+    "description": "Screenshot bind row: keyboard shortcut to open screenshot history"
+  },
+  "screenshotHotkeyPressHint": {
+    "message": "Njia fupi: bofya sehemu hapo juu, kisha mchanganyiko (Ctrl / Alt / Meta + herufi au nambari, au F1–F12). Esc hufuta sehemu.",
+    "description": "Screenshot section footer: hotkey binding help"
+  },
+  "screenshotHotkeyPlaceholder": {
+    "message": "Bofya kuweka",
+    "description": "Placeholder in empty screenshot hotkey fields"
+  },
+  "screenshotRegionPickHint": {
+    "message": "Buruta kuchagua eneo. Esc kughairi.",
+    "description": "Hint while keyboard region picker is active"
+  },
+  "screenshotRegionPickFooterHint": {
+    "message": "Njia fupi ya eneo: chora mstatili kisha achia. Kuna viungo: picha au tabo mpya. Esc hughairi.",
+    "description": "Screenshot section footer: keyboard region picker help"
+  },
+  "screenshotRegionTooSmall": {
+    "message": "Uteuzi mdogo sana — chora eneo kubwa zaidi",
+    "description": "Region picker: minimum size not met"
+  },
+  "screenshotGestureIntersectHint": {
+    "message": "Eneo la mkondo: mzunguko mmoja au kujikata mara moja, kisha achia. Kuna viungo: picha au tabo mpya. Mizunguko mingi = kuchora ovyo.",
+    "description": "Screenshot section footer: trail region capture help"
   },
   "togglePinTab": {
     "message": "Funga/Ondoa Kufunga Tabo",
@@ -244,16 +764,16 @@
     "description": "Kichwa cha mipangilio"
   },
   "customizedBehavior": {
-    "message": "Orodha ya kuzuia",
-    "description": "Block list section title"
+    "message": "Tovuti zilizozimwa",
+    "description": "Section title for the per-site disable list"
   },
   "disableMouseGesturesForSites": {
-    "message": "Zima ishara ya kipanya na kuburuta kwa tovuti hizi",
-    "description": "Label for the list of sites where gestures and super drag are disabled"
+    "message": "Zima vipengele vya kiendelezi kwenye vikoa vilivyoorodheshwa",
+    "description": "Subtitle for Disabled sites section"
   },
   "disabledSitesHint": {
-    "message": "Tovuti moja kwa mstari. Kikoa (mf. youtube.com) au URL kamili.",
-    "description": "Hint for the disabled sites textarea"
+    "message": "Inatumika kwa: ishara, buruta maalum, onyesho la awali la kiungo/picha, picha za skrini na kufungua ukurasa. Ongeza tovuti ya sasa au ingiza kikoa/URL; bofya alama ya kuondoa ili kufuta.",
+    "description": "Short hint explaining which features the Disabled sites list affects"
   },
   "enableGesture": {
     "message": "Washa Vivyo vya Panya",
@@ -279,6 +799,26 @@
     "message": "Washa Kuburuta",
     "description": "Chaguo la kuwasha kuburuta"
   },
+  "superDragCompassPosition": {
+    "message": "Dira ya mwelekeo 8",
+    "description": "Super drag compass display and position"
+  },
+  "superDragCompassPosCompassAbove": {
+    "message": "Juu ya hatua ya kuburuta",
+    "description": "Compass above drag start, centered horizontally"
+  },
+  "superDragCompassPosCompassRight": {
+    "message": "Kulia ya hatua ya kuburuta",
+    "description": "Compass to the right of drag start, vertically centered"
+  },
+  "superDragCompassPosCompassBelow": {
+    "message": "Chini ya hatua ya kuburuta",
+    "description": "Compass below drag start, centered horizontally"
+  },
+  "superDragCompassPosCompassLeft": {
+    "message": "Kushoto ya hatua ya kuburuta",
+    "description": "Compass to the left of drag start, vertically centered"
+  },
   "enableDragTextSearch": {
     "message": "Washa Kutafuta Maandishi ya Kuburuta",
     "description": "Chaguo la kuwasha kutafuta maandishi ya kuburuta"
@@ -287,9 +827,17 @@
     "message": "Pakua picha/faili kwa kuburuta",
     "description": "When the drag target is an image or other downloadable file, start download automatically"
   },
+  "enableImageDrag": {
+    "message": "Washa uburutaji wa picha",
+    "description": "Control image super drag independently from image preview"
+  },
   "enableImagePreview": {
     "message": "Washa Onyesho la Picha",
     "description": "Chaguo la kuwasha onyesho la picha"
+  },
+  "enableImagePreviewEnhanced": {
+    "message": "Onyesho la picha lililoboreshwa",
+    "description": "Support transparent overlay, background-image, parent lookup, etc."
   },
   "enableDuplicateCheck": {
     "message": "Gundua Tabo Zilizorudiwa",
@@ -302,10 +850,6 @@
   "enableSmoothScroll": {
     "message": "Washa Onyesha laini",
     "description": "Enable smooth scrolling for gesture actions"
-  },
-  "save": {
-    "message": "Mipangilio Imetumika",
-    "description": "Kitufe cha kuhifadhi mipangilio"
   },
   "reset": {
     "message": "Weka Upya",
@@ -363,14 +907,6 @@
     "message": "Imeshindwa Kuweka Upya Mipangilio",
     "description": "Ujumbe wa hitilafu ya kuweka upya mipangilio"
   },
-  "themeLight": {
-    "message": "Mwanga",
-    "description": "Mada ya mwanga"
-  },
-  "themeDark": {
-    "message": "Giza",
-    "description": "Mada ya giza"
-  },
   "buyMeACoffee": {
     "message": "Nunua kahawa",
     "description": "Kitufe cha mchango"
@@ -379,17 +915,33 @@
     "message": "Badilisha Mada",
     "description": "Kitufe cha kubadilisha mada"
   },
-  "toggleLanguage": {
-    "message": "Badilisha Lugha",
-    "description": "Kitufe cha kubadilisha lugha"
+  "openDetachedPopupTitle": {
+    "message": "Fungua mipangilio kwenye paneli ya kando (au dirisha tofauti)",
+    "description": "Kitufe cha kichwa: paneli ya kando au dirisha tofauti"
+  },
+  "openDetachedWindowFromSidePanelTitle": {
+    "message": "Fungua kwenye dirisha tofauti (kando ya kivinjari)",
+    "description": "Paneli ya kando: dirisha tofauti na mpangilio wa kivinjari"
+  },
+  "openOptionsPageTitle": {
+    "message": "Fungua ukurasa wa chaguo",
+    "description": "Kitufe cha kichwa: fungua ukurasa wa chaguo za kiendelezi"
   },
   "donationTooltip": {
     "message": "Ikiwa unapenda kazi hii, tafadhali nisaidie. Asante :)",
     "description": "Kidokezo cha mchango"
   },
   "rightButtonHint": {
-    "message": "Shika kitufe cha kulia cha panya",
+    "message": "Shika kulia (mstari, gurudumu, bofyo) · kushoto (gurudumu)",
     "description": "Kidokezo cha kitufe cha kulia"
+  },
+  "builtInGesturesListExpandHint": {
+    "message": "Bofya ili kufungua orodha kamili ya ishara",
+    "description": "Tooltip on built-in gestures subtitle when list is collapsed"
+  },
+  "builtInGesturesListCollapseHint": {
+    "message": "Bofya ili kufunga orodha ya ishara",
+    "description": "Tooltip on built-in gestures subtitle when list is expanded"
   },
   "leftButtonHint": {
     "message": "Shika kitufe cha kushoto cha panya",
@@ -403,17 +955,45 @@
     "message": "Fungua kwa Mazingira ya Nyuma",
     "description": "Kitendo cha kufungua kwa mazingira ya nyuma"
   },
+  "popupViewAction": {
+    "message": "Onyesho la Dirisha",
+    "description": "Super drag action: open target in popup view"
+  },
+  "incognitoAction": {
+    "message": "Fungua kwa Dirisha la Siri",
+    "description": "Open in incognito/private window"
+  },
+  "enableSplitScrollSync": {
+    "message": "Landanisha skrulu wima na mlalo kati ya madirisha yaliyogawanywa",
+    "description": "Mwonekano mgawanywa: linganisha mhimili wa skrulu kati ya madirisha"
+  },
   "copyAction": {
     "message": "Nakili",
     "description": "Copy selected text or link URL to clipboard"
+  },
+  "downloadAction": {
+    "message": "Pakua",
+    "description": "Super drag action: download target"
   },
   "copiedToClipboard": {
     "message": "Imenakiliwa kwenye ubao wa kunakili",
     "description": "Hint after copy action"
   },
-  "dragSearchEngine": {
-    "message": "URL ya Injini ya Utafutaji ya Kuburuta",
-    "description": "Mpangilio wa URL ya injini ya utafutaji ya kuburuta"
+  "dragSearchEngineSlotLabel": {
+    "message": "Kipengele cha kuhariri",
+    "description": "Label for drag search engine slot selector"
+  },
+  "dragSearchSlotDefault": {
+    "message": "Chaguomsingi (nakili)",
+    "description": "Default search URL slot in drag search editor"
+  },
+  "dragSearchEngineUrlForSlot": {
+    "message": "URL ya injini ya utafutaji",
+    "description": "Label for single drag search URL field"
+  },
+  "dragSearchEnginePerDirectionHelp": {
+    "message": "Chagua «Chaguomsingi» au mwelekeo wa kubeba kwenye orodha, kisha uhariri URL husika. Mwelekeo tupu hutumia chaguomsingi. Huhusu utafutaji wa maandishi yaliyovutwa tu.",
+    "description": "Help text for unified drag search engine editor"
   },
   "linkPreview": {
     "message": "Onyesho la Dirisha",
@@ -424,8 +1004,8 @@
     "description": "Quick navigation hover tooltip"
   },
   "linkPreviewHint": {
-    "message": "Pita juu + Kibonye cha Kubadilisha ili Kuonyesha Dirisha",
-    "description": "Kidokezo cha onyesho la dirisha"
+    "message": "Elekeza kipanya na utumie kichochezi kuonyesha dirisha ibukizi",
+    "description": "Popup view hint"
   },
   "enableLinkPreview": {
     "message": "Washa Onyesho la Dirisha",
@@ -495,41 +1075,61 @@
     "message": "Tumia {q} kwa neno la utafutaji, muundo wa mfano:",
     "description": "Maelezo ya mifano ya injini ya utafutaji"
   },
+  "searchExampleUrlClickHint": {
+    "message": "Bonyeza URL ya mfano kujaza sehemu hapo juu na kuhifadhi",
+    "description": "Tooltip for example search engine URLs (click to fill)"
+  },
+  "searchEngineExamplesUrlClickHint": {
+    "message": "Kidokezo: bonyeza URL ya mfano kujaza sehemu ya juu na kuhifadhi.",
+    "description": "Visible hint under search engine examples (click URL to fill field above and save)"
+  },
   "googleExample": {
-    "message": "Utafutaji wa Google: https://www.google.com/search?q={q}",
+    "message": "Utafutaji wa Google:",
+    "description": "Mfano wa utafutaji wa Google"
+  },
+  "googleExampleUrl": {
+    "message": "https://www.google.com/search?q={q}",
     "description": "Mfano wa utafutaji wa Google"
   },
   "googleTranslateExample": {
-    "message": "Tafsiri ya Google: https://translate.google.com/?sl=auto&tl=sw&text={q}&op=translate",
+    "message": "Tafsiri ya Google:",
+    "description": "Mfano wa tafsiri ya Google"
+  },
+  "googleTranslateExampleUrl": {
+    "message": "https://translate.google.com/?sl=auto&tl=sw&text={q}&op=translate",
     "description": "Mfano wa tafsiri ya Google"
   },
   "localSearchExample": {
-    "message": "Mfano: https://www.google.co.tz/search?q={q}",
+    "message": "Mfano:",
+    "description": "Mfano wa URL ya utafutaji wa ndani"
+  },
+  "localSearchExampleUrl": {
+    "message": "https://www.google.co.tz/search?q={q}",
     "description": "Mfano wa URL ya utafutaji wa ndani"
   },
   "bingExample": {
-    "message": "Utafutaji wa Bing: https://www.bing.com/search?q={q}",
+    "message": "Utafutaji wa Bing:",
+    "description": "Mfano wa utafutaji wa Bing"
+  },
+  "bingExampleUrl": {
+    "message": "https://www.bing.com/search?q={q}",
     "description": "Mfano wa utafutaji wa Bing"
   },
   "wheelTip": {
-    "message": "Tumia gurudumu la panya ili kurekebisha thamani",
+    "message": "Egesha kidole juu ya safu hii kwa takriban sekunde 1.5, kisha tumia gurudumu kurekebisha",
     "description": "Kidokezo cha gurudumu"
   },
   "modifierKeyDelayTip": {
-    "message": "Wakati wa kutumia kibonye cha kuanzisha, ucheleweshaji wa juu umewekwa kwa 300ms",
-    "description": "Kidokezo cha ucheleweshaji wa kibonye cha kubadilisha"
+    "message": "Ucheleweshaji huanza baada ya sharti la kichochezi kutimizwa; uongeze ili kuepuka maonyesho ya bahati mbaya.",
+    "description": "Modifier key delay tip"
   },
   "welcomeTitle": {
-    "message": "Karibu kwenye Kifaa cha Nyongeza cha Vivyo vya Panya",
+    "message": "Karibu kwenye kiendelezi cha ishara za kipanya",
     "description": "Kichwa cha ukurasa wa kukaribisha"
   },
   "welcomeDescription": {
-    "message": "Asante kwa kusakinisha Kiendelezi cha Vivyo vya Panya! Kiendelezi hiki kinatoa utendaji wa vivyo vya panya ulio na utajiri, usimamizi wa tabu wa busara, uwezo wa mtazamo wa popup na uzoefu wa kuona ulioimarishwa kukusaidia kuvinjari mtandao kwa ufanisi zaidi. Tumeimarisha algorithm ya utambuzi wa vivyo na uvumilivu wa makosa ulioongezeka, kuruhusu vivyo kutambuliwa kwa usahihi hata wakati havijachorwa kikamilifu. Kipengele kipya cha dirisha la popup kinakuruhusu kuona maudhui ya kiungo katika madirisha ya popup bila kubadilisha tabu. Kiendelezi pia kinaunga mkono lugha 29 na mandhari angavu/giza kwa matumizi bora zaidi.",
+    "message": "Asante kwa kusakinisha Mouse Gesture! Shikilia kitufe cha kulia na buruta ili kutembelea, kusimamia vichupo na kusogeza; shikilia pia kulia au kushoto na gurudumu (na mchanganyiko zaidi katika mipangilio) kwa njia za ziada — utambuzi bado una uvumilivu hata wakati kurasa zinapopakiwa. Super Drag hufungua viungo, picha na utafutaji wa maandishi kwa sheria kwa kila mwelekeo (mbele, nyuma, muundo mgawanywa, nakili kwenye ubao wa kunakili, n.k.). Popup View huonyesha hakiki za viungo au hutafuta maandishi yaliyochaguliwa katika madirisha madogo. Hiari: hakiki ya picha inapoelekeza (hali panuliwa), kutambua vichupo vya mara mbili na kufunga kiotomatiki, kusogeza laini, beji ya hesabu ya vichupo kwenye mwambaa wa zana, na kufungua kurasa kwenye tovuti zenye vizuizi. Mipangilio kutoka mwambaa wa zana (kidirisha, paneli ya upande au dirisha tofauti); hamisha/leta; usawazishaji na akaunti ya kivinjari. Lugha 29 na mandhari mwanga/giza.",
     "description": "Maelezo ya ukurasa wa kukaribisha"
-  },
-  "gesturesDescription": {
-    "message": "Yafuatayo ni vivyo vya panya vilivyowekwa awali ambavyo unaweza kutumia kwa kuburuta na kitufe cha kulia cha panya:",
-    "description": "Maelezo ya vivyo"
   },
   "extensionName": {
     "message": "Kifaa cha Nyongeza cha Vivyo vya Panya",
@@ -539,88 +1139,48 @@
     "message": "Vipengele Vikuu",
     "description": "Kichwa cha vipengele vikuu"
   },
-  "utilitiesFeatures": {
-    "message": "Zana",
-    "description": "Kichwa cha zana"
+  "welcomeCoreGestureBlock": {
+    "message": "Ishara za panya: shika kulia na buruta kwa ishara za njia; gurudumu na kulia au kushoto shikilia na mchanganyiko wa bofyo unaposhikilia kulia — linaweza kubadilishwa katika mipangilio; utambuzi mvumilivu, hata wakati wa kupakia.",
+    "description": "Welcome page: core features gesture summary"
+  },
+  "welcomeCoreSuperDragBlock": {
+    "message": "Super Drag: buruta viungo na picha kwenye vichupo vipya, maandishi yaliyochaguliwa kwa utafutaji; mwelekeo huamua jinsi vichupo vinavyofunguliwa; chaguo-msingi nyuma.",
+    "description": "Welcome page: core features super drag summary"
+  },
+  "welcomeCorePopupViewBlock": {
+    "message": "Mwonekano wa kidirisha: shikilia kitufe cha kuwasha (Shift chaguo-msingi) juu ya kiungo ili kuona kwenye dirisha dogo; baada ya kuchagua maandishi bonyeza kitufe kutafuta mara moja kwa injini yako maalum.",
+    "description": "Welcome page: core features popup view summary"
   },
   "usageTips": {
     "message": "Vidokezo vya Matumizi",
     "description": "Kichwa cha vidokezo vya matumizi"
   },
-  "smartGestureRecognition": {
-    "message": "Utambuzi wa vivyo vya panya: Inatambua vivyo kwa usahihi hata kama havijakamilika, inafanya kazi wakati wa kupakia kurasa",
-    "description": "Maelezo ya utambuzi wa vivyo vya panya"
-  },
-  "tabManagementTitle": {
-    "message": "Usimamizi wa Tabo",
-    "description": "Kichwa cha usimamizi wa tabo"
-  },
-  "tabManagementDesc": {
-    "message": ": Ugunduzi wa tabo zilizorudiwa, kufunga moja kwa moja, uboreshaji wa kumbukumbu ya mara kwa mara",
-    "description": "Maelezo ya usimamizi wa tabo"
-  },
-  "superDragTitle": {
-    "message": "Kuburuta",
-    "description": "Kichwa cha kuburuta"
-  },
-  "superDragDesc": {
-    "message": ": Buruta viungo na picha kwa tabo mpya, buruta maandishi yaliyochaguliwa kutafuta",
-    "description": "Maelezo ya kuburuta"
-  },
-  "linkPreviewTitle": {
-    "message": "Onyesho la Dirisha",
-    "description": "Kichwa cha onyesho la kiungo"
-  },
-  "linkPreviewDesc": {
-    "message": ": Shika kibonye cha kubadilisha (chaguo-msingi: Shift) wakati wa kupita juu ya viungo kutazama kurasa za lengwa katika madirisha ya dirisha",
-    "description": "Maelezo ya onyesho la kiungo"
-  },
-  "textSelectionPreview": {
-    "message": "Chagua maandishi na bonyeza kibonye cha kubadilisha kutafuta mara moja katika dirisha la dirisha, na msaada wa injini ya utafutaji ya desturi",
-    "description": "Maelezo ya onyesho la uchaguzi wa maandishi"
-  },
   "previewTip": {
-    "message": "Unaweza kufungua madirisha mengi ya dirisha wakati mmoja",
+    "message": "Weka hakikisho kadhaa wazi kwa kulinganisha.",
     "description": "Kidokezo cha onyesho"
-  },
-  "dragDirection": {
-    "message": "Badilisha mwelekeo wa kuburuta ili kuamua njia ya kufungua tabo: fungua kwa mazingira ya nyuma kwa chaguo-msingi",
-    "description": "Maelezo ya mwelekeo wa kuburuta"
   },
   "debugPanelTitle": {
     "message": "Maelezo ya Uboreshaji ya Vivyo vya Panya",
     "description": "Kichwa cha jopo la uboreshaji"
   },
   "debugPanelDesc": {
-    "message": ": Bofya Alt+D kufungua, chambua maelezo ya kivyo kwa wakati halisi, inahifadhi hali",
+    "message": "Bonyeza Alt+D kufungua paneli ya utatuzi, chambua taarifa za ishara kwa wakati halisi, hali inahifadhiwa.",
     "description": "Maelezo ya jopo la uboreshaji"
   },
-  "oneClickCopy": {
-    "message": "Nakili ya kubofya moja ya maelezo ya uboreshaji kwa kushiriki rahisi, na msaada wa lugha nyingi",
-    "description": "Maelezo ya nakili ya kubofya moja"
-  },
-  "mediaPreview": {
-    "message": "Onyesho la vyombo vya habari lililoboreshwa: Athari za kupita juu za picha zilizoboreshwa na picha za video zilizoboreshwa",
-    "description": "Maelezo ya onyesho la vyombo vya habari"
-  },
-  "adaptiveTheme": {
-    "message": "Mada zinazobadilika: Zinarekebisha mtindo wa kuona kulingana na mandharinyuma ya ukurasa, zinaunga mkono hali ya mwanga/giza",
-    "description": "Maelezo ya mada inayobadilika"
-  },
   "gestureTrail": {
-    "message": "Njia za vivyo zinaonyeshwa kwenye skrini na rangi na upana unaoweza kubadilishwa",
+    "message": "Mkondo na vidokezo vya ishara hiari; rangi na unene katika mipangilio.",
     "description": "Maelezo ya njia ya kivyo"
   },
   "clickIcon": {
-    "message": "Bofya ikoni ya kifaa cha nyongeza kuwasha/kuzima vipengele, kuweka lugha, mada na zaidi",
+    "message": "Upau wa zana: kidirisha kidogo, paneli ya pembeni (Chrome/Edge), au mipangilio tofauti. Vipengele, lugha, mandhari, hamisha/leta.",
     "description": "Maelezo ya kubofya ikoni"
   },
   "languageSupport": {
-    "message": "Inaunga mkono 29 lugha, inajirekebisha moja kwa moja kwa lugha ya kivinjari",
+    "message": "Lugha 29 za kiolesura; hutumia uliochagua uliyohifadhi au hutafata lugha ya kivinjari.",
     "description": "Maelezo ya msaada wa lugha"
   },
   "enableAutoClose": {
-    "message": "Washa kipengele cha kufunga tabo zilizorudiwa moja kwa moja ili kupunguza kwa kiasi kikubwa matumizi ya rasilimali ya kivinjari",
+    "message": "Ukigundua marudio, inaweza kufunga URL zinazojirudia kiotomatiki (hiari).",
     "description": "Maelezo ya kuwasha kufunga moja kwa moja"
   },
   "rightClickMacLinux": {
@@ -634,14 +1194,6 @@
   "duplicateTabsDetected": {
     "message": "Imepatikana tabo $1 zilizorudiwa",
     "description": "Kichwa cha taarifa ya tabo zilizorudiwa zilizogunduliwa"
-  },
-  "duplicateTabsCount": {
-    "message": "Kuna tabo $1 zilizorudiwa",
-    "description": "Ujumbe wa idadi ya tabo zilizorudiwa"
-  },
-  "duplicateTabsSingle": {
-    "message": "Kuna tabo 1 iliyorudiwa",
-    "description": "Ujumbe wa tabo moja iliyorudiwa"
   },
   "autoClosedTabs": {
     "message": "Imefungwa moja kwa moja tabo $1 zilizorudiwa",
@@ -659,61 +1211,9 @@
     "message": "Tabo isiyo na jina",
     "description": "Tabo isiyo na jina"
   },
-  "morePages": {
-    "message": "...na kurasa $1 zaidi",
-    "description": "Kidokezo cha kurasa zaidi"
-  },
-  "errorShowDuplicateTabs": {
-    "message": "Hitilafu katika kuonyesha taarifa ya tabo zilizorudiwa:",
-    "description": "Ujumbe wa hitilafu wa kuonyesha taarifa ya tabo zilizorudiwa"
-  },
-  "errorSendCloseRequest": {
-    "message": "Hitilafu katika kutuma ombi la kufunga:",
-    "description": "Ujumbe wa hitilafu wa kutuma ombi la kufunga"
-  },
-  "errorCloseDuplicateTabs": {
-    "message": "Hitilafu katika kufunga tabo zilizorudiwa:",
-    "description": "Ujumbe wa hitilafu wa kufunga tabo zilizorudiwa"
-  },
-  "errorSendIgnoreRequest": {
-    "message": "Hitilafu katika kutuma ombi la kupuuza:",
-    "description": "Ujumbe wa hitilafu wa kutuma ombi la kupuuza"
-  },
-  "errorIgnoreDuplicateTabs": {
-    "message": "Hitilafu katika kupuuza tabo zilizorudiwa:",
-    "description": "Ujumbe wa hitilafu wa kupuuza tabo zilizorudiwa"
-  },
-  "errorUpdateDebugPanel": {
-    "message": "Hitilafu katika kusasisha jopo la uboreshaji:",
-    "description": "Ujumbe wa hitilafu wa kusasisha jopo la uboreshaji"
-  },
   "errorDetectBackgroundColor": {
     "message": "Hitilafu katika kugundua rangi ya mandharinyuma:",
     "description": "Ujumbe wa hitilafu wa kugundua rangi ya mandharinyuma"
-  },
-  "errorDetectImageBorder": {
-    "message": "Hitilafu katika kugundua radius ya mpaka wa picha:",
-    "description": "Ujumbe wa hitilafu wa kugundua radius ya mpaka wa picha"
-  },
-  "errorSetMutationObserver": {
-    "message": "Hitilafu katika kuweka mwangalizi wa mabadiliko:",
-    "description": "Ujumbe wa hitilafu wa kuweka mwangalizi wa mabadiliko"
-  },
-  "errorCheckElementVisibility": {
-    "message": "Hitilafu katika kuangalia kuonekana kwa kipengele:",
-    "description": "Ujumbe wa hitilafu wa kuangalia kuonekana"
-  },
-  "errorProcessBorderRadius": {
-    "message": "Hitilafu katika kusindika radius ya mpaka:",
-    "description": "Ujumbe wa hitilafu wa kusindika radius ya mpaka"
-  },
-  "errorDetectImageBackground": {
-    "message": "Hitilafu katika kugundua mandharinyuma ya picha:",
-    "description": "Ujumbe wa hitilafu wa kugundua mandharinyuma ya picha"
-  },
-  "errorShowAutoCloseNotification": {
-    "message": "Hitilafu katika kuonyesha taarifa ya mafanikio ya kufunga moja kwa moja:",
-    "description": "Ujumbe wa hitilafu wa kuonyesha taarifa ya mafanikio ya kufunga moja kwa moja"
   },
   "noForwardPage": {
     "message": "Hakuna kurasa inayofuata katika historia",
@@ -743,10 +1243,6 @@
     "message": "Kivyo Batili",
     "description": "Ujumbe wa kivyo batili"
   },
-  "nextPage": {
-    "message": "Kurasa Inayofuata",
-    "description": "Kitendo cha kurasa inayofuata"
-  },
   "errorReadPixel": {
     "message": "Hitilafu katika kusoma pixel:",
     "description": "Ujumbe wa hitilafu wa kusoma pixel"
@@ -758,10 +1254,6 @@
   "errorCanvasDraw": {
     "message": "Hitilafu katika kuchora kwenye canvas:",
     "description": "Ujumbe wa hitilafu wa kuchora canvas"
-  },
-  "errorAccessIframe": {
-    "message": "Hitilafu katika kufikia iframe:",
-    "description": "Ujumbe wa hitilafu wa kufikia iframe"
   },
   "errorMutationObserver": {
     "message": "Hitilafu katika kuweka mwangalizi wa mabadiliko:",
@@ -791,6 +1283,10 @@
     "message": "Mipangilio ya Mfumo",
     "description": "Sehemu ya mipangilio ya mfumo ya jopo la uboreshaji"
   },
+  "debugConsoleLog": {
+    "message": "Kumbukumbu za dashibodi",
+    "description": "Debug panel console log toggle label"
+  },
   "debugAngleThreshold": {
     "message": "Kizingiti cha Pembe",
     "description": "Mpangilio wa kizingiti cha pembe wa jopo la uboreshaji"
@@ -810,6 +1306,46 @@
   "debugMinGestureComplexity": {
     "message": "Utafitifu wa Chini wa Kivyo",
     "description": "Mpangilio wa utafitifu wa chini wa kivyo wa jopo la uboreshaji"
+  },
+  "debugMinMovementToStartGesture": {
+    "message": "Mwendo mdogo wa kuanza",
+    "description": "Mipangilio ya paneli ya utatuzi: mwendo mdogo wa kuanza kufuatilia ishara"
+  },
+  "debugSmoothingFactor": {
+    "message": "Kipengele cha kulainisha",
+    "description": "Mipangilio ya paneli ya utatuzi: kipengele cha kulainisha njia na utambuzi"
+  },
+  "debugAngleThresholdHelp": {
+    "message": "Hudhibiti jinsi mwendo unavyopangwa kuwa mlalo au wima kwa ukali. Thamani kubwa zinahitaji mwelekeo ulionyooka zaidi; ndogo huruhusu mwendo wa mshazari zaidi.",
+    "description": "Msaada wa kizingiti cha pembe katika paneli ya utatuzi"
+  },
+  "debugDirectionChangeThresholdHelp": {
+    "message": "Hudhibiti unyeti wa kugundua mabadiliko ya mwelekeo. Thamani ndogo hugundua mikunjo kwa urahisi; kubwa hupuuza mtikisiko mdogo.",
+    "description": "Msaada wa kizingiti cha mabadiliko ya mwelekeo katika paneli ya utatuzi"
+  },
+  "debugMinGestureDistanceHelp": {
+    "message": "Umbali mdogo wa jumla wa mwendo unaohitajika kabla ya ishara kutambuliwa. Ongeza ili kupunguza kuchochewa bila kukusudia.",
+    "description": "Msaada wa umbali mdogo wa ishara katika paneli ya utatuzi"
+  },
+  "debugMinDirectionSegmentLengthHelp": {
+    "message": "Urefu mdogo wa sehemu ya mwendo inayotumika kutambua mwelekeo. Ongeza kuchuja mtikisiko mfupi; punguza kwa ishara fupi.",
+    "description": "Msaada wa urefu mdogo wa sehemu ya mwelekeo katika paneli ya utatuzi"
+  },
+  "debugMinGestureComplexityHelp": {
+    "message": "Kizingiti cha ugumu wa mwelekeo kabla ya njia kuchukuliwa kama mchoro hovyo au batili. Thamani kubwa huvumilia mikunjo zaidi.",
+    "description": "Msaada wa ugumu wa ishara katika paneli ya utatuzi"
+  },
+  "debugMinMovementToStartGestureHelp": {
+    "message": "Kielekezi lazima kisogee angalau pikseli hizi baada ya kubonyeza kitufe kabla ya ufuatiliaji wa ishara kuanza.",
+    "description": "Msaada wa mwendo mdogo wa kuanza katika paneli ya utatuzi"
+  },
+  "debugSmoothingFactorHelp": {
+    "message": "Hudhibiti kulainisha njia na pointi za utambuzi. Thamani kubwa hupunguza mtikisiko lakini zinaweza kulainisha mikunjo mikali; ndogo hujibu haraka zaidi.",
+    "description": "Msaada wa kipengele cha kulainisha katika paneli ya utatuzi"
+  },
+  "debugConsoleLogHelp": {
+    "message": "Washa kumbukumbu za kina za kiendelezi kwenye koni ya DevTools kwa utatuzi.",
+    "description": "Msaada wa kumbukumbu za koni katika paneli ya utatuzi"
   },
   "debugLatestGestureInfo": {
     "message": "Maelezo ya Hivi Karibuni ya Kivyo",
@@ -850,10 +1386,6 @@
   "debugMergedDirections": {
     "message": "Mwelekeo Uliounganishwa",
     "description": "Mwelekeo uliounganishwa wa jopo la uboreshaji"
-  },
-  "debugDirectionDistances": {
-    "message": "Umbali wa Mwelekeo",
-    "description": "Umbali wa mwelekeo wa jopo la uboreshaji"
   },
   "debugFinalResult": {
     "message": "Matokeo ya Mwisho",
@@ -927,9 +1459,17 @@
     "message": "Onyesha Idadi ya Tabo",
     "description": "Show tab count badge option"
   },
-  "splitViewAction": {
-    "message": "Mtazamo mgawanyiko",
-    "description": "Fungua kwenye dirisha la mtazamo mgawanyiko"
+  "unlockPageRestrictions": {
+    "message": "Ondoa vizuizi vya kunakili/kubandika/bofya kulia na ufuatiliaji wa tabo",
+    "description": "Setting: unlock page interaction limits"
+  },
+  "unlockPageRestrictionsTitle": {
+    "message": "Huondoa vizuizi vya kawaida vya kunakili, kubandika, menyu ya muktadha, na uteuzi; hupunguza ufuatiliaji wa blur/visibilitychange. Inafanya kazi katika muktadha wa ukurasa; inaunga mkono iframe na Shadow DOM. Pakia upya ukurasa baada ya kuwasha.",
+    "description": "Tooltip for unlock page restrictions"
+  },
+  "unlockPageRestrictionsOffReloadConfirm": {
+    "message": "Mantiki iliyosindikwa katika tabo zilizofunguliwa inaweza kubaki hadi upakie upya.\n\nPakia upya tabo ya sasa sasa?",
+    "description": "Body text for unlock-off confirmation dialog"
   },
   "splitViewLeft": {
     "message": "Gawanya - kushoto",
@@ -946,5 +1486,165 @@
   "splitViewDown": {
     "message": "Gawanya - chini",
     "description": "Mtazamo mgawanyiko, dirisha jipya chini"
+  },
+  "unlockPageRestrictionsOffTitle": {
+    "message": "Ufunguaji wa ukurasa umezimwa",
+    "description": "Title for unlock-off confirmation dialog"
+  },
+  "unlockPageRestrictionsReloadTab": {
+    "message": "Pakia upya tabo",
+    "description": "Reload tab button in unlock-off dialog"
+  },
+  "unlockPageRestrictionsNotNow": {
+    "message": "Si sasa",
+    "description": "Dismiss unlock-off dialog without reload"
+  },
+  "welcomeBulletImagePreview": {
+    "message": "Hakiki ya picha: kukuza hiari inapoelekeza na hali panuliwa kwa miundo tata.",
+    "description": "Welcome page: image hover preview bullet"
+  },
+  "welcomeBulletPageUnlock": {
+    "message": "Kufungua kurasa: hiari longeza vizuizi vya kunakili, kubandika, kubofya kulia, n.k. — washa katika mipangilio na upakia upya ukihitajika.",
+    "description": "Welcome page: page unlock bullet"
+  },
+  "welcomeBulletDisabledSites": {
+    "message": "Kwa tovuti: vikoa vilivyoorodheshwa huzima pamoja ishara, Super Drag, kidirisha na ufunguo.",
+    "description": "Welcome page: per-site disable bullet"
+  },
+  "welcomeBulletSplitScroll": {
+    "message": "Mwonekano mgawanywa: kiunpo kikifunguliwa mgawanywa, unaweza kusawazisha kusogeza kati ya madirisha mawili (pamoja na mlalo).",
+    "description": "Welcome page: split scroll sync bullet"
+  },
+  "welcomeBulletScreenshot": {
+    "message": "Picha: eneo linaloonekana, ukurasa mzima, sogeza kwa mkono; maeneo ya mkondo, njia fupi, ubao wa kunakili, hakikisho, historia ya ndani (0 = bila kikomo).",
+    "description": "Welcome page: screenshot feature bullet"
+  },
+  "welcomeTipScreenshot": {
+    "message": "Picha imewashwa kwa chaguo-msingi; weka njia fupi za eneo, ukurasa mzima, sogeza; eneo la mkondo, nakili kiotomatiki, hakikisho, historia hiari.",
+    "description": "Welcome page: screenshot usage tip"
+  },
+  "trailColorPickerPresets": {
+    "message": "Mipangilio awali",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerRecent": {
+    "message": "Hivi karibuni",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerEyedropper": {
+    "message": "Chukua rangi kutoka picha",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerEyedropperActive": {
+    "message": "Bofya kuchukua · gurudumu kukuza darubini",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerSyncTrail": {
+    "message": "Hifadhi kama rangi ya mkondo",
+    "description": "Trail color picker UI"
+  },
+  "superDragCompassPosCompassHub": {
+    "message": "Hatua ya kuburuta",
+    "description": "Compass hub aligned to drag start"
+  },
+  "superDragCompassPosCompassScreenCenter": {
+    "message": "Katikati ya skrini",
+    "description": "Compass fixed at viewport center"
+  },
+  "superDragCompassPosCompassScreenTop": {
+    "message": "Juu",
+    "description": "Compass fixed at top of viewport"
+  },
+  "superDragCompassPosCompassScreenRight": {
+    "message": "Kulia",
+    "description": "Compass fixed at right of viewport"
+  },
+  "superDragCompassPosCompassScreenBottom": {
+    "message": "Chini",
+    "description": "Compass fixed at bottom of viewport"
+  },
+  "superDragCompassPosCompassScreenLeft": {
+    "message": "Kushoto",
+    "description": "Compass fixed at left of viewport"
+  },
+  "superDragCompassPosCompassHidden": {
+    "message": "Fichwa",
+    "description": "Do not show compass"
+  },
+  "addCurrentSiteToDisabledSites": {
+    "message": "Ongeza tovuti ya sasa",
+    "description": "Button: add the active tab domain to disabled sites"
+  },
+  "addCurrentSiteToDisabledSitesTitle": {
+    "message": "Ongeza kikoa cha kichupo cha sasa kwenye tovuti zilizozimwa",
+    "description": "Tooltip for add-current-site button"
+  },
+  "addDisabledSite": {
+    "message": "Ongeza",
+    "description": "Button: add a typed disabled site entry"
+  },
+  "disabledSiteInputPlaceholder": {
+    "message": "Kikoa au URL kamili, kwa mfano youtube.com",
+    "description": "Placeholder for the disabled site input"
+  },
+  "disabledSitesEmpty": {
+    "message": "Bado hakuna tovuti zilizozimwa.",
+    "description": "Empty state for disabled sites list"
+  },
+  "removeDisabledSite": {
+    "message": "Ondoa tovuti hii",
+    "description": "Tooltip/aria label for remove disabled site button"
+  },
+  "disabledSiteInvalid": {
+    "message": "Ingiza kikoa au URL halali",
+    "description": "Error shown when disabled site input is invalid"
+  },
+  "disabledSiteAlreadyExists": {
+    "message": "Tovuti tayari ipo",
+    "description": "Error shown when adding a duplicate disabled site"
+  },
+  "disabledSitesLimitReached": {
+    "message": "Kikomo cha tovuti zilizozimwa kimefikiwa",
+    "description": "Error shown when disabled sites list reaches the maximum size"
+  },
+  "currentSiteUnsupported": {
+    "message": "Kichupo cha sasa hakina kikoa kinachotumika",
+    "description": "Error shown when current tab URL cannot be added to disabled sites"
+  },
+  "customKey": {
+    "message": "Kitufe maalum",
+    "description": "Custom trigger key option"
+  },
+  "previewTriggerMode": {
+    "message": "Hali ya kichochezi",
+    "description": "Popup view trigger mode setting"
+  },
+  "previewTriggerHold": {
+    "message": "Shikilia kitufe cha kichochezi",
+    "description": "Hold trigger key option"
+  },
+  "previewTriggerDouble": {
+    "message": "Bonyeza kitufe cha kichochezi mara mbili",
+    "description": "Double-press trigger key option"
+  },
+  "previewCustomKey": {
+    "message": "Kitufe maalum",
+    "description": "Popup view custom trigger key setting"
+  },
+  "previewCustomKeyPlaceholder": {
+    "message": "Bofya na ubonyeze kitufe",
+    "description": "Popup view custom trigger key placeholder"
+  },
+  "previewCustomKeyTitle": {
+    "message": "Bofya hapa, kisha ubonyeze kitufe kisicho cha kirekebishi. Bonyeza Esc kufuta.",
+    "description": "Popup view custom trigger key title"
+  },
+  "unlimited": {
+    "message": "Bila kikomo",
+    "description": "Unlimited value label"
+  },
+  "settingsFontSize": {
+    "message": "Ukubwa wa fonti ya mipangilio",
+    "description": "Header button: adjust settings font size"
   }
 }

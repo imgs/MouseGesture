@@ -4,7 +4,7 @@
     "description": "Назва розширення"
   },
   "extDesc": {
-    "message": "Розширення Chrome/Edge, що підтримує жести миші, функцію супер-перетягування та попередній перегляд",
+    "message": "Жести миші, супер-перетягування, попередній перегляд зображень і посилань та інше.",
     "description": "Опис розширення"
   },
   "title": {
@@ -35,13 +35,21 @@
     "message": "Перетягти Вліво",
     "description": "Дія перетягти вліво"
   },
-  "openInForeground": {
-    "message": "Відкрити Посилання на Передньому Плані",
-    "description": "Відкрити посилання на передньому плані"
+  "dragUpRight": {
+    "message": "Перетягнути вгору-вправо",
+    "description": "Super drag diagonal direction"
   },
-  "openInBackground": {
-    "message": "Відкрити Посилання у Фоні",
-    "description": "Відкрити посилання у фоні"
+  "dragDownRight": {
+    "message": "Перетягнути вниз-вправо",
+    "description": "Super drag diagonal direction"
+  },
+  "dragDownLeft": {
+    "message": "Перетягнути вниз-вліво",
+    "description": "Super drag diagonal direction"
+  },
+  "dragUpLeft": {
+    "message": "Перетягнути вгору-вліво",
+    "description": "Super drag diagonal direction"
   },
   "superDragDescription": {
     "message": "Супер Перетягування працює для посилань, зображень і виділеного тексту. Ви можете встановити спосіб відкриття для кожного напрямку жесту (вгору/вниз/ліворуч/праворуч), зокрема передній план, фон або розділений вигляд (ліворуч/праворуч/вгору/вниз).",
@@ -64,52 +72,76 @@
     "description": "Напрямок вниз"
   },
   "downThenRight": {
-    "message": "Вниз потім Праворуч",
+    "message": "Вниз потім праворуч",
     "description": "Жест вниз потім праворуч"
   },
   "leftThenUp": {
-    "message": "Ліворуч потім Вгору",
+    "message": "Ліворуч потім вгору",
     "description": "Жест ліворуч потім вгору"
   },
   "rightThenUp": {
-    "message": "Праворуч потім Вгору",
+    "message": "Праворуч потім вгору",
     "description": "Жест праворуч потім вгору"
   },
   "rightThenDown": {
-    "message": "Праворуч потім Вниз",
+    "message": "Праворуч потім вниз",
     "description": "Жест праворуч потім вниз"
   },
   "upThenLeft": {
-    "message": "Вгору потім Ліворуч",
+    "message": "Вгору потім ліворуч",
     "description": "Жест вгору потім ліворуч"
   },
   "upThenRight": {
-    "message": "Вгору потім Праворуч",
+    "message": "Вгору потім праворуч",
     "description": "Жест вгору потім праворуч"
   },
   "downThenLeft": {
-    "message": "Вниз потім Ліворуч",
+    "message": "Вниз потім ліворуч",
     "description": "Жест вниз потім ліворуч"
   },
   "leftThenDown": {
-    "message": "Ліворуч потім Вниз",
+    "message": "Ліворуч потім вниз",
     "description": "Жест ліворуч потім вниз"
   },
   "upThenDown": {
-    "message": "Вгору потім Вниз",
+    "message": "Вгору потім вниз",
     "description": "Жест вгору потім вниз"
   },
   "downThenUp": {
-    "message": "Вниз потім Вгору",
+    "message": "Вниз потім вгору",
     "description": "Жест вниз потім вгору"
   },
   "leftThenRight": {
-    "message": "Ліворуч потім Праворуч",
+    "message": "Ліворуч потім праворуч",
     "description": "Жест ліворуч потім праворуч"
   },
   "rightThenLeft": {
-    "message": "Праворуч потім Ліворуч",
+    "message": "Праворуч потім ліворуч",
     "description": "Жест праворуч потім ліворуч"
+  },
+  "rightHoldWheelUp": {
+    "message": "Утримувати праву + коліщатко вгору",
+    "description": "Утримувати праву кнопку і коліщатко вгору"
+  },
+  "rightHoldWheelDown": {
+    "message": "Утримувати праву + коліщатко вниз",
+    "description": "Утримувати праву кнопку і коліщатко вниз"
+  },
+  "leftHoldWheelUp": {
+    "message": "Тримати ліву + колесо вгору",
+    "description": "Ліва кнопка і прокрутка вгору"
+  },
+  "leftHoldWheelDown": {
+    "message": "Тримати ліву + колесо вниз",
+    "description": "Ліва кнопка і прокрутка вниз"
+  },
+  "rightHoldLeftClick": {
+    "message": "Утримувати праву + лівий клік",
+    "description": "Утримувати праву кнопку і лівий клік"
+  },
+  "leftHoldRightClick": {
+    "message": "Тримати ліву + ПКМ",
+    "description": "Тримати ліву кнопку і клацнути правою"
   },
   "back": {
     "message": "Назад",
@@ -158,6 +190,18 @@
   "prevTab": {
     "message": "Попередня Вкладка",
     "description": "Дія попередня вкладка"
+  },
+  "previousActiveTab": {
+    "message": "Попередня активна вкладка",
+    "description": "Дія жесту: перейти до попередньої активної вкладки"
+  },
+  "goToParentUrl": {
+    "message": "Батьківська URL-адреса",
+    "description": "Дія жесту: перейти до батьківського шляху URL"
+  },
+  "goToRootUrl": {
+    "message": "Коренева URL-адреса",
+    "description": "Дія жесту: перейти до кореневої URL-адреси сайту"
   },
   "nextTab": {
     "message": "Наступна Вкладка",
@@ -211,6 +255,14 @@
     "message": "Перемкнути Повноекранний Режим",
     "description": "Toggle fullscreen action"
   },
+  "zoomIn": {
+    "message": "Збільшити",
+    "description": "Збільшити масштаб поточної вкладки"
+  },
+  "zoomOut": {
+    "message": "Зменшити",
+    "description": "Зменшити масштаб поточної вкладки"
+  },
   "closeTabsToLeft": {
     "message": "Закрити Вкладки Зліва",
     "description": "Close tabs to left action"
@@ -218,6 +270,474 @@
   "reloadAllTabs": {
     "message": "Перезавантажити Всі Вкладки",
     "description": "Reload all tabs action"
+  },
+  "stopLoadingAllTabs": {
+    "message": "Зупинити завантаження всіх вкладок",
+    "description": "Stop loading in all tabs"
+  },
+  "screenshotRegion": {
+    "message": "Знімок екрана (область по траектории)",
+    "description": "Screenshot gesture action"
+  },
+  "screenshotRegionOrLink": {
+    "message": "Знімок или открыть ссылку",
+    "description": "Trail region hint when links are inside selection"
+  },
+  "trailRegionChooseTitle": {
+    "message": "Ссылки в выделении — знімок или открыть",
+    "description": "Trail region chooser dialog title"
+  },
+  "trailRegionLinkSingle": {
+    "message": "1 ссылка",
+    "description": "Trail region link count"
+  },
+  "trailRegionLinkMultiple": {
+    "message": "{count} ссылок",
+    "description": "Trail region link count"
+  },
+  "trailRegionActionScreenshot": {
+    "message": "Знімок (S)",
+    "description": "Trail region chooser button"
+  },
+  "trailRegionActionOpenLink": {
+    "message": "Открыть в новой вкладці (O)",
+    "description": "Trail region chooser button"
+  },
+  "trailRegionActionOpenLinks": {
+    "message": "Открыть в новых вкладках (O)",
+    "description": "Trail region chooser button"
+  },
+  "trailRegionActionOpenSelected": {
+    "message": "Открыть {n} в новых вкладках (O)",
+    "description": "Trail region open checked links"
+  },
+  "trailRegionActionOpenNone": {
+    "message": "Открыть выбранное (O)",
+    "description": "Trail region open button when none checked"
+  },
+  "trailRegionActionCopy": {
+    "message": "Копіювати (C)",
+    "description": "Trail region chooser copy button"
+  },
+  "trailRegionActionCopySelected": {
+    "message": "Копіювати {n} (C)",
+    "description": "Trail region copy checked links"
+  },
+  "trailRegionActionCopyNone": {
+    "message": "Копіювати (C)",
+    "description": "Trail region copy button when none checked"
+  },
+  "trailRegionCopyFailed": {
+    "message": "Не вдалося скопіювати",
+    "description": "Trail region copy to clipboard failed"
+  },
+  "trailRegionSelectAll": {
+    "message": "Выбрать все",
+    "description": "Trail region link list select all"
+  },
+  "trailRegionNoLinkSelected": {
+    "message": "Выберите хотя бы одну ссылку",
+    "description": "Trail region no selection hint"
+  },
+  "trailRegionChooseHint": {
+    "message": "Esc — скасувати · позначте посилання для копіювання/відкриття · тягніть краї для зміни розміру",
+    "description": "Trail region chooser footer"
+  },
+  "trailRegionLinkOpened": {
+    "message": "Ссылка открыта в новой вкладці",
+    "description": "Trail region open link feedback"
+  },
+  "trailRegionLinksOpened": {
+    "message": "Ссылки открыты в новых вкладках",
+    "description": "Trail region open links feedback"
+  },
+  "trailRegionLinksTruncated": {
+    "message": "Открыты только первые {n} ссылок",
+    "description": "Trail region open links cap"
+  },
+  "screenshotScrollCaptureActive": {
+    "message": "Прокрутите страницу вручную, затем та же клавиша или Esc для завершения и склейки",
+    "description": "Manual scroll capture in progress"
+  },
+  "screenshotCopied": {
+    "message": "Знімок скопирован в буфер обміну",
+    "description": "Screenshot feedback"
+  },
+  "screenshotFailed": {
+    "message": "Не удалось сделать знімок",
+    "description": "Screenshot feedback"
+  },
+  "screenshotNeedTrail": {
+    "message": "Нарисуйте более длинную траекторию для выбора области",
+    "description": "Screenshot feedback"
+  },
+  "screenshotUnavailable": {
+    "message": "Модуль снимков екрана недоступен",
+    "description": "Screenshot feedback"
+  },
+  "screenshotTopFrameOnly": {
+    "message": "Знімок всей страницы только в основном фрейме",
+    "description": "Screenshot feedback"
+  },
+  "screenshotFeature": {
+    "message": "Знімок екрана",
+    "description": "Screenshot settings section title"
+  },
+  "enableScreenshotFeature": {
+    "message": "Включить снимки екрана",
+    "description": "Master toggle for screenshot feature"
+  },
+  "enableScreenshotTrailCapture": {
+    "message": "Область по траектории (петля / самопересечение)",
+    "description": "Capture when trail loops or crosses; skipped if another gesture action matches"
+  },
+  "enableScreenshotClipboard": {
+    "message": "Автоматически копировать в буфер",
+    "description": "Copy screenshot to clipboard after capture"
+  },
+  "enableScreenshotPreview": {
+    "message": "Показывать предпросмотр после съёмки",
+    "description": "Open preview window when a screenshot is captured"
+  },
+  "enableScreenshotHistory": {
+    "message": "Сохранять историю снимков",
+    "description": "Keep captured screenshots in local history"
+  },
+  "screenshotHistoryMaxCount": {
+    "message": "Лимит истории",
+    "description": "Maximum screenshot history entries to keep"
+  },
+  "screenshotHistoryMaxCountHint": {
+    "message": "0 = без лимита; 1–200 — удаление старых при превышении",
+    "description": "Screenshot history limit hint"
+  },
+  "screenshotHistoryUnlimited": {
+    "message": "Без лимита",
+    "description": "Label when screenshot history limit is 0"
+  },
+  "screenshotHistoryView": {
+    "message": "Просмотр истории",
+    "description": "Open screenshot history window"
+  },
+  "screenshotHistoryTitle": {
+    "message": "История снимков",
+    "description": "Screenshot history window title"
+  },
+  "screenshotHistoryEmpty": {
+    "message": "Снимков пока нет",
+    "description": "Empty screenshot history state"
+  },
+  "screenshotHistoryClearAll": {
+    "message": "Очистить всё",
+    "description": "Delete all screenshot history entries"
+  },
+  "screenshotHistoryClearConfirm": {
+    "message": "Удалить всю историю снимков?",
+    "description": "Confirm clearing screenshot history"
+  },
+  "screenshotHistoryDelete": {
+    "message": "Удалить",
+    "description": "Delete one screenshot history entry"
+  },
+  "screenshotHistoryPinToPage": {
+    "message": "Закрепить на странице",
+    "description": "Pin history thumbnail onto the web page"
+  },
+  "screenshotHistoryPinFailed": {
+    "message": "Не удалось закрепить (откройте вкладку или разрешите сайт).",
+    "description": "Error when pinning from screenshot history"
+  },
+  "screenshotHistoryCount": {
+    "message": "$1 элементов",
+    "description": "Number of items in screenshot history",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "screenshotHistoryModeViewport": {
+    "message": "Видимая область",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeFullPage": {
+    "message": "Вся страница",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeRegion": {
+    "message": "Область",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeScroll": {
+    "message": "Ручная прокрутка",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeUnknown": {
+    "message": "Знімок",
+    "description": "Screenshot history capture mode fallback label"
+  },
+  "screenshotDone": {
+    "message": "Знімок готов",
+    "description": "Hint when capture finished without clipboard copy"
+  },
+  "screenshotPreviewTitle": {
+    "message": "Предпросмотр снимка",
+    "description": "Screenshot preview window title"
+  },
+  "screenshotPreviewClose": {
+    "message": "Закрыть",
+    "description": "Close screenshot preview window"
+  },
+  "screenshotPreviewCopyAgain": {
+    "message": "Копировать",
+    "description": "Copy screenshot to clipboard from preview window"
+  },
+  "screenshotPreviewSave": {
+    "message": "Сохранить в файл",
+    "description": "Save annotated screenshot to disk"
+  },
+  "screenshotPreviewSaved": {
+    "message": "Сохранено",
+    "description": "Screenshot file save succeeded"
+  },
+  "screenshotPreviewPinToPage": {
+    "message": "Закрепить на странице",
+    "description": "Pin annotated screenshot onto the source web page"
+  },
+  "screenshotPreviewPinned": {
+    "message": "Закреплено",
+    "description": "Screenshot pin placed on page"
+  },
+  "screenshotPreviewPinning": {
+    "message": "Закрепление…",
+    "description": "Screenshot pin in progress"
+  },
+  "screenshotPinTitle": {
+    "message": "Знімок",
+    "description": "Title on pinned screenshot sticker"
+  },
+  "screenshotPinClose": {
+    "message": "Снять закрепление",
+    "description": "Close button on pinned screenshot"
+  },
+  "screenshotPinResize": {
+    "message": "Изменить размер",
+    "description": "Resize handle on pinned screenshot"
+  },
+  "screenshotPinZoomFit": {
+    "message": "По размеру",
+    "description": "Fit pinned screenshot to view"
+  },
+  "screenshotPinZoomOriginal": {
+    "message": "1:1",
+    "description": "Show pinned screenshot at original pixel size"
+  },
+  "screenshotPinOrderLabel": {
+    "message": "Закрепление $1$",
+    "description": "Pinned screenshot order number",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "screenshotPreviewLoadFailed": {
+    "message": "Не удалось загрузить предпросмотр",
+    "description": "Screenshot preview load error"
+  },
+  "screenshotPreviewZoomFit": {
+    "message": "По размеру",
+    "description": "Fit screenshot to preview window"
+  },
+  "screenshotPreviewZoomFitTitle": {
+    "message": "По размеру окна",
+    "description": "Tooltip for fit zoom button"
+  },
+  "screenshotPreviewZoomOneToOne": {
+    "message": "1:1",
+    "description": "Actual-size zoom button label"
+  },
+  "screenshotPreviewZoomOneToOneTitle": {
+    "message": "Реальный размер (1:1)",
+    "description": "Tooltip for 1:1 zoom button"
+  },
+  "screenshotPreviewZoomLevel": {
+    "message": "Масштаб $1$%",
+    "description": "Current zoom percentage in preview",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "screenshotAnnotHand": {
+    "message": "Рука (перемещение)",
+    "description": "Pan the preview by dragging"
+  },
+  "screenshotAnnotPen": {
+    "message": "Карандаш",
+    "description": "Annotation tool: freehand"
+  },
+  "screenshotAnnotArrow": {
+    "message": "Стрелка (Shift: Г/В)",
+    "description": "Annotation tool: arrow; Shift constrains to horizontal or vertical"
+  },
+  "screenshotAnnotLine": {
+    "message": "Линия (Shift: Г/В)",
+    "description": "Annotation tool: line; Shift constrains to horizontal or vertical"
+  },
+  "screenshotAnnotRect": {
+    "message": "Прямоугольник (Shift: квадрат)",
+    "description": "Annotation tool: rectangle; Shift draws a square"
+  },
+  "screenshotAnnotEllipse": {
+    "message": "Эллипс",
+    "description": "Annotation tool: ellipse"
+  },
+  "screenshotAnnotRoundRect": {
+    "message": "Скруглённый прямоугольник",
+    "description": "Annotation tool: rounded rectangle"
+  },
+  "screenshotAnnotHighlighter": {
+    "message": "Маркер",
+    "description": "Annotation tool: highlighter marker"
+  },
+  "screenshotAnnotHighlight": {
+    "message": "Рамка выделения",
+    "description": "Annotation tool: highlight rectangle"
+  },
+  "screenshotAnnotFillRect": {
+    "message": "Залитый прямоугольник",
+    "description": "Annotation tool: filled rectangle"
+  },
+  "screenshotAnnotFillEllipse": {
+    "message": "Залитый эллипс",
+    "description": "Annotation tool: filled ellipse"
+  },
+  "screenshotAnnotBlur": {
+    "message": "Размытие",
+    "description": "Annotation tool: blur brush"
+  },
+  "screenshotAnnotArrow2": {
+    "message": "Двойная стрелка (Shift: Г/В)",
+    "description": "Annotation tool: line with arrowheads at both ends; Shift constrains H/V"
+  },
+  "screenshotAnnotNumber": {
+    "message": "Нумерация",
+    "description": "Annotation tool: sequential number markers"
+  },
+  "screenshotAnnotStampStart": {
+    "message": "Начальный №",
+    "description": "Starting number for sequential stamps"
+  },
+  "screenshotAnnotStampNext": {
+    "message": "Следующий №: $1$",
+    "description": "Next number stamp to place (tooltip)",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "screenshotAnnotCrop": {
+    "message": "Обрезка",
+    "description": "Annotation tool: crop image"
+  },
+  "screenshotAnnotCropApply": {
+    "message": "Применить обрезку",
+    "description": "Confirm crop selection"
+  },
+  "screenshotAnnotCropCancel": {
+    "message": "Отмена",
+    "description": "Cancel crop selection"
+  },
+  "screenshotAnnotText": {
+    "message": "Текст",
+    "description": "Annotation tool: text"
+  },
+  "screenshotAnnotMosaic": {
+    "message": "Мозаика",
+    "description": "Annotation tool: mosaic blur"
+  },
+  "screenshotAnnotEraser": {
+    "message": "Ластик",
+    "description": "Annotation tool: eraser"
+  },
+  "screenshotAnnotSize": {
+    "message": "Размер",
+    "description": "Annotation stroke size"
+  },
+  "screenshotAnnotResetAll": {
+    "message": "Сбросить все правки",
+    "description": "Clear all annotations and restore original screenshot"
+  },
+  "screenshotAnnotStepCount": {
+    "message": "$1 / $2",
+    "description": "History step indicator: current / total"
+  },
+  "screenshotAnnotStepCountTitle": {
+    "message": "Применено / всего шагов (0 = исходное изображение)",
+    "description": "Tooltip for history step indicator"
+  },
+  "screenshotAnnotUndo": {
+    "message": "Отменить",
+    "description": "Undo annotation"
+  },
+  "screenshotAnnotRedo": {
+    "message": "Повторить",
+    "description": "Redo annotation"
+  },
+  "screenshotAnnotTextPlaceholder": {
+    "message": "Введите текст…",
+    "description": "Placeholder in inline text editor on screenshot preview"
+  },
+  "screenshotOptRegion": {
+    "message": "Выбор области",
+    "description": "Screenshot bind row: keyboard drag rectangle region"
+  },
+  "screenshotOptViewport": {
+    "message": "Видимая область",
+    "description": "Screenshot bind row: current visible tab area"
+  },
+  "screenshotOptFullPage": {
+    "message": "Вся страница",
+    "description": "Screenshot bind row: full page"
+  },
+  "screenshotOptScrollStitch": {
+    "message": "Ручная прокрутка",
+    "description": "Screenshot bind row: manual scroll capture"
+  },
+  "screenshotOptOpenHistory": {
+    "message": "Открыть историю",
+    "description": "Screenshot bind row: keyboard shortcut to open screenshot history"
+  },
+  "screenshotHotkeyPressHint": {
+    "message": "Сочетания: нажмите поле выше, затем комбинацию (Ctrl / Alt / Meta + буква или цифра, или F1–F12). Esc очищает поле.",
+    "description": "Screenshot section footer: hotkey binding help"
+  },
+  "screenshotHotkeyPlaceholder": {
+    "message": "Нажмите для назначения",
+    "description": "Placeholder in empty screenshot hotkey fields"
+  },
+  "screenshotRegionPickHint": {
+    "message": "Перетащите для выбора области. Esc — отмена.",
+    "description": "Hint while keyboard region picker is active"
+  },
+  "screenshotRegionPickFooterHint": {
+    "message": "Область: нарисуйте прямоугольник и отпустите. При ссылках — знімок или новые вкладки. Esc — отмена.",
+    "description": "Screenshot section footer: keyboard region picker help"
+  },
+  "screenshotRegionTooSmall": {
+    "message": "Выделение слишком мало — выберите большую область",
+    "description": "Region picker: minimum size not met"
+  },
+  "screenshotGestureIntersectHint": {
+    "message": "Область по траектории: одна петля или одно самопересечение, затем отпустите. При ссылках — знімок или новые вкладки. Много петель = каракули.",
+    "description": "Screenshot section footer: trail region capture help"
   },
   "togglePinTab": {
     "message": "Закріпити/Відкріпити Вкладку",
@@ -244,16 +764,16 @@
     "description": "Заголовок налаштувань"
   },
   "customizedBehavior": {
-    "message": "Чорний список",
-    "description": "Block list section title"
+    "message": "Вимкнені сайти",
+    "description": "Section title for the per-site disable list"
   },
   "disableMouseGesturesForSites": {
-    "message": "Вимкнути жест миші та супер перетягування на цих сайтах",
-    "description": "Label for the list of sites where gestures and super drag are disabled"
+    "message": "Вимкнути функції розширення на вказаних доменах",
+    "description": "Subtitle for Disabled sites section"
   },
   "disabledSitesHint": {
-    "message": "Один сайт у рядку. Домен (напр. youtube.com) або повна URL-адреса.",
-    "description": "Hint for the disabled sites textarea"
+    "message": "Застосовується до жестів, суперперетягування, попереднього перегляду посилань/зображень, знімків екрана та розблокування сторінки. Додайте поточний сайт або введіть домен/URL; для видалення натисніть позначку видалення.",
+    "description": "Short hint explaining which features the Disabled sites list affects"
   },
   "enableGesture": {
     "message": "Увімкнути Жести Миші",
@@ -279,6 +799,26 @@
     "message": "Увімкнути Супер Перетягування",
     "description": "Опція увімкнути супер перетягування"
   },
+  "superDragCompassPosition": {
+    "message": "Компас 8 напрямків",
+    "description": "Super drag compass display and position"
+  },
+  "superDragCompassPosCompassAbove": {
+    "message": "Над точкою перетягування",
+    "description": "Compass above drag start, centered horizontally"
+  },
+  "superDragCompassPosCompassRight": {
+    "message": "Праворуч від точки перетягування",
+    "description": "Compass to the right of drag start, vertically centered"
+  },
+  "superDragCompassPosCompassBelow": {
+    "message": "Під точкою перетягування",
+    "description": "Compass below drag start, centered horizontally"
+  },
+  "superDragCompassPosCompassLeft": {
+    "message": "Ліворуч від точки перетягування",
+    "description": "Compass to the left of drag start, vertically centered"
+  },
   "enableDragTextSearch": {
     "message": "Увімкнути Пошук Тексту Перетягуванням",
     "description": "Опція увімкнути пошук тексту перетягуванням"
@@ -287,9 +827,17 @@
     "message": "Автозавантаження зображення/файлу при перетягуванні",
     "description": "When the drag target is an image or other downloadable file, start download automatically"
   },
+  "enableImageDrag": {
+    "message": "Увімкнути перетягування зображень",
+    "description": "Control image super drag independently from image preview"
+  },
   "enableImagePreview": {
     "message": "Увімкнути Попередній Перегляд Зображень",
     "description": "Опція увімкнути попередній перегляд зображень"
+  },
+  "enableImagePreviewEnhanced": {
+    "message": "Розширений попередній перегляд зображень",
+    "description": "Support transparent overlay, background-image, parent lookup, etc."
   },
   "enableDuplicateCheck": {
     "message": "Виявляти Дублікати Вкладок",
@@ -302,10 +850,6 @@
   "enableSmoothScroll": {
     "message": "Увімкнути плавну прокрутку",
     "description": "Enable smooth scrolling for gesture actions"
-  },
-  "save": {
-    "message": "Налаштування Застосовано",
-    "description": "Кнопка зберегти налаштування"
   },
   "reset": {
     "message": "Скинути",
@@ -363,14 +907,6 @@
     "message": "Не Вдалося Скинути Налаштування",
     "description": "Повідомлення про помилку скидання налаштувань"
   },
-  "themeLight": {
-    "message": "Світла",
-    "description": "Світла тема"
-  },
-  "themeDark": {
-    "message": "Темна",
-    "description": "Темна тема"
-  },
   "buyMeACoffee": {
     "message": "Купіть мені каву",
     "description": "Кнопка пожертвування"
@@ -379,17 +915,33 @@
     "message": "Змінити Тему",
     "description": "Кнопка зміни теми"
   },
-  "toggleLanguage": {
-    "message": "Змінити Мову",
-    "description": "Кнопка зміни мови"
+  "openDetachedPopupTitle": {
+    "message": "Відкрити налаштування в бічній панелі (інакше — окреме вікно)",
+    "description": "Кнопка заголовка: бічна панель або окреме вікно"
+  },
+  "openDetachedWindowFromSidePanelTitle": {
+    "message": "Відкрити в окремому вікні (поруч із браузером)",
+    "description": "Бічна панель: окреме вікно та розмір вікна браузера"
+  },
+  "openOptionsPageTitle": {
+    "message": "Відкрити сторінку параметрів",
+    "description": "Кнопка заголовка: відкрити сторінку параметрів розширення"
   },
   "donationTooltip": {
     "message": "Якщо вам подобається ця робота, будь ласка, підтримайте мене. Дякую :)",
     "description": "Підказка пожертвування"
   },
   "rightButtonHint": {
-    "message": "Утримуйте праву кнопку миші",
+    "message": "Праву (жест, коліщатко, кліки) · ліву (коліщатко) — тримайте",
     "description": "Підказка правої кнопки миші"
+  },
+  "builtInGesturesListExpandHint": {
+    "message": "Клацніть, щоб розгорнути повний список жестів",
+    "description": "Tooltip on built-in gestures subtitle when list is collapsed"
+  },
+  "builtInGesturesListCollapseHint": {
+    "message": "Клацніть, щоб згорнути список жестів",
+    "description": "Tooltip on built-in gestures subtitle when list is expanded"
   },
   "leftButtonHint": {
     "message": "Утримуйте ліву кнопку миші",
@@ -403,17 +955,45 @@
     "message": "Відкрити у Фоні",
     "description": "Дія відкрити у фоні"
   },
+  "popupViewAction": {
+    "message": "Вспливаючий Перегляд",
+    "description": "Super drag action: open target in popup view"
+  },
+  "incognitoAction": {
+    "message": "Відкрити у вікні інкогніто",
+    "description": "Open in incognito/private window"
+  },
+  "enableSplitScrollSync": {
+    "message": "Синхронізувати вертикальну й горизонтальну прокрутку між розділеними вікнами",
+    "description": "У розділеному вигляді вирівняти обидві осі прокрутки між вікнами"
+  },
   "copyAction": {
     "message": "Копіювати",
     "description": "Copy selected text or link URL to clipboard"
+  },
+  "downloadAction": {
+    "message": "Завантажити",
+    "description": "Super drag action: download target"
   },
   "copiedToClipboard": {
     "message": "Скопійовано в буфер обміну",
     "description": "Hint after copy action"
   },
-  "dragSearchEngine": {
-    "message": "URL Пошукової Системи Перетягування",
-    "description": "Налаштування URL пошукової системи перетягування"
+  "dragSearchEngineSlotLabel": {
+    "message": "Що редагувати",
+    "description": "Label for drag search engine slot selector"
+  },
+  "dragSearchSlotDefault": {
+    "message": "За замовчуванням (запасний)",
+    "description": "Default search URL slot in drag search editor"
+  },
+  "dragSearchEngineUrlForSlot": {
+    "message": "URL пошукової системи",
+    "description": "Label for single drag search URL field"
+  },
+  "dragSearchEnginePerDirectionHelp": {
+    "message": "У списку оберіть «За замовчуванням» або напрямок перетягування й відредагуйте відповідний URL. Порожні напрямки використовують значення за замовчуванням. Лише для пошуку перетягуванням виділеного тексту.",
+    "description": "Help text for unified drag search engine editor"
   },
   "linkPreview": {
     "message": "Вспливаючий Перегляд",
@@ -424,8 +1004,8 @@
     "description": "Quick navigation hover tooltip"
   },
   "linkPreviewHint": {
-    "message": "Наведення + Клавіша для Показу Вспливаючого Вікна",
-    "description": "Підказка вспливаючого перегляду"
+    "message": "Наведіть вказівник і скористайтеся активатором, щоб показати спливне вікно",
+    "description": "Popup view hint"
   },
   "enableLinkPreview": {
     "message": "Увімкнути Вспливаючий Перегляд",
@@ -495,41 +1075,61 @@
     "message": "Використовуйте {q} для пошукового терміну, формат прикладу:",
     "description": "Опис прикладів пошукової системи"
   },
+  "searchExampleUrlClickHint": {
+    "message": "Натисніть приклад URL, щоб заповнити поле вище й зберегти",
+    "description": "Tooltip for example search engine URLs (click to fill)"
+  },
+  "searchEngineExamplesUrlClickHint": {
+    "message": "Підказка: натисніть приклад URL, щоб заповнити поле вище й зберегти.",
+    "description": "Visible hint under search engine examples (click URL to fill field above and save)"
+  },
   "googleExample": {
-    "message": "Пошук Google: https://www.google.com/search?q={q}",
+    "message": "Пошук Google:",
+    "description": "Приклад пошуку Google"
+  },
+  "googleExampleUrl": {
+    "message": "https://www.google.com/search?q={q}",
     "description": "Приклад пошуку Google"
   },
   "googleTranslateExample": {
-    "message": "Google Перекладач: https://translate.google.com/?sl=auto&tl=uk&text={q}&op=translate",
+    "message": "Google Перекладач:",
+    "description": "Приклад Google Перекладач"
+  },
+  "googleTranslateExampleUrl": {
+    "message": "https://translate.google.com/?sl=auto&tl=uk&text={q}&op=translate",
     "description": "Приклад Google Перекладач"
   },
   "localSearchExample": {
-    "message": "Приклад: https://www.google.com.ua/search?q={q}",
+    "message": "Приклад:",
+    "description": "Приклад локального пошукового URL"
+  },
+  "localSearchExampleUrl": {
+    "message": "https://www.google.com.ua/search?q={q}",
     "description": "Приклад локального пошукового URL"
   },
   "bingExample": {
-    "message": "Пошук Bing: https://www.bing.com/search?q={q}",
+    "message": "Пошук Bing:",
+    "description": "Приклад пошуку Bing"
+  },
+  "bingExampleUrl": {
+    "message": "https://www.bing.com/search?q={q}",
     "description": "Приклад пошуку Bing"
   },
   "wheelTip": {
-    "message": "Використовуйте колесо миші для налаштування значення",
+    "message": "Наведіть курсор на цей рядок ~1,5 с, потім регулюйте коліщатком",
     "description": "Підказка колеса"
   },
   "modifierKeyDelayTip": {
-    "message": "При використанні клавіші активації, максимальна затримка обмежена до 300 мс",
-    "description": "Підказка затримки клавіші модифікатора"
+    "message": "Затримка починається після виконання умови запуску; збільште її, щоб уникнути випадкового попереднього перегляду.",
+    "description": "Modifier key delay tip"
   },
   "welcomeTitle": {
-    "message": "Ласкаво просимо до Mouse Gesture Extension",
+    "message": "Ласкаво просимо до розширення «Жести миші»",
     "description": "Заголовок сторінки привітання"
   },
   "welcomeDescription": {
-    "message": "Дякуємо за встановлення розширення Жестів Миші! Це розширення надає багату функціональність жестів миші, розумне управління вкладками, можливості перегляду у спливаючих вікнах та покращений візуальний досвід, щоб допомогти вам ефективніше переглядати веб-сторінки. Ми оптимізували алгоритм розпізнавання жестів з підвищеною стійкістю до помилок, що дозволяє правильно розпізнавати жести навіть коли вони не намальовані ідеально. Нова функція спливаючого вікна дозволяє вам переглядати вміст посилань у спливаючих вікнах без перемикання вкладок. Розширення також підтримує 29 мов та світлу/темну тему для кращого користувацького досвіду.",
+    "message": "Дякуємо за встановлення Mouse Gesture! Тримайте праву кнопку й перетягуйте для навігації, вкладок і прокрутки; також тримайте праву або ліву з коліщатком (додаткові комбінації в налаштуваннях) для зайвих скорочень — розпізнавання лишається стійким до похибок, навіть під час завантаження сторінок. Super Drag відкриває посилання, зображення й пошук тексту з окремими правилами за напрямком (передній план, фон, розділена розкладка, копіювання в буфер тощо). Popup View показує попередній перегляд посилань або шукає виділений текст у маленьких вікнах. Додатково: попередній перегляд зображення при наведенні (розширений режим), виявлення дублікатів вкладок з авто‑закриттям, плавна прокрутка, значок кількості вкладок на панелі та зняття обмежень сторінок на жорстких сайтах. Налаштування з панелі (спливаюче вікно, бічна панель або окреме вікно); експорт/імпорт; синхронізація з обліковим записом браузера. 29 мов і світла/темна тема.",
     "description": "Опис сторінки привітання"
-  },
-  "gesturesDescription": {
-    "message": "Нижче наведені попередньо налаштовані жести миші, які ви можете використовувати, перетягуючи правою кнопкою миші:",
-    "description": "Опис жестів"
   },
   "extensionName": {
     "message": "Розширення Жестів Миші",
@@ -539,88 +1139,48 @@
     "message": "Основні Функції",
     "description": "Заголовок основних функцій"
   },
-  "utilitiesFeatures": {
-    "message": "Допоміжні Інструменти",
-    "description": "Заголовок допоміжних інструментів"
+  "welcomeCoreGestureBlock": {
+    "message": "Жести миші: тримайте праву і ведіть для жестів по траєкторії; коліщатко з правою або лівою кнопкою та комбінації кліків при зажатій правій — переназначаються в налаштуваннях; розпізнавання стійке, зокрема під час завантаження.",
+    "description": "Welcome page: core features gesture summary"
+  },
+  "welcomeCoreSuperDragBlock": {
+    "message": "Super Drag: перетягуйте посилання й зображення в нові вкладки, виділений текст — для пошуку; напрямок визначає спосіб відкриття вкладок; за замовчуванням у фоні.",
+    "description": "Welcome page: core features super drag summary"
+  },
+  "welcomeCorePopupViewBlock": {
+    "message": "Спливаючий перегляд: тримайте клавішу-тригер (за замовчуванням Shift) над посиланням для перегляду в маленькому вікні; після виділення тексту натисніть клавішу для миттєвого пошуку у вашій пошуковій системі.",
+    "description": "Welcome page: core features popup view summary"
   },
   "usageTips": {
     "message": "Поради з Використання",
     "description": "Заголовок порад з використання"
   },
-  "smartGestureRecognition": {
-    "message": "Розумне розпізнавання жестів: Правильно ідентифікує жести навіть коли вони недосконалі, працює під час завантаження сторінки",
-    "description": "Опис розумного розпізнавання жестів"
-  },
-  "tabManagementTitle": {
-    "message": "Управління Вкладками",
-    "description": "Заголовок управління вкладками"
-  },
-  "tabManagementDesc": {
-    "message": ": Розумне виявлення дублікатів, необов'язкове автозакриття, періодична оптимізація пам'яті",
-    "description": "Опис управління вкладками"
-  },
-  "superDragTitle": {
-    "message": "Супер Перетягування",
-    "description": "Заголовок супер перетягування"
-  },
-  "superDragDesc": {
-    "message": ": Перетягуйте посилання та зображення в нові вкладки, перетягуйте виділений текст для пошуку",
-    "description": "Опис супер перетягування"
-  },
-  "linkPreviewTitle": {
-    "message": "Всплисний Перегляд",
-    "description": "Заголовок попереднього перегляду посилань"
-  },
-  "linkPreviewDesc": {
-    "message": ": Утримуйте клавішу-модифікатор (за замовчуванням: Shift) при наведенні на посилання для попереднього перегляду цільових сторінок у всплисних вікнах",
-    "description": "Опис попереднього перегляду посилань"
-  },
-  "textSelectionPreview": {
-    "message": "Виділіть текст і натисніть клавішу-модифікатор, щоб миттєво шукати його у вспливаючому вікні, з підтримкою користувацької пошукової системи",
-    "description": "Опис попереднього перегляду виділеного тексту"
-  },
   "previewTip": {
-    "message": "Ви можете відкривати кілька спливаючих вікон одночасно",
+    "message": "Держите несколько окон предпросмотра открытыми для сравнения.",
     "description": "Підказка попереднього перегляду"
-  },
-  "dragDirection": {
-    "message": "Налаштуйте напрямок перетягування, щоб визначити спосіб відкриття вкладки: за замовчуванням відкривається у фоні",
-    "description": "Опис напрямку перетягування"
   },
   "debugPanelTitle": {
     "message": "Інформація Налагодження Жестів Миші",
     "description": "Заголовок панелі налагодження"
   },
   "debugPanelDesc": {
-    "message": "Натисніть Alt+D, щоб відкрити, аналізуйте інформацію про жести в реальному часі, зберігає стан",
+    "message": "Натисніть Alt+D, щоб відкрити панель налагодження, аналізуйте інформацію про жести в реальному часі, стан зберігається.",
     "description": "Опис панелі налагодження"
   },
-  "oneClickCopy": {
-    "message": "Одноклікове копіювання інформації налагодження для легкого поширення, з підтримкою багатьох мов",
-    "description": "Опис одноклікового копіювання"
-  },
-  "mediaPreview": {
-    "message": "Покращений попередній перегляд медіа: покращені ефекти наведення зображень та оптимізовані зображення-постери відео",
-    "description": "Опис попереднього перегляду медіа"
-  },
-  "adaptiveTheme": {
-    "message": "Адаптивні теми: налаштовує візуальний стиль на основі фону сторінки, підтримує світлий/темний режим",
-    "description": "Опис адаптивної теми"
-  },
   "gestureTrail": {
-    "message": "Сліди жестів відображаються на екрані з налаштовуваним кольором та шириною",
+    "message": "Опциональная траектория и подсказки жестов; цвет и толщина в налаштуваннях.",
     "description": "Опис сліду жестів"
   },
   "clickIcon": {
-    "message": "Натисніть на іконку розширення, щоб увімкнути/вимкнути функції, встановити мову, тему та інше",
+    "message": "Панель: компактное окно, боковая панель (Chrome/Edge) или отдельное окно настроек. Функции, язык, тема, экспорт/импорт.",
     "description": "Опис натискання на іконку"
   },
   "languageSupport": {
-    "message": "Підтримує 29 мов, автоматично адаптується до мови браузера",
+    "message": "29 мов інтерфейсу; використовує збережений вибір або мову браузера.",
     "description": "Опис підтримки мов"
   },
   "enableAutoClose": {
-    "message": "Увімкніть функцію автоматичного закриття дублікатів вкладок, щоб значно зменшити використання ресурсів браузера",
+    "message": "При обнаружении дубликатов — опционально закрывать повторяющиеся URL.",
     "description": "Опис увімкнення автоматичного закриття"
   },
   "rightClickMacLinux": {
@@ -634,14 +1194,6 @@
   "duplicateTabsDetected": {
     "message": "Знайдено $1 дублікатів вкладок",
     "description": "Заголовок повідомлення про виявлення дублікатів вкладок"
-  },
-  "duplicateTabsCount": {
-    "message": "Є $1 дублікатів вкладок",
-    "description": "Повідомлення про кількість дублікатів вкладок"
-  },
-  "duplicateTabsSingle": {
-    "message": "Є 1 дублікат вкладки",
-    "description": "Повідомлення про один дублікат вкладки"
   },
   "autoClosedTabs": {
     "message": "Автоматично закрито $1 дублікатів вкладок",
@@ -659,61 +1211,9 @@
     "message": "Безіменна вкладка",
     "description": "Безіменна вкладка"
   },
-  "morePages": {
-    "message": "...і ще $1 сторінок",
-    "description": "Підказка про більше сторінок"
-  },
-  "errorShowDuplicateTabs": {
-    "message": "Помилка при показі повідомлення про дублікати вкладок:",
-    "description": "Помилка при показі повідомлення про дублікати вкладок"
-  },
-  "errorSendCloseRequest": {
-    "message": "Помилка при відправці запиту на закриття:",
-    "description": "Помилка при відправці запиту на закриття"
-  },
-  "errorCloseDuplicateTabs": {
-    "message": "Помилка при закритті дублікатів вкладок:",
-    "description": "Помилка при закритті дублікатів вкладок"
-  },
-  "errorSendIgnoreRequest": {
-    "message": "Помилка при відправці запиту на ігнорування:",
-    "description": "Помилка при відправці запиту на ігнорування"
-  },
-  "errorIgnoreDuplicateTabs": {
-    "message": "Помилка при ігноруванні дублікатів вкладок:",
-    "description": "Помилка при ігноруванні дублікатів вкладок"
-  },
-  "errorUpdateDebugPanel": {
-    "message": "Помилка при оновленні панелі налагодження:",
-    "description": "Помилка при оновленні панелі налагодження"
-  },
   "errorDetectBackgroundColor": {
     "message": "Помилка при виявленні кольору фону:",
     "description": "Помилка при виявленні кольору фону"
-  },
-  "errorDetectImageBorder": {
-    "message": "Помилка при виявленні радіусу межі зображення:",
-    "description": "Помилка при виявленні радіусу межі зображення"
-  },
-  "errorSetMutationObserver": {
-    "message": "Помилка при встановленні спостерігача мутацій:",
-    "description": "Помилка при встановленні спостерігача мутацій"
-  },
-  "errorCheckElementVisibility": {
-    "message": "Помилка при перевірці видимості елемента:",
-    "description": "Повідомлення про помилку перевірки видимості елемента"
-  },
-  "errorProcessBorderRadius": {
-    "message": "Помилка при обробці радіусу межі:",
-    "description": "Повідомлення про помилку обробки радіусу межі"
-  },
-  "errorDetectImageBackground": {
-    "message": "Помилка при виявленні фону зображення:",
-    "description": "Повідомлення про помилку виявлення фону зображення"
-  },
-  "errorShowAutoCloseNotification": {
-    "message": "Помилка при показі повідомлення про автоматичне закриття:",
-    "description": "Повідомлення про помилку показу повідомлення про автоматичне закриття"
   },
   "noForwardPage": {
     "message": "Немає наступної сторінки в історії",
@@ -743,10 +1243,6 @@
     "message": "Неправильний Жест",
     "description": "Повідомлення про неправильний жест"
   },
-  "nextPage": {
-    "message": "Наступна Сторінка",
-    "description": "Дія перейти до наступної сторінки"
-  },
   "errorReadPixel": {
     "message": "Помилка при читанні пікселя:",
     "description": "Повідомлення про помилку читання пікселя"
@@ -758,10 +1254,6 @@
   "errorCanvasDraw": {
     "message": "Помилка при малюванні на полотні:",
     "description": "Повідомлення про помилку малювання на полотні"
-  },
-  "errorAccessIframe": {
-    "message": "Помилка при доступі до iframe:",
-    "description": "Повідомлення про помилку доступу до iframe"
   },
   "errorMutationObserver": {
     "message": "Помилка при встановленні спостерігача мутацій:",
@@ -791,6 +1283,10 @@
     "message": "Системні Налаштування",
     "description": "Секція системних налаштувань панелі налагодження"
   },
+  "debugConsoleLog": {
+    "message": "Журнали консолі",
+    "description": "Debug panel console log toggle label"
+  },
   "debugAngleThreshold": {
     "message": "Поріг Кута",
     "description": "Налаштування порігу кута панелі налагодження"
@@ -810,6 +1306,46 @@
   "debugMinGestureComplexity": {
     "message": "Мінімальна Складність Жесту",
     "description": "Налаштування мінімальної складності жесту панелі налагодження"
+  },
+  "debugMinMovementToStartGesture": {
+    "message": "Мін. рух для старту",
+    "description": "Налаштування панелі налагодження: мінімальний рух для початку відстеження жесту"
+  },
+  "debugSmoothingFactor": {
+    "message": "Коефіцієнт згладжування",
+    "description": "Налаштування панелі налагодження: коефіцієнт згладжування траєкторії та розпізнавання"
+  },
+  "debugAngleThresholdHelp": {
+    "message": "Визначає, наскільки строго рух класифікується як горизонтальний або вертикальний. Вищі значення потребують прямішого напряму; нижчі допускають більше діагонального руху.",
+    "description": "Підказка порога кута в панелі налагодження"
+  },
+  "debugDirectionChangeThresholdHelp": {
+    "message": "Визначає чутливість виявлення зміни напряму. Нижчі значення легше виявляють повороти; вищі ігнорують дрібне тремтіння.",
+    "description": "Підказка порога зміни напряму в панелі налагодження"
+  },
+  "debugMinGestureDistanceHelp": {
+    "message": "Мінімальна сумарна відстань руху, потрібна для розпізнавання жесту. Збільште її, щоб зменшити випадкові спрацювання.",
+    "description": "Підказка мінімальної відстані жесту в панелі налагодження"
+  },
+  "debugMinDirectionSegmentLengthHelp": {
+    "message": "Мінімальна довжина сегмента руху для розпізнавання напряму. Збільште, щоб фільтрувати коротке тремтіння; зменште для коротших жестів.",
+    "description": "Підказка мінімальної довжини сегмента напряму в панелі налагодження"
+  },
+  "debugMinGestureComplexityHelp": {
+    "message": "Поріг складності напрямів, після якого траєкторія вважається каракулями або недійсною. Вищі значення допускають більше поворотів.",
+    "description": "Підказка складності жесту в панелі налагодження"
+  },
+  "debugMinMovementToStartGestureHelp": {
+    "message": "Після натискання кнопки вказівник має переміститися щонайменше на цю кількість пікселів, перш ніж почнеться відстеження жесту.",
+    "description": "Підказка мінімального руху для старту в панелі налагодження"
+  },
+  "debugSmoothingFactorHelp": {
+    "message": "Керує згладжуванням траєкторії та точок розпізнавання. Вищі значення зменшують тремтіння, але можуть згладити різкі повороти; нижчі реагують швидше.",
+    "description": "Підказка коефіцієнта згладжування в панелі налагодження"
+  },
+  "debugConsoleLogHelp": {
+    "message": "Увімкніть докладні журнали розширення в консолі DevTools для усунення несправностей.",
+    "description": "Підказка журналів консолі в панелі налагодження"
   },
   "debugLatestGestureInfo": {
     "message": "Інформація Останнього Жесту",
@@ -850,10 +1386,6 @@
   "debugMergedDirections": {
     "message": "Об'єднані Напрямки",
     "description": "Об'єднані напрямки панелі налагодження"
-  },
-  "debugDirectionDistances": {
-    "message": "Відстані Напрямків",
-    "description": "Відстані напрямків панелі налагодження"
   },
   "debugFinalResult": {
     "message": "Кінцевий Результат",
@@ -927,9 +1459,17 @@
     "message": "Показати число вкладок",
     "description": "Show tab count badge option"
   },
-  "splitViewAction": {
-    "message": "Розділений вигляд",
-    "description": "Відкрити у вікні з розділеним виглядом"
+  "unlockPageRestrictions": {
+    "message": "Зняти обмеження копіювання/вставки/ПКМ і відстеження вкладок",
+    "description": "Setting: unlock page interaction limits"
+  },
+  "unlockPageRestrictionsTitle": {
+    "message": "Знімає типові блокування копіювання, вставки, контекстного меню та виділення; зменшує відстеження blur/visibilitychange. Працює в контексті сторінки; підтримує iframe та Shadow DOM. Після увімкнення перезавантажте сторінку.",
+    "description": "Tooltip for unlock page restrictions"
+  },
+  "unlockPageRestrictionsOffReloadConfirm": {
+    "message": "Ін’єктована логіка у відкритих вкладках може залишатися до перезавантаження.\n\nПерезавантажити поточну вкладку зараз?",
+    "description": "Body text for unlock-off confirmation dialog"
   },
   "splitViewLeft": {
     "message": "Розділити - зліва",
@@ -946,5 +1486,165 @@
   "splitViewDown": {
     "message": "Розділити - знизу",
     "description": "Розділений вигляд, нове вікно в нижній половині"
+  },
+  "unlockPageRestrictionsOffTitle": {
+    "message": "Розблокування сторінки вимкнено",
+    "description": "Title for unlock-off confirmation dialog"
+  },
+  "unlockPageRestrictionsReloadTab": {
+    "message": "Перезавантажити вкладку",
+    "description": "Reload tab button in unlock-off dialog"
+  },
+  "unlockPageRestrictionsNotNow": {
+    "message": "Не зараз",
+    "description": "Dismiss unlock-off dialog without reload"
+  },
+  "welcomeBulletImagePreview": {
+    "message": "Перегляд зображень: необов’язкове збільшення при наведенні та розширений режим для складних макетів.",
+    "description": "Welcome page: image hover preview bullet"
+  },
+  "welcomeBulletPageUnlock": {
+    "message": "Зняття обмежень сторінки: за бажанням послабити блокування копіювання, вставки, ПКМ тощо — увімкніть у налаштуваннях і за потреби перезавантажте сторінку.",
+    "description": "Welcome page: page unlock bullet"
+  },
+  "welcomeBulletDisabledSites": {
+    "message": "За сайтами: для вказаних доменів вимикаються жести, Super Drag, спливаючий перегляд і зняття обмежень.",
+    "description": "Welcome page: per-site disable bullet"
+  },
+  "welcomeBulletSplitScroll": {
+    "message": "Розділений вигляд: коли посилання відкривається в розділеному режимі, можна синхронізувати прокрутку між вікнами (включно з горизонтальною).",
+    "description": "Welcome page: split scroll sync bullet"
+  },
+  "welcomeBulletScreenshot": {
+    "message": "Снимки: видимая область, вся страница, ручная прокрутка; области по траектории, горячие клавиши, буфер, предпросмотр и локальная история (0 = без лимита).",
+    "description": "Welcome page: screenshot feature bullet"
+  },
+  "welcomeTipScreenshot": {
+    "message": "Снимки включены по умолчанию; назначьте клавиши для видимой области, всей страницы и прокрутки; опционально области по траектории, автокопия, предпросмотр и история.",
+    "description": "Welcome page: screenshot usage tip"
+  },
+  "trailColorPickerPresets": {
+    "message": "Пресеты",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerRecent": {
+    "message": "Недавние",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerEyedropper": {
+    "message": "Взять с изображения",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerEyedropperActive": {
+    "message": "Клик — выбор · колесо — лупа",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerSyncTrail": {
+    "message": "Сохранить как цвет траектории",
+    "description": "Trail color picker UI"
+  },
+  "superDragCompassPosCompassHub": {
+    "message": "Точка перетаскивания",
+    "description": "Compass hub aligned to drag start"
+  },
+  "superDragCompassPosCompassScreenCenter": {
+    "message": "Центр екрана",
+    "description": "Compass fixed at viewport center"
+  },
+  "superDragCompassPosCompassScreenTop": {
+    "message": "Вверху",
+    "description": "Compass fixed at top of viewport"
+  },
+  "superDragCompassPosCompassScreenRight": {
+    "message": "Справа",
+    "description": "Compass fixed at right of viewport"
+  },
+  "superDragCompassPosCompassScreenBottom": {
+    "message": "Внизу",
+    "description": "Compass fixed at bottom of viewport"
+  },
+  "superDragCompassPosCompassScreenLeft": {
+    "message": "Слева",
+    "description": "Compass fixed at left of viewport"
+  },
+  "superDragCompassPosCompassHidden": {
+    "message": "Приховати",
+    "description": "Do not show compass"
+  },
+  "addCurrentSiteToDisabledSites": {
+    "message": "Додати поточний сайт",
+    "description": "Button: add the active tab domain to disabled sites"
+  },
+  "addCurrentSiteToDisabledSitesTitle": {
+    "message": "Додати домен поточної вкладки до вимкнених сайтів",
+    "description": "Tooltip for add-current-site button"
+  },
+  "addDisabledSite": {
+    "message": "Додати",
+    "description": "Button: add a typed disabled site entry"
+  },
+  "disabledSiteInputPlaceholder": {
+    "message": "Домен або повна URL-адреса, наприклад youtube.com",
+    "description": "Placeholder for the disabled site input"
+  },
+  "disabledSitesEmpty": {
+    "message": "Вимкнених сайтів ще немає.",
+    "description": "Empty state for disabled sites list"
+  },
+  "removeDisabledSite": {
+    "message": "Видалити цей сайт",
+    "description": "Tooltip/aria label for remove disabled site button"
+  },
+  "disabledSiteInvalid": {
+    "message": "Введіть дійсний домен або URL",
+    "description": "Error shown when disabled site input is invalid"
+  },
+  "disabledSiteAlreadyExists": {
+    "message": "Сайт уже існує",
+    "description": "Error shown when adding a duplicate disabled site"
+  },
+  "disabledSitesLimitReached": {
+    "message": "Досягнуто ліміту вимкнених сайтів",
+    "description": "Error shown when disabled sites list reaches the maximum size"
+  },
+  "currentSiteUnsupported": {
+    "message": "Поточна вкладка не має підтримуваного домену",
+    "description": "Error shown when current tab URL cannot be added to disabled sites"
+  },
+  "customKey": {
+    "message": "Власна клавіша",
+    "description": "Custom trigger key option"
+  },
+  "previewTriggerMode": {
+    "message": "Режим запуску",
+    "description": "Popup view trigger mode setting"
+  },
+  "previewTriggerHold": {
+    "message": "Утримувати клавішу запуску",
+    "description": "Hold trigger key option"
+  },
+  "previewTriggerDouble": {
+    "message": "Двічі натиснути клавішу запуску",
+    "description": "Double-press trigger key option"
+  },
+  "previewCustomKey": {
+    "message": "Власна клавіша",
+    "description": "Popup view custom trigger key setting"
+  },
+  "previewCustomKeyPlaceholder": {
+    "message": "Клацніть і натисніть клавішу",
+    "description": "Popup view custom trigger key placeholder"
+  },
+  "previewCustomKeyTitle": {
+    "message": "Клацніть тут, а потім натисніть клавішу, що не є модифікатором. Натисніть Esc, щоб очистити.",
+    "description": "Popup view custom trigger key title"
+  },
+  "unlimited": {
+    "message": "Без обмежень",
+    "description": "Unlimited value label"
+  },
+  "settingsFontSize": {
+    "message": "Розмір шрифту налаштувань",
+    "description": "Header button: adjust settings font size"
   }
 }

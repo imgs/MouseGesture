@@ -4,7 +4,7 @@
     "description": "The name of the extension"
   },
   "extDesc": {
-    "message": "En Chrome/Edge-tillägg som stöder musgestus, super-drag funktionalitet och popup view",
+    "message": "Musgesturer, superdrag, förhandsgranskning av bilder och länkar m.m.",
     "description": "The description of the extension"
   },
   "title": {
@@ -35,13 +35,21 @@
     "message": "Dra Vänster",
     "description": "Drag left action"
   },
-  "openInForeground": {
-    "message": "Öppna Länk i Förgrund",
-    "description": "Open link in foreground"
+  "dragUpRight": {
+    "message": "Dra upp-höger",
+    "description": "Super drag diagonal direction"
   },
-  "openInBackground": {
-    "message": "Öppna Länk i Bakgrund",
-    "description": "Open link in background"
+  "dragDownRight": {
+    "message": "Dra ner-höger",
+    "description": "Super drag diagonal direction"
+  },
+  "dragDownLeft": {
+    "message": "Dra ner-vänster",
+    "description": "Super drag diagonal direction"
+  },
+  "dragUpLeft": {
+    "message": "Dra upp-vänster",
+    "description": "Super drag diagonal direction"
   },
   "superDragDescription": {
     "message": "Super-drag fungerar för länkar, bilder och markerad text. Du kan ställa in öppningsmetoden för varje gestriktning (upp/ner/vänster/höger), inklusive förgrund, bakgrund eller delad vy (vänster/höger/upp/ner).",
@@ -64,52 +72,76 @@
     "description": "Down direction"
   },
   "downThenRight": {
-    "message": "Ner Sedan Höger",
-    "description": "Down then right gesture"
+    "message": "Ned sedan höger",
+    "description": "Gest ned sedan höger"
   },
   "leftThenUp": {
-    "message": "Vänster Sedan Upp",
-    "description": "Left then up gesture"
+    "message": "Vänster sedan upp",
+    "description": "Gest vänster sedan upp"
   },
   "rightThenUp": {
-    "message": "Höger Sedan Upp",
-    "description": "Right then up gesture"
+    "message": "Höger sedan upp",
+    "description": "Gest höger sedan upp"
   },
   "rightThenDown": {
-    "message": "Höger Sedan Ner",
-    "description": "Right then down gesture"
+    "message": "Höger sedan ner",
+    "description": "Gest höger sedan ner"
   },
   "upThenLeft": {
-    "message": "Upp Sedan Vänster",
-    "description": "Up then left gesture"
+    "message": "Upp sedan vänster",
+    "description": "Gest upp sedan vänster"
   },
   "upThenRight": {
-    "message": "Upp Sedan Höger",
-    "description": "Up then right gesture"
+    "message": "Upp sedan höger",
+    "description": "Gest upp sedan höger"
   },
   "downThenLeft": {
-    "message": "Ner Sedan Vänster",
-    "description": "Down then left gesture"
+    "message": "Ned sedan vänster",
+    "description": "Gest ned sedan vänster"
   },
   "leftThenDown": {
-    "message": "Vänster Sedan Ner",
-    "description": "Left then down gesture"
+    "message": "Vänster sedan ner",
+    "description": "Gest vänster sedan ner"
   },
   "upThenDown": {
-    "message": "Upp Sedan Ner",
-    "description": "Up then down gesture"
+    "message": "Upp sedan ner",
+    "description": "Gest upp sedan ner"
   },
   "downThenUp": {
-    "message": "Ner Sedan Upp",
-    "description": "Down then up gesture"
+    "message": "Ned sedan upp",
+    "description": "Gest ned sedan upp"
   },
   "leftThenRight": {
-    "message": "Vänster Sedan Höger",
-    "description": "Left then right gesture"
+    "message": "Vänster sedan höger",
+    "description": "Gest vänster sedan höger"
   },
   "rightThenLeft": {
-    "message": "Höger Sedan Vänster",
-    "description": "Right then left gesture"
+    "message": "Höger sedan vänster",
+    "description": "Gest höger sedan vänster"
+  },
+  "rightHoldWheelUp": {
+    "message": "Håll höger + scrolla upp",
+    "description": "Håll högerknappen och scrolla upp"
+  },
+  "rightHoldWheelDown": {
+    "message": "Håll höger + scrolla ner",
+    "description": "Håll högerknappen och scrolla ner"
+  },
+  "leftHoldWheelUp": {
+    "message": "Håll vänster + scroll uppåt",
+    "description": "Vänsterknapp och scroll uppåt"
+  },
+  "leftHoldWheelDown": {
+    "message": "Håll vänster + scroll nedåt",
+    "description": "Vänsterknapp och scroll nedåt"
+  },
+  "rightHoldLeftClick": {
+    "message": "Håll höger + vänsterklick",
+    "description": "Håll högerknappen och vänsterklick"
+  },
+  "leftHoldRightClick": {
+    "message": "Håll vänster + högerklick",
+    "description": "Håll vänsterknappen och högerklicka"
   },
   "back": {
     "message": "Tillbaka",
@@ -158,6 +190,18 @@
   "prevTab": {
     "message": "Föregående Flik",
     "description": "Previous tab action"
+  },
+  "previousActiveTab": {
+    "message": "Föregående aktiva flik",
+    "description": "Geståtgärd: växla till den tidigare aktiva fliken"
+  },
+  "goToParentUrl": {
+    "message": "Överordnad URL",
+    "description": "Geståtgärd: gå till den överordnade URL-sökvägen"
+  },
+  "goToRootUrl": {
+    "message": "Rot-URL",
+    "description": "Geståtgärd: gå till webbplatsens rot-URL"
   },
   "nextTab": {
     "message": "Nästa Flik",
@@ -211,6 +255,14 @@
     "message": "Växla Helskärm",
     "description": "Toggle fullscreen action"
   },
+  "zoomIn": {
+    "message": "Zooma in",
+    "description": "Öka zoom för aktuell flik"
+  },
+  "zoomOut": {
+    "message": "Zooma ut",
+    "description": "Minska zoom för aktuell flik"
+  },
   "closeTabsToLeft": {
     "message": "Stäng Flikar till Vänster",
     "description": "Close tabs to left action"
@@ -218,6 +270,474 @@
   "reloadAllTabs": {
     "message": "Ladda Om Alla Flikar",
     "description": "Reload all tabs action"
+  },
+  "stopLoadingAllTabs": {
+    "message": "Stoppa inläsning av alla flikar",
+    "description": "Stop loading in all tabs"
+  },
+  "screenshotRegion": {
+    "message": "Skärmbild (sporområde)",
+    "description": "Screenshot gesture action"
+  },
+  "screenshotRegionOrLink": {
+    "message": "Skärmbild eller öppna länk",
+    "description": "Trail region hint when links are inside selection"
+  },
+  "trailRegionChooseTitle": {
+    "message": "Länkar i markeringen — skärmbild eller öppna",
+    "description": "Trail region chooser dialog title"
+  },
+  "trailRegionLinkSingle": {
+    "message": "1 länk",
+    "description": "Trail region link count"
+  },
+  "trailRegionLinkMultiple": {
+    "message": "{count} länkar",
+    "description": "Trail region link count"
+  },
+  "trailRegionActionScreenshot": {
+    "message": "Skärmbild (S)",
+    "description": "Trail region chooser button"
+  },
+  "trailRegionActionOpenLink": {
+    "message": "Öppna i ny flik (O)",
+    "description": "Trail region chooser button"
+  },
+  "trailRegionActionOpenLinks": {
+    "message": "Öppna i nye flikar (O)",
+    "description": "Trail region chooser button"
+  },
+  "trailRegionActionOpenSelected": {
+    "message": "Öppna {n} i nye flikar (O)",
+    "description": "Trail region open checked links"
+  },
+  "trailRegionActionOpenNone": {
+    "message": "Öppna markering (O)",
+    "description": "Trail region open button when none checked"
+  },
+  "trailRegionActionCopy": {
+    "message": "Kopiera (C)",
+    "description": "Trail region chooser copy button"
+  },
+  "trailRegionActionCopySelected": {
+    "message": "Kopiera {n} (C)",
+    "description": "Trail region copy checked links"
+  },
+  "trailRegionActionCopyNone": {
+    "message": "Kopiera (C)",
+    "description": "Trail region copy button when none checked"
+  },
+  "trailRegionCopyFailed": {
+    "message": "Kopiering misslyckades",
+    "description": "Trail region copy to clipboard failed"
+  },
+  "trailRegionSelectAll": {
+    "message": "Vælg alle",
+    "description": "Trail region link list select all"
+  },
+  "trailRegionNoLinkSelected": {
+    "message": "Vælg mindst ét länk",
+    "description": "Trail region no selection hint"
+  },
+  "trailRegionChooseHint": {
+    "message": "Esc avbryter · kryssa i länkar att kopiera/öppna · dra kanter för att ändra storlek",
+    "description": "Trail region chooser footer"
+  },
+  "trailRegionLinkOpened": {
+    "message": "Länk öppnad i ny flik",
+    "description": "Trail region open link feedback"
+  },
+  "trailRegionLinksOpened": {
+    "message": "Länkar öppnades i nya flikar",
+    "description": "Trail region open links feedback"
+  },
+  "trailRegionLinksTruncated": {
+    "message": "Öppnade endast de första {n} länkarna",
+    "description": "Trail region open links cap"
+  },
+  "screenshotScrollCaptureActive": {
+    "message": "Scrolla sidan manuellt, använd sedan samme genväg eller Esc for at avsluta och sammanfoga",
+    "description": "Manual scroll capture in progress"
+  },
+  "screenshotCopied": {
+    "message": "Skärmbild kopierad till urklipp",
+    "description": "Screenshot feedback"
+  },
+  "screenshotFailed": {
+    "message": "Skärmbild misslyckades",
+    "description": "Screenshot feedback"
+  },
+  "screenshotNeedTrail": {
+    "message": "Rita en längre spår for at välja område",
+    "description": "Screenshot feedback"
+  },
+  "screenshotUnavailable": {
+    "message": "Skärmbild-modulet er inte tillgängligt",
+    "description": "Screenshot feedback"
+  },
+  "screenshotTopFrameOnly": {
+    "message": "Skärmbild af hela siden fungerar endast i huvudramen",
+    "description": "Screenshot feedback"
+  },
+  "screenshotFeature": {
+    "message": "Skärmbild",
+    "description": "Screenshot settings section title"
+  },
+  "enableScreenshotFeature": {
+    "message": "Aktivera skärmbild",
+    "description": "Master toggle for screenshot feature"
+  },
+  "enableScreenshotTrailCapture": {
+    "message": "Sporområde (slinga / självkorsningning)",
+    "description": "Capture when trail loops or crosses; skipped if another gesture action matches"
+  },
+  "enableScreenshotClipboard": {
+    "message": "Kopiera automatisk til urklipp",
+    "description": "Copy screenshot to clipboard after capture"
+  },
+  "enableScreenshotPreview": {
+    "message": "Visa förhandsgranskning efter tagning",
+    "description": "Open preview window when a screenshot is captured"
+  },
+  "enableScreenshotHistory": {
+    "message": "Spara skärmbildhistorik",
+    "description": "Keep captured screenshots in local history"
+  },
+  "screenshotHistoryMaxCount": {
+    "message": "Historikgräns",
+    "description": "Maximum screenshot history entries to keep"
+  },
+  "screenshotHistoryMaxCountHint": {
+    "message": "0 = ubegrænset; 1–200 sletter äldsta poster ved overskridelse",
+    "description": "Screenshot history limit hint"
+  },
+  "screenshotHistoryUnlimited": {
+    "message": "Ubegrænset",
+    "description": "Label when screenshot history limit is 0"
+  },
+  "screenshotHistoryView": {
+    "message": "Visa historik",
+    "description": "Open screenshot history window"
+  },
+  "screenshotHistoryTitle": {
+    "message": "Skärmbildhistorik",
+    "description": "Screenshot history window title"
+  },
+  "screenshotHistoryEmpty": {
+    "message": "Inga skärmbilder än",
+    "description": "Empty screenshot history state"
+  },
+  "screenshotHistoryClearAll": {
+    "message": "Rensa allt",
+    "description": "Delete all screenshot history entries"
+  },
+  "screenshotHistoryClearConfirm": {
+    "message": "Ta bort all skärmbildhistorik?",
+    "description": "Confirm clearing screenshot history"
+  },
+  "screenshotHistoryDelete": {
+    "message": "Ta bort",
+    "description": "Delete one screenshot history entry"
+  },
+  "screenshotHistoryPinToPage": {
+    "message": "Fäst på sidan",
+    "description": "Pin history thumbnail onto the web page"
+  },
+  "screenshotHistoryPinFailed": {
+    "message": "Kunde inte fastgøre (öppna målfliken eller tillad dette webbplats).",
+    "description": "Error when pinning from screenshot history"
+  },
+  "screenshotHistoryCount": {
+    "message": "$1 objekt",
+    "description": "Number of items in screenshot history",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "screenshotHistoryModeViewport": {
+    "message": "Synligt område",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeFullPage": {
+    "message": "Hela sidan",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeRegion": {
+    "message": "Område",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeScroll": {
+    "message": "Manuell rullning",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeUnknown": {
+    "message": "Skärmbild",
+    "description": "Screenshot history capture mode fallback label"
+  },
+  "screenshotDone": {
+    "message": "Skärmbild klar",
+    "description": "Hint when capture finished without clipboard copy"
+  },
+  "screenshotPreviewTitle": {
+    "message": "Förhandsgranskning av skärmbild",
+    "description": "Screenshot preview window title"
+  },
+  "screenshotPreviewClose": {
+    "message": "Stäng",
+    "description": "Close screenshot preview window"
+  },
+  "screenshotPreviewCopyAgain": {
+    "message": "Kopiera",
+    "description": "Copy screenshot to clipboard from preview window"
+  },
+  "screenshotPreviewSave": {
+    "message": "Spara som fil",
+    "description": "Save annotated screenshot to disk"
+  },
+  "screenshotPreviewSaved": {
+    "message": "Sparat",
+    "description": "Screenshot file save succeeded"
+  },
+  "screenshotPreviewPinToPage": {
+    "message": "Fäst på sidan",
+    "description": "Pin annotated screenshot onto the source web page"
+  },
+  "screenshotPreviewPinned": {
+    "message": "Fäst",
+    "description": "Screenshot pin placed on page"
+  },
+  "screenshotPreviewPinning": {
+    "message": "Fäst…",
+    "description": "Screenshot pin in progress"
+  },
+  "screenshotPinTitle": {
+    "message": "Skärmbild",
+    "description": "Title on pinned screenshot sticker"
+  },
+  "screenshotPinClose": {
+    "message": "Ta bort fästning",
+    "description": "Close button on pinned screenshot"
+  },
+  "screenshotPinResize": {
+    "message": "Ändra storlek",
+    "description": "Resize handle on pinned screenshot"
+  },
+  "screenshotPinZoomFit": {
+    "message": "Anpassa",
+    "description": "Fit pinned screenshot to view"
+  },
+  "screenshotPinZoomOriginal": {
+    "message": "1:1",
+    "description": "Show pinned screenshot at original pixel size"
+  },
+  "screenshotPinOrderLabel": {
+    "message": "Fästning $1$",
+    "description": "Pinned screenshot order number",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "screenshotPreviewLoadFailed": {
+    "message": "Kunde inte läsa in förhandsgranskning",
+    "description": "Screenshot preview load error"
+  },
+  "screenshotPreviewZoomFit": {
+    "message": "Anpassa",
+    "description": "Fit screenshot to preview window"
+  },
+  "screenshotPreviewZoomFitTitle": {
+    "message": "Anpassa till fönster",
+    "description": "Tooltip for fit zoom button"
+  },
+  "screenshotPreviewZoomOneToOne": {
+    "message": "1:1",
+    "description": "Actual-size zoom button label"
+  },
+  "screenshotPreviewZoomOneToOneTitle": {
+    "message": "Verklig storlek (1:1)",
+    "description": "Tooltip for 1:1 zoom button"
+  },
+  "screenshotPreviewZoomLevel": {
+    "message": "Zoom $1$%",
+    "description": "Current zoom percentage in preview",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "screenshotAnnotHand": {
+    "message": "Hånd (flyt)",
+    "description": "Pan the preview by dragging"
+  },
+  "screenshotAnnotPen": {
+    "message": "Pen",
+    "description": "Annotation tool: freehand"
+  },
+  "screenshotAnnotArrow": {
+    "message": "Pil (Shift: H/V)",
+    "description": "Annotation tool: arrow; Shift constrains to horizontal or vertical"
+  },
+  "screenshotAnnotLine": {
+    "message": "Linje (Shift: H/V)",
+    "description": "Annotation tool: line; Shift constrains to horizontal or vertical"
+  },
+  "screenshotAnnotRect": {
+    "message": "Rektangel (Shift: kvadrat)",
+    "description": "Annotation tool: rectangle; Shift draws a square"
+  },
+  "screenshotAnnotEllipse": {
+    "message": "Ellipse",
+    "description": "Annotation tool: ellipse"
+  },
+  "screenshotAnnotRoundRect": {
+    "message": "Avrundad rektangel",
+    "description": "Annotation tool: rounded rectangle"
+  },
+  "screenshotAnnotHighlighter": {
+    "message": "Överstrykningspenna",
+    "description": "Annotation tool: highlighter marker"
+  },
+  "screenshotAnnotHighlight": {
+    "message": "Markeringsram",
+    "description": "Annotation tool: highlight rectangle"
+  },
+  "screenshotAnnotFillRect": {
+    "message": "Fylld rektangel",
+    "description": "Annotation tool: filled rectangle"
+  },
+  "screenshotAnnotFillEllipse": {
+    "message": "Fylld ellipse",
+    "description": "Annotation tool: filled ellipse"
+  },
+  "screenshotAnnotBlur": {
+    "message": "Oskärpa",
+    "description": "Annotation tool: blur brush"
+  },
+  "screenshotAnnotArrow2": {
+    "message": "Dubbelpil (Shift: H/V)",
+    "description": "Annotation tool: line with arrowheads at both ends; Shift constrains H/V"
+  },
+  "screenshotAnnotNumber": {
+    "message": "Nummer",
+    "description": "Annotation tool: sequential number markers"
+  },
+  "screenshotAnnotStampStart": {
+    "message": "Start nr",
+    "description": "Starting number for sequential stamps"
+  },
+  "screenshotAnnotStampNext": {
+    "message": "Næste nr: $1$",
+    "description": "Next number stamp to place (tooltip)",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "screenshotAnnotCrop": {
+    "message": "Beskär",
+    "description": "Annotation tool: crop image"
+  },
+  "screenshotAnnotCropApply": {
+    "message": "Tillämpa beskärning",
+    "description": "Confirm crop selection"
+  },
+  "screenshotAnnotCropCancel": {
+    "message": "Avbryt",
+    "description": "Cancel crop selection"
+  },
+  "screenshotAnnotText": {
+    "message": "Tekst",
+    "description": "Annotation tool: text"
+  },
+  "screenshotAnnotMosaic": {
+    "message": "Mosaik",
+    "description": "Annotation tool: mosaic blur"
+  },
+  "screenshotAnnotEraser": {
+    "message": "Suddgummi",
+    "description": "Annotation tool: eraser"
+  },
+  "screenshotAnnotSize": {
+    "message": "Størrelse",
+    "description": "Annotation stroke size"
+  },
+  "screenshotAnnotResetAll": {
+    "message": "Återställ alla redigeringar",
+    "description": "Clear all annotations and restore original screenshot"
+  },
+  "screenshotAnnotStepCount": {
+    "message": "$1 / $2",
+    "description": "History step indicator: current / total"
+  },
+  "screenshotAnnotStepCountTitle": {
+    "message": "Tillämpade steg / total (0 = originalbild)",
+    "description": "Tooltip for history step indicator"
+  },
+  "screenshotAnnotUndo": {
+    "message": "Ångra",
+    "description": "Undo annotation"
+  },
+  "screenshotAnnotRedo": {
+    "message": "Gör om",
+    "description": "Redo annotation"
+  },
+  "screenshotAnnotTextPlaceholder": {
+    "message": "Skriv här…",
+    "description": "Placeholder in inline text editor on screenshot preview"
+  },
+  "screenshotOptRegion": {
+    "message": "Områdesval",
+    "description": "Screenshot bind row: keyboard drag rectangle region"
+  },
+  "screenshotOptViewport": {
+    "message": "Synligt område",
+    "description": "Screenshot bind row: current visible tab area"
+  },
+  "screenshotOptFullPage": {
+    "message": "Hela sidan",
+    "description": "Screenshot bind row: full page"
+  },
+  "screenshotOptScrollStitch": {
+    "message": "Manuell rullning",
+    "description": "Screenshot bind row: manual scroll capture"
+  },
+  "screenshotOptOpenHistory": {
+    "message": "Öppna historik",
+    "description": "Screenshot bind row: keyboard shortcut to open screenshot history"
+  },
+  "screenshotHotkeyPressHint": {
+    "message": "Genvägar: klik i et felt ovenfor, tryk derefter en kombination (Ctrl / Alt / Meta + bokstav eller siffra, eller F1–F12). Esc rensar fältet.",
+    "description": "Screenshot section footer: hotkey binding help"
+  },
+  "screenshotHotkeyPlaceholder": {
+    "message": "Klicka för att ange",
+    "description": "Placeholder in empty screenshot hotkey fields"
+  },
+  "screenshotRegionPickHint": {
+    "message": "Dra for at välja ett område. Esc avbryter.",
+    "description": "Hint while keyboard region picker is active"
+  },
+  "screenshotRegionPickFooterHint": {
+    "message": "Områdegenväg: rita en rektangel og slip. Ved länks: skärmbild eller nye flikar. Esc avbryter.",
+    "description": "Screenshot section footer: keyboard region picker help"
+  },
+  "screenshotRegionTooSmall": {
+    "message": "Markering för liten — rita en större område",
+    "description": "Region picker: minimum size not met"
+  },
+  "screenshotGestureIntersectHint": {
+    "message": "Sporområde: én slinga eller ét självkorsning, slip derefter. Ved länks: skärmbild eller nye flikar. Mange slingar = klotter.",
+    "description": "Screenshot section footer: trail region capture help"
   },
   "togglePinTab": {
     "message": "Fäst/Lös Fliken",
@@ -244,16 +764,16 @@
     "description": "Settings title"
   },
   "customizedBehavior": {
-    "message": "Blockeringslista",
-    "description": "Block list section title"
+    "message": "Inaktiverade webbplatser",
+    "description": "Section title for the per-site disable list"
   },
   "disableMouseGesturesForSites": {
-    "message": "Inaktivera musgester och superdra för dessa webbplatser",
-    "description": "Label for the list of sites where gestures and super drag are disabled"
+    "message": "Inaktivera tilläggsfunktioner på angivna domäner",
+    "description": "Subtitle for Disabled sites section"
   },
   "disabledSitesHint": {
-    "message": "En webbplats per rad. Domän (t.ex. youtube.com) eller fullständig URL.",
-    "description": "Hint for the disabled sites textarea"
+    "message": "Gäller för: gester, superdragning, länk-/bildförhandsvisning, skärmbilder och upplåsning av sida. Lägg till den aktuella webbplatsen eller ange en domän/URL; klicka på borttagningsmarkeringen för att radera.",
+    "description": "Short hint explaining which features the Disabled sites list affects"
   },
   "enableGesture": {
     "message": "Aktivera Musgestus",
@@ -279,6 +799,26 @@
     "message": "Aktivera Super-Drag",
     "description": "Enable super drag option"
   },
+  "superDragCompassPosition": {
+    "message": "8-riktningskompass",
+    "description": "Super drag compass display and position"
+  },
+  "superDragCompassPosCompassAbove": {
+    "message": "Ovanför dragpunkt",
+    "description": "Compass above drag start, centered horizontally"
+  },
+  "superDragCompassPosCompassRight": {
+    "message": "Till höger om dragpunkt",
+    "description": "Compass to the right of drag start, vertically centered"
+  },
+  "superDragCompassPosCompassBelow": {
+    "message": "Under dragpunkt",
+    "description": "Compass below drag start, centered horizontally"
+  },
+  "superDragCompassPosCompassLeft": {
+    "message": "Till vänster om dragpunkt",
+    "description": "Compass to the left of drag start, vertically centered"
+  },
   "enableDragTextSearch": {
     "message": "Aktivera Drag Text Sökning",
     "description": "Enable drag text search option"
@@ -287,9 +827,17 @@
     "message": "Ladda ner bild/fil automatiskt vid dragning",
     "description": "When the drag target is an image or other downloadable file, start download automatically"
   },
+  "enableImageDrag": {
+    "message": "Aktivera bilddragning",
+    "description": "Control image super drag independently from image preview"
+  },
   "enableImagePreview": {
     "message": "Aktivera Bild Förhandsvisning",
     "description": "Enable image preview option"
+  },
+  "enableImagePreviewEnhanced": {
+    "message": "Förbättrad bildförhandsgranskning",
+    "description": "Support transparent overlay, background-image, parent lookup, etc."
   },
   "enableDuplicateCheck": {
     "message": "Upptäck Duplicerade Flikar",
@@ -302,10 +850,6 @@
   "enableSmoothScroll": {
     "message": "Aktivera smidig rullning",
     "description": "Enable smooth scrolling for gesture actions"
-  },
-  "save": {
-    "message": "Inställningar Tillämpade",
-    "description": "Save settings button"
   },
   "reset": {
     "message": "Återställ",
@@ -363,14 +907,6 @@
     "message": "Kunde Inte Återställa Inställningar",
     "description": "Reset settings error notification"
   },
-  "themeLight": {
-    "message": "Ljus",
-    "description": "Light theme"
-  },
-  "themeDark": {
-    "message": "Mörk",
-    "description": "Dark theme"
-  },
   "buyMeACoffee": {
     "message": "Köp mig en kaffe",
     "description": "Donation button"
@@ -379,17 +915,33 @@
     "message": "Byt tema",
     "description": "Toggle theme button"
   },
-  "toggleLanguage": {
-    "message": "Bytt språk",
-    "description": "Toggle language button"
+  "openDetachedPopupTitle": {
+    "message": "Öppna inställningar i sidopanelen (annars separat fönster)",
+    "description": "Rubrikknapp: sidopanel eller separat fönster för inställningar"
+  },
+  "openDetachedWindowFromSidePanelTitle": {
+    "message": "Öppna i separat fönster (bredvid webbläsaren)",
+    "description": "Sidopanel: separat fönster och webbläsarlayout"
+  },
+  "openOptionsPageTitle": {
+    "message": "Öppna alternativsidan",
+    "description": "Rubrikknapp: öppna tilläggets alternativsida"
   },
   "donationTooltip": {
     "message": "Om du gillar detta arbete, stöd gärna. Tack :)",
     "description": "Donation tooltip"
   },
   "rightButtonHint": {
-    "message": "Håll höger musknapp ned",
+    "message": "Håll höger (bana, hjul, klick) · vänster (hjul)",
     "description": "Right mouse button hint"
+  },
+  "builtInGesturesListExpandHint": {
+    "message": "Klicka för att expandera hela gestlistan",
+    "description": "Tooltip on built-in gestures subtitle when list is collapsed"
+  },
+  "builtInGesturesListCollapseHint": {
+    "message": "Klicka för att dölja gestlistan",
+    "description": "Tooltip on built-in gestures subtitle when list is expanded"
   },
   "leftButtonHint": {
     "message": "Håll vänster musknapp ned",
@@ -403,17 +955,45 @@
     "message": "Öppna i Bakgrund",
     "description": "Open in background action"
   },
+  "popupViewAction": {
+    "message": "Popup Förhandsvisning",
+    "description": "Super drag action: open target in popup view"
+  },
+  "incognitoAction": {
+    "message": "Öppna i inkognitofönster",
+    "description": "Open in incognito/private window"
+  },
+  "enableSplitScrollSync": {
+    "message": "Synka vertikal och horisontell rullning mellan delade fönster",
+    "description": "Vid delad vy: matcha båda rullningsaxlarna mellan fönstren"
+  },
   "copyAction": {
     "message": "Kopiera",
     "description": "Copy selected text or link URL to clipboard"
+  },
+  "downloadAction": {
+    "message": "Ladda ned",
+    "description": "Super drag action: download target"
   },
   "copiedToClipboard": {
     "message": "Kopierat till urklipp",
     "description": "Hint after copy action"
   },
-  "dragSearchEngine": {
-    "message": "Drag Sökmotor URL",
-    "description": "Drag search engine URL setting"
+  "dragSearchEngineSlotLabel": {
+    "message": "Objekt att redigera",
+    "description": "Label for drag search engine slot selector"
+  },
+  "dragSearchSlotDefault": {
+    "message": "Standard (reserv)",
+    "description": "Default search URL slot in drag search editor"
+  },
+  "dragSearchEngineUrlForSlot": {
+    "message": "Sökmotor-URL",
+    "description": "Label for single drag search URL field"
+  },
+  "dragSearchEnginePerDirectionHelp": {
+    "message": "Välj «Standard» eller en dragriktning i listan och redigera motsvarande URL. Tomma riktningar använder standard. Gäller endast textsökning vid drag.",
+    "description": "Help text for unified drag search engine editor"
   },
   "linkPreview": {
     "message": "Popup Förhandsvisning",
@@ -424,7 +1004,7 @@
     "description": "Quick navigation hover tooltip"
   },
   "linkPreviewHint": {
-    "message": "Hover + Tangent för att Visa Popup",
+    "message": "Hovra och använd utlösaren för att visa popup-fönstret",
     "description": "Popup view hint"
   },
   "enableLinkPreview": {
@@ -495,41 +1075,61 @@
     "message": "Använd {q} för sökterm, exempel format:",
     "description": "Search engine examples description"
   },
+  "searchExampleUrlClickHint": {
+    "message": "Klicka exempel-URL för att fylla fältet ovan och spara",
+    "description": "Tooltip for example search engine URLs (click to fill)"
+  },
+  "searchEngineExamplesUrlClickHint": {
+    "message": "Tips: klicka på exempel-URL för att fylla fältet ovan och spara.",
+    "description": "Visible hint under search engine examples (click URL to fill field above and save)"
+  },
   "googleExample": {
-    "message": "Google Sökning: https://www.google.se/search?q={q}",
+    "message": "Google Sökning:",
+    "description": "Google search example"
+  },
+  "googleExampleUrl": {
+    "message": "https://www.google.se/search?q={q}",
     "description": "Google search example"
   },
   "googleTranslateExample": {
-    "message": "Google Översätt: https://translate.google.com/?sl=auto&tl=sv&text={q}&op=translate",
+    "message": "Google Översätt:",
+    "description": "Google translate example"
+  },
+  "googleTranslateExampleUrl": {
+    "message": "https://translate.google.com/?sl=auto&tl=sv&text={q}&op=translate",
     "description": "Google translate example"
   },
   "localSearchExample": {
-    "message": "Exempel: https://www.google.se/search?q={q}",
+    "message": "Exempel:",
+    "description": "Local search example"
+  },
+  "localSearchExampleUrl": {
+    "message": "https://www.google.se/search?q={q}",
     "description": "Local search example"
   },
   "bingExample": {
-    "message": "Bing Sökning: https://www.bing.com/search?q={q}&setlang=sv-SE",
+    "message": "Bing Sökning:",
+    "description": "Bing search example"
+  },
+  "bingExampleUrl": {
+    "message": "https://www.bing.com/search?q={q}&setlang=sv-SE",
     "description": "Bing search example"
   },
   "wheelTip": {
-    "message": "Använd mushjulet för att justera värde",
+    "message": "Hovra över denna rad i ~1,5 s, justera sedan med mushjulet",
     "description": "Wheel tip"
   },
   "modifierKeyDelayTip": {
-    "message": "Vid användning av aktiveringstangent är maximal fördröjning begränsad till 300ms",
+    "message": "Fördröjningen börjar när utlösarvillkoret är uppfyllt; öka den för att undvika oavsiktliga förhandsvisningar.",
     "description": "Modifier key delay tip"
   },
   "welcomeTitle": {
-    "message": "Välkommen till Musgestus Tillägg",
+    "message": "Välkommen till musgester-tillägget",
     "description": "Welcome page title"
   },
   "welcomeDescription": {
-    "message": "Tack för att du installerar Musgestus Tillägget! Detta tillägg levererar rik musgestus funktionalitet, intelligent flikhantering, popup förhandsvisning kapacitet och förbättrad visuell upplevelse för att hjälpa dig navigera på webben mer effektivt. Vi har optimalisert gestus igenkännings algoritmen med större fel tolerans, vilket tillåter gestus att bli igenkända korrekt även när de inte ritas perfekt. Den nya popup förhandsvisning funktionen låter dig se länk innehåll i popup fönster utan att byta flikar. Tillägget stöder också 24 språk och ljus/mörk tema för bättre användarupplevelse.",
+    "message": "Tack för att du installerade Mouse Gesture! Håll högerknappen nedtryckt och dra för att navigera, hantera flikar och scrolla; håll också höger eller vänster med hjulet (fler kombinationer i inställningar) för extra genvägar — igenkänningen förblir tolerant även medan sidor laddas. Super Drag öppnar länkar, bilder och textsökning med regler per riktning (förgrund, bakgrund, delad layout, kopiera till urklipp med mera). Popup View visar förhandsgranskningar av länkar eller söker i markerad text i små fönster. Valfritt: bildförhandsgranskning vid hovring (utökat läge), dubblettflikar med automatisk stängning, mjuk scrollning, flikräknare i verktygsfältet och upplåsning av sidor på restriktiva webbplatser. Inställningar från verktygsfältet (popup, sidopanel eller separat fönster); export/import; synkronisering med webbläsarkonto. 29 språk och ljust/mörkt tema.",
     "description": "Welcome page description"
-  },
-  "gesturesDescription": {
-    "message": "Följande är förinställda musgestus som du kan använda genom att dra med höger musknapp:",
-    "description": "Gestures description"
   },
   "extensionName": {
     "message": "Musgestus Tillägg",
@@ -539,88 +1139,48 @@
     "message": "Kärnfunktioner",
     "description": "Core features title"
   },
-  "utilitiesFeatures": {
-    "message": "Verktyg",
-    "description": "Utilities features title"
+  "welcomeCoreGestureBlock": {
+    "message": "Musgester: håll höger och dra för strykgester; hjul med höger eller vänster nedtryckt och klickkombinationer med höger nedtryckt — kan mappas om i inställningar till många åtgärder; tolerant igenkänning, även under laddning.",
+    "description": "Welcome page: core features gesture summary"
+  },
+  "welcomeCoreSuperDragBlock": {
+    "message": "Super Drag: dra länkar och bilder till nya flikar, markerad text för sökning; riktningen styr hur flikar öppnas; standard i bakgrunden.",
+    "description": "Welcome page: core features super drag summary"
+  },
+  "welcomeCorePopupViewBlock": {
+    "message": "Popup-vy: håll utlösartangenten (standard Skift) över en länk för förhandsgranskning i ett litet fönster; efter textmarkering tryck tangenten för omedelbar sökning med din sökmotor.",
+    "description": "Welcome page: core features popup view summary"
   },
   "usageTips": {
     "message": "Användningstips",
     "description": "Usage tips title"
   },
-  "smartGestureRecognition": {
-    "message": "Intelligent gestus igenkänning: Igenkänner gestus korrekt även när ofullkomliga, fungerar under sidladdning",
-    "description": "Smart gesture recognition description"
-  },
-  "tabManagementTitle": {
-    "message": "Flikhantering",
-    "description": "Tab management title"
-  },
-  "tabManagementDesc": {
-    "message": ": Intelligent duplikat upptäckt, automatisk stängning, periodisk minnes optimering",
-    "description": "Tab management description"
-  },
-  "superDragTitle": {
-    "message": "Super-Drag",
-    "description": "Super drag title"
-  },
-  "superDragDesc": {
-    "message": ": Dra länkar och bilder till nya flikar, dra markerad text till sökning",
-    "description": "Super drag description"
-  },
-  "linkPreviewTitle": {
-    "message": "Popup Förhandsvisning",
-    "description": "Link preview title"
-  },
-  "linkPreviewDesc": {
-    "message": ": Håll aktiveringstangenten (standard: Shift) ned medan du hovrar över länkar för att förhandsvisa målsida i popup fönster",
-    "description": "Link preview description"
-  },
-  "textSelectionPreview": {
-    "message": "Markera text och tryck aktiveringstangenten för att söka omedelbart i popup fönster, med stöd för anpassad sökmotor",
-    "description": "Text selection preview description"
-  },
   "previewTip": {
-    "message": "Du kan öppna flera popup fönster samtidigt",
+    "message": "Håll flera popup-förhandsgranskningar öppnae samtidig til jämförelse.",
     "description": "Preview tip"
-  },
-  "dragDirection": {
-    "message": "Anpassa dragriktning för att bestämma flik öppnings metod: öppna i bakgrund som standard",
-    "description": "Drag direction description"
   },
   "debugPanelTitle": {
     "message": "Musgestus Debug Information",
     "description": "Debug panel title"
   },
   "debugPanelDesc": {
-    "message": ": Tryck Alt+D för att öppna, analysera gestus information i realtid, bevarar tillstånd",
+    "message": "Tryck på Alt+D för att öppna felsökningspanelen, analysera gestinformation i realtid, tillståndet behålls.",
     "description": "Debug panel description"
   },
-  "oneClickCopy": {
-    "message": "En-klick kopiering av debug information för enkel delning, med flerspråks stöd",
-    "description": "One click copy description"
-  },
-  "mediaPreview": {
-    "message": "Förbättrad media förhandsvisning: Förbättrade hover effekter för bilder och optimaliserade video poster bilder",
-    "description": "Media preview description"
-  },
-  "adaptiveTheme": {
-    "message": "Adaptiva teman: Justerar visuell stil baserat på sid bakgrund, stöder ljus/mörk läge",
-    "description": "Adaptive theme description"
-  },
   "gestureTrail": {
-    "message": "Gestus spår visas på skärm med anpassningsbar färg och bredd",
+    "message": "Valgfrit spor og gesturhint på skærmen; tilpas spårfärg og tjocklek i inställningar.",
     "description": "Gesture trail description"
   },
   "clickIcon": {
-    "message": "Klicka på tillägg ikon för att aktivera/inaktivera funktioner, sätt språk, tema och mer",
+    "message": "Verktygsfält: kompakt popup, sidepanel (Chrome/Edge när det stöds) eller fristående inställningsfönster. Växla funktioner, språk och tema og exportera/importera.",
     "description": "Click icon description"
   },
   "languageSupport": {
-    "message": "Stöder 24 språk, anpassar automatiskt till webbläsare språk",
+    "message": "29 gränssnittsspråk; använder ditt sparade val eller följer webbläsarens språk.",
     "description": "Language support description"
   },
   "enableAutoClose": {
-    "message": "Aktivera automatisk stängning av duplicerade flikar för att minska webbläsare resursanvändning avsevärt",
+    "message": "Med dublettdetektering kan gentagne webbadresser lukkes automatisk (valgfrit).",
     "description": "Enable auto close description"
   },
   "rightClickMacLinux": {
@@ -634,14 +1194,6 @@
   "duplicateTabsDetected": {
     "message": "Hittade $1 duplicerade flikar",
     "description": "Duplicate tabs detected notification title"
-  },
-  "duplicateTabsCount": {
-    "message": "Det finns $1 duplicerade flikar",
-    "description": "Duplicate tabs count message"
-  },
-  "duplicateTabsSingle": {
-    "message": "Det finns 1 duplicerad flik",
-    "description": "Single duplicate tab message"
   },
   "autoClosedTabs": {
     "message": "Automatiskt stängda $1 duplicerade flikar",
@@ -659,61 +1211,9 @@
     "message": "Namnlös flik",
     "description": "Untitled tab"
   },
-  "morePages": {
-    "message": "...och $1 fler sidor",
-    "description": "More pages tip"
-  },
-  "errorShowDuplicateTabs": {
-    "message": "Fel vid visning av duplicerade flikar notifikation:",
-    "description": "Error showing duplicate tabs notification"
-  },
-  "errorSendCloseRequest": {
-    "message": "Fel vid sändning av stäng förfrågan:",
-    "description": "Error sending close request"
-  },
-  "errorCloseDuplicateTabs": {
-    "message": "Fel vid stängning av duplicerade flikar:",
-    "description": "Error closing duplicate tabs"
-  },
-  "errorSendIgnoreRequest": {
-    "message": "Fel vid sändning av ignorera förfrågan:",
-    "description": "Error sending ignore request"
-  },
-  "errorIgnoreDuplicateTabs": {
-    "message": "Fel vid ignorering av duplicerade flikar:",
-    "description": "Error ignoring duplicate tabs"
-  },
-  "errorUpdateDebugPanel": {
-    "message": "Fel vid uppdatering av debug panel:",
-    "description": "Error updating debug panel"
-  },
   "errorDetectBackgroundColor": {
     "message": "Fel vid upptäckt av bakgrundsfärg:",
     "description": "Error detecting background color"
-  },
-  "errorDetectImageBorder": {
-    "message": "Fel vid upptäckt av bild kant radie:",
-    "description": "Error detecting image border radius"
-  },
-  "errorSetMutationObserver": {
-    "message": "Fel vid inställning av mutation observer:",
-    "description": "Error setting mutation observer"
-  },
-  "errorCheckElementVisibility": {
-    "message": "Fel vid kontroll av element synlighet:",
-    "description": "Error checking element visibility"
-  },
-  "errorProcessBorderRadius": {
-    "message": "Fel vid bearbetning av kant radie:",
-    "description": "Error processing border radius"
-  },
-  "errorDetectImageBackground": {
-    "message": "Fel vid upptäckt av bild bakgrund:",
-    "description": "Error detecting image background"
-  },
-  "errorShowAutoCloseNotification": {
-    "message": "Fel vid visning av automatisk stängning framgång notifikation:",
-    "description": "Error showing auto-close success notification"
   },
   "noForwardPage": {
     "message": "Ingen nästa sida i historik",
@@ -743,10 +1243,6 @@
     "message": "Ogiltig Gestus",
     "description": "Invalid gesture message"
   },
-  "nextPage": {
-    "message": "Nästa Sida",
-    "description": "Next page action"
-  },
   "errorReadPixel": {
     "message": "Fel vid läsning av pixel:",
     "description": "Error reading pixel message"
@@ -758,10 +1254,6 @@
   "errorCanvasDraw": {
     "message": "Fel vid ritning på canvas:",
     "description": "Error drawing on canvas message"
-  },
-  "errorAccessIframe": {
-    "message": "Fel vid åtkomst till iframe:",
-    "description": "Error accessing iframe message"
   },
   "errorMutationObserver": {
     "message": "Fel vid inställning av mutation observer:",
@@ -791,6 +1283,10 @@
     "message": "System Inställningar",
     "description": "Debug panel system settings section"
   },
+  "debugConsoleLog": {
+    "message": "Konsolloggar",
+    "description": "Debug panel console log toggle label"
+  },
   "debugAngleThreshold": {
     "message": "Vinkel Tröskel",
     "description": "Debug panel angle threshold setting"
@@ -810,6 +1306,46 @@
   "debugMinGestureComplexity": {
     "message": "Minimal Gestus Komplexitet",
     "description": "Debug panel minimum gesture complexity setting"
+  },
+  "debugMinMovementToStartGesture": {
+    "message": "Min. rörelse för start",
+    "description": "Inställning i felsökningspanelen: minsta rörelse för att starta gestspårning"
+  },
+  "debugSmoothingFactor": {
+    "message": "Utjämningsfaktor",
+    "description": "Inställning i felsökningspanelen: utjämningsfaktor för spår och igenkänning"
+  },
+  "debugAngleThresholdHelp": {
+    "message": "Styr hur strikt rörelse klassas som horisontell eller vertikal. Högre värden kräver rakare riktning; lägre värden tillåter mer diagonal rörelse.",
+    "description": "Hjälp för vinkeltröskel i felsökningspanelen"
+  },
+  "debugDirectionChangeThresholdHelp": {
+    "message": "Styr hur känsligt riktningsändringar upptäcks. Lägre värden fångar svängar lättare; högre värden ignorerar små skakningar.",
+    "description": "Hjälp för tröskel för riktningsändring i felsökningspanelen"
+  },
+  "debugMinGestureDistanceHelp": {
+    "message": "Minsta totala rörelseavstånd innan en gest kan kännas igen. Öka det för att minska oavsiktliga utlösningar.",
+    "description": "Hjälp för minsta gestavstånd i felsökningspanelen"
+  },
+  "debugMinDirectionSegmentLengthHelp": {
+    "message": "Minsta längd på rörelsesegmentet som används för riktningsigenkänning. Öka för att filtrera korta skakningar; minska för kortare gester.",
+    "description": "Hjälp för minsta riktningssegmentlängd i felsökningspanelen"
+  },
+  "debugMinGestureComplexityHelp": {
+    "message": "Tröskel för riktningskomplexitet innan ett spår behandlas som klotter eller ogiltigt. Högre värden tolererar fler svängar.",
+    "description": "Hjälp för gestkomplexitet i felsökningspanelen"
+  },
+  "debugMinMovementToStartGestureHelp": {
+    "message": "Pekaren måste röra sig minst så många pixlar efter knapptryckning innan gestspårning startar.",
+    "description": "Hjälp för minsta rörelse för start i felsökningspanelen"
+  },
+  "debugSmoothingFactorHelp": {
+    "message": "Styr utjämning av spår och igenkänningspunkter. Högre värden minskar skakningar men kan mjuka upp skarpa svängar; lägre reagerar snabbare.",
+    "description": "Hjälp för utjämningsfaktor i felsökningspanelen"
+  },
+  "debugConsoleLogHelp": {
+    "message": "Aktivera detaljerade tilläggsloggar i DevTools-konsolen för felsökning.",
+    "description": "Hjälp för konsolloggar i felsökningspanelen"
   },
   "debugLatestGestureInfo": {
     "message": "Senaste Gestus Information",
@@ -850,10 +1386,6 @@
   "debugMergedDirections": {
     "message": "Sammanfogade Riktningar",
     "description": "Debug panel merged directions"
-  },
-  "debugDirectionDistances": {
-    "message": "Riktning Avstånd",
-    "description": "Debug panel direction distances"
   },
   "debugFinalResult": {
     "message": "Slutligt Resultat",
@@ -927,9 +1459,17 @@
     "message": "Visa Flikantal",
     "description": "Show tab count badge option"
   },
-  "splitViewAction": {
-    "message": "Delad vy",
-    "description": "Öppna i delat vyfönster"
+  "unlockPageRestrictions": {
+    "message": "Lås upp kopiera/klistra in/högerklick och flikövervakning",
+    "description": "Setting: unlock page interaction limits"
+  },
+  "unlockPageRestrictionsTitle": {
+    "message": "Tar bort vanliga blockeringar för kopiering, klistra in, snabbmeny och markering; minskar blur/visibilitychange-spårning. Körs i sidkontext; stöder iframes och Shadow DOM. Ladda om sidan efter aktivering.",
+    "description": "Tooltip for unlock page restrictions"
+  },
+  "unlockPageRestrictionsOffReloadConfirm": {
+    "message": "Injicerad logik i öppna flikar kan finnas kvar tills du laddar om.\n\nLadda om aktuell flik nu?",
+    "description": "Body text for unlock-off confirmation dialog"
   },
   "splitViewLeft": {
     "message": "Dela - vänster",
@@ -946,5 +1486,165 @@
   "splitViewDown": {
     "message": "Dela - under",
     "description": "Delad vy, nytt fönster i nedre halvan"
+  },
+  "unlockPageRestrictionsOffTitle": {
+    "message": "Sidupplåsning av",
+    "description": "Title for unlock-off confirmation dialog"
+  },
+  "unlockPageRestrictionsReloadTab": {
+    "message": "Ladda om flik",
+    "description": "Reload tab button in unlock-off dialog"
+  },
+  "unlockPageRestrictionsNotNow": {
+    "message": "Inte nu",
+    "description": "Dismiss unlock-off dialog without reload"
+  },
+  "welcomeBulletImagePreview": {
+    "message": "Bildförhandsgranskning: valfri förstorad hovring och utökat läge för komplexa layouter.",
+    "description": "Welcome page: image hover preview bullet"
+  },
+  "welcomeBulletPageUnlock": {
+    "message": "Sidupplåsning: valfritt mildra begränsningar för kopiera, klistra in, högerklick m.m. — aktivera i inställningar och ladda om sidan om du uppmanas.",
+    "description": "Welcome page: page unlock bullet"
+  },
+  "welcomeBulletDisabledSites": {
+    "message": "Per webbplats: listade domäner inaktiverar gester, Super Drag, popup och upplåsning tillsammans.",
+    "description": "Welcome page: per-site disable bullet"
+  },
+  "welcomeBulletSplitScroll": {
+    "message": "Delad vy: när en länk öppnas delat kan du synkronisera scrollning mellan fönstren (även horisontellt).",
+    "description": "Welcome page: split scroll sync bullet"
+  },
+  "welcomeBulletScreenshot": {
+    "message": "Skärmbildr: synligt område, hele side og manuel manuell rullsammanfogning; spårområden, genväge, valgfri kopiering til urklipp, forhåndsvisning og lokal historik (0 = ubegrænset).",
+    "description": "Welcome page: screenshot feature bullet"
+  },
+  "welcomeTipScreenshot": {
+    "message": "Skärmbildr er aktiverade som standard; tilldela genvägar til synligt område, hele side og rulning; sporområde, autokopiera, forhåndsvisning og historik är valfria.",
+    "description": "Welcome page: screenshot usage tip"
+  },
+  "trailColorPickerPresets": {
+    "message": "Förinställningar",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerRecent": {
+    "message": "Senaste",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerEyedropper": {
+    "message": "Pipett",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerEyedropperActive": {
+    "message": "Klicka för att hämta färg · hjul zoomar förstoringsglas",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerSyncTrail": {
+    "message": "Spara som spårfärg",
+    "description": "Trail color picker UI"
+  },
+  "superDragCompassPosCompassHub": {
+    "message": "Trækpunkt",
+    "description": "Compass hub aligned to drag start"
+  },
+  "superDragCompassPosCompassScreenCenter": {
+    "message": "Skärmens mitt",
+    "description": "Compass fixed at viewport center"
+  },
+  "superDragCompassPosCompassScreenTop": {
+    "message": "Upp",
+    "description": "Compass fixed at top of viewport"
+  },
+  "superDragCompassPosCompassScreenRight": {
+    "message": "Höger",
+    "description": "Compass fixed at right of viewport"
+  },
+  "superDragCompassPosCompassScreenBottom": {
+    "message": "Ner",
+    "description": "Compass fixed at bottom of viewport"
+  },
+  "superDragCompassPosCompassScreenLeft": {
+    "message": "Vänster",
+    "description": "Compass fixed at left of viewport"
+  },
+  "superDragCompassPosCompassHidden": {
+    "message": "Dold",
+    "description": "Do not show compass"
+  },
+  "addCurrentSiteToDisabledSites": {
+    "message": "Lägg till aktuell webbplats",
+    "description": "Button: add the active tab domain to disabled sites"
+  },
+  "addCurrentSiteToDisabledSitesTitle": {
+    "message": "Lägg till den aktuella flikens domän i inaktiverade webbplatser",
+    "description": "Tooltip for add-current-site button"
+  },
+  "addDisabledSite": {
+    "message": "Lägg till",
+    "description": "Button: add a typed disabled site entry"
+  },
+  "disabledSiteInputPlaceholder": {
+    "message": "Domän eller fullständig URL, t.ex. youtube.com",
+    "description": "Placeholder for the disabled site input"
+  },
+  "disabledSitesEmpty": {
+    "message": "Inga inaktiverade webbplatser ännu.",
+    "description": "Empty state for disabled sites list"
+  },
+  "removeDisabledSite": {
+    "message": "Ta bort den här webbplatsen",
+    "description": "Tooltip/aria label for remove disabled site button"
+  },
+  "disabledSiteInvalid": {
+    "message": "Ange en giltig domän eller URL",
+    "description": "Error shown when disabled site input is invalid"
+  },
+  "disabledSiteAlreadyExists": {
+    "message": "Webbplatsen finns redan",
+    "description": "Error shown when adding a duplicate disabled site"
+  },
+  "disabledSitesLimitReached": {
+    "message": "Gränsen för inaktiverade webbplatser har nåtts",
+    "description": "Error shown when disabled sites list reaches the maximum size"
+  },
+  "currentSiteUnsupported": {
+    "message": "Den aktuella fliken har ingen domän som stöds",
+    "description": "Error shown when current tab URL cannot be added to disabled sites"
+  },
+  "customKey": {
+    "message": "Anpassad tangent",
+    "description": "Custom trigger key option"
+  },
+  "previewTriggerMode": {
+    "message": "Utlösarläge",
+    "description": "Popup view trigger mode setting"
+  },
+  "previewTriggerHold": {
+    "message": "Håll utlösartangenten nedtryckt",
+    "description": "Hold trigger key option"
+  },
+  "previewTriggerDouble": {
+    "message": "Tryck två gånger på utlösartangenten",
+    "description": "Double-press trigger key option"
+  },
+  "previewCustomKey": {
+    "message": "Anpassad tangent",
+    "description": "Popup view custom trigger key setting"
+  },
+  "previewCustomKeyPlaceholder": {
+    "message": "Klicka och tryck på en tangent",
+    "description": "Popup view custom trigger key placeholder"
+  },
+  "previewCustomKeyTitle": {
+    "message": "Klicka här och tryck sedan på en tangent som inte är en modifierartangent. Tryck Esc för att rensa.",
+    "description": "Popup view custom trigger key title"
+  },
+  "unlimited": {
+    "message": "Obegränsat",
+    "description": "Unlimited value label"
+  },
+  "settingsFontSize": {
+    "message": "Teckenstorlek för inställningar",
+    "description": "Header button: adjust settings font size"
   }
 }

@@ -4,7 +4,7 @@
     "description": "The name of the extension"
   },
   "extDesc": {
-    "message": "একটি Chrome/Edge এক্সটেনশন যা মাউস জেসচার, সুপার ড্র্যাগ কার্যকারিতা এবং পপআপ দৃশ্য সমর্থন করে",
+    "message": "মাউস জেসচার, সুপার ড্র্যাগ, ছবি ও লিংক প্রিভিউ ও আরও।",
     "description": "The description of the extension"
   },
   "title": {
@@ -35,13 +35,21 @@
     "message": "বামে ড্র্যাগ করুন",
     "description": "Drag left action"
   },
-  "openInForeground": {
-    "message": "সামনে লিঙ্ক খুলুন",
-    "description": "Open link in foreground"
+  "dragUpRight": {
+    "message": "উপরে-ডানে টেনে আনুন",
+    "description": "Super drag diagonal direction"
   },
-  "openInBackground": {
-    "message": "পেছনে লিঙ্ক খুলুন",
-    "description": "Open link in background"
+  "dragDownRight": {
+    "message": "নিচে-ডানে টেনে আনুন",
+    "description": "Super drag diagonal direction"
+  },
+  "dragDownLeft": {
+    "message": "নিচে-বামে টেনে আনুন",
+    "description": "Super drag diagonal direction"
+  },
+  "dragUpLeft": {
+    "message": "উপরে-বামে টেনে আনুন",
+    "description": "Super drag diagonal direction"
   },
   "superDragDescription": {
     "message": "সুপার ড্র্যাগ লিঙ্ক, ছবি এবং নির্বাচিত টেক্সটের জন্য কাজ করে। আপনি প্রতিটি জেসচার দিকের (উপর/নিচ/বাম/ডান) জন্য ওপেনিং পদ্ধতি সেট করতে পারেন, ফোরগ্রাউন্ড, ব্যাকগ্রাউন্ড বা স্প্লিট ভিউ (বাম/ডান/উপর/নিচ) সহ।",
@@ -64,52 +72,76 @@
     "description": "Down direction"
   },
   "downThenRight": {
-    "message": "নিচ তারপর ডান",
-    "description": "Down then right gesture"
+    "message": "নিচে তারপর ডান",
+    "description": "নিচে তারপর ডান অঙ্গভঙ্গি"
   },
   "leftThenUp": {
     "message": "বাম তারপর উপর",
-    "description": "Left then up gesture"
+    "description": "বাম তারপর উপর অঙ্গভঙ্গি"
   },
   "rightThenUp": {
     "message": "ডান তারপর উপর",
-    "description": "Right then up gesture"
+    "description": "ডান তারপর উপর অঙ্গভঙ্গি"
   },
   "rightThenDown": {
     "message": "ডান তারপর নিচ",
-    "description": "Right then down gesture"
+    "description": "ডান তারপর নিচ অঙ্গভঙ্গি"
   },
   "upThenLeft": {
     "message": "উপর তারপর বাম",
-    "description": "Up then left gesture"
+    "description": "উপর তারপর বাম অঙ্গভঙ্গি"
   },
   "upThenRight": {
     "message": "উপর তারপর ডান",
-    "description": "Up then right gesture"
+    "description": "উপর তারপর ডান অঙ্গভঙ্গি"
   },
   "downThenLeft": {
-    "message": "নিচ তারপর বাম",
-    "description": "Down then left gesture"
+    "message": "নিচে তারপর বাম",
+    "description": "নিচে তারপর বাম অঙ্গভঙ্গি"
   },
   "leftThenDown": {
     "message": "বাম তারপর নিচ",
-    "description": "Left then down gesture"
+    "description": "বাম তারপর নিচ অঙ্গভঙ্গি"
   },
   "upThenDown": {
     "message": "উপর তারপর নিচ",
-    "description": "Up then down gesture"
+    "description": "উপর তারপর নিচ অঙ্গভঙ্গি"
   },
   "downThenUp": {
-    "message": "নিচ তারপর উপর",
-    "description": "Down then up gesture"
+    "message": "নিচে তারপর উপর",
+    "description": "নিচে তারপর উপর অঙ্গভঙ্গি"
   },
   "leftThenRight": {
     "message": "বাম তারপর ডান",
-    "description": "Left then right gesture"
+    "description": "বাম তারপর ডান অঙ্গভঙ্গি"
   },
   "rightThenLeft": {
     "message": "ডান তারপর বাম",
-    "description": "Right then left gesture"
+    "description": "ডান তারপর বাম অঙ্গভঙ্গি"
+  },
+  "rightHoldWheelUp": {
+    "message": "ডান ধরে রাখুন + চাকা উপরে",
+    "description": "ডান বাটন ধরে রাখুন এবং চাকা উপরে"
+  },
+  "rightHoldWheelDown": {
+    "message": "ডান ধরে রাখুন + চাকা নিচে",
+    "description": "ডান বাটন ধরে রাখুন এবং চাকা নিচে"
+  },
+  "leftHoldWheelUp": {
+    "message": "বাম চেপে + হুইল উপরে",
+    "description": "বাম বোতাম ও হুইল উপরে"
+  },
+  "leftHoldWheelDown": {
+    "message": "বাম চেপে + হুইল নিচে",
+    "description": "বাম বোতাম ও হুইল নিচে"
+  },
+  "rightHoldLeftClick": {
+    "message": "ডান ধরে রাখুন + বাম ক্লিক",
+    "description": "ডান বাটন ধরে রাখুন এবং বাম ক্লিক"
+  },
+  "leftHoldRightClick": {
+    "message": "বাম চেপে রাখুন + ডান ক্লিক",
+    "description": "বাম বোতাম চেপে রেখে ডান ক্লিক করুন"
   },
   "back": {
     "message": "ফিরে যান",
@@ -158,6 +190,18 @@
   "prevTab": {
     "message": "পূর্ববর্তী ট্যাব",
     "description": "Previous tab action"
+  },
+  "previousActiveTab": {
+    "message": "পূর্বের সক্রিয় ট্যাব",
+    "description": "ইশারা ক্রিয়া: পূর্বে সক্রিয় থাকা ট্যাবে যান"
+  },
+  "goToParentUrl": {
+    "message": "প্যারেন্ট URL",
+    "description": "ইশারা ক্রিয়া: URL-এর প্যারেন্ট পাথে যান"
+  },
+  "goToRootUrl": {
+    "message": "রুট URL",
+    "description": "ইশারা ক্রিয়া: সাইটের রুট URL-এ যান"
   },
   "nextTab": {
     "message": "পরবর্তী ট্যাব",
@@ -211,6 +255,14 @@
     "message": "ফুলস্ক্রিন টগল করুন",
     "description": "Toggle fullscreen action"
   },
+  "zoomIn": {
+    "message": "জুম ইন",
+    "description": "বর্তমান ট্যাবে জুম বাড়ান"
+  },
+  "zoomOut": {
+    "message": "জুম আউট",
+    "description": "বর্তমান ট্যাবে জুম কমান"
+  },
   "closeTabsToLeft": {
     "message": "বামে ট্যাব বন্ধ করুন",
     "description": "Close tabs to left action"
@@ -218,6 +270,474 @@
   "reloadAllTabs": {
     "message": "সব ট্যাব পুনরায় লোড করুন",
     "description": "Reload all tabs action"
+  },
+  "stopLoadingAllTabs": {
+    "message": "সমস্ত ট্যাব লোড বন্ধ করুন",
+    "description": "Stop loading in all tabs"
+  },
+  "screenshotRegion": {
+    "message": "স্ক্রিনশট (ট্রেইল এলাকা)",
+    "description": "Screenshot gesture action"
+  },
+  "screenshotRegionOrLink": {
+    "message": "স্ক্রিনশট বা লিংক খুলুন",
+    "description": "Trail region hint when links are inside selection"
+  },
+  "trailRegionChooseTitle": {
+    "message": "নির্বাচনে লিংক — স্ক্রিনশট বা খুলুন",
+    "description": "Trail region chooser dialog title"
+  },
+  "trailRegionLinkSingle": {
+    "message": "১টি লিংক",
+    "description": "Trail region link count"
+  },
+  "trailRegionLinkMultiple": {
+    "message": "{count}টি লিংক",
+    "description": "Trail region link count"
+  },
+  "trailRegionActionScreenshot": {
+    "message": "স্ক্রিনশট (S)",
+    "description": "Trail region chooser button"
+  },
+  "trailRegionActionOpenLink": {
+    "message": "নতুন ট্যাবে খুলুন (O)",
+    "description": "Trail region chooser button"
+  },
+  "trailRegionActionOpenLinks": {
+    "message": "নতুন ট্যাবে খুলুন (O)",
+    "description": "Trail region chooser button"
+  },
+  "trailRegionActionOpenSelected": {
+    "message": "নির্বাচিত {n}টি নতুন ট্যাবে খুলুন (O)",
+    "description": "Trail region open checked links"
+  },
+  "trailRegionActionOpenNone": {
+    "message": "নির্বাচিত খুলুন (O)",
+    "description": "Trail region open button when none checked"
+  },
+  "trailRegionActionCopy": {
+    "message": "অনুলিপি করুন (C)",
+    "description": "Trail region chooser copy button"
+  },
+  "trailRegionActionCopySelected": {
+    "message": "নির্বাচিত {n}টি অনুলিপি করুন (C)",
+    "description": "Trail region copy checked links"
+  },
+  "trailRegionActionCopyNone": {
+    "message": "অনুলিপি করুন (C)",
+    "description": "Trail region copy button when none checked"
+  },
+  "trailRegionCopyFailed": {
+    "message": "অনুলিপি ব্যর্থ",
+    "description": "Trail region copy to clipboard failed"
+  },
+  "trailRegionSelectAll": {
+    "message": "সব নির্বাচন",
+    "description": "Trail region link list select all"
+  },
+  "trailRegionNoLinkSelected": {
+    "message": "অন্তত একটি লিংক নির্বাচন করুন",
+    "description": "Trail region no selection hint"
+  },
+  "trailRegionChooseHint": {
+    "message": "Esc বাতিল · অনুলিপি/খোলার জন্য লিংক চেক করুন · প্রান্ত টেনে আকার বদলান",
+    "description": "Trail region chooser footer"
+  },
+  "trailRegionLinkOpened": {
+    "message": "লিংক নতুন ট্যাবে খোলা হয়েছে",
+    "description": "Trail region open link feedback"
+  },
+  "trailRegionLinksOpened": {
+    "message": "লিংক নতুন ট্যাবে খোলা হয়েছে",
+    "description": "Trail region open links feedback"
+  },
+  "trailRegionLinksTruncated": {
+    "message": "শুধু প্রথম {n}টি লিংক খোলা হয়েছে",
+    "description": "Trail region open links cap"
+  },
+  "screenshotScrollCaptureActive": {
+    "message": "পৃষ্ঠা ম্যানুয়ালি স্ক্রল করুন, তারপর একই শর্টকাট বা Esc দিয়ে শেষ করে জোড়া দিন",
+    "description": "Manual scroll capture in progress"
+  },
+  "screenshotCopied": {
+    "message": "স্ক্রিনশট ক্লিপবোর্ডে কপি হয়েছে",
+    "description": "Screenshot feedback"
+  },
+  "screenshotFailed": {
+    "message": "স্ক্রিনশট ব্যর্থ",
+    "description": "Screenshot feedback"
+  },
+  "screenshotNeedTrail": {
+    "message": "এলাকা বেছে নিতে লম্বা ট্রেইল আঁকুন",
+    "description": "Screenshot feedback"
+  },
+  "screenshotUnavailable": {
+    "message": "স্ক্রিনশট মডিউল উপলব্ধ নয়",
+    "description": "Screenshot feedback"
+  },
+  "screenshotTopFrameOnly": {
+    "message": "পুরো পৃষ্ঠার স্ক্রিনশট শুধু মূল ফ্রেমে",
+    "description": "Screenshot feedback"
+  },
+  "screenshotFeature": {
+    "message": "স্ক্রিনশট",
+    "description": "Screenshot settings section title"
+  },
+  "enableScreenshotFeature": {
+    "message": "স্ক্রিনশট সক্ষম করুন",
+    "description": "Master toggle for screenshot feature"
+  },
+  "enableScreenshotTrailCapture": {
+    "message": "ট্রেইল এলাকা (লুপ / স্ব-ক্রস)",
+    "description": "Capture when trail loops or crosses; skipped if another gesture action matches"
+  },
+  "enableScreenshotClipboard": {
+    "message": "স্বয়ংক্রিয়ভাবে ক্লিপবোর্ডে কপি",
+    "description": "Copy screenshot to clipboard after capture"
+  },
+  "enableScreenshotPreview": {
+    "message": "ক্যাপচারের পর প্রিভিউ দেখান",
+    "description": "Open preview window when a screenshot is captured"
+  },
+  "enableScreenshotHistory": {
+    "message": "স্ক্রিনশট ইতিহাস সংরক্ষণ",
+    "description": "Keep captured screenshots in local history"
+  },
+  "screenshotHistoryMaxCount": {
+    "message": "ইতিহাস সীমা",
+    "description": "Maximum screenshot history entries to keep"
+  },
+  "screenshotHistoryMaxCountHint": {
+    "message": "০ = সীমাহীন; ১–২০০ সীমা ছাড়ালে পুরনো মুছে",
+    "description": "Screenshot history limit hint"
+  },
+  "screenshotHistoryUnlimited": {
+    "message": "সীমাহীন",
+    "description": "Label when screenshot history limit is 0"
+  },
+  "screenshotHistoryView": {
+    "message": "ইতিহাস দেখুন",
+    "description": "Open screenshot history window"
+  },
+  "screenshotHistoryTitle": {
+    "message": "স্ক্রিনশট ইতিহাস",
+    "description": "Screenshot history window title"
+  },
+  "screenshotHistoryEmpty": {
+    "message": "এখনও কোনো স্ক্রিনশট নেই",
+    "description": "Empty screenshot history state"
+  },
+  "screenshotHistoryClearAll": {
+    "message": "সব মুছুন",
+    "description": "Delete all screenshot history entries"
+  },
+  "screenshotHistoryClearConfirm": {
+    "message": "সমস্ত স্ক্রিনশট ইতিহাস মুছবেন?",
+    "description": "Confirm clearing screenshot history"
+  },
+  "screenshotHistoryDelete": {
+    "message": "মুছুন",
+    "description": "Delete one screenshot history entry"
+  },
+  "screenshotHistoryPinToPage": {
+    "message": "পৃষ্ঠায় পিন করুন",
+    "description": "Pin history thumbnail onto the web page"
+  },
+  "screenshotHistoryPinFailed": {
+    "message": "পিন করা যায়নি (লক্ষ্য ট্যাব খুলুন বা এই সাইট অনুমতি দিন)।",
+    "description": "Error when pinning from screenshot history"
+  },
+  "screenshotHistoryCount": {
+    "message": "$1টি আইটেম",
+    "description": "Number of items in screenshot history",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "screenshotHistoryModeViewport": {
+    "message": "দৃশ্যমান এলাকা",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeFullPage": {
+    "message": "পুরো পৃষ্ঠা",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeRegion": {
+    "message": "এলাকা",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeScroll": {
+    "message": "ম্যানুয়াল স্ক্রল",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeUnknown": {
+    "message": "স্ক্রিনশট",
+    "description": "Screenshot history capture mode fallback label"
+  },
+  "screenshotDone": {
+    "message": "স্ক্রিনশট প্রস্তুত",
+    "description": "Hint when capture finished without clipboard copy"
+  },
+  "screenshotPreviewTitle": {
+    "message": "স্ক্রিনশট প্রিভিউ",
+    "description": "Screenshot preview window title"
+  },
+  "screenshotPreviewClose": {
+    "message": "বন্ধ",
+    "description": "Close screenshot preview window"
+  },
+  "screenshotPreviewCopyAgain": {
+    "message": "কপি",
+    "description": "Copy screenshot to clipboard from preview window"
+  },
+  "screenshotPreviewSave": {
+    "message": "ফাইল হিসেবে সংরক্ষণ",
+    "description": "Save annotated screenshot to disk"
+  },
+  "screenshotPreviewSaved": {
+    "message": "সংরক্ষিত",
+    "description": "Screenshot file save succeeded"
+  },
+  "screenshotPreviewPinToPage": {
+    "message": "পৃষ্ঠায় পিন",
+    "description": "Pin annotated screenshot onto the source web page"
+  },
+  "screenshotPreviewPinned": {
+    "message": "পিন করা",
+    "description": "Screenshot pin placed on page"
+  },
+  "screenshotPreviewPinning": {
+    "message": "পিন হচ্ছে…",
+    "description": "Screenshot pin in progress"
+  },
+  "screenshotPinTitle": {
+    "message": "স্ক্রিনশট",
+    "description": "Title on pinned screenshot sticker"
+  },
+  "screenshotPinClose": {
+    "message": "পিন সরান",
+    "description": "Close button on pinned screenshot"
+  },
+  "screenshotPinResize": {
+    "message": "আকার বদলান",
+    "description": "Resize handle on pinned screenshot"
+  },
+  "screenshotPinZoomFit": {
+    "message": "ফিট",
+    "description": "Fit pinned screenshot to view"
+  },
+  "screenshotPinZoomOriginal": {
+    "message": "1:1",
+    "description": "Show pinned screenshot at original pixel size"
+  },
+  "screenshotPinOrderLabel": {
+    "message": "পিন $1$",
+    "description": "Pinned screenshot order number",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "screenshotPreviewLoadFailed": {
+    "message": "প্রিভিউ লোড হয়নি",
+    "description": "Screenshot preview load error"
+  },
+  "screenshotPreviewZoomFit": {
+    "message": "ফিট",
+    "description": "Fit screenshot to preview window"
+  },
+  "screenshotPreviewZoomFitTitle": {
+    "message": "উইন্ডোতে ফিট",
+    "description": "Tooltip for fit zoom button"
+  },
+  "screenshotPreviewZoomOneToOne": {
+    "message": "1:1",
+    "description": "Actual-size zoom button label"
+  },
+  "screenshotPreviewZoomOneToOneTitle": {
+    "message": "প্রকৃত আকার (1:1)",
+    "description": "Tooltip for 1:1 zoom button"
+  },
+  "screenshotPreviewZoomLevel": {
+    "message": "জুম $1$%",
+    "description": "Current zoom percentage in preview",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "screenshotAnnotHand": {
+    "message": "হাত (সরান)",
+    "description": "Pan the preview by dragging"
+  },
+  "screenshotAnnotPen": {
+    "message": "কলম",
+    "description": "Annotation tool: freehand"
+  },
+  "screenshotAnnotArrow": {
+    "message": "তীর (Shift: H/V)",
+    "description": "Annotation tool: arrow; Shift constrains to horizontal or vertical"
+  },
+  "screenshotAnnotLine": {
+    "message": "রেখা (Shift: H/V)",
+    "description": "Annotation tool: line; Shift constrains to horizontal or vertical"
+  },
+  "screenshotAnnotRect": {
+    "message": "আয়ত (Shift: বর্গ)",
+    "description": "Annotation tool: rectangle; Shift draws a square"
+  },
+  "screenshotAnnotEllipse": {
+    "message": "উপবৃত্ত",
+    "description": "Annotation tool: ellipse"
+  },
+  "screenshotAnnotRoundRect": {
+    "message": "গোল কোণা আয়ত",
+    "description": "Annotation tool: rounded rectangle"
+  },
+  "screenshotAnnotHighlighter": {
+    "message": "হাইলাইটার",
+    "description": "Annotation tool: highlighter marker"
+  },
+  "screenshotAnnotHighlight": {
+    "message": "হাইলাইট ফ্রেম",
+    "description": "Annotation tool: highlight rectangle"
+  },
+  "screenshotAnnotFillRect": {
+    "message": "ভরা আয়ত",
+    "description": "Annotation tool: filled rectangle"
+  },
+  "screenshotAnnotFillEllipse": {
+    "message": "ভরা উপবৃত্ত",
+    "description": "Annotation tool: filled ellipse"
+  },
+  "screenshotAnnotBlur": {
+    "message": "ঝাপসা",
+    "description": "Annotation tool: blur brush"
+  },
+  "screenshotAnnotArrow2": {
+    "message": "দ্বিতীয় তীর (Shift: H/V)",
+    "description": "Annotation tool: line with arrowheads at both ends; Shift constrains H/V"
+  },
+  "screenshotAnnotNumber": {
+    "message": "সংখ্যা",
+    "description": "Annotation tool: sequential number markers"
+  },
+  "screenshotAnnotStampStart": {
+    "message": "শুরু নং",
+    "description": "Starting number for sequential stamps"
+  },
+  "screenshotAnnotStampNext": {
+    "message": "পরের নং: $1$",
+    "description": "Next number stamp to place (tooltip)",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "screenshotAnnotCrop": {
+    "message": "ক্রপ",
+    "description": "Annotation tool: crop image"
+  },
+  "screenshotAnnotCropApply": {
+    "message": "ক্রপ প্রয়োগ",
+    "description": "Confirm crop selection"
+  },
+  "screenshotAnnotCropCancel": {
+    "message": "বাতিল",
+    "description": "Cancel crop selection"
+  },
+  "screenshotAnnotText": {
+    "message": "টেক্সট",
+    "description": "Annotation tool: text"
+  },
+  "screenshotAnnotMosaic": {
+    "message": "মোজাইক",
+    "description": "Annotation tool: mosaic blur"
+  },
+  "screenshotAnnotEraser": {
+    "message": "ইরেজার",
+    "description": "Annotation tool: eraser"
+  },
+  "screenshotAnnotSize": {
+    "message": "আকার",
+    "description": "Annotation stroke size"
+  },
+  "screenshotAnnotResetAll": {
+    "message": "সব সম্পাদনা রিসেট",
+    "description": "Clear all annotations and restore original screenshot"
+  },
+  "screenshotAnnotStepCount": {
+    "message": "$1 / $2",
+    "description": "History step indicator: current / total"
+  },
+  "screenshotAnnotStepCountTitle": {
+    "message": "প্রয়োগকৃত ধাপ / মোট (০ = মূল ছবি)",
+    "description": "Tooltip for history step indicator"
+  },
+  "screenshotAnnotUndo": {
+    "message": "পূর্বাবস্থা",
+    "description": "Undo annotation"
+  },
+  "screenshotAnnotRedo": {
+    "message": "পুনরায়",
+    "description": "Redo annotation"
+  },
+  "screenshotAnnotTextPlaceholder": {
+    "message": "এখানে লিখুন…",
+    "description": "Placeholder in inline text editor on screenshot preview"
+  },
+  "screenshotOptRegion": {
+    "message": "এলাকা নির্বাচন",
+    "description": "Screenshot bind row: keyboard drag rectangle region"
+  },
+  "screenshotOptViewport": {
+    "message": "দৃশ্যমান এলাকা",
+    "description": "Screenshot bind row: current visible tab area"
+  },
+  "screenshotOptFullPage": {
+    "message": "পুরো পৃষ্ঠা",
+    "description": "Screenshot bind row: full page"
+  },
+  "screenshotOptScrollStitch": {
+    "message": "ম্যানুয়াল স্ক্রল",
+    "description": "Screenshot bind row: manual scroll capture"
+  },
+  "screenshotOptOpenHistory": {
+    "message": "ইতিহাস খুলুন",
+    "description": "Screenshot bind row: keyboard shortcut to open screenshot history"
+  },
+  "screenshotHotkeyPressHint": {
+    "message": "শর্টকাট: উপরের ক্ষেত্রে ক্লিক, তারপর কী সংমিশ্রণ (Ctrl / Alt / Meta + অক্ষর বা সংখ্যা, বা F1–F12)। Esc ক্ষেত্র মুছে।",
+    "description": "Screenshot section footer: hotkey binding help"
+  },
+  "screenshotHotkeyPlaceholder": {
+    "message": "সেট করতে ক্লিক",
+    "description": "Placeholder in empty screenshot hotkey fields"
+  },
+  "screenshotRegionPickHint": {
+    "message": "এলাকা বেছে নিতে টানুন। বাতিল Esc।",
+    "description": "Hint while keyboard region picker is active"
+  },
+  "screenshotRegionPickFooterHint": {
+    "message": "এলাকা শর্টকাট: আয়ত আঁকে ছাড়ুন। লিংক থাকলে স্ক্রিনশট বা নতুন ট্যাবে খুলুন। Esc বাতিল।",
+    "description": "Screenshot section footer: keyboard region picker help"
+  },
+  "screenshotRegionTooSmall": {
+    "message": "নির্বাচন খুব ছোট — বড় এলাকা আঁকুন",
+    "description": "Region picker: minimum size not met"
+  },
+  "screenshotGestureIntersectHint": {
+    "message": "ট্রেইল এলাকা: এক লুপ বা এক স্ব-ক্রস, তারপর ছাড়ুন। লিংক থাকলে স্ক্রিনশট বা নতুন ট্যাবে খুলুন। অনেক লুপ = আঁকাআঁকি।",
+    "description": "Screenshot section footer: trail region capture help"
   },
   "togglePinTab": {
     "message": "ট্যাব পিন/আনপিন করুন",
@@ -244,16 +764,16 @@
     "description": "Settings title"
   },
   "customizedBehavior": {
-    "message": "ব্লক তালিকা",
-    "description": "Block list section title"
+    "message": "নিষ্ক্রিয় সাইট",
+    "description": "Section title for the per-site disable list"
   },
   "disableMouseGesturesForSites": {
-    "message": "এই সাইটগুলিতে মাউস জেসচার এবং সুপার ড্র্যাগ নিষ্ক্রিয় করুন",
-    "description": "Label for the list of sites where gestures and super drag are disabled"
+    "message": "তালিকাভুক্ত ডোমেইনগুলোতে এক্সটেনশনের ফিচার বন্ধ করুন",
+    "description": "Subtitle for Disabled sites section"
   },
   "disabledSitesHint": {
-    "message": "প্রতিটি লাইনে একটি সাইট। ডোমেইন (যেমন youtube.com) বা সম্পূর্ণ URL।",
-    "description": "Hint for the disabled sites textarea"
+    "message": "প্রযোজ্য: জেসচার, সুপার ড্র্যাগ, লিংক/ছবি প্রিভিউ, স্ক্রিনশট এবং পেজ আনলক। বর্তমান সাইট যোগ করুন অথবা ডোমেইন/URL লিখুন; মুছতে অপসারণ চিহ্নে ক্লিক করুন।",
+    "description": "Short hint explaining which features the Disabled sites list affects"
   },
   "enableGesture": {
     "message": "মাউস জেসচার সক্রিয় করুন",
@@ -279,6 +799,26 @@
     "message": "সুপার ড্র্যাগ সক্রিয় করুন",
     "description": "Enable super drag option"
   },
+  "superDragCompassPosition": {
+    "message": "৮-দিক কম্পাস",
+    "description": "Super drag compass display and position"
+  },
+  "superDragCompassPosCompassAbove": {
+    "message": "টান বিন্দুর উপরে",
+    "description": "Compass above drag start, centered horizontally"
+  },
+  "superDragCompassPosCompassRight": {
+    "message": "টান বিন্দুর ডানে",
+    "description": "Compass to the right of drag start, vertically centered"
+  },
+  "superDragCompassPosCompassBelow": {
+    "message": "টান বিন্দুর নিচে",
+    "description": "Compass below drag start, centered horizontally"
+  },
+  "superDragCompassPosCompassLeft": {
+    "message": "টান বিন্দুর বামে",
+    "description": "Compass to the left of drag start, vertically centered"
+  },
   "enableDragTextSearch": {
     "message": "ড্র্যাগ টেক্সট অনুসন্ধান সক্রিয় করুন",
     "description": "Enable drag text search option"
@@ -287,9 +827,17 @@
     "message": "ড্র্যাগে ছবি/ফাইল অটো ডাউনলোড",
     "description": "When the drag target is an image or other downloadable file, start download automatically"
   },
+  "enableImageDrag": {
+    "message": "ছবি ড্র্যাগ চালু করুন",
+    "description": "Control image super drag independently from image preview"
+  },
   "enableImagePreview": {
     "message": "ছবি প্রিভিউ সক্রিয় করুন",
     "description": "Enable image preview option"
+  },
+  "enableImagePreviewEnhanced": {
+    "message": "উন্নত ছবি প্রিভিউ",
+    "description": "Support transparent overlay, background-image, parent lookup, etc."
   },
   "enableDuplicateCheck": {
     "message": "ডুপ্লিকেট ট্যাব শনাক্ত করুন",
@@ -302,10 +850,6 @@
   "enableSmoothScroll": {
     "message": "স্মুথ স্ক্রল সক্রিয় করুন",
     "description": "Enable smooth scrolling for gesture actions"
-  },
-  "save": {
-    "message": "সেটিংস প্রয়োগ করা হয়েছে",
-    "description": "Save settings button"
   },
   "reset": {
     "message": "রিসেট",
@@ -363,14 +907,6 @@
     "message": "সেটিংস রিসেট করতে ব্যর্থ",
     "description": "Reset settings error notification"
   },
-  "themeLight": {
-    "message": "হালকা",
-    "description": "Light theme"
-  },
-  "themeDark": {
-    "message": "গাঢ়",
-    "description": "Dark theme"
-  },
   "buyMeACoffee": {
     "message": "আমাকে একটি কফি কিনে দিন",
     "description": "Donation button"
@@ -379,17 +915,33 @@
     "message": "থিম পরিবর্তন করুন",
     "description": "Toggle theme button"
   },
-  "toggleLanguage": {
-    "message": "ভাষা পরিবর্তন করুন",
-    "description": "Toggle language button"
+  "openDetachedPopupTitle": {
+    "message": "সাইড প্যানেলে সেটিংস খুলুন (না থাকলে আলাদা উইন্ডো)",
+    "description": "হেডার বোতাম: সেটিংস সাইড প্যানেল বা আলাদা উইন্ডোতে"
+  },
+  "openDetachedWindowFromSidePanelTitle": {
+    "message": "আলাদা উইন্ডোতে খুলুন (ব্রাউজারের পাশে)",
+    "description": "সাইড প্যানেল: আলাদা উইন্ডো ও ব্রাউজার বিন্যাস"
+  },
+  "openOptionsPageTitle": {
+    "message": "অপশন পৃষ্ঠা খুলুন",
+    "description": "হেডার বোতাম: এক্সটেনশনের অপশন পৃষ্ঠা খুলুন"
   },
   "donationTooltip": {
     "message": "এই কাজটি পছন্দ হলে অনুগ্রহ করে আমাকে সাহায্য করুন। ধন্যবাদ :)",
     "description": "Donation tooltip"
   },
   "rightButtonHint": {
-    "message": "মাউসের ডান বোতাম চেপে রাখুন",
+    "message": "ডান চেপে রাখুন (পথ, চাকা, ক্লিক) · বাম (চাকা)",
     "description": "Right mouse button hint"
+  },
+  "builtInGesturesListExpandHint": {
+    "message": "সম্পূর্ণ অঙ্গভঙ্গ তালিকা প্রসারিত করতে ক্লিক করুন",
+    "description": "Tooltip on built-in gestures subtitle when list is collapsed"
+  },
+  "builtInGesturesListCollapseHint": {
+    "message": "অঙ্গভঙ্গ তালিকা সংকুচিত করতে ক্লিক করুন",
+    "description": "Tooltip on built-in gestures subtitle when list is expanded"
   },
   "leftButtonHint": {
     "message": "মাউসের বাম বোতাম চেপে রাখুন",
@@ -403,17 +955,45 @@
     "message": "পেছনে খুলুন",
     "description": "Open in background action"
   },
+  "popupViewAction": {
+    "message": "পপআপ ভিউ",
+    "description": "Super drag action: open target in popup view"
+  },
+  "incognitoAction": {
+    "message": "প্রাইভেট উইন্ডোতে খুলুন",
+    "description": "Open in incognito/private window"
+  },
+  "enableSplitScrollSync": {
+    "message": "বিভক্ত উইন্ডোগুলির মধ্যে উলম্ব ও অনুভূমিক স্ক্রল মিল রাখুন",
+    "description": "স্প্লিট ভিউ চালু থাকলে দুই উইন্ডোর স্ক্রল অক্ষ মিলিয়ে নিন"
+  },
   "copyAction": {
     "message": "অনুলিপি করুন",
     "description": "Copy selected text or link URL to clipboard"
+  },
+  "downloadAction": {
+    "message": "ডাউনলোড",
+    "description": "Super drag action: download target"
   },
   "copiedToClipboard": {
     "message": "ক্লিপবোর্ডে অনুলিপি করা হয়েছে",
     "description": "Hint after copy action"
   },
-  "dragSearchEngine": {
-    "message": "ড্র্যাগ অনুসন্ধান ইঞ্জিন URL",
-    "description": "Drag search engine URL setting"
+  "dragSearchEngineSlotLabel": {
+    "message": "সম্পাদনার আইটেম",
+    "description": "Label for drag search engine slot selector"
+  },
+  "dragSearchSlotDefault": {
+    "message": "ডিফল্ট (বিকল্প)",
+    "description": "Default search URL slot in drag search editor"
+  },
+  "dragSearchEngineUrlForSlot": {
+    "message": "সার্চ ইঞ্জিন URL",
+    "description": "Label for single drag search URL field"
+  },
+  "dragSearchEnginePerDirectionHelp": {
+    "message": "তালিকা থেকে «ডিফল্ট» বা টেনে আনার দিক বেছে নিন, তারপর সংশ্লিষ্ট URL সম্পাদনা করুন। খালি দিকে ডিফল্ট ব্যবহৃত হয়। শুধু টেনে আনা টেক্সট অনুসন্ধানে প্রযোজ্য।",
+    "description": "Help text for unified drag search engine editor"
   },
   "linkPreview": {
     "message": "পপআপ ভিউ",
@@ -424,7 +1004,7 @@
     "description": "Quick navigation hover tooltip"
   },
   "linkPreviewHint": {
-    "message": "হোভার + কী করে পপআপ দেখান",
+    "message": "পপআপ দেখাতে হোভার করুন এবং ট্রিগার ব্যবহার করুন",
     "description": "Popup view hint"
   },
   "enableLinkPreview": {
@@ -495,28 +1075,52 @@
     "message": "অনুসন্ধান শব্দের জন্য {q} ব্যবহার করুন, উদাহরণ ফরম্যাট:",
     "description": "Search engine examples description"
   },
+  "searchExampleUrlClickHint": {
+    "message": "উপরের ক্ষেত্রটি পূরণ ও সংরক্ষণের জন্য উদাহরণ URL-এ ক্লিক করুন",
+    "description": "Tooltip for example search engine URLs (click to fill)"
+  },
+  "searchEngineExamplesUrlClickHint": {
+    "message": "টিপ: উপরের ক্ষেত্রটি পূরণ ও সংরক্ষণের জন্য উদাহরণ URL-এ ক্লিক করুন।",
+    "description": "Visible hint under search engine examples (click URL to fill field above and save)"
+  },
   "googleExample": {
-    "message": "Google অনুসন্ধান: https://www.google.com.bd/search?q={q}",
+    "message": "Google অনুসন্ধান:",
+    "description": "Google search example"
+  },
+  "googleExampleUrl": {
+    "message": "https://www.google.com.bd/search?q={q}",
     "description": "Google search example"
   },
   "googleTranslateExample": {
-    "message": "Google অনুবাদ: https://translate.google.com.bd/?sl=auto&tl=bn&text={q}&op=translate",
+    "message": "Google অনুবাদ:",
+    "description": "Google translate example"
+  },
+  "googleTranslateExampleUrl": {
+    "message": "https://translate.google.com.bd/?sl=auto&tl=bn&text={q}&op=translate",
     "description": "Google translate example"
   },
   "localSearchExample": {
-    "message": "Bdnews24 অনুসন্ধান: https://bangla.bdnews24.com/search/?q={q}",
+    "message": "Bdnews24 অনুসন্ধান:",
+    "description": "Local search example"
+  },
+  "localSearchExampleUrl": {
+    "message": "https://bangla.bdnews24.com/search/?q={q}",
     "description": "Local search example"
   },
   "bingExample": {
-    "message": "Bing অনুসন্ধান: https://www.bing.com/search?q={q}&setlang=bn",
+    "message": "Bing অনুসন্ধান:",
+    "description": "Bing search example"
+  },
+  "bingExampleUrl": {
+    "message": "https://www.bing.com/search?q={q}&setlang=bn",
     "description": "Bing search example"
   },
   "wheelTip": {
-    "message": "মান সমন্বয় করতে মাউস হুইল ব্যবহার করুন",
+    "message": "এই সারিতে প্রায় ১.৫ সেকেন্ড হোভার করুন, তারপর হুইল দিয়ে সমন্বয় করুন",
     "description": "Wheel tip"
   },
   "modifierKeyDelayTip": {
-    "message": "ট্রিগার কী ব্যবহার করার সময়, সর্বোচ্চ বিলম্ব ৩০০মিলিসেকেন্ডে সীমাবদ্ধ",
+    "message": "ট্রিগারের শর্ত পূরণ হওয়ার পর বিলম্ব শুরু হয়; অনিচ্ছাকৃত প্রিভিউ এড়াতে এটি বাড়ান।",
     "description": "Modifier key delay tip"
   },
   "welcomeTitle": {
@@ -524,12 +1128,8 @@
     "description": "Welcome page title"
   },
   "welcomeDescription": {
-    "message": "মাউস জেসচার এক্সটেনশন ইনস্টল করার জন্য ধন্যবাদ! এই এক্সটেনশনটি সমৃদ্ধ মাউস জেসচার কার্যকারিতা, বুদ্ধিমান ট্যাব ব্যবস্থাপনা, পপআপ ভিউ ক্ষমতা এবং উন্নত ভিজ্যুয়াল অভিজ্ঞতা প্রদান করে যা আপনাকে আরও দক্ষতার সাথে ওয়েব ব্রাউজ করতে সাহায্য করে। আমরা বৃদ্ধি ত্রুটি সহনশীলতার সাথে জেসচার স্বীকৃতি অ্যালগরিদম অপ্টিমাইজ করেছি, যা জেসচারগুলি নিখুঁতভাবে আঁকা না হলেও সঠিকভাবে স্বীকৃত হতে দেয়। নতুন পপআপ ভিউ বৈশিষ্ট্য আপনাকে ট্যাব পরিবর্তন ছাড়াই পপআপ উইন্ডোতে লিঙ্ক সামগ্রী দেখতে দেয়। এক্সটেনশনটি ২৩টি ভাষা এবং আলো/অন্ধকার থিম সমর্থন করে আরও ভাল ব্যবহারকারীর অভিজ্ঞতার জন্য।",
+    "message": "Mouse Gesture ইনস্টল করার জন্য ধন্যবাদ! নেভিগেশন, ট্যাব পরিচালনা ও স্ক্রলের জন্য ডান বোতাম চেপে টেনে আনুন; ডান বা বাম চেপে চাকা (সেটিংসে আরও সংমিশ্রণ) দিয়ে অতিরিক্ত শর্টকাট — স্বীকৃতি সহনশীল থাকে, পেজ লোডের সময়েও। Super Drag লিঙ্ক, ছবি ও টেক্সট সার্চকে দিক অনুযায়ী নিয়ম দিয়ে খোলে (অগ্রভূমি, পটভূমি, বিভক্ত লেআউট, ক্লিপবোর্ডে কপি ইত্যাদি)। Popup View লিঙ্ক প্রিভিউ বা নির্বাচিত টেক্সট ছোট উইন্ডোতে খোঁজে। ঐচ্ছিক: হোভারে ছবি প্রিভিউ (বর্ধিত মোড), ডুপ্লিকেট ট্যাব সনাক্তকরণ ও স্বয়ংক্রিয় বন্ধ, মসৃণ স্ক্রোল, টুলবারে ট্যাব সংখ্যা ব্যাজ এবং সীমাবদ্ধ সাইটে পেজ আনলক। টুলবার থেকে সেটিংস (পপআপ, সাইড প্যানেল বা পৃথক উইন্ডো); এক্সপোর্ট/ইমপোর্ট; ব্রাউজার অ্যাকাউন্টে সিঙ্ক। ২৯টি ভাষা ও হালকা/গাঢ় থিম।",
     "description": "Welcome page description"
-  },
-  "gesturesDescription": {
-    "message": "নিম্নলিখিত প্রিসেট মাউস জেসচারগুলি আপনি ডান মাউস বোতাম দিয়ে ড্র্যাগ করে ব্যবহার করতে পারেন:",
-    "description": "Gestures description"
   },
   "extensionName": {
     "message": "মাউস জেসচার এক্সটেনশন",
@@ -539,88 +1139,48 @@
     "message": "মূল বৈশিষ্ট্য",
     "description": "Core features title"
   },
-  "utilitiesFeatures": {
-    "message": "ইউটিলিটি টুলস",
-    "description": "Utilities features title"
+  "welcomeCoreGestureBlock": {
+    "message": "মাউস অঙ্গভঙ্গি: ডান চেপে টানুন; ডান বা বাম চেপে চাকা এবং ডান চেপে ক্লিকের সংমিশ্রণ — সেটিংসে পুনরায় ম্যাপযোগ্য; সহনশীল স্বীকৃতি, লোডের সময়ও।",
+    "description": "Welcome page: core features gesture summary"
+  },
+  "welcomeCoreSuperDragBlock": {
+    "message": "সুপার ড্র্যাগ: লিঙ্ক ও ছবি নতুন ট্যাবে টানুন, নির্বাচিত টেক্সট সার্চের জন্য; দিক ট্যাব খোলার ধরন নির্ধারণ করে; ডিফল্ট পটভূমিতে।",
+    "description": "Welcome page: core features super drag summary"
+  },
+  "welcomeCorePopupViewBlock": {
+    "message": "পপআপ ভিউ: লিঙ্কের ওপর ট্রিগার কী (ডিফল্ট Shift) চেপে ছোট উইন্ডোতে প্রিভিউ; টেক্সট বেছে নিয়ে কী চেপে কাস্টম সার্চ ইঞ্জিনে তাৎক্ষণিক সার্চ।",
+    "description": "Welcome page: core features popup view summary"
   },
   "usageTips": {
     "message": "ব্যবহারের টিপস",
     "description": "Usage tips title"
   },
-  "smartGestureRecognition": {
-    "message": "স্মার্ট জেসচার স্বীকৃতি: অপূর্ণ হলেও সঠিকভাবে জেসচার চিহ্নিত করে, পেজ লোডিংয়ের সময় কাজ করে",
-    "description": "Smart gesture recognition description"
-  },
-  "tabManagementTitle": {
-    "message": "ট্যাব ব্যবস্থাপনা",
-    "description": "Tab management title"
-  },
-  "tabManagementDesc": {
-    "message": ": স্মার্ট ডুপ্লিকেট সনাক্তকরণ, ঐচ্ছিক স্বয়ংক্রিয় বন্ধ, পর্যায়ক্রমিক মেমরি অপ্টিমাইজেশন",
-    "description": "Tab management description"
-  },
-  "superDragTitle": {
-    "message": "সুপার ড্র্যাগ",
-    "description": "Super drag title"
-  },
-  "superDragDesc": {
-    "message": ": লিঙ্ক এবং ছবি নতুন ট্যাবে ড্র্যাগ করুন, নির্বাচিত টেক্সট অনুসন্ধানের জন্য ড্র্যাগ করুন",
-    "description": "Super drag description"
-  },
-  "linkPreviewTitle": {
-    "message": "পপআপ ভিউ",
-    "description": "Link preview title"
-  },
-  "linkPreviewDesc": {
-    "message": ": লিঙ্কের উপর হোভার করার সময় মডিফায়ার কী (ডিফল্ট: Shift) চেপে রাখুন পপআপ উইন্ডোতে লক্ষ্য পেজ প্রিভিউ করতে",
-    "description": "Link preview description"
-  },
-  "textSelectionPreview": {
-    "message": "টেক্সট নির্বাচন করুন এবং তাৎক্ষণিকভাবে পপআপ উইন্ডোতে অনুসন্ধান করতে মডিফায়ার কী চাপুন, কাস্টম অনুসন্ধান ইঞ্জিন সমর্থনসহ",
-    "description": "Text selection preview description"
-  },
   "previewTip": {
-    "message": "আপনি একসাথে একাধিক পপআপ উইন্ডো খুলতে পারেন",
+    "message": "তুলনার জন্য একাধিক প্রিভিউ খোলা রাখতে পারেন।",
     "description": "Preview tip"
-  },
-  "dragDirection": {
-    "message": "ট্যাব খোলার পদ্ধতি নির্ধারণ করতে ড্র্যাগ দিক কাস্টমাইজ করুন: ডিফল্টভাবে পেছনে খোলা",
-    "description": "Drag direction description"
   },
   "debugPanelTitle": {
     "message": "মাউস জেসচার ডিবাগ তথ্য",
     "description": "Debug panel title"
   },
   "debugPanelDesc": {
-    "message": ": খুলতে Alt+D চাপুন, রিয়েল-টাইমে জেসচার তথ্য বিশ্লেষণ করুন, অবস্থা বজায় রাখে",
+    "message": "ডিবাগ প্যানেল খুলতে Alt+D চাপুন, অঙ্গভঙ্গির তথ্য রিয়েল টাইমে বিশ্লেষণ করুন, অবস্থা বজায় থাকে।",
     "description": "Debug panel description"
   },
-  "oneClickCopy": {
-    "message": "সহজ শেয়ারিংয়ের জন্য ডিবাগ তথ্যের এক-ক্লিক কপি, বহু-ভাষা সমর্থনসহ",
-    "description": "One click copy description"
-  },
-  "mediaPreview": {
-    "message": "উন্নত মিডিয়া প্রিভিউ: উন্নত ছবি হোভার এফেক্ট এবং অপ্টিমাইজড ভিডিও পোস্টার ছবি",
-    "description": "Media preview description"
-  },
-  "adaptiveTheme": {
-    "message": "অভিযোজিত থিম: পেজের পটভূমির ভিত্তিতে ভিজ্যুয়াল শৈলী সমন্বয় করে, আলো/অন্ধকার মোড সমর্থন করে",
-    "description": "Adaptive theme description"
-  },
   "gestureTrail": {
-    "message": "কাস্টমাইজযোগ্য রং এবং প্রস্থ সহ স্ক্রিনে প্রদর্শিত জেসচার ট্রেইল",
+    "message": "ঐচ্ছিক ট্রেইল ও জেসচার ইঙ্গিত; সেটিংয়ে রঙ ও পুরুত্ব।",
     "description": "Gesture trail description"
   },
   "clickIcon": {
-    "message": "বৈশিষ্ট্য সক্রিয়/নিষ্ক্রিয় করতে, ভাষা, থিম এবং আরও সেট করতে এক্সটেনশন আইকনে ক্লিক করুন",
+    "message": "টুলবার: কম্প্যাক্ট পপআপ, সাইড প্যানেল (Chrome/Edge), বা আলাদা সেটিং উইন্ডো। ফিচার, ভাষা, থিম, রপ্তানি/আমদানি।",
     "description": "Click icon description"
   },
   "languageSupport": {
-    "message": "29 ভাষা সমর্থন করে, স্বয়ংক্রিয়ভাবে ব্রাউজার ভাষার সাথে খাপ খায়",
+    "message": "২৯টি ইন্টারফেস ভাষা; সংরক্ষিত পছন্দ ব্যবহার করে অথবা ব্রাউজারের ভাষা অনুসরণ করে।",
     "description": "Language support description"
   },
   "enableAutoClose": {
-    "message": "ব্রাউজার রিসোর্স ব্যবহার উল্লেখযোগ্যভাবে কমাতে স্বয়ংক্রিয় বন্ধ ডুপ্লিকেট ট্যাব বৈশিষ্ট্য সক্রিয় করুন",
+    "message": "ডুপ্লিকেট সনাক্তকরণে পুনরাবৃত্ত URL স্বয়ং বন্ধ (ঐচ্ছিক)।",
     "description": "Enable auto close description"
   },
   "rightClickMacLinux": {
@@ -634,14 +1194,6 @@
   "duplicateTabsDetected": {
     "message": "$1টি ডুপ্লিকেট ট্যাব পাওয়া গেছে",
     "description": "Duplicate tabs detected notification title"
-  },
-  "duplicateTabsCount": {
-    "message": "$1টি ডুপ্লিকেট ট্যাব রয়েছে",
-    "description": "Duplicate tabs count message"
-  },
-  "duplicateTabsSingle": {
-    "message": "১টি ডুপ্লিকেট ট্যাব রয়েছে",
-    "description": "Single duplicate tab message"
   },
   "autoClosedTabs": {
     "message": "স্বয়ংক্রিয়ভাবে $1টি ডুপ্লিকেট ট্যাব বন্ধ করা হয়েছে",
@@ -659,61 +1211,9 @@
     "message": "শিরোনামহীন ট্যাব",
     "description": "Untitled tab"
   },
-  "morePages": {
-    "message": "...এবং আরো $1টি পেজ",
-    "description": "More pages tip"
-  },
-  "errorShowDuplicateTabs": {
-    "message": "ডুপ্লিকেট ট্যাব বিজ্ঞপ্তি দেখানোর ত্রুটি:",
-    "description": "Error showing duplicate tabs notification"
-  },
-  "errorSendCloseRequest": {
-    "message": "বন্ধ অনুরোধ পাঠানোর ত্রুটি:",
-    "description": "Error sending close request"
-  },
-  "errorCloseDuplicateTabs": {
-    "message": "ডুপ্লিকেট ট্যাব বন্ধ করার ত্রুটি:",
-    "description": "Error closing duplicate tabs"
-  },
-  "errorSendIgnoreRequest": {
-    "message": "উপেক্ষা অনুরোধ পাঠানোর ত্রুটি:",
-    "description": "Error sending ignore request"
-  },
-  "errorIgnoreDuplicateTabs": {
-    "message": "ডুপ্লিকেট ট্যাব উপেক্ষা করার ত্রুটি:",
-    "description": "Error ignoring duplicate tabs"
-  },
-  "errorUpdateDebugPanel": {
-    "message": "ডিবাগ প্যানেল আপডেট করার ত্রুটি:",
-    "description": "Error updating debug panel"
-  },
   "errorDetectBackgroundColor": {
     "message": "পটভূমি রং সনাক্ত করার ত্রুটি:",
     "description": "Error detecting background color"
-  },
-  "errorDetectImageBorder": {
-    "message": "ছবির বর্ডার ব্যাসার্ধ সনাক্ত করার ত্রুটি:",
-    "description": "Error detecting image border radius"
-  },
-  "errorSetMutationObserver": {
-    "message": "মিউটেশন অবজারভার সেট করার ত্রুটি:",
-    "description": "Error setting mutation observer"
-  },
-  "errorCheckElementVisibility": {
-    "message": "এলিমেন্ট দৃশ্যমানতা পরীক্ষা করার ত্রুটি:",
-    "description": "Error checking element visibility"
-  },
-  "errorProcessBorderRadius": {
-    "message": "বর্ডার ব্যাসার্ধ প্রক্রিয়াকরণের ত্রুটি:",
-    "description": "Error processing border radius"
-  },
-  "errorDetectImageBackground": {
-    "message": "ছবির পটভূমি সনাক্ত করার ত্রুটি:",
-    "description": "Error detecting image background"
-  },
-  "errorShowAutoCloseNotification": {
-    "message": "স্বয়ংক্রিয় বন্ধ সফলতার বিজ্ঞপ্তি দেখানোর ত্রুটি:",
-    "description": "Error showing auto-close success notification"
   },
   "noForwardPage": {
     "message": "ইতিহাসে কোন এগিয়ে যাওয়ার পেজ নেই",
@@ -743,10 +1243,6 @@
     "message": "অবৈধ জেসচার",
     "description": "Invalid gesture message"
   },
-  "nextPage": {
-    "message": "পরবর্তী পেজ",
-    "description": "Next page action"
-  },
   "errorReadPixel": {
     "message": "পিক্সেল পড়ার ত্রুটি:",
     "description": "Error reading pixel message"
@@ -758,10 +1254,6 @@
   "errorCanvasDraw": {
     "message": "ক্যানভাসে আঁকার ত্রুটি:",
     "description": "Error drawing on canvas message"
-  },
-  "errorAccessIframe": {
-    "message": "আইফ্রেম অ্যাক্সেস করার ত্রুটি:",
-    "description": "Error accessing iframe message"
   },
   "errorMutationObserver": {
     "message": "মিউটেশন অবজারভার সেট করার ত্রুটি:",
@@ -791,6 +1283,10 @@
     "message": "সিস্টেম সেটিংস",
     "description": "Debug panel system settings section"
   },
+  "debugConsoleLog": {
+    "message": "কনসোল লগ",
+    "description": "Debug panel console log toggle label"
+  },
   "debugAngleThreshold": {
     "message": "কোণ থ্রেশহোল্ড",
     "description": "Debug panel angle threshold setting"
@@ -810,6 +1306,46 @@
   "debugMinGestureComplexity": {
     "message": "ন্যূনতম জেসচার জটিলতা",
     "description": "Debug panel minimum gesture complexity setting"
+  },
+  "debugMinMovementToStartGesture": {
+    "message": "শুরু করতে ন্যূনতম নড়াচড়া",
+    "description": "ডিবাগ প্যানেল সেটিং: ইশারা ট্র্যাকিং শুরু করার ন্যূনতম নড়াচড়া"
+  },
+  "debugSmoothingFactor": {
+    "message": "স্মুথিং ফ্যাক্টর",
+    "description": "ডিবাগ প্যানেল সেটিং: পথ ও শনাক্তকরণ স্মুথিং ফ্যাক্টর"
+  },
+  "debugAngleThresholdHelp": {
+    "message": "নড়াচড়াকে অনুভূমিক বা উল্লম্ব হিসেবে কত কঠোরভাবে ধরা হবে তা নিয়ন্ত্রণ করে। বেশি মানে আরও সোজা দিক দরকার; কম মানে তির্যক নড়াচড়াও গ্রহণযোগ্য।",
+    "description": "ডিবাগ প্যানেলের কোণ থ্রেশহোল্ড ব্যাখ্যা"
+  },
+  "debugDirectionChangeThresholdHelp": {
+    "message": "দিক পরিবর্তন শনাক্ত করার সংবেদনশীলতা নিয়ন্ত্রণ করে। কম মানে বাঁক সহজে ধরা পড়ে; বেশি মানে ছোট কাঁপুনি উপেক্ষা করা হয়।",
+    "description": "ডিবাগ প্যানেলের দিক পরিবর্তন থ্রেশহোল্ড ব্যাখ্যা"
+  },
+  "debugMinGestureDistanceHelp": {
+    "message": "ইশারা শনাক্ত করার আগে প্রয়োজনীয় ন্যূনতম মোট নড়াচড়ার দূরত্ব। ভুল ট্রিগার কমাতে এটি বাড়ান।",
+    "description": "ডিবাগ প্যানেলের ন্যূনতম ইশারা দূরত্ব ব্যাখ্যা"
+  },
+  "debugMinDirectionSegmentLengthHelp": {
+    "message": "দিক শনাক্তকরণে ব্যবহৃত ন্যূনতম নড়াচড়া সেগমেন্টের দৈর্ঘ্য। ছোট কাঁপুনি ফিল্টার করতে বাড়ান, ছোট ইশারার জন্য কমান।",
+    "description": "ডিবাগ প্যানেলের ন্যূনতম দিক সেগমেন্ট দৈর্ঘ্য ব্যাখ্যা"
+  },
+  "debugMinGestureComplexityHelp": {
+    "message": "পথকে এলোমেলো আঁকিবুঁকি বা অকার্যকর ধরা হবে কি না তার দিক-জটিলতার সীমা। বেশি মানে বেশি বাঁক সহ্য করা হবে।",
+    "description": "ডিবাগ প্যানেলের ইশারা জটিলতা ব্যাখ্যা"
+  },
+  "debugMinMovementToStartGestureHelp": {
+    "message": "বোতাম চাপার পর ইশারা ট্র্যাকিং শুরু করার আগে পয়েন্টারকে অন্তত এত পিক্সেল নড়তে হবে।",
+    "description": "ডিবাগ প্যানেলের শুরু করার ন্যূনতম নড়াচড়া ব্যাখ্যা"
+  },
+  "debugSmoothingFactorHelp": {
+    "message": "পথ ও শনাক্তকরণ পয়েন্ট কতটা মসৃণ হবে তা নিয়ন্ত্রণ করে। বেশি মানে কাঁপুনি কমে কিন্তু তীক্ষ্ণ বাঁক নরম হতে পারে; কম মানে দ্রুত সাড়া।",
+    "description": "ডিবাগ প্যানেলের স্মুথিং ফ্যাক্টর ব্যাখ্যা"
+  },
+  "debugConsoleLogHelp": {
+    "message": "সমস্যা বিশ্লেষণের জন্য DevTools কনসোলে বিস্তারিত এক্সটেনশন লগ চালু করে।",
+    "description": "ডিবাগ প্যানেলের কনসোল লগ ব্যাখ্যা"
   },
   "debugLatestGestureInfo": {
     "message": "সর্বশেষ জেসচার তথ্য",
@@ -850,10 +1386,6 @@
   "debugMergedDirections": {
     "message": "মার্জ করা দিকসমূহ",
     "description": "Debug panel merged directions"
-  },
-  "debugDirectionDistances": {
-    "message": "দিক দূরত্বসমূহ",
-    "description": "Debug panel direction distances"
   },
   "debugFinalResult": {
     "message": "চূড়ান্ত ফলাফল",
@@ -927,9 +1459,17 @@
     "message": "ট্যাব সংখ্যা দেখান",
     "description": "Show tab count badge option"
   },
-  "splitViewAction": {
-    "message": "বিভক্ত দৃশ্য",
-    "description": "বিভক্ত দৃশ্য উইন্ডোতে খুলুন"
+  "unlockPageRestrictions": {
+    "message": "কপি/পেস্ট/রাইট-ক্লিক ও ট্যাব ট্র্যাকিং সীমা তুলে দিন",
+    "description": "Setting: unlock page interaction limits"
+  },
+  "unlockPageRestrictionsTitle": {
+    "message": "কপি, পেস্ট, প্রসঙ্গ মেনু, নির্বাচনের বাধা কমায় এবং blur/visibilitychange ট্র্যাকিং দুর্বল করে। পেজ প্রসঙ্গে চলে; iframes ও Shadow DOM। চালু করার পর পৃষ্ঠা রিলোড করুন।",
+    "description": "Tooltip for unlock page restrictions"
+  },
+  "unlockPageRestrictionsOffReloadConfirm": {
+    "message": "খোলা ট্যাবে ইনজেক্টেড লজিক রিলোড না হওয়া পর্যন্ত থাকতে পারে।\n\nএখনই বর্তমান ট্যাব রিলোড করবেন?",
+    "description": "Body text for unlock-off confirmation dialog"
   },
   "splitViewLeft": {
     "message": "বিভক্ত - বাম",
@@ -946,5 +1486,165 @@
   "splitViewDown": {
     "message": "বিভক্ত - নিচে",
     "description": "বিভক্ত দৃশ্য, নিচের অর্ধে নতুন উইন্ডো"
+  },
+  "unlockPageRestrictionsOffTitle": {
+    "message": "পেজ আনলক বন্ধ",
+    "description": "Title for unlock-off confirmation dialog"
+  },
+  "unlockPageRestrictionsReloadTab": {
+    "message": "ট্যাব রিলোড",
+    "description": "Reload tab button in unlock-off dialog"
+  },
+  "unlockPageRestrictionsNotNow": {
+    "message": "এখন নয়",
+    "description": "Dismiss unlock-off dialog without reload"
+  },
+  "welcomeBulletImagePreview": {
+    "message": "ছবি প্রিভিউ: ঐচ্ছিক হোভার জুম ও জটিল লেআউটের জন্য বর্ধিত মোড।",
+    "description": "Welcome page: image hover preview bullet"
+  },
+  "welcomeBulletPageUnlock": {
+    "message": "পেজ আনলক: ঐচ্ছিকভাবে কপি, পেস্ট, রাইট-ক্লিক ইত্যাদি সীমা শিথিল করুন — সেটিংসে চালু করুন ও প্রয়োজনে পেজ রিলোড করুন।",
+    "description": "Welcome page: page unlock bullet"
+  },
+  "welcomeBulletDisabledSites": {
+    "message": "প্রতি সাইট: তালিকাভুক্ত ডোমেইনে জেসচার, সুপার ড্র্যাগ, পপআপ ও আনলক একসাথে বন্ধ।",
+    "description": "Welcome page: per-site disable bullet"
+  },
+  "welcomeBulletSplitScroll": {
+    "message": "বিভক্ত ভিউ: লিঙ্ক বিভক্ত লেআউটে খুললে দুই উইন্ডোর স্ক্রোল সিঙ্ক (অনুভূমিকসহ)।",
+    "description": "Welcome page: split scroll sync bullet"
+  },
+  "welcomeBulletScreenshot": {
+    "message": "স্ক্রিনশট: দৃশ্যমান এলাকা, পুরো পৃষ্ঠা, ম্যানুয়াল স্ক্রল; ট্রেইল এলাকা, শর্টকাট, ক্লিপবোর্ড, প্রিভিউ, স্থানীয় ইতিহাস (০ = সীমাহীন)।",
+    "description": "Welcome page: screenshot feature bullet"
+  },
+  "welcomeTipScreenshot": {
+    "message": "স্ক্রিনশট ডিফল্টে চালু; দৃশ্যমান এলাকা, পুরো পৃষ্ঠা, স্ক্রলের শর্টকাট সেট করুন; ট্রেইল এলাকা, অটো কপি, প্রিভিউ, ইতিহাস ঐচ্ছিক।",
+    "description": "Welcome page: screenshot usage tip"
+  },
+  "trailColorPickerPresets": {
+    "message": "প্রিসেট",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerRecent": {
+    "message": "সাম্প্রতিক",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerEyedropper": {
+    "message": "ছবি থেকে রঙ",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerEyedropperActive": {
+    "message": "নিতে ক্লিক · চাকা দিয়ে লুপা জুম",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerSyncTrail": {
+    "message": "ট্রেইল রঙ হিসেবে সংরক্ষণ",
+    "description": "Trail color picker UI"
+  },
+  "superDragCompassPosCompassHub": {
+    "message": "টান বিন্দু",
+    "description": "Compass hub aligned to drag start"
+  },
+  "superDragCompassPosCompassScreenCenter": {
+    "message": "স্ক্রিন কেন্দ্র",
+    "description": "Compass fixed at viewport center"
+  },
+  "superDragCompassPosCompassScreenTop": {
+    "message": "উপর",
+    "description": "Compass fixed at top of viewport"
+  },
+  "superDragCompassPosCompassScreenRight": {
+    "message": "ডান",
+    "description": "Compass fixed at right of viewport"
+  },
+  "superDragCompassPosCompassScreenBottom": {
+    "message": "নিচ",
+    "description": "Compass fixed at bottom of viewport"
+  },
+  "superDragCompassPosCompassScreenLeft": {
+    "message": "বাম",
+    "description": "Compass fixed at left of viewport"
+  },
+  "superDragCompassPosCompassHidden": {
+    "message": "লুকানো",
+    "description": "Do not show compass"
+  },
+  "addCurrentSiteToDisabledSites": {
+    "message": "বর্তমান সাইট যোগ করুন",
+    "description": "Button: add the active tab domain to disabled sites"
+  },
+  "addCurrentSiteToDisabledSitesTitle": {
+    "message": "বর্তমান ট্যাবের ডোমেইন নিষ্ক্রিয় সাইটে যোগ করুন",
+    "description": "Tooltip for add-current-site button"
+  },
+  "addDisabledSite": {
+    "message": "যোগ করুন",
+    "description": "Button: add a typed disabled site entry"
+  },
+  "disabledSiteInputPlaceholder": {
+    "message": "ডোমেইন বা পূর্ণ URL, যেমন youtube.com",
+    "description": "Placeholder for the disabled site input"
+  },
+  "disabledSitesEmpty": {
+    "message": "এখনও কোনো নিষ্ক্রিয় সাইট নেই।",
+    "description": "Empty state for disabled sites list"
+  },
+  "removeDisabledSite": {
+    "message": "এই সাইট সরান",
+    "description": "Tooltip/aria label for remove disabled site button"
+  },
+  "disabledSiteInvalid": {
+    "message": "একটি বৈধ ডোমেইন বা URL লিখুন",
+    "description": "Error shown when disabled site input is invalid"
+  },
+  "disabledSiteAlreadyExists": {
+    "message": "সাইটটি ইতিমধ্যে আছে",
+    "description": "Error shown when adding a duplicate disabled site"
+  },
+  "disabledSitesLimitReached": {
+    "message": "নিষ্ক্রিয় সাইটের সীমা পূর্ণ হয়েছে",
+    "description": "Error shown when disabled sites list reaches the maximum size"
+  },
+  "currentSiteUnsupported": {
+    "message": "বর্তমান ট্যাবে সমর্থিত ডোমেইন নেই",
+    "description": "Error shown when current tab URL cannot be added to disabled sites"
+  },
+  "customKey": {
+    "message": "কাস্টম কী",
+    "description": "Custom trigger key option"
+  },
+  "previewTriggerMode": {
+    "message": "ট্রিগার মোড",
+    "description": "Popup view trigger mode setting"
+  },
+  "previewTriggerHold": {
+    "message": "ট্রিগার কী চেপে ধরুন",
+    "description": "Hold trigger key option"
+  },
+  "previewTriggerDouble": {
+    "message": "ট্রিগার কী দুবার চাপুন",
+    "description": "Double-press trigger key option"
+  },
+  "previewCustomKey": {
+    "message": "কাস্টম কী",
+    "description": "Popup view custom trigger key setting"
+  },
+  "previewCustomKeyPlaceholder": {
+    "message": "ক্লিক করে একটি কী চাপুন",
+    "description": "Popup view custom trigger key placeholder"
+  },
+  "previewCustomKeyTitle": {
+    "message": "এখানে ক্লিক করে একটি নন-মডিফায়ার কী চাপুন। মুছতে Esc চাপুন।",
+    "description": "Popup view custom trigger key title"
+  },
+  "unlimited": {
+    "message": "সীমাহীন",
+    "description": "Unlimited value label"
+  },
+  "settingsFontSize": {
+    "message": "সেটিংসের ফন্টের আকার",
+    "description": "Header button: adjust settings font size"
   }
 }

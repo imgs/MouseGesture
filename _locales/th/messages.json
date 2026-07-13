@@ -4,7 +4,7 @@
     "description": "The name of the extension"
   },
   "extDesc": {
-    "message": "ส่วนขยาย Chrome/Edge ที่รองรับท่าทางเมาส์ ฟีเจอร์ลากแบบซูเปอร์ และการดูตัวอย่างลิงก์",
+    "message": "ท่าทางเมาส์ ลากแบบซูเปอร์ แสดงตัวอย่างรูปและลิงก์และอื่นๆ",
     "description": "The description of the extension"
   },
   "title": {
@@ -35,13 +35,21 @@
     "message": "ลากซ้าย",
     "description": "Drag left action"
   },
-  "openInForeground": {
-    "message": "เปิดลิงก์ในเบื้องหน้า",
-    "description": "Open link in foreground"
+  "dragUpRight": {
+    "message": "ลากขึ้น-ขวา",
+    "description": "Super drag diagonal direction"
   },
-  "openInBackground": {
-    "message": "เปิดลิงก์ในเบื้องหลัง",
-    "description": "Open link in background"
+  "dragDownRight": {
+    "message": "ลากลง-ขวา",
+    "description": "Super drag diagonal direction"
+  },
+  "dragDownLeft": {
+    "message": "ลากลง-ซ้าย",
+    "description": "Super drag diagonal direction"
+  },
+  "dragUpLeft": {
+    "message": "ลากขึ้น-ซ้าย",
+    "description": "Super drag diagonal direction"
   },
   "superDragDescription": {
     "message": "ฟีเจอร์ลากแบบซูเปอร์ทำงานกับลิงก์ รูปภาพ และข้อความที่เลือก คุณสามารถตั้งค่าวิธีการเปิดสำหรับแต่ละทิศทางของท่าทาง (บน/ล่าง/ซ้าย/ขวา) รวมถึง foreground, background หรือมุมมองแบบแบ่ง (ซ้าย/ขวา/บน/ล่าง)",
@@ -65,51 +73,75 @@
   },
   "downThenRight": {
     "message": "ลงแล้วขวา",
-    "description": "Down then right gesture"
+    "description": "ท่าลงแล้วขวา"
   },
   "leftThenUp": {
     "message": "ซ้ายแล้วขึ้น",
-    "description": "Left then up gesture"
+    "description": "ท่าซ้ายแล้วขึ้น"
   },
   "rightThenUp": {
     "message": "ขวาแล้วขึ้น",
-    "description": "Right then up gesture"
+    "description": "ท่าขวาแล้วขึ้น"
   },
   "rightThenDown": {
     "message": "ขวาแล้วลง",
-    "description": "Right then down gesture"
+    "description": "ท่าขวาแล้วลง"
   },
   "upThenLeft": {
     "message": "ขึ้นแล้วซ้าย",
-    "description": "Up then left gesture"
+    "description": "ท่าขึ้นแล้วซ้าย"
   },
   "upThenRight": {
     "message": "ขึ้นแล้วขวา",
-    "description": "Up then right gesture"
+    "description": "ท่าขึ้นแล้วขวา"
   },
   "downThenLeft": {
     "message": "ลงแล้วซ้าย",
-    "description": "Down then left gesture"
+    "description": "ท่าลงแล้วซ้าย"
   },
   "leftThenDown": {
     "message": "ซ้ายแล้วลง",
-    "description": "Left then down gesture"
+    "description": "ท่าซ้ายแล้วลง"
   },
   "upThenDown": {
     "message": "ขึ้นแล้วลง",
-    "description": "Up then down gesture"
+    "description": "ท่าขึ้นแล้วลง"
   },
   "downThenUp": {
     "message": "ลงแล้วขึ้น",
-    "description": "Down then up gesture"
+    "description": "ท่าลงแล้วขึ้น"
   },
   "leftThenRight": {
     "message": "ซ้ายแล้วขวา",
-    "description": "Left then right gesture"
+    "description": "ท่าซ้ายแล้วขวา"
   },
   "rightThenLeft": {
     "message": "ขวาแล้วซ้าย",
-    "description": "Right then left gesture"
+    "description": "ท่าขวาแล้วซ้าย"
+  },
+  "rightHoldWheelUp": {
+    "message": "กดขวาค้าง + ลูกขึ้น",
+    "description": "กดปุ่มขวาค้างและลูกขึ้น"
+  },
+  "rightHoldWheelDown": {
+    "message": "กดขวาค้าง + ลูกลง",
+    "description": "กดปุ่มขวาค้างและลูกลง"
+  },
+  "leftHoldWheelUp": {
+    "message": "กดค้างซ้าย + เลื่อนล้อขึ้น",
+    "description": "ปุ่มซ้ายค้างและเลื่อนล้อขึ้น"
+  },
+  "leftHoldWheelDown": {
+    "message": "กดค้างซ้าย + เลื่อนล้อลง",
+    "description": "ปุ่มซ้ายค้างและเลื่อนล้อลง"
+  },
+  "rightHoldLeftClick": {
+    "message": "กดขวาค้าง + คลิกซ้าย",
+    "description": "กดปุ่มขวาค้างและคลิกซ้าย"
+  },
+  "leftHoldRightClick": {
+    "message": "กดซ้ายค้าง + คลิกขวา",
+    "description": "กดปุ่มซ้ายค้างแล้วคลิกขวา"
   },
   "back": {
     "message": "ย้อนกลับ",
@@ -158,6 +190,18 @@
   "prevTab": {
     "message": "แท็บก่อนหน้า",
     "description": "Previous tab action"
+  },
+  "previousActiveTab": {
+    "message": "แท็บที่ใช้งานก่อนหน้า",
+    "description": "การทำงานของท่าทาง: สลับไปยังแท็บที่ใช้งานก่อนหน้า"
+  },
+  "goToParentUrl": {
+    "message": "URL ระดับบน",
+    "description": "การทำงานของท่าทาง: ไปยังเส้นทาง URL ระดับบน"
+  },
+  "goToRootUrl": {
+    "message": "URL ราก",
+    "description": "การทำงานของท่าทาง: ไปยัง URL รากของเว็บไซต์"
   },
   "nextTab": {
     "message": "แท็บถัดไป",
@@ -211,6 +255,14 @@
     "message": "สลับเต็มหน้าจอ",
     "description": "Toggle fullscreen action"
   },
+  "zoomIn": {
+    "message": "ซูมเข้า",
+    "description": "ขยายหน้าในแท็บปัจจุบัน"
+  },
+  "zoomOut": {
+    "message": "ซูมออก",
+    "description": "ย่อหน้าในแท็บปัจจุบัน"
+  },
   "closeTabsToLeft": {
     "message": "ปิดแท็บทางซ้าย",
     "description": "Close tabs to left action"
@@ -218,6 +270,474 @@
   "reloadAllTabs": {
     "message": "โหลดแท็บทั้งหมดใหม่",
     "description": "Reload all tabs action"
+  },
+  "stopLoadingAllTabs": {
+    "message": "หยุดโหลดทุกแท็บ",
+    "description": "Stop loading in all tabs"
+  },
+  "screenshotRegion": {
+    "message": "ภาพหน้าจอ (พื้นที่ตามเส้นทาง)",
+    "description": "Screenshot gesture action"
+  },
+  "screenshotRegionOrLink": {
+    "message": "ภาพหน้าจอหรือเปิดลิงก์",
+    "description": "Trail region hint when links are inside selection"
+  },
+  "trailRegionChooseTitle": {
+    "message": "ลิงก์ในพื้นที่ที่เลือก — จับภาพหรือเปิด",
+    "description": "Trail region chooser dialog title"
+  },
+  "trailRegionLinkSingle": {
+    "message": "ลิงก์ 1 รายการ",
+    "description": "Trail region link count"
+  },
+  "trailRegionLinkMultiple": {
+    "message": "ลิงก์ {count} รายการ",
+    "description": "Trail region link count"
+  },
+  "trailRegionActionScreenshot": {
+    "message": "ภาพหน้าจอ (S)",
+    "description": "Trail region chooser button"
+  },
+  "trailRegionActionOpenLink": {
+    "message": "เปิดในแท็บใหม่ (O)",
+    "description": "Trail region chooser button"
+  },
+  "trailRegionActionOpenLinks": {
+    "message": "เปิดในแท็บใหม่ (O)",
+    "description": "Trail region chooser button"
+  },
+  "trailRegionActionOpenSelected": {
+    "message": "เปิด {n} รายการในแท็บใหม่ (O)",
+    "description": "Trail region open checked links"
+  },
+  "trailRegionActionOpenNone": {
+    "message": "เปิดรายการที่เลือก (O)",
+    "description": "Trail region open button when none checked"
+  },
+  "trailRegionActionCopy": {
+    "message": "คัดลอก (C)",
+    "description": "Trail region chooser copy button"
+  },
+  "trailRegionActionCopySelected": {
+    "message": "คัดลอก {n} รายการ (C)",
+    "description": "Trail region copy checked links"
+  },
+  "trailRegionActionCopyNone": {
+    "message": "คัดลอก (C)",
+    "description": "Trail region copy button when none checked"
+  },
+  "trailRegionCopyFailed": {
+    "message": "คัดลอกไม่สำเร็จ",
+    "description": "Trail region copy to clipboard failed"
+  },
+  "trailRegionSelectAll": {
+    "message": "เลือกทั้งหมด",
+    "description": "Trail region link list select all"
+  },
+  "trailRegionNoLinkSelected": {
+    "message": "โปรดเลือกอย่างน้อยหนึ่งลิงก์",
+    "description": "Trail region no selection hint"
+  },
+  "trailRegionChooseHint": {
+    "message": "Esc ยกเลิก · เลือกลิงก์ที่จะคัดลอก/เปิด · ลากขอบเพื่อปรับขนาด",
+    "description": "Trail region chooser footer"
+  },
+  "trailRegionLinkOpened": {
+    "message": "เปิดลิงก์ในแท็บใหม่แล้ว",
+    "description": "Trail region open link feedback"
+  },
+  "trailRegionLinksOpened": {
+    "message": "เปิดลิงก์ในแท็บใหม่แล้ว",
+    "description": "Trail region open links feedback"
+  },
+  "trailRegionLinksTruncated": {
+    "message": "เปิดเฉพาะ {n} ลิงก์แรก",
+    "description": "Trail region open links cap"
+  },
+  "screenshotScrollCaptureActive": {
+    "message": "เลื่อนหน้าด้วยตนเอง แล้วกดทางลัดเดิมหรือ Esc เพื่อจบและต่อภาพ",
+    "description": "Manual scroll capture in progress"
+  },
+  "screenshotCopied": {
+    "message": "คัดลอกภาพหน้าจอไปยังคลิปบอร์ดแล้ว",
+    "description": "Screenshot feedback"
+  },
+  "screenshotFailed": {
+    "message": "จับภาพหน้าจอไม่สำเร็จ",
+    "description": "Screenshot feedback"
+  },
+  "screenshotNeedTrail": {
+    "message": "วาดเส้นทางให้ยาวขึ้นเพื่อเลือกพื้นที่",
+    "description": "Screenshot feedback"
+  },
+  "screenshotUnavailable": {
+    "message": "โมดูลภาพหน้าจอไม่พร้อมใช้งาน",
+    "description": "Screenshot feedback"
+  },
+  "screenshotTopFrameOnly": {
+    "message": "ภาพทั้งหน้าใช้ได้เฉพาะเฟรมหลัก",
+    "description": "Screenshot feedback"
+  },
+  "screenshotFeature": {
+    "message": "ภาพหน้าจอ",
+    "description": "Screenshot settings section title"
+  },
+  "enableScreenshotFeature": {
+    "message": "เปิดใช้ภาพหน้าจอ",
+    "description": "Master toggle for screenshot feature"
+  },
+  "enableScreenshotTrailCapture": {
+    "message": "พื้นที่ตามเส้นทาง (วงปิด / ตัดตัวเอง)",
+    "description": "Capture when trail loops or crosses; skipped if another gesture action matches"
+  },
+  "enableScreenshotClipboard": {
+    "message": "คัดลอกไปคลิปบอร์ดอัตโนมัติ",
+    "description": "Copy screenshot to clipboard after capture"
+  },
+  "enableScreenshotPreview": {
+    "message": "แสดงตัวอย่างหลังจับภาพ",
+    "description": "Open preview window when a screenshot is captured"
+  },
+  "enableScreenshotHistory": {
+    "message": "บันทึกประวัติภาพหน้าจอ",
+    "description": "Keep captured screenshots in local history"
+  },
+  "screenshotHistoryMaxCount": {
+    "message": "จำกัดประวัติ",
+    "description": "Maximum screenshot history entries to keep"
+  },
+  "screenshotHistoryMaxCountHint": {
+    "message": "0 = ไม่จำกัด; 1–200 ลบรายการเก่าเมื่อเกินขีดจำกัด",
+    "description": "Screenshot history limit hint"
+  },
+  "screenshotHistoryUnlimited": {
+    "message": "ไม่จำกัด",
+    "description": "Label when screenshot history limit is 0"
+  },
+  "screenshotHistoryView": {
+    "message": "ดูประวัติ",
+    "description": "Open screenshot history window"
+  },
+  "screenshotHistoryTitle": {
+    "message": "ประวัติภาพหน้าจอ",
+    "description": "Screenshot history window title"
+  },
+  "screenshotHistoryEmpty": {
+    "message": "ยังไม่มีภาพหน้าจอ",
+    "description": "Empty screenshot history state"
+  },
+  "screenshotHistoryClearAll": {
+    "message": "ล้างทั้งหมด",
+    "description": "Delete all screenshot history entries"
+  },
+  "screenshotHistoryClearConfirm": {
+    "message": "ลบประวัติภาพหน้าจอทั้งหมดหรือไม่?",
+    "description": "Confirm clearing screenshot history"
+  },
+  "screenshotHistoryDelete": {
+    "message": "ลบ",
+    "description": "Delete one screenshot history entry"
+  },
+  "screenshotHistoryPinToPage": {
+    "message": "ปักหมุดบนหน้า",
+    "description": "Pin history thumbnail onto the web page"
+  },
+  "screenshotHistoryPinFailed": {
+    "message": "ปักหมุดไม่ได้ (เปิดแท็บเป้าหมายหรืออนุญาตไซต์นี้)",
+    "description": "Error when pinning from screenshot history"
+  },
+  "screenshotHistoryCount": {
+    "message": "$1 รายการ",
+    "description": "Number of items in screenshot history",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "screenshotHistoryModeViewport": {
+    "message": "พื้นที่ที่มองเห็น",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeFullPage": {
+    "message": "ทั้งหน้า",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeRegion": {
+    "message": "พื้นที่",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeScroll": {
+    "message": "เลื่อนด้วยตนเอง",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeUnknown": {
+    "message": "ภาพหน้าจอ",
+    "description": "Screenshot history capture mode fallback label"
+  },
+  "screenshotDone": {
+    "message": "ภาพหน้าจอพร้อมแล้ว",
+    "description": "Hint when capture finished without clipboard copy"
+  },
+  "screenshotPreviewTitle": {
+    "message": "ตัวอย่างภาพหน้าจอ",
+    "description": "Screenshot preview window title"
+  },
+  "screenshotPreviewClose": {
+    "message": "ปิด",
+    "description": "Close screenshot preview window"
+  },
+  "screenshotPreviewCopyAgain": {
+    "message": "คัดลอก",
+    "description": "Copy screenshot to clipboard from preview window"
+  },
+  "screenshotPreviewSave": {
+    "message": "บันทึกเป็นไฟล์",
+    "description": "Save annotated screenshot to disk"
+  },
+  "screenshotPreviewSaved": {
+    "message": "บันทึกแล้ว",
+    "description": "Screenshot file save succeeded"
+  },
+  "screenshotPreviewPinToPage": {
+    "message": "ปักหมุดบนหน้า",
+    "description": "Pin annotated screenshot onto the source web page"
+  },
+  "screenshotPreviewPinned": {
+    "message": "ปักหมุดแล้ว",
+    "description": "Screenshot pin placed on page"
+  },
+  "screenshotPreviewPinning": {
+    "message": "กำลังปักหมุด…",
+    "description": "Screenshot pin in progress"
+  },
+  "screenshotPinTitle": {
+    "message": "ภาพหน้าจอ",
+    "description": "Title on pinned screenshot sticker"
+  },
+  "screenshotPinClose": {
+    "message": "เอาปักหมุดออก",
+    "description": "Close button on pinned screenshot"
+  },
+  "screenshotPinResize": {
+    "message": "ปรับขนาด",
+    "description": "Resize handle on pinned screenshot"
+  },
+  "screenshotPinZoomFit": {
+    "message": "พอดี",
+    "description": "Fit pinned screenshot to view"
+  },
+  "screenshotPinZoomOriginal": {
+    "message": "1:1",
+    "description": "Show pinned screenshot at original pixel size"
+  },
+  "screenshotPinOrderLabel": {
+    "message": "ปักหมุด $1$",
+    "description": "Pinned screenshot order number",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "screenshotPreviewLoadFailed": {
+    "message": "โหลดตัวอย่างไม่ได้",
+    "description": "Screenshot preview load error"
+  },
+  "screenshotPreviewZoomFit": {
+    "message": "พอดี",
+    "description": "Fit screenshot to preview window"
+  },
+  "screenshotPreviewZoomFitTitle": {
+    "message": "พอดีกับหน้าต่าง",
+    "description": "Tooltip for fit zoom button"
+  },
+  "screenshotPreviewZoomOneToOne": {
+    "message": "1:1",
+    "description": "Actual-size zoom button label"
+  },
+  "screenshotPreviewZoomOneToOneTitle": {
+    "message": "ขนาดจริง (1:1)",
+    "description": "Tooltip for 1:1 zoom button"
+  },
+  "screenshotPreviewZoomLevel": {
+    "message": "ซูม $1$%",
+    "description": "Current zoom percentage in preview",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "screenshotAnnotHand": {
+    "message": "มือ (เลื่อน)",
+    "description": "Pan the preview by dragging"
+  },
+  "screenshotAnnotPen": {
+    "message": "ดินสอ",
+    "description": "Annotation tool: freehand"
+  },
+  "screenshotAnnotArrow": {
+    "message": "ลูกศร (Shift: แนวนอน/ตั้ง)",
+    "description": "Annotation tool: arrow; Shift constrains to horizontal or vertical"
+  },
+  "screenshotAnnotLine": {
+    "message": "เส้น (Shift: แนวนอน/ตั้ง)",
+    "description": "Annotation tool: line; Shift constrains to horizontal or vertical"
+  },
+  "screenshotAnnotRect": {
+    "message": "สี่เหลี่ยม (Shift: สี่เหลี่ยมจัตุรัส)",
+    "description": "Annotation tool: rectangle; Shift draws a square"
+  },
+  "screenshotAnnotEllipse": {
+    "message": "วงรี",
+    "description": "Annotation tool: ellipse"
+  },
+  "screenshotAnnotRoundRect": {
+    "message": "สี่เหลี่ยมมุมโค้ง",
+    "description": "Annotation tool: rounded rectangle"
+  },
+  "screenshotAnnotHighlighter": {
+    "message": "ปากกาเน้นข้อความ",
+    "description": "Annotation tool: highlighter marker"
+  },
+  "screenshotAnnotHighlight": {
+    "message": "กรอบไฮไลต์",
+    "description": "Annotation tool: highlight rectangle"
+  },
+  "screenshotAnnotFillRect": {
+    "message": "สี่เหลี่ยมทึบ",
+    "description": "Annotation tool: filled rectangle"
+  },
+  "screenshotAnnotFillEllipse": {
+    "message": "วงรีทึบ",
+    "description": "Annotation tool: filled ellipse"
+  },
+  "screenshotAnnotBlur": {
+    "message": "เบลอ",
+    "description": "Annotation tool: blur brush"
+  },
+  "screenshotAnnotArrow2": {
+    "message": "ลูกศรคู่ (Shift: แนวนอน/ตั้ง)",
+    "description": "Annotation tool: line with arrowheads at both ends; Shift constrains H/V"
+  },
+  "screenshotAnnotNumber": {
+    "message": "ตัวเลข",
+    "description": "Annotation tool: sequential number markers"
+  },
+  "screenshotAnnotStampStart": {
+    "message": "เลขเริ่ม",
+    "description": "Starting number for sequential stamps"
+  },
+  "screenshotAnnotStampNext": {
+    "message": "เลขถัดไป: $1$",
+    "description": "Next number stamp to place (tooltip)",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "screenshotAnnotCrop": {
+    "message": "ครอบตัด",
+    "description": "Annotation tool: crop image"
+  },
+  "screenshotAnnotCropApply": {
+    "message": "ใช้การครอบตัด",
+    "description": "Confirm crop selection"
+  },
+  "screenshotAnnotCropCancel": {
+    "message": "ยกเลิก",
+    "description": "Cancel crop selection"
+  },
+  "screenshotAnnotText": {
+    "message": "ข้อความ",
+    "description": "Annotation tool: text"
+  },
+  "screenshotAnnotMosaic": {
+    "message": "โมเสก",
+    "description": "Annotation tool: mosaic blur"
+  },
+  "screenshotAnnotEraser": {
+    "message": "ยางลบ",
+    "description": "Annotation tool: eraser"
+  },
+  "screenshotAnnotSize": {
+    "message": "ขนาด",
+    "description": "Annotation stroke size"
+  },
+  "screenshotAnnotResetAll": {
+    "message": "รีเซ็ตการแก้ไขทั้งหมด",
+    "description": "Clear all annotations and restore original screenshot"
+  },
+  "screenshotAnnotStepCount": {
+    "message": "$1 / $2",
+    "description": "History step indicator: current / total"
+  },
+  "screenshotAnnotStepCountTitle": {
+    "message": "ขั้นตอนที่ใช้ / ทั้งหมด (0 = ภาพต้นฉบับ)",
+    "description": "Tooltip for history step indicator"
+  },
+  "screenshotAnnotUndo": {
+    "message": "เลิกทำ",
+    "description": "Undo annotation"
+  },
+  "screenshotAnnotRedo": {
+    "message": "ทำซ้ำ",
+    "description": "Redo annotation"
+  },
+  "screenshotAnnotTextPlaceholder": {
+    "message": "พิมพ์ที่นี่…",
+    "description": "Placeholder in inline text editor on screenshot preview"
+  },
+  "screenshotOptRegion": {
+    "message": "เลือกพื้นที่",
+    "description": "Screenshot bind row: keyboard drag rectangle region"
+  },
+  "screenshotOptViewport": {
+    "message": "พื้นที่ที่มองเห็น",
+    "description": "Screenshot bind row: current visible tab area"
+  },
+  "screenshotOptFullPage": {
+    "message": "ทั้งหน้า",
+    "description": "Screenshot bind row: full page"
+  },
+  "screenshotOptScrollStitch": {
+    "message": "เลื่อนด้วยตนเอง",
+    "description": "Screenshot bind row: manual scroll capture"
+  },
+  "screenshotOptOpenHistory": {
+    "message": "เปิดหน้าต่างประวัติ",
+    "description": "Screenshot bind row: keyboard shortcut to open screenshot history"
+  },
+  "screenshotHotkeyPressHint": {
+    "message": "ทางลัด: คลิกช่องด้านบน แล้วกดแป้น (Ctrl / Alt / Meta + ตัวอักษรหรือตัวเลข หรือ F1–F12) Esc ล้างช่อง",
+    "description": "Screenshot section footer: hotkey binding help"
+  },
+  "screenshotHotkeyPlaceholder": {
+    "message": "คลิกเพื่อตั้งค่า",
+    "description": "Placeholder in empty screenshot hotkey fields"
+  },
+  "screenshotRegionPickHint": {
+    "message": "ลากเพื่อเลือกพื้นที่ Esc ยกเลิก",
+    "description": "Hint while keyboard region picker is active"
+  },
+  "screenshotRegionPickFooterHint": {
+    "message": "ทางลัดพื้นที่: ลากสี่เหลี่ยมแล้วปล่อย หากมีลิงก์ เลือกจับภาพหรือเปิดในแท็บใหม่ Esc ยกเลิก",
+    "description": "Screenshot section footer: keyboard region picker help"
+  },
+  "screenshotRegionTooSmall": {
+    "message": "พื้นที่เล็กเกินไป — ลากให้ใหญ่ขึ้น",
+    "description": "Region picker: minimum size not met"
+  },
+  "screenshotGestureIntersectHint": {
+    "message": "พื้นที่ตามเส้นทาง: วงเดียวหรือตัดตัวเองครั้งเดียวแล้วปล่อย หากมีลิงก์ เลือกจับภาพหรือเปิดแท็บใหม่ วงหลายรอบถือว่าเป็นการขีดเขียน",
+    "description": "Screenshot section footer: trail region capture help"
   },
   "togglePinTab": {
     "message": "ปักหมุด/ยกเลิกการปักหมุดแท็บ",
@@ -244,16 +764,16 @@
     "description": "Settings title"
   },
   "customizedBehavior": {
-    "message": "รายการบล็อก",
-    "description": "Block list section title"
+    "message": "เว็บไซต์ที่ปิดใช้งาน",
+    "description": "Section title for the per-site disable list"
   },
   "disableMouseGesturesForSites": {
-    "message": "ปิดการทำงานของเมาส์เจสเจอร์และซูเปอร์แดรกในไซต์เหล่านี้",
-    "description": "Label for the list of sites where gestures and super drag are disabled"
+    "message": "ปิดใช้ฟีเจอร์ส่วนขยายในโดเมนที่ระบุ",
+    "description": "Subtitle for Disabled sites section"
   },
   "disabledSitesHint": {
-    "message": "หนึ่งไซต์ต่อบรรทัด โดเมน (เช่น youtube.com) หรือ URL เต็ม",
-    "description": "Hint for the disabled sites textarea"
+    "message": "ใช้กับ: ท่าทาง, ซูเปอร์แดร็ก, ตัวอย่างลิงก์/รูปภาพ, ภาพหน้าจอ และการปลดล็อกหน้า เพิ่มเว็บไซต์ปัจจุบันหรือป้อนโดเมน/URL; คลิกเครื่องหมายลบเพื่อลบ",
+    "description": "Short hint explaining which features the Disabled sites list affects"
   },
   "enableGesture": {
     "message": "เปิดใช้ท่าทางเมาส์",
@@ -279,6 +799,26 @@
     "message": "เปิดใช้ลากแบบซูเปอร์",
     "description": "Enable super drag option"
   },
+  "superDragCompassPosition": {
+    "message": "เข็มทิศ 8 ทิศทาง",
+    "description": "Super drag compass display and position"
+  },
+  "superDragCompassPosCompassAbove": {
+    "message": "เหนือจุดลาก",
+    "description": "Compass above drag start, centered horizontally"
+  },
+  "superDragCompassPosCompassRight": {
+    "message": "ขวาจุดลาก",
+    "description": "Compass to the right of drag start, vertically centered"
+  },
+  "superDragCompassPosCompassBelow": {
+    "message": "ใต้จุดลาก",
+    "description": "Compass below drag start, centered horizontally"
+  },
+  "superDragCompassPosCompassLeft": {
+    "message": "ซ้ายจุดลาก",
+    "description": "Compass to the left of drag start, vertically centered"
+  },
   "enableDragTextSearch": {
     "message": "เปิดใช้การค้นหาข้อความแบบลาก",
     "description": "Enable drag text search option"
@@ -287,9 +827,17 @@
     "message": "ดาวน์โหลดรูป/ไฟล์อัตโนมัติเมื่อลาก",
     "description": "When the drag target is an image or other downloadable file, start download automatically"
   },
+  "enableImageDrag": {
+    "message": "เปิดใช้การลากรูปภาพ",
+    "description": "Control image super drag independently from image preview"
+  },
   "enableImagePreview": {
     "message": "เปิดใช้การแสดงตัวอย่างรูปภาพ",
     "description": "Enable image preview option"
+  },
+  "enableImagePreviewEnhanced": {
+    "message": "การแสดงตัวอย่างรูปภาพขั้นสูง",
+    "description": "Support transparent overlay, background-image, parent lookup, etc."
   },
   "enableDuplicateCheck": {
     "message": "ตรวจจับแท็บซ้ำ",
@@ -302,10 +850,6 @@
   "enableSmoothScroll": {
     "message": "เปิดใช้งานการเลื่อนแบบนุ่มนวล",
     "description": "Enable smooth scrolling for gesture actions"
-  },
-  "save": {
-    "message": "บันทึกการตั้งค่า",
-    "description": "Save settings button"
   },
   "reset": {
     "message": "รีเซ็ต",
@@ -340,7 +884,7 @@
     "description": "Auto-sync information"
   },
   "settingsSaved": {
-    "message": "บันทึกการตั้งค่าแล้ว",
+    "message": "นำการตั้งค่าไปใช้แล้ว",
     "description": "Settings saved notification"
   },
   "settingsReset": {
@@ -363,14 +907,6 @@
     "message": "ไม่สามารถรีเซ็ตการตั้งค่า",
     "description": "Reset settings error notification"
   },
-  "themeLight": {
-    "message": "สว่าง",
-    "description": "Light theme"
-  },
-  "themeDark": {
-    "message": "มืด",
-    "description": "Dark theme"
-  },
   "buyMeACoffee": {
     "message": "ซื้อกาแฟให้ฉัน",
     "description": "Donation button"
@@ -379,17 +915,33 @@
     "message": "สลับธีม",
     "description": "Toggle theme button"
   },
-  "toggleLanguage": {
-    "message": "สลับภาษา",
-    "description": "Toggle language button"
+  "openDetachedPopupTitle": {
+    "message": "เปิดการตั้งค่าในแผงด้านข้าง (ถ้าไม่ได้ ให้ใช้หน้าต่างแยก)",
+    "description": "ปุ่มหัวเรื่อง: แผงด้านข้างหรือหน้าต่างแยก"
+  },
+  "openDetachedWindowFromSidePanelTitle": {
+    "message": "เปิดในหน้าต่างแยก (คู่กับเบราว์เซอร์)",
+    "description": "แผงด้านข้าง: หน้าต่างแยกและจัดวางเบราว์เซอร์"
+  },
+  "openOptionsPageTitle": {
+    "message": "เปิดหน้าตัวเลือก",
+    "description": "ปุ่มส่วนหัว: เปิดหน้าตัวเลือกของส่วนขยาย"
   },
   "donationTooltip": {
     "message": "หากคุณชอบผลงานนี้ กรุณาสนับสนุนฉัน ขอบคุณ :)",
     "description": "Donation tooltip"
   },
   "rightButtonHint": {
-    "message": "กดปุ่มเมาส์ขวาค้างไว้",
+    "message": "กดค้างขวา (ลาก, ล้อ, คลิก) · ซ้าย (ล้อ)",
     "description": "Right mouse button hint"
+  },
+  "builtInGesturesListExpandHint": {
+    "message": "คลิกเพื่อขยายรายการท่าทางทั้งหมด",
+    "description": "Tooltip on built-in gestures subtitle when list is collapsed"
+  },
+  "builtInGesturesListCollapseHint": {
+    "message": "คลิกเพื่อยุบรายการท่าทาง",
+    "description": "Tooltip on built-in gestures subtitle when list is expanded"
   },
   "leftButtonHint": {
     "message": "กดปุ่มเมาส์ซ้ายค้างไว้",
@@ -403,17 +955,45 @@
     "message": "เปิดในเบื้องหลัง",
     "description": "Open in background action"
   },
+  "popupViewAction": {
+    "message": "แสดงตัวอย่าง",
+    "description": "Super drag action: open target in popup view"
+  },
+  "incognitoAction": {
+    "message": "เปิดในหน้าต่างไม่ระบุตัวตน",
+    "description": "Open in incognito/private window"
+  },
+  "enableSplitScrollSync": {
+    "message": "ซิงก์การเลื่อนแนวตั้งและแนวนอนระหว่างหน้าต่างแยก",
+    "description": "เมื่อแยกมุมมอง ให้แกนเลื่อนทั้งสองของสองหน้าต่างตรงกัน"
+  },
   "copyAction": {
     "message": "คัดลอก",
     "description": "Copy selected text or link URL to clipboard"
+  },
+  "downloadAction": {
+    "message": "ดาวน์โหลด",
+    "description": "Super drag action: download target"
   },
   "copiedToClipboard": {
     "message": "คัดลอกไปยังคลิปบอร์ดแล้ว",
     "description": "Hint after copy action"
   },
-  "dragSearchEngine": {
-    "message": "URL เครื่องมือค้นหาสำหรับการลาก",
-    "description": "Drag search engine URL setting"
+  "dragSearchEngineSlotLabel": {
+    "message": "รายการที่แก้ไข",
+    "description": "Label for drag search engine slot selector"
+  },
+  "dragSearchSlotDefault": {
+    "message": "ค่าเริ่มต้น (สำรอง)",
+    "description": "Default search URL slot in drag search editor"
+  },
+  "dragSearchEngineUrlForSlot": {
+    "message": "URL ของเครื่องมือค้นหา",
+    "description": "Label for single drag search URL field"
+  },
+  "dragSearchEnginePerDirectionHelp": {
+    "message": "เลือก «ค่าเริ่มต้น» หรือทิศทางการลากในรายการ แล้วแก้ URL ที่เกี่ยวข้อง ทิศทางว่างจะใช้ค่าเริ่มต้น ใช้เฉพาะการค้นหาข้อความที่ลาก",
+    "description": "Help text for unified drag search engine editor"
   },
   "linkPreview": {
     "message": "แสดงตัวอย่าง",
@@ -424,7 +1004,7 @@
     "description": "Quick navigation hover tooltip"
   },
   "linkPreviewHint": {
-    "message": "วางเมาส์ + กดปุ่มเพื่อแสดงหน้าต่าง",
+    "message": "วางเมาส์เหนือและใช้ตัวกระตุ้นเพื่อแสดงป๊อปอัป",
     "description": "Popup view hint"
   },
   "enableLinkPreview": {
@@ -495,28 +1075,52 @@
     "message": "ใช้ {q} สำหรับคำค้นหา ตัวอย่างรูปแบบ:",
     "description": "Search engine examples description"
   },
+  "searchExampleUrlClickHint": {
+    "message": "คลิก URL ตัวอย่างเพื่อเติมช่องด้านบนและบันทึก",
+    "description": "Tooltip for example search engine URLs (click to fill)"
+  },
+  "searchEngineExamplesUrlClickHint": {
+    "message": "เคล็ดลับ: คลิก URL ตัวอย่างเพื่อเติมช่องด้านบนและบันทึก",
+    "description": "Visible hint under search engine examples (click URL to fill field above and save)"
+  },
   "googleExample": {
-    "message": "ค้นหาด้วย Google: https://www.google.co.th/search?q={q}",
+    "message": "ค้นหาด้วย Google:",
+    "description": "Google search example"
+  },
+  "googleExampleUrl": {
+    "message": "https://www.google.co.th/search?q={q}",
     "description": "Google search example"
   },
   "googleTranslateExample": {
-    "message": "Google แปลภาษา: https://translate.google.co.th/?sl=auto&tl=th&text={q}&op=translate",
+    "message": "Google แปลภาษา:",
+    "description": "Google translate example"
+  },
+  "googleTranslateExampleUrl": {
+    "message": "https://translate.google.co.th/?sl=auto&tl=th&text={q}&op=translate",
     "description": "Google translate example"
   },
   "localSearchExample": {
-    "message": "ค้นหาด้วย Sanook: https://search.sanook.com/search/?q={q}",
+    "message": "ค้นหาด้วย Sanook:",
+    "description": "Local search example"
+  },
+  "localSearchExampleUrl": {
+    "message": "https://search.sanook.com/search/?q={q}",
     "description": "Local search example"
   },
   "bingExample": {
-    "message": "ค้นหาด้วย Bing: https://www.bing.com/search?q={q}&setlang=th",
+    "message": "ค้นหาด้วย Bing:",
+    "description": "Bing search example"
+  },
+  "bingExampleUrl": {
+    "message": "https://www.bing.com/search?q={q}&setlang=th",
     "description": "Bing search example"
   },
   "wheelTip": {
-    "message": "ใช้ล้อเมาส์เพื่อปรับค่า",
+    "message": "ชี้ค้างที่แถวนี้ประมาณ 1.5 วินาที แล้วใช้ล้อเลื่อนเพื่อปรับ",
     "description": "Wheel tip"
   },
   "modifierKeyDelayTip": {
-    "message": "เมื่อใช้ปุ่มกด ความล่าช้าสูงสุดจำกัดที่ 300 มิลลิวินาที",
+    "message": "การหน่วงเวลาเริ่มหลังจากตรงตามเงื่อนไขการกระตุ้น; เพิ่มค่าเพื่อหลีกเลี่ยงการแสดงตัวอย่างโดยไม่ตั้งใจ",
     "description": "Modifier key delay tip"
   },
   "welcomeTitle": {
@@ -524,12 +1128,8 @@
     "description": "Welcome page title"
   },
   "welcomeDescription": {
-    "message": "ขอบคุณที่ติดตั้งส่วนขยายท่าทางเมาส์! ส่วนขยายนี้มีฟีเจอร์ท่าทางเมาส์ที่หลากหลาย การจัดการแท็บอัจฉริยะ ความสามารถในการดูแบบป๊อปอัพ และประสบการณ์การมองเห็นที่ดียิ่งขึ้นเพื่อช่วยให้คุณท่องเว็บได้อย่างมีประสิทธิภาพมากขึ้น เราได้ปรับปรุงอัลกอริทึมการจดจำท่าทางด้วยความทนทานต่อข้อผิดพลาดที่เพิ่มขึ้น ทำให้สามารถจดจำท่าทางได้อย่างถูกต้องแม้ว่าจะวาดไม่สมบูรณ์ ฟีเจอร์ดูแบบป๊อปอัพใหม่ช่วยให้คุณดูเนื้อหาลิงก์ในหน้าต่างป๊อปอัพโดยไม่ต้องเปลี่ยนแท็บ ส่วนขยายนี้ยังรองรับ 29 ภาษาและธีมสว่าง/มืดเพื่อประสบการณ์ผู้ใช้ที่ดียิ่งขึ้นด้วย.",
+    "message": "ขอบคุณที่ติดตั้ง Mouse Gesture! กดปุ่มขวาค้างแล้วลากเพื่อนำทาง จัดการแท็บ และเลื่อนหน้า หรือกดขวาหรือซ้ายค้างพร้อมล้อ (ตั้งชุดคำสั่งเพิ่มได้ในการตั้งค่า) เพื่อทางลัดเสริม — การจดจำยังทนต่อความคลาดเคลื่อนได้แม้ขณะโหลดหน้า Super Drag เปิดลิงก์ รูป และค้นหาข้อความด้วยกฎตามทิศทาง (เบื้องหน้า เบื้องหลัง แบ่งหน้าจอ คัดลอกไปคลิปบอร์ด ฯลฯ) Popup View แสดงตัวอย่างลิงก์หรือค้นข้อความที่เลือกในหน้าต่างเล็ก ทางเลือก: แสดงตัวอย่างรูปเมื่อชี้ (โหมดขยาย) ตรวจจับแท็บซ้ำพร้อมปิดอัตโนมัติ เลื่อนลื่น ป้ายนับแท็บบนแถบเครื่องมือ และปลดล็อกหน้าในเว็บที่จำกัด ตั้งค่าจากแถบเครื่องมือ (ป๊อปอัป แผงข้าง หรือหน้าต่างแยก) ส่งออก/นำเข้า ซิงค์กับบัญชีเบราว์เซอร์ รองรับ 29 ภาษาและธีมสว่าง/มืด",
     "description": "Welcome page description"
-  },
-  "gesturesDescription": {
-    "message": "ต่อไปนี้เป็นท่าทางเมาส์ที่มีมาให้ที่คุณสามารถใช้ได้โดยการลากด้วยปุ่มเมาส์ขวา:",
-    "description": "Gestures description"
   },
   "extensionName": {
     "message": "ส่วนขยายท่าทางเมาส์",
@@ -539,88 +1139,48 @@
     "message": "ฟีเจอร์หลัก",
     "description": "Core features title"
   },
-  "utilitiesFeatures": {
-    "message": "เครื่องมือเสริม",
-    "description": "Utilities features title"
+  "welcomeCoreGestureBlock": {
+    "message": "ท่าทางเมาส์: กดค้างขวาแล้วลากเพื่อทำท่าทางเส้นทาง; ล้อกับขวาหรือซ้ายค้าง และชุดคลิกขณะกดขวาค้าง — ตั้งค่าใหม่ได้หลายคำสั่ง; จับแนวโน้มใจดี แม้ระหว่างโหลดหน้า",
+    "description": "Welcome page: core features gesture summary"
+  },
+  "welcomeCoreSuperDragBlock": {
+    "message": "Super Drag: ลากลิงก์และรูปไปแท็บใหม่ ลากข้อความที่เลือกเพื่อค้น ทิศทางกำหนดวิธีเปิดแท็บ ค่าเริ่มต้นเปิดเบื้องหลัง",
+    "description": "Welcome page: core features super drag summary"
+  },
+  "welcomeCorePopupViewBlock": {
+    "message": "มุมมองป๊อปอัป: กดปุ่มทริกเกอร์ (ค่าเริ่มต้น Shift) ค้างบนลิงก์เพื่อดูตัวอย่างในหน้าต่างเล็ก หลังเลือกข้อความกดปุ่มเพื่อค้นทันทีด้วยเครื่องมือค้นหาที่กำหนดเอง",
+    "description": "Welcome page: core features popup view summary"
   },
   "usageTips": {
     "message": "เคล็ดลับการใช้งาน",
     "description": "Usage tips title"
   },
-  "smartGestureRecognition": {
-    "message": "การจดจำท่าทางอัจฉริยะ: จดจำท่าทางได้อย่างถูกต้องแม้จะไม่สมบูรณ์ ทำงานได้ระหว่างการโหลดหน้า",
-    "description": "Smart gesture recognition description"
-  },
-  "tabManagementTitle": {
-    "message": "การจัดการแท็บ",
-    "description": "Tab management title"
-  },
-  "tabManagementDesc": {
-    "message": ": การตรวจจับซ้ำอัจฉริยะ ปิดอัตโนมัติแบบเลือกได้ การเพิ่มประสิทธิภาพหน่วยความจำเป็นระยะ",
-    "description": "Tab management description"
-  },
-  "superDragTitle": {
-    "message": "ลากแบบซูเปอร์",
-    "description": "Super drag title"
-  },
-  "superDragDesc": {
-    "message": ": ลากลิงก์และรูปภาพไปยังแท็บใหม่ ลากข้อความที่เลือกเพื่อค้นหา",
-    "description": "Super drag description"
-  },
-  "linkPreviewTitle": {
-    "message": "แสดงตัวอย่าง",
-    "description": "Link preview title"
-  },
-  "linkPreviewDesc": {
-    "message": ": กดปุ่มกด (ค่าเริ่มต้น: Shift) ค้างไว้ขณะวางเมาส์เหนือลิงก์เพื่อแสดงตัวอย่างหน้าปลายทางในหน้าต่างป๊อปอัพ",
-    "description": "Link preview description"
-  },
-  "textSelectionPreview": {
-    "message": "เลือกข้อความและกดปุ่มกดเพื่อค้นหาทันทีในหน้าต่างป๊อปอัพ รองรับเครื่องมือค้นหาที่กำหนดเอง",
-    "description": "Text selection preview description"
-  },
   "previewTip": {
-    "message": "คุณสามารถเปิดหน้าต่างป๊อปอัพได้หลายหน้าต่างพร้อมกัน",
+    "message": "เปิดตัวอย่างหลายหน้าต่างค้างไว้เพื่อเปรียบเทียบ",
     "description": "Preview tip"
-  },
-  "dragDirection": {
-    "message": "ปรับแต่งทิศทางการลากเพื่อกำหนดวิธีการเปิดแท็บ: เปิดในเบื้องหลังเป็นค่าเริ่มต้น",
-    "description": "Drag direction description"
   },
   "debugPanelTitle": {
     "message": "ข้อมูลการแก้ไขข้อบกพร่องท่าทางเมาส์",
     "description": "Debug panel title"
   },
   "debugPanelDesc": {
-    "message": ": กด Alt+D เพื่อเปิด วิเคราะห์ข้อมูลท่าทางแบบเรียลไทม์ รักษาสถานะ",
+    "message": "กด Alt+D เพื่อเปิดแผงดีบัก วิเคราะห์ข้อมูลท่าทางแบบเรียลไทม์ และคงสถานะไว้",
     "description": "Debug panel description"
   },
-  "oneClickCopy": {
-    "message": "คัดลอกข้อมูลการแก้ไขข้อบกพร่องด้วยการคลิกเดียวเพื่อแชร์ได้ง่าย รองรับหลายภาษา",
-    "description": "One click copy description"
-  },
-  "mediaPreview": {
-    "message": "การแสดงตัวอย่างสื่อที่ยกระดับขึ้น: ปรับปรุงเอฟเฟกต์การวางเมาส์เหนือรูปภาพและเพิ่มประสิทธิภาพรูปภาพโปสเตอร์วิดีโอ",
-    "description": "Media preview description"
-  },
-  "adaptiveTheme": {
-    "message": "ธีมที่ปรับตัวได้: ปรับแต่งสไตล์การมองเห็นตามพื้นหลังของหน้า รองรับโหมดสว่าง/มืด",
-    "description": "Adaptive theme description"
-  },
   "gestureTrail": {
-    "message": "เส้นทางท่าทางแสดงบนหน้าจอพร้อมสีและความกว้างที่ปรับแต่งได้",
+    "message": "เส้นทางบนหน้าจอและคำใบ้ท่าทาง (ตัวเลือก) ปรับสีและความหนาในการตั้งค่า",
     "description": "Gesture trail description"
   },
   "clickIcon": {
-    "message": "คลิกไอคอนส่วนขยายเพื่อเปิด/ปิดฟีเจอร์ ตั้งค่าภาษา ธีม และอื่นๆ",
+    "message": "แถบเครื่องมือ: ป๊อปอัป แผงด้านข้าง (Chrome/Edge) หรือหน้าต่างตั้งค่าแยก ฟีเจอร์ ภาษา ธีม ส่งออก/นำเข้า",
     "description": "Click icon description"
   },
   "languageSupport": {
-    "message": "รองรับ 29 ภาษา, ปรับเปลี่ยนอัตโนมัติตามภาษาของเบราว์เซอร์",
+    "message": "รองรับ 29 ภาษาสำหรับอินเทอร์เฟซ; ใช้การตั้งค่าที่บันทึกไว้หรือตามภาษาของเบราว์เซอร์",
     "description": "Language support description"
   },
   "enableAutoClose": {
-    "message": "เปิดใช้ฟีเจอร์ปิดแท็บซ้ำโดยอัตโนมัติเพื่อลดการใช้ทรัพยากรของเบราว์เซอร์อย่างมีนัยสำคัญ",
+    "message": "เมื่อเปิดตรวจจับซ้ำ ปิด URL ซ้ำอัตโนมัติได้ (ตัวเลือก)",
     "description": "Enable auto close description"
   },
   "rightClickMacLinux": {
@@ -634,14 +1194,6 @@
   "duplicateTabsDetected": {
     "message": "พบแท็บซ้ำ $1 แท็บ",
     "description": "Duplicate tabs detected notification title"
-  },
-  "duplicateTabsCount": {
-    "message": "มีแท็บซ้ำ $1 แท็บ",
-    "description": "Duplicate tabs count message"
-  },
-  "duplicateTabsSingle": {
-    "message": "มีแท็บซ้ำ 1 แท็บ",
-    "description": "Single duplicate tab message"
   },
   "autoClosedTabs": {
     "message": "ปิดแท็บซ้ำ $1 แท็บโดยอัตโนมัติ",
@@ -659,61 +1211,9 @@
     "message": "แท็บไม่มีชื่อ",
     "description": "Untitled tab"
   },
-  "morePages": {
-    "message": "...และอีก $1 หน้า",
-    "description": "More pages tip"
-  },
-  "errorShowDuplicateTabs": {
-    "message": "เกิดข้อผิดพลาดในการแสดงการแจ้งเตือนแท็บซ้ำ:",
-    "description": "Error showing duplicate tabs notification"
-  },
-  "errorSendCloseRequest": {
-    "message": "เกิดข้อผิดพลาดในการส่งคำขอปิด:",
-    "description": "Error sending close request"
-  },
-  "errorCloseDuplicateTabs": {
-    "message": "เกิดข้อผิดพลาดในการปิดแท็บซ้ำ:",
-    "description": "Error closing duplicate tabs"
-  },
-  "errorSendIgnoreRequest": {
-    "message": "เกิดข้อผิดพลาดในการส่งคำขอละเว้น:",
-    "description": "Error sending ignore request"
-  },
-  "errorIgnoreDuplicateTabs": {
-    "message": "เกิดข้อผิดพลาดในการละเว้นแท็บซ้ำ:",
-    "description": "Error ignoring duplicate tabs"
-  },
-  "errorUpdateDebugPanel": {
-    "message": "เกิดข้อผิดพลาดในการอัปเดตแผงแก้ไขข้อบกพร่อง:",
-    "description": "Error updating debug panel"
-  },
   "errorDetectBackgroundColor": {
     "message": "เกิดข้อผิดพลาดในการตรวจจับสีพื้นหลัง:",
     "description": "Error detecting background color"
-  },
-  "errorDetectImageBorder": {
-    "message": "เกิดข้อผิดพลาดในการตรวจจับขอบมนของรูปภาพ:",
-    "description": "Error detecting image border radius"
-  },
-  "errorSetMutationObserver": {
-    "message": "เกิดข้อผิดพลาดในการตั้งค่า mutation observer:",
-    "description": "Error setting mutation observer"
-  },
-  "errorCheckElementVisibility": {
-    "message": "เกิดข้อผิดพลาดในการตรวจสอบการมองเห็นขององค์ประกอบ:",
-    "description": "Error checking element visibility"
-  },
-  "errorProcessBorderRadius": {
-    "message": "เกิดข้อผิดพลาดในการประมวลผลขอบมน:",
-    "description": "Error processing border radius"
-  },
-  "errorDetectImageBackground": {
-    "message": "เกิดข้อผิดพลาดในการตรวจจับพื้นหลังของรูปภาพ:",
-    "description": "Error detecting image background"
-  },
-  "errorShowAutoCloseNotification": {
-    "message": "เกิดข้อผิดพลาดในการแสดงการแจ้งเตือนการปิดอัตโนมัติที่สำเร็จ:",
-    "description": "Error showing auto-close success notification"
   },
   "noForwardPage": {
     "message": "ไม่มีหน้าถัดไปในประวัติ",
@@ -743,10 +1243,6 @@
     "message": "ท่าทางไม่ถูกต้อง",
     "description": "Invalid gesture message"
   },
-  "nextPage": {
-    "message": "หน้าถัดไป",
-    "description": "Next page action"
-  },
   "errorReadPixel": {
     "message": "เกิดข้อผิดพลาดในการอ่านพิกเซล:",
     "description": "Error reading pixel message"
@@ -758,10 +1254,6 @@
   "errorCanvasDraw": {
     "message": "เกิดข้อผิดพลาดในการวาดบน canvas:",
     "description": "Error drawing on canvas message"
-  },
-  "errorAccessIframe": {
-    "message": "เกิดข้อผิดพลาดในการเข้าถึง iframe:",
-    "description": "Error accessing iframe message"
   },
   "errorMutationObserver": {
     "message": "เกิดข้อผิดพลาดในการตั้งค่า mutation observer:",
@@ -791,6 +1283,10 @@
     "message": "การตั้งค่าระบบ",
     "description": "Debug panel system settings section"
   },
+  "debugConsoleLog": {
+    "message": "บันทึกคอนโซล",
+    "description": "Debug panel console log toggle label"
+  },
   "debugAngleThreshold": {
     "message": "เกณฑ์มุม",
     "description": "Debug panel angle threshold setting"
@@ -810,6 +1306,46 @@
   "debugMinGestureComplexity": {
     "message": "ความซับซ้อนของท่าทางขั้นต่ำ",
     "description": "Debug panel minimum gesture complexity setting"
+  },
+  "debugMinMovementToStartGesture": {
+    "message": "การเคลื่อนที่ขั้นต่ำเพื่อเริ่ม",
+    "description": "การตั้งค่าแผงดีบัก: การเคลื่อนที่ขั้นต่ำเพื่อเริ่มติดตามท่าทาง"
+  },
+  "debugSmoothingFactor": {
+    "message": "ปัจจัยการทำให้ราบรื่น",
+    "description": "การตั้งค่าแผงดีบัก: ปัจจัยการทำให้เส้นทางและการรู้จำราบรื่น"
+  },
+  "debugAngleThresholdHelp": {
+    "message": "ควบคุมความเข้มงวดในการจัดการเคลื่อนที่เป็นแนวนอนหรือแนวตั้ง ค่าสูงต้องการทิศทางที่ตรงกว่า ค่าต่ำยอมรับการเคลื่อนที่แนวทแยงมากขึ้น",
+    "description": "คำอธิบายค่าเกณฑ์มุมในแผงดีบัก"
+  },
+  "debugDirectionChangeThresholdHelp": {
+    "message": "ควบคุมความไวในการตรวจจับการเปลี่ยนทิศทาง ค่าต่ำจับการเลี้ยวได้ง่ายขึ้น ค่าสูงจะละเว้นการสั่นเล็กน้อย",
+    "description": "คำอธิบายค่าเกณฑ์การเปลี่ยนทิศทางในแผงดีบัก"
+  },
+  "debugMinGestureDistanceHelp": {
+    "message": "ระยะเคลื่อนที่รวมขั้นต่ำที่ต้องมีก่อนจึงจะรู้จำท่าทางได้ เพิ่มค่าเพื่อลดการเรียกใช้งานโดยไม่ตั้งใจ",
+    "description": "คำอธิบายระยะท่าทางขั้นต่ำในแผงดีบัก"
+  },
+  "debugMinDirectionSegmentLengthHelp": {
+    "message": "ความยาวขั้นต่ำของช่วงการเคลื่อนที่ที่ใช้ในการรู้จำทิศทาง เพิ่มค่าเพื่อกรองการสั่นสั้น ๆ หรือลดค่าสำหรับท่าทางสั้น",
+    "description": "คำอธิบายความยาวช่วงทิศทางขั้นต่ำในแผงดีบัก"
+  },
+  "debugMinGestureComplexityHelp": {
+    "message": "เกณฑ์ความซับซ้อนของทิศทางก่อนถือว่าเส้นทางเป็นการขีดเขียนหรือไม่ถูกต้อง ค่าสูงยอมรับการเลี้ยวได้มากขึ้น",
+    "description": "คำอธิบายความซับซ้อนของท่าทางในแผงดีบัก"
+  },
+  "debugMinMovementToStartGestureHelp": {
+    "message": "หลังจากกดปุ่ม ตัวชี้ต้องเคลื่อนที่อย่างน้อยจำนวนพิกเซลนี้ก่อนเริ่มติดตามท่าทาง",
+    "description": "คำอธิบายการเคลื่อนที่ขั้นต่ำเพื่อเริ่มในแผงดีบัก"
+  },
+  "debugSmoothingFactorHelp": {
+    "message": "ควบคุมการทำให้เส้นทางและจุดรู้จำราบรื่น ค่าสูงลดการสั่นแต่อาจทำให้มุมหักเฉียบดูนุ่มลง ค่าต่ำตอบสนองเร็วกว่า",
+    "description": "คำอธิบายปัจจัยการทำให้ราบรื่นในแผงดีบัก"
+  },
+  "debugConsoleLogHelp": {
+    "message": "เปิดบันทึกรายละเอียดของส่วนขยายในคอนโซล DevTools เพื่อช่วยแก้ไขปัญหา",
+    "description": "คำอธิบายบันทึกคอนโซลในแผงดีบัก"
   },
   "debugLatestGestureInfo": {
     "message": "ข้อมูลท่าทางล่าสุด",
@@ -850,10 +1386,6 @@
   "debugMergedDirections": {
     "message": "ทิศทางที่รวมแล้ว",
     "description": "Debug panel merged directions"
-  },
-  "debugDirectionDistances": {
-    "message": "ระยะทางทิศทาง",
-    "description": "Debug panel direction distances"
   },
   "debugFinalResult": {
     "message": "ผลลัพธ์สุดท้าย",
@@ -927,9 +1459,17 @@
     "message": "แสดงจำนวนแท็บ",
     "description": "Show tab count badge option"
   },
-  "splitViewAction": {
-    "message": "มุมมองแยก",
-    "description": "เปิดในหน้าต่างมุมมองแยก"
+  "unlockPageRestrictions": {
+    "message": "ปลดข้อจำกัดการคัดลอก/วาง/คลิกขวาและการติดตามแท็บ",
+    "description": "Setting: unlock page interaction limits"
+  },
+  "unlockPageRestrictionsTitle": {
+    "message": "ลบการบล็อกการคัดลอก วาง เมนูคลิกขวา และการเลือกข้อความ ลดการติดตาม blur/visibilitychange ทำงานในบริบทหน้า รองรับ iframe และ Shadow DOM โหลดหน้าใหม่หลังเปิดใช้",
+    "description": "Tooltip for unlock page restrictions"
+  },
+  "unlockPageRestrictionsOffReloadConfirm": {
+    "message": "ตรรกะที่ฉีดในแท็บที่เปิดอาจยังมีผลจนกว่าจะโหลดใหม่\n\nโหลดแท็บปัจจุบันตอนนี้หรือไม่?",
+    "description": "Body text for unlock-off confirmation dialog"
   },
   "splitViewLeft": {
     "message": "แยก - ซ้าย",
@@ -946,5 +1486,165 @@
   "splitViewDown": {
     "message": "แยก - ล่าง",
     "description": "มุมมองแยก หน้าต่างใหม่ครึ่งล่าง"
+  },
+  "unlockPageRestrictionsOffTitle": {
+    "message": "ปิดการปลดล็อกหน้าแล้ว",
+    "description": "Title for unlock-off confirmation dialog"
+  },
+  "unlockPageRestrictionsReloadTab": {
+    "message": "โหลดแท็บใหม่",
+    "description": "Reload tab button in unlock-off dialog"
+  },
+  "unlockPageRestrictionsNotNow": {
+    "message": "ไว้ทีหลัง",
+    "description": "Dismiss unlock-off dialog without reload"
+  },
+  "welcomeBulletImagePreview": {
+    "message": "แสดงตัวอย่างรูป: ขยายเมื่อชี้ (ทางเลือก) และโหมดขยายสำหรับเลย์เอาต์ซับซ้อน",
+    "description": "Welcome page: image hover preview bullet"
+  },
+  "welcomeBulletPageUnlock": {
+    "message": "ปลดล็อกหน้า: ผ่อนข้อจำกัดคัดลอก วาง คลิกขวา ฯลฯ ได้ตามต้องการ — เปิดในตั้งค่าและรีเฟรชหน้าหากแจ้ง",
+    "description": "Welcome page: page unlock bullet"
+  },
+  "welcomeBulletDisabledSites": {
+    "message": "รายโดเมน: โดเมนในรายการปิดท่าทาง Super Drag ป๊อปอัป และปลดล็อกพร้อมกัน",
+    "description": "Welcome page: per-site disable bullet"
+  },
+  "welcomeBulletSplitScroll": {
+    "message": "มุมมองแบ่ง: เมื่อเปิดลิงก์แบ่งหน้าจอ ซิงค์การเลื่อนระหว่างสองหน้าต่างได้ (รวมแนวนอน)",
+    "description": "Welcome page: split scroll sync bullet"
+  },
+  "welcomeBulletScreenshot": {
+    "message": "ภาพหน้าจอ: พื้นที่ที่มองเห็น ทั้งหน้า เลื่อนต่อภาพ พื้นที่ตามเส้นทาง ทางลัด คลิปบอร์ด ตัวอย่าง ประวัติในเครื่อง (0 = ไม่จำกัด)",
+    "description": "Welcome page: screenshot feature bullet"
+  },
+  "welcomeTipScreenshot": {
+    "message": "เปิดภาพหน้าจอตามค่าเริ่มต้น ตั้งทางลัดสำหรับพื้นที่ที่มองเห็น ทั้งหน้า และการเลื่อน ใช้พื้นที่ตามเส้นทาง คัดลอกอัตโนมัติ ตัวอย่าง และประวัติได้",
+    "description": "Welcome page: screenshot usage tip"
+  },
+  "trailColorPickerPresets": {
+    "message": "ค่าที่ตั้งไว้",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerRecent": {
+    "message": "ใช้ล่าสุด",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerEyedropper": {
+    "message": "หยิบสีจากภาพ",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerEyedropperActive": {
+    "message": "คลิกเพื่อหยิบสี · ล้อซูมแว่นขยาย",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerSyncTrail": {
+    "message": "บันทึกเป็นสีเส้นทาง",
+    "description": "Trail color picker UI"
+  },
+  "superDragCompassPosCompassHub": {
+    "message": "จุดลาก",
+    "description": "Compass hub aligned to drag start"
+  },
+  "superDragCompassPosCompassScreenCenter": {
+    "message": "กลางหน้าจอ",
+    "description": "Compass fixed at viewport center"
+  },
+  "superDragCompassPosCompassScreenTop": {
+    "message": "บน",
+    "description": "Compass fixed at top of viewport"
+  },
+  "superDragCompassPosCompassScreenRight": {
+    "message": "ขวา",
+    "description": "Compass fixed at right of viewport"
+  },
+  "superDragCompassPosCompassScreenBottom": {
+    "message": "ล่าง",
+    "description": "Compass fixed at bottom of viewport"
+  },
+  "superDragCompassPosCompassScreenLeft": {
+    "message": "ซ้าย",
+    "description": "Compass fixed at left of viewport"
+  },
+  "superDragCompassPosCompassHidden": {
+    "message": "ซ่อน",
+    "description": "Do not show compass"
+  },
+  "addCurrentSiteToDisabledSites": {
+    "message": "เพิ่มเว็บไซต์ปัจจุบัน",
+    "description": "Button: add the active tab domain to disabled sites"
+  },
+  "addCurrentSiteToDisabledSitesTitle": {
+    "message": "เพิ่มโดเมนของแท็บปัจจุบันไปยังเว็บไซต์ที่ปิดใช้",
+    "description": "Tooltip for add-current-site button"
+  },
+  "addDisabledSite": {
+    "message": "เพิ่ม",
+    "description": "Button: add a typed disabled site entry"
+  },
+  "disabledSiteInputPlaceholder": {
+    "message": "โดเมนหรือ URL แบบเต็ม เช่น youtube.com",
+    "description": "Placeholder for the disabled site input"
+  },
+  "disabledSitesEmpty": {
+    "message": "ยังไม่มีเว็บไซต์ที่ปิดใช้",
+    "description": "Empty state for disabled sites list"
+  },
+  "removeDisabledSite": {
+    "message": "ลบเว็บไซต์นี้",
+    "description": "Tooltip/aria label for remove disabled site button"
+  },
+  "disabledSiteInvalid": {
+    "message": "ป้อนโดเมนหรือ URL ที่ถูกต้อง",
+    "description": "Error shown when disabled site input is invalid"
+  },
+  "disabledSiteAlreadyExists": {
+    "message": "มีเว็บไซต์นี้อยู่แล้ว",
+    "description": "Error shown when adding a duplicate disabled site"
+  },
+  "disabledSitesLimitReached": {
+    "message": "ถึงขีดจำกัดเว็บไซต์ที่ปิดใช้แล้ว",
+    "description": "Error shown when disabled sites list reaches the maximum size"
+  },
+  "currentSiteUnsupported": {
+    "message": "แท็บปัจจุบันไม่มีโดเมนที่รองรับ",
+    "description": "Error shown when current tab URL cannot be added to disabled sites"
+  },
+  "customKey": {
+    "message": "ปุ่มกำหนดเอง",
+    "description": "Custom trigger key option"
+  },
+  "previewTriggerMode": {
+    "message": "โหมดการกระตุ้น",
+    "description": "Popup view trigger mode setting"
+  },
+  "previewTriggerHold": {
+    "message": "กดปุ่มกระตุ้นค้างไว้",
+    "description": "Hold trigger key option"
+  },
+  "previewTriggerDouble": {
+    "message": "กดปุ่มกระตุ้นสองครั้ง",
+    "description": "Double-press trigger key option"
+  },
+  "previewCustomKey": {
+    "message": "ปุ่มกำหนดเอง",
+    "description": "Popup view custom trigger key setting"
+  },
+  "previewCustomKeyPlaceholder": {
+    "message": "คลิกแล้วกดปุ่ม",
+    "description": "Popup view custom trigger key placeholder"
+  },
+  "previewCustomKeyTitle": {
+    "message": "คลิกที่นี่ แล้วกดปุ่มที่ไม่ใช่ปุ่มปรับแต่ง กด Esc เพื่อล้าง",
+    "description": "Popup view custom trigger key title"
+  },
+  "unlimited": {
+    "message": "ไม่จำกัด",
+    "description": "Unlimited value label"
+  },
+  "settingsFontSize": {
+    "message": "ขนาดตัวอักษรการตั้งค่า",
+    "description": "Header button: adjust settings font size"
   }
 }

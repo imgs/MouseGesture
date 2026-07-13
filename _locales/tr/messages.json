@@ -4,7 +4,7 @@
     "description": "Eklentinin adı"
   },
   "extDesc": {
-    "message": "Fare hareketleri, süper sürükleme işlevselliği ve popup görünümünü destekleyen bir Chrome/Edge eklentisi",
+    "message": "Fare hareketleri, süper sürükleme, resim ve bağlantı önizlemesi ve daha fazlası.",
     "description": "Eklenti açıklaması"
   },
   "title": {
@@ -35,13 +35,21 @@
     "message": "Sola Sürükle",
     "description": "Sola sürükleme eylemi"
   },
-  "openInForeground": {
-    "message": "Bağlantıyı Ön Planda Aç",
-    "description": "Bağlantıyı ön planda açma eylemi"
+  "dragUpRight": {
+    "message": "Yukarı sağa sürükle",
+    "description": "Super drag diagonal direction"
   },
-  "openInBackground": {
-    "message": "Bağlantıyı Arka Planda Aç",
-    "description": "Bağlantıyı arka planda açma eylemi"
+  "dragDownRight": {
+    "message": "Aşağı sağa sürükle",
+    "description": "Super drag diagonal direction"
+  },
+  "dragDownLeft": {
+    "message": "Aşağı sola sürükle",
+    "description": "Super drag diagonal direction"
+  },
+  "dragUpLeft": {
+    "message": "Yukarı sola sürükle",
+    "description": "Super drag diagonal direction"
   },
   "superDragDescription": {
     "message": "Süper Sürükleme bağlantılar, resimler ve seçili metinler için çalışır. Her hareket yönü (yukarı/aşağı/sol/sağ) için açma yöntemini ayarlayabilirsiniz; ön plan, arka plan veya bölünmüş görünüm (sol/sağ/yukarı/aşağı) dahil.",
@@ -64,52 +72,76 @@
     "description": "Aşağı yön"
   },
   "downThenRight": {
-    "message": "Aşağı Sonra Sağ",
+    "message": "Aşağı sonra sağ",
     "description": "Aşağı sonra sağ hareketi"
   },
   "leftThenUp": {
-    "message": "Sol Sonra Yukarı",
+    "message": "Sol sonra yukarı",
     "description": "Sol sonra yukarı hareketi"
   },
   "rightThenUp": {
-    "message": "Sağ Sonra Yukarı",
+    "message": "Sağ sonra yukarı",
     "description": "Sağ sonra yukarı hareketi"
   },
   "rightThenDown": {
-    "message": "Sağ Sonra Aşağı",
+    "message": "Sağ sonra aşağı",
     "description": "Sağ sonra aşağı hareketi"
   },
   "upThenLeft": {
-    "message": "Yukarı Sonra Sol",
+    "message": "Yukarı sonra sol",
     "description": "Yukarı sonra sol hareketi"
   },
   "upThenRight": {
-    "message": "Yukarı Sonra Sağ",
+    "message": "Yukarı sonra sağ",
     "description": "Yukarı sonra sağ hareketi"
   },
   "downThenLeft": {
-    "message": "Aşağı Sonra Sol",
+    "message": "Aşağı sonra sol",
     "description": "Aşağı sonra sol hareketi"
   },
   "leftThenDown": {
-    "message": "Sol Sonra Aşağı",
+    "message": "Sol sonra aşağı",
     "description": "Sol sonra aşağı hareketi"
   },
   "upThenDown": {
-    "message": "Yukarı Sonra Aşağı",
+    "message": "Yukarı sonra aşağı",
     "description": "Yukarı sonra aşağı hareketi"
   },
   "downThenUp": {
-    "message": "Aşağı Sonra Yukarı",
+    "message": "Aşağı sonra yukarı",
     "description": "Aşağı sonra yukarı hareketi"
   },
   "leftThenRight": {
-    "message": "Sol Sonra Sağ",
+    "message": "Sol sonra sağ",
     "description": "Sol sonra sağ hareketi"
   },
   "rightThenLeft": {
-    "message": "Sağ Sonra Sol",
+    "message": "Sağ sonra sol",
     "description": "Sağ sonra sol hareketi"
+  },
+  "rightHoldWheelUp": {
+    "message": "Sağ basılı tut + tekerlek yukarı",
+    "description": "Sağ düğmeyi basılı tut ve tekerlek yukarı"
+  },
+  "rightHoldWheelDown": {
+    "message": "Sağ basılı tut + tekerlek aşağı",
+    "description": "Sağ düğmeyi basılı tut ve tekerlek aşağı"
+  },
+  "leftHoldWheelUp": {
+    "message": "Sol tuşa basılı + teker yukarı",
+    "description": "Sol tuş ve teker yukarı"
+  },
+  "leftHoldWheelDown": {
+    "message": "Sol tuşa basılı + teker aşağı",
+    "description": "Sol tuş ve teker aşağı"
+  },
+  "rightHoldLeftClick": {
+    "message": "Sağ basılı tut + sol tık",
+    "description": "Sağ düğmeyi basılı tut ve sol tık"
+  },
+  "leftHoldRightClick": {
+    "message": "Sola basılı tut + sağ tık",
+    "description": "Sol düğmeyi basılı tut ve sağ tıkla"
   },
   "back": {
     "message": "Geri",
@@ -158,6 +190,18 @@
   "prevTab": {
     "message": "Önceki Sekme",
     "description": "Önceki sekme eylemi"
+  },
+  "previousActiveTab": {
+    "message": "Önceki etkin sekme",
+    "description": "Hareket eylemi: daha önce etkin olan sekmeye geç"
+  },
+  "goToParentUrl": {
+    "message": "Üst URL",
+    "description": "Hareket eylemi: üst URL yoluna git"
+  },
+  "goToRootUrl": {
+    "message": "Kök URL",
+    "description": "Hareket eylemi: sitenin kök URL’sine git"
   },
   "nextTab": {
     "message": "Sonraki Sekme",
@@ -211,6 +255,14 @@
     "message": "Tam Ekranı Aç/Kapat",
     "description": "Toggle fullscreen action"
   },
+  "zoomIn": {
+    "message": "Yakınlaştır",
+    "description": "Geçerli sekmenin yakınlaştırmasını artır"
+  },
+  "zoomOut": {
+    "message": "Uzaklaştır",
+    "description": "Geçerli sekmenin yakınlaştırmasını azalt"
+  },
   "closeTabsToLeft": {
     "message": "Soldaki Sekmeleri Kapat",
     "description": "Close tabs to left action"
@@ -218,6 +270,474 @@
   "reloadAllTabs": {
     "message": "Tüm Sekmeleri Yeniden Yükle",
     "description": "Reload all tabs action"
+  },
+  "stopLoadingAllTabs": {
+    "message": "Tüm sekmelerin yüklemesini durdur",
+    "description": "Stop loading in all tabs"
+  },
+  "screenshotRegion": {
+    "message": "Ekran görüntüsü (iz bölgesi)",
+    "description": "Screenshot gesture action"
+  },
+  "screenshotRegionOrLink": {
+    "message": "Görüntü veya bağlantı aç",
+    "description": "Trail region hint when links are inside selection"
+  },
+  "trailRegionChooseTitle": {
+    "message": "Seçimdeki bağlantılar — görüntü veya aç",
+    "description": "Trail region chooser dialog title"
+  },
+  "trailRegionLinkSingle": {
+    "message": "1 bağlantı",
+    "description": "Trail region link count"
+  },
+  "trailRegionLinkMultiple": {
+    "message": "{count} bağlantı",
+    "description": "Trail region link count"
+  },
+  "trailRegionActionScreenshot": {
+    "message": "Ekran görüntüsü (S)",
+    "description": "Trail region chooser button"
+  },
+  "trailRegionActionOpenLink": {
+    "message": "Yeni sekmede aç (O)",
+    "description": "Trail region chooser button"
+  },
+  "trailRegionActionOpenLinks": {
+    "message": "Yeni sekmelerde aç (O)",
+    "description": "Trail region chooser button"
+  },
+  "trailRegionActionOpenSelected": {
+    "message": "Seçilen {n} yeni sekmede aç (O)",
+    "description": "Trail region open checked links"
+  },
+  "trailRegionActionOpenNone": {
+    "message": "Seçimi aç (O)",
+    "description": "Trail region open button when none checked"
+  },
+  "trailRegionActionCopy": {
+    "message": "Kopyala (C)",
+    "description": "Trail region chooser copy button"
+  },
+  "trailRegionActionCopySelected": {
+    "message": "Seçilen {n} kopyala (C)",
+    "description": "Trail region copy checked links"
+  },
+  "trailRegionActionCopyNone": {
+    "message": "Kopyala (C)",
+    "description": "Trail region copy button when none checked"
+  },
+  "trailRegionCopyFailed": {
+    "message": "Kopyalama başarısız",
+    "description": "Trail region copy to clipboard failed"
+  },
+  "trailRegionSelectAll": {
+    "message": "Tümünü seç",
+    "description": "Trail region link list select all"
+  },
+  "trailRegionNoLinkSelected": {
+    "message": "En az bir bağlantı seçin",
+    "description": "Trail region no selection hint"
+  },
+  "trailRegionChooseHint": {
+    "message": "Esc iptal · kopyalamak/açmak için bağlantıları işaretle · kenarları sürükleyerek boyutlandır",
+    "description": "Trail region chooser footer"
+  },
+  "trailRegionLinkOpened": {
+    "message": "Bağlantı yeni sekmede açıldı",
+    "description": "Trail region open link feedback"
+  },
+  "trailRegionLinksOpened": {
+    "message": "Bağlantılar yeni sekmelerde açıldı",
+    "description": "Trail region open links feedback"
+  },
+  "trailRegionLinksTruncated": {
+    "message": "Yalnızca ilk {n} bağlantı açıldı",
+    "description": "Trail region open links cap"
+  },
+  "screenshotScrollCaptureActive": {
+    "message": "Sayfayı elle kaydırın, sonra aynı kısayol veya Esc ile bitirip birleştirin",
+    "description": "Manual scroll capture in progress"
+  },
+  "screenshotCopied": {
+    "message": "Görüntü panoya kopyalandı",
+    "description": "Screenshot feedback"
+  },
+  "screenshotFailed": {
+    "message": "Görüntü alınamadı",
+    "description": "Screenshot feedback"
+  },
+  "screenshotNeedTrail": {
+    "message": "Bölge seçmek için daha uzun iz çizin",
+    "description": "Screenshot feedback"
+  },
+  "screenshotUnavailable": {
+    "message": "Görüntü modülü kullanılamıyor",
+    "description": "Screenshot feedback"
+  },
+  "screenshotTopFrameOnly": {
+    "message": "Tam sayfa görüntüsü yalnızca ana çerçevede",
+    "description": "Screenshot feedback"
+  },
+  "screenshotFeature": {
+    "message": "Ekran görüntüsü",
+    "description": "Screenshot settings section title"
+  },
+  "enableScreenshotFeature": {
+    "message": "Ekran görüntüsünü etkinleştir",
+    "description": "Master toggle for screenshot feature"
+  },
+  "enableScreenshotTrailCapture": {
+    "message": "İz bölgesi (döngü / kendi kesişimi)",
+    "description": "Capture when trail loops or crosses; skipped if another gesture action matches"
+  },
+  "enableScreenshotClipboard": {
+    "message": "Otomatik panoya kopyala",
+    "description": "Copy screenshot to clipboard after capture"
+  },
+  "enableScreenshotPreview": {
+    "message": "Yakalama sonrası önizleme göster",
+    "description": "Open preview window when a screenshot is captured"
+  },
+  "enableScreenshotHistory": {
+    "message": "Görüntü geçmişini kaydet",
+    "description": "Keep captured screenshots in local history"
+  },
+  "screenshotHistoryMaxCount": {
+    "message": "Geçmiş sınırı",
+    "description": "Maximum screenshot history entries to keep"
+  },
+  "screenshotHistoryMaxCountHint": {
+    "message": "0 = sınırsız; 1–200 sınırı aşınca eskileri siler",
+    "description": "Screenshot history limit hint"
+  },
+  "screenshotHistoryUnlimited": {
+    "message": "Sınırsız",
+    "description": "Label when screenshot history limit is 0"
+  },
+  "screenshotHistoryView": {
+    "message": "Geçmişi gör",
+    "description": "Open screenshot history window"
+  },
+  "screenshotHistoryTitle": {
+    "message": "Görüntü geçmişi",
+    "description": "Screenshot history window title"
+  },
+  "screenshotHistoryEmpty": {
+    "message": "Henüz görüntü yok",
+    "description": "Empty screenshot history state"
+  },
+  "screenshotHistoryClearAll": {
+    "message": "Tümünü temizle",
+    "description": "Delete all screenshot history entries"
+  },
+  "screenshotHistoryClearConfirm": {
+    "message": "Tüm görüntü geçmişi silinsin mi?",
+    "description": "Confirm clearing screenshot history"
+  },
+  "screenshotHistoryDelete": {
+    "message": "Sil",
+    "description": "Delete one screenshot history entry"
+  },
+  "screenshotHistoryPinToPage": {
+    "message": "Sayfaya sabitle",
+    "description": "Pin history thumbnail onto the web page"
+  },
+  "screenshotHistoryPinFailed": {
+    "message": "Sabitleme başarısız (hedef sekmeyi açın veya bu siteye izin verin).",
+    "description": "Error when pinning from screenshot history"
+  },
+  "screenshotHistoryCount": {
+    "message": "$1 öğe",
+    "description": "Number of items in screenshot history",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "screenshotHistoryModeViewport": {
+    "message": "Görünür alan",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeFullPage": {
+    "message": "Tam sayfa",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeRegion": {
+    "message": "Bölge",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeScroll": {
+    "message": "Elle kaydırma",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeUnknown": {
+    "message": "Ekran görüntüsü",
+    "description": "Screenshot history capture mode fallback label"
+  },
+  "screenshotDone": {
+    "message": "Görüntü hazır",
+    "description": "Hint when capture finished without clipboard copy"
+  },
+  "screenshotPreviewTitle": {
+    "message": "Görüntü önizlemesi",
+    "description": "Screenshot preview window title"
+  },
+  "screenshotPreviewClose": {
+    "message": "Kapat",
+    "description": "Close screenshot preview window"
+  },
+  "screenshotPreviewCopyAgain": {
+    "message": "Kopyala",
+    "description": "Copy screenshot to clipboard from preview window"
+  },
+  "screenshotPreviewSave": {
+    "message": "Dosya olarak kaydet",
+    "description": "Save annotated screenshot to disk"
+  },
+  "screenshotPreviewSaved": {
+    "message": "Kaydedildi",
+    "description": "Screenshot file save succeeded"
+  },
+  "screenshotPreviewPinToPage": {
+    "message": "Sayfaya sabitle",
+    "description": "Pin annotated screenshot onto the source web page"
+  },
+  "screenshotPreviewPinned": {
+    "message": "Sabitlendi",
+    "description": "Screenshot pin placed on page"
+  },
+  "screenshotPreviewPinning": {
+    "message": "Sabitleniyor…",
+    "description": "Screenshot pin in progress"
+  },
+  "screenshotPinTitle": {
+    "message": "Ekran görüntüsü",
+    "description": "Title on pinned screenshot sticker"
+  },
+  "screenshotPinClose": {
+    "message": "Sabitlemeyi kaldır",
+    "description": "Close button on pinned screenshot"
+  },
+  "screenshotPinResize": {
+    "message": "Yeniden boyutlandır",
+    "description": "Resize handle on pinned screenshot"
+  },
+  "screenshotPinZoomFit": {
+    "message": "Sığdır",
+    "description": "Fit pinned screenshot to view"
+  },
+  "screenshotPinZoomOriginal": {
+    "message": "1:1",
+    "description": "Show pinned screenshot at original pixel size"
+  },
+  "screenshotPinOrderLabel": {
+    "message": "Sabitleme $1$",
+    "description": "Pinned screenshot order number",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "screenshotPreviewLoadFailed": {
+    "message": "Önizleme yüklenemedi",
+    "description": "Screenshot preview load error"
+  },
+  "screenshotPreviewZoomFit": {
+    "message": "Sığdır",
+    "description": "Fit screenshot to preview window"
+  },
+  "screenshotPreviewZoomFitTitle": {
+    "message": "Pencereye sığdır",
+    "description": "Tooltip for fit zoom button"
+  },
+  "screenshotPreviewZoomOneToOne": {
+    "message": "1:1",
+    "description": "Actual-size zoom button label"
+  },
+  "screenshotPreviewZoomOneToOneTitle": {
+    "message": "Gerçek boyut (1:1)",
+    "description": "Tooltip for 1:1 zoom button"
+  },
+  "screenshotPreviewZoomLevel": {
+    "message": "Yakınlaştırma $1$%",
+    "description": "Current zoom percentage in preview",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "screenshotAnnotHand": {
+    "message": "El (taşı)",
+    "description": "Pan the preview by dragging"
+  },
+  "screenshotAnnotPen": {
+    "message": "Kalem",
+    "description": "Annotation tool: freehand"
+  },
+  "screenshotAnnotArrow": {
+    "message": "Ok (Shift: Y/D)",
+    "description": "Annotation tool: arrow; Shift constrains to horizontal or vertical"
+  },
+  "screenshotAnnotLine": {
+    "message": "Çizgi (Shift: Y/D)",
+    "description": "Annotation tool: line; Shift constrains to horizontal or vertical"
+  },
+  "screenshotAnnotRect": {
+    "message": "Dikdörtgen (Shift: kare)",
+    "description": "Annotation tool: rectangle; Shift draws a square"
+  },
+  "screenshotAnnotEllipse": {
+    "message": "Elips",
+    "description": "Annotation tool: ellipse"
+  },
+  "screenshotAnnotRoundRect": {
+    "message": "Yuvarlatılmış dikdörtgen",
+    "description": "Annotation tool: rounded rectangle"
+  },
+  "screenshotAnnotHighlighter": {
+    "message": "Vurgulayıcı",
+    "description": "Annotation tool: highlighter marker"
+  },
+  "screenshotAnnotHighlight": {
+    "message": "Vurgu çerçevesi",
+    "description": "Annotation tool: highlight rectangle"
+  },
+  "screenshotAnnotFillRect": {
+    "message": "Dolu dikdörtgen",
+    "description": "Annotation tool: filled rectangle"
+  },
+  "screenshotAnnotFillEllipse": {
+    "message": "Dolu elips",
+    "description": "Annotation tool: filled ellipse"
+  },
+  "screenshotAnnotBlur": {
+    "message": "Bulanıklaştır",
+    "description": "Annotation tool: blur brush"
+  },
+  "screenshotAnnotArrow2": {
+    "message": "Çift ok (Shift: Y/D)",
+    "description": "Annotation tool: line with arrowheads at both ends; Shift constrains H/V"
+  },
+  "screenshotAnnotNumber": {
+    "message": "Numara",
+    "description": "Annotation tool: sequential number markers"
+  },
+  "screenshotAnnotStampStart": {
+    "message": "Başlangıç #",
+    "description": "Starting number for sequential stamps"
+  },
+  "screenshotAnnotStampNext": {
+    "message": "Sonraki #: $1$",
+    "description": "Next number stamp to place (tooltip)",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "screenshotAnnotCrop": {
+    "message": "Kırp",
+    "description": "Annotation tool: crop image"
+  },
+  "screenshotAnnotCropApply": {
+    "message": "Kırpmayı uygula",
+    "description": "Confirm crop selection"
+  },
+  "screenshotAnnotCropCancel": {
+    "message": "İptal",
+    "description": "Cancel crop selection"
+  },
+  "screenshotAnnotText": {
+    "message": "Metin",
+    "description": "Annotation tool: text"
+  },
+  "screenshotAnnotMosaic": {
+    "message": "Mozaik",
+    "description": "Annotation tool: mosaic blur"
+  },
+  "screenshotAnnotEraser": {
+    "message": "Silgi",
+    "description": "Annotation tool: eraser"
+  },
+  "screenshotAnnotSize": {
+    "message": "Boyut",
+    "description": "Annotation stroke size"
+  },
+  "screenshotAnnotResetAll": {
+    "message": "Tüm düzenlemeleri sıfırla",
+    "description": "Clear all annotations and restore original screenshot"
+  },
+  "screenshotAnnotStepCount": {
+    "message": "$1 / $2",
+    "description": "History step indicator: current / total"
+  },
+  "screenshotAnnotStepCountTitle": {
+    "message": "Uygulanan / toplam adım (0 = orijinal görüntü)",
+    "description": "Tooltip for history step indicator"
+  },
+  "screenshotAnnotUndo": {
+    "message": "Geri al",
+    "description": "Undo annotation"
+  },
+  "screenshotAnnotRedo": {
+    "message": "Yinele",
+    "description": "Redo annotation"
+  },
+  "screenshotAnnotTextPlaceholder": {
+    "message": "Buraya yazın…",
+    "description": "Placeholder in inline text editor on screenshot preview"
+  },
+  "screenshotOptRegion": {
+    "message": "Bölge seçimi",
+    "description": "Screenshot bind row: keyboard drag rectangle region"
+  },
+  "screenshotOptViewport": {
+    "message": "Görünür alan",
+    "description": "Screenshot bind row: current visible tab area"
+  },
+  "screenshotOptFullPage": {
+    "message": "Tam sayfa",
+    "description": "Screenshot bind row: full page"
+  },
+  "screenshotOptScrollStitch": {
+    "message": "Elle kaydırma",
+    "description": "Screenshot bind row: manual scroll capture"
+  },
+  "screenshotOptOpenHistory": {
+    "message": "Geçmişi aç",
+    "description": "Screenshot bind row: keyboard shortcut to open screenshot history"
+  },
+  "screenshotHotkeyPressHint": {
+    "message": "Kısayollar: yukarıdaki alana tıklayın, sonra tuş kombinasyonu (Ctrl / Alt / Meta + harf veya rakam, veya F1–F12). Esc alanı temizler.",
+    "description": "Screenshot section footer: hotkey binding help"
+  },
+  "screenshotHotkeyPlaceholder": {
+    "message": "Ayarlamak için tıklayın",
+    "description": "Placeholder in empty screenshot hotkey fields"
+  },
+  "screenshotRegionPickHint": {
+    "message": "Alan seçmek için sürükleyin. İptal Esc.",
+    "description": "Hint while keyboard region picker is active"
+  },
+  "screenshotRegionPickFooterHint": {
+    "message": "Bölge kısayolu: dikdörtgen çizip bırakın. Bağlantı varsa görüntü veya yeni sekmeler. Esc iptal.",
+    "description": "Screenshot section footer: keyboard region picker help"
+  },
+  "screenshotRegionTooSmall": {
+    "message": "Seçim çok küçük — daha büyük alan çizin",
+    "description": "Region picker: minimum size not met"
+  },
+  "screenshotGestureIntersectHint": {
+    "message": "İz bölgesi: bir döngü veya tek kendi kesişimi, sonra bırakın. Bağlantı varsa görüntü veya yeni sekmeler. Çok döngü = karalama.",
+    "description": "Screenshot section footer: trail region capture help"
   },
   "togglePinTab": {
     "message": "Sekmeyi Sabitle/Sabitlemeyi Kaldır",
@@ -244,16 +764,16 @@
     "description": "Ayarlar başlığı"
   },
   "customizedBehavior": {
-    "message": "Engelleme listesi",
-    "description": "Block list section title"
+    "message": "Devre dışı siteler",
+    "description": "Section title for the per-site disable list"
   },
   "disableMouseGesturesForSites": {
-    "message": "Bu sitelerde fare hareketlerini ve süper sürüklemeyi devre dışı bırak",
-    "description": "Label for the list of sites where gestures and super drag are disabled"
+    "message": "Listelenen alan adlarında uzantı özelliklerini devre dışı bırak",
+    "description": "Subtitle for Disabled sites section"
   },
   "disabledSitesHint": {
-    "message": "Satır başına bir site. Alan adı (örn. youtube.com) veya tam URL.",
-    "description": "Hint for the disabled sites textarea"
+    "message": "Şunlar için geçerlidir: hareketler, süper sürükleme, bağlantı/resim önizleme, ekran görüntüleri ve sayfa kilidi açma. Geçerli siteyi ekleyin veya bir alan adı/URL girin; silmek için kaldırma işaretine tıklayın.",
+    "description": "Short hint explaining which features the Disabled sites list affects"
   },
   "enableGesture": {
     "message": "Fare Hareketlerini Etkinleştir",
@@ -279,6 +799,26 @@
     "message": "Süper Sürüklemeyi Etkinleştir",
     "description": "Süper sürüklemeyi etkinleştirme seçeneği"
   },
+  "superDragCompassPosition": {
+    "message": "8 yönlü pusula",
+    "description": "Super drag compass display and position"
+  },
+  "superDragCompassPosCompassAbove": {
+    "message": "Sürükleme noktasının üstünde",
+    "description": "Compass above drag start, centered horizontally"
+  },
+  "superDragCompassPosCompassRight": {
+    "message": "Sürükleme noktasının sağında",
+    "description": "Compass to the right of drag start, vertically centered"
+  },
+  "superDragCompassPosCompassBelow": {
+    "message": "Sürükleme noktasının altında",
+    "description": "Compass below drag start, centered horizontally"
+  },
+  "superDragCompassPosCompassLeft": {
+    "message": "Sürükleme noktasının solunda",
+    "description": "Compass to the left of drag start, vertically centered"
+  },
   "enableDragTextSearch": {
     "message": "Sürükleme Metin Aramasını Etkinleştir",
     "description": "Sürükleme metin aramasını etkinleştirme seçeneği"
@@ -287,9 +827,17 @@
     "message": "Sürüklerken resim/dosyayı otomatik indir",
     "description": "When the drag target is an image or other downloadable file, start download automatically"
   },
+  "enableImageDrag": {
+    "message": "Resim sürüklemeyi etkinleştir",
+    "description": "Control image super drag independently from image preview"
+  },
   "enableImagePreview": {
     "message": "Resim Önizlemeyi Etkinleştir",
     "description": "Resim önizlemeyi etkinleştirme seçeneği"
+  },
+  "enableImagePreviewEnhanced": {
+    "message": "Gelişmiş resim önizleme",
+    "description": "Support transparent overlay, background-image, parent lookup, etc."
   },
   "enableDuplicateCheck": {
     "message": "Yinelenen Sekmeleri Algıla",
@@ -302,10 +850,6 @@
   "enableSmoothScroll": {
     "message": "Yumuşak kaydırmayı etkinleştir",
     "description": "Enable smooth scrolling for gesture actions"
-  },
-  "save": {
-    "message": "Kaydet",
-    "description": "Kaydetme düğmesi"
   },
   "reset": {
     "message": "Sıfırla",
@@ -340,7 +884,7 @@
     "description": "Auto-sync information"
   },
   "settingsSaved": {
-    "message": "Ayarlar Kaydedildi",
+    "message": "Ayarlar Uygulandı",
     "description": "Ayarların kaydedildiği bildirimi"
   },
   "settingsReset": {
@@ -363,14 +907,6 @@
     "message": "Ayarlar Sıfırlanamadı",
     "description": "Ayarların sıfırlanamadığı hata mesajı"
   },
-  "themeLight": {
-    "message": "Açık",
-    "description": "Açık tema"
-  },
-  "themeDark": {
-    "message": "Koyu",
-    "description": "Koyu tema"
-  },
   "buyMeACoffee": {
     "message": "Bana Bir Kahve Al",
     "description": "Bağış düğmesi"
@@ -379,17 +915,33 @@
     "message": "Temayı Değiştir",
     "description": "Tema değiştirme düğmesi"
   },
-  "toggleLanguage": {
-    "message": "Dili Değiştir",
-    "description": "Dil değiştirme düğmesi"
+  "openDetachedPopupTitle": {
+    "message": "Ayarları kenar çubuğunda aç (yoksa ayrı pencere)",
+    "description": "Üst düğmesi: kenar çubuğu veya ayrı pencerede ayarlar"
+  },
+  "openDetachedWindowFromSidePanelTitle": {
+    "message": "Ayrı pencerede aç (tarayıcının yanında)",
+    "description": "Kenar çubuğu: ayrı pencere ve tarayıcı düzeni"
+  },
+  "openOptionsPageTitle": {
+    "message": "Seçenekler sayfasını aç",
+    "description": "Üst düğme: uzantının seçenekler sayfasını aç"
   },
   "donationTooltip": {
     "message": "Eğer bu işi beğendiyseniz, lütfen bana destek olun. Teşekkürler :)",
     "description": "Bağış ipucu"
   },
   "rightButtonHint": {
-    "message": "Farenin sağ düğmesini basılı tutun",
+    "message": "Sağ (yol, tekerlek, tıklar) · sol (tekerlek) basılı tutun",
     "description": "Sağ düğme ipucu"
+  },
+  "builtInGesturesListExpandHint": {
+    "message": "Tam hareket listesini genişletmek için tıklayın",
+    "description": "Tooltip on built-in gestures subtitle when list is collapsed"
+  },
+  "builtInGesturesListCollapseHint": {
+    "message": "Hareket listesini daraltmak için tıklayın",
+    "description": "Tooltip on built-in gestures subtitle when list is expanded"
   },
   "leftButtonHint": {
     "message": "Farenin sol düğmesini basılı tutun",
@@ -403,17 +955,45 @@
     "message": "Arka Planda Aç",
     "description": "Arka planda açma eylemi"
   },
+  "popupViewAction": {
+    "message": "Pencere Önizleme",
+    "description": "Super drag action: open target in popup view"
+  },
+  "incognitoAction": {
+    "message": "Gizli Pencerede Aç",
+    "description": "Open in incognito/private window"
+  },
+  "enableSplitScrollSync": {
+    "message": "Bölünmüş pencereler arasında dikey ve yatay kaydırmayı eşitle",
+    "description": "Bölünür görünümde iki pencere arasında her iki kaydırma eksenini eşle"
+  },
   "copyAction": {
     "message": "Kopyala",
     "description": "Copy selected text or link URL to clipboard"
+  },
+  "downloadAction": {
+    "message": "?ndir",
+    "description": "Super drag action: download target"
   },
   "copiedToClipboard": {
     "message": "Panoya kopyalandı",
     "description": "Hint after copy action"
   },
-  "dragSearchEngine": {
-    "message": "Sürükleme Arama Motoru URL'si",
-    "description": "Sürükleme arama motoru URL'si ayarı"
+  "dragSearchEngineSlotLabel": {
+    "message": "Düzenlenecek öğe",
+    "description": "Label for drag search engine slot selector"
+  },
+  "dragSearchSlotDefault": {
+    "message": "Varsayılan (yedek)",
+    "description": "Default search URL slot in drag search editor"
+  },
+  "dragSearchEngineUrlForSlot": {
+    "message": "Arama motoru URL’si",
+    "description": "Label for single drag search URL field"
+  },
+  "dragSearchEnginePerDirectionHelp": {
+    "message": "Listeden «Varsayılan» veya bir sürükleme yönü seçin ve ilgili URL’yi düzenleyin. Boş yönler varsayılanı kullanır. Yalnızca sürüklenen metin araması için geçerlidir.",
+    "description": "Help text for unified drag search engine editor"
   },
   "linkPreview": {
     "message": "Pencere Önizleme",
@@ -424,8 +1004,8 @@
     "description": "Quick navigation hover tooltip"
   },
   "linkPreviewHint": {
-    "message": "Üzerine gel + Değiştirici Tuşu ile Pencereyi Göster",
-    "description": "Pencere önizleme ipucu"
+    "message": "Açılır pencereyi göstermek için üzerine gelin ve tetikleyiciyi kullanın",
+    "description": "Popup view hint"
   },
   "enableLinkPreview": {
     "message": "Pencere Önizlemeyi Etkinleştir",
@@ -495,41 +1075,61 @@
     "message": "Arama terimi için {q} kullanın, örnek format:",
     "description": "Arama motoru örnekleri açıklaması"
   },
+  "searchExampleUrlClickHint": {
+    "message": "Üstteki alanı doldurmak ve kaydetmek için örnek URL’ye tıklayın",
+    "description": "Tooltip for example search engine URLs (click to fill)"
+  },
+  "searchEngineExamplesUrlClickHint": {
+    "message": "İpucu: Üstteki alanı doldurmak ve kaydetmek için örnek URL’ye tıklayın.",
+    "description": "Visible hint under search engine examples (click URL to fill field above and save)"
+  },
   "googleExample": {
-    "message": "Google Arama: https://www.google.com/search?q={q}",
+    "message": "Google Arama:",
+    "description": "Google arama örneği"
+  },
+  "googleExampleUrl": {
+    "message": "https://www.google.com/search?q={q}",
     "description": "Google arama örneği"
   },
   "googleTranslateExample": {
-    "message": "Google Çeviri: https://translate.google.com/?sl=auto&tl=tr&text={q}&op=translate",
+    "message": "Google Çeviri:",
+    "description": "Google çeviri örneği"
+  },
+  "googleTranslateExampleUrl": {
+    "message": "https://translate.google.com/?sl=auto&tl=tr&text={q}&op=translate",
     "description": "Google çeviri örneği"
   },
   "localSearchExample": {
-    "message": "Örnek: https://www.google.com.tr/search?q={q}",
+    "message": "Örnek:",
+    "description": "Yerel arama URL'si örneği"
+  },
+  "localSearchExampleUrl": {
+    "message": "https://www.google.com.tr/search?q={q}",
     "description": "Yerel arama URL'si örneği"
   },
   "bingExample": {
-    "message": "Bing Arama: https://www.bing.com/search?q={q}",
+    "message": "Bing Arama:",
+    "description": "Bing arama örneği"
+  },
+  "bingExampleUrl": {
+    "message": "https://www.bing.com/search?q={q}",
     "description": "Bing arama örneği"
   },
   "wheelTip": {
-    "message": "Değeri ayarlamak için fare tekerleğini kullanın",
+    "message": "Bu satırın üzerinde ~1,5 sn bekleyin, ardından tekerlekle ayarlayın",
     "description": "Tekerlek ipucu"
   },
   "modifierKeyDelayTip": {
-    "message": "Değiştirici tuşu kullanıldığında, maksimum gecikme 300ms'ye ayarlanır",
-    "description": "Değiştirici tuşu gecikmesi ipucu"
+    "message": "Gecikme, tetikleme koşulu karşılandıktan sonra başlar; yanlışlıkla önizlemeleri önlemek için artırın.",
+    "description": "Modifier key delay tip"
   },
   "welcomeTitle": {
-    "message": "Fare Hareketleri Eklentisine Hoş Geldiniz",
+    "message": "Fare hareketleri uzantısına hoş geldiniz",
     "description": "Karşılama sayfası başlığı"
   },
   "welcomeDescription": {
-    "message": "Fare Hareketleri Eklentisini yüklediğiniz için teşekkürler! Bu eklenti, web'de daha verimli gezinmenize yardımcı olmak için zengin fare hareketi işlevselliği, akıllı sekme yönetimi, popup görüntüleme özellikleri ve gelişmiş görsel deneyim sağlar. Hareket tanıma algoritmasını daha yüksek hata toleransı ile optimize ettik, hareketler mükemmel çizilmese bile doğru şekilde tanınmasına izin veriyor. Yeni popup pencere özelliği, sekmeler arasında geçiş yapmadan popup pencerelerde bağlantı içeriğini görüntülemenize olanak tanır. Uzantı ayrıca daha iyi bir kullanıcı deneyimi için 29 dili ve açık/koyu temaları destekler.",
+    "message": "Mouse Gesture’ı yüklediğiniz için teşekkürler! Gezinme, sekme yönetimi ve kaydırma için sağ tuşa basılı tutup sürükleyin; tekerlek ile sağ veya sol (ayarlarda daha fazla kısayol) ek kısayollar için — tanıma, sayfalar yüklenirken bile hoşgörülü kalır. Super Drag bağlantıları, görselleri ve metin aramayı yön başına kurallarla açar (ön plan, arka plan, bölünmüş düzen, panoya kopyalama ve daha fazlası). Popup View bağlantı önizlemeleri gösterir veya seçili metni küçük pencerelerde arar. İsteğe bağlı: üzerine gelince görsel önizleme (gelişmiş mod), yinelenen sekmeleri algılama ve otomatik kapatma, akıcı kaydırma, araç çubuğunda sekme sayacı rozeti ve kısıtlayıcı sitelerde sayfa kilidini kaldırma. Ayarlar araç çubuğundan (açılır pencere, yan panel veya ayrı pencere); dışa/içe aktarma; tarayıcı hesabıyla senkronizasyon. 29 dil ve açık/koyu tema.",
     "description": "Karşılama sayfası açıklaması"
-  },
-  "gesturesDescription": {
-    "message": "Aşağıda, farenin sağ düğmesiyle sürükleyerek kullanabileceğiniz varsayılan fare hareketleri bulunmaktadır:",
-    "description": "Hareketler açıklaması"
   },
   "extensionName": {
     "message": "Fare Hareketleri Eklentisi",
@@ -539,88 +1139,48 @@
     "message": "Temel Özellikler",
     "description": "Temel özellikler başlığı"
   },
-  "utilitiesFeatures": {
-    "message": "Araçlar",
-    "description": "Araçlar başlığı"
+  "welcomeCoreGestureBlock": {
+    "message": "Fare hareketleri: sağa basılı tutup sürükleyerek yol hareketleri; sağ veya sol basılıyken tekerlek ve sağ basılıyken tıklama kombinasyonları — ayarlarda birçok eyleme atanabilir; yükleme sırasında da toleranslı tanıma.",
+    "description": "Welcome page: core features gesture summary"
+  },
+  "welcomeCoreSuperDragBlock": {
+    "message": "Süper sürükleme: bağlantıları ve görselleri yeni sekmelere sürükleyin, seçili metni aramak için sürükleyin; yön sekmelerin nasıl açılacağını belirler; varsayılan arka planda.",
+    "description": "Welcome page: core features super drag summary"
+  },
+  "welcomeCorePopupViewBlock": {
+    "message": "Açılır görünüm: bir bağlantının üzerindeyken tetik tuşuna (varsayılan Shift) basılı tutarak küçük pencerede önizleyin; metni seçtikten sonra tuşa basarak özel arama motorunuzla anında arayın.",
+    "description": "Welcome page: core features popup view summary"
   },
   "usageTips": {
     "message": "Kullanım İpuçları",
     "description": "Kullanım ipuçları başlığı"
   },
-  "smartGestureRecognition": {
-    "message": "Akıllı hareket tanıma: Hareketler tam olarak tamamlanmasa bile doğru şekilde tanınır, sayfa yüklenirken çalışır",
-    "description": "Akıllı hareket tanıma açıklaması"
-  },
-  "tabManagementTitle": {
-    "message": "Sekme Yönetimi",
-    "description": "Sekme yönetimi başlığı"
-  },
-  "tabManagementDesc": {
-    "message": ": Yinelenen sekme algılama, otomatik kapatma, düzenli bellek optimizasyonu",
-    "description": "Sekme yönetimi açıklaması"
-  },
-  "superDragTitle": {
-    "message": "Süper Sürükleme",
-    "description": "Süper sürükleme başlığı"
-  },
-  "superDragDesc": {
-    "message": ": Bağlantıları ve resimleri yeni sekmelerde sürükleyin, seçili metni aramak için sürükleyin",
-    "description": "Süper sürükleme açıklaması"
-  },
-  "linkPreviewTitle": {
-    "message": "Pencere Önizleme",
-    "description": "Bağlantı önizleme başlığı"
-  },
-  "linkPreviewDesc": {
-    "message": ": Bağlantıların üzerine gelirken değiştirici tuşunu (varsayılan: Shift) basılı tutarak hedef sayfaları pencere pencerelerinde görüntüleyin",
-    "description": "Bağlantı önizleme açıklaması"
-  },
-  "textSelectionPreview": {
-    "message": "Metni seçin ve değiştirici tuşuna basarak özel arama motoru desteğiyle pencere penceresinde anında arayın",
-    "description": "Metin seçimi önizleme açıklaması"
-  },
   "previewTip": {
-    "message": "Aynı anda birden fazla pencere penceresi açabilirsiniz",
+    "message": "Karşılaştırmak için birden fazla önizlemeyi açık tutabilirsiniz.",
     "description": "Önizleme ipucu"
-  },
-  "dragDirection": {
-    "message": "Sekme açma yöntemini belirlemek için sürükleme yönünü özelleştirin: varsayılan olarak arka planda açın",
-    "description": "Sürükleme yönü açıklaması"
   },
   "debugPanelTitle": {
     "message": "Fare Hareketleri Hata Ayıklama Bilgileri",
     "description": "Hata ayıklama paneli başlığı"
   },
   "debugPanelDesc": {
-    "message": ": Açmak için Alt+D'ye basın, gerçek zamanlı hareket bilgilerini analiz edin, durumu korur",
+    "message": "Hata ayıklama panelini açmak için Alt+D'ye basın, jest bilgisini gerçek zamanlı analiz edin, durum korunur.",
     "description": "Hata ayıklama paneli açıklaması"
   },
-  "oneClickCopy": {
-    "message": "Kolay paylaşım için hata ayıklama bilgilerinin tek tıklamayla kopyalanması ve çoklu dil desteği",
-    "description": "Tek tıklamayla kopyalama açıklaması"
-  },
-  "mediaPreview": {
-    "message": "Gelişmiş medya önizleme: Geliştirilmiş resim üzerine gelme efektleri ve geliştirilmiş video önizlemeleri",
-    "description": "Medya önizleme açıklaması"
-  },
-  "adaptiveTheme": {
-    "message": "Uyarlanabilir temalar: Sayfa arka planına göre görünüm stilini otomatik ayarlar, açık/koyu mod desteği",
-    "description": "Uyarlanabilir tema açıklaması"
-  },
   "gestureTrail": {
-    "message": "Hareket izleri ekranda özelleştirilebilir renk ve genişlikle gösterilir",
+    "message": "İsteğe bağlı iz ve jest ipuçları; renk ve kalınlık ayarlarda.",
     "description": "Hareket izi açıklaması"
   },
   "clickIcon": {
-    "message": "Özellikleri açıp kapatmak, dil, tema ve daha fazlasını ayarlamak için eklenti simgesine tıklayın",
+    "message": "Araç çubuğu: kompakt açılır pencere, yan panel (Chrome/Edge) veya ayrı ayarlar. Özellikler, dil, tema, dışa/içe aktarma.",
     "description": "Simge tıklama açıklaması"
   },
   "languageSupport": {
-    "message": "29 dil desteği, tarayıcı diline otomatik olarak uyum sağlar",
+    "message": "29 arayüz dili; kayıtlı seçiminizi kullanır veya tarayıcı dilini izler.",
     "description": "Dil desteği açıklaması"
   },
   "enableAutoClose": {
-    "message": "Tarayıcı kaynak kullanımını önemli ölçüde azaltmak için yinelenen sekmeleri otomatik kapatma özelliğini etkinleştirin",
+    "message": "Yinelenen algılamada tekrarlayan URL'leri otomatik kapatabilir (isteğe bağlı).",
     "description": "Otomatik kapatmayı etkinleştirme açıklaması"
   },
   "rightClickMacLinux": {
@@ -634,14 +1194,6 @@
   "duplicateTabsDetected": {
     "message": "$1 yinelenen sekme bulundu",
     "description": "Yinelenen sekmelerin algılandığı bildirim başlığı"
-  },
-  "duplicateTabsCount": {
-    "message": "$1 yinelenen sekme var",
-    "description": "Yinelenen sekme sayısı mesajı"
-  },
-  "duplicateTabsSingle": {
-    "message": "1 yinelenen sekme var",
-    "description": "Tek yinelenen sekme mesajı"
   },
   "autoClosedTabs": {
     "message": "$1 yinelenen sekme otomatik olarak kapatıldı",
@@ -659,61 +1211,9 @@
     "message": "Başlıksız sekme",
     "description": "Başlıksız sekme"
   },
-  "morePages": {
-    "message": "...ve $1 sayfa daha",
-    "description": "Daha fazla sayfa ipucu"
-  },
-  "errorShowDuplicateTabs": {
-    "message": "Yinelenen sekmeler bildirimi gösterilirken hata:",
-    "description": "Yinelenen sekmeler bildirimini gösterme hatası mesajı"
-  },
-  "errorSendCloseRequest": {
-    "message": "Kapatma isteği gönderilirken hata:",
-    "description": "Kapatma isteği gönderme hatası mesajı"
-  },
-  "errorCloseDuplicateTabs": {
-    "message": "Yinelenen sekmeler kapatılırken hata:",
-    "description": "Yinelenen sekmeleri kapatma hatası mesajı"
-  },
-  "errorSendIgnoreRequest": {
-    "message": "Yoksayma isteği gönderilirken hata:",
-    "description": "Yoksayma isteği gönderme hatası mesajı"
-  },
-  "errorIgnoreDuplicateTabs": {
-    "message": "Yinelenen sekmeler yoksayılırken hata:",
-    "description": "Yinelenen sekmeleri yoksayma hatası mesajı"
-  },
-  "errorUpdateDebugPanel": {
-    "message": "Hata ayıklama paneli güncellenirken hata:",
-    "description": "Hata ayıklama panelini güncelleme hatası mesajı"
-  },
   "errorDetectBackgroundColor": {
     "message": "Arka plan rengi algılanırken hata:",
     "description": "Arka plan rengini algılama hatası mesajı"
-  },
-  "errorDetectImageBorder": {
-    "message": "Resim kenarlık yarıçapı algılanırken hata:",
-    "description": "Resim kenarlık yarıçapını algılama hatası mesajı"
-  },
-  "errorSetMutationObserver": {
-    "message": "Değişiklik gözlemcisi ayarlanırken hata:",
-    "description": "Değişiklik gözlemcisini ayarlama hatası mesajı"
-  },
-  "errorCheckElementVisibility": {
-    "message": "Öğe görünürlüğü kontrol edilirken hata:",
-    "description": "Öğe görünürlüğünü kontrol etme hatası mesajı"
-  },
-  "errorProcessBorderRadius": {
-    "message": "Kenarlık yarıçapı işlenirken hata:",
-    "description": "Kenarlık yarıçapını işleme hatası mesajı"
-  },
-  "errorDetectImageBackground": {
-    "message": "Resim arka planı algılanırken hata:",
-    "description": "Resim arka planını algılama hatası mesajı"
-  },
-  "errorShowAutoCloseNotification": {
-    "message": "Otomatik kapatma başarı bildirimi gösterilirken hata:",
-    "description": "Otomatik kapatma başarı bildirimini gösterme hatası mesajı"
   },
   "noForwardPage": {
     "message": "Geçmişte ileri sayfa yok",
@@ -743,10 +1243,6 @@
     "message": "Geçersiz Hareket",
     "description": "Geçersiz hareket mesajı"
   },
-  "nextPage": {
-    "message": "Sonraki Sayfa",
-    "description": "Sonraki sayfa eylemi"
-  },
   "errorReadPixel": {
     "message": "Piksel okunurken hata:",
     "description": "Piksel okuma hatası mesajı"
@@ -758,10 +1254,6 @@
   "errorCanvasDraw": {
     "message": "Tuvale çizilirken hata:",
     "description": "Tuvale çizme hatası mesajı"
-  },
-  "errorAccessIframe": {
-    "message": "iframe'e erişilirken hata:",
-    "description": "iframe'e erişim hatası mesajı"
   },
   "errorMutationObserver": {
     "message": "Değişiklik gözlemcisi ayarlanırken hata:",
@@ -791,6 +1283,10 @@
     "message": "Sistem Ayarları",
     "description": "Hata ayıklama paneli sistem ayarları bölümü"
   },
+  "debugConsoleLog": {
+    "message": "Konsol günlükleri",
+    "description": "Debug panel console log toggle label"
+  },
   "debugAngleThreshold": {
     "message": "Açı Eşiği",
     "description": "Hata ayıklama paneli açı eşiği ayarı"
@@ -810,6 +1306,46 @@
   "debugMinGestureComplexity": {
     "message": "Minimum Hareket Karmaşıklığı",
     "description": "Hata ayıklama paneli minimum hareket karmaşıklığı ayarı"
+  },
+  "debugMinMovementToStartGesture": {
+    "message": "Başlatmak için min. hareket",
+    "description": "Hata ayıklama paneli ayarı: hareket izlemeyi başlatmak için minimum hareket"
+  },
+  "debugSmoothingFactor": {
+    "message": "Yumuşatma katsayısı",
+    "description": "Hata ayıklama paneli ayarı: iz ve tanıma yumuşatma katsayısı"
+  },
+  "debugAngleThresholdHelp": {
+    "message": "Hareketin yatay veya dikey olarak ne kadar katı sınıflandırılacağını denetler. Daha yüksek değer daha düz yön ister; daha düşük değer daha fazla çapraz harekete izin verir.",
+    "description": "Hata ayıklama paneli açı eşiği yardımı"
+  },
+  "debugDirectionChangeThresholdHelp": {
+    "message": "Yön değişikliği algılama hassasiyetini denetler. Daha düşük değerler dönüşleri daha kolay yakalar; daha yüksek değerler küçük titremeleri yok sayar.",
+    "description": "Hata ayıklama paneli yön değişikliği eşiği yardımı"
+  },
+  "debugMinGestureDistanceHelp": {
+    "message": "Bir hareketin tanınabilmesi için gereken minimum toplam hareket mesafesi. Yanlışlıkla tetiklemeyi azaltmak için artırın.",
+    "description": "Hata ayıklama paneli minimum hareket mesafesi yardımı"
+  },
+  "debugMinDirectionSegmentLengthHelp": {
+    "message": "Yön tanıma için kullanılan minimum hareket segmenti uzunluğu. Kısa titremeyi filtrelemek için artırın; kısa hareketler için azaltın.",
+    "description": "Hata ayıklama paneli minimum yön segmenti uzunluğu yardımı"
+  },
+  "debugMinGestureComplexityHelp": {
+    "message": "Bir yolun karalama veya geçersiz sayılmadan önceki yön karmaşıklığı eşiği. Daha yüksek değerler daha fazla dönüşü tolere eder.",
+    "description": "Hata ayıklama paneli hareket karmaşıklığı yardımı"
+  },
+  "debugMinMovementToStartGestureHelp": {
+    "message": "Düğmeye bastıktan sonra hareket izleme başlamadan önce işaretçi en az bu kadar piksel hareket etmelidir.",
+    "description": "Hata ayıklama paneli başlatma minimum hareket yardımı"
+  },
+  "debugSmoothingFactorHelp": {
+    "message": "İz ve tanıma noktalarının yumuşatılmasını denetler. Daha yüksek değerler titremeyi azaltır ama keskin dönüşleri yumuşatabilir; daha düşük değerler daha hızlı tepki verir.",
+    "description": "Hata ayıklama paneli yumuşatma katsayısı yardımı"
+  },
+  "debugConsoleLogHelp": {
+    "message": "Sorun giderme için DevTools konsolunda ayrıntılı uzantı günlüklerini etkinleştirir.",
+    "description": "Hata ayıklama paneli konsol günlüğü yardımı"
   },
   "debugLatestGestureInfo": {
     "message": "Son Hareket Bilgileri",
@@ -850,10 +1386,6 @@
   "debugMergedDirections": {
     "message": "Birleştirilmiş Yönler",
     "description": "Hata ayıklama paneli birleştirilmiş yönler"
-  },
-  "debugDirectionDistances": {
-    "message": "Yön Mesafeleri",
-    "description": "Hata ayıklama paneli yön mesafeleri"
   },
   "debugFinalResult": {
     "message": "Son Sonuç",
@@ -927,9 +1459,17 @@
     "message": "Sekme Sayısı Göster",
     "description": "Show tab count badge option"
   },
-  "splitViewAction": {
-    "message": "Bölünmüş görünüm",
-    "description": "Bölünmüş görünüm penceresinde aç"
+  "unlockPageRestrictions": {
+    "message": "Kopyala/yapıştır/sağ tık ve sekme izleme kısıtlarını kaldır",
+    "description": "Setting: unlock page interaction limits"
+  },
+  "unlockPageRestrictionsTitle": {
+    "message": "Kopyalama, yapıştırma, bağlam menüsü ve seçim engellerini kaldırır; blur/visibilitychange izlemesini azaltır. Sayfa bağlamında çalışır; iframe ve Shadow DOM destekler. Açtıktan sonra sayfayı yenileyin.",
+    "description": "Tooltip for unlock page restrictions"
+  },
+  "unlockPageRestrictionsOffReloadConfirm": {
+    "message": "Açık sekmelerdeki enjekte mantık yenilenene kadar kalabilir.\n\nGeçerli sekme şimdi yenilensin mi?",
+    "description": "Body text for unlock-off confirmation dialog"
   },
   "splitViewLeft": {
     "message": "Böl - sol",
@@ -946,5 +1486,165 @@
   "splitViewDown": {
     "message": "Böl - alt",
     "description": "Bölünmüş görünüm, alt yarıda yeni pencere"
+  },
+  "unlockPageRestrictionsOffTitle": {
+    "message": "Sayfa kilidi kapatıldı",
+    "description": "Title for unlock-off confirmation dialog"
+  },
+  "unlockPageRestrictionsReloadTab": {
+    "message": "Sekmeyi yenile",
+    "description": "Reload tab button in unlock-off dialog"
+  },
+  "unlockPageRestrictionsNotNow": {
+    "message": "Şimdi değil",
+    "description": "Dismiss unlock-off dialog without reload"
+  },
+  "welcomeBulletImagePreview": {
+    "message": "Görsel önizleme: isteğe bağlı üzerine gelince büyütme ve karmaşık düzenler için gelişmiş mod.",
+    "description": "Welcome page: image hover preview bullet"
+  },
+  "welcomeBulletPageUnlock": {
+    "message": "Sayfa kilidini kaldırma: kopyala, yapıştır, sağ tık vb. kısıtları isteğe bağlı gevşetin — ayarlarda etkinleştirin ve istenirse sayfayı yenileyin.",
+    "description": "Welcome page: page unlock bullet"
+  },
+  "welcomeBulletDisabledSites": {
+    "message": "Site başına: listedeki alan adlarında hareketler, süper sürükleme, açılır görünüm ve kilidi kaldırma birlikte kapanır.",
+    "description": "Welcome page: per-site disable bullet"
+  },
+  "welcomeBulletSplitScroll": {
+    "message": "Bölünmüş görünüm: bağlantı bölünmüş düzende açıldığında iki pencere arasında kaydırmayı (yatay dahil) senkronize edebilirsiniz.",
+    "description": "Welcome page: split scroll sync bullet"
+  },
+  "welcomeBulletScreenshot": {
+    "message": "Görüntüler: görünür alan, tam sayfa, elle kaydırma; iz bölgeleri, kısayollar, pano, önizleme, yerel geçmiş (0 = sınırsız).",
+    "description": "Welcome page: screenshot feature bullet"
+  },
+  "welcomeTipScreenshot": {
+    "message": "Görüntüler varsayılan açık; görünür alan, tam sayfa, kaydırma kısayollarını ayarlayın; iz bölgesi, otomatik kopya, önizleme, geçmiş isteğe bağlı.",
+    "description": "Welcome page: screenshot usage tip"
+  },
+  "trailColorPickerPresets": {
+    "message": "Ön ayarlar",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerRecent": {
+    "message": "Son kullanılan",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerEyedropper": {
+    "message": "Görüntüden renk al",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerEyedropperActive": {
+    "message": "Almak için tıkla · tekerlek büyüteç zoom",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerSyncTrail": {
+    "message": "İz rengi olarak kaydet",
+    "description": "Trail color picker UI"
+  },
+  "superDragCompassPosCompassHub": {
+    "message": "Sürükleme noktası",
+    "description": "Compass hub aligned to drag start"
+  },
+  "superDragCompassPosCompassScreenCenter": {
+    "message": "Ekran merkezi",
+    "description": "Compass fixed at viewport center"
+  },
+  "superDragCompassPosCompassScreenTop": {
+    "message": "Üst",
+    "description": "Compass fixed at top of viewport"
+  },
+  "superDragCompassPosCompassScreenRight": {
+    "message": "Sağ",
+    "description": "Compass fixed at right of viewport"
+  },
+  "superDragCompassPosCompassScreenBottom": {
+    "message": "Alt",
+    "description": "Compass fixed at bottom of viewport"
+  },
+  "superDragCompassPosCompassScreenLeft": {
+    "message": "Sol",
+    "description": "Compass fixed at left of viewport"
+  },
+  "superDragCompassPosCompassHidden": {
+    "message": "Gizli",
+    "description": "Do not show compass"
+  },
+  "addCurrentSiteToDisabledSites": {
+    "message": "Geçerli siteyi ekle",
+    "description": "Button: add the active tab domain to disabled sites"
+  },
+  "addCurrentSiteToDisabledSitesTitle": {
+    "message": "Geçerli sekmenin alan adını devre dışı sitelere ekle",
+    "description": "Tooltip for add-current-site button"
+  },
+  "addDisabledSite": {
+    "message": "Ekle",
+    "description": "Button: add a typed disabled site entry"
+  },
+  "disabledSiteInputPlaceholder": {
+    "message": "Alan adı veya tam URL, ör. youtube.com",
+    "description": "Placeholder for the disabled site input"
+  },
+  "disabledSitesEmpty": {
+    "message": "Henüz devre dışı site yok.",
+    "description": "Empty state for disabled sites list"
+  },
+  "removeDisabledSite": {
+    "message": "Bu siteyi kaldır",
+    "description": "Tooltip/aria label for remove disabled site button"
+  },
+  "disabledSiteInvalid": {
+    "message": "Geçerli bir alan adı veya URL girin",
+    "description": "Error shown when disabled site input is invalid"
+  },
+  "disabledSiteAlreadyExists": {
+    "message": "Site zaten mevcut",
+    "description": "Error shown when adding a duplicate disabled site"
+  },
+  "disabledSitesLimitReached": {
+    "message": "Devre dışı site sınırına ulaşıldı",
+    "description": "Error shown when disabled sites list reaches the maximum size"
+  },
+  "currentSiteUnsupported": {
+    "message": "Geçerli sekmede desteklenen bir alan adı yok",
+    "description": "Error shown when current tab URL cannot be added to disabled sites"
+  },
+  "customKey": {
+    "message": "Özel tuş",
+    "description": "Custom trigger key option"
+  },
+  "previewTriggerMode": {
+    "message": "Tetikleme modu",
+    "description": "Popup view trigger mode setting"
+  },
+  "previewTriggerHold": {
+    "message": "Tetikleme tuşunu basılı tut",
+    "description": "Hold trigger key option"
+  },
+  "previewTriggerDouble": {
+    "message": "Tetikleme tuşuna iki kez bas",
+    "description": "Double-press trigger key option"
+  },
+  "previewCustomKey": {
+    "message": "Özel tuş",
+    "description": "Popup view custom trigger key setting"
+  },
+  "previewCustomKeyPlaceholder": {
+    "message": "Tıklayın ve bir tuşa basın",
+    "description": "Popup view custom trigger key placeholder"
+  },
+  "previewCustomKeyTitle": {
+    "message": "Buraya tıklayın, ardından değiştirici olmayan bir tuşa basın. Temizlemek için Esc tuşuna basın.",
+    "description": "Popup view custom trigger key title"
+  },
+  "unlimited": {
+    "message": "Sınırsız",
+    "description": "Unlimited value label"
+  },
+  "settingsFontSize": {
+    "message": "Ayarlar yazı tipi boyutu",
+    "description": "Header button: adjust settings font size"
   }
 }

@@ -1,0 +1,47 @@
+/* 首屏：在外部 CSS / storage 就绪前避免默认白底闪烁（与 popup.css --bg-color 一致） */
+html,
+body {
+  margin: 0;
+  background-color: #f8f9fb;
+  color-scheme: light;
+}
+
+html[data-theme='dark'],
+html[data-theme='dark'] body {
+  background-color: #121212;
+  color-scheme: dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme]),
+  html:not([data-theme]) body {
+    background-color: #121212;
+    color-scheme: dark;
+  }
+}
+
+/* 仅隐藏内容区，保留 body 主题底色，避免解除 visibility 时中间白块闪一下 */
+html.ui-pending .container,
+html.theme-pending .container {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* 侧栏 iframe 在子文档加载前与外壳同色 */
+iframe#settings-frame {
+  background-color: #f8f9fb;
+}
+
+html[data-theme='dark'] iframe#settings-frame {
+  background-color: #121212;
+}
+
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme]) iframe#settings-frame {
+    background-color: #121212;
+  }
+}
+
+iframe#settings-frame.settings-frame--booting {
+  opacity: 0;
+}

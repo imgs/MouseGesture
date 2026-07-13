@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Screenshot preview</title>
+  <link rel="stylesheet" href="trail-color-picker.css">
+  <link rel="stylesheet" href="screenshot-preview.css">
+</head>
+<body>
+  <header class="top-bar">
+    <div class="top-bar-start">
+      <h1 id="title">Screenshot preview</h1>
+      <span class="meta" id="meta"></span>
+    </div>
+    <div class="top-bar-actions">
+      <button type="button" class="secondary" id="btn-reset" disabled title="Reset" data-i18n-title="screenshotAnnotResetAll">⟲</button>
+      <button type="button" class="secondary" id="btn-undo" disabled title="Undo" data-i18n-title="screenshotAnnotUndo">↶</button>
+      <button type="button" class="secondary" id="btn-redo" disabled title="Redo" data-i18n-title="screenshotAnnotRedo">↷</button>
+      <span class="history-steps" id="history-steps" aria-live="polite" title="">0 / 0</span>
+      <span class="zoom-level" id="zoom-level" aria-live="polite">100%</span>
+      <button type="button" class="secondary" id="btn-zoom-fit" data-i18n-title="screenshotPreviewZoomFit">Fit</button>
+      <button type="button" class="secondary" id="btn-zoom-1" data-i18n-title="screenshotPreviewZoomOneToOne">1:1</button>
+      <button type="button" class="secondary" id="btn-copy" hidden>Copy</button>
+      <button type="button" class="secondary" id="btn-pin" hidden data-i18n-title="screenshotPreviewPinToPage">Pin</button>
+      <button type="button" class="secondary" id="btn-save" hidden>Save</button>
+      <button type="button" class="secondary" id="btn-view-history" data-i18n="screenshotHistoryView">View history</button>
+      <button type="button" id="btn-close">Close</button>
+    </div>
+  </header>
+  <div class="toolbar" id="toolbar" hidden>
+    <div class="tool-group" role="group" aria-label="Screenshot" data-i18n-aria-label="screenshotFeature">
+      <button type="button" class="tool-btn" data-tool="hand" data-i18n-title="screenshotAnnotHand">
+        <svg class="tool-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M18 11V6a2 2 0 1 0-4 0v5"/>
+          <path d="M14 10V4a2 2 0 0 0-4 0v2"/>
+          <path d="M10 10.5V4a2 2 0 0 0-4 0v8a8 8 0 0 0 16 0v-5a2 2 0 0 0-4 0"/>
+        </svg>
+      </button>
+      <button type="button" class="tool-btn active" data-tool="pen" data-i18n-title="screenshotAnnotPen">
+        <svg class="tool-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 20h9"/>
+          <path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4 12.5-12.5z"/>
+        </svg>
+      </button>
+      <button type="button" class="tool-btn" data-tool="arrow" data-i18n-title="screenshotAnnotArrow">
+        <svg class="tool-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M7 7h10v10"/>
+          <path d="M7 17 17 7"/>
+        </svg>
+      </button>
+      <button type="button" class="tool-btn" data-tool="arrow2" data-i18n-title="screenshotAnnotArrow2">
+        <svg class="tool-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M8 8 4 12l4 4"/>
+          <path d="M16 8l4 4-4 4"/>
+        </svg>
+      </button>
+      <button type="button" class="tool-btn" data-tool="line" data-i18n-title="screenshotAnnotLine">
+        <svg class="tool-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <line x1="5" y1="19" x2="19" y2="5"/>
+        </svg>
+      </button>
+      <button type="button" class="tool-btn" data-tool="rect" data-i18n-title="screenshotAnnotRect">
+        <svg class="tool-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="4" y="4" width="16" height="16" rx="1"/>
+        </svg>
+      </button>
+      <button type="button" class="tool-btn" data-tool="ellipse" data-i18n-title="screenshotAnnotEllipse">
+        <svg class="tool-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <ellipse cx="12" cy="12" rx="9" ry="7"/>
+        </svg>
+      </button>
+      <button type="button" class="tool-btn" data-tool="roundRect" data-i18n-title="screenshotAnnotRoundRect">
+        <svg class="tool-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="4" y="4" width="16" height="16" rx="5"/>
+        </svg>
+      </button>
+      <button type="button" class="tool-btn" data-tool="highlighter" data-i18n-title="screenshotAnnotHighlighter">
+        <svg class="tool-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M15 5l3 3-9 9H6v-3l9-9z"/>
+          <path d="M6 20h14"/>
+        </svg>
+      </button>
+      <button type="button" class="tool-btn" data-tool="highlight" data-i18n-title="screenshotAnnotHighlight">
+        <svg class="tool-icon tool-icon-layered" viewBox="0 0 24 24" aria-hidden="true">
+          <rect class="icon-fill-muted" x="4" y="8" width="16" height="10" rx="1"/>
+          <rect x="4" y="8" width="16" height="10" rx="1"/>
+        </svg>
+      </button>
+      <button type="button" class="tool-btn" data-tool="fillRect" data-i18n-title="screenshotAnnotFillRect">
+        <svg class="tool-icon tool-icon-fill" viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="5" y="5" width="14" height="14" rx="1"/>
+        </svg>
+      </button>
+      <button type="button" class="tool-btn" data-tool="fillEllipse" data-i18n-title="screenshotAnnotFillEllipse">
+        <svg class="tool-icon tool-icon-fill" viewBox="0 0 24 24" aria-hidden="true">
+          <ellipse cx="12" cy="12" rx="9" ry="7"/>
+        </svg>
+      </button>
+      <button type="button" class="tool-btn" data-tool="number" data-i18n-title="screenshotAnnotNumber">
+        <svg class="tool-icon tool-icon-badge" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="9"/>
+          <text x="12" y="16.5" text-anchor="middle">1</text>
+        </svg>
+      </button>
+      <button type="button" class="tool-btn" data-tool="text" data-i18n-title="screenshotAnnotText">
+        <svg class="tool-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4 20h16"/>
+          <path d="M6 4v12h8V4H6z"/>
+        </svg>
+      </button>
+      <button type="button" class="tool-btn" data-tool="crop" data-i18n-title="screenshotAnnotCrop">
+        <svg class="tool-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M6 2v4H2V2h4zm12 0v4h4V2h-4zM6 22v-4H2v4h4zm12 0v-4h4v4h-4z"/>
+          <rect x="8" y="8" width="8" height="8" rx="1" stroke-dasharray="3 2"/>
+        </svg>
+      </button>
+      <button type="button" class="tool-btn" data-tool="mosaic" data-i18n-title="screenshotAnnotMosaic">
+        <svg class="tool-icon tool-icon-fill tool-icon-grid" viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="3" y="3" width="5" height="5" rx="1"/>
+          <rect x="10" y="3" width="5" height="5" rx="1"/>
+          <rect x="17" y="3" width="4" height="5" rx="1"/>
+          <rect x="3" y="10" width="5" height="5" rx="1"/>
+          <rect x="10" y="10" width="5" height="5" rx="1"/>
+          <rect x="17" y="10" width="4" height="5" rx="1"/>
+          <rect x="3" y="17" width="5" height="4" rx="1"/>
+          <rect x="10" y="17" width="5" height="4" rx="1"/>
+          <rect x="17" y="17" width="4" height="4" rx="1"/>
+        </svg>
+      </button>
+      <button type="button" class="tool-btn" data-tool="blur" data-i18n-title="screenshotAnnotBlur">
+        <svg class="tool-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="9" cy="10" r="2.5"/>
+          <circle cx="14" cy="10" r="3.5"/>
+          <circle cx="17.5" cy="14" r="4"/>
+        </svg>
+      </button>
+      <button type="button" class="tool-btn" data-tool="eraser" data-i18n-title="screenshotAnnotEraser">
+        <svg class="tool-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="m7 21-4-4c-1.5-1.5-1.5-3.5 0-5l9-9c1.5-1.5 3.5-1.5 5 0l4 4c1.5 1.5 1.5 3.5 0 5l-9 9"/>
+          <path d="m14 6 4 4"/>
+        </svg>
+      </button>
+    </div>
+    <div class="ctrl color-ctrl" id="stroke-color-picker-mount" data-i18n-title="trailColor" title="Color"></div>
+    <label class="ctrl ctrl-size">
+      <span id="size-label" data-i18n="screenshotAnnotSize">Size</span>
+      <span id="size-value" class="size-value" aria-live="polite">4</span>
+      <input type="range" id="stroke-size" min="1" max="48" value="4" aria-labelledby="size-label size-value">
+    </label>
+    <label class="ctrl ctrl-stamp-start" id="stamp-start-wrap" hidden>
+      <span id="stamp-start-label" data-i18n="screenshotAnnotStampStart">Start #</span>
+      <input type="number" id="stamp-start" min="1" max="999" value="1" aria-labelledby="stamp-start-label">
+    </label>
+    <div class="crop-actions" id="crop-actions" hidden>
+      <button type="button" class="secondary" id="btn-crop-apply" data-i18n="screenshotAnnotCropApply">Apply crop</button>
+      <button type="button" class="secondary" id="btn-crop-cancel" data-i18n="screenshotAnnotCropCancel">Cancel</button>
+    </div>
+  </div>
+  <div class="viewport" id="viewport">
+    <p class="err" id="err" hidden></p>
+    <div class="stage-wrap" id="stage-wrap" hidden>
+      <div class="stage" id="stage">
+        <canvas id="canvas-base"></canvas>
+        <canvas id="canvas-ink"></canvas>
+      </div>
+    </div>
+  </div>
+  <script src="trail-color-picker.js"></script>
+  <script src="screenshot-preview-editor.js"></script>
+  <script src="screenshot-preview.js"></script>
+</body>
+</html>

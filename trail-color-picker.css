@@ -1,0 +1,385 @@
+.trail-color-picker {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* 面板打开时会挂到 body，须同时覆盖 .trail-color-panel 内按钮 */
+.trail-color-picker button,
+.trail-color-panel button {
+  flex: none;
+  font: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: normal;
+  padding: 0;
+  margin: 0;
+  border-radius: 6px;
+  box-shadow: none !important;
+  overflow: visible;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+}
+
+.trail-color-picker button::before,
+.trail-color-picker button::after,
+.trail-color-panel button::before,
+.trail-color-panel button::after {
+  content: none !important;
+  display: none !important;
+}
+
+.trail-color-picker button:hover::before,
+.trail-color-panel button:hover::before {
+  left: auto !important;
+}
+
+.trail-color-picker.is-disabled {
+  opacity: 0.45;
+  pointer-events: none;
+}
+
+.trail-color-trigger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 24px;
+  min-width: 30px;
+  min-height: 24px;
+  padding: 2px !important;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  background: var(--section-bg);
+  cursor: pointer;
+  box-shadow: none;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease;
+}
+
+.trail-color-trigger:hover:not(:disabled) {
+  border-color: rgba(0, 0, 0, 0.22);
+}
+
+[data-theme='dark'] .trail-color-trigger:hover:not(:disabled) {
+  border-color: rgba(255, 255, 255, 0.38);
+}
+
+.trail-color-trigger[aria-expanded='true'] {
+  border-color: var(--button-bg);
+  box-shadow: none;
+}
+
+.trail-color-swatch {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 2px;
+  border: none;
+  box-sizing: border-box;
+}
+
+.trail-color-panel {
+  position: absolute;
+  z-index: 2147483647;
+  top: calc(100% + 6px);
+  left: 0;
+  min-width: 196px;
+  padding: 8px;
+  border-radius: 10px;
+  background: var(--section-bg);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 10px 28px var(--shadow-color);
+  color: var(--text-color);
+}
+
+.trail-color-panel[hidden] {
+  display: none !important;
+}
+
+.trail-color-panel.align-up {
+  top: auto;
+  bottom: calc(100% + 6px);
+}
+
+/* 打开时挂到 body，避免 setting-item / toolbar 的 overflow 裁切 */
+.trail-color-panel.is-floating {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: auto;
+  margin: 0;
+  box-sizing: border-box;
+  width: min(196px, calc(100vw - 12px));
+  max-width: calc(100vw - 12px);
+  max-height: calc(100vh - 12px);
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+  scrollbar-width: thin;
+}
+
+.trail-color-panel.is-floating .trail-color-preset {
+  min-height: 22px;
+}
+
+#trail-color-setting-row {
+  overflow: visible;
+}
+
+.trail-color-section-title {
+  margin: 0 0 6px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+  opacity: 0.5;
+  text-transform: uppercase;
+}
+
+.trail-color-presets,
+.trail-color-recent {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 5px;
+  margin-bottom: 8px;
+}
+
+.trail-color-recent[hidden] {
+  display: none !important;
+}
+
+.trail-color-preset {
+  width: 100%;
+  aspect-ratio: 1;
+  min-height: 28px;
+  height: auto;
+  padding: 0 !important;
+  border: 1px solid var(--border-color);
+  border-radius: 6px !important;
+  cursor: pointer;
+  box-sizing: border-box;
+  background-image: none;
+  background-color: transparent;
+  box-shadow: none !important;
+}
+
+.trail-color-preset:hover {
+  transform: scale(1.06);
+  border-color: #fff;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.18) !important;
+}
+
+.trail-color-preset.active {
+  border-color: var(--button-bg);
+  box-shadow: 0 0 0 1px var(--button-shadow) !important;
+}
+
+.trail-color-custom {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+
+.trail-color-native {
+  width: 32px;
+  height: 28px;
+  padding: 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background: transparent;
+  flex-shrink: 0;
+}
+
+.trail-color-hex {
+  flex: 1;
+  min-width: 0;
+  padding: 5px 8px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  background: var(--bg-color);
+  color: var(--text-color);
+  font: 12px/1.2 ui-monospace, SFMono-Regular, Consolas, monospace;
+  text-transform: uppercase;
+}
+
+.trail-color-hex:focus {
+  outline: none;
+  border-color: var(--button-bg);
+}
+
+.trail-color-hex.invalid {
+  border-color: var(--button-hover);
+}
+
+.trail-color-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+.trail-color-action-btn {
+  flex: 1 1 auto;
+  min-width: 0;
+  padding: 5px 8px;
+  border: none;
+  border-radius: 6px;
+  background: var(--bg-color);
+  color: var(--text-color);
+  font: 11px/1.3 system-ui, -apple-system, 'Segoe UI', sans-serif;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.trail-color-action-btn:hover {
+  background: var(--scrollbar-track);
+}
+
+.trail-color-action-btn.active {
+  background: var(--button-bg);
+  color: #fff;
+}
+
+.trail-color-sync {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 6px;
+  font-size: 11px;
+  color: var(--text-color);
+  opacity: 0.85;
+  cursor: pointer;
+  user-select: none;
+}
+
+.trail-color-sync input {
+  margin: 0;
+  accent-color: var(--button-bg);
+}
+
+/* 吸管取色：全屏十字准线 + 中心点（精确采样位置） */
+.trail-color-eyedropper-reticle {
+  position: fixed;
+  inset: 0;
+  z-index: 2147483646;
+  pointer-events: none;
+  display: none;
+}
+
+.trail-color-eyedropper-reticle.is-visible {
+  display: block;
+}
+
+.trail-color-reticle-h {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: var(--ry, 0);
+  height: 1px;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.85),
+    0 0 8px rgba(0, 0, 0, 0.35);
+}
+
+.trail-color-reticle-v {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: var(--rx, 0);
+  width: 1px;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.85),
+    0 0 8px rgba(0, 0, 0, 0.35);
+}
+
+.trail-color-reticle-dot {
+  position: absolute;
+  left: var(--rx, 0);
+  top: var(--ry, 0);
+  width: 11px;
+  height: 11px;
+  transform: translate(-50%, -50%);
+  border: 2px solid #fff;
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.9),
+    0 0 0 3px rgba(255, 77, 106, 0.45);
+  background: rgba(255, 77, 106, 0.85);
+  box-sizing: border-box;
+}
+
+/* 吸管取色放大倍镜 */
+.trail-color-magnifier {
+  position: fixed;
+  z-index: 2147483647;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 4px;
+  padding: 6px;
+  border-radius: 10px;
+  background: rgba(12, 12, 20, 0.94);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.trail-color-magnifier[hidden] {
+  display: none !important;
+}
+
+.trail-color-magnifier-view {
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.35);
+}
+
+.trail-color-magnifier-view::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 14px;
+  height: 14px;
+  transform: translate(-50%, -50%);
+  border: 2px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.85);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.trail-color-magnifier-canvas {
+  display: block;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+.trail-color-magnifier-zoom {
+  font: 10px/1.2 system-ui, -apple-system, 'Segoe UI', sans-serif;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.55);
+  margin-bottom: 2px;
+  user-select: none;
+}
+
+.trail-color-magnifier-hex {
+  font: 11px/1.2 ui-monospace, SFMono-Regular, Consolas, monospace;
+  text-align: center;
+  color: #e8e8ec;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Screenshot history</title>
+  <link rel="stylesheet" href="screenshot-history.css">
+</head>
+<body>
+  <header class="top-bar">
+    <div class="top-bar-start">
+      <h1 id="title">Screenshot history</h1>
+      <span class="meta" id="meta"></span>
+    </div>
+    <div class="top-bar-actions">
+      <button type="button" class="secondary" id="btn-refresh" hidden>Refresh</button>
+      <button type="button" class="danger" id="btn-clear" disabled>Clear all</button>
+      <button type="button" id="btn-close">Close</button>
+    </div>
+  </header>
+  <main class="history-main" id="history-main">
+    <p class="empty" id="empty" hidden>No screenshots yet.</p>
+    <p class="err" id="err" hidden></p>
+    <div class="history-grid" id="grid" hidden></div>
+  </main>
+  <script src="screenshot-history.js"></script>
+</body>
+</html>

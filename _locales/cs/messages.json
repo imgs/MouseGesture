@@ -4,7 +4,7 @@
     "description": "The name of the extension"
   },
   "extDesc": {
-    "message": "Rozšíření pro Chrome/Edge, které podporuje myší gesta, funkci super přetažení a popup view",
+    "message": "Gesta myší, super přetahování, náhled obrázků a odkazů a další.",
     "description": "The description of the extension"
   },
   "title": {
@@ -35,13 +35,21 @@
     "message": "Přetáhnout doleva",
     "description": "Drag left action"
   },
-  "openInForeground": {
-    "message": "Otevřít odkaz v popředí",
-    "description": "Open link in foreground"
+  "dragUpRight": {
+    "message": "Táhnout nahoru-vpravo",
+    "description": "Super drag diagonal direction"
   },
-  "openInBackground": {
-    "message": "Otevřít odkaz na pozadí",
-    "description": "Open link in background"
+  "dragDownRight": {
+    "message": "Táhnout dolů-vpravo",
+    "description": "Super drag diagonal direction"
+  },
+  "dragDownLeft": {
+    "message": "Táhnout dolů-vlevo",
+    "description": "Super drag diagonal direction"
+  },
+  "dragUpLeft": {
+    "message": "Táhnout nahoru-vlevo",
+    "description": "Super drag diagonal direction"
   },
   "superDragDescription": {
     "message": "Super přetažení funguje pro odkazy, obrázky a vybraný text. Pro každý směr gesta (nahoře/dole/vlevo/vpravo) můžete nastavit způsob otevření včetně popředí, pozadí nebo rozděleného zobrazení (vlevo/vpravo/nahoře/dole).",
@@ -65,51 +73,75 @@
   },
   "downThenRight": {
     "message": "Dolů pak doprava",
-    "description": "Down then right gesture"
+    "description": "Gesto dolů pak doprava"
   },
   "leftThenUp": {
     "message": "Doleva pak nahoru",
-    "description": "Left then up gesture"
+    "description": "Gesto doleva pak nahoru"
   },
   "rightThenUp": {
     "message": "Doprava pak nahoru",
-    "description": "Right then up gesture"
+    "description": "Gesto doprava pak nahoru"
   },
   "rightThenDown": {
     "message": "Doprava pak dolů",
-    "description": "Right then down gesture"
+    "description": "Gesto doprava pak dolů"
   },
   "upThenLeft": {
     "message": "Nahoru pak doleva",
-    "description": "Up then left gesture"
+    "description": "Gesto nahoru pak doleva"
   },
   "upThenRight": {
     "message": "Nahoru pak doprava",
-    "description": "Up then right gesture"
+    "description": "Gesto nahoru pak doprava"
   },
   "downThenLeft": {
     "message": "Dolů pak doleva",
-    "description": "Down then left gesture"
+    "description": "Gesto dolů pak doleva"
   },
   "leftThenDown": {
     "message": "Doleva pak dolů",
-    "description": "Left then down gesture"
+    "description": "Gesto doleva pak dolů"
   },
   "upThenDown": {
     "message": "Nahoru pak dolů",
-    "description": "Up then down gesture"
+    "description": "Gesto nahoru pak dolů"
   },
   "downThenUp": {
     "message": "Dolů pak nahoru",
-    "description": "Down then up gesture"
+    "description": "Gesto dolů pak nahoru"
   },
   "leftThenRight": {
     "message": "Doleva pak doprava",
-    "description": "Left then right gesture"
+    "description": "Gesto doleva pak doprava"
   },
   "rightThenLeft": {
     "message": "Doprava pak doleva",
-    "description": "Right then left gesture"
+    "description": "Gesto doprava pak doleva"
+  },
+  "rightHoldWheelUp": {
+    "message": "Držet pravý + kolečko nahoru",
+    "description": "Držet pravé tlačítko a kolečko nahoru"
+  },
+  "rightHoldWheelDown": {
+    "message": "Držet pravý + kolečko dolů",
+    "description": "Držet pravé tlačítko a kolečko dolů"
+  },
+  "leftHoldWheelUp": {
+    "message": "Držet levé + kolečko nahoru",
+    "description": "Levé tlačítko a kolečko nahoru"
+  },
+  "leftHoldWheelDown": {
+    "message": "Držet levé + kolečko dolů",
+    "description": "Levé tlačítko a kolečko dolů"
+  },
+  "rightHoldLeftClick": {
+    "message": "Držet pravý + levé kliknutí",
+    "description": "Držet pravé tlačítko a levé kliknutí"
+  },
+  "leftHoldRightClick": {
+    "message": "Držet levé + pravé tlačítko",
+    "description": "Držet levé tlačítko a kliknout pravým"
   },
   "back": {
     "message": "Zpět",
@@ -158,6 +190,18 @@
   "prevTab": {
     "message": "Předchozí karta",
     "description": "Previous tab action"
+  },
+  "previousActiveTab": {
+    "message": "Předchozí aktivní karta",
+    "description": "Akce gesta: přepnout na dříve aktivní kartu"
+  },
+  "goToParentUrl": {
+    "message": "Nadřazená URL",
+    "description": "Akce gesta: přejít na nadřazenou cestu URL"
+  },
+  "goToRootUrl": {
+    "message": "Kořenová URL",
+    "description": "Akce gesta: přejít na kořenovou URL webu"
   },
   "nextTab": {
     "message": "Další karta",
@@ -211,6 +255,14 @@
     "message": "Přepnout celou obrazovku",
     "description": "Toggle fullscreen action"
   },
+  "zoomIn": {
+    "message": "Přiblížit",
+    "description": "Zvětšit přiblížení aktuálního panelu"
+  },
+  "zoomOut": {
+    "message": "Oddálit",
+    "description": "Zmenšit přiblížení aktuálního panelu"
+  },
   "closeTabsToLeft": {
     "message": "Zavřít karty vlevo",
     "description": "Close tabs to left action"
@@ -218,6 +270,474 @@
   "reloadAllTabs": {
     "message": "Znovu načíst všechny karty",
     "description": "Reload all tabs action"
+  },
+  "stopLoadingAllTabs": {
+    "message": "Zastavit načítání všech karet",
+    "description": "Stop loading in all tabs"
+  },
+  "screenshotRegion": {
+    "message": "Snímek (oblast stopy)",
+    "description": "Screenshot gesture action"
+  },
+  "screenshotRegionOrLink": {
+    "message": "Snímek nebo otevřít odkaz",
+    "description": "Trail region hint when links are inside selection"
+  },
+  "trailRegionChooseTitle": {
+    "message": "Odkazy ve výběru — snímek nebo otevřít",
+    "description": "Trail region chooser dialog title"
+  },
+  "trailRegionLinkSingle": {
+    "message": "1 odkaz",
+    "description": "Trail region link count"
+  },
+  "trailRegionLinkMultiple": {
+    "message": "{count} odkazy",
+    "description": "Trail region link count"
+  },
+  "trailRegionActionScreenshot": {
+    "message": "Snímek obrazovky (S)",
+    "description": "Trail region chooser button"
+  },
+  "trailRegionActionOpenLink": {
+    "message": "Otevřít na nové kartě (O)",
+    "description": "Trail region chooser button"
+  },
+  "trailRegionActionOpenLinks": {
+    "message": "Otevřít na nových kartách (O)",
+    "description": "Trail region chooser button"
+  },
+  "trailRegionActionOpenSelected": {
+    "message": "Otevřít {n} na nových kartách (O)",
+    "description": "Trail region open checked links"
+  },
+  "trailRegionActionOpenNone": {
+    "message": "Otevřít výběr (O)",
+    "description": "Trail region open button when none checked"
+  },
+  "trailRegionActionCopy": {
+    "message": "Kopírovat (C)",
+    "description": "Trail region chooser copy button"
+  },
+  "trailRegionActionCopySelected": {
+    "message": "Kopírovat {n} (C)",
+    "description": "Trail region copy checked links"
+  },
+  "trailRegionActionCopyNone": {
+    "message": "Kopírovat (C)",
+    "description": "Trail region copy button when none checked"
+  },
+  "trailRegionCopyFailed": {
+    "message": "Kopírování se nezdařilo",
+    "description": "Trail region copy to clipboard failed"
+  },
+  "trailRegionSelectAll": {
+    "message": "Vybrat vše",
+    "description": "Trail region link list select all"
+  },
+  "trailRegionNoLinkSelected": {
+    "message": "Vyberte alespoň jeden odkaz",
+    "description": "Trail region no selection hint"
+  },
+  "trailRegionChooseHint": {
+    "message": "Esc zruší · zaškrtněte odkazy ke kopírování/otevření · táhněte okraje pro změnu velikosti",
+    "description": "Trail region chooser footer"
+  },
+  "trailRegionLinkOpened": {
+    "message": "Odkaz otevřen na nové kartě",
+    "description": "Trail region open link feedback"
+  },
+  "trailRegionLinksOpened": {
+    "message": "Odkazy otevřeny na nových kartách",
+    "description": "Trail region open links feedback"
+  },
+  "trailRegionLinksTruncated": {
+    "message": "Otevřeny pouze první {n} odkazy",
+    "description": "Trail region open links cap"
+  },
+  "screenshotScrollCaptureActive": {
+    "message": "Posuňte stránku ručně, pak stejná zkratka nebo Esc pro dokončení a spojení",
+    "description": "Manual scroll capture in progress"
+  },
+  "screenshotCopied": {
+    "message": "Snímek obrazovky zkopírováno do schránky",
+    "description": "Screenshot feedback"
+  },
+  "screenshotFailed": {
+    "message": "Nie udało się wykonać snímeku",
+    "description": "Screenshot feedback"
+  },
+  "screenshotNeedTrail": {
+    "message": "Nakreslete delší stopu pro výběr oblasti",
+    "description": "Screenshot feedback"
+  },
+  "screenshotUnavailable": {
+    "message": "Modul snímek obrazovky niedostępny",
+    "description": "Screenshot feedback"
+  },
+  "screenshotTopFrameOnly": {
+    "message": "Snímek obrazovky de cała strona pouze v główna ramka",
+    "description": "Screenshot feedback"
+  },
+  "screenshotFeature": {
+    "message": "Snímek obrazovky",
+    "description": "Screenshot settings section title"
+  },
+  "enableScreenshotFeature": {
+    "message": "Włącz snímek obrazovky obrazovky",
+    "description": "Master toggle for screenshot feature"
+  },
+  "enableScreenshotTrailCapture": {
+    "message": "Oblast stopy (smyčka / samoprzecięcie)",
+    "description": "Capture when trail loops or crosses; skipped if another gesture action matches"
+  },
+  "enableScreenshotClipboard": {
+    "message": "Kopiuj automatycznie do schránky",
+    "description": "Copy screenshot to clipboard after capture"
+  },
+  "enableScreenshotPreview": {
+    "message": "Zobrazit náhled po pořízení",
+    "description": "Open preview window when a screenshot is captured"
+  },
+  "enableScreenshotHistory": {
+    "message": "Zapisz historie snímků",
+    "description": "Keep captured screenshots in local history"
+  },
+  "screenshotHistoryMaxCount": {
+    "message": "Limit historii",
+    "description": "Maximum screenshot history entries to keep"
+  },
+  "screenshotHistoryMaxCountHint": {
+    "message": "0 = neomezeno; 1–200 při překročení smaže nejstarší záznamy",
+    "description": "Screenshot history limit hint"
+  },
+  "screenshotHistoryUnlimited": {
+    "message": "Bez limitu",
+    "description": "Label when screenshot history limit is 0"
+  },
+  "screenshotHistoryView": {
+    "message": "Zobrazit historii",
+    "description": "Open screenshot history window"
+  },
+  "screenshotHistoryTitle": {
+    "message": "Historie snímků obrazovky",
+    "description": "Screenshot history window title"
+  },
+  "screenshotHistoryEmpty": {
+    "message": "Zatím žádné snímky",
+    "description": "Empty screenshot history state"
+  },
+  "screenshotHistoryClearAll": {
+    "message": "Vymazat wszystko",
+    "description": "Delete all screenshot history entries"
+  },
+  "screenshotHistoryClearConfirm": {
+    "message": "Smazat todo el historie snímků?",
+    "description": "Confirm clearing screenshot history"
+  },
+  "screenshotHistoryDelete": {
+    "message": "Usuń",
+    "description": "Delete one screenshot history entry"
+  },
+  "screenshotHistoryPinToPage": {
+    "message": "Przypnij en la página",
+    "description": "Pin history thumbnail onto the web page"
+  },
+  "screenshotHistoryPinFailed": {
+    "message": "Nelze připnout (otevřete cílovou kartu nebo povolte tento web).",
+    "description": "Error when pinning from screenshot history"
+  },
+  "screenshotHistoryCount": {
+    "message": "$1 elementów",
+    "description": "Number of items in screenshot history",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "screenshotHistoryModeViewport": {
+    "message": "Widoczny obszar",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeFullPage": {
+    "message": "Cała strona",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeRegion": {
+    "message": "Oblast",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeScroll": {
+    "message": "Przewijanie ręczne",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeUnknown": {
+    "message": "Snímek obrazovky",
+    "description": "Screenshot history capture mode fallback label"
+  },
+  "screenshotDone": {
+    "message": "Snímek obrazovky gotowy",
+    "description": "Hint when capture finished without clipboard copy"
+  },
+  "screenshotPreviewTitle": {
+    "message": "Náhled snímku",
+    "description": "Screenshot preview window title"
+  },
+  "screenshotPreviewClose": {
+    "message": "Zamknij",
+    "description": "Close screenshot preview window"
+  },
+  "screenshotPreviewCopyAgain": {
+    "message": "Kopiuj",
+    "description": "Copy screenshot to clipboard from preview window"
+  },
+  "screenshotPreviewSave": {
+    "message": "Zapisz jako soubor",
+    "description": "Save annotated screenshot to disk"
+  },
+  "screenshotPreviewSaved": {
+    "message": "Zapisano",
+    "description": "Screenshot file save succeeded"
+  },
+  "screenshotPreviewPinToPage": {
+    "message": "Przypnij en la página",
+    "description": "Pin annotated screenshot onto the source web page"
+  },
+  "screenshotPreviewPinned": {
+    "message": "Przypięto",
+    "description": "Screenshot pin placed on page"
+  },
+  "screenshotPreviewPinning": {
+    "message": "Przypisywanie…",
+    "description": "Screenshot pin in progress"
+  },
+  "screenshotPinTitle": {
+    "message": "Snímek obrazovky",
+    "description": "Title on pinned screenshot sticker"
+  },
+  "screenshotPinClose": {
+    "message": "Odebrat připnutí",
+    "description": "Close button on pinned screenshot"
+  },
+  "screenshotPinResize": {
+    "message": "Zmień rozmiar",
+    "description": "Resize handle on pinned screenshot"
+  },
+  "screenshotPinZoomFit": {
+    "message": "Dopasuj",
+    "description": "Fit pinned screenshot to view"
+  },
+  "screenshotPinZoomOriginal": {
+    "message": "1:1",
+    "description": "Show pinned screenshot at original pixel size"
+  },
+  "screenshotPinOrderLabel": {
+    "message": "Przypięcie $1$",
+    "description": "Pinned screenshot order number",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "screenshotPreviewLoadFailed": {
+    "message": "Nelze načíst náhled",
+    "description": "Screenshot preview load error"
+  },
+  "screenshotPreviewZoomFit": {
+    "message": "Dopasuj",
+    "description": "Fit screenshot to preview window"
+  },
+  "screenshotPreviewZoomFitTitle": {
+    "message": "Dopasuj do okna",
+    "description": "Tooltip for fit zoom button"
+  },
+  "screenshotPreviewZoomOneToOne": {
+    "message": "1:1",
+    "description": "Actual-size zoom button label"
+  },
+  "screenshotPreviewZoomOneToOneTitle": {
+    "message": "Rzeczywisty rozmiar (1:1)",
+    "description": "Tooltip for 1:1 zoom button"
+  },
+  "screenshotPreviewZoomLevel": {
+    "message": "Přiblížení $1$ %",
+    "description": "Current zoom percentage in preview",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "screenshotAnnotHand": {
+    "message": "Ręka (przesuń)",
+    "description": "Pan the preview by dragging"
+  },
+  "screenshotAnnotPen": {
+    "message": "Ołówek",
+    "description": "Annotation tool: freehand"
+  },
+  "screenshotAnnotArrow": {
+    "message": "Strzałka (Shift: H/V)",
+    "description": "Annotation tool: arrow; Shift constrains to horizontal or vertical"
+  },
+  "screenshotAnnotLine": {
+    "message": "Linia (Shift: H/V)",
+    "description": "Annotation tool: line; Shift constrains to horizontal or vertical"
+  },
+  "screenshotAnnotRect": {
+    "message": "Prostokąt (Shift: čtverec)",
+    "description": "Annotation tool: rectangle; Shift draws a square"
+  },
+  "screenshotAnnotEllipse": {
+    "message": "Elipsa",
+    "description": "Annotation tool: ellipse"
+  },
+  "screenshotAnnotRoundRect": {
+    "message": "Prostokąt zaokrąglony",
+    "description": "Annotation tool: rounded rectangle"
+  },
+  "screenshotAnnotHighlighter": {
+    "message": "Zakreślacz",
+    "description": "Annotation tool: highlighter marker"
+  },
+  "screenshotAnnotHighlight": {
+    "message": "Ramka podświetlenia",
+    "description": "Annotation tool: highlight rectangle"
+  },
+  "screenshotAnnotFillRect": {
+    "message": "Prostokąt wypełniony",
+    "description": "Annotation tool: filled rectangle"
+  },
+  "screenshotAnnotFillEllipse": {
+    "message": "Elipsa vyplněná",
+    "description": "Annotation tool: filled ellipse"
+  },
+  "screenshotAnnotBlur": {
+    "message": "Rozmycie",
+    "description": "Annotation tool: blur brush"
+  },
+  "screenshotAnnotArrow2": {
+    "message": "Strzałka podwójna (Shift: H/V)",
+    "description": "Annotation tool: line with arrowheads at both ends; Shift constrains H/V"
+  },
+  "screenshotAnnotNumber": {
+    "message": "Numer",
+    "description": "Annotation tool: sequential number markers"
+  },
+  "screenshotAnnotStampStart": {
+    "message": "Počátek č.",
+    "description": "Starting number for sequential stamps"
+  },
+  "screenshotAnnotStampNext": {
+    "message": "Następny nr: $1$",
+    "description": "Next number stamp to place (tooltip)",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "screenshotAnnotCrop": {
+    "message": "Przytnij",
+    "description": "Annotation tool: crop image"
+  },
+  "screenshotAnnotCropApply": {
+    "message": "Použít ořez",
+    "description": "Confirm crop selection"
+  },
+  "screenshotAnnotCropCancel": {
+    "message": "Anuluj",
+    "description": "Cancel crop selection"
+  },
+  "screenshotAnnotText": {
+    "message": "Text",
+    "description": "Annotation tool: text"
+  },
+  "screenshotAnnotMosaic": {
+    "message": "Mozaika",
+    "description": "Annotation tool: mosaic blur"
+  },
+  "screenshotAnnotEraser": {
+    "message": "Gumka",
+    "description": "Annotation tool: eraser"
+  },
+  "screenshotAnnotSize": {
+    "message": "Rozmiar",
+    "description": "Annotation stroke size"
+  },
+  "screenshotAnnotResetAll": {
+    "message": "Resetuj všechny úpravy",
+    "description": "Clear all annotations and restore original screenshot"
+  },
+  "screenshotAnnotStepCount": {
+    "message": "$1 / $2",
+    "description": "History step indicator: current / total"
+  },
+  "screenshotAnnotStepCountTitle": {
+    "message": "Zastosowane kroki / total (0 = obraz oryginalny)",
+    "description": "Tooltip for history step indicator"
+  },
+  "screenshotAnnotUndo": {
+    "message": "Cofnij",
+    "description": "Undo annotation"
+  },
+  "screenshotAnnotRedo": {
+    "message": "Ponów",
+    "description": "Redo annotation"
+  },
+  "screenshotAnnotTextPlaceholder": {
+    "message": "Pište zde…",
+    "description": "Placeholder in inline text editor on screenshot preview"
+  },
+  "screenshotOptRegion": {
+    "message": "Vyberteenie oblasti",
+    "description": "Screenshot bind row: keyboard drag rectangle region"
+  },
+  "screenshotOptViewport": {
+    "message": "Widoczny obszar",
+    "description": "Screenshot bind row: current visible tab area"
+  },
+  "screenshotOptFullPage": {
+    "message": "Cała strona",
+    "description": "Screenshot bind row: full page"
+  },
+  "screenshotOptScrollStitch": {
+    "message": "Przewijanie ręczne",
+    "description": "Screenshot bind row: manual scroll capture"
+  },
+  "screenshotOptOpenHistory": {
+    "message": "Otevřít historia",
+    "description": "Screenshot bind row: keyboard shortcut to open screenshot history"
+  },
+  "screenshotHotkeyPressHint": {
+    "message": "Zkratky: kliknij en un campo arriba y pulse una combinación (Ctrl / Alt / Meta + letra o número, o F1–F12). Esc borra el campo.",
+    "description": "Screenshot section footer: hotkey binding help"
+  },
+  "screenshotHotkeyPlaceholder": {
+    "message": "Klikněte pro nastavení",
+    "description": "Placeholder in empty screenshot hotkey fields"
+  },
+  "screenshotRegionPickHint": {
+    "message": "Tažením vyberte oblast. Esc zruší.",
+    "description": "Hint while keyboard region picker is active"
+  },
+  "screenshotRegionPickFooterHint": {
+    "message": "Zkratka oblasti: nakreslete obdélník a pusťte. Jsou-li odkazy, snímek nebo nové karty. Esc zruší.",
+    "description": "Screenshot section footer: keyboard region picker help"
+  },
+  "screenshotRegionTooSmall": {
+    "message": "Vyberteenie za mały — narysuj większy obszar",
+    "description": "Region picker: minimum size not met"
+  },
+  "screenshotGestureIntersectHint": {
+    "message": "Oblast stopy: jedna smyčka nebo jedno křížení, pak pusťte. Obsahuje-li odkazy, snímek nebo nové karty. Mnoho smyček = čmáranice.",
+    "description": "Screenshot section footer: trail region capture help"
   },
   "togglePinTab": {
     "message": "Připnout/Odepnout kartu",
@@ -244,16 +764,16 @@
     "description": "Settings title"
   },
   "customizedBehavior": {
-    "message": "Blokovací seznam",
-    "description": "Block list section title"
+    "message": "Vypnuté weby",
+    "description": "Section title for the per-site disable list"
   },
   "disableMouseGesturesForSites": {
-    "message": "Na těchto webech zakázat mouse gesta a super přetažení",
-    "description": "Label for the list of sites where gestures and super drag are disabled"
+    "message": "Zakázat funkce rozšíření na uvedených doménách",
+    "description": "Subtitle for Disabled sites section"
   },
   "disabledSitesHint": {
-    "message": "Jeden web na řádek. Doména (např. youtube.com) nebo celá URL.",
-    "description": "Hint for the disabled sites textarea"
+    "message": "Platí pro: gesta, super přetažení, náhled odkazů/obrázků, snímky obrazovky a odemknutí stránky. Přidejte aktuální web nebo zadejte doménu/URL; položku odstraníte kliknutím na značku odebrání.",
+    "description": "Short hint explaining which features the Disabled sites list affects"
   },
   "enableGesture": {
     "message": "Povolit myší gesta",
@@ -279,6 +799,26 @@
     "message": "Povolit super přetažení",
     "description": "Enable super drag option"
   },
+  "superDragCompassPosition": {
+    "message": "Kompas 8-kierunkowy",
+    "description": "Super drag compass display and position"
+  },
+  "superDragCompassPosCompassAbove": {
+    "message": "Nad punktem przeciągania",
+    "description": "Compass above drag start, centered horizontally"
+  },
+  "superDragCompassPosCompassRight": {
+    "message": "Po prawej od punktu przeciągania",
+    "description": "Compass to the right of drag start, vertically centered"
+  },
+  "superDragCompassPosCompassBelow": {
+    "message": "Pod punktem przeciągania",
+    "description": "Compass below drag start, centered horizontally"
+  },
+  "superDragCompassPosCompassLeft": {
+    "message": "Po lewej od punktu przeciągania",
+    "description": "Compass to the left of drag start, vertically centered"
+  },
   "enableDragTextSearch": {
     "message": "Povolit vyhledávání tažením textu",
     "description": "Enable drag text search option"
@@ -287,9 +827,17 @@
     "message": "Auto stáhnout obrázek/soubor při přetažení",
     "description": "When the drag target is an image or other downloadable file, start download automatically"
   },
+  "enableImageDrag": {
+    "message": "Povolit přetahování obrázků",
+    "description": "Control image super drag independently from image preview"
+  },
   "enableImagePreview": {
     "message": "Povolit náhled obrázku",
     "description": "Enable image preview option"
+  },
+  "enableImagePreviewEnhanced": {
+    "message": "Rozšířený náhled obrázku",
+    "description": "Support transparent overlay, background-image, parent lookup, etc."
   },
   "enableDuplicateCheck": {
     "message": "Detekovat duplicitní karty",
@@ -302,10 +850,6 @@
   "enableSmoothScroll": {
     "message": "Povolit plynulé posouvání",
     "description": "Enable Smooth Scroll"
-  },
-  "save": {
-    "message": "Nastavení použito",
-    "description": "Save settings button"
   },
   "reset": {
     "message": "Obnovit",
@@ -363,14 +907,6 @@
     "message": "Nepodařilo se obnovit nastavení",
     "description": "Reset settings error notification"
   },
-  "themeLight": {
-    "message": "Světlý režim",
-    "description": "Light theme"
-  },
-  "themeDark": {
-    "message": "Tmavý režim",
-    "description": "Dark theme"
-  },
   "buyMeACoffee": {
     "message": "Kupte mi kávu",
     "description": "Donation button"
@@ -379,17 +915,33 @@
     "message": "Přepnout motiv",
     "description": "Toggle theme button"
   },
-  "toggleLanguage": {
-    "message": "Přepnout jazyk",
-    "description": "Toggle language button"
+  "openDetachedPopupTitle": {
+    "message": "Otevřít nastavení v postranním panelu (jinak samostatné okno)",
+    "description": "Tlačítko záhlaví: nastavení v postranním panelu nebo samostatném okně"
+  },
+  "openDetachedWindowFromSidePanelTitle": {
+    "message": "Otevřít v samostatném okně (vedle prohlížeče)",
+    "description": "Postranní panel: samostatné okno a rozložení prohlížeče"
+  },
+  "openOptionsPageTitle": {
+    "message": "Otevřít stránku možností",
+    "description": "Tlačítko záhlaví: otevře stránku možností rozšíření"
   },
   "donationTooltip": {
     "message": "Pokud se vám tato práce líbí, podpořte mě. Děkuji :)",
     "description": "Donation tooltip"
   },
   "rightButtonHint": {
-    "message": "Podržte pravé tlačítko myši",
+    "message": "Pravé (trasa, kolečko, klepnutí) · levé (kolečko) podržte",
     "description": "Right mouse button hint"
+  },
+  "builtInGesturesListExpandHint": {
+    "message": "Kliknutím rozbalíte celý seznam gest",
+    "description": "Tooltip on built-in gestures subtitle when list is collapsed"
+  },
+  "builtInGesturesListCollapseHint": {
+    "message": "Kliknutím sbalíte seznam gest",
+    "description": "Tooltip on built-in gestures subtitle when list is expanded"
   },
   "leftButtonHint": {
     "message": "Podržte levé tlačítko myši",
@@ -403,17 +955,45 @@
     "message": "Otevřít na pozadí",
     "description": "Open in background action"
   },
+  "popupViewAction": {
+    "message": "Náhled v okně",
+    "description": "Super drag action: open target in popup view"
+  },
+  "incognitoAction": {
+    "message": "Otevřít v anonymním okně",
+    "description": "Open in incognito/private window"
+  },
+  "enableSplitScrollSync": {
+    "message": "Synchronizovat svislé i vodorovné posouvání mezi rozdělenými okny",
+    "description": "Při rozděleném zobrazení sladit obě osy posouvání mezi okny"
+  },
   "copyAction": {
     "message": "Kopírovat",
     "description": "Copy selected text or link URL to clipboard"
+  },
+  "downloadAction": {
+    "message": "St?hnout",
+    "description": "Super drag action: download target"
   },
   "copiedToClipboard": {
     "message": "Zkopírováno do schránky",
     "description": "Hint after copy action"
   },
-  "dragSearchEngine": {
-    "message": "URL vyhledávače pro přetažení",
-    "description": "Drag search engine URL setting"
+  "dragSearchEngineSlotLabel": {
+    "message": "Položka k úpravě",
+    "description": "Label for drag search engine slot selector"
+  },
+  "dragSearchSlotDefault": {
+    "message": "Výchozí (záložní)",
+    "description": "Default search URL slot in drag search editor"
+  },
+  "dragSearchEngineUrlForSlot": {
+    "message": "URL vyhledávače",
+    "description": "Label for single drag search URL field"
+  },
+  "dragSearchEnginePerDirectionHelp": {
+    "message": "V seznamu zvolte „Výchozí“ nebo směr přetahování a upravte odpovídající URL. Prázdné směry použijí výchozí. Platí jen pro vyhledávání přetahovaného textu.",
+    "description": "Help text for unified drag search engine editor"
   },
   "linkPreview": {
     "message": "Náhled v okně",
@@ -424,7 +1004,7 @@
     "description": "Quick navigation hover tooltip"
   },
   "linkPreviewHint": {
-    "message": "Najetí + klávesa pro zobrazení okna",
+    "message": "Náhled zobrazíte najetím a použitím spouštěče",
     "description": "Popup view hint"
   },
   "enableLinkPreview": {
@@ -495,41 +1075,61 @@
     "message": "Použijte {q} pro hledaný výraz, příklad formátu:",
     "description": "Search engine examples description"
   },
+  "searchExampleUrlClickHint": {
+    "message": "Kliknutím na ukázkovou URL vyplníte pole výše a uložíte",
+    "description": "Tooltip for example search engine URLs (click to fill)"
+  },
+  "searchEngineExamplesUrlClickHint": {
+    "message": "Tip: Kliknutím na ukázkovou URL vyplníte pole výše a uložíte.",
+    "description": "Visible hint under search engine examples (click URL to fill field above and save)"
+  },
   "googleExample": {
-    "message": "Google vyhledávání: https://www.google.com/search?q={q}",
+    "message": "Google vyhledávání:",
+    "description": "Google search example"
+  },
+  "googleExampleUrl": {
+    "message": "https://www.google.com/search?q={q}",
     "description": "Google search example"
   },
   "googleTranslateExample": {
-    "message": "Google Překladač: https://translate.google.com/?sl=auto&tl=cs&text={q}&op=translate",
+    "message": "Google Překladač:",
+    "description": "Google translate example"
+  },
+  "googleTranslateExampleUrl": {
+    "message": "https://translate.google.com/?sl=auto&tl=cs&text={q}&op=translate",
     "description": "Google translate example"
   },
   "localSearchExample": {
-    "message": "DuckDuckGo vyhledávání: https://duckduckgo.com/?q={q}",
+    "message": "DuckDuckGo vyhledávání:",
+    "description": "Local search example"
+  },
+  "localSearchExampleUrl": {
+    "message": "https://duckduckgo.com/?q={q}",
     "description": "Local search example"
   },
   "bingExample": {
-    "message": "Bing vyhledávání: https://www.bing.com/search?q={q}",
+    "message": "Bing vyhledávání:",
+    "description": "Bing search example"
+  },
+  "bingExampleUrl": {
+    "message": "https://www.bing.com/search?q={q}",
     "description": "Bing search example"
   },
   "wheelTip": {
-    "message": "Použijte kolečko myši pro úpravu hodnoty",
+    "message": "Najeďte na tento řádek na ~1,5 s, poté upravte kolečkem",
     "description": "Wheel tip"
   },
   "modifierKeyDelayTip": {
-    "message": "Při použití aktivační klávesy je maximální zpoždění omezeno na 300 ms",
+    "message": "Prodleva začne po splnění podmínky spuštění; jejím zvýšením omezíte nechtěné náhledy.",
     "description": "Modifier key delay tip"
   },
   "welcomeTitle": {
-    "message": "Vítejte v rozšíření Myší gesto",
+    "message": "Vítejte v rozšíření gest myši",
     "description": "Welcome page title"
   },
   "welcomeDescription": {
-    "message": "Děkujeme za instalaci rozšíření Myší gesto! Toto rozšíření poskytuje bohatou funkcionalitu myších gest, inteligentní správu karet, možnost náhledu v okně a vylepšený vizuální zážitek, který vám pomůže efektivněji procházet web. Optimalizovali jsme algoritmus rozpoznávání gest s vyšší tolerancí chyb, takže gesta budou správně rozpoznána i při nedokonalém provedení. Nová funkce náhledu v okně vám umožní zobrazit obsah odkazu v popup okně bez přepínání karet. Rozšíření také podporuje 29 jazyků a světlý/tmavý režim pro lepší uživatelský zážitek.",
+    "message": "Děkujeme za instalaci Mouse Gesture! Držte pravé tlačítko a táhněte pro navigaci, správu karet a posouzání; navíc držte pravé nebo levé s kolečkem (další kombinace v nastavení) pro další zkratky — rozpoznávání zůstává tolerantní i během načítání stránek. Super Drag otevírá odkazy, obrázky a vyhledávání textu s pravidly podle směru (popředí, pozadí, rozdělené rozložení, kopírování do schránky a další). Popup View zobrazuje náhledy odkazů nebo vyhledává vybraný text v malých oknech. Volitelně: náhled obrázku při najetí (rozšířený režim), detekce duplicitních karet s automatickým zavíráním, plynulé posouvání, odznak počtu karet na panelu a odblokování stránek na restriktivních webech. Nastavení z panelu (vyskakovací okno, postranní panel nebo samostatné okno); export/import; synchronizace s účtem prohlížeče. 29 jazyků a světlý/tmavý motiv.",
     "description": "Welcome page description"
-  },
-  "gesturesDescription": {
-    "message": "Následující jsou přednastavená myší gesta, která můžete použít tažením pravým tlačítkem myši:",
-    "description": "Gestures description"
   },
   "extensionName": {
     "message": "Rozšíření Myší gesto",
@@ -539,88 +1139,48 @@
     "message": "Hlavní funkce",
     "description": "Core features title"
   },
-  "utilitiesFeatures": {
-    "message": "Nástroje",
-    "description": "Utilities features title"
+  "welcomeCoreGestureBlock": {
+    "message": "Gesta myši: držte pravé a táhněte pro gesta po dráze; kolečko se stisknutým pravým nebo levým a kombinace kliknutí při držení pravého — přemapovatelné v nastavení na mnoho akcí; rozpoznávání shovívavé, i při načítání stránek.",
+    "description": "Welcome page: core features gesture summary"
+  },
+  "welcomeCoreSuperDragBlock": {
+    "message": "Super Drag: přetáhněte odkazy a obrázky do nových karet, vybraný text pro vyhledávání; směr určuje způsob otevírání karet; výchozí na pozadí.",
+    "description": "Welcome page: core features super drag summary"
+  },
+  "welcomeCorePopupViewBlock": {
+    "message": "Vyskakovací náhled: držte klávesu spouštěče (výchozí Shift) nad odkazem pro náhled v malém okně; po výběru textu stiskněte klávesu pro okamžité vyhledání vlastním vyhledávačem.",
+    "description": "Welcome page: core features popup view summary"
   },
   "usageTips": {
     "message": "Tipy pro použití",
     "description": "Usage tips title"
   },
-  "smartGestureRecognition": {
-    "message": "Chytré rozpoznávání gest: Správně identifikuje gesta i při nedokonalém provedení, funguje během načítání stránky",
-    "description": "Smart gesture recognition description"
-  },
-  "tabManagementTitle": {
-    "message": "Správa karet",
-    "description": "Tab management title"
-  },
-  "tabManagementDesc": {
-    "message": ": Chytrá detekce duplikátů, volitelné automatické zavírání, periodická optimalizace paměti",
-    "description": "Tab management description"
-  },
-  "superDragTitle": {
-    "message": "Super přetažení",
-    "description": "Super drag title"
-  },
-  "superDragDesc": {
-    "message": ": Přetahujte odkazy a obrázky do nových karet, přetáhněte vybraný text pro vyhledávání",
-    "description": "Super drag description"
-  },
-  "linkPreviewTitle": {
-    "message": "Náhled v okně",
-    "description": "Link preview title"
-  },
-  "linkPreviewDesc": {
-    "message": ": Podržte aktivační klávesu (výchozí: Shift) při najetí na odkazy pro náhled cílových stránek v popup okně",
-    "description": "Link preview description"
-  },
-  "textSelectionPreview": {
-    "message": "Vyberte text a stiskněte aktivační klávesu pro okamžité vyhledání v popup okně, s podporou vlastního vyhledávače",
-    "description": "Text selection preview description"
-  },
   "previewTip": {
-    "message": "Můžete otevřít více popup oken současně",
+    "message": "Nechte otevřených více náhledových oken pro porovnání.",
     "description": "Preview tip"
-  },
-  "dragDirection": {
-    "message": "Přizpůsobte směr přetažení pro určení způsobu otevření karty: ve výchozím nastavení se otevírá na pozadí",
-    "description": "Drag direction description"
   },
   "debugPanelTitle": {
     "message": "Debug info myších gest",
     "description": "Debug panel title"
   },
   "debugPanelDesc": {
-    "message": ": Stiskněte Alt+D pro otevření, analyzujte informace o gestech v reálném čase, uchovává stav",
+    "message": "Stiskněte Alt+D pro otevření panelu ladění, analyzujte gesta v reálném čase a stav se zachová.",
     "description": "Debug panel description"
   },
-  "oneClickCopy": {
-    "message": "Jedním kliknutím zkopírujte debug info pro snadné sdílení, s podporou více jazyků",
-    "description": "One click copy description"
-  },
-  "mediaPreview": {
-    "message": "Vylepšený náhled médií: Vylepšené efekty najetí na obrázek a optimalizované náhledy videí",
-    "description": "Media preview description"
-  },
-  "adaptiveTheme": {
-    "message": "Adaptivní motivy: Přizpůsobuje vizuální styl podle pozadí stránky, podporuje světlý/tmavý režim",
-    "description": "Adaptive theme description"
-  },
   "gestureTrail": {
-    "message": "Stopy gest zobrazené na obrazovce s možností úpravy barvy a šířky",
+    "message": "Volitelná stopa a nápovědy gest; barva a tloušťka v nastavení.",
     "description": "Gesture trail description"
   },
   "clickIcon": {
-    "message": "Klikněte na ikonu rozšíření pro povolení/zakázání funkcí, nastavení jazyka, motivu a další",
+    "message": "Panel nástrojů: kompaktní popup, boční panel (Chrome/Edge) nebo samostatné okno nastavení. Přepínejte funkce, jazyk, motiv a export/import.",
     "description": "Click icon description"
   },
   "languageSupport": {
-    "message": "Podporuje 29 jazyků, automaticky se přizpůsobí jazyku prohlížeče",
+    "message": "29 jazyků rozhraní; používá uloženou volbu nebo jazyk prohlížeče.",
     "description": "Language support description"
   },
   "enableAutoClose": {
-    "message": "Povolte funkci automatického zavírání duplicitních karet pro výrazné snížení využití zdrojů prohlížeče",
+    "message": "Při detekci duplicit lze volitelně automaticky zavírat opakované URL.",
     "description": "Enable auto close description"
   },
   "rightClickMacLinux": {
@@ -634,14 +1194,6 @@
   "duplicateTabsDetected": {
     "message": "Nalezeno $1 duplicitních karet",
     "description": "Duplicate tabs detected notification title"
-  },
-  "duplicateTabsCount": {
-    "message": "Existuje $1 duplicitních karet",
-    "description": "Duplicate tabs count message"
-  },
-  "duplicateTabsSingle": {
-    "message": "Existuje 1 duplicitní karta",
-    "description": "Single duplicate tab message"
   },
   "autoClosedTabs": {
     "message": "Automaticky zavřeno $1 duplicitních karet",
@@ -659,61 +1211,9 @@
     "message": "Nepojmenovaná karta",
     "description": "Untitled tab"
   },
-  "morePages": {
-    "message": "...a dalších $1 stránek",
-    "description": "More pages tip"
-  },
-  "errorShowDuplicateTabs": {
-    "message": "Chyba při zobrazování oznámení o duplicitních kartách:",
-    "description": "Error showing duplicate tabs notification"
-  },
-  "errorSendCloseRequest": {
-    "message": "Chyba při odesílání požadavku na zavření:",
-    "description": "Error sending close request"
-  },
-  "errorCloseDuplicateTabs": {
-    "message": "Chyba při zavírání duplicitních karet:",
-    "description": "Error closing duplicate tabs"
-  },
-  "errorSendIgnoreRequest": {
-    "message": "Chyba při odesílání požadavku na ignorování:",
-    "description": "Error sending ignore request"
-  },
-  "errorIgnoreDuplicateTabs": {
-    "message": "Chyba při ignorování duplicitních karet:",
-    "description": "Error ignoring duplicate tabs"
-  },
-  "errorUpdateDebugPanel": {
-    "message": "Chyba při aktualizaci debug panelu:",
-    "description": "Error updating debug panel"
-  },
   "errorDetectBackgroundColor": {
     "message": "Chyba při detekci barvy pozadí:",
     "description": "Error detecting background color"
-  },
-  "errorDetectImageBorder": {
-    "message": "Chyba při detekci zaoblení obrázku:",
-    "description": "Error detecting image border radius"
-  },
-  "errorSetMutationObserver": {
-    "message": "Chyba při nastavování pozorovatele změn:",
-    "description": "Error setting mutation observer"
-  },
-  "errorCheckElementVisibility": {
-    "message": "Chyba při kontrole viditelnosti prvku:",
-    "description": "Error checking element visibility"
-  },
-  "errorProcessBorderRadius": {
-    "message": "Chyba při zpracování zaoblení:",
-    "description": "Error processing border radius"
-  },
-  "errorDetectImageBackground": {
-    "message": "Chyba při detekci pozadí obrázku:",
-    "description": "Error detecting image background"
-  },
-  "errorShowAutoCloseNotification": {
-    "message": "Chyba při zobrazování oznámení o úspěšném automatickém zavření:",
-    "description": "Error showing auto-close success notification"
   },
   "noForwardPage": {
     "message": "V historii není žádná další stránka",
@@ -743,10 +1243,6 @@
     "message": "Neplatné gesto",
     "description": "Invalid gesture message"
   },
-  "nextPage": {
-    "message": "Další stránka",
-    "description": "Next page action"
-  },
   "errorReadPixel": {
     "message": "Chyba při čtení pixelu:",
     "description": "Error reading pixel message"
@@ -758,10 +1254,6 @@
   "errorCanvasDraw": {
     "message": "Chyba při kreslení na plátno:",
     "description": "Error drawing on canvas message"
-  },
-  "errorAccessIframe": {
-    "message": "Chyba při přístupu k iframe:",
-    "description": "Error accessing iframe message"
   },
   "errorMutationObserver": {
     "message": "Chyba při nastavování pozorovatele změn:",
@@ -791,6 +1283,10 @@
     "message": "Systémová nastavení",
     "description": "Debug panel system settings section"
   },
+  "debugConsoleLog": {
+    "message": "Protokoly konzole",
+    "description": "Debug panel console log toggle label"
+  },
   "debugAngleThreshold": {
     "message": "Práh úhlu",
     "description": "Debug panel angle threshold setting"
@@ -810,6 +1306,46 @@
   "debugMinGestureComplexity": {
     "message": "Minimální složitost gesta",
     "description": "Debug panel minimum gesture complexity setting"
+  },
+  "debugMinMovementToStartGesture": {
+    "message": "Min. pohyb pro spuštění",
+    "description": "Nastavení ladicího panelu: minimální pohyb pro zahájení sledování gesta"
+  },
+  "debugSmoothingFactor": {
+    "message": "Faktor vyhlazení",
+    "description": "Nastavení ladicího panelu: faktor vyhlazení stopy a rozpoznávání"
+  },
+  "debugAngleThresholdHelp": {
+    "message": "Určuje, jak přísně se pohyb klasifikuje jako vodorovný nebo svislý. Vyšší hodnoty vyžadují rovnější směr, nižší povolují šikmější pohyb.",
+    "description": "Nápověda k prahu úhlu v ladicím panelu"
+  },
+  "debugDirectionChangeThresholdHelp": {
+    "message": "Určuje citlivost detekce změny směru. Nižší hodnoty snáze zachytí zatáčky, vyšší ignorují drobné chvění.",
+    "description": "Nápověda k prahu změny směru v ladicím panelu"
+  },
+  "debugMinGestureDistanceHelp": {
+    "message": "Minimální celková vzdálenost pohybu potřebná k rozpoznání gesta. Zvýšením omezíte nechtěná spuštění.",
+    "description": "Nápověda k minimální vzdálenosti gesta v ladicím panelu"
+  },
+  "debugMinDirectionSegmentLengthHelp": {
+    "message": "Minimální délka úseku pohybu používaná pro rozpoznání směru. Zvýšením odfiltrujete krátké chvění, snížením podpoříte kratší gesta.",
+    "description": "Nápověda k minimální délce směrového úseku v ladicím panelu"
+  },
+  "debugMinGestureComplexityHelp": {
+    "message": "Práh směrové složitosti, po kterém se stopa považuje za čmárání nebo neplatnou. Vyšší hodnoty tolerují více změn směru.",
+    "description": "Nápověda ke složitosti gesta v ladicím panelu"
+  },
+  "debugMinMovementToStartGestureHelp": {
+    "message": "Ukazatel se musí po stisku tlačítka posunout alespoň o tolik pixelů, než začne sledování gesta.",
+    "description": "Nápověda k minimálnímu pohybu pro spuštění v ladicím panelu"
+  },
+  "debugSmoothingFactorHelp": {
+    "message": "Řídí vyhlazení stopy a bodů rozpoznávání. Vyšší hodnoty snižují chvění, ale mohou zjemnit ostré zatáčky; nižší reagují rychleji.",
+    "description": "Nápověda k faktoru vyhlazení v ladicím panelu"
+  },
+  "debugConsoleLogHelp": {
+    "message": "Zapne podrobné protokoly rozšíření v konzoli DevTools pro řešení problémů.",
+    "description": "Nápověda ke konzolovým logům v ladicím panelu"
   },
   "debugLatestGestureInfo": {
     "message": "Nejnovější informace o gestu",
@@ -850,10 +1386,6 @@
   "debugMergedDirections": {
     "message": "Sloučené směry",
     "description": "Debug panel merged directions"
-  },
-  "debugDirectionDistances": {
-    "message": "Vzdálenosti směrů",
-    "description": "Debug panel direction distances"
   },
   "debugFinalResult": {
     "message": "Konečný výsledek",
@@ -927,9 +1459,17 @@
     "message": "Zobrazit počet karet",
     "description": "Show tab count badge option"
   },
-  "splitViewAction": {
-    "message": "Rozdělené zobrazení",
-    "description": "Otevřít v okně rozděleného zobrazení"
+  "unlockPageRestrictions": {
+    "message": "Odemknout kopírování/vložení/pravé tlačítko a sledování karet",
+    "description": "Setting: unlock page interaction limits"
+  },
+  "unlockPageRestrictionsTitle": {
+    "message": "Odstraňuje běžné blokace kopírování, vložení, kontextové nabídky a selekce; snižuje sledování blur/visibilitychange. Běží v kontextu stránky, iframes a Shadow DOM. Po zapnutí obnovte stránku.",
+    "description": "Tooltip for unlock page restrictions"
+  },
+  "unlockPageRestrictionsOffReloadConfirm": {
+    "message": "V otevřených kartách může injekce zůstat do obnovení.\n\nObnovit aktuální kartu nyní?",
+    "description": "Body text for unlock-off confirmation dialog"
   },
   "splitViewLeft": {
     "message": "Rozdělit - vlevo",
@@ -946,5 +1486,165 @@
   "splitViewDown": {
     "message": "Rozdělit - dole",
     "description": "Rozdělené zobrazení, nové okno v dolní polovině"
+  },
+  "unlockPageRestrictionsOffTitle": {
+    "message": "Odemčení stránky vypnuto",
+    "description": "Title for unlock-off confirmation dialog"
+  },
+  "unlockPageRestrictionsReloadTab": {
+    "message": "Obnovit kartu",
+    "description": "Reload tab button in unlock-off dialog"
+  },
+  "unlockPageRestrictionsNotNow": {
+    "message": "Teď ne",
+    "description": "Dismiss unlock-off dialog without reload"
+  },
+  "welcomeBulletImagePreview": {
+    "message": "Náhled obrázku: volitelné zvětšení při najetí a rozšířený režim pro složité rozvržení.",
+    "description": "Welcome page: image hover preview bullet"
+  },
+  "welcomeBulletPageUnlock": {
+    "message": "Odblokování stránky: volitelně zmírnit blokace kopírování, vkládání, pravého tlačítka atd. — zapněte v nastavení a případně stránku znovu načtěte.",
+    "description": "Welcome page: page unlock bullet"
+  },
+  "welcomeBulletDisabledSites": {
+    "message": "Podle webu: u uvedených domén se současně vypnou gesta, Super Drag, vyskakovací náhled a odblokování.",
+    "description": "Welcome page: per-site disable bullet"
+  },
+  "welcomeBulletSplitScroll": {
+    "message": "Rozdělené zobrazení: při otevření ve split rozložení lze synchronizovat posouvání mezi okny (včetně vodorovně).",
+    "description": "Welcome page: split scroll sync bullet"
+  },
+  "welcomeBulletScreenshot": {
+    "message": "Snímky obrazovky: viditelná oblast, celá stránka a ruční posouvání; oblasti stopy, zkratky, schránka, náhled a místní historie (0 = neomezeno).",
+    "description": "Welcome page: screenshot feature bullet"
+  },
+  "welcomeTipScreenshot": {
+    "message": "Snímky jsou ve výchozím nastavení zapnuté; přiřaďte zkratky pro viditelnou oblast, celou stránku a posouvání; oblast stopy, auto-kopie, náhled a historie jsou volitelné.",
+    "description": "Welcome page: screenshot usage tip"
+  },
+  "trailColorPickerPresets": {
+    "message": "Ustawienia wstępne",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerRecent": {
+    "message": "Ostatnie",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerEyedropper": {
+    "message": "Pipeta",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerEyedropperActive": {
+    "message": "Klikněte pro výběr barvy · kolečko zvětší lupu",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerSyncTrail": {
+    "message": "Uložit jako barvu stopy",
+    "description": "Trail color picker UI"
+  },
+  "superDragCompassPosCompassHub": {
+    "message": "Punkt przeciągania",
+    "description": "Compass hub aligned to drag start"
+  },
+  "superDragCompassPosCompassScreenCenter": {
+    "message": "Środek ekranu",
+    "description": "Compass fixed at viewport center"
+  },
+  "superDragCompassPosCompassScreenTop": {
+    "message": "Góra",
+    "description": "Compass fixed at top of viewport"
+  },
+  "superDragCompassPosCompassScreenRight": {
+    "message": "Prawo",
+    "description": "Compass fixed at right of viewport"
+  },
+  "superDragCompassPosCompassScreenBottom": {
+    "message": "Dół",
+    "description": "Compass fixed at bottom of viewport"
+  },
+  "superDragCompassPosCompassScreenLeft": {
+    "message": "Lewo",
+    "description": "Compass fixed at left of viewport"
+  },
+  "superDragCompassPosCompassHidden": {
+    "message": "Ukryty",
+    "description": "Do not show compass"
+  },
+  "addCurrentSiteToDisabledSites": {
+    "message": "Přidat aktuální web",
+    "description": "Button: add the active tab domain to disabled sites"
+  },
+  "addCurrentSiteToDisabledSitesTitle": {
+    "message": "Přidat doménu aktuální karty mezi zakázané weby",
+    "description": "Tooltip for add-current-site button"
+  },
+  "addDisabledSite": {
+    "message": "Přidat",
+    "description": "Button: add a typed disabled site entry"
+  },
+  "disabledSiteInputPlaceholder": {
+    "message": "Doména nebo úplná URL, např. youtube.com",
+    "description": "Placeholder for the disabled site input"
+  },
+  "disabledSitesEmpty": {
+    "message": "Zatím nejsou žádné zakázané weby.",
+    "description": "Empty state for disabled sites list"
+  },
+  "removeDisabledSite": {
+    "message": "Odebrat tento web",
+    "description": "Tooltip/aria label for remove disabled site button"
+  },
+  "disabledSiteInvalid": {
+    "message": "Zadejte platnou doménu nebo URL",
+    "description": "Error shown when disabled site input is invalid"
+  },
+  "disabledSiteAlreadyExists": {
+    "message": "Web již existuje",
+    "description": "Error shown when adding a duplicate disabled site"
+  },
+  "disabledSitesLimitReached": {
+    "message": "Byl dosažen limit zakázaných webů",
+    "description": "Error shown when disabled sites list reaches the maximum size"
+  },
+  "currentSiteUnsupported": {
+    "message": "Aktuální karta nemá podporovanou doménu",
+    "description": "Error shown when current tab URL cannot be added to disabled sites"
+  },
+  "customKey": {
+    "message": "Vlastní klávesa",
+    "description": "Custom trigger key option"
+  },
+  "previewTriggerMode": {
+    "message": "Režim spuštění",
+    "description": "Popup view trigger mode setting"
+  },
+  "previewTriggerHold": {
+    "message": "Podržet spouštěcí klávesu",
+    "description": "Hold trigger key option"
+  },
+  "previewTriggerDouble": {
+    "message": "Dvakrát stisknout spouštěcí klávesu",
+    "description": "Double-press trigger key option"
+  },
+  "previewCustomKey": {
+    "message": "Vlastní klávesa",
+    "description": "Popup view custom trigger key setting"
+  },
+  "previewCustomKeyPlaceholder": {
+    "message": "Klikněte a stiskněte klávesu",
+    "description": "Popup view custom trigger key placeholder"
+  },
+  "previewCustomKeyTitle": {
+    "message": "Klikněte sem a stiskněte klávesu bez modifikátoru. Klávesou Esc nastavení vymažete.",
+    "description": "Popup view custom trigger key title"
+  },
+  "unlimited": {
+    "message": "Bez omezení",
+    "description": "Unlimited value label"
+  },
+  "settingsFontSize": {
+    "message": "Velikost písma nastavení",
+    "description": "Header button: adjust settings font size"
   }
 }

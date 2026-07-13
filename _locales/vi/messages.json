@@ -4,7 +4,7 @@
     "description": "The name of the extension"
   },
   "extDesc": {
-    "message": "Tiện ích mở rộng Chrome/Edge hỗ trợ cử chỉ chuột, tính năng kéo thả siêu tốc và xem trước liên kết",
+    "message": "Cử chỉ chuột, kéo siêu tốc, xem trước ảnh, liên kết và tính năng khác.",
     "description": "The description of the extension"
   },
   "title": {
@@ -35,13 +35,21 @@
     "message": "Kéo Trái",
     "description": "Drag left action"
   },
-  "openInForeground": {
-    "message": "Mở Liên Kết Ở Nền Trước",
-    "description": "Open link in foreground"
+  "dragUpRight": {
+    "message": "Kéo lên-phải",
+    "description": "Super drag diagonal direction"
   },
-  "openInBackground": {
-    "message": "Mở Liên Kết Ở Nền Sau",
-    "description": "Open link in background"
+  "dragDownRight": {
+    "message": "Kéo xuống-phải",
+    "description": "Super drag diagonal direction"
+  },
+  "dragDownLeft": {
+    "message": "Kéo xuống-trái",
+    "description": "Super drag diagonal direction"
+  },
+  "dragUpLeft": {
+    "message": "Kéo lên-trái",
+    "description": "Super drag diagonal direction"
   },
   "superDragDescription": {
     "message": "Kéo thả siêu tốc hoạt động với liên kết, hình ảnh và văn bản được chọn. Bạn có thể đặt phương thức mở cho từng hướng cử chỉ (lên/xuống/trái/phải), bao gồm nền trước, nền sau hoặc chế độ xem chia (trái/phải/lên/xuống).",
@@ -64,52 +72,76 @@
     "description": "Down direction"
   },
   "downThenRight": {
-    "message": "Xuống rồi Phải",
-    "description": "Down then right gesture"
+    "message": "Xuống rồi phải",
+    "description": "Cử chỉ xuống rồi phải"
   },
   "leftThenUp": {
-    "message": "Trái rồi Lên",
-    "description": "Left then up gesture"
+    "message": "Trái rồi lên",
+    "description": "Cử chỉ trái rồi lên"
   },
   "rightThenUp": {
-    "message": "Phải rồi Lên",
-    "description": "Right then up gesture"
+    "message": "Phải rồi lên",
+    "description": "Cử chỉ phải rồi lên"
   },
   "rightThenDown": {
-    "message": "Phải rồi Xuống",
-    "description": "Right then down gesture"
+    "message": "Phải rồi xuống",
+    "description": "Cử chỉ phải rồi xuống"
   },
   "upThenLeft": {
-    "message": "Lên rồi Trái",
-    "description": "Up then left gesture"
+    "message": "Lên rồi trái",
+    "description": "Cử chỉ lên rồi trái"
   },
   "upThenRight": {
-    "message": "Lên rồi Phải",
-    "description": "Up then right gesture"
+    "message": "Lên rồi phải",
+    "description": "Cử chỉ lên rồi phải"
   },
   "downThenLeft": {
-    "message": "Xuống rồi Trái",
-    "description": "Down then left gesture"
+    "message": "Xuống rồi trái",
+    "description": "Cử chỉ xuống rồi trái"
   },
   "leftThenDown": {
-    "message": "Trái rồi Xuống",
-    "description": "Left then down gesture"
+    "message": "Trái rồi xuống",
+    "description": "Cử chỉ trái rồi xuống"
   },
   "upThenDown": {
-    "message": "Lên rồi Xuống",
-    "description": "Up then down gesture"
+    "message": "Lên rồi xuống",
+    "description": "Cử chỉ lên rồi xuống"
   },
   "downThenUp": {
-    "message": "Xuống rồi Lên",
-    "description": "Down then up gesture"
+    "message": "Xuống rồi lên",
+    "description": "Cử chỉ xuống rồi lên"
   },
   "leftThenRight": {
-    "message": "Trái rồi Phải",
-    "description": "Left then right gesture"
+    "message": "Trái rồi phải",
+    "description": "Cử chỉ trái rồi phải"
   },
   "rightThenLeft": {
-    "message": "Phải rồi Trái",
-    "description": "Right then left gesture"
+    "message": "Phải rồi trái",
+    "description": "Cử chỉ phải rồi trái"
+  },
+  "rightHoldWheelUp": {
+    "message": "Giữ chuột phải + cuộn lên",
+    "description": "Giữ chuột phải và cuộn lên"
+  },
+  "rightHoldWheelDown": {
+    "message": "Giữ chuột phải + cuộn xuống",
+    "description": "Giữ chuột phải và cuộn xuống"
+  },
+  "leftHoldWheelUp": {
+    "message": "Giữ chuột trái + cuộn lên",
+    "description": "Nút trái và cuộn lên"
+  },
+  "leftHoldWheelDown": {
+    "message": "Giữ chuột trái + cuộn xuống",
+    "description": "Nút trái và cuộn xuống"
+  },
+  "rightHoldLeftClick": {
+    "message": "Giữ chuột phải + nhấp chuột trái",
+    "description": "Giữ chuột phải và nhấp chuột trái"
+  },
+  "leftHoldRightClick": {
+    "message": "Giữ trái + click phải",
+    "description": "Giữ nút trái và click phải"
   },
   "back": {
     "message": "Quay Lại",
@@ -158,6 +190,18 @@
   "prevTab": {
     "message": "Tab Trước",
     "description": "Previous tab action"
+  },
+  "previousActiveTab": {
+    "message": "Thẻ đang hoạt động trước đó",
+    "description": "Thao tác cử chỉ: chuyển sang thẻ đã hoạt động trước đó"
+  },
+  "goToParentUrl": {
+    "message": "URL cấp trên",
+    "description": "Thao tác cử chỉ: điều hướng đến đường dẫn URL cấp trên"
+  },
+  "goToRootUrl": {
+    "message": "URL gốc",
+    "description": "Thao tác cử chỉ: điều hướng đến URL gốc của trang web"
   },
   "nextTab": {
     "message": "Tab Tiếp",
@@ -211,6 +255,14 @@
     "message": "Chuyển Đổi Toàn Màn Hình",
     "description": "Toggle fullscreen action"
   },
+  "zoomIn": {
+    "message": "Phóng to",
+    "description": "Tăng thu phóng thẻ hiện tại"
+  },
+  "zoomOut": {
+    "message": "Thu nhỏ",
+    "description": "Giảm thu phóng thẻ hiện tại"
+  },
   "closeTabsToLeft": {
     "message": "Đóng Tab Bên Trái",
     "description": "Close tabs to left action"
@@ -218,6 +270,474 @@
   "reloadAllTabs": {
     "message": "Tải Lại Tất Cả Tab",
     "description": "Reload all tabs action"
+  },
+  "stopLoadingAllTabs": {
+    "message": "Dừng tải tất cả các thẻ",
+    "description": "Stop loading in all tabs"
+  },
+  "screenshotRegion": {
+    "message": "Ảnh chụp (vùng quỹ tích)",
+    "description": "Screenshot gesture action"
+  },
+  "screenshotRegionOrLink": {
+    "message": "Ảnh chụp hoặc mở liên kết",
+    "description": "Trail region hint when links are inside selection"
+  },
+  "trailRegionChooseTitle": {
+    "message": "Liên kết trong vùng chọn — chụp hoặc mở",
+    "description": "Trail region chooser dialog title"
+  },
+  "trailRegionLinkSingle": {
+    "message": "1 liên kết",
+    "description": "Trail region link count"
+  },
+  "trailRegionLinkMultiple": {
+    "message": "{count} liên kết",
+    "description": "Trail region link count"
+  },
+  "trailRegionActionScreenshot": {
+    "message": "Chụp (S)",
+    "description": "Trail region chooser button"
+  },
+  "trailRegionActionOpenLink": {
+    "message": "Mở trong tab mới (O)",
+    "description": "Trail region chooser button"
+  },
+  "trailRegionActionOpenLinks": {
+    "message": "Mở trong các tab mới (O)",
+    "description": "Trail region chooser button"
+  },
+  "trailRegionActionOpenSelected": {
+    "message": "Mở {n} trong tab mới (O)",
+    "description": "Trail region open checked links"
+  },
+  "trailRegionActionOpenNone": {
+    "message": "Mở vùng chọn (O)",
+    "description": "Trail region open button when none checked"
+  },
+  "trailRegionActionCopy": {
+    "message": "Sao chép (C)",
+    "description": "Trail region chooser copy button"
+  },
+  "trailRegionActionCopySelected": {
+    "message": "Sao chép {n} (C)",
+    "description": "Trail region copy checked links"
+  },
+  "trailRegionActionCopyNone": {
+    "message": "Sao chép (C)",
+    "description": "Trail region copy button when none checked"
+  },
+  "trailRegionCopyFailed": {
+    "message": "Sao chép thất bại",
+    "description": "Trail region copy to clipboard failed"
+  },
+  "trailRegionSelectAll": {
+    "message": "Chọn tất cả",
+    "description": "Trail region link list select all"
+  },
+  "trailRegionNoLinkSelected": {
+    "message": "Chọn ít nhất một liên kết",
+    "description": "Trail region no selection hint"
+  },
+  "trailRegionChooseHint": {
+    "message": "Esc để hủy · chọn liên kết để sao chép/mở · kéo cạnh để đổi kích thước",
+    "description": "Trail region chooser footer"
+  },
+  "trailRegionLinkOpened": {
+    "message": "Đã mở liên kết trong tab mới",
+    "description": "Trail region open link feedback"
+  },
+  "trailRegionLinksOpened": {
+    "message": "Đã mở liên kết trong tab mới",
+    "description": "Trail region open links feedback"
+  },
+  "trailRegionLinksTruncated": {
+    "message": "Chỉ mở {n} liên kết đầu tiên",
+    "description": "Trail region open links cap"
+  },
+  "screenshotScrollCaptureActive": {
+    "message": "Cuộn trang thủ công, rồi cùng phím tắt hoặc Esc để kết thúc và ghép",
+    "description": "Manual scroll capture in progress"
+  },
+  "screenshotCopied": {
+    "message": "Đã sao chép ảnh chụp vào bảng nhớ tạm",
+    "description": "Screenshot feedback"
+  },
+  "screenshotFailed": {
+    "message": "Chụp thất bại",
+    "description": "Screenshot feedback"
+  },
+  "screenshotNeedTrail": {
+    "message": "Vẽ quỹ tích dài hơn để chọn vùng",
+    "description": "Screenshot feedback"
+  },
+  "screenshotUnavailable": {
+    "message": "Mô-đun chụp không khả dụng",
+    "description": "Screenshot feedback"
+  },
+  "screenshotTopFrameOnly": {
+    "message": "Chụp toàn trang chỉ trong khung chính",
+    "description": "Screenshot feedback"
+  },
+  "screenshotFeature": {
+    "message": "Ảnh chụp màn hình",
+    "description": "Screenshot settings section title"
+  },
+  "enableScreenshotFeature": {
+    "message": "Bật ảnh chụp màn hình",
+    "description": "Master toggle for screenshot feature"
+  },
+  "enableScreenshotTrailCapture": {
+    "message": "Vùng quỹ tích (vòng / tự giao)",
+    "description": "Capture when trail loops or crosses; skipped if another gesture action matches"
+  },
+  "enableScreenshotClipboard": {
+    "message": "Tự sao chép vào bảng nhớ tạm",
+    "description": "Copy screenshot to clipboard after capture"
+  },
+  "enableScreenshotPreview": {
+    "message": "Hiện xem trước sau khi chụp",
+    "description": "Open preview window when a screenshot is captured"
+  },
+  "enableScreenshotHistory": {
+    "message": "Lưu lịch sử ảnh chụp",
+    "description": "Keep captured screenshots in local history"
+  },
+  "screenshotHistoryMaxCount": {
+    "message": "Giới hạn lịch sử",
+    "description": "Maximum screenshot history entries to keep"
+  },
+  "screenshotHistoryMaxCountHint": {
+    "message": "0 = không giới hạn; 1–200 xóa mục cũ khi vượt giới hạn",
+    "description": "Screenshot history limit hint"
+  },
+  "screenshotHistoryUnlimited": {
+    "message": "Không giới hạn",
+    "description": "Label when screenshot history limit is 0"
+  },
+  "screenshotHistoryView": {
+    "message": "Xem lịch sử",
+    "description": "Open screenshot history window"
+  },
+  "screenshotHistoryTitle": {
+    "message": "Lịch sử ảnh chụp",
+    "description": "Screenshot history window title"
+  },
+  "screenshotHistoryEmpty": {
+    "message": "Chưa có ảnh chụp",
+    "description": "Empty screenshot history state"
+  },
+  "screenshotHistoryClearAll": {
+    "message": "Xóa tất cả",
+    "description": "Delete all screenshot history entries"
+  },
+  "screenshotHistoryClearConfirm": {
+    "message": "Xóa toàn bộ lịch sử ảnh chụp?",
+    "description": "Confirm clearing screenshot history"
+  },
+  "screenshotHistoryDelete": {
+    "message": "Xóa",
+    "description": "Delete one screenshot history entry"
+  },
+  "screenshotHistoryPinToPage": {
+    "message": "Ghim vào trang",
+    "description": "Pin history thumbnail onto the web page"
+  },
+  "screenshotHistoryPinFailed": {
+    "message": "Không ghim được (mở tab đích hoặc cho phép trang này).",
+    "description": "Error when pinning from screenshot history"
+  },
+  "screenshotHistoryCount": {
+    "message": "$1 mục",
+    "description": "Number of items in screenshot history",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "screenshotHistoryModeViewport": {
+    "message": "Vùng hiển thị",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeFullPage": {
+    "message": "Toàn trang",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeRegion": {
+    "message": "Vùng",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeScroll": {
+    "message": "Cuộn thủ công",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeUnknown": {
+    "message": "Ảnh chụp",
+    "description": "Screenshot history capture mode fallback label"
+  },
+  "screenshotDone": {
+    "message": "Ảnh chụp sẵn sàng",
+    "description": "Hint when capture finished without clipboard copy"
+  },
+  "screenshotPreviewTitle": {
+    "message": "Xem trước ảnh chụp",
+    "description": "Screenshot preview window title"
+  },
+  "screenshotPreviewClose": {
+    "message": "Đóng",
+    "description": "Close screenshot preview window"
+  },
+  "screenshotPreviewCopyAgain": {
+    "message": "Sao chép",
+    "description": "Copy screenshot to clipboard from preview window"
+  },
+  "screenshotPreviewSave": {
+    "message": "Lưu thành tệp",
+    "description": "Save annotated screenshot to disk"
+  },
+  "screenshotPreviewSaved": {
+    "message": "Đã lưu",
+    "description": "Screenshot file save succeeded"
+  },
+  "screenshotPreviewPinToPage": {
+    "message": "Ghim vào trang",
+    "description": "Pin annotated screenshot onto the source web page"
+  },
+  "screenshotPreviewPinned": {
+    "message": "Đã ghim",
+    "description": "Screenshot pin placed on page"
+  },
+  "screenshotPreviewPinning": {
+    "message": "Đang ghim…",
+    "description": "Screenshot pin in progress"
+  },
+  "screenshotPinTitle": {
+    "message": "Ảnh chụp",
+    "description": "Title on pinned screenshot sticker"
+  },
+  "screenshotPinClose": {
+    "message": "Bỏ ghim",
+    "description": "Close button on pinned screenshot"
+  },
+  "screenshotPinResize": {
+    "message": "Đổi kích thước",
+    "description": "Resize handle on pinned screenshot"
+  },
+  "screenshotPinZoomFit": {
+    "message": "Vừa khung",
+    "description": "Fit pinned screenshot to view"
+  },
+  "screenshotPinZoomOriginal": {
+    "message": "1:1",
+    "description": "Show pinned screenshot at original pixel size"
+  },
+  "screenshotPinOrderLabel": {
+    "message": "Ghim $1$",
+    "description": "Pinned screenshot order number",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "screenshotPreviewLoadFailed": {
+    "message": "Không tải được xem trước",
+    "description": "Screenshot preview load error"
+  },
+  "screenshotPreviewZoomFit": {
+    "message": "Vừa khung",
+    "description": "Fit screenshot to preview window"
+  },
+  "screenshotPreviewZoomFitTitle": {
+    "message": "Vừa cửa sổ",
+    "description": "Tooltip for fit zoom button"
+  },
+  "screenshotPreviewZoomOneToOne": {
+    "message": "1:1",
+    "description": "Actual-size zoom button label"
+  },
+  "screenshotPreviewZoomOneToOneTitle": {
+    "message": "Kích thước thật (1:1)",
+    "description": "Tooltip for 1:1 zoom button"
+  },
+  "screenshotPreviewZoomLevel": {
+    "message": "Thu phóng $1$%",
+    "description": "Current zoom percentage in preview",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "screenshotAnnotHand": {
+    "message": "Tay (di chuyển)",
+    "description": "Pan the preview by dragging"
+  },
+  "screenshotAnnotPen": {
+    "message": "Bút",
+    "description": "Annotation tool: freehand"
+  },
+  "screenshotAnnotArrow": {
+    "message": "Mũi tên (Shift: H/V)",
+    "description": "Annotation tool: arrow; Shift constrains to horizontal or vertical"
+  },
+  "screenshotAnnotLine": {
+    "message": "Đường (Shift: H/V)",
+    "description": "Annotation tool: line; Shift constrains to horizontal or vertical"
+  },
+  "screenshotAnnotRect": {
+    "message": "Hình chữ nhật (Shift: vuông)",
+    "description": "Annotation tool: rectangle; Shift draws a square"
+  },
+  "screenshotAnnotEllipse": {
+    "message": "Hình elip",
+    "description": "Annotation tool: ellipse"
+  },
+  "screenshotAnnotRoundRect": {
+    "message": "Hình chữ nhật bo góc",
+    "description": "Annotation tool: rounded rectangle"
+  },
+  "screenshotAnnotHighlighter": {
+    "message": "Bút đánh dấu",
+    "description": "Annotation tool: highlighter marker"
+  },
+  "screenshotAnnotHighlight": {
+    "message": "Khung đánh dấu",
+    "description": "Annotation tool: highlight rectangle"
+  },
+  "screenshotAnnotFillRect": {
+    "message": "Hình chữ nhật tô",
+    "description": "Annotation tool: filled rectangle"
+  },
+  "screenshotAnnotFillEllipse": {
+    "message": "Elip tô",
+    "description": "Annotation tool: filled ellipse"
+  },
+  "screenshotAnnotBlur": {
+    "message": "Làm mờ",
+    "description": "Annotation tool: blur brush"
+  },
+  "screenshotAnnotArrow2": {
+    "message": "Mũi tên đôi (Shift: H/V)",
+    "description": "Annotation tool: line with arrowheads at both ends; Shift constrains H/V"
+  },
+  "screenshotAnnotNumber": {
+    "message": "Số",
+    "description": "Annotation tool: sequential number markers"
+  },
+  "screenshotAnnotStampStart": {
+    "message": "Bắt đầu số",
+    "description": "Starting number for sequential stamps"
+  },
+  "screenshotAnnotStampNext": {
+    "message": "Số tiếp: $1$",
+    "description": "Next number stamp to place (tooltip)",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "screenshotAnnotCrop": {
+    "message": "Cắt",
+    "description": "Annotation tool: crop image"
+  },
+  "screenshotAnnotCropApply": {
+    "message": "Áp dụng cắt",
+    "description": "Confirm crop selection"
+  },
+  "screenshotAnnotCropCancel": {
+    "message": "Hủy",
+    "description": "Cancel crop selection"
+  },
+  "screenshotAnnotText": {
+    "message": "Văn bản",
+    "description": "Annotation tool: text"
+  },
+  "screenshotAnnotMosaic": {
+    "message": "Khảm",
+    "description": "Annotation tool: mosaic blur"
+  },
+  "screenshotAnnotEraser": {
+    "message": "Tẩy",
+    "description": "Annotation tool: eraser"
+  },
+  "screenshotAnnotSize": {
+    "message": "Kích thước",
+    "description": "Annotation stroke size"
+  },
+  "screenshotAnnotResetAll": {
+    "message": "Đặt lại mọi chỉnh sửa",
+    "description": "Clear all annotations and restore original screenshot"
+  },
+  "screenshotAnnotStepCount": {
+    "message": "$1 / $2",
+    "description": "History step indicator: current / total"
+  },
+  "screenshotAnnotStepCountTitle": {
+    "message": "Bước đã áp dụng / tổng (0 = ảnh gốc)",
+    "description": "Tooltip for history step indicator"
+  },
+  "screenshotAnnotUndo": {
+    "message": "Hoàn tác",
+    "description": "Undo annotation"
+  },
+  "screenshotAnnotRedo": {
+    "message": "Làm lại",
+    "description": "Redo annotation"
+  },
+  "screenshotAnnotTextPlaceholder": {
+    "message": "Nhập tại đây…",
+    "description": "Placeholder in inline text editor on screenshot preview"
+  },
+  "screenshotOptRegion": {
+    "message": "Chọn vùng",
+    "description": "Screenshot bind row: keyboard drag rectangle region"
+  },
+  "screenshotOptViewport": {
+    "message": "Vùng hiển thị",
+    "description": "Screenshot bind row: current visible tab area"
+  },
+  "screenshotOptFullPage": {
+    "message": "Toàn trang",
+    "description": "Screenshot bind row: full page"
+  },
+  "screenshotOptScrollStitch": {
+    "message": "Cuộn thủ công",
+    "description": "Screenshot bind row: manual scroll capture"
+  },
+  "screenshotOptOpenHistory": {
+    "message": "Mở lịch sử",
+    "description": "Screenshot bind row: keyboard shortcut to open screenshot history"
+  },
+  "screenshotHotkeyPressHint": {
+    "message": "Phím tắt: nhấp trường phía trên, rồi tổ hợp phím (Ctrl / Alt / Meta + chữ hoặc số, hoặc F1–F12). Esc xóa trường.",
+    "description": "Screenshot section footer: hotkey binding help"
+  },
+  "screenshotHotkeyPlaceholder": {
+    "message": "Nhấp để đặt",
+    "description": "Placeholder in empty screenshot hotkey fields"
+  },
+  "screenshotRegionPickHint": {
+    "message": "Kéo để chọn vùng. Esc để hủy.",
+    "description": "Hint while keyboard region picker is active"
+  },
+  "screenshotRegionPickFooterHint": {
+    "message": "Phím tắt vùng: vẽ hình chữ nhật rồi thả. Có liên kết thì chụp hoặc mở tab mới. Esc hủy.",
+    "description": "Screenshot section footer: keyboard region picker help"
+  },
+  "screenshotRegionTooSmall": {
+    "message": "Vùng chọn quá nhỏ — vẽ vùng lớn hơn",
+    "description": "Region picker: minimum size not met"
+  },
+  "screenshotGestureIntersectHint": {
+    "message": "Vùng quỹ tích: một vòng hoặc một tự giao, rồi thả. Có liên kết thì chụp hoặc tab mới. Nhiều vòng = vẽ nguệch.",
+    "description": "Screenshot section footer: trail region capture help"
   },
   "togglePinTab": {
     "message": "Ghim/Bỏ Ghim Tab",
@@ -244,16 +764,16 @@
     "description": "Settings title"
   },
   "customizedBehavior": {
-    "message": "Danh sách chặn",
-    "description": "Block list section title"
+    "message": "Trang bị tắt",
+    "description": "Section title for the per-site disable list"
   },
   "disableMouseGesturesForSites": {
-    "message": "Tắt cử chỉ chuột và siêu kéo trên các trang web này",
-    "description": "Label for the list of sites where gestures and super drag are disabled"
+    "message": "Tắt các tính năng tiện ích trên những miền đã liệt kê",
+    "description": "Subtitle for Disabled sites section"
   },
   "disabledSitesHint": {
-    "message": "Một trang mỗi dòng. Tên miền (vd. youtube.com) hoặc URL đầy đủ.",
-    "description": "Hint for the disabled sites textarea"
+    "message": "Áp dụng cho: cử chỉ, siêu kéo, xem trước liên kết/hình ảnh, ảnh chụp màn hình và mở khóa trang. Thêm trang hiện tại hoặc nhập miền/URL; nhấp dấu xóa để xóa.",
+    "description": "Short hint explaining which features the Disabled sites list affects"
   },
   "enableGesture": {
     "message": "Bật Cử Chỉ Chuột",
@@ -279,6 +799,26 @@
     "message": "Bật Kéo Thả Siêu Tốc",
     "description": "Enable super drag option"
   },
+  "superDragCompassPosition": {
+    "message": "La bàn 8 hướng",
+    "description": "Super drag compass display and position"
+  },
+  "superDragCompassPosCompassAbove": {
+    "message": "Trên điểm kéo",
+    "description": "Compass above drag start, centered horizontally"
+  },
+  "superDragCompassPosCompassRight": {
+    "message": "Bên phải điểm kéo",
+    "description": "Compass to the right of drag start, vertically centered"
+  },
+  "superDragCompassPosCompassBelow": {
+    "message": "Dưới điểm kéo",
+    "description": "Compass below drag start, centered horizontally"
+  },
+  "superDragCompassPosCompassLeft": {
+    "message": "Bên trái điểm kéo",
+    "description": "Compass to the left of drag start, vertically centered"
+  },
   "enableDragTextSearch": {
     "message": "Bật Tìm Kiếm Văn Bản Kéo Thả",
     "description": "Enable drag text search option"
@@ -287,9 +827,17 @@
     "message": "Tự tải ảnh/tệp khi kéo thả",
     "description": "When the drag target is an image or other downloadable file, start download automatically"
   },
+  "enableImageDrag": {
+    "message": "Bật kéo hình ảnh",
+    "description": "Control image super drag independently from image preview"
+  },
   "enableImagePreview": {
     "message": "Bật Xem Trước Hình Ảnh",
     "description": "Enable image preview option"
+  },
+  "enableImagePreviewEnhanced": {
+    "message": "Xem trước hình ảnh nâng cao",
+    "description": "Support transparent overlay, background-image, parent lookup, etc."
   },
   "enableDuplicateCheck": {
     "message": "Phát Hiện Tab Trùng Lặp",
@@ -302,10 +850,6 @@
   "enableSmoothScroll": {
     "message": "Bật cuộn mượt",
     "description": "Enable smooth scrolling for gesture actions"
-  },
-  "save": {
-    "message": "Đã Áp Dụng Cài Đặt",
-    "description": "Save settings button"
   },
   "reset": {
     "message": "Đặt Lại",
@@ -363,14 +907,6 @@
     "message": "Không Thể Đặt Lại Cài Đặt",
     "description": "Reset settings error notification"
   },
-  "themeLight": {
-    "message": "Sáng",
-    "description": "Light theme"
-  },
-  "themeDark": {
-    "message": "Tối",
-    "description": "Dark theme"
-  },
   "buyMeACoffee": {
     "message": "Mua cho tôi một ly cà phê",
     "description": "Donation button"
@@ -379,17 +915,33 @@
     "message": "Chuyển đổi giao diện",
     "description": "Toggle theme button"
   },
-  "toggleLanguage": {
-    "message": "Chuyển đổi ngôn ngữ",
-    "description": "Toggle language button"
+  "openDetachedPopupTitle": {
+    "message": "Mở cài đặt trong bảng bên (nếu không được thì cửa sổ riêng)",
+    "description": "Nút tiêu đề: bảng bên hoặc cửa sổ tách"
+  },
+  "openDetachedWindowFromSidePanelTitle": {
+    "message": "Mở trong cửa sổ riêng (cạnh trình duyệt)",
+    "description": "Bảng bên: cửa sổ tách và bố cục trình duyệt"
+  },
+  "openOptionsPageTitle": {
+    "message": "Mở trang tùy chọn",
+    "description": "Nút tiêu đề: mở trang tùy chọn của tiện ích mở rộng"
   },
   "donationTooltip": {
     "message": "Nếu bạn thích công việc này, xin hãy ủng hộ tôi. Cảm ơn :)",
     "description": "Donation tooltip"
   },
   "rightButtonHint": {
-    "message": "Giữ nút chuột phải",
+    "message": "Giữ phải (vẽ, bánh xe, click) · trái (bánh xe)",
     "description": "Right mouse button hint"
+  },
+  "builtInGesturesListExpandHint": {
+    "message": "Nhấp để mở rộng danh sách cử chỉ đầy đủ",
+    "description": "Tooltip on built-in gestures subtitle when list is collapsed"
+  },
+  "builtInGesturesListCollapseHint": {
+    "message": "Nhấp để thu gọn danh sách cử chỉ",
+    "description": "Tooltip on built-in gestures subtitle when list is expanded"
   },
   "leftButtonHint": {
     "message": "Giữ nút chuột trái",
@@ -403,17 +955,45 @@
     "message": "Mở Ở Nền Sau",
     "description": "Open in background action"
   },
+  "popupViewAction": {
+    "message": "Xem Trước",
+    "description": "Super drag action: open target in popup view"
+  },
+  "incognitoAction": {
+    "message": "Mở trong cửa sổ ẩn danh",
+    "description": "Open in incognito/private window"
+  },
+  "enableSplitScrollSync": {
+    "message": "Đồng bộ cuộn dọc và ngang giữa các cửa sổ chia đôi",
+    "description": "Khi chia màn hình, khớp cả hai trục cuộn giữa hai cửa sổ"
+  },
   "copyAction": {
     "message": "Sao chép",
     "description": "Copy selected text or link URL to clipboard"
+  },
+  "downloadAction": {
+    "message": "T?i xu?ng",
+    "description": "Super drag action: download target"
   },
   "copiedToClipboard": {
     "message": "Đã sao chép vào bảng tạm",
     "description": "Hint after copy action"
   },
-  "dragSearchEngine": {
-    "message": "URL Công Cụ Tìm Kiếm Kéo Thả",
-    "description": "Drag search engine URL setting"
+  "dragSearchEngineSlotLabel": {
+    "message": "Mục chỉnh sửa",
+    "description": "Label for drag search engine slot selector"
+  },
+  "dragSearchSlotDefault": {
+    "message": "Mặc định (dự phòng)",
+    "description": "Default search URL slot in drag search editor"
+  },
+  "dragSearchEngineUrlForSlot": {
+    "message": "URL công cụ tìm kiếm",
+    "description": "Label for single drag search URL field"
+  },
+  "dragSearchEnginePerDirectionHelp": {
+    "message": "Chọn «Mặc định» hoặc hướng kéo trong danh sách, rồi sửa URL tương ứng. Hướng để trống dùng mặc định. Chỉ áp dụng khi tìm kiếm bằng cách kéo văn bản.",
+    "description": "Help text for unified drag search engine editor"
   },
   "linkPreview": {
     "message": "Xem Trước",
@@ -424,7 +1004,7 @@
     "description": "Quick navigation hover tooltip"
   },
   "linkPreviewHint": {
-    "message": "Di Chuột + Phím để Hiển Thị Cửa Sổ",
+    "message": "Di chuột và dùng phím kích hoạt để hiện cửa sổ bật lên",
     "description": "Popup view hint"
   },
   "enableLinkPreview": {
@@ -495,41 +1075,61 @@
     "message": "Sử dụng {q} cho từ khóa tìm kiếm, ví dụ:",
     "description": "Search engine examples description"
   },
+  "searchExampleUrlClickHint": {
+    "message": "Nhấp URL mẫu để điền ô phía trên và lưu",
+    "description": "Tooltip for example search engine URLs (click to fill)"
+  },
+  "searchEngineExamplesUrlClickHint": {
+    "message": "Mẹo: nhấp URL mẫu để điền ô phía trên và lưu.",
+    "description": "Visible hint under search engine examples (click URL to fill field above and save)"
+  },
   "googleExample": {
-    "message": "Tìm kiếm Google: https://www.google.com.vn/search?q={q}",
+    "message": "Tìm kiếm Google:",
+    "description": "Google search example"
+  },
+  "googleExampleUrl": {
+    "message": "https://www.google.com.vn/search?q={q}",
     "description": "Google search example"
   },
   "googleTranslateExample": {
-    "message": "Google Dịch: https://translate.google.com.vn/?sl=auto&tl=vi&text={q}&op=translate",
+    "message": "Google Dịch:",
+    "description": "Google translate example"
+  },
+  "googleTranslateExampleUrl": {
+    "message": "https://translate.google.com.vn/?sl=auto&tl=vi&text={q}&op=translate",
     "description": "Google translate example"
   },
   "localSearchExample": {
-    "message": "Tìm kiếm CocCoc: https://coccoc.com/search?query={q}",
+    "message": "Tìm kiếm CocCoc:",
+    "description": "Local search example"
+  },
+  "localSearchExampleUrl": {
+    "message": "https://coccoc.com/search?query={q}",
     "description": "Local search example"
   },
   "bingExample": {
-    "message": "Tìm kiếm Bing: https://www.bing.com/search?q={q}&setlang=vi",
+    "message": "Tìm kiếm Bing:",
+    "description": "Bing search example"
+  },
+  "bingExampleUrl": {
+    "message": "https://www.bing.com/search?q={q}&setlang=vi",
     "description": "Bing search example"
   },
   "wheelTip": {
-    "message": "Sử dụng bánh xe chuột để điều chỉnh giá trị",
+    "message": "Di chuột trên hàng này khoảng 1,5 giây, sau đó dùng bánh xe để chỉnh",
     "description": "Wheel tip"
   },
   "modifierKeyDelayTip": {
-    "message": "Khi sử dụng phím kích hoạt, độ trễ tối đa bị giới hạn ở 300ms",
+    "message": "Độ trễ bắt đầu sau khi điều kiện kích hoạt được đáp ứng; hãy tăng giá trị để tránh xem trước ngoài ý muốn.",
     "description": "Modifier key delay tip"
   },
   "welcomeTitle": {
-    "message": "Chào Mừng Đến Với Tiện ích Cử Chỉ Chuột",
+    "message": "Chào mừng đến với tiện ích cử chỉ chuột",
     "description": "Welcome page title"
   },
   "welcomeDescription": {
-    "message": "Cảm ơn bạn đã cài đặt Tiện ích Cử chỉ Chuột! Tiện ích này cung cấp chức năng cử chỉ chuột phong phú, quản lý tab thông minh, khả năng xem popup và trải nghiệm hình ảnh nâng cao để giúp bạn duyệt web hiệu quả hơn. Chúng tôi đã tối ưu hóa thuật toán nhận dạng cử chỉ với khả năng chịu lỗi cao hơn, cho phép cử chỉ được nhận dạng chính xác ngay cả khi chúng không được vẽ hoàn hảo. Tính năng cửa sổ popup mới cho phép bạn xem nội dung liên kết trong cửa sổ popup mà không cần chuyển tab. Tiện ích cũng hỗ trợ 29 ngôn ngữ và chủ đề sáng/tối để mang lại trải nghiệm người dùng tốt hơn.",
+    "message": "Cảm ơn bạn đã cài Mouse Gesture! Giữ nút phải và kéo để điều hướng, quản lý thẻ và cuộn; giữ thêm phải hoặc trái với bánh xe (và nhiều tổ hợp trong cài đặt) để có phím tắt bổ sung — nhận dạng vẫn khoan dung kể cả khi trang đang tải. Super Drag mở liên kết, hình ảnh và tìm kiếm văn bản với quy tắc theo hướng (tiền cảnh, hậu cảnh, chia đôi, sao chép vào clipboard, v.v.). Popup View xem trước liên kết hoặc tìm văn bản đã chọn trong cửa sổ nhỏ. Tùy chọn: xem trước ảnh khi trỏ chuột (chế độ nâng cao), phát hiện thẻ trùng với tự đóng, cuộn mượt, huy hiệu đếm thẻ trên thanh công cụ và mở khóa trang trên site hạn chế. Cài đặt từ thanh công cụ (popup, bên hoặc cửa sổ riêng); xuất/nhập; đồng bộ tài khoản trình duyệt. 29 ngôn ngữ và chủ đề sáng/tối.",
     "description": "Welcome page description"
-  },
-  "gesturesDescription": {
-    "message": "Dưới đây là các cử chỉ chuột mặc định mà bạn có thể sử dụng bằng cách kéo với nút chuột phải:",
-    "description": "Gestures description"
   },
   "extensionName": {
     "message": "Tiện ích Cử Chỉ Chuột",
@@ -539,88 +1139,48 @@
     "message": "Tính Năng Chính",
     "description": "Core features title"
   },
-  "utilitiesFeatures": {
-    "message": "Công Cụ Tiện ích",
-    "description": "Utilities features title"
+  "welcomeCoreGestureBlock": {
+    "message": "Cử chỉ chuột: giữ phải và kéo để vẽ đường; bánh xe kèm nút phải hoặc nút trái, và tổ hợp nhấn trái/phải khi đang giữ phải — gán lại trong cài đặt; nhận dạng khoan dung, dùng được khi trang đang tải.",
+    "description": "Welcome page: core features gesture summary"
+  },
+  "welcomeCoreSuperDragBlock": {
+    "message": "Super Drag: kéo liên kết và ảnh sang thẻ mới, kéo văn bản đã chọn để tìm; hướng kéo quyết định cách mở thẻ; mặc định nền.",
+    "description": "Welcome page: core features super drag summary"
+  },
+  "welcomeCorePopupViewBlock": {
+    "message": "Xem popup: giữ phím kích hoạt (mặc định Shift) khi trỏ lên liên kết để xem trước trong cửa sổ nhỏ; sau khi chọn văn bản, nhấn phím để tìm ngay bằng công cụ tìm kiếm tùy chỉnh.",
+    "description": "Welcome page: core features popup view summary"
   },
   "usageTips": {
     "message": "Mẹo Sử Dụng",
     "description": "Usage tips title"
   },
-  "smartGestureRecognition": {
-    "message": "Nhận dạng cử chỉ thông minh: Nhận dạng chính xác cử chỉ ngay cả khi không hoàn hảo, hoạt động trong khi tải trang",
-    "description": "Smart gesture recognition description"
-  },
-  "tabManagementTitle": {
-    "message": "Quản Lý Tab",
-    "description": "Tab management title"
-  },
-  "tabManagementDesc": {
-    "message": ": Phát hiện trùng lặp thông minh, tự động đóng tùy chọn, tối ưu hóa bộ nhớ định kỳ",
-    "description": "Tab management description"
-  },
-  "superDragTitle": {
-    "message": "Kéo Thả Siêu Tốc",
-    "description": "Super drag title"
-  },
-  "superDragDesc": {
-    "message": ": Kéo liên kết và hình ảnh vào tab mới, kéo văn bản được chọn để tìm kiếm",
-    "description": "Super drag description"
-  },
-  "linkPreviewTitle": {
-    "message": "Xem Trước",
-    "description": "Link preview title"
-  },
-  "linkPreviewDesc": {
-    "message": ": Giữ phím kích hoạt (mặc định: Shift) khi di chuột qua liên kết để xem trước trang đích trong cửa sổ popup",
-    "description": "Link preview description"
-  },
-  "textSelectionPreview": {
-    "message": "Chọn văn bản và nhấn phím kích hoạt để tìm kiếm ngay lập tức trong cửa sổ popup, hỗ trợ công cụ tìm kiếm tùy chỉnh",
-    "description": "Text selection preview description"
-  },
   "previewTip": {
-    "message": "Bạn có thể mở nhiều cửa sổ popup cùng lúc",
+    "message": "Giữ nhiều xem trước mở để so sánh.",
     "description": "Preview tip"
-  },
-  "dragDirection": {
-    "message": "Tùy chỉnh hướng kéo để xác định cách mở tab: mặc định mở ở nền sau",
-    "description": "Drag direction description"
   },
   "debugPanelTitle": {
     "message": "Thông Tin Gỡ Lỗi Cử Chỉ Chuột",
     "description": "Debug panel title"
   },
   "debugPanelDesc": {
-    "message": ": Nhấn Alt+D để mở, phân tích thông tin cử chỉ theo thời gian thực, duy trì trạng thái",
+    "message": "Nhấn Alt+D để mở bảng gỡ lỗi, phân tích thông tin cử chỉ theo thời gian thực, trạng thái được giữ.",
     "description": "Debug panel description"
   },
-  "oneClickCopy": {
-    "message": "Sao chép thông tin gỡ lỗi một lần nhấp để dễ dàng chia sẻ, hỗ trợ đa ngôn ngữ",
-    "description": "One click copy description"
-  },
-  "mediaPreview": {
-    "message": "Xem trước phương tiện nâng cao: Cải thiện hiệu ứng di chuột hình ảnh và tối ưu hóa hình ảnh poster video",
-    "description": "Media preview description"
-  },
-  "adaptiveTheme": {
-    "message": "Giao diện thích ứng: Điều chỉnh kiểu hình ảnh dựa trên nền trang, hỗ trợ chế độ sáng/tối",
-    "description": "Adaptive theme description"
-  },
   "gestureTrail": {
-    "message": "Đường cử chỉ hiển thị trên màn hình với màu sắc và độ rộng tùy chỉnh",
+    "message": "Quỹ tích và gợi ý cử chỉ tùy chọn; màu và độ dày trong cài đặt.",
     "description": "Gesture trail description"
   },
   "clickIcon": {
-    "message": "Nhấp vào biểu tượng tiện ích để bật/tắt tính năng, đặt ngôn ngữ, giao diện và hơn thế nữa",
+    "message": "Thanh công cụ: popup gọn, bảng cạnh (Chrome/Edge) hoặc cửa sổ cài đặt. Tính năng, ngôn ngữ, giao diện, xuất/nhập.",
     "description": "Click icon description"
   },
   "languageSupport": {
-    "message": "Hỗ trợ 29 ngôn ngữ, tự động thích ứng với ngôn ngữ trình duyệt",
+    "message": "29 ngôn ngữ giao diện; dùng lựa chọn đã lưu hoặc theo ngôn ngữ trình duyệt.",
     "description": "Language support description"
   },
   "enableAutoClose": {
-    "message": "Bật tính năng tự động đóng tab trùng lặp để giảm đáng kể việc sử dụng tài nguyên trình duyệt",
+    "message": "Khi bật phát hiện trùng, có thể tự đóng URL lặp (tùy chọn).",
     "description": "Enable auto close description"
   },
   "rightClickMacLinux": {
@@ -634,14 +1194,6 @@
   "duplicateTabsDetected": {
     "message": "Đã tìm thấy $1 tab trùng lặp",
     "description": "Duplicate tabs detected notification title"
-  },
-  "duplicateTabsCount": {
-    "message": "Có $1 tab trùng lặp",
-    "description": "Duplicate tabs count message"
-  },
-  "duplicateTabsSingle": {
-    "message": "Có 1 tab trùng lặp",
-    "description": "Single duplicate tab message"
   },
   "autoClosedTabs": {
     "message": "Đã tự động đóng $1 tab trùng lặp",
@@ -659,61 +1211,9 @@
     "message": "Tab không có tiêu đề",
     "description": "Untitled tab"
   },
-  "morePages": {
-    "message": "...và $1 trang nữa",
-    "description": "More pages tip"
-  },
-  "errorShowDuplicateTabs": {
-    "message": "Lỗi hiển thị thông báo tab trùng lặp:",
-    "description": "Error showing duplicate tabs notification"
-  },
-  "errorSendCloseRequest": {
-    "message": "Lỗi gửi yêu cầu đóng:",
-    "description": "Error sending close request"
-  },
-  "errorCloseDuplicateTabs": {
-    "message": "Lỗi đóng tab trùng lặp:",
-    "description": "Error closing duplicate tabs"
-  },
-  "errorSendIgnoreRequest": {
-    "message": "Lỗi gửi yêu cầu bỏ qua:",
-    "description": "Error sending ignore request"
-  },
-  "errorIgnoreDuplicateTabs": {
-    "message": "Lỗi bỏ qua tab trùng lặp:",
-    "description": "Error ignoring duplicate tabs"
-  },
-  "errorUpdateDebugPanel": {
-    "message": "Lỗi cập nhật bảng gỡ lỗi:",
-    "description": "Error updating debug panel"
-  },
   "errorDetectBackgroundColor": {
     "message": "Lỗi phát hiện màu nền:",
     "description": "Error detecting background color"
-  },
-  "errorDetectImageBorder": {
-    "message": "Lỗi phát hiện bo góc hình ảnh:",
-    "description": "Error detecting image border radius"
-  },
-  "errorSetMutationObserver": {
-    "message": "Lỗi thiết lập mutation observer:",
-    "description": "Error setting mutation observer"
-  },
-  "errorCheckElementVisibility": {
-    "message": "Lỗi kiểm tra khả năng hiển thị phần tử:",
-    "description": "Error checking element visibility"
-  },
-  "errorProcessBorderRadius": {
-    "message": "Lỗi xử lý bo góc:",
-    "description": "Error processing border radius"
-  },
-  "errorDetectImageBackground": {
-    "message": "Lỗi phát hiện nền hình ảnh:",
-    "description": "Error detecting image background"
-  },
-  "errorShowAutoCloseNotification": {
-    "message": "Lỗi hiển thị thông báo đóng tự động thành công:",
-    "description": "Error showing auto-close success notification"
   },
   "noForwardPage": {
     "message": "Không có trang tiếp theo trong lịch sử",
@@ -743,10 +1243,6 @@
     "message": "Cử Chỉ Không Hợp Lệ",
     "description": "Invalid gesture message"
   },
-  "nextPage": {
-    "message": "Trang Tiếp Theo",
-    "description": "Next page action"
-  },
   "errorReadPixel": {
     "message": "Lỗi đọc pixel:",
     "description": "Error reading pixel message"
@@ -758,10 +1254,6 @@
   "errorCanvasDraw": {
     "message": "Lỗi vẽ trên canvas:",
     "description": "Error drawing on canvas message"
-  },
-  "errorAccessIframe": {
-    "message": "Lỗi truy cập iframe:",
-    "description": "Error accessing iframe message"
   },
   "errorMutationObserver": {
     "message": "Lỗi thiết lập mutation observer:",
@@ -791,6 +1283,10 @@
     "message": "Cài Đặt Hệ Thống",
     "description": "Debug panel system settings section"
   },
+  "debugConsoleLog": {
+    "message": "Nhật ký bảng điều khiển",
+    "description": "Debug panel console log toggle label"
+  },
   "debugAngleThreshold": {
     "message": "Ngưỡng Góc",
     "description": "Debug panel angle threshold setting"
@@ -810,6 +1306,46 @@
   "debugMinGestureComplexity": {
     "message": "Độ Phức Tạp Cử Chỉ Tối Thiểu",
     "description": "Debug panel minimum gesture complexity setting"
+  },
+  "debugMinMovementToStartGesture": {
+    "message": "Di chuyển tối thiểu để bắt đầu",
+    "description": "Cài đặt bảng gỡ lỗi: mức di chuyển tối thiểu để bắt đầu theo dõi cử chỉ"
+  },
+  "debugSmoothingFactor": {
+    "message": "Hệ số làm mượt",
+    "description": "Cài đặt bảng gỡ lỗi: hệ số làm mượt nét vẽ và nhận dạng"
+  },
+  "debugAngleThresholdHelp": {
+    "message": "Điều khiển mức nghiêm ngặt khi phân loại chuyển động là ngang hoặc dọc. Giá trị cao cần hướng thẳng hơn; giá trị thấp cho phép chuyển động chéo nhiều hơn.",
+    "description": "Trợ giúp ngưỡng góc trong bảng gỡ lỗi"
+  },
+  "debugDirectionChangeThresholdHelp": {
+    "message": "Điều khiển độ nhạy khi phát hiện đổi hướng. Giá trị thấp dễ phát hiện góc rẽ hơn; giá trị cao bỏ qua rung nhỏ.",
+    "description": "Trợ giúp ngưỡng đổi hướng trong bảng gỡ lỗi"
+  },
+  "debugMinGestureDistanceHelp": {
+    "message": "Tổng khoảng cách di chuyển tối thiểu cần có trước khi nhận dạng cử chỉ. Tăng giá trị để giảm kích hoạt ngoài ý muốn.",
+    "description": "Trợ giúp khoảng cách cử chỉ tối thiểu trong bảng gỡ lỗi"
+  },
+  "debugMinDirectionSegmentLengthHelp": {
+    "message": "Độ dài tối thiểu của đoạn di chuyển dùng để nhận dạng hướng. Tăng để lọc rung ngắn; giảm cho cử chỉ ngắn hơn.",
+    "description": "Trợ giúp độ dài đoạn hướng tối thiểu trong bảng gỡ lỗi"
+  },
+  "debugMinGestureComplexityHelp": {
+    "message": "Ngưỡng độ phức tạp hướng trước khi đường vẽ bị xem là vẽ nguệch ngoạc hoặc không hợp lệ. Giá trị cao cho phép nhiều góc rẽ hơn.",
+    "description": "Trợ giúp độ phức tạp cử chỉ trong bảng gỡ lỗi"
+  },
+  "debugMinMovementToStartGestureHelp": {
+    "message": "Sau khi nhấn nút, con trỏ phải di chuyển ít nhất số pixel này trước khi bắt đầu theo dõi cử chỉ.",
+    "description": "Trợ giúp di chuyển tối thiểu để bắt đầu trong bảng gỡ lỗi"
+  },
+  "debugSmoothingFactorHelp": {
+    "message": "Điều khiển làm mượt nét vẽ và các điểm nhận dạng. Giá trị cao giảm rung nhưng có thể làm mềm góc rẽ sắc; giá trị thấp phản hồi nhanh hơn.",
+    "description": "Trợ giúp hệ số làm mượt trong bảng gỡ lỗi"
+  },
+  "debugConsoleLogHelp": {
+    "message": "Bật nhật ký chi tiết của tiện ích trong bảng điều khiển DevTools để khắc phục sự cố.",
+    "description": "Trợ giúp nhật ký console trong bảng gỡ lỗi"
   },
   "debugLatestGestureInfo": {
     "message": "Thông Tin Cử Chỉ Mới Nhất",
@@ -850,10 +1386,6 @@
   "debugMergedDirections": {
     "message": "Hướng Đã Hợp Nhất",
     "description": "Debug panel merged directions"
-  },
-  "debugDirectionDistances": {
-    "message": "Khoảng Cách Hướng",
-    "description": "Debug panel direction distances"
   },
   "debugFinalResult": {
     "message": "Kết Quả Cuối Cùng",
@@ -927,9 +1459,17 @@
     "message": "Hiển thị số lượng tab",
     "description": "Show tab count badge option"
   },
-  "splitViewAction": {
-    "message": "Chế độ xem chia đôi",
-    "description": "Mở trong cửa sổ chế độ xem chia đôi"
+  "unlockPageRestrictions": {
+    "message": "Bỏ hạn chế sao chép/dán/nhấp phải và theo dõi tab",
+    "description": "Setting: unlock page interaction limits"
+  },
+  "unlockPageRestrictionsTitle": {
+    "message": "Gỡ chặn sao chép, dán, menu ngữ cảnh, chọn văn bản; giảm theo dõi blur/visibilitychange. Chạy trong ngữ cảnh trang; hỗ trợ iframe và Shadow DOM. Tải lại trang sau khi bật.",
+    "description": "Tooltip for unlock page restrictions"
+  },
+  "unlockPageRestrictionsOffReloadConfirm": {
+    "message": "Logic đã inject trong tab mở có thể còn cho đến khi tải lại.\n\nTải lại tab hiện tại ngay?",
+    "description": "Body text for unlock-off confirmation dialog"
   },
   "splitViewLeft": {
     "message": "Chia - trái",
@@ -946,5 +1486,165 @@
   "splitViewDown": {
     "message": "Chia - dưới",
     "description": "Chế độ xem chia đôi, cửa sổ mới phía dưới"
+  },
+  "unlockPageRestrictionsOffTitle": {
+    "message": "Đã tắt mở khóa trang",
+    "description": "Title for unlock-off confirmation dialog"
+  },
+  "unlockPageRestrictionsReloadTab": {
+    "message": "Tải lại tab",
+    "description": "Reload tab button in unlock-off dialog"
+  },
+  "unlockPageRestrictionsNotNow": {
+    "message": "Để sau",
+    "description": "Dismiss unlock-off dialog without reload"
+  },
+  "welcomeBulletImagePreview": {
+    "message": "Xem trước ảnh: phóng to khi trỏ chuột (tùy chọn) và chế độ nâng cao cho bố cục phức tạp.",
+    "description": "Welcome page: image hover preview bullet"
+  },
+  "welcomeBulletPageUnlock": {
+    "message": "Mở khóa trang: tùy chọn nới lỏng chặn sao chép, dán, chuột phải… — bật trong cài đặt và tải lại trang nếu được nhắc.",
+    "description": "Welcome page: page unlock bullet"
+  },
+  "welcomeBulletDisabledSites": {
+    "message": "Theo tên miền: các domain trong danh sách tắt cùng lúc cử chỉ, Super Drag, popup và mở khóa.",
+    "description": "Welcome page: per-site disable bullet"
+  },
+  "welcomeBulletSplitScroll": {
+    "message": "Chia đôi: khi mở liên kết ở chế độ chia, có thể đồng bộ cuộn giữa hai cửa sổ (kể cả ngang).",
+    "description": "Welcome page: split scroll sync bullet"
+  },
+  "welcomeBulletScreenshot": {
+    "message": "Ảnh chụp: vùng hiển thị, toàn trang, cuộn thủ công; vùng quỹ tích, phím tắt, bảng nhớ tạm, xem trước, lịch sử cục bộ (0 = không giới hạn).",
+    "description": "Welcome page: screenshot feature bullet"
+  },
+  "welcomeTipScreenshot": {
+    "message": "Ảnh chụp bật mặc định; đặt phím tắt vùng hiển thị, toàn trang, cuộn; vùng quỹ tích, sao chép tự động, xem trước, lịch sử tùy chọn.",
+    "description": "Welcome page: screenshot usage tip"
+  },
+  "trailColorPickerPresets": {
+    "message": "Cài sẵn",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerRecent": {
+    "message": "Gần đây",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerEyedropper": {
+    "message": "Hút màu",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerEyedropperActive": {
+    "message": "Nhấp để hút màu · bánh xe phóng to kính lúp",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerSyncTrail": {
+    "message": "Lưu làm màu quỹ tích",
+    "description": "Trail color picker UI"
+  },
+  "superDragCompassPosCompassHub": {
+    "message": "Điểm kéo",
+    "description": "Compass hub aligned to drag start"
+  },
+  "superDragCompassPosCompassScreenCenter": {
+    "message": "Giữa màn hình",
+    "description": "Compass fixed at viewport center"
+  },
+  "superDragCompassPosCompassScreenTop": {
+    "message": "Trên",
+    "description": "Compass fixed at top of viewport"
+  },
+  "superDragCompassPosCompassScreenRight": {
+    "message": "Phải",
+    "description": "Compass fixed at right of viewport"
+  },
+  "superDragCompassPosCompassScreenBottom": {
+    "message": "Dưới",
+    "description": "Compass fixed at bottom of viewport"
+  },
+  "superDragCompassPosCompassScreenLeft": {
+    "message": "Trái",
+    "description": "Compass fixed at left of viewport"
+  },
+  "superDragCompassPosCompassHidden": {
+    "message": "Ẩn",
+    "description": "Do not show compass"
+  },
+  "addCurrentSiteToDisabledSites": {
+    "message": "Thêm trang hiện tại",
+    "description": "Button: add the active tab domain to disabled sites"
+  },
+  "addCurrentSiteToDisabledSitesTitle": {
+    "message": "Thêm miền của thẻ hiện tại vào các trang bị tắt",
+    "description": "Tooltip for add-current-site button"
+  },
+  "addDisabledSite": {
+    "message": "Thêm",
+    "description": "Button: add a typed disabled site entry"
+  },
+  "disabledSiteInputPlaceholder": {
+    "message": "Miền hoặc URL đầy đủ, ví dụ youtube.com",
+    "description": "Placeholder for the disabled site input"
+  },
+  "disabledSitesEmpty": {
+    "message": "Chưa có trang nào bị tắt.",
+    "description": "Empty state for disabled sites list"
+  },
+  "removeDisabledSite": {
+    "message": "Xóa trang này",
+    "description": "Tooltip/aria label for remove disabled site button"
+  },
+  "disabledSiteInvalid": {
+    "message": "Nhập miền hoặc URL hợp lệ",
+    "description": "Error shown when disabled site input is invalid"
+  },
+  "disabledSiteAlreadyExists": {
+    "message": "Trang đã tồn tại",
+    "description": "Error shown when adding a duplicate disabled site"
+  },
+  "disabledSitesLimitReached": {
+    "message": "Đã đạt giới hạn trang bị tắt",
+    "description": "Error shown when disabled sites list reaches the maximum size"
+  },
+  "currentSiteUnsupported": {
+    "message": "Thẻ hiện tại không có miền được hỗ trợ",
+    "description": "Error shown when current tab URL cannot be added to disabled sites"
+  },
+  "customKey": {
+    "message": "Phím tùy chỉnh",
+    "description": "Custom trigger key option"
+  },
+  "previewTriggerMode": {
+    "message": "Chế độ kích hoạt",
+    "description": "Popup view trigger mode setting"
+  },
+  "previewTriggerHold": {
+    "message": "Giữ phím kích hoạt",
+    "description": "Hold trigger key option"
+  },
+  "previewTriggerDouble": {
+    "message": "Nhấn đúp phím kích hoạt",
+    "description": "Double-press trigger key option"
+  },
+  "previewCustomKey": {
+    "message": "Phím tùy chỉnh",
+    "description": "Popup view custom trigger key setting"
+  },
+  "previewCustomKeyPlaceholder": {
+    "message": "Nhấp và nhấn một phím",
+    "description": "Popup view custom trigger key placeholder"
+  },
+  "previewCustomKeyTitle": {
+    "message": "Nhấp vào đây, rồi nhấn một phím không phải phím bổ trợ. Nhấn Esc để xóa.",
+    "description": "Popup view custom trigger key title"
+  },
+  "unlimited": {
+    "message": "Không giới hạn",
+    "description": "Unlimited value label"
+  },
+  "settingsFontSize": {
+    "message": "Cỡ chữ phần cài đặt",
+    "description": "Header button: adjust settings font size"
   }
 }

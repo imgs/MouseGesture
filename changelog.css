@@ -1,0 +1,248 @@
+:root {
+  color-scheme: light;
+  --page-bg: #f7f8fa;
+  --surface: #ffffff;
+  --text: #253243;
+  --muted: #667085;
+  --border: #dfe4ea;
+  --accent: #ef6461;
+  --accent-soft: #fff0ef;
+  --secondary: #20866f;
+  --shadow: rgba(20, 28, 40, 0.12);
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --page-bg: #151719;
+  --surface: #202326;
+  --text: #edf0f2;
+  --muted: #aab2bd;
+  --border: #353a40;
+  --accent: #ff7b76;
+  --accent-soft: #3a2424;
+  --secondary: #68c8ad;
+  --shadow: rgba(0, 0, 0, 0.3);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  max-width: 100%;
+  overflow-x: hidden;
+  scrollbar-color: var(--border) transparent;
+  scrollbar-width: thin;
+}
+
+body {
+  min-width: 0;
+  max-width: 100%;
+  margin: 0;
+  overflow-x: clip;
+  background: var(--page-bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+.release-header {
+  position: sticky;
+  top: 0;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px clamp(16px, 4vw, 34px);
+  border-bottom: 1px solid var(--border);
+  background: color-mix(in srgb, var(--surface) 94%, transparent);
+  box-shadow: 0 4px 14px var(--shadow);
+  backdrop-filter: blur(12px);
+}
+
+.release-brand {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  gap: 10px;
+}
+
+.release-brand img {
+  flex: 0 0 auto;
+  border-radius: 8px;
+}
+
+.release-kicker,
+.release-brand h1 {
+  margin: 0;
+  letter-spacing: 0;
+}
+
+.release-kicker {
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.release-brand h1 {
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.release-actions {
+  display: inline-flex;
+  flex: 0 0 auto;
+  padding: 2px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--page-bg);
+}
+
+.release-actions button {
+  min-height: 30px;
+  padding: 4px 9px;
+  border: 0;
+  border-radius: 4px;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+}
+
+.release-actions button:hover,
+.release-actions button:focus-visible {
+  color: var(--text);
+  outline: none;
+}
+
+.release-actions button[aria-pressed="true"] {
+  background: var(--surface);
+  color: var(--accent);
+  box-shadow: 0 1px 4px var(--shadow);
+  font-weight: 650;
+}
+
+main {
+  width: min(820px, 100%);
+  margin: 0 auto;
+  padding: 20px clamp(16px, 4vw, 34px) 38px;
+}
+
+.release-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.version-pill {
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+  padding: 2px 8px;
+  border: 1px solid color-mix(in srgb, var(--accent) 28%, var(--border));
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.release-intro {
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--border);
+}
+
+.release-intro h2,
+.change-group h2 {
+  margin: 0;
+  letter-spacing: 0;
+}
+
+.release-intro h2 {
+  font-size: 21px;
+}
+
+.release-intro p {
+  margin: 7px 0 0;
+  color: var(--muted);
+}
+
+.change-group {
+  position: relative;
+  padding: 18px 0 18px 18px;
+  border-bottom: 1px solid var(--border);
+}
+
+.change-group::before {
+  content: "";
+  position: absolute;
+  top: 23px;
+  left: 0;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--secondary);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--secondary) 14%, transparent);
+}
+
+.change-group h2 {
+  font-size: 16px;
+}
+
+.change-group ul {
+  margin: 9px 0 0;
+  padding-left: 19px;
+}
+
+.change-group li {
+  margin: 6px 0;
+  overflow-wrap: anywhere;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+@media (max-width: 520px) {
+  .release-header {
+    align-items: flex-start;
+    padding: 11px 12px;
+  }
+
+  .release-brand img {
+    width: 34px;
+    height: 34px;
+  }
+
+  .release-brand h1 {
+    font-size: 17px;
+  }
+
+  .release-actions button {
+    min-height: 28px;
+    padding-inline: 7px;
+    font-size: 12px;
+  }
+
+  main {
+    padding: 15px 13px 28px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}

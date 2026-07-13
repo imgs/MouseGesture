@@ -4,7 +4,7 @@
     "description": "The name of the extension"
   },
   "extDesc": {
-    "message": "Une extension Chrome/Edge qui prend en charge les gestes de souris, la fonctionnalité de super glissement et la vue en popup",
+    "message": "Gestes de souris, super glissement, aperçu des images et des liens et plus.",
     "description": "The description of the extension"
   },
   "title": {
@@ -35,13 +35,21 @@
     "message": "Glisser Vers la Gauche",
     "description": "Drag left action"
   },
-  "openInForeground": {
-    "message": "Ouvrir le Lien au Premier Plan",
-    "description": "Open link in foreground"
+  "dragUpRight": {
+    "message": "Glisser vers le haut-droite",
+    "description": "Super drag diagonal direction"
   },
-  "openInBackground": {
-    "message": "Ouvrir le Lien en Arrière-plan",
-    "description": "Open link in background"
+  "dragDownRight": {
+    "message": "Glisser vers le bas-droite",
+    "description": "Super drag diagonal direction"
+  },
+  "dragDownLeft": {
+    "message": "Glisser vers le bas-gauche",
+    "description": "Super drag diagonal direction"
+  },
+  "dragUpLeft": {
+    "message": "Glisser vers le haut-gauche",
+    "description": "Super drag diagonal direction"
   },
   "superDragDescription": {
     "message": "Super Glissement fonctionne pour les liens, images et texte sélectionné. Vous pouvez définir la méthode d'ouverture pour chaque direction de geste (haut/bas/gauche/droite), y compris premier plan, arrière-plan ou vue partagée (gauche/droite/haut/bas).",
@@ -64,52 +72,76 @@
     "description": "Down direction"
   },
   "downThenRight": {
-    "message": "Bas puis Droite",
-    "description": "Down then right gesture"
+    "message": "Bas puis droite",
+    "description": "Geste bas puis droite"
   },
   "leftThenUp": {
-    "message": "Gauche puis Haut",
-    "description": "Left then up gesture"
+    "message": "Gauche puis haut",
+    "description": "Geste gauche puis haut"
   },
   "rightThenUp": {
-    "message": "Droite puis Haut",
-    "description": "Right then up gesture"
+    "message": "Droite puis haut",
+    "description": "Geste droite puis haut"
   },
   "rightThenDown": {
-    "message": "Droite puis Bas",
-    "description": "Right then down gesture"
+    "message": "Droite puis bas",
+    "description": "Geste droite puis bas"
   },
   "upThenLeft": {
-    "message": "Haut puis Gauche",
-    "description": "Up then left gesture"
+    "message": "Haut puis gauche",
+    "description": "Geste haut puis gauche"
   },
   "upThenRight": {
-    "message": "Haut puis Droite",
-    "description": "Up then right gesture"
+    "message": "Haut puis droite",
+    "description": "Geste haut puis droite"
   },
   "downThenLeft": {
-    "message": "Bas puis Gauche",
-    "description": "Down then left gesture"
+    "message": "Bas puis gauche",
+    "description": "Geste bas puis gauche"
   },
   "leftThenDown": {
-    "message": "Gauche puis Bas",
-    "description": "Left then down gesture"
+    "message": "Gauche puis bas",
+    "description": "Geste gauche puis bas"
   },
   "upThenDown": {
-    "message": "Haut puis Bas",
-    "description": "Up then down gesture"
+    "message": "Haut puis bas",
+    "description": "Geste haut puis bas"
   },
   "downThenUp": {
-    "message": "Bas puis Haut",
-    "description": "Down then up gesture"
+    "message": "Bas puis haut",
+    "description": "Geste bas puis haut"
   },
   "leftThenRight": {
-    "message": "Gauche puis Droite",
-    "description": "Left then right gesture"
+    "message": "Gauche puis droite",
+    "description": "Geste gauche puis droite"
   },
   "rightThenLeft": {
-    "message": "Droite puis Gauche",
-    "description": "Right then left gesture"
+    "message": "Droite puis gauche",
+    "description": "Geste droite puis gauche"
+  },
+  "rightHoldWheelUp": {
+    "message": "Maintenir droit + molette vers le haut",
+    "description": "Maintenir le bouton droit et molette vers le haut"
+  },
+  "rightHoldWheelDown": {
+    "message": "Maintenir droit + molette vers le bas",
+    "description": "Maintenir le bouton droit et molette vers le bas"
+  },
+  "leftHoldWheelUp": {
+    "message": "Maintenir gauche + molette haut",
+    "description": "Bouton gauche enfoncé et molette vers le haut"
+  },
+  "leftHoldWheelDown": {
+    "message": "Maintenir gauche + molette bas",
+    "description": "Bouton gauche enfoncé et molette vers le bas"
+  },
+  "rightHoldLeftClick": {
+    "message": "Maintenir droit + clic gauche",
+    "description": "Maintenir le bouton droit et clic gauche"
+  },
+  "leftHoldRightClick": {
+    "message": "Maintenir gauche + clic droit",
+    "description": "Maintenir le bouton gauche et clic droit"
   },
   "back": {
     "message": "Retour",
@@ -158,6 +190,18 @@
   "prevTab": {
     "message": "Onglet Précédent",
     "description": "Previous tab action"
+  },
+  "previousActiveTab": {
+    "message": "Onglet actif précédent",
+    "description": "Action de geste : passer à l’onglet précédemment actif"
+  },
+  "goToParentUrl": {
+    "message": "URL parente",
+    "description": "Action de geste : accéder au chemin URL parent"
+  },
+  "goToRootUrl": {
+    "message": "URL racine",
+    "description": "Action de geste : accéder à l’URL racine du site"
   },
   "nextTab": {
     "message": "Onglet Suivant",
@@ -211,6 +255,14 @@
     "message": "Basculer Plein Écran",
     "description": "Toggle fullscreen action"
   },
+  "zoomIn": {
+    "message": "Zoom avant",
+    "description": "Augmenter le zoom de l’onglet actif"
+  },
+  "zoomOut": {
+    "message": "Zoom arrière",
+    "description": "Réduire le zoom de l’onglet actif"
+  },
   "closeTabsToLeft": {
     "message": "Fermer les Onglets à Gauche",
     "description": "Close tabs to left action"
@@ -218,6 +270,474 @@
   "reloadAllTabs": {
     "message": "Recharger Tous les Onglets",
     "description": "Reload all tabs action"
+  },
+  "stopLoadingAllTabs": {
+    "message": "Arrêter le chargement de tous les onglets",
+    "description": "Stop loading in all tabs"
+  },
+  "screenshotRegion": {
+    "message": "Capture (zone de trace)",
+    "description": "Screenshot gesture action"
+  },
+  "screenshotRegionOrLink": {
+    "message": "Capture ou ouvrir le lien",
+    "description": "Trail region hint when links are inside selection"
+  },
+  "trailRegionChooseTitle": {
+    "message": "Liens dans la sélection — capture ou ouvrir",
+    "description": "Trail region chooser dialog title"
+  },
+  "trailRegionLinkSingle": {
+    "message": "1 lien",
+    "description": "Trail region link count"
+  },
+  "trailRegionLinkMultiple": {
+    "message": "{count} liens",
+    "description": "Trail region link count"
+  },
+  "trailRegionActionScreenshot": {
+    "message": "Capture (S)",
+    "description": "Trail region chooser button"
+  },
+  "trailRegionActionOpenLink": {
+    "message": "Ouvrir dans un nouvel onglet (O)",
+    "description": "Trail region chooser button"
+  },
+  "trailRegionActionOpenLinks": {
+    "message": "Ouvrir dans de nouveaux onglets (O)",
+    "description": "Trail region chooser button"
+  },
+  "trailRegionActionOpenSelected": {
+    "message": "Ouvrir {n} dans de nouveaux onglets (O)",
+    "description": "Trail region open checked links"
+  },
+  "trailRegionActionOpenNone": {
+    "message": "Ouvrir la sélection (O)",
+    "description": "Trail region open button when none checked"
+  },
+  "trailRegionActionCopy": {
+    "message": "Copier (C)",
+    "description": "Trail region chooser copy button"
+  },
+  "trailRegionActionCopySelected": {
+    "message": "Copier {n} (C)",
+    "description": "Trail region copy checked links"
+  },
+  "trailRegionActionCopyNone": {
+    "message": "Copier (C)",
+    "description": "Trail region copy button when none checked"
+  },
+  "trailRegionCopyFailed": {
+    "message": "Échec de la copie",
+    "description": "Trail region copy to clipboard failed"
+  },
+  "trailRegionSelectAll": {
+    "message": "Tout sélectionner",
+    "description": "Trail region link list select all"
+  },
+  "trailRegionNoLinkSelected": {
+    "message": "Sélectionnez au moins un lien",
+    "description": "Trail region no selection hint"
+  },
+  "trailRegionChooseHint": {
+    "message": "Échap pour annuler · cocher les liens à copier/ouvrir · faire glisser les bords pour redimensionner",
+    "description": "Trail region chooser footer"
+  },
+  "trailRegionLinkOpened": {
+    "message": "Lien ouvert dans un nouvel onglet",
+    "description": "Trail region open link feedback"
+  },
+  "trailRegionLinksOpened": {
+    "message": "Liens ouverts dans de nouveaux onglets",
+    "description": "Trail region open links feedback"
+  },
+  "trailRegionLinksTruncated": {
+    "message": "Seuls les {n} premiers liens ont été ouverts",
+    "description": "Trail region open links cap"
+  },
+  "screenshotScrollCaptureActive": {
+    "message": "Faites défiler la page manuellement, puis la même touche ou Échap pour terminer et assembler",
+    "description": "Manual scroll capture in progress"
+  },
+  "screenshotCopied": {
+    "message": "Capture copiée dans le presse-papiers",
+    "description": "Screenshot feedback"
+  },
+  "screenshotFailed": {
+    "message": "Échec de la capture",
+    "description": "Screenshot feedback"
+  },
+  "screenshotNeedTrail": {
+    "message": "Tracez une trajectoire plus longue pour sélectionner la zone",
+    "description": "Screenshot feedback"
+  },
+  "screenshotUnavailable": {
+    "message": "Module de capture indisponible",
+    "description": "Screenshot feedback"
+  },
+  "screenshotTopFrameOnly": {
+    "message": "La capture pleine page fonctionne uniquement dans le cadre principal",
+    "description": "Screenshot feedback"
+  },
+  "screenshotFeature": {
+    "message": "Capture d'écran",
+    "description": "Screenshot settings section title"
+  },
+  "enableScreenshotFeature": {
+    "message": "Activer la capture d'écran",
+    "description": "Master toggle for screenshot feature"
+  },
+  "enableScreenshotTrailCapture": {
+    "message": "Zone de trace (boucle / auto-croisement)",
+    "description": "Capture when trail loops or crosses; skipped if another gesture action matches"
+  },
+  "enableScreenshotClipboard": {
+    "message": "Copier automatiquement dans le presse-papiers",
+    "description": "Copy screenshot to clipboard after capture"
+  },
+  "enableScreenshotPreview": {
+    "message": "Afficher l'aperçu après la capture",
+    "description": "Open preview window when a screenshot is captured"
+  },
+  "enableScreenshotHistory": {
+    "message": "Enregistrer l'historique des captures",
+    "description": "Keep captured screenshots in local history"
+  },
+  "screenshotHistoryMaxCount": {
+    "message": "Limite de l'historique",
+    "description": "Maximum screenshot history entries to keep"
+  },
+  "screenshotHistoryMaxCountHint": {
+    "message": "0 = illimité ; 1–200 supprime les plus anciennes au-delà de la limite",
+    "description": "Screenshot history limit hint"
+  },
+  "screenshotHistoryUnlimited": {
+    "message": "Illimité",
+    "description": "Label when screenshot history limit is 0"
+  },
+  "screenshotHistoryView": {
+    "message": "Voir l'historique",
+    "description": "Open screenshot history window"
+  },
+  "screenshotHistoryTitle": {
+    "message": "Historique des captures",
+    "description": "Screenshot history window title"
+  },
+  "screenshotHistoryEmpty": {
+    "message": "Aucune capture pour l'instant",
+    "description": "Empty screenshot history state"
+  },
+  "screenshotHistoryClearAll": {
+    "message": "Tout effacer",
+    "description": "Delete all screenshot history entries"
+  },
+  "screenshotHistoryClearConfirm": {
+    "message": "Supprimer tout l'historique des captures ?",
+    "description": "Confirm clearing screenshot history"
+  },
+  "screenshotHistoryDelete": {
+    "message": "Supprimer",
+    "description": "Delete one screenshot history entry"
+  },
+  "screenshotHistoryPinToPage": {
+    "message": "Épingler à la page",
+    "description": "Pin history thumbnail onto the web page"
+  },
+  "screenshotHistoryPinFailed": {
+    "message": "Impossible d'épingler (ouvrez l'onglet cible ou autorisez ce site).",
+    "description": "Error when pinning from screenshot history"
+  },
+  "screenshotHistoryCount": {
+    "message": "$1 éléments",
+    "description": "Number of items in screenshot history",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "screenshotHistoryModeViewport": {
+    "message": "Zone visible",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeFullPage": {
+    "message": "Page entière",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeRegion": {
+    "message": "Région",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeScroll": {
+    "message": "Défilement manuel",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeUnknown": {
+    "message": "Capture",
+    "description": "Screenshot history capture mode fallback label"
+  },
+  "screenshotDone": {
+    "message": "Capture prête",
+    "description": "Hint when capture finished without clipboard copy"
+  },
+  "screenshotPreviewTitle": {
+    "message": "Aperçu de la capture",
+    "description": "Screenshot preview window title"
+  },
+  "screenshotPreviewClose": {
+    "message": "Fermer",
+    "description": "Close screenshot preview window"
+  },
+  "screenshotPreviewCopyAgain": {
+    "message": "Copier",
+    "description": "Copy screenshot to clipboard from preview window"
+  },
+  "screenshotPreviewSave": {
+    "message": "Enregistrer en fichier",
+    "description": "Save annotated screenshot to disk"
+  },
+  "screenshotPreviewSaved": {
+    "message": "Enregistré",
+    "description": "Screenshot file save succeeded"
+  },
+  "screenshotPreviewPinToPage": {
+    "message": "Épingler à la page",
+    "description": "Pin annotated screenshot onto the source web page"
+  },
+  "screenshotPreviewPinned": {
+    "message": "Épinglé",
+    "description": "Screenshot pin placed on page"
+  },
+  "screenshotPreviewPinning": {
+    "message": "Épinglage…",
+    "description": "Screenshot pin in progress"
+  },
+  "screenshotPinTitle": {
+    "message": "Capture",
+    "description": "Title on pinned screenshot sticker"
+  },
+  "screenshotPinClose": {
+    "message": "Retirer l'épingle",
+    "description": "Close button on pinned screenshot"
+  },
+  "screenshotPinResize": {
+    "message": "Redimensionner",
+    "description": "Resize handle on pinned screenshot"
+  },
+  "screenshotPinZoomFit": {
+    "message": "Ajuster",
+    "description": "Fit pinned screenshot to view"
+  },
+  "screenshotPinZoomOriginal": {
+    "message": "1:1",
+    "description": "Show pinned screenshot at original pixel size"
+  },
+  "screenshotPinOrderLabel": {
+    "message": "Épingle $1$",
+    "description": "Pinned screenshot order number",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "screenshotPreviewLoadFailed": {
+    "message": "Impossible de charger l'aperçu",
+    "description": "Screenshot preview load error"
+  },
+  "screenshotPreviewZoomFit": {
+    "message": "Ajuster",
+    "description": "Fit screenshot to preview window"
+  },
+  "screenshotPreviewZoomFitTitle": {
+    "message": "Ajuster à la fenêtre",
+    "description": "Tooltip for fit zoom button"
+  },
+  "screenshotPreviewZoomOneToOne": {
+    "message": "1:1",
+    "description": "Actual-size zoom button label"
+  },
+  "screenshotPreviewZoomOneToOneTitle": {
+    "message": "Taille réelle (1:1)",
+    "description": "Tooltip for 1:1 zoom button"
+  },
+  "screenshotPreviewZoomLevel": {
+    "message": "Zoom $1$ %",
+    "description": "Current zoom percentage in preview",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "screenshotAnnotHand": {
+    "message": "Main (déplacer)",
+    "description": "Pan the preview by dragging"
+  },
+  "screenshotAnnotPen": {
+    "message": "Crayon",
+    "description": "Annotation tool: freehand"
+  },
+  "screenshotAnnotArrow": {
+    "message": "Flèche (Maj : H/V)",
+    "description": "Annotation tool: arrow; Shift constrains to horizontal or vertical"
+  },
+  "screenshotAnnotLine": {
+    "message": "Ligne (Maj : H/V)",
+    "description": "Annotation tool: line; Shift constrains to horizontal or vertical"
+  },
+  "screenshotAnnotRect": {
+    "message": "Rectangle (Maj : carré)",
+    "description": "Annotation tool: rectangle; Shift draws a square"
+  },
+  "screenshotAnnotEllipse": {
+    "message": "Ellipse",
+    "description": "Annotation tool: ellipse"
+  },
+  "screenshotAnnotRoundRect": {
+    "message": "Rectangle arrondi",
+    "description": "Annotation tool: rounded rectangle"
+  },
+  "screenshotAnnotHighlighter": {
+    "message": "Surligneur",
+    "description": "Annotation tool: highlighter marker"
+  },
+  "screenshotAnnotHighlight": {
+    "message": "Cadre de surbrillance",
+    "description": "Annotation tool: highlight rectangle"
+  },
+  "screenshotAnnotFillRect": {
+    "message": "Rectangle plein",
+    "description": "Annotation tool: filled rectangle"
+  },
+  "screenshotAnnotFillEllipse": {
+    "message": "Ellipse pleine",
+    "description": "Annotation tool: filled ellipse"
+  },
+  "screenshotAnnotBlur": {
+    "message": "Flou",
+    "description": "Annotation tool: blur brush"
+  },
+  "screenshotAnnotArrow2": {
+    "message": "Double flèche (Maj : H/V)",
+    "description": "Annotation tool: line with arrowheads at both ends; Shift constrains H/V"
+  },
+  "screenshotAnnotNumber": {
+    "message": "Numéro",
+    "description": "Annotation tool: sequential number markers"
+  },
+  "screenshotAnnotStampStart": {
+    "message": "Début n°",
+    "description": "Starting number for sequential stamps"
+  },
+  "screenshotAnnotStampNext": {
+    "message": "Suivant n° : $1$",
+    "description": "Next number stamp to place (tooltip)",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "screenshotAnnotCrop": {
+    "message": "Recadrer",
+    "description": "Annotation tool: crop image"
+  },
+  "screenshotAnnotCropApply": {
+    "message": "Appliquer le recadrage",
+    "description": "Confirm crop selection"
+  },
+  "screenshotAnnotCropCancel": {
+    "message": "Annuler",
+    "description": "Cancel crop selection"
+  },
+  "screenshotAnnotText": {
+    "message": "Texte",
+    "description": "Annotation tool: text"
+  },
+  "screenshotAnnotMosaic": {
+    "message": "Mosaïque",
+    "description": "Annotation tool: mosaic blur"
+  },
+  "screenshotAnnotEraser": {
+    "message": "Gomme",
+    "description": "Annotation tool: eraser"
+  },
+  "screenshotAnnotSize": {
+    "message": "Taille",
+    "description": "Annotation stroke size"
+  },
+  "screenshotAnnotResetAll": {
+    "message": "Réinitialiser toutes les modifications",
+    "description": "Clear all annotations and restore original screenshot"
+  },
+  "screenshotAnnotStepCount": {
+    "message": "$1 / $2",
+    "description": "History step indicator: current / total"
+  },
+  "screenshotAnnotStepCountTitle": {
+    "message": "Étapes appliquées / total (0 = image d'origine)",
+    "description": "Tooltip for history step indicator"
+  },
+  "screenshotAnnotUndo": {
+    "message": "Annuler",
+    "description": "Undo annotation"
+  },
+  "screenshotAnnotRedo": {
+    "message": "Rétablir",
+    "description": "Redo annotation"
+  },
+  "screenshotAnnotTextPlaceholder": {
+    "message": "Saisissez ici…",
+    "description": "Placeholder in inline text editor on screenshot preview"
+  },
+  "screenshotOptRegion": {
+    "message": "Sélection de région",
+    "description": "Screenshot bind row: keyboard drag rectangle region"
+  },
+  "screenshotOptViewport": {
+    "message": "Zone visible",
+    "description": "Screenshot bind row: current visible tab area"
+  },
+  "screenshotOptFullPage": {
+    "message": "Page entière",
+    "description": "Screenshot bind row: full page"
+  },
+  "screenshotOptScrollStitch": {
+    "message": "Défilement manuel",
+    "description": "Screenshot bind row: manual scroll capture"
+  },
+  "screenshotOptOpenHistory": {
+    "message": "Ouvrir l'historique",
+    "description": "Screenshot bind row: keyboard shortcut to open screenshot history"
+  },
+  "screenshotHotkeyPressHint": {
+    "message": "Raccourcis : cliquez un champ ci-dessus, puis une combinaison (Ctrl / Alt / Meta + lettre ou chiffre, ou F1–F12). Échap efface le champ.",
+    "description": "Screenshot section footer: hotkey binding help"
+  },
+  "screenshotHotkeyPlaceholder": {
+    "message": "Cliquer pour définir",
+    "description": "Placeholder in empty screenshot hotkey fields"
+  },
+  "screenshotRegionPickHint": {
+    "message": "Glissez pour sélectionner une zone. Échap pour annuler.",
+    "description": "Hint while keyboard region picker is active"
+  },
+  "screenshotRegionPickFooterHint": {
+    "message": "Raccourci région : tracez un rectangle puis relâchez. S'il y a des liens, capture ou ouverture en nouveaux onglets. Échap annule.",
+    "description": "Screenshot section footer: keyboard region picker help"
+  },
+  "screenshotRegionTooSmall": {
+    "message": "Sélection trop petite — tracez une zone plus grande",
+    "description": "Region picker: minimum size not met"
+  },
+  "screenshotGestureIntersectHint": {
+    "message": "Zone de trace : une boucle ou un seul croisement, puis relâchez. Si la zone contient des liens, capture ou ouverture en nouvel(s) onglet(s). Plusieurs boucles = gribouillage.",
+    "description": "Screenshot section footer: trail region capture help"
   },
   "togglePinTab": {
     "message": "Épingler/Désépingler l'Onglet",
@@ -244,16 +764,16 @@
     "description": "Settings title"
   },
   "customizedBehavior": {
-    "message": "Liste de blocage",
-    "description": "Block list section title"
+    "message": "Sites désactivés",
+    "description": "Section title for the per-site disable list"
   },
   "disableMouseGesturesForSites": {
-    "message": "Désactiver les gestes souris et le super glisser sur ces sites",
-    "description": "Label for the list of sites where gestures and super drag are disabled"
+    "message": "Désactiver les fonctions de l’extension sur les domaines répertoriés",
+    "description": "Subtitle for Disabled sites section"
   },
   "disabledSitesHint": {
-    "message": "Un site par ligne. Domaine (ex. youtube.com) ou URL complète.",
-    "description": "Hint for the disabled sites textarea"
+    "message": "S’applique aux gestes, au super glisser, à l’aperçu des liens/images, aux captures d’écran et au déverrouillage de page. Ajoutez le site actuel ou saisissez un domaine/une URL ; cliquez sur le symbole de suppression pour l’effacer.",
+    "description": "Short hint explaining which features the Disabled sites list affects"
   },
   "enableGesture": {
     "message": "Activer les Gestes de Souris",
@@ -279,6 +799,26 @@
     "message": "Activer le Super Glissement",
     "description": "Enable super drag option"
   },
+  "superDragCompassPosition": {
+    "message": "Boussole 8 directions",
+    "description": "Super drag compass display and position"
+  },
+  "superDragCompassPosCompassAbove": {
+    "message": "Au-dessus du point de glissement",
+    "description": "Compass above drag start, centered horizontally"
+  },
+  "superDragCompassPosCompassRight": {
+    "message": "À droite du point de glissement",
+    "description": "Compass to the right of drag start, vertically centered"
+  },
+  "superDragCompassPosCompassBelow": {
+    "message": "En dessous du point de glissement",
+    "description": "Compass below drag start, centered horizontally"
+  },
+  "superDragCompassPosCompassLeft": {
+    "message": "À gauche du point de glissement",
+    "description": "Compass to the left of drag start, vertically centered"
+  },
   "enableDragTextSearch": {
     "message": "Activer la Recherche de Texte par Glissement",
     "description": "Enable drag text search option"
@@ -287,9 +827,17 @@
     "message": "Télécharger image/fichier en glissant",
     "description": "When the drag target is an image or other downloadable file, start download automatically"
   },
+  "enableImageDrag": {
+    "message": "Activer le glisser d’images",
+    "description": "Control image super drag independently from image preview"
+  },
   "enableImagePreview": {
     "message": "Activer l'Aperçu d'Image",
     "description": "Enable image preview option"
+  },
+  "enableImagePreviewEnhanced": {
+    "message": "Aperçu d'image amélioré",
+    "description": "Support transparent overlay, background-image, parent lookup, etc."
   },
   "enableDuplicateCheck": {
     "message": "Détecter les Onglets Dupliqués",
@@ -302,10 +850,6 @@
   "enableSmoothScroll": {
     "message": "Activer le défilement fluide",
     "description": "Enable smooth scrolling for gesture actions"
-  },
-  "save": {
-    "message": "Paramètres Appliqués",
-    "description": "Save settings button"
   },
   "reset": {
     "message": "Réinitialiser",
@@ -363,14 +907,6 @@
     "message": "Erreur de Réinitialisation des Paramètres",
     "description": "Reset settings error notification"
   },
-  "themeLight": {
-    "message": "Clair",
-    "description": "Light theme"
-  },
-  "themeDark": {
-    "message": "Sombre",
-    "description": "Dark theme"
-  },
   "buyMeACoffee": {
     "message": "Offrez-moi un café",
     "description": "Donation button"
@@ -379,17 +915,33 @@
     "message": "Basculer le thème",
     "description": "Toggle theme button"
   },
-  "toggleLanguage": {
-    "message": "Changer de langue",
-    "description": "Toggle language button"
+  "openDetachedPopupTitle": {
+    "message": "Ouvrir les paramètres dans le panneau latéral (sinon fenêtre séparée)",
+    "description": "Bouton d’en-tête : panneau latéral ou fenêtre détachée"
+  },
+  "openDetachedWindowFromSidePanelTitle": {
+    "message": "Ouvrir dans une fenêtre séparée (côte à côte)",
+    "description": "Panneau latéral : fenêtre détachée et disposition du navigateur"
+  },
+  "openOptionsPageTitle": {
+    "message": "Ouvrir la page des options",
+    "description": "Bouton d’en-tête : ouvrir la page des options de l’extension"
   },
   "donationTooltip": {
     "message": "Si vous aimez ce travail, soutenez-moi s'il vous plaît. Merci :)",
     "description": "Donation tooltip"
   },
   "rightButtonHint": {
-    "message": "Maintenir le bouton droit de la souris",
+    "message": "Maintenir droit (trace, roulette, clics) · gauche (roulette)",
     "description": "Right mouse button hint"
+  },
+  "builtInGesturesListExpandHint": {
+    "message": "Cliquer pour développer la liste complète des gestes",
+    "description": "Tooltip on built-in gestures subtitle when list is collapsed"
+  },
+  "builtInGesturesListCollapseHint": {
+    "message": "Cliquer pour réduire la liste des gestes",
+    "description": "Tooltip on built-in gestures subtitle when list is expanded"
   },
   "leftButtonHint": {
     "message": "Maintenir le bouton gauche de la souris",
@@ -403,17 +955,45 @@
     "message": "Ouvrir en Arrière-plan",
     "description": "Open in background action"
   },
+  "popupViewAction": {
+    "message": "Vue Popup",
+    "description": "Super drag action: open target in popup view"
+  },
+  "incognitoAction": {
+    "message": "Ouvrir dans une fenêtre de navigation privée",
+    "description": "Open in incognito/private window"
+  },
+  "enableSplitScrollSync": {
+    "message": "Synchroniser le défilement vertical et horizontal entre les fenêtres fractionnées",
+    "description": "Avec vue fractionnée, aligner les deux axes de défilement entre les fenêtres"
+  },
   "copyAction": {
     "message": "Copier",
     "description": "Copy selected text or link URL to clipboard"
+  },
+  "downloadAction": {
+    "message": "T?l?charger",
+    "description": "Super drag action: download target"
   },
   "copiedToClipboard": {
     "message": "Copié dans le presse-papiers",
     "description": "Hint after copy action"
   },
-  "dragSearchEngine": {
-    "message": "URL du Moteur de Recherche de Glissement",
-    "description": "Drag search engine URL setting"
+  "dragSearchEngineSlotLabel": {
+    "message": "Élément à modifier",
+    "description": "Label for drag search engine slot selector"
+  },
+  "dragSearchSlotDefault": {
+    "message": "Par défaut (secours)",
+    "description": "Default search URL slot in drag search editor"
+  },
+  "dragSearchEngineUrlForSlot": {
+    "message": "URL du moteur de recherche",
+    "description": "Label for single drag search URL field"
+  },
+  "dragSearchEnginePerDirectionHelp": {
+    "message": "Choisissez « Par défaut » ou une direction de glisser dans la liste, puis modifiez l’URL correspondante. Les directions vides utilisent le défaut. S’applique uniquement à la recherche par texte glissé.",
+    "description": "Help text for unified drag search engine editor"
   },
   "linkPreview": {
     "message": "Vue Popup",
@@ -424,7 +1004,7 @@
     "description": "Quick navigation hover tooltip"
   },
   "linkPreviewHint": {
-    "message": "Survoler + Touche pour Afficher la Popup",
+    "message": "Survolez et utilisez le déclencheur pour afficher la fenêtre",
     "description": "Popup view hint"
   },
   "enableLinkPreview": {
@@ -495,41 +1075,61 @@
     "message": "Utilisez {q} pour le terme de recherche, format d'exemple :",
     "description": "Search engine examples description"
   },
+  "searchExampleUrlClickHint": {
+    "message": "Cliquez l’URL d’exemple pour remplir le champ ci-dessus et enregistrer",
+    "description": "Tooltip for example search engine URLs (click to fill)"
+  },
+  "searchEngineExamplesUrlClickHint": {
+    "message": "Astuce : cliquez une URL d’exemple pour remplir le champ ci-dessus et enregistrer.",
+    "description": "Visible hint under search engine examples (click URL to fill field above and save)"
+  },
   "googleExample": {
-    "message": "Recherche Google : https://www.google.fr/search?q={q}",
+    "message": "Recherche Google :",
+    "description": "Google search example"
+  },
+  "googleExampleUrl": {
+    "message": "https://www.google.fr/search?q={q}",
     "description": "Google search example"
   },
   "googleTranslateExample": {
-    "message": "Google Traduction : https://translate.google.fr/?sl=auto&tl=fr&text={q}&op=translate",
+    "message": "Google Traduction :",
+    "description": "Google translate example"
+  },
+  "googleTranslateExampleUrl": {
+    "message": "https://translate.google.fr/?sl=auto&tl=fr&text={q}&op=translate",
     "description": "Google translate example"
   },
   "localSearchExample": {
-    "message": "Recherche Qwant : https://www.qwant.com/?q={q}",
+    "message": "Recherche Qwant :",
+    "description": "Local search example"
+  },
+  "localSearchExampleUrl": {
+    "message": "https://www.qwant.com/?q={q}",
     "description": "Local search example"
   },
   "bingExample": {
-    "message": "Recherche Bing : https://www.bing.com/search?q={q}&setlang=fr",
+    "message": "Recherche Bing :",
+    "description": "Bing search example"
+  },
+  "bingExampleUrl": {
+    "message": "https://www.bing.com/search?q={q}&setlang=fr",
     "description": "Bing search example"
   },
   "wheelTip": {
-    "message": "Utilisez la molette de la souris pour ajuster la valeur",
+    "message": "Survolez cette ligne ~1,5 s, puis utilisez la molette pour régler",
     "description": "Wheel tip"
   },
   "modifierKeyDelayTip": {
-    "message": "Lors de l'utilisation d'une touche de déclenchement, le délai maximum est limité à 300ms",
+    "message": "Le délai commence lorsque la condition de déclenchement est remplie ; augmentez-le pour éviter les aperçus accidentels.",
     "description": "Modifier key delay tip"
   },
   "welcomeTitle": {
-    "message": "Bienvenue dans l'Extension Gestes de Souris",
+    "message": "Bienvenue dans l’extension Gestes de souris",
     "description": "Welcome page title"
   },
   "welcomeDescription": {
-    "message": "Merci d'avoir installé l'Extension Gestes de Souris ! Cette extension offre une riche fonctionnalité de gestes de souris, une gestion intelligente des onglets, des capacités d'affichage popup et une expérience visuelle améliorée pour vous aider à naviguer sur le web plus efficacement. Nous avons optimisé l'algorithme de reconnaissance des gestes avec une tolérance accrue aux erreurs, permettant de reconnaître correctement les gestes même s'ils ne sont pas parfaitement dessinés. La nouvelle fonction d'affichage popup vous permet de voir le contenu des liens dans des fenêtres popup sans changer d'onglet. L'extension prend également en charge 29 langues et les thèmes clair/sombre pour une meilleure expérience utilisateur.",
+    "message": "Merci d’avoir installé Mouse Gesture ! Maintenez le bouton droit enfoncé et faites glisser pour naviguer, gérer les onglets et faire défiler ; maintenez aussi le bouton droit ou gauche avec la molette (et d’autres combinaisons dans les réglages) pour des raccourcis supplémentaires — la reconnaissance reste tolérante, y compris pendant le chargement. Super Drag ouvre liens, images et recherches de texte avec des règles par direction (premier plan, arrière-plan, mise en page fractionnée, copier dans le presse-papiers, etc.). Popup View affiche des aperçus de liens ou recherche le texte sélectionné dans de petites fenêtres. En option : aperçu d’image au survol (mode avancé), détection des onglets en double avec fermeture automatique, défilement fluide, badge du nombre d’onglets et déverrouillage de page sur les sites restrictifs. Paramètres depuis la barre d’outils (popup, panneau latéral ou fenêtre détachée) ; import/export ; synchronisation avec le compte du navigateur. 29 langues et thèmes clair/sombre.",
     "description": "Welcome page description"
-  },
-  "gesturesDescription": {
-    "message": "Voici les gestes de souris prédéfinis que vous pouvez utiliser en glissant avec le bouton droit de la souris :",
-    "description": "Gestures description"
   },
   "extensionName": {
     "message": "Extension Gestes de Souris",
@@ -539,88 +1139,48 @@
     "message": "Fonctionnalités Principales",
     "description": "Core features title"
   },
-  "utilitiesFeatures": {
-    "message": "Outils Utilitaires",
-    "description": "Utilities features title"
+  "welcomeCoreGestureBlock": {
+    "message": "Gestes souris : maintenir le clic droit et tracer pour les gestes de chemin ; molette avec clic droit ou gauche maintenu, et combinaisons de clics gauche/droit avec clic droit maintenu — tout réassignable dans les paramètres ; reconnaissance tolérante, utilisable pendant le chargement des pages.",
+    "description": "Welcome page: core features gesture summary"
+  },
+  "welcomeCoreSuperDragBlock": {
+    "message": "Super Drag : glisser liens et images vers de nouveaux onglets, glisser le texte sélectionné pour rechercher ; les directions définissent comment les onglets s’ouvrent, par défaut en arrière-plan.",
+    "description": "Welcome page: core features super drag summary"
+  },
+  "welcomeCorePopupViewBlock": {
+    "message": "Vue popup : maintenir la touche déclencheur (Maj par défaut) sur un lien pour prévisualiser la page dans une petite fenêtre ; après sélection de texte, appuyer sur la touche pour lancer une recherche instantanée avec votre moteur personnalisé.",
+    "description": "Welcome page: core features popup view summary"
   },
   "usageTips": {
     "message": "Conseils d'Utilisation",
     "description": "Usage tips title"
   },
-  "smartGestureRecognition": {
-    "message": "Reconnaissance intelligente des gestes : Identifie correctement les gestes même lorsqu'ils sont imparfaits, fonctionne pendant le chargement de page",
-    "description": "Smart gesture recognition description"
-  },
-  "tabManagementTitle": {
-    "message": "Gestion des Onglets",
-    "description": "Tab management title"
-  },
-  "tabManagementDesc": {
-    "message": " : Détection intelligente des doublons, fermeture automatique optionnelle, optimisation périodique de la mémoire",
-    "description": "Tab management description"
-  },
-  "superDragTitle": {
-    "message": "Super Glissement",
-    "description": "Super drag title"
-  },
-  "superDragDesc": {
-    "message": " : Glissez les liens et images vers de nouveaux onglets, glissez le texte sélectionné pour rechercher",
-    "description": "Super drag description"
-  },
-  "linkPreviewTitle": {
-    "message": "Vue Popup",
-    "description": "Link preview title"
-  },
-  "linkPreviewDesc": {
-    "message": " : Maintenez la touche de modification (par défaut : Shift) tout en survolant les liens pour prévisualiser les pages cibles dans des fenêtres popup",
-    "description": "Link preview description"
-  },
-  "textSelectionPreview": {
-    "message": "Sélectionnez du texte et appuyez sur la touche de modification pour le rechercher instantanément dans une fenêtre popup, avec support de moteur de recherche personnalisé",
-    "description": "Text selection preview description"
-  },
   "previewTip": {
-    "message": "Vous pouvez ouvrir plusieurs fenêtres popup simultanément",
+    "message": "Gardez plusieurs aperçus ouverts pour comparer côte à côte.",
     "description": "Preview tip"
-  },
-  "dragDirection": {
-    "message": "Personnalisez la direction de glissement pour déterminer la méthode d'ouverture des onglets : ouvre en arrière-plan par défaut",
-    "description": "Drag direction description"
   },
   "debugPanelTitle": {
     "message": "Info de Débogage des Gestes de Souris",
     "description": "Debug panel title"
   },
   "debugPanelDesc": {
-    "message": " : Appuyez sur Alt+D pour ouvrir, analyser les informations de gestes en temps réel, maintient l'état",
+    "message": "Appuyez sur Alt+D pour ouvrir le panneau de débogage, analysez les gestes en temps réel, l'état est conservé.",
     "description": "Debug panel description"
   },
-  "oneClickCopy": {
-    "message": "Copie en un clic des informations de débogage pour un partage facile, avec support multilingue",
-    "description": "One click copy description"
-  },
-  "mediaPreview": {
-    "message": "Aperçu multimédia amélioré : Effets de survol d'image améliorés et images d'affiche vidéo optimisées",
-    "description": "Media preview description"
-  },
-  "adaptiveTheme": {
-    "message": "Thèmes adaptatifs : Ajuste le style visuel selon l'arrière-plan de la page, prend en charge le mode clair/sombre",
-    "description": "Adaptive theme description"
-  },
   "gestureTrail": {
-    "message": "Traces de gestes affichées à l'écran avec couleur et largeur personnalisables",
+    "message": "Trajectoire et indication de geste optionnelles ; couleur et épaisseur dans les paramètres.",
     "description": "Gesture trail description"
   },
   "clickIcon": {
-    "message": "Cliquez sur l'icône de l'extension pour activer/désactiver les fonctions, définir la langue, le thème et plus",
+    "message": "Barre d'outils : popup compact, panneau latéral (Chrome/Edge) ou fenêtre de paramètres détachée. Fonctions, langue, thème, export/import.",
     "description": "Click icon description"
   },
   "languageSupport": {
-    "message": "Prend en charge 29 langues, s'adapte automatiquement à la langue du navigateur",
+    "message": "29 langues d'interface ; utilise votre choix enregistré ou suit la langue du navigateur.",
     "description": "Language support description"
   },
   "enableAutoClose": {
-    "message": "Activer la fonction de fermeture automatique des onglets dupliqués pour réduire significativement l'utilisation des ressources du navigateur",
+    "message": "Avec détection des doublons, fermeture automatique optionnelle des URL répétées.",
     "description": "Enable auto close description"
   },
   "rightClickMacLinux": {
@@ -634,14 +1194,6 @@
   "duplicateTabsDetected": {
     "message": "$1 onglets dupliqués trouvés",
     "description": "Duplicate tabs detected notification title"
-  },
-  "duplicateTabsCount": {
-    "message": "Il y a $1 onglets dupliqués",
-    "description": "Duplicate tabs count message"
-  },
-  "duplicateTabsSingle": {
-    "message": "Il y a 1 onglet dupliqué",
-    "description": "Single duplicate tab message"
   },
   "autoClosedTabs": {
     "message": "$1 onglets dupliqués fermés automatiquement",
@@ -659,61 +1211,9 @@
     "message": "Onglet sans titre",
     "description": "Untitled tab"
   },
-  "morePages": {
-    "message": "...et $1 pages de plus",
-    "description": "More pages tip"
-  },
-  "errorShowDuplicateTabs": {
-    "message": "Erreur affichage notification onglets dupliqués :",
-    "description": "Error showing duplicate tabs notification"
-  },
-  "errorSendCloseRequest": {
-    "message": "Erreur envoi demande de fermeture :",
-    "description": "Error sending close request"
-  },
-  "errorCloseDuplicateTabs": {
-    "message": "Erreur fermeture onglets dupliqués :",
-    "description": "Error closing duplicate tabs"
-  },
-  "errorSendIgnoreRequest": {
-    "message": "Erreur envoi demande d'ignorer :",
-    "description": "Error sending ignore request"
-  },
-  "errorIgnoreDuplicateTabs": {
-    "message": "Erreur ignorer onglets dupliqués :",
-    "description": "Error ignoring duplicate tabs"
-  },
-  "errorUpdateDebugPanel": {
-    "message": "Erreur mise à jour panneau de débogage :",
-    "description": "Error updating debug panel"
-  },
   "errorDetectBackgroundColor": {
     "message": "Erreur détection couleur d'arrière-plan :",
     "description": "Error detecting background color"
-  },
-  "errorDetectImageBorder": {
-    "message": "Erreur détection rayon de bordure d'image :",
-    "description": "Error detecting image border radius"
-  },
-  "errorSetMutationObserver": {
-    "message": "Erreur configuration observateur de mutation :",
-    "description": "Error setting mutation observer"
-  },
-  "errorCheckElementVisibility": {
-    "message": "Erreur vérification visibilité d'élément :",
-    "description": "Error checking element visibility"
-  },
-  "errorProcessBorderRadius": {
-    "message": "Erreur traitement rayon de bordure :",
-    "description": "Error processing border radius"
-  },
-  "errorDetectImageBackground": {
-    "message": "Erreur détection arrière-plan d'image :",
-    "description": "Error detecting image background"
-  },
-  "errorShowAutoCloseNotification": {
-    "message": "Erreur affichage notification fermeture automatique réussie :",
-    "description": "Error showing auto-close success notification"
   },
   "noForwardPage": {
     "message": "Aucune page suivante dans l'historique",
@@ -743,10 +1243,6 @@
     "message": "Geste Invalide",
     "description": "Invalid gesture message"
   },
-  "nextPage": {
-    "message": "Page Suivante",
-    "description": "Next page action"
-  },
   "errorReadPixel": {
     "message": "Erreur lecture pixel :",
     "description": "Error reading pixel message"
@@ -758,10 +1254,6 @@
   "errorCanvasDraw": {
     "message": "Erreur dessin sur canvas :",
     "description": "Error drawing on canvas message"
-  },
-  "errorAccessIframe": {
-    "message": "Erreur accès iframe :",
-    "description": "Error accessing iframe message"
   },
   "errorMutationObserver": {
     "message": "Erreur configuration observateur de mutation :",
@@ -791,6 +1283,10 @@
     "message": "Paramètres Système",
     "description": "Debug panel system settings section"
   },
+  "debugConsoleLog": {
+    "message": "Journaux de la console",
+    "description": "Debug panel console log toggle label"
+  },
   "debugAngleThreshold": {
     "message": "Seuil d'Angle",
     "description": "Debug panel angle threshold setting"
@@ -810,6 +1306,46 @@
   "debugMinGestureComplexity": {
     "message": "Complexité Minimale de Geste",
     "description": "Debug panel minimum gesture complexity setting"
+  },
+  "debugMinMovementToStartGesture": {
+    "message": "Mouvement min. pour démarrer",
+    "description": "Paramètre du panneau de débogage : mouvement minimal pour démarrer le suivi du geste"
+  },
+  "debugSmoothingFactor": {
+    "message": "Facteur de lissage",
+    "description": "Paramètre du panneau de débogage : facteur de lissage du tracé et de la reconnaissance"
+  },
+  "debugAngleThresholdHelp": {
+    "message": "Détermine avec quelle rigueur un mouvement est classé horizontal ou vertical. Une valeur plus élevée exige une direction plus droite ; une valeur plus basse autorise plus de diagonale.",
+    "description": "Aide du seuil d’angle dans le panneau de débogage"
+  },
+  "debugDirectionChangeThresholdHelp": {
+    "message": "Détermine la sensibilité de détection des changements de direction. Une valeur plus basse détecte plus facilement les virages ; une valeur plus élevée ignore les petits tremblements.",
+    "description": "Aide du seuil de changement de direction dans le panneau de débogage"
+  },
+  "debugMinGestureDistanceHelp": {
+    "message": "Distance totale minimale requise avant qu’un geste puisse être reconnu. Augmentez-la pour réduire les déclenchements accidentels.",
+    "description": "Aide de la distance minimale du geste dans le panneau de débogage"
+  },
+  "debugMinDirectionSegmentLengthHelp": {
+    "message": "Longueur minimale d’un segment de mouvement utilisée pour reconnaître la direction. Augmentez-la pour filtrer les petits tremblements ; réduisez-la pour les gestes courts.",
+    "description": "Aide de la longueur minimale du segment de direction dans le panneau de débogage"
+  },
+  "debugMinGestureComplexityHelp": {
+    "message": "Seuil de complexité directionnelle avant qu’un tracé soit traité comme gribouillage ou invalide. Une valeur plus élevée tolère plus de virages.",
+    "description": "Aide de la complexité du geste dans le panneau de débogage"
+  },
+  "debugMinMovementToStartGestureHelp": {
+    "message": "Le pointeur doit se déplacer d’au moins ce nombre de pixels après l’appui sur le bouton avant le début du suivi du geste.",
+    "description": "Aide du mouvement minimal de démarrage dans le panneau de débogage"
+  },
+  "debugSmoothingFactorHelp": {
+    "message": "Contrôle le lissage du tracé et des points de reconnaissance. Une valeur plus élevée réduit les tremblements, mais peut adoucir les virages nets ; une valeur plus basse réagit plus vite.",
+    "description": "Aide du facteur de lissage dans le panneau de débogage"
+  },
+  "debugConsoleLogHelp": {
+    "message": "Active les journaux détaillés de l’extension dans la console DevTools pour le dépannage.",
+    "description": "Aide des journaux console dans le panneau de débogage"
   },
   "debugLatestGestureInfo": {
     "message": "Info de Geste le Plus Récent",
@@ -850,10 +1386,6 @@
   "debugMergedDirections": {
     "message": "Directions Fusionnées",
     "description": "Debug panel merged directions"
-  },
-  "debugDirectionDistances": {
-    "message": "Distances de Directions",
-    "description": "Debug panel direction distances"
   },
   "debugFinalResult": {
     "message": "Résultat Final",
@@ -927,9 +1459,17 @@
     "message": "Afficher le Nombre de Tabs",
     "description": "Show tab count badge option"
   },
-  "splitViewAction": {
-    "message": "Vue partagée",
-    "description": "Ouvrir dans une fenêtre en vue partagée"
+  "unlockPageRestrictions": {
+    "message": "Déverrouiller copier/coller/clic droit et suivi d’onglet",
+    "description": "Setting: unlock page interaction limits"
+  },
+  "unlockPageRestrictionsTitle": {
+    "message": "Lève blocages courants et limite le suivi blur/visibilitychange. Contexte page, iframes et Shadow DOM. Recharger après activation.",
+    "description": "Tooltip for unlock page restrictions"
+  },
+  "unlockPageRestrictionsOffReloadConfirm": {
+    "message": "Les pages ouvertes peuvent rester modifiées jusqu’au rechargement.\n\nRecharger l’onglet actuel ?",
+    "description": "Body text for unlock-off confirmation dialog"
   },
   "splitViewLeft": {
     "message": "Partager - gauche",
@@ -946,6 +1486,165 @@
   "splitViewDown": {
     "message": "Partager - bas",
     "description": "Vue partagée, nouvelle fenêtre en bas"
+  },
+  "unlockPageRestrictionsOffTitle": {
+    "message": "Déverrouillage désactivé",
+    "description": "Title for unlock-off confirmation dialog"
+  },
+  "unlockPageRestrictionsReloadTab": {
+    "message": "Recharger l’onglet",
+    "description": "Reload tab button in unlock-off dialog"
+  },
+  "unlockPageRestrictionsNotNow": {
+    "message": "Pas maintenant",
+    "description": "Dismiss unlock-off dialog without reload"
+  },
+  "welcomeBulletImagePreview": {
+    "message": "Aperçu d’image : aperçu agrandi au survol en option, avec un mode avancé pour les mises en page complexes.",
+    "description": "Welcome page: image hover preview bullet"
+  },
+  "welcomeBulletPageUnlock": {
+    "message": "Déverrouillage de page : assouplir en option copier, coller, clic droit, etc. sur les sites restrictifs — activer dans les paramètres et recharger la page si demandé.",
+    "description": "Welcome page: page unlock bullet"
+  },
+  "welcomeBulletDisabledSites": {
+    "message": "Par site : les domaines listés désactivent ensemble gestes, Super Drag, vue popup et déverrouillage.",
+    "description": "Welcome page: per-site disable bullet"
+  },
+  "welcomeBulletSplitScroll": {
+    "message": "Vue fractionnée : lorsqu’un lien s’ouvre en fractionné, synchronisez le défilement entre les deux fenêtres (y compris horizontalement).",
+    "description": "Welcome page: split scroll sync bullet"
+  },
+  "welcomeBulletScreenshot": {
+    "message": "Captures : zone visible, page entière, défilement manuel ; zones de trace, raccourcis, presse-papiers, aperçu et historique local (0 = illimité).",
+    "description": "Welcome page: screenshot feature bullet"
+  },
+  "welcomeTipScreenshot": {
+    "message": "Captures activées par défaut ; assignez des raccourcis pour zone visible, page entière et défilement ; zones de trace, copie auto, aperçu et historique en option.",
+    "description": "Welcome page: screenshot usage tip"
+  },
+  "trailColorPickerPresets": {
+    "message": "Préréglages",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerRecent": {
+    "message": "Récents",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerEyedropper": {
+    "message": "Pipette",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerEyedropperActive": {
+    "message": "Cliquer pour pipette · molette pour zoomer la loupe",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerSyncTrail": {
+    "message": "Enregistrer comme couleur de trace",
+    "description": "Trail color picker UI"
+  },
+  "superDragCompassPosCompassHub": {
+    "message": "Point de glissement",
+    "description": "Compass hub aligned to drag start"
+  },
+  "superDragCompassPosCompassScreenCenter": {
+    "message": "Centre de l'écran",
+    "description": "Compass fixed at viewport center"
+  },
+  "superDragCompassPosCompassScreenTop": {
+    "message": "Haut",
+    "description": "Compass fixed at top of viewport"
+  },
+  "superDragCompassPosCompassScreenRight": {
+    "message": "Droite",
+    "description": "Compass fixed at right of viewport"
+  },
+  "superDragCompassPosCompassScreenBottom": {
+    "message": "Bas",
+    "description": "Compass fixed at bottom of viewport"
+  },
+  "superDragCompassPosCompassScreenLeft": {
+    "message": "Gauche",
+    "description": "Compass fixed at left of viewport"
+  },
+  "superDragCompassPosCompassHidden": {
+    "message": "Masqué",
+    "description": "Do not show compass"
+  },
+  "addCurrentSiteToDisabledSites": {
+    "message": "Ajouter le site actuel",
+    "description": "Button: add the active tab domain to disabled sites"
+  },
+  "addCurrentSiteToDisabledSitesTitle": {
+    "message": "Ajouter le domaine de l’onglet actuel aux sites désactivés",
+    "description": "Tooltip for add-current-site button"
+  },
+  "addDisabledSite": {
+    "message": "Ajouter",
+    "description": "Button: add a typed disabled site entry"
+  },
+  "disabledSiteInputPlaceholder": {
+    "message": "Domaine ou URL complète, par ex. youtube.com",
+    "description": "Placeholder for the disabled site input"
+  },
+  "disabledSitesEmpty": {
+    "message": "Aucun site désactivé pour le moment.",
+    "description": "Empty state for disabled sites list"
+  },
+  "removeDisabledSite": {
+    "message": "Supprimer ce site",
+    "description": "Tooltip/aria label for remove disabled site button"
+  },
+  "disabledSiteInvalid": {
+    "message": "Saisissez un domaine ou une URL valide",
+    "description": "Error shown when disabled site input is invalid"
+  },
+  "disabledSiteAlreadyExists": {
+    "message": "Le site existe déjà",
+    "description": "Error shown when adding a duplicate disabled site"
+  },
+  "disabledSitesLimitReached": {
+    "message": "Limite de sites désactivés atteinte",
+    "description": "Error shown when disabled sites list reaches the maximum size"
+  },
+  "currentSiteUnsupported": {
+    "message": "L’onglet actuel ne possède aucun domaine pris en charge",
+    "description": "Error shown when current tab URL cannot be added to disabled sites"
+  },
+  "customKey": {
+    "message": "Touche personnalisée",
+    "description": "Custom trigger key option"
+  },
+  "previewTriggerMode": {
+    "message": "Mode de déclenchement",
+    "description": "Popup view trigger mode setting"
+  },
+  "previewTriggerHold": {
+    "message": "Maintenir la touche de déclenchement",
+    "description": "Hold trigger key option"
+  },
+  "previewTriggerDouble": {
+    "message": "Appuyer deux fois sur la touche de déclenchement",
+    "description": "Double-press trigger key option"
+  },
+  "previewCustomKey": {
+    "message": "Touche personnalisée",
+    "description": "Popup view custom trigger key setting"
+  },
+  "previewCustomKeyPlaceholder": {
+    "message": "Cliquez et appuyez sur une touche",
+    "description": "Popup view custom trigger key placeholder"
+  },
+  "previewCustomKeyTitle": {
+    "message": "Cliquez ici, puis appuyez sur une touche autre qu’un modificateur. Appuyez sur Échap pour effacer.",
+    "description": "Popup view custom trigger key title"
+  },
+  "unlimited": {
+    "message": "Illimité",
+    "description": "Unlimited value label"
+  },
+  "settingsFontSize": {
+    "message": "Taille de police des paramètres",
+    "description": "Header button: adjust settings font size"
   }
 }
-

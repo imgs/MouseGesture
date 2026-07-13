@@ -4,7 +4,7 @@
     "description": "扩展名称"
   },
   "extDesc": {
-    "message": "支持鼠标手势、超级拖拽功能和小窗视图的Chrome/Edge扩展",
+    "message": "鼠标手势、超级拖拽、图片与链接预览等。",
     "description": "扩展描述"
   },
   "title": {
@@ -35,16 +35,24 @@
     "message": "向左拖拽",
     "description": "向左拖拽操作"
   },
-  "openInForeground": {
-    "message": "在前台打开链接",
-    "description": "在前台打开链接"
+  "dragUpRight": {
+    "message": "向右上拖拽",
+    "description": "斜向超级拖拽方向"
   },
-  "openInBackground": {
-    "message": "在后台打开链接",
-    "description": "在后台打开链接"
+  "dragDownRight": {
+    "message": "向右下拖拽",
+    "description": "斜向超级拖拽方向"
+  },
+  "dragDownLeft": {
+    "message": "向左下拖拽",
+    "description": "斜向超级拖拽方向"
+  },
+  "dragUpLeft": {
+    "message": "向左上拖拽",
+    "description": "斜向超级拖拽方向"
   },
   "superDragDescription": {
-    "message": "超级拖拽功能可用于链接、图片和选中的文本。可为上/下/左/右各方向分别设置打开方式（前台、后台或分屏左/右/上/下）。",
+    "message": "超级拖拽可用于链接、图片和选中文本。八个方向（含四个斜向）可分别设置打开方式（前台、后台、分屏等）。选中文本搜索时，用下拉选择「默认」或某一方向后编辑对应 URL；方向留空则使用默认地址。",
     "description": "超级拖拽功能描述"
   },
   "left": {
@@ -111,6 +119,30 @@
     "message": "右然后左",
     "description": "右然后左手势"
   },
+  "rightHoldWheelUp": {
+    "message": "按住右键，向上滚轮",
+    "description": "按住右键向上滚轮手势"
+  },
+  "rightHoldWheelDown": {
+    "message": "按住右键，向下滚轮",
+    "description": "按住右键向下滚轮手势"
+  },
+  "leftHoldWheelUp": {
+    "message": "按住左键，向上滚轮",
+    "description": "按住左键向上滚轮手势"
+  },
+  "leftHoldWheelDown": {
+    "message": "按住左键，向下滚轮",
+    "description": "按住左键向下滚轮手势"
+  },
+  "rightHoldLeftClick": {
+    "message": "按住右键，单击左键",
+    "description": "按住右键单击左键手势"
+  },
+  "leftHoldRightClick": {
+    "message": "按住左键，单击右键",
+    "description": "按住鼠标左键并单击右键"
+  },
   "back": {
     "message": "后退",
     "description": "后退动作"
@@ -158,6 +190,18 @@
   "prevTab": {
     "message": "切换到左侧标签页",
     "description": "切换到左侧标签页动作"
+  },
+  "previousActiveTab": {
+    "message": "上一个活动标签页",
+    "description": "手势动作：切换到上一个活动标签页"
+  },
+  "goToParentUrl": {
+    "message": "上一级 URL",
+    "description": "手势动作：导航到上一级 URL 路径"
+  },
+  "goToRootUrl": {
+    "message": "根 URL",
+    "description": "手势动作：导航到站点根 URL"
   },
   "nextTab": {
     "message": "切换到右侧标签页",
@@ -211,6 +255,14 @@
     "message": "切换全屏",
     "description": "切换全屏动作"
   },
+  "zoomIn": {
+    "message": "页面放大",
+    "description": "放大当前标签页页面"
+  },
+  "zoomOut": {
+    "message": "页面缩小",
+    "description": "缩小当前标签页页面"
+  },
   "closeTabsToLeft": {
     "message": "关闭左侧标签页",
     "description": "关闭左侧标签页动作"
@@ -218,6 +270,474 @@
   "reloadAllTabs": {
     "message": "全部重新加载",
     "description": "全部重新加载动作"
+  },
+  "stopLoadingAllTabs": {
+    "message": "停止所有标签页载入",
+    "description": "Stop loading in all tabs"
+  },
+  "screenshotRegion": {
+    "message": "截图（轨迹选区）",
+    "description": "Screenshot gesture action"
+  },
+  "screenshotRegionOrLink": {
+    "message": "截图或打开链接",
+    "description": "选区内有链接时的轨迹提示"
+  },
+  "trailRegionChooseTitle": {
+    "message": "选区内链接 — 截图或勾选打开",
+    "description": "轨迹选区操作选择标题"
+  },
+  "trailRegionLinkSingle": {
+    "message": "1 个链接",
+    "description": "轨迹选区链接数量"
+  },
+  "trailRegionLinkMultiple": {
+    "message": "{count} 个链接",
+    "description": "轨迹选区链接数量"
+  },
+  "trailRegionActionScreenshot": {
+    "message": "截图 (S)",
+    "description": "轨迹选区选择按钮"
+  },
+  "trailRegionActionOpenLink": {
+    "message": "新标签打开 (O)",
+    "description": "轨迹选区选择按钮"
+  },
+  "trailRegionActionOpenLinks": {
+    "message": "新标签打开全部 (O)",
+    "description": "轨迹选区选择按钮"
+  },
+  "trailRegionActionOpenSelected": {
+    "message": "新标签打开已选 {n} 项 (O)",
+    "description": "轨迹选区打开已勾选链接"
+  },
+  "trailRegionActionOpenNone": {
+    "message": "打开已选 (O)",
+    "description": "轨迹选区无勾选时打开按钮"
+  },
+  "trailRegionActionCopy": {
+    "message": "复制 (C)",
+    "description": "轨迹选区复制按钮"
+  },
+  "trailRegionActionCopySelected": {
+    "message": "复制已选 {n} 项 (C)",
+    "description": "轨迹选区复制已勾选链接"
+  },
+  "trailRegionActionCopyNone": {
+    "message": "复制 (C)",
+    "description": "轨迹选区无勾选时复制按钮"
+  },
+  "trailRegionCopyFailed": {
+    "message": "复制失败",
+    "description": "轨迹选区复制到剪贴板失败"
+  },
+  "trailRegionSelectAll": {
+    "message": "全选",
+    "description": "轨迹选区链接列表全选"
+  },
+  "trailRegionNoLinkSelected": {
+    "message": "请至少勾选一个链接",
+    "description": "未勾选链接时提示"
+  },
+  "trailRegionChooseHint": {
+    "message": "Esc 取消 · 勾选要复制/打开的链接 · 拖边缘调整大小",
+    "description": "轨迹选区选择底部提示"
+  },
+  "trailRegionLinkOpened": {
+    "message": "已在新标签页打开链接",
+    "description": "打开链接反馈"
+  },
+  "trailRegionLinksOpened": {
+    "message": "已在新标签页打开链接",
+    "description": "打开多个链接反馈"
+  },
+  "trailRegionLinksTruncated": {
+    "message": "仅打开前 {n} 个链接",
+    "description": "打开链接数量上限提示"
+  },
+  "screenshotScrollCaptureActive": {
+    "message": "请手动滚动页面，再按同一快捷键或 Esc 结束并拼接",
+    "description": "Manual scroll capture in progress"
+  },
+  "screenshotCopied": {
+    "message": "截图已复制到剪贴板",
+    "description": "Screenshot feedback"
+  },
+  "screenshotFailed": {
+    "message": "截图失败",
+    "description": "Screenshot feedback"
+  },
+  "screenshotNeedTrail": {
+    "message": "请画更长轨迹以选定区域",
+    "description": "Screenshot feedback"
+  },
+  "screenshotUnavailable": {
+    "message": "截图模块不可用",
+    "description": "Screenshot feedback"
+  },
+  "screenshotTopFrameOnly": {
+    "message": "整页截图请在网页主框架使用",
+    "description": "Screenshot feedback"
+  },
+  "screenshotFeature": {
+    "message": "截图",
+    "description": "截图设置分区标题"
+  },
+  "enableScreenshotFeature": {
+    "message": "启用截图",
+    "description": "截图功能总开关"
+  },
+  "enableScreenshotTrailCapture": {
+    "message": "轨迹选区（画圈/自交）",
+    "description": "画圈或自交形成轨迹选区；可截图或打开选区内链接；已识别为其他手势时不会触发"
+  },
+  "enableScreenshotClipboard": {
+    "message": "自动复制到剪贴板",
+    "description": "截图后自动复制到剪贴板"
+  },
+  "enableScreenshotPreview": {
+    "message": "截图后显示预览",
+    "description": "截图后打开预览窗口"
+  },
+  "enableScreenshotHistory": {
+    "message": "保存截图历史",
+    "description": "将截图保存到本地历史记录"
+  },
+  "screenshotHistoryMaxCount": {
+    "message": "历史保留条数",
+    "description": "截图历史最多保留条数"
+  },
+  "screenshotHistoryMaxCountHint": {
+    "message": "0 为不限制；1–200 条超出后自动删除最旧记录",
+    "description": "截图历史条数说明"
+  },
+  "screenshotHistoryUnlimited": {
+    "message": "不限制",
+    "description": "截图历史条数为 0 时的显示"
+  },
+  "screenshotHistoryView": {
+    "message": "查看历史",
+    "description": "打开截图历史窗口"
+  },
+  "screenshotHistoryTitle": {
+    "message": "截图历史",
+    "description": "截图历史窗口标题"
+  },
+  "screenshotHistoryEmpty": {
+    "message": "暂无截图记录",
+    "description": "截图历史为空"
+  },
+  "screenshotHistoryClearAll": {
+    "message": "清空全部",
+    "description": "删除全部截图历史"
+  },
+  "screenshotHistoryClearConfirm": {
+    "message": "确定清空全部截图历史？",
+    "description": "确认清空截图历史"
+  },
+  "screenshotHistoryDelete": {
+    "message": "删除",
+    "description": "删除单条截图历史"
+  },
+  "screenshotHistoryPinToPage": {
+    "message": "贴到页面",
+    "description": "将历史缩略图贴到网页"
+  },
+  "screenshotHistoryPinFailed": {
+    "message": "无法贴图（请先打开目标标签页或确认该站点允许扩展）。",
+    "description": "从历史记录贴图失败时的提示"
+  },
+  "screenshotHistoryCount": {
+    "message": "共 $1 条",
+    "description": "截图历史条数",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "screenshotHistoryModeViewport": {
+    "message": "可视区域",
+    "description": "截图历史类型标签"
+  },
+  "screenshotHistoryModeFullPage": {
+    "message": "整页",
+    "description": "截图历史类型标签"
+  },
+  "screenshotHistoryModeRegion": {
+    "message": "区域",
+    "description": "截图历史类型标签"
+  },
+  "screenshotHistoryModeScroll": {
+    "message": "手动滚动",
+    "description": "截图历史类型标签"
+  },
+  "screenshotHistoryModeUnknown": {
+    "message": "截图",
+    "description": "截图历史类型标签"
+  },
+  "screenshotDone": {
+    "message": "截图完成",
+    "description": "未复制到剪贴板时的完成提示"
+  },
+  "screenshotPreviewTitle": {
+    "message": "截图预览",
+    "description": "截图预览窗口标题"
+  },
+  "screenshotPreviewClose": {
+    "message": "关闭",
+    "description": "关闭截图预览窗口"
+  },
+  "screenshotPreviewCopyAgain": {
+    "message": "复制",
+    "description": "从预览窗口复制到剪贴板"
+  },
+  "screenshotPreviewSave": {
+    "message": "保存为文件",
+    "description": "将标注后的截图保存到本地"
+  },
+  "screenshotPreviewSaved": {
+    "message": "已保存",
+    "description": "截图文件保存成功"
+  },
+  "screenshotPreviewPinToPage": {
+    "message": "贴到页面",
+    "description": "将标注后的截图固定到来源网页"
+  },
+  "screenshotPreviewPinned": {
+    "message": "已贴上",
+    "description": "截图已固定到页面"
+  },
+  "screenshotPreviewPinning": {
+    "message": "贴上中…",
+    "description": "正在将截图贴到页面"
+  },
+  "screenshotPinTitle": {
+    "message": "截图",
+    "description": "页面贴纸标题"
+  },
+  "screenshotPinClose": {
+    "message": "移除贴纸",
+    "description": "关闭页面上的截图贴纸"
+  },
+  "screenshotPinResize": {
+    "message": "调整大小",
+    "description": "缩放页面截图贴纸"
+  },
+  "screenshotPinZoomFit": {
+    "message": "适合",
+    "description": "贴图适应可视区域"
+  },
+  "screenshotPinZoomOriginal": {
+    "message": "原图",
+    "description": "贴图按原始像素尺寸显示"
+  },
+  "screenshotPinOrderLabel": {
+    "message": "贴图 $1$",
+    "description": "页面贴图顺序编号",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "screenshotPreviewLoadFailed": {
+    "message": "无法加载预览",
+    "description": "截图预览加载失败"
+  },
+  "screenshotPreviewZoomFit": {
+    "message": "适应",
+    "description": "适应窗口显示截图"
+  },
+  "screenshotPreviewZoomFitTitle": {
+    "message": "适应窗口",
+    "description": "适应缩放按钮提示"
+  },
+  "screenshotPreviewZoomOneToOne": {
+    "message": "1:1",
+    "description": "1:1 实际尺寸按钮"
+  },
+  "screenshotPreviewZoomOneToOneTitle": {
+    "message": "实际尺寸 (1:1)",
+    "description": "1:1 缩放按钮提示"
+  },
+  "screenshotPreviewZoomLevel": {
+    "message": "缩放 $1$%",
+    "description": "预览当前缩放比例",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "screenshotAnnotHand": {
+    "message": "抓手",
+    "description": "拖动画布平移预览"
+  },
+  "screenshotAnnotPen": {
+    "message": "铅笔",
+    "description": "标注工具：铅笔"
+  },
+  "screenshotAnnotArrow": {
+    "message": "箭头（Shift：水平/垂直）",
+    "description": "标注工具：箭头；按住 Shift 约束水平或垂直"
+  },
+  "screenshotAnnotLine": {
+    "message": "直线（Shift：水平/垂直）",
+    "description": "标注工具：直线；按住 Shift 约束水平或垂直"
+  },
+  "screenshotAnnotRect": {
+    "message": "矩形（Shift：正方形）",
+    "description": "标注工具：矩形；按住 Shift 画正方形"
+  },
+  "screenshotAnnotEllipse": {
+    "message": "椭圆",
+    "description": "标注工具：椭圆"
+  },
+  "screenshotAnnotRoundRect": {
+    "message": "圆角矩形",
+    "description": "标注工具：圆角矩形"
+  },
+  "screenshotAnnotHighlighter": {
+    "message": "荧光笔",
+    "description": "标注工具：荧光笔"
+  },
+  "screenshotAnnotHighlight": {
+    "message": "高亮框",
+    "description": "标注工具：半透明高亮矩形"
+  },
+  "screenshotAnnotFillRect": {
+    "message": "实心矩形",
+    "description": "标注工具：实心矩形"
+  },
+  "screenshotAnnotFillEllipse": {
+    "message": "实心椭圆",
+    "description": "标注工具：实心椭圆"
+  },
+  "screenshotAnnotBlur": {
+    "message": "模糊",
+    "description": "标注工具：模糊笔刷"
+  },
+  "screenshotAnnotArrow2": {
+    "message": "双端箭头（Shift：水平/垂直）",
+    "description": "标注工具：两端箭头直线；按住 Shift 约束水平或垂直"
+  },
+  "screenshotAnnotNumber": {
+    "message": "序号",
+    "description": "标注工具：顺序序号标记"
+  },
+  "screenshotAnnotStampStart": {
+    "message": "起始序号",
+    "description": "序号标注的起始数字"
+  },
+  "screenshotAnnotStampNext": {
+    "message": "下一个序号：$1$",
+    "description": "序号标注即将使用的下一个数字（悬停提示）",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "screenshotAnnotCrop": {
+    "message": "裁剪",
+    "description": "标注工具：裁剪图片"
+  },
+  "screenshotAnnotCropApply": {
+    "message": "应用裁剪",
+    "description": "确认裁剪区域"
+  },
+  "screenshotAnnotCropCancel": {
+    "message": "取消",
+    "description": "取消裁剪选区"
+  },
+  "screenshotAnnotText": {
+    "message": "文本",
+    "description": "标注工具：文本"
+  },
+  "screenshotAnnotMosaic": {
+    "message": "马赛克",
+    "description": "标注工具：马赛克"
+  },
+  "screenshotAnnotEraser": {
+    "message": "橡皮擦",
+    "description": "标注工具：橡皮擦"
+  },
+  "screenshotAnnotSize": {
+    "message": "粗细",
+    "description": "标注线宽"
+  },
+  "screenshotAnnotResetAll": {
+    "message": "清空全部标注",
+    "description": "清除所有编辑并恢复为原始截图"
+  },
+  "screenshotAnnotStepCount": {
+    "message": "$1 / $2",
+    "description": "历史步骤：当前 / 总数"
+  },
+  "screenshotAnnotStepCountTitle": {
+    "message": "已编辑步数 / 总编辑步数（0 为原始截图）",
+    "description": "步骤数提示"
+  },
+  "screenshotAnnotUndo": {
+    "message": "撤销",
+    "description": "撤销标注"
+  },
+  "screenshotAnnotRedo": {
+    "message": "重做",
+    "description": "重做标注"
+  },
+  "screenshotAnnotTextPlaceholder": {
+    "message": "在此输入文字…",
+    "description": "截图预览页内文本框占位符"
+  },
+  "screenshotOptRegion": {
+    "message": "按键选区",
+    "description": "截图绑定行：快捷键拖选矩形区域"
+  },
+  "screenshotOptViewport": {
+    "message": "可视区域",
+    "description": "截图绑定行：当前可见区域"
+  },
+  "screenshotOptFullPage": {
+    "message": "整页滚动",
+    "description": "截图绑定行：整页滚动"
+  },
+  "screenshotOptScrollStitch": {
+    "message": "手动滚动",
+    "description": "截图绑定行：手动滚动截屏"
+  },
+  "screenshotOptOpenHistory": {
+    "message": "打开历史记录窗口",
+    "description": "截图绑定行：打开截图历史的快捷键"
+  },
+  "screenshotHotkeyPressHint": {
+    "message": "快捷键：点击上方输入框后按键（需含 Ctrl / Alt / Meta 之一 + 字母或数字，或 F1–F12），按 Esc 清空。",
+    "description": "截图分区底部：快捷键说明"
+  },
+  "screenshotHotkeyPlaceholder": {
+    "message": "点击设置",
+    "description": "未绑定快捷键时输入框占位提示"
+  },
+  "screenshotRegionPickHint": {
+    "message": "拖动鼠标框选区域，松手截图；按 Esc 取消",
+    "description": "按键选区进行中提示"
+  },
+  "screenshotRegionPickFooterHint": {
+    "message": "按键选区：拖出矩形后松手；选区内有链接时可截图或新标签打开；Esc 取消。",
+    "description": "截图分区底部：按键选区说明"
+  },
+  "screenshotRegionTooSmall": {
+    "message": "选区太小，请拖大一些的区域",
+    "description": "按键选区：未达最小尺寸"
+  },
+  "screenshotGestureIntersectHint": {
+    "message": "轨迹选区：画一圈或自交一次后松手。选区内有链接时可选择截图或在新标签打开；多次闭合或多次自交视为乱画。",
+    "description": "截图分区底部：轨迹选区说明"
   },
   "togglePinTab": {
     "message": "固定/取消固定标签页",
@@ -244,16 +764,16 @@
     "description": "设置标题"
   },
   "customizedBehavior": {
-    "message": "禁用列表",
-    "description": "禁用列表区块标题"
+    "message": "禁用网站",
+    "description": "Section title for the per-site disable list"
   },
   "disableMouseGesturesForSites": {
-    "message": "在以下网站禁用鼠标手势和超级拖拽",
-    "description": "禁用鼠标手势与超级拖拽的网站列表标签"
+    "message": "在列表域名上停用扩展功能",
+    "description": "Subtitle for Disabled sites section"
   },
   "disabledSitesHint": {
-    "message": "每行一个，可填域名（如 youtube.com）或完整网址。",
-    "description": "禁用网站列表输入框的提示"
+    "message": "作用于：鼠标手势、超级拖拽、链接/图片预览、截图、网页限制解除。可添加当前网站或输入域名/网址，点击删除标记移除。",
+    "description": "Short hint explaining which features the Disabled sites list affects"
   },
   "enableGesture": {
     "message": "启用鼠标手势",
@@ -279,6 +799,26 @@
     "message": "启用超级拖拽",
     "description": "启用超级拖拽选项"
   },
+  "superDragCompassPosition": {
+    "message": "八向示意图",
+    "description": "超级拖拽八向示意图显示与位置"
+  },
+  "superDragCompassPosCompassAbove": {
+    "message": "拖拽点上方",
+    "description": "示意图在拖拽点上方、水平居中"
+  },
+  "superDragCompassPosCompassRight": {
+    "message": "拖拽点右方",
+    "description": "示意图在拖拽点右侧、垂直居中"
+  },
+  "superDragCompassPosCompassBelow": {
+    "message": "拖拽点下方",
+    "description": "示意图在拖拽点下方、水平居中"
+  },
+  "superDragCompassPosCompassLeft": {
+    "message": "拖拽点左方",
+    "description": "示意图在拖拽点左侧、垂直居中"
+  },
   "enableDragTextSearch": {
     "message": "启用拖拽文本搜索",
     "description": "启用拖拽文本搜索选项"
@@ -287,9 +827,17 @@
     "message": "拖拽图片/文件自动下载",
     "description": "当检测到拖拽对象为图片或其它可下载文件时自动开始下载"
   },
+  "enableImageDrag": {
+    "message": "启用图片拖拽",
+    "description": "单独控制图片超级拖拽，不受图片预览开关影响"
+  },
   "enableImagePreview": {
     "message": "启用图片预览",
     "description": "启用图片预览选项"
+  },
+  "enableImagePreviewEnhanced": {
+    "message": "增强图片预览",
+    "description": "支持透明层覆盖、background-image、父级查找等增强识别"
   },
   "enableDuplicateCheck": {
     "message": "检测重复标签",
@@ -302,10 +850,6 @@
   "enableSmoothScroll": {
     "message": "启用平滑滚动",
     "description": "启用手势动作的平滑滚动效果"
-  },
-  "save": {
-    "message": "设置已生效",
-    "description": "保存设置按钮"
   },
   "reset": {
     "message": "重置",
@@ -363,14 +907,6 @@
     "message": "重置设置失败",
     "description": "重置设置失败提示"
   },
-  "themeLight": {
-    "message": "浅色",
-    "description": "浅色主题"
-  },
-  "themeDark": {
-    "message": "深色",
-    "description": "深色主题"
-  },
   "buyMeACoffee": {
     "message": "请我喝咖啡",
     "description": "捐赠按钮"
@@ -379,17 +915,33 @@
     "message": "切换主题",
     "description": "切换主题按钮"
   },
-  "toggleLanguage": {
-    "message": "切换语言",
-    "description": "切换语言按钮"
+  "openDetachedPopupTitle": {
+    "message": "在浏览器侧边栏打开设置（不支持时改为独立窗口）",
+    "description": "标题栏按钮：侧边栏或独立窗口打开设置"
+  },
+  "openDetachedWindowFromSidePanelTitle": {
+    "message": "在独立小窗口打开（与主窗口并排占满屏幕）",
+    "description": "侧边栏：以独立弹窗打开设置并调整主窗口布局"
+  },
+  "openOptionsPageTitle": {
+    "message": "打开选项页面",
+    "description": "标题栏按钮：打开扩展选项页面"
   },
   "donationTooltip": {
     "message": "如果你喜欢这个作品，请支持我，谢谢：）",
     "description": "捐赠提示"
   },
   "rightButtonHint": {
-    "message": "按住鼠标右键操作",
-    "description": "鼠标右键提示"
+    "message": "按住右键（轨迹/滚轮/点击）· 按住左键（滚轮）",
+    "description": "内置手势副标题：右键轨迹与滚轮/点击组合、左键滚轮组合"
+  },
+  "builtInGesturesListExpandHint": {
+    "message": "单击展开完整手势列表",
+    "description": "内置手势副标题收起时的悬停提示"
+  },
+  "builtInGesturesListCollapseHint": {
+    "message": "单击收起手势列表",
+    "description": "内置手势副标题展开时的悬停提示"
   },
   "leftButtonHint": {
     "message": "按住鼠标左键操作",
@@ -403,17 +955,45 @@
     "message": "后台打开",
     "description": "后台打开操作"
   },
+  "popupViewAction": {
+    "message": "小窗视图打开",
+    "description": "Super drag action: open target in popup view"
+  },
+  "incognitoAction": {
+    "message": "隐身窗口打开",
+    "description": "在隐身/无痕窗口中打开"
+  },
+  "enableSplitScrollSync": {
+    "message": "分屏时两窗口同步滚动（含横向）",
+    "description": "分屏状态下，两个窗口纵向与横向滚动位置保持一致"
+  },
   "copyAction": {
     "message": "复制",
     "description": "将选中文本或链接复制到剪贴板"
+  },
+  "downloadAction": {
+    "message": "拖拽下载",
+    "description": "Super drag action: download target"
   },
   "copiedToClipboard": {
     "message": "已复制到剪贴板",
     "description": "复制操作后的提示"
   },
-  "dragSearchEngine": {
-    "message": "拖拽搜索引擎URL",
-    "description": "拖拽搜索引擎URL设置"
+  "dragSearchEngineSlotLabel": {
+    "message": "编辑项",
+    "description": "拖拽搜索引擎下拉选择标签"
+  },
+  "dragSearchSlotDefault": {
+    "message": "默认（回退）",
+    "description": "默认搜索引擎槽位"
+  },
+  "dragSearchEngineUrlForSlot": {
+    "message": "搜索引擎 URL",
+    "description": "当前选中项的搜索地址"
+  },
+  "dragSearchEnginePerDirectionHelp": {
+    "message": "先在下拉列表中选择「默认」或某一拖拽方向，再编辑对应 URL；方向留空则使用默认。仅影响拖拽选中文本的搜索。",
+    "description": "统一搜索引擎编辑器说明"
   },
   "linkPreview": {
     "message": "小窗视图",
@@ -424,7 +1004,7 @@
     "description": "快速导航悬停提示"
   },
   "linkPreviewHint": {
-    "message": "悬停 + 按键 显示小窗",
+    "message": "悬停 + 触发条件显示小窗",
     "description": "小窗视图提示"
   },
   "enableLinkPreview": {
@@ -495,28 +1075,52 @@
     "message": "使用{q}表示搜索词位置，示例格式:",
     "description": "搜索引擎示例说明"
   },
+  "searchExampleUrlClickHint": {
+    "message": "单击示例 URL 可自动填入上方输入框并保存",
+    "description": "Tooltip for example search engine URLs (click to fill)"
+  },
+  "searchEngineExamplesUrlClickHint": {
+    "message": "提示：点击示例网址即可填入上方输入框并保存。",
+    "description": "Visible hint under search engine examples (click URL to fill field above and save)"
+  },
   "googleExample": {
-    "message": "Google搜索: https://www.google.com/search?q={q}",
+    "message": "Google搜索:",
+    "description": "Google搜索示例"
+  },
+  "googleExampleUrl": {
+    "message": "https://www.google.com/search?q={q}",
     "description": "Google搜索示例"
   },
   "googleTranslateExample": {
-    "message": "Google翻译: https://translate.google.com/?sl=auto&tl=zh-CN&text={q}&op=translate",
+    "message": "Google翻译:",
+    "description": "Google翻译示例"
+  },
+  "googleTranslateExampleUrl": {
+    "message": "https://translate.google.com/?sl=auto&tl=zh-CN&text={q}&op=translate",
     "description": "Google翻译示例"
   },
   "localSearchExample": {
-    "message": "百度搜索: https://www.baidu.com/s?wd={q}",
+    "message": "百度搜索:",
+    "description": "百度搜索示例"
+  },
+  "localSearchExampleUrl": {
+    "message": "https://www.baidu.com/s?wd={q}",
     "description": "百度搜索示例"
   },
   "bingExample": {
-    "message": "必应搜索: https://www.bing.com/search?q={q}",
+    "message": "必应搜索:",
+    "description": "必应搜索示例"
+  },
+  "bingExampleUrl": {
+    "message": "https://www.bing.com/search?q={q}",
     "description": "必应搜索示例"
   },
   "wheelTip": {
-    "message": "可使用鼠标滚轮调整数值",
+    "message": "在此行悬停约 1.5 秒后，可用滚轮调整数值",
     "description": "滚轮提示"
   },
   "modifierKeyDelayTip": {
-    "message": "当使用触发按键时，最大延迟限制为300毫秒",
+    "message": "延迟会在触发条件满足后开始计时；调高可减少误触发。",
     "description": "触发按键延迟提示"
   },
   "welcomeTitle": {
@@ -524,12 +1128,8 @@
     "description": "欢迎页面标题"
   },
   "welcomeDescription": {
-    "message": "感谢您安装鼠标手势扩展！本扩展提供丰富的鼠标手势功能、智能标签页管理、小窗视图功能和增强的视觉体验，帮助您更高效地浏览网页。我们优化了手势识别算法，提高了容错性，即使手势绘制不够完美也能正确识别。新增的小窗视图功能通过弹出窗口让您直接查看链接内容，无需切换标签页。同时支持29种语言和明暗主题切换，为您提供更好的使用体验。",
+    "message": "感谢安装鼠标手势扩展！按住右键拖动可完成前进后退、标签与滚动等操作，另支持按住右键或左键配合滚轮等组合键（均可在设置中自定义），轨迹识别带有容错，页面加载过程中也可使用。超级拖拽支持链接、图片与选中文本，八个方向可分别设为前台、后台、分屏（上下左右）、复制到剪贴板等；拖拽图片/文件时可选择自动下载；文本搜索支持默认搜索引擎 URL 与按方向的独立 URL。小窗视图可在悬停链接时按住触发键（默认 Shift）打开可移动预览，也可对选中文字即时搜索。另提供可选的截图（可见区域/整页/滚动拼接、历史与预览）、图片悬停预览（含增强模式）、跨窗口重复标签检测与可选自动关闭、平滑滚动、工具栏标签数量徽章，以及可选的网页复制/右键等限制解除。设置可从工具栏以弹出面板、浏览器侧边栏（支持时）或独立窗口打开，支持导出/导入；选项随浏览器账户同步。界面支持 29 种语言及浅色/深色主题。",
     "description": "欢迎页面描述"
-  },
-  "gesturesDescription": {
-    "message": "以下是预设的鼠标手势，您可以通过右键拖动来使用这些手势：",
-    "description": "手势说明"
   },
   "extensionName": {
     "message": "鼠标手势扩展",
@@ -539,88 +1139,48 @@
     "message": "核心功能",
     "description": "核心功能标题"
   },
-  "utilitiesFeatures": {
-    "message": "实用工具",
-    "description": "实用工具标题"
+  "welcomeCoreGestureBlock": {
+    "message": "鼠标手势：按住右键拖动为路径手势；另支持按住右键滚轮、按住左键滚轮，以及按住右键时的左右键点击组合，均可在设置中改绑为多种动作；轨迹识别具备容错，页面加载过程中也可使用。",
+    "description": "欢迎页核心功能手势摘要"
+  },
+  "welcomeCoreSuperDragBlock": {
+    "message": "超级拖拽：拖拽链接、图片与文件；选中文本拖拽搜索。八个方向可分别设为前台/后台打开、四向分屏、复制到剪贴板等；拖拽图片/文件时可选择自动下载；支持默认与按方向的独立搜索引擎 URL。",
+    "description": "欢迎页核心功能超级拖拽摘要"
+  },
+  "welcomeCorePopupViewBlock": {
+    "message": "小窗视图：按住触发按键(默认Shift)同时鼠标悬停在链接上，通过小窗预览目标页面内容；选中文本后按触发按键，将在弹出窗口中即时搜索内容，支持自定义搜索引擎。",
+    "description": "欢迎页核心功能小窗视图摘要"
   },
   "usageTips": {
     "message": "使用小贴士",
     "description": "使用小贴士标题"
   },
-  "smartGestureRecognition": {
-    "message": "智能手势识别：支持自定义手势动作选择，即使手势不够精确也能正确识别",
-    "description": "智能手势识别描述"
-  },
-  "tabManagementTitle": {
-    "message": "标签页管理",
-    "description": "标签页管理标题"
-  },
-  "tabManagementDesc": {
-    "message": "：智能检测重复标签页，可选自动关闭，定期内存优化",
-    "description": "标签页管理描述"
-  },
-  "superDragTitle": {
-    "message": "超级拖拽",
-    "description": "超级拖拽标题"
-  },
-  "superDragDesc": {
-    "message": "：拖拽链接、图片到新标签页，选中文本拖拽搜索",
-    "description": "超级拖拽描述"
-  },
-  "linkPreviewTitle": {
-    "message": "小窗视图",
-    "description": "小窗视图标题"
-  },
-  "linkPreviewDesc": {
-    "message": "：按住触发按键(默认Shift)同时鼠标悬停在链接上，通过弹出窗口直接预览目标页面内容",
-    "description": "小窗视图描述"
-  },
-  "textSelectionPreview": {
-    "message": "选中文本后按触发按键，将在弹出窗口中即时搜索内容，支持自定义搜索引擎",
-    "description": "文本选择预览描述"
-  },
   "previewTip": {
-    "message": "可同时打开多个小窗口浏览不同内容",
+    "message": "可同时保留多个小窗预览，便于对照浏览。",
     "description": "预览提示"
-  },
-  "dragDirection": {
-    "message": "自定义拖拽方向决定标签页打开方式：默认后台打开",
-    "description": "拖拽方向描述"
   },
   "debugPanelTitle": {
     "message": "鼠标手势调试信息",
     "description": "调试面板标题"
   },
   "debugPanelDesc": {
-    "message": "：按Alt+D快速打开，实时分析手势信息，自动保持状态",
+    "message": "按Alt+D快速打开调试面板，实时分析手势信息，自动保持状态",
     "description": "调试面板描述"
   },
-  "oneClickCopy": {
-    "message": "一键复制调试信息，方便分享问题报告，多语言支持",
-    "description": "一键复制描述"
-  },
-  "mediaPreview": {
-    "message": "优化的媒体预览：改进图片悬停效果，优化视频封面图",
-    "description": "媒体预览描述"
-  },
-  "adaptiveTheme": {
-    "message": "自适应主题：根据页面背景调整视觉风格，支持明暗主题切换",
-    "description": "自适应主题描述"
-  },
   "gestureTrail": {
-    "message": "手势轨迹会显示在屏幕上，可自定义轨迹颜色和宽度",
+    "message": "可显示手势轨迹与操作提示；轨迹颜色与粗细可在设置中调整。",
     "description": "手势轨迹描述"
   },
   "clickIcon": {
-    "message": "点击扩展图标开启/关闭功能，设置界面语言、主题等",
+    "message": "工具栏入口：紧凑型弹出面板、浏览器侧边栏（Chrome/Edge 等支持时）或独立设置窗口。可开关各功能、切换语言/主题，并导出或导入设置。",
     "description": "点击图标描述"
   },
   "languageSupport": {
-    "message": "支持29种语言，自动适配浏览器语言",
+    "message": "界面支持 29 种语言；优先使用您在扩展中保存的语言，否则跟随浏览器语言。",
     "description": "语言支持描述"
   },
   "enableAutoClose": {
-    "message": "开启自动关闭重复标签页功能可大幅减少浏览器资源占用",
+    "message": "开启重复检测后，可选用自动关闭相同地址的标签页以节省内存。",
     "description": "开启自动关闭描述"
   },
   "rightClickMacLinux": {
@@ -634,14 +1194,6 @@
   "duplicateTabsDetected": {
     "message": "发现$1个重复标签页",
     "description": "检测到重复标签页通知标题"
-  },
-  "duplicateTabsCount": {
-    "message": "有$1个重复标签页",
-    "description": "重复标签页数量消息"
-  },
-  "duplicateTabsSingle": {
-    "message": "有1个重复标签页",
-    "description": "单个重复标签页消息"
   },
   "autoClosedTabs": {
     "message": "已自动关闭$1个重复标签页",
@@ -659,61 +1211,9 @@
     "message": "未命名标签页",
     "description": "未命名标签页"
   },
-  "morePages": {
-    "message": "...还有$1个页面",
-    "description": "更多页面提示"
-  },
-  "errorShowDuplicateTabs": {
-    "message": "显示重复标签页通知错误:",
-    "description": "显示重复标签页通知错误"
-  },
-  "errorSendCloseRequest": {
-    "message": "发送关闭请求错误:",
-    "description": "发送关闭请求错误"
-  },
-  "errorCloseDuplicateTabs": {
-    "message": "关闭重复标签页错误:",
-    "description": "关闭重复标签页错误"
-  },
-  "errorSendIgnoreRequest": {
-    "message": "发送忽略请求错误:",
-    "description": "发送忽略请求错误"
-  },
-  "errorIgnoreDuplicateTabs": {
-    "message": "忽略重复标签页错误:",
-    "description": "忽略重复标签页错误"
-  },
-  "errorUpdateDebugPanel": {
-    "message": "更新调试面板内容时出错:",
-    "description": "更新调试面板内容时出错"
-  },
   "errorDetectBackgroundColor": {
     "message": "检测背景颜色错误:",
     "description": "检测背景颜色错误"
-  },
-  "errorDetectImageBorder": {
-    "message": "检测图片圆角时出错:",
-    "description": "检测图片圆角时出错"
-  },
-  "errorSetMutationObserver": {
-    "message": "设置变异观察器时出错:",
-    "description": "设置变异观察器时出错"
-  },
-  "errorCheckElementVisibility": {
-    "message": "检查元素可见性时出错:",
-    "description": "检查元素可见性时出错"
-  },
-  "errorProcessBorderRadius": {
-    "message": "处理圆角时出错:",
-    "description": "处理圆角时出错"
-  },
-  "errorDetectImageBackground": {
-    "message": "检测图片背景时出错:",
-    "description": "检测图片背景时出错"
-  },
-  "errorShowAutoCloseNotification": {
-    "message": "显示自动关闭成功通知错误:",
-    "description": "显示自动关闭成功通知错误"
   },
   "noForwardPage": {
     "message": "没有可前进的页面",
@@ -743,10 +1243,6 @@
     "message": "无效手势",
     "description": "无效手势提示"
   },
-  "nextPage": {
-    "message": "下一页",
-    "description": "下一页操作"
-  },
   "errorReadPixel": {
     "message": "读取像素错误:",
     "description": "读取像素错误提示"
@@ -758,10 +1254,6 @@
   "errorCanvasDraw": {
     "message": "Canvas绘制错误:",
     "description": "Canvas绘制错误提示"
-  },
-  "errorAccessIframe": {
-    "message": "访问iframe错误:",
-    "description": "访问iframe错误提示"
   },
   "errorMutationObserver": {
     "message": "设置变异观察器时出错:",
@@ -791,6 +1283,10 @@
     "message": "系统设置",
     "description": "调试面板系统设置部分"
   },
+  "debugConsoleLog": {
+    "message": "控制台日志",
+    "description": "调试面板控制台日志开关标签"
+  },
   "debugAngleThreshold": {
     "message": "角度阈值",
     "description": "调试面板角度阈值设置"
@@ -810,6 +1306,46 @@
   "debugMinGestureComplexity": {
     "message": "最小手势复杂度",
     "description": "调试面板最小手势复杂度设置"
+  },
+  "debugMinMovementToStartGesture": {
+    "message": "启动手势最小移动",
+    "description": "调试面板启动手势最小移动设置"
+  },
+  "debugSmoothingFactor": {
+    "message": "平滑系数",
+    "description": "调试面板轨迹与识别平滑系数设置"
+  },
+  "debugAngleThresholdHelp": {
+    "message": "控制移动方向被判定为水平或垂直的严格程度。值越大越要求方向笔直；值越小越允许斜向移动。",
+    "description": "调试面板角度阈值说明"
+  },
+  "debugDirectionChangeThresholdHelp": {
+    "message": "控制方向变化检测的敏感度。值越小越容易识别转向；值越大越会忽略轻微抖动。",
+    "description": "调试面板方向变化阈值说明"
+  },
+  "debugMinGestureDistanceHelp": {
+    "message": "手势被识别前需要达到的最小总移动距离。增大可减少误触发。",
+    "description": "调试面板最小手势距离说明"
+  },
+  "debugMinDirectionSegmentLengthHelp": {
+    "message": "用于方向识别的最小移动段长度。增大可过滤短距离抖动；减小可更容易识别短手势。",
+    "description": "调试面板最小方向段长度说明"
+  },
+  "debugMinGestureComplexityHelp": {
+    "message": "方向复杂度阈值，超过后轨迹可能被视为乱画或无效。值越大越能容忍更多转向。",
+    "description": "调试面板手势复杂度说明"
+  },
+  "debugMinMovementToStartGestureHelp": {
+    "message": "按下按键后，指针至少移动这么多像素才开始进入手势跟踪。",
+    "description": "调试面板启动手势最小移动说明"
+  },
+  "debugSmoothingFactorHelp": {
+    "message": "控制轨迹与识别点的平滑程度。值越大越能减少抖动，但可能削弱急转弯；值越小响应越直接。",
+    "description": "调试面板平滑系数说明"
+  },
+  "debugConsoleLogHelp": {
+    "message": "在 DevTools 控制台输出更详细的扩展日志，便于排查问题。",
+    "description": "调试面板控制台日志说明"
   },
   "debugLatestGestureInfo": {
     "message": "最新手势信息",
@@ -850,10 +1386,6 @@
   "debugMergedDirections": {
     "message": "合并后方向",
     "description": "调试面板合并后方向"
-  },
-  "debugDirectionDistances": {
-    "message": "方向距离",
-    "description": "调试面板方向距离"
   },
   "debugFinalResult": {
     "message": "最终结果",
@@ -927,9 +1459,17 @@
     "message": "显示标签页数量徽章",
     "description": "显示标签页数量徽章设置"
   },
-  "splitViewAction": {
-    "message": "分屏视图",
-    "description": "在分屏窗口中打开"
+  "unlockPageRestrictions": {
+    "message": "解除网页复制/粘贴/右键与切屏限制",
+    "description": "Setting: unlock page interaction limits"
+  },
+  "unlockPageRestrictionsTitle": {
+    "message": "解除复制、粘贴、右键、选中等限制，并削弱页面通过失焦、visibilitychange 等检测切屏/离开标签的行为；在页面环境中运行，支持各 iframe 独立注入与 Shadow DOM。开启后请刷新页面生效。",
+    "description": "Tooltip for unlock page restrictions"
+  },
+  "unlockPageRestrictionsOffReloadConfirm": {
+    "message": "已打开标签页中的注入逻辑在刷新前可能仍会生效。\n\n是否立即刷新当前标签页？",
+    "description": "Body text for unlock-off confirmation dialog"
   },
   "splitViewLeft": {
     "message": "分屏-左侧",
@@ -946,5 +1486,165 @@
   "splitViewDown": {
     "message": "分屏-下方",
     "description": "分屏视图，新窗口在下方半屏"
+  },
+  "unlockPageRestrictionsOffTitle": {
+    "message": "已关闭网页解锁",
+    "description": "Title for unlock-off confirmation dialog"
+  },
+  "unlockPageRestrictionsReloadTab": {
+    "message": "立即刷新",
+    "description": "Reload tab button in unlock-off dialog"
+  },
+  "unlockPageRestrictionsNotNow": {
+    "message": "暂不",
+    "description": "Dismiss unlock-off dialog without reload"
+  },
+  "welcomeBulletImagePreview": {
+    "message": "图片预览：可选的图片悬停放大预览，并提供增强模式以适配复杂页面布局。",
+    "description": "Welcome page: image hover preview bullet"
+  },
+  "welcomeBulletPageUnlock": {
+    "message": "网页限制解除：可选弱化部分站点对复制、粘贴、右键等的限制；关闭该功能时会提示是否重新加载当前标签页。",
+    "description": "Welcome page: page unlock bullet"
+  },
+  "welcomeBulletDisabledSites": {
+    "message": "按站点停用：列表中的域名将同时禁用手势、超级拖拽、小窗预览与网页限制解除。",
+    "description": "Welcome page: per-site disable bullet"
+  },
+  "welcomeBulletSplitScroll": {
+    "message": "分屏视图：链接以分屏打开时，可在两个窗口之间同步滚动（含横向）。",
+    "description": "Welcome page: split scroll sync bullet"
+  },
+  "welcomeBulletScreenshot": {
+    "message": "截图：可见区域、整页与手动滚动拼接；可用手势轨迹框选区域，支持自定义快捷键、自动复制到剪贴板、预览窗口与本地历史（0 为不限制条数）。",
+    "description": "Welcome page: screenshot feature bullet"
+  },
+  "welcomeTipScreenshot": {
+    "message": "截图功能默认开启；可在设置中为可见区域、整页与手动滚动拼接指定快捷键，并可选轨迹框选、自动复制、预览与本地历史。",
+    "description": "Welcome page: screenshot usage tip"
+  },
+  "trailColorPickerPresets": {
+    "message": "预设",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerRecent": {
+    "message": "最近",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerEyedropper": {
+    "message": "从图片取色",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerEyedropperActive": {
+    "message": "点击图片取色 · 滚轮调节倍率",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerSyncTrail": {
+    "message": "同步为轨迹颜色",
+    "description": "Trail color picker UI"
+  },
+  "superDragCompassPosCompassHub": {
+    "message": "拖拽点",
+    "description": "圆心对准拖拽起点"
+  },
+  "superDragCompassPosCompassScreenCenter": {
+    "message": "屏幕正中",
+    "description": "固定在视口中央"
+  },
+  "superDragCompassPosCompassScreenTop": {
+    "message": "屏幕顶部",
+    "description": "固定在视口上方"
+  },
+  "superDragCompassPosCompassScreenRight": {
+    "message": "屏幕右侧",
+    "description": "固定在视口右侧"
+  },
+  "superDragCompassPosCompassScreenBottom": {
+    "message": "屏幕底部",
+    "description": "固定在视口下方"
+  },
+  "superDragCompassPosCompassScreenLeft": {
+    "message": "屏幕左侧",
+    "description": "固定在视口左侧"
+  },
+  "superDragCompassPosCompassHidden": {
+    "message": "不显示",
+    "description": "不显示八向示意图"
+  },
+  "addCurrentSiteToDisabledSites": {
+    "message": "添加当前网站",
+    "description": "Button: add the active tab domain to disabled sites"
+  },
+  "addCurrentSiteToDisabledSitesTitle": {
+    "message": "将当前标签页域名添加到禁用网站列表",
+    "description": "Tooltip for add-current-site button"
+  },
+  "addDisabledSite": {
+    "message": "添加",
+    "description": "Button: add a typed disabled site entry"
+  },
+  "disabledSiteInputPlaceholder": {
+    "message": "域名或完整网址，例如 youtube.com",
+    "description": "Placeholder for the disabled site input"
+  },
+  "disabledSitesEmpty": {
+    "message": "暂无禁用网站",
+    "description": "Empty state for disabled sites list"
+  },
+  "removeDisabledSite": {
+    "message": "删除此网站",
+    "description": "Tooltip/aria label for remove disabled site button"
+  },
+  "disabledSiteInvalid": {
+    "message": "请输入有效的域名或网址",
+    "description": "Error shown when disabled site input is invalid"
+  },
+  "disabledSiteAlreadyExists": {
+    "message": "该网站已在列表中",
+    "description": "Error shown when adding a duplicate disabled site"
+  },
+  "disabledSitesLimitReached": {
+    "message": "禁用网站数量已达上限",
+    "description": "Error shown when disabled sites list reaches the maximum size"
+  },
+  "currentSiteUnsupported": {
+    "message": "当前标签页没有可添加的域名",
+    "description": "Error shown when current tab URL cannot be added to disabled sites"
+  },
+  "customKey": {
+    "message": "自定义按键",
+    "description": "自定义触发按键选项"
+  },
+  "previewTriggerMode": {
+    "message": "触发方式",
+    "description": "小窗视图触发方式设置"
+  },
+  "previewTriggerHold": {
+    "message": "按住触发键",
+    "description": "按住触发键选项"
+  },
+  "previewTriggerDouble": {
+    "message": "双击触发键",
+    "description": "双击触发键选项"
+  },
+  "previewCustomKey": {
+    "message": "自定义按键",
+    "description": "小窗视图自定义触发按键设置"
+  },
+  "previewCustomKeyPlaceholder": {
+    "message": "点击后按下一个按键",
+    "description": "小窗视图自定义触发键占位文字"
+  },
+  "previewCustomKeyTitle": {
+    "message": "点击这里，然后按下一个非修饰键。按 Esc 清空。",
+    "description": "小窗视图自定义触发键提示"
+  },
+  "unlimited": {
+    "message": "无限制",
+    "description": "无限制数量标签"
+  },
+  "settingsFontSize": {
+    "message": "设置项字体大小",
+    "description": "Header button: adjust settings font size"
   }
 }

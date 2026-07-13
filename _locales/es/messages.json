@@ -4,7 +4,7 @@
     "description": "The name of the extension"
   },
   "extDesc": {
-    "message": "Una extensión de Chrome/Edge que admite gestos del ratón, funcionalidad de súper arrastre y vista en popup",
+    "message": "Gestos de ratón, súper arrastre, vista previa de imágenes y enlaces y más.",
     "description": "The description of the extension"
   },
   "title": {
@@ -35,13 +35,21 @@
     "message": "Arrastrar Izquierda",
     "description": "Drag left action"
   },
-  "openInForeground": {
-    "message": "Abrir Enlace en Primer Plano",
-    "description": "Open link in foreground"
+  "dragUpRight": {
+    "message": "Arrastrar arriba-derecha",
+    "description": "Super drag diagonal direction"
   },
-  "openInBackground": {
-    "message": "Abrir Enlace en Segundo Plano",
-    "description": "Open link in background"
+  "dragDownRight": {
+    "message": "Arrastrar abajo-derecha",
+    "description": "Super drag diagonal direction"
+  },
+  "dragDownLeft": {
+    "message": "Arrastrar abajo-izquierda",
+    "description": "Super drag diagonal direction"
+  },
+  "dragUpLeft": {
+    "message": "Arrastrar arriba-izquierda",
+    "description": "Super drag diagonal direction"
   },
   "superDragDescription": {
     "message": "Super Arrastre funciona con enlaces, imágenes y texto seleccionado. Puede configurar el método de apertura para cada dirección del gesto (arriba/abajo/izquierda/derecha), incluido primer plano, segundo plano o vista dividida (izquierda/derecha/arriba/abajo).",
@@ -64,52 +72,76 @@
     "description": "Down direction"
   },
   "downThenRight": {
-    "message": "Abajo luego Derecha",
-    "description": "Down then right gesture"
+    "message": "Abajo, luego derecha",
+    "description": "Gesto abajo, luego derecha"
   },
   "leftThenUp": {
-    "message": "Izquierda luego Arriba",
-    "description": "Left then up gesture"
+    "message": "Izquierda, luego arriba",
+    "description": "Gesto izquierda, luego arriba"
   },
   "rightThenUp": {
-    "message": "Derecha luego Arriba",
-    "description": "Right then up gesture"
+    "message": "Derecha, luego arriba",
+    "description": "Gesto derecha, luego arriba"
   },
   "rightThenDown": {
-    "message": "Derecha luego Abajo",
-    "description": "Right then down gesture"
+    "message": "Derecha, luego abajo",
+    "description": "Gesto derecha, luego abajo"
   },
   "upThenLeft": {
-    "message": "Arriba luego Izquierda",
-    "description": "Up then left gesture"
+    "message": "Arriba, luego izquierda",
+    "description": "Gesto arriba, luego izquierda"
   },
   "upThenRight": {
-    "message": "Arriba luego Derecha",
-    "description": "Up then right gesture"
+    "message": "Arriba, luego derecha",
+    "description": "Gesto arriba, luego derecha"
   },
   "downThenLeft": {
-    "message": "Abajo luego Izquierda",
-    "description": "Down then left gesture"
+    "message": "Abajo, luego izquierda",
+    "description": "Gesto abajo, luego izquierda"
   },
   "leftThenDown": {
-    "message": "Izquierda luego Abajo",
-    "description": "Left then down gesture"
+    "message": "Izquierda, luego abajo",
+    "description": "Gesto izquierda, luego abajo"
   },
   "upThenDown": {
-    "message": "Arriba luego Abajo",
-    "description": "Up then down gesture"
+    "message": "Arriba, luego abajo",
+    "description": "Gesto arriba, luego abajo"
   },
   "downThenUp": {
-    "message": "Abajo luego Arriba",
-    "description": "Down then up gesture"
+    "message": "Abajo, luego arriba",
+    "description": "Gesto abajo, luego arriba"
   },
   "leftThenRight": {
-    "message": "Izquierda luego Derecha",
-    "description": "Left then right gesture"
+    "message": "Izquierda, luego derecha",
+    "description": "Gesto izquierda, luego derecha"
   },
   "rightThenLeft": {
-    "message": "Derecha luego Izquierda",
-    "description": "Right then left gesture"
+    "message": "Derecha, luego izquierda",
+    "description": "Gesto derecha, luego izquierda"
+  },
+  "rightHoldWheelUp": {
+    "message": "Mantener derecho + rueda arriba",
+    "description": "Mantener botón derecho y rueda arriba"
+  },
+  "rightHoldWheelDown": {
+    "message": "Mantener derecho + rueda abajo",
+    "description": "Mantener botón derecho y rueda abajo"
+  },
+  "leftHoldWheelUp": {
+    "message": "Mantener izquierdo + rueda arriba",
+    "description": "Botón izquierdo y rueda hacia arriba"
+  },
+  "leftHoldWheelDown": {
+    "message": "Mantener izquierdo + rueda abajo",
+    "description": "Botón izquierdo y rueda hacia abajo"
+  },
+  "rightHoldLeftClick": {
+    "message": "Mantener derecho + clic izquierdo",
+    "description": "Mantener botón derecho y clic izquierdo"
+  },
+  "leftHoldRightClick": {
+    "message": "Mantener izquierdo + clic derecho",
+    "description": "Mantener el botón izquierdo y clic derecho"
   },
   "back": {
     "message": "Retroceder",
@@ -158,6 +190,18 @@
   "prevTab": {
     "message": "Pestaña Anterior",
     "description": "Previous tab action"
+  },
+  "previousActiveTab": {
+    "message": "Pestaña activa anterior",
+    "description": "Acción de gesto: cambiar a la pestaña activa anterior"
+  },
+  "goToParentUrl": {
+    "message": "URL superior",
+    "description": "Acción de gesto: ir a la ruta URL superior"
+  },
+  "goToRootUrl": {
+    "message": "URL raíz",
+    "description": "Acción de gesto: ir a la URL raíz del sitio"
   },
   "nextTab": {
     "message": "Siguiente Pestaña",
@@ -211,6 +255,14 @@
     "message": "Alternar Pantalla Completa",
     "description": "Toggle fullscreen action"
   },
+  "zoomIn": {
+    "message": "Acercar",
+    "description": "Aumentar el zoom de la pestaña actual"
+  },
+  "zoomOut": {
+    "message": "Alejar",
+    "description": "Reducir el zoom de la pestaña actual"
+  },
   "closeTabsToLeft": {
     "message": "Cerrar Pestañas a la Izquierda",
     "description": "Close tabs to left action"
@@ -218,6 +270,474 @@
   "reloadAllTabs": {
     "message": "Recargar Todas las Pestañas",
     "description": "Reload all tabs action"
+  },
+  "stopLoadingAllTabs": {
+    "message": "Detener la carga de todas las pestañas",
+    "description": "Stop loading in all tabs"
+  },
+  "screenshotRegion": {
+    "message": "Captura (zona de trazo)",
+    "description": "Screenshot gesture action"
+  },
+  "screenshotRegionOrLink": {
+    "message": "Captura o abrir enlace",
+    "description": "Trail region hint when links are inside selection"
+  },
+  "trailRegionChooseTitle": {
+    "message": "Enlaces en la selección — captura o abrir",
+    "description": "Trail region chooser dialog title"
+  },
+  "trailRegionLinkSingle": {
+    "message": "1 enlace",
+    "description": "Trail region link count"
+  },
+  "trailRegionLinkMultiple": {
+    "message": "{count} enlaces",
+    "description": "Trail region link count"
+  },
+  "trailRegionActionScreenshot": {
+    "message": "Captura (S)",
+    "description": "Trail region chooser button"
+  },
+  "trailRegionActionOpenLink": {
+    "message": "Abrir en nueva pestaña (O)",
+    "description": "Trail region chooser button"
+  },
+  "trailRegionActionOpenLinks": {
+    "message": "Abrir en nuevas pestañas (O)",
+    "description": "Trail region chooser button"
+  },
+  "trailRegionActionOpenSelected": {
+    "message": "Abrir {n} en nuevas pestañas (O)",
+    "description": "Trail region open checked links"
+  },
+  "trailRegionActionOpenNone": {
+    "message": "Abrir selección (O)",
+    "description": "Trail region open button when none checked"
+  },
+  "trailRegionActionCopy": {
+    "message": "Copiar (C)",
+    "description": "Trail region chooser copy button"
+  },
+  "trailRegionActionCopySelected": {
+    "message": "Copiar {n} (C)",
+    "description": "Trail region copy checked links"
+  },
+  "trailRegionActionCopyNone": {
+    "message": "Copiar (C)",
+    "description": "Trail region copy button when none checked"
+  },
+  "trailRegionCopyFailed": {
+    "message": "Error al copiar",
+    "description": "Trail region copy to clipboard failed"
+  },
+  "trailRegionSelectAll": {
+    "message": "Seleccionar todo",
+    "description": "Trail region link list select all"
+  },
+  "trailRegionNoLinkSelected": {
+    "message": "Seleccione al menos un enlace",
+    "description": "Trail region no selection hint"
+  },
+  "trailRegionChooseHint": {
+    "message": "Esc para cancelar · marque enlaces para copiar/abrir · arrastre bordes para redimensionar",
+    "description": "Trail region chooser footer"
+  },
+  "trailRegionLinkOpened": {
+    "message": "Enlace abierto en nueva pestaña",
+    "description": "Trail region open link feedback"
+  },
+  "trailRegionLinksOpened": {
+    "message": "Enlaces abiertos en nuevas pestañas",
+    "description": "Trail region open links feedback"
+  },
+  "trailRegionLinksTruncated": {
+    "message": "Solo se abrieron los primeros {n} enlaces",
+    "description": "Trail region open links cap"
+  },
+  "screenshotScrollCaptureActive": {
+    "message": "Desplácese manualmente y pulse el mismo atajo o Esc para terminar y unir",
+    "description": "Manual scroll capture in progress"
+  },
+  "screenshotCopied": {
+    "message": "Captura copiada al portapapeles",
+    "description": "Screenshot feedback"
+  },
+  "screenshotFailed": {
+    "message": "Error al capturar",
+    "description": "Screenshot feedback"
+  },
+  "screenshotNeedTrail": {
+    "message": "Trace un recorrido más largo para seleccionar el área",
+    "description": "Screenshot feedback"
+  },
+  "screenshotUnavailable": {
+    "message": "Módulo de captura no disponible",
+    "description": "Screenshot feedback"
+  },
+  "screenshotTopFrameOnly": {
+    "message": "Captura de página completa solo en el marco principal",
+    "description": "Screenshot feedback"
+  },
+  "screenshotFeature": {
+    "message": "Captura de pantalla",
+    "description": "Screenshot settings section title"
+  },
+  "enableScreenshotFeature": {
+    "message": "Activar captura de pantalla",
+    "description": "Master toggle for screenshot feature"
+  },
+  "enableScreenshotTrailCapture": {
+    "message": "Zona de trazo (bucle / autocruce)",
+    "description": "Capture when trail loops or crosses; skipped if another gesture action matches"
+  },
+  "enableScreenshotClipboard": {
+    "message": "Copiar automáticamente al portapapeles",
+    "description": "Copy screenshot to clipboard after capture"
+  },
+  "enableScreenshotPreview": {
+    "message": "Mostrar vista previa tras capturar",
+    "description": "Open preview window when a screenshot is captured"
+  },
+  "enableScreenshotHistory": {
+    "message": "Guardar historial de capturas",
+    "description": "Keep captured screenshots in local history"
+  },
+  "screenshotHistoryMaxCount": {
+    "message": "Límite del historial",
+    "description": "Maximum screenshot history entries to keep"
+  },
+  "screenshotHistoryMaxCountHint": {
+    "message": "0 = ilimitado; 1–200 elimina las más antiguas al superar el límite",
+    "description": "Screenshot history limit hint"
+  },
+  "screenshotHistoryUnlimited": {
+    "message": "Ilimitado",
+    "description": "Label when screenshot history limit is 0"
+  },
+  "screenshotHistoryView": {
+    "message": "Ver historial",
+    "description": "Open screenshot history window"
+  },
+  "screenshotHistoryTitle": {
+    "message": "Historial de capturas",
+    "description": "Screenshot history window title"
+  },
+  "screenshotHistoryEmpty": {
+    "message": "Aún no hay capturas",
+    "description": "Empty screenshot history state"
+  },
+  "screenshotHistoryClearAll": {
+    "message": "Borrar todo",
+    "description": "Delete all screenshot history entries"
+  },
+  "screenshotHistoryClearConfirm": {
+    "message": "¿Eliminar todo el historial de capturas?",
+    "description": "Confirm clearing screenshot history"
+  },
+  "screenshotHistoryDelete": {
+    "message": "Eliminar",
+    "description": "Delete one screenshot history entry"
+  },
+  "screenshotHistoryPinToPage": {
+    "message": "Fijar en la página",
+    "description": "Pin history thumbnail onto the web page"
+  },
+  "screenshotHistoryPinFailed": {
+    "message": "No se pudo fijar (abra la pestaña o permita este sitio).",
+    "description": "Error when pinning from screenshot history"
+  },
+  "screenshotHistoryCount": {
+    "message": "$1 elementos",
+    "description": "Number of items in screenshot history",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "screenshotHistoryModeViewport": {
+    "message": "Área visible",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeFullPage": {
+    "message": "Página completa",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeRegion": {
+    "message": "Región",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeScroll": {
+    "message": "Desplazamiento manual",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeUnknown": {
+    "message": "Captura",
+    "description": "Screenshot history capture mode fallback label"
+  },
+  "screenshotDone": {
+    "message": "Captura lista",
+    "description": "Hint when capture finished without clipboard copy"
+  },
+  "screenshotPreviewTitle": {
+    "message": "Vista previa de captura",
+    "description": "Screenshot preview window title"
+  },
+  "screenshotPreviewClose": {
+    "message": "Cerrar",
+    "description": "Close screenshot preview window"
+  },
+  "screenshotPreviewCopyAgain": {
+    "message": "Copiar",
+    "description": "Copy screenshot to clipboard from preview window"
+  },
+  "screenshotPreviewSave": {
+    "message": "Guardar como archivo",
+    "description": "Save annotated screenshot to disk"
+  },
+  "screenshotPreviewSaved": {
+    "message": "Guardado",
+    "description": "Screenshot file save succeeded"
+  },
+  "screenshotPreviewPinToPage": {
+    "message": "Fijar en la página",
+    "description": "Pin annotated screenshot onto the source web page"
+  },
+  "screenshotPreviewPinned": {
+    "message": "Fijado",
+    "description": "Screenshot pin placed on page"
+  },
+  "screenshotPreviewPinning": {
+    "message": "Fijando…",
+    "description": "Screenshot pin in progress"
+  },
+  "screenshotPinTitle": {
+    "message": "Captura",
+    "description": "Title on pinned screenshot sticker"
+  },
+  "screenshotPinClose": {
+    "message": "Quitar fijación",
+    "description": "Close button on pinned screenshot"
+  },
+  "screenshotPinResize": {
+    "message": "Redimensionar",
+    "description": "Resize handle on pinned screenshot"
+  },
+  "screenshotPinZoomFit": {
+    "message": "Ajustar",
+    "description": "Fit pinned screenshot to view"
+  },
+  "screenshotPinZoomOriginal": {
+    "message": "1:1",
+    "description": "Show pinned screenshot at original pixel size"
+  },
+  "screenshotPinOrderLabel": {
+    "message": "Fijación $1$",
+    "description": "Pinned screenshot order number",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "screenshotPreviewLoadFailed": {
+    "message": "No se pudo cargar la vista previa",
+    "description": "Screenshot preview load error"
+  },
+  "screenshotPreviewZoomFit": {
+    "message": "Ajustar",
+    "description": "Fit screenshot to preview window"
+  },
+  "screenshotPreviewZoomFitTitle": {
+    "message": "Ajustar a la ventana",
+    "description": "Tooltip for fit zoom button"
+  },
+  "screenshotPreviewZoomOneToOne": {
+    "message": "1:1",
+    "description": "Actual-size zoom button label"
+  },
+  "screenshotPreviewZoomOneToOneTitle": {
+    "message": "Tamaño real (1:1)",
+    "description": "Tooltip for 1:1 zoom button"
+  },
+  "screenshotPreviewZoomLevel": {
+    "message": "Zoom $1$%",
+    "description": "Current zoom percentage in preview",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "screenshotAnnotHand": {
+    "message": "Mano (mover)",
+    "description": "Pan the preview by dragging"
+  },
+  "screenshotAnnotPen": {
+    "message": "Lápiz",
+    "description": "Annotation tool: freehand"
+  },
+  "screenshotAnnotArrow": {
+    "message": "Flecha (Mayús: H/V)",
+    "description": "Annotation tool: arrow; Shift constrains to horizontal or vertical"
+  },
+  "screenshotAnnotLine": {
+    "message": "Línea (Mayús: H/V)",
+    "description": "Annotation tool: line; Shift constrains to horizontal or vertical"
+  },
+  "screenshotAnnotRect": {
+    "message": "Rectángulo (Mayús: cuadrado)",
+    "description": "Annotation tool: rectangle; Shift draws a square"
+  },
+  "screenshotAnnotEllipse": {
+    "message": "Elipse",
+    "description": "Annotation tool: ellipse"
+  },
+  "screenshotAnnotRoundRect": {
+    "message": "Rectángulo redondeado",
+    "description": "Annotation tool: rounded rectangle"
+  },
+  "screenshotAnnotHighlighter": {
+    "message": "Resaltador",
+    "description": "Annotation tool: highlighter marker"
+  },
+  "screenshotAnnotHighlight": {
+    "message": "Marco de resaltado",
+    "description": "Annotation tool: highlight rectangle"
+  },
+  "screenshotAnnotFillRect": {
+    "message": "Rectángulo relleno",
+    "description": "Annotation tool: filled rectangle"
+  },
+  "screenshotAnnotFillEllipse": {
+    "message": "Elipse rellena",
+    "description": "Annotation tool: filled ellipse"
+  },
+  "screenshotAnnotBlur": {
+    "message": "Desenfoque",
+    "description": "Annotation tool: blur brush"
+  },
+  "screenshotAnnotArrow2": {
+    "message": "Flecha doble (Mayús: H/V)",
+    "description": "Annotation tool: line with arrowheads at both ends; Shift constrains H/V"
+  },
+  "screenshotAnnotNumber": {
+    "message": "Número",
+    "description": "Annotation tool: sequential number markers"
+  },
+  "screenshotAnnotStampStart": {
+    "message": "Inicio n.º",
+    "description": "Starting number for sequential stamps"
+  },
+  "screenshotAnnotStampNext": {
+    "message": "Siguiente n.º: $1$",
+    "description": "Next number stamp to place (tooltip)",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "screenshotAnnotCrop": {
+    "message": "Recortar",
+    "description": "Annotation tool: crop image"
+  },
+  "screenshotAnnotCropApply": {
+    "message": "Aplicar recorte",
+    "description": "Confirm crop selection"
+  },
+  "screenshotAnnotCropCancel": {
+    "message": "Cancelar",
+    "description": "Cancel crop selection"
+  },
+  "screenshotAnnotText": {
+    "message": "Texto",
+    "description": "Annotation tool: text"
+  },
+  "screenshotAnnotMosaic": {
+    "message": "Mosaico",
+    "description": "Annotation tool: mosaic blur"
+  },
+  "screenshotAnnotEraser": {
+    "message": "Goma",
+    "description": "Annotation tool: eraser"
+  },
+  "screenshotAnnotSize": {
+    "message": "Tamaño",
+    "description": "Annotation stroke size"
+  },
+  "screenshotAnnotResetAll": {
+    "message": "Restablecer todas las ediciones",
+    "description": "Clear all annotations and restore original screenshot"
+  },
+  "screenshotAnnotStepCount": {
+    "message": "$1 / $2",
+    "description": "History step indicator: current / total"
+  },
+  "screenshotAnnotStepCountTitle": {
+    "message": "Pasos aplicados / total (0 = imagen original)",
+    "description": "Tooltip for history step indicator"
+  },
+  "screenshotAnnotUndo": {
+    "message": "Deshacer",
+    "description": "Undo annotation"
+  },
+  "screenshotAnnotRedo": {
+    "message": "Rehacer",
+    "description": "Redo annotation"
+  },
+  "screenshotAnnotTextPlaceholder": {
+    "message": "Escriba aquí…",
+    "description": "Placeholder in inline text editor on screenshot preview"
+  },
+  "screenshotOptRegion": {
+    "message": "Selección de región",
+    "description": "Screenshot bind row: keyboard drag rectangle region"
+  },
+  "screenshotOptViewport": {
+    "message": "Área visible",
+    "description": "Screenshot bind row: current visible tab area"
+  },
+  "screenshotOptFullPage": {
+    "message": "Página completa",
+    "description": "Screenshot bind row: full page"
+  },
+  "screenshotOptScrollStitch": {
+    "message": "Desplazamiento manual",
+    "description": "Screenshot bind row: manual scroll capture"
+  },
+  "screenshotOptOpenHistory": {
+    "message": "Abrir historial",
+    "description": "Screenshot bind row: keyboard shortcut to open screenshot history"
+  },
+  "screenshotHotkeyPressHint": {
+    "message": "Atajos: haga clic en un campo arriba y pulse una combinación (Ctrl / Alt / Meta + letra o número, o F1–F12). Esc borra el campo.",
+    "description": "Screenshot section footer: hotkey binding help"
+  },
+  "screenshotHotkeyPlaceholder": {
+    "message": "Clic para definir",
+    "description": "Placeholder in empty screenshot hotkey fields"
+  },
+  "screenshotRegionPickHint": {
+    "message": "Arrastre para seleccionar un área. Esc para cancelar.",
+    "description": "Hint while keyboard region picker is active"
+  },
+  "screenshotRegionPickFooterHint": {
+    "message": "Atajo de región: trace un rectángulo y suelte. Si hay enlaces, captura o abrir en nuevas pestañas. Esc cancela.",
+    "description": "Screenshot section footer: keyboard region picker help"
+  },
+  "screenshotRegionTooSmall": {
+    "message": "Selección demasiado pequeña — trace un área mayor",
+    "description": "Region picker: minimum size not met"
+  },
+  "screenshotGestureIntersectHint": {
+    "message": "Zona de trazo: un bucle o un autocruce, luego suelte. Si hay enlaces, captura o nuevas pestañas. Muchos bucles = garabato.",
+    "description": "Screenshot section footer: trail region capture help"
   },
   "togglePinTab": {
     "message": "Fijar/Desfijar Pestaña",
@@ -244,16 +764,16 @@
     "description": "Settings title"
   },
   "customizedBehavior": {
-    "message": "Lista de bloqueo",
-    "description": "Block list section title"
+    "message": "Sitios desactivados",
+    "description": "Section title for the per-site disable list"
   },
   "disableMouseGesturesForSites": {
-    "message": "Desactivar gestos del ratón y super arrastre en estos sitios",
-    "description": "Label for the list of sites where gestures and super drag are disabled"
+    "message": "Desactivar las funciones de la extensión en los dominios indicados",
+    "description": "Subtitle for Disabled sites section"
   },
   "disabledSitesHint": {
-    "message": "Un sitio por línea. Dominio (ej. youtube.com) o URL completa.",
-    "description": "Hint for the disabled sites textarea"
+    "message": "Se aplica a: gestos, superarrastre, vista previa de enlaces/imágenes, capturas de pantalla y desbloqueo de páginas. Añade el sitio actual o introduce un dominio/URL; haz clic en la marca de eliminación para borrarlo.",
+    "description": "Short hint explaining which features the Disabled sites list affects"
   },
   "enableGesture": {
     "message": "Habilitar Gestos del Ratón",
@@ -279,6 +799,26 @@
     "message": "Habilitar Súper Arrastre",
     "description": "Enable super drag option"
   },
+  "superDragCompassPosition": {
+    "message": "Brújula de 8 direcciones",
+    "description": "Super drag compass display and position"
+  },
+  "superDragCompassPosCompassAbove": {
+    "message": "Encima del punto de arrastre",
+    "description": "Compass above drag start, centered horizontally"
+  },
+  "superDragCompassPosCompassRight": {
+    "message": "A la derecha del punto de arrastre",
+    "description": "Compass to the right of drag start, vertically centered"
+  },
+  "superDragCompassPosCompassBelow": {
+    "message": "Debajo del punto de arrastre",
+    "description": "Compass below drag start, centered horizontally"
+  },
+  "superDragCompassPosCompassLeft": {
+    "message": "A la izquierda del punto de arrastre",
+    "description": "Compass to the left of drag start, vertically centered"
+  },
   "enableDragTextSearch": {
     "message": "Habilitar Búsqueda de Texto Arrastrado",
     "description": "Enable drag text search option"
@@ -287,9 +827,17 @@
     "message": "Descargar imagen/archivo al arrastrar",
     "description": "When the drag target is an image or other downloadable file, start download automatically"
   },
+  "enableImageDrag": {
+    "message": "Activar arrastre de imágenes",
+    "description": "Control image super drag independently from image preview"
+  },
   "enableImagePreview": {
     "message": "Habilitar Vista Previa de Imagen",
     "description": "Enable image preview option"
+  },
+  "enableImagePreviewEnhanced": {
+    "message": "Vista previa de imagen mejorada",
+    "description": "Support transparent overlay, background-image, parent lookup, etc."
   },
   "enableDuplicateCheck": {
     "message": "Detectar Pestañas Duplicadas",
@@ -302,10 +850,6 @@
   "enableSmoothScroll": {
     "message": "Habilitar desplazamiento suave",
     "description": "Enable smooth scrolling for gesture actions"
-  },
-  "save": {
-    "message": "Configuración Aplicada",
-    "description": "Save settings button"
   },
   "reset": {
     "message": "Restablecer",
@@ -363,14 +907,6 @@
     "message": "Error al Restablecer Configuración",
     "description": "Reset settings error notification"
   },
-  "themeLight": {
-    "message": "Claro",
-    "description": "Light theme"
-  },
-  "themeDark": {
-    "message": "Oscuro",
-    "description": "Dark theme"
-  },
   "buyMeACoffee": {
     "message": "Cómprame un café",
     "description": "Donation button"
@@ -379,17 +915,33 @@
     "message": "Cambiar tema",
     "description": "Toggle theme button"
   },
-  "toggleLanguage": {
-    "message": "Cambiar idioma",
-    "description": "Toggle language button"
+  "openDetachedPopupTitle": {
+    "message": "Abrir ajustes en el panel lateral (si no, ventana aparte)",
+    "description": "Botón de cabecera: ajustes en panel lateral o ventana separada"
+  },
+  "openDetachedWindowFromSidePanelTitle": {
+    "message": "Abrir en ventana separada (junto al navegador)",
+    "description": "Panel lateral: ventana independiente y disposición del navegador"
+  },
+  "openOptionsPageTitle": {
+    "message": "Abrir página de opciones",
+    "description": "Botón del encabezado: abrir la página de opciones de la extensión"
   },
   "donationTooltip": {
     "message": "Si te gusta este trabajo, por favor apóyame. Gracias :)",
     "description": "Donation tooltip"
   },
   "rightButtonHint": {
-    "message": "Mantener presionado botón derecho del ratón",
+    "message": "Mantén derecho (trazo, rueda, clics) · izquierdo (rueda)",
     "description": "Right mouse button hint"
+  },
+  "builtInGesturesListExpandHint": {
+    "message": "Clic para expandir la lista completa de gestos",
+    "description": "Tooltip on built-in gestures subtitle when list is collapsed"
+  },
+  "builtInGesturesListCollapseHint": {
+    "message": "Clic para contraer la lista de gestos",
+    "description": "Tooltip on built-in gestures subtitle when list is expanded"
   },
   "leftButtonHint": {
     "message": "Mantener presionado botón izquierdo del ratón",
@@ -403,17 +955,45 @@
     "message": "Abrir en Segundo Plano",
     "description": "Open in background action"
   },
+  "popupViewAction": {
+    "message": "Vista Emergente",
+    "description": "Super drag action: open target in popup view"
+  },
+  "incognitoAction": {
+    "message": "Abrir en ventana de incógnito",
+    "description": "Open in incognito/private window"
+  },
+  "enableSplitScrollSync": {
+    "message": "Sincronizar desplazamiento vertical y horizontal entre ventanas divididas",
+    "description": "Con vista dividida, igualar ambos ejes de desplazamiento entre ventanas"
+  },
   "copyAction": {
     "message": "Copiar",
     "description": "Copy selected text or link URL to clipboard"
+  },
+  "downloadAction": {
+    "message": "Descargar",
+    "description": "Super drag action: download target"
   },
   "copiedToClipboard": {
     "message": "Copiado al portapapeles",
     "description": "Hint after copy action"
   },
-  "dragSearchEngine": {
-    "message": "URL del Motor de Búsqueda de Arrastre",
-    "description": "Drag search engine URL setting"
+  "dragSearchEngineSlotLabel": {
+    "message": "Elemento a editar",
+    "description": "Label for drag search engine slot selector"
+  },
+  "dragSearchSlotDefault": {
+    "message": "Predeterminado (reserva)",
+    "description": "Default search URL slot in drag search editor"
+  },
+  "dragSearchEngineUrlForSlot": {
+    "message": "URL del motor de búsqueda",
+    "description": "Label for single drag search URL field"
+  },
+  "dragSearchEnginePerDirectionHelp": {
+    "message": "Elija «Predeterminado» o una dirección de arrastre en la lista y edite su URL. Las direcciones vacías usan el predeterminado. Solo afecta la búsqueda de texto al arrastrar.",
+    "description": "Help text for unified drag search engine editor"
   },
   "linkPreview": {
     "message": "Vista Emergente",
@@ -424,7 +1004,7 @@
     "description": "Quick navigation hover tooltip"
   },
   "linkPreviewHint": {
-    "message": "Pasar cursor + Tecla para Mostrar Ventana Emergente",
+    "message": "Pasa el cursor y usa el activador para mostrar la ventana emergente",
     "description": "Popup view hint"
   },
   "enableLinkPreview": {
@@ -495,41 +1075,61 @@
     "message": "Usa {q} para el término de búsqueda, formato de ejemplo:",
     "description": "Search engine examples description"
   },
+  "searchExampleUrlClickHint": {
+    "message": "Pulsa la URL de ejemplo para rellenar el campo superior y guardar",
+    "description": "Tooltip for example search engine URLs (click to fill)"
+  },
+  "searchEngineExamplesUrlClickHint": {
+    "message": "Consejo: pulsa una URL de ejemplo para rellenar el campo superior y guardar.",
+    "description": "Visible hint under search engine examples (click URL to fill field above and save)"
+  },
   "googleExample": {
-    "message": "Búsqueda de Google: https://www.google.es/search?q={q}",
+    "message": "Búsqueda de Google:",
+    "description": "Google search example"
+  },
+  "googleExampleUrl": {
+    "message": "https://www.google.es/search?q={q}",
     "description": "Google search example"
   },
   "googleTranslateExample": {
-    "message": "Google Traductor: https://translate.google.es/?sl=auto&tl=es&text={q}&op=translate",
+    "message": "Google Traductor:",
+    "description": "Google translate example"
+  },
+  "googleTranslateExampleUrl": {
+    "message": "https://translate.google.es/?sl=auto&tl=es&text={q}&op=translate",
     "description": "Google translate example"
   },
   "localSearchExample": {
-    "message": "Búsqueda Buscador: https://www.buscador.com/search?q={q}",
+    "message": "Búsqueda Buscador:",
+    "description": "Local search example"
+  },
+  "localSearchExampleUrl": {
+    "message": "https://www.buscador.com/search?q={q}",
     "description": "Local search example"
   },
   "bingExample": {
-    "message": "Búsqueda de Bing: https://www.bing.com/search?q={q}&setlang=es",
+    "message": "Búsqueda de Bing:",
+    "description": "Bing search example"
+  },
+  "bingExampleUrl": {
+    "message": "https://www.bing.com/search?q={q}&setlang=es",
     "description": "Bing search example"
   },
   "wheelTip": {
-    "message": "Usa la rueda del ratón para ajustar el valor",
+    "message": "Mantén el cursor en esta fila ~1,5 s, luego usa la rueda para ajustar",
     "description": "Wheel tip"
   },
   "modifierKeyDelayTip": {
-    "message": "Al usar una tecla de activación, el retraso máximo está limitado a 300ms",
+    "message": "El retraso comienza cuando se cumple la condición de activación; auméntalo para evitar vistas previas accidentales.",
     "description": "Modifier key delay tip"
   },
   "welcomeTitle": {
-    "message": "Bienvenido a la Extensión de Gestos del Ratón",
+    "message": "Te damos la bienvenida a la extensión de gestos con el ratón",
     "description": "Welcome page title"
   },
   "welcomeDescription": {
-    "message": "¡Gracias por instalar la Extensión de Gestos del Ratón! Esta extensión proporciona rica funcionalidad de gestos del ratón, gestión inteligente de pestañas, capacidades de visualización popup y experiencia visual mejorada para ayudarte a navegar por la web de manera más eficiente. Hemos optimizado el algoritmo de reconocimiento de gestos con mayor tolerancia a errores, permitiendo que los gestos sean reconocidos correctamente incluso cuando no están dibujados perfectamente. La nueva función de ventana popup te permite ver el contenido de los enlaces en ventanas popup sin cambiar de pestaña. La extensión también admite 29 idiomas y temas claro/oscuro para una mejor experiencia de usuario.",
+    "message": "¡Gracias por instalar Mouse Gesture! Mantén pulsado el botón derecho y arrastra para navegar, gestionar pestañas y desplazarte; también botón derecho o izquierdo con la rueda (y más combinaciones en ajustes) para atajos extra: el reconocimiento es tolerante, incluso mientras cargan las páginas. Super Drag abre enlaces, imágenes y búsquedas de texto con reglas por dirección (primer plan, segundo plan, diseño dividido, copiar al portapapeles y más). Popup View muestra vistas previas de enlaces o busca el texto seleccionado en ventanas pequeñas. Opcional: vista previa al pasar el cursor (modo avanzado), detección de pestañas duplicadas con cierre automático, desplazamiento suave, insignia de recuento en la barra y desbloqueo de páginas en sitios restrictivos. Ajustes desde la barra (emergente, panel lateral o ventana independiente); exportar/importar; sincronización con la cuenta del navegador. 29 idiomas y temas claro/oscuro.",
     "description": "Welcome page description"
-  },
-  "gesturesDescription": {
-    "message": "Los siguientes son gestos del ratón preestablecidos que puedes usar arrastrando con el botón derecho del ratón:",
-    "description": "Gestures description"
   },
   "extensionName": {
     "message": "Extensión de Gestos del Ratón",
@@ -539,88 +1139,48 @@
     "message": "Características Principales",
     "description": "Core features title"
   },
-  "utilitiesFeatures": {
-    "message": "Herramientas de Utilidad",
-    "description": "Utilities features title"
+  "welcomeCoreGestureBlock": {
+    "message": "Gestos del ratón: mantén el derecho y arrastra para gestos de trazo; rueda con el derecho o el izquierdo pulsado y clics con ambos botones mientras el derecho está pulsado — reasignable en ajustes a muchas acciones; reconocimiento tolerante, también mientras cargan las páginas.",
+    "description": "Welcome page: core features gesture summary"
+  },
+  "welcomeCoreSuperDragBlock": {
+    "message": "Super Drag: arrastra enlaces e imágenes a pestañas nuevas, arrastra el texto seleccionado para buscar; la dirección decide cómo se abren las pestañas; por defecto en segundo plano.",
+    "description": "Welcome page: core features super drag summary"
+  },
+  "welcomeCorePopupViewBlock": {
+    "message": "Vista emergente: mantén la tecla activadora (Mayús por defecto) sobre un enlace para previsualizar la página en una ventana pequeña; tras seleccionar texto, pulsa la tecla para buscar al instante con tu motor personalizado.",
+    "description": "Welcome page: core features popup view summary"
   },
   "usageTips": {
     "message": "Consejos de Uso",
     "description": "Usage tips title"
   },
-  "smartGestureRecognition": {
-    "message": "Reconocimiento inteligente de gestos: Identifica correctamente los gestos incluso cuando son imperfectos, funciona durante la carga de páginas",
-    "description": "Smart gesture recognition description"
-  },
-  "tabManagementTitle": {
-    "message": "Gestión de Pestañas",
-    "description": "Tab management title"
-  },
-  "tabManagementDesc": {
-    "message": ": Detección inteligente de duplicados, cierre automático opcional, optimización periódica de memoria",
-    "description": "Tab management description"
-  },
-  "superDragTitle": {
-    "message": "Súper Arrastre",
-    "description": "Super drag title"
-  },
-  "superDragDesc": {
-    "message": ": Arrastra enlaces e imágenes a nuevas pestañas, arrastra texto seleccionado para buscar",
-    "description": "Super drag description"
-  },
-  "linkPreviewTitle": {
-    "message": "Vista Emergente",
-    "description": "Link preview title"
-  },
-  "linkPreviewDesc": {
-    "message": ": Mantén presionada la tecla modificadora (predeterminado: Shift) mientras pasas el cursor sobre enlaces para previsualizar páginas objetivo en ventanas emergentes",
-    "description": "Link preview description"
-  },
-  "textSelectionPreview": {
-    "message": "Selecciona texto y presiona la tecla modificadora para buscarlo instantáneamente en una ventana emergente, con soporte para motor de búsqueda personalizado",
-    "description": "Text selection preview description"
-  },
   "previewTip": {
-    "message": "Puedes abrir múltiples ventanas emergentes simultáneamente",
+    "message": "Mantenga varias vistas previas abiertas para comparar.",
     "description": "Preview tip"
-  },
-  "dragDirection": {
-    "message": "Personaliza la dirección de arrastre para determinar el método de apertura de pestañas: abrir en segundo plano por defecto",
-    "description": "Drag direction description"
   },
   "debugPanelTitle": {
     "message": "Información de Depuración de Gestos del Ratón",
     "description": "Debug panel title"
   },
   "debugPanelDesc": {
-    "message": ": Presiona Alt+D para abrir, analizar información de gestos en tiempo real, mantiene el estado",
+    "message": "Pulsa Alt+D para abrir el panel de depuración, analiza la información de gestos en tiempo real y se conserva el estado.",
     "description": "Debug panel description"
   },
-  "oneClickCopy": {
-    "message": "Copia de un clic de información de depuración para compartir fácilmente, con soporte multiidioma",
-    "description": "One click copy description"
-  },
-  "mediaPreview": {
-    "message": "Vista previa de medios mejorada: Efectos de pasar cursor sobre imágenes mejorados e imágenes de póster de video optimizadas",
-    "description": "Media preview description"
-  },
-  "adaptiveTheme": {
-    "message": "Temas adaptativos: Ajusta el estilo visual según el fondo de la página, admite modo claro/oscuro",
-    "description": "Adaptive theme description"
-  },
   "gestureTrail": {
-    "message": "Rastros de gestos mostrados en pantalla con color y ancho personalizables",
+    "message": "Trayectoria y pistas de gesto opcionales; color y grosor en ajustes.",
     "description": "Gesture trail description"
   },
   "clickIcon": {
-    "message": "Haz clic en el icono de la extensión para habilitar/deshabilitar funciones, configurar idioma, tema y más",
+    "message": "Barra: popup compacto, panel lateral (Chrome/Edge) o ventana de ajustes. Funciones, idioma, tema, exportar/importar.",
     "description": "Click icon description"
   },
   "languageSupport": {
-    "message": "Admite 29 idiomas, se adapta automáticamente al idioma del navegador",
+    "message": "29 idiomas de interfaz; usa tu elección guardada o sigue el idioma del navegador.",
     "description": "Language support description"
   },
   "enableAutoClose": {
-    "message": "Habilitar la función de cierre automático de pestañas duplicadas para reducir significativamente el uso de recursos del navegador",
+    "message": "Con detección de duplicados, puede cerrar URLs repetidas automáticamente (opcional).",
     "description": "Enable auto close description"
   },
   "rightClickMacLinux": {
@@ -634,14 +1194,6 @@
   "duplicateTabsDetected": {
     "message": "Se encontraron $1 pestañas duplicadas",
     "description": "Duplicate tabs detected notification title"
-  },
-  "duplicateTabsCount": {
-    "message": "Hay $1 pestañas duplicadas",
-    "description": "Duplicate tabs count message"
-  },
-  "duplicateTabsSingle": {
-    "message": "Hay 1 pestaña duplicada",
-    "description": "Single duplicate tab message"
   },
   "autoClosedTabs": {
     "message": "Se cerraron automáticamente $1 pestañas duplicadas",
@@ -659,61 +1211,9 @@
     "message": "Pestaña sin título",
     "description": "Untitled tab"
   },
-  "morePages": {
-    "message": "...y $1 páginas más",
-    "description": "More pages tip"
-  },
-  "errorShowDuplicateTabs": {
-    "message": "Error mostrando notificación de pestañas duplicadas:",
-    "description": "Error showing duplicate tabs notification"
-  },
-  "errorSendCloseRequest": {
-    "message": "Error enviando solicitud de cierre:",
-    "description": "Error sending close request"
-  },
-  "errorCloseDuplicateTabs": {
-    "message": "Error cerrando pestañas duplicadas:",
-    "description": "Error closing duplicate tabs"
-  },
-  "errorSendIgnoreRequest": {
-    "message": "Error enviando solicitud de ignorar:",
-    "description": "Error sending ignore request"
-  },
-  "errorIgnoreDuplicateTabs": {
-    "message": "Error ignorando pestañas duplicadas:",
-    "description": "Error ignoring duplicate tabs"
-  },
-  "errorUpdateDebugPanel": {
-    "message": "Error actualizando panel de depuración:",
-    "description": "Error updating debug panel"
-  },
   "errorDetectBackgroundColor": {
     "message": "Error detectando color de fondo:",
     "description": "Error detecting background color"
-  },
-  "errorDetectImageBorder": {
-    "message": "Error detectando radio de borde de imagen:",
-    "description": "Error detecting image border radius"
-  },
-  "errorSetMutationObserver": {
-    "message": "Error configurando observador de mutación:",
-    "description": "Error setting mutation observer"
-  },
-  "errorCheckElementVisibility": {
-    "message": "Error verificando visibilidad del elemento:",
-    "description": "Error checking element visibility"
-  },
-  "errorProcessBorderRadius": {
-    "message": "Error procesando radio de borde:",
-    "description": "Error processing border radius"
-  },
-  "errorDetectImageBackground": {
-    "message": "Error detectando fondo de imagen:",
-    "description": "Error detecting image background"
-  },
-  "errorShowAutoCloseNotification": {
-    "message": "Error mostrando notificación de cierre automático exitoso:",
-    "description": "Error showing auto-close success notification"
   },
   "noForwardPage": {
     "message": "No hay página siguiente en el historial",
@@ -743,10 +1243,6 @@
     "message": "Gesto Inválido",
     "description": "Invalid gesture message"
   },
-  "nextPage": {
-    "message": "Página Siguiente",
-    "description": "Next page action"
-  },
   "errorReadPixel": {
     "message": "Error leyendo píxel:",
     "description": "Error reading pixel message"
@@ -758,10 +1254,6 @@
   "errorCanvasDraw": {
     "message": "Error dibujando en canvas:",
     "description": "Error drawing on canvas message"
-  },
-  "errorAccessIframe": {
-    "message": "Error accediendo iframe:",
-    "description": "Error accessing iframe message"
   },
   "errorMutationObserver": {
     "message": "Error configurando observador de mutación:",
@@ -791,6 +1283,10 @@
     "message": "Configuración del Sistema",
     "description": "Debug panel system settings section"
   },
+  "debugConsoleLog": {
+    "message": "Registros de consola",
+    "description": "Debug panel console log toggle label"
+  },
   "debugAngleThreshold": {
     "message": "Umbral de Ángulo",
     "description": "Debug panel angle threshold setting"
@@ -810,6 +1306,46 @@
   "debugMinGestureComplexity": {
     "message": "Complejidad Mínima de Gesto",
     "description": "Debug panel minimum gesture complexity setting"
+  },
+  "debugMinMovementToStartGesture": {
+    "message": "Movimiento mínimo para iniciar",
+    "description": "Ajuste del panel de depuración: movimiento mínimo para iniciar el seguimiento del gesto"
+  },
+  "debugSmoothingFactor": {
+    "message": "Factor de suavizado",
+    "description": "Ajuste del panel de depuración: factor de suavizado del trazo y el reconocimiento"
+  },
+  "debugAngleThresholdHelp": {
+    "message": "Controla con qué rigor el movimiento se clasifica como horizontal o vertical. Valores más altos requieren una dirección más recta; valores más bajos permiten más movimiento diagonal.",
+    "description": "Ayuda del umbral de ángulo en el panel de depuración"
+  },
+  "debugDirectionChangeThresholdHelp": {
+    "message": "Controla la sensibilidad para detectar cambios de dirección. Valores más bajos detectan giros con más facilidad; valores más altos ignoran pequeños temblores.",
+    "description": "Ayuda del umbral de cambio de dirección en el panel de depuración"
+  },
+  "debugMinGestureDistanceHelp": {
+    "message": "Distancia total mínima de movimiento necesaria antes de reconocer un gesto. Auméntala para reducir activaciones accidentales.",
+    "description": "Ayuda de la distancia mínima del gesto en el panel de depuración"
+  },
+  "debugMinDirectionSegmentLengthHelp": {
+    "message": "Longitud mínima del segmento de movimiento usado para reconocer la dirección. Auméntala para filtrar temblores cortos; redúcela para gestos más cortos.",
+    "description": "Ayuda de la longitud mínima del segmento de dirección en el panel de depuración"
+  },
+  "debugMinGestureComplexityHelp": {
+    "message": "Umbral de complejidad de dirección antes de tratar el trazo como garabato o inválido. Valores más altos toleran más giros.",
+    "description": "Ayuda de complejidad del gesto en el panel de depuración"
+  },
+  "debugMinMovementToStartGestureHelp": {
+    "message": "El puntero debe moverse al menos esta cantidad de píxeles después de pulsar el botón para iniciar el seguimiento del gesto.",
+    "description": "Ayuda del movimiento mínimo para iniciar en el panel de depuración"
+  },
+  "debugSmoothingFactorHelp": {
+    "message": "Controla el suavizado del trazo y de los puntos de reconocimiento. Valores más altos reducen temblores, pero pueden suavizar giros bruscos; valores más bajos responden más rápido.",
+    "description": "Ayuda del factor de suavizado en el panel de depuración"
+  },
+  "debugConsoleLogHelp": {
+    "message": "Activa registros detallados de la extensión en la consola de DevTools para solucionar problemas.",
+    "description": "Ayuda de registros de consola en el panel de depuración"
   },
   "debugLatestGestureInfo": {
     "message": "Información de Gesto Más Reciente",
@@ -850,10 +1386,6 @@
   "debugMergedDirections": {
     "message": "Direcciones Fusionadas",
     "description": "Debug panel merged directions"
-  },
-  "debugDirectionDistances": {
-    "message": "Distancias de Direcciones",
-    "description": "Debug panel direction distances"
   },
   "debugFinalResult": {
     "message": "Resultado Final",
@@ -927,9 +1459,17 @@
     "message": "Mostrar Número de Pestañas",
     "description": "Show tab count badge option"
   },
-  "splitViewAction": {
-    "message": "Vista dividida",
-    "description": "Abrir en ventana de vista dividida"
+  "unlockPageRestrictions": {
+    "message": "Desbloquear copiar/pegar/clic derecho y visibilidad",
+    "description": "Setting: unlock page interaction limits"
+  },
+  "unlockPageRestrictionsTitle": {
+    "message": "Quita bloqueos habituales y reduce seguimiento por blur/visibilitychange. Contexto de página, iframes y Shadow DOM. Recargue al activar.",
+    "description": "Tooltip for unlock page restrictions"
+  },
+  "unlockPageRestrictionsOffReloadConfirm": {
+    "message": "Las pestañas abiertas pueden seguir afectadas hasta recargarlas.\n\n¿Recargar la pestaña actual ahora?",
+    "description": "Body text for unlock-off confirmation dialog"
   },
   "splitViewLeft": {
     "message": "Dividir - izquierda",
@@ -946,6 +1486,165 @@
   "splitViewDown": {
     "message": "Dividir - abajo",
     "description": "Vista dividida, nueva ventana en mitad inferior"
+  },
+  "unlockPageRestrictionsOffTitle": {
+    "message": "Desbloqueo desactivado",
+    "description": "Title for unlock-off confirmation dialog"
+  },
+  "unlockPageRestrictionsReloadTab": {
+    "message": "Recargar pestaña",
+    "description": "Reload tab button in unlock-off dialog"
+  },
+  "unlockPageRestrictionsNotNow": {
+    "message": "Ahora no",
+    "description": "Dismiss unlock-off dialog without reload"
+  },
+  "welcomeBulletImagePreview": {
+    "message": "Vista previa de imagen: ampliación opcional al pasar el cursor y modo mejorado para diseños complejos.",
+    "description": "Welcome page: image hover preview bullet"
+  },
+  "welcomeBulletPageUnlock": {
+    "message": "Desbloqueo de página: relajar de forma opcional copiar, pegar, clic derecho, etc., en sitios restrictivos; actívalo en ajustes y recarga si se indica.",
+    "description": "Welcome page: page unlock bullet"
+  },
+  "welcomeBulletDisabledSites": {
+    "message": "Por sitio: los dominios de la lista desactivan juntos gestos, Super Drag, vista emergente y desbloqueo.",
+    "description": "Welcome page: per-site disable bullet"
+  },
+  "welcomeBulletSplitScroll": {
+    "message": "Vista dividida: al abrir un enlace en diseño dividido, sincroniza el desplazamiento entre ambas ventanas (también horizontal).",
+    "description": "Welcome page: split scroll sync bullet"
+  },
+  "welcomeBulletScreenshot": {
+    "message": "Capturas: área visible, página completa, desplazamiento manual; zonas de trazo, atajos, portapapeles, vista previa e historial local (0 = ilimitado).",
+    "description": "Welcome page: screenshot feature bullet"
+  },
+  "welcomeTipScreenshot": {
+    "message": "Capturas activas por defecto; asigne atajos para área visible, página completa y desplazamiento; zona de trazo, copia auto, vista previa e historial opcionales.",
+    "description": "Welcome page: screenshot usage tip"
+  },
+  "trailColorPickerPresets": {
+    "message": "Preajustes",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerRecent": {
+    "message": "Recientes",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerEyedropper": {
+    "message": "Cuentagotas",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerEyedropperActive": {
+    "message": "Clic para tomar color · rueda para zoom de lupa",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerSyncTrail": {
+    "message": "Guardar como color de trazo",
+    "description": "Trail color picker UI"
+  },
+  "superDragCompassPosCompassHub": {
+    "message": "Punto de arrastre",
+    "description": "Compass hub aligned to drag start"
+  },
+  "superDragCompassPosCompassScreenCenter": {
+    "message": "Centro de la pantalla",
+    "description": "Compass fixed at viewport center"
+  },
+  "superDragCompassPosCompassScreenTop": {
+    "message": "Arriba",
+    "description": "Compass fixed at top of viewport"
+  },
+  "superDragCompassPosCompassScreenRight": {
+    "message": "Derecha",
+    "description": "Compass fixed at right of viewport"
+  },
+  "superDragCompassPosCompassScreenBottom": {
+    "message": "Abajo",
+    "description": "Compass fixed at bottom of viewport"
+  },
+  "superDragCompassPosCompassScreenLeft": {
+    "message": "Izquierda",
+    "description": "Compass fixed at left of viewport"
+  },
+  "superDragCompassPosCompassHidden": {
+    "message": "Oculto",
+    "description": "Do not show compass"
+  },
+  "addCurrentSiteToDisabledSites": {
+    "message": "Añadir sitio actual",
+    "description": "Button: add the active tab domain to disabled sites"
+  },
+  "addCurrentSiteToDisabledSitesTitle": {
+    "message": "Añadir el dominio de la pestaña actual a los sitios desactivados",
+    "description": "Tooltip for add-current-site button"
+  },
+  "addDisabledSite": {
+    "message": "Añadir",
+    "description": "Button: add a typed disabled site entry"
+  },
+  "disabledSiteInputPlaceholder": {
+    "message": "Dominio o URL completa, p. ej., youtube.com",
+    "description": "Placeholder for the disabled site input"
+  },
+  "disabledSitesEmpty": {
+    "message": "Aún no hay sitios desactivados.",
+    "description": "Empty state for disabled sites list"
+  },
+  "removeDisabledSite": {
+    "message": "Eliminar este sitio",
+    "description": "Tooltip/aria label for remove disabled site button"
+  },
+  "disabledSiteInvalid": {
+    "message": "Introduce un dominio o una URL válidos",
+    "description": "Error shown when disabled site input is invalid"
+  },
+  "disabledSiteAlreadyExists": {
+    "message": "El sitio ya existe",
+    "description": "Error shown when adding a duplicate disabled site"
+  },
+  "disabledSitesLimitReached": {
+    "message": "Se alcanzó el límite de sitios desactivados",
+    "description": "Error shown when disabled sites list reaches the maximum size"
+  },
+  "currentSiteUnsupported": {
+    "message": "La pestaña actual no tiene un dominio compatible",
+    "description": "Error shown when current tab URL cannot be added to disabled sites"
+  },
+  "customKey": {
+    "message": "Tecla personalizada",
+    "description": "Custom trigger key option"
+  },
+  "previewTriggerMode": {
+    "message": "Modo de activación",
+    "description": "Popup view trigger mode setting"
+  },
+  "previewTriggerHold": {
+    "message": "Mantener pulsada la tecla de activación",
+    "description": "Hold trigger key option"
+  },
+  "previewTriggerDouble": {
+    "message": "Pulsar dos veces la tecla de activación",
+    "description": "Double-press trigger key option"
+  },
+  "previewCustomKey": {
+    "message": "Tecla personalizada",
+    "description": "Popup view custom trigger key setting"
+  },
+  "previewCustomKeyPlaceholder": {
+    "message": "Haz clic y pulsa una tecla",
+    "description": "Popup view custom trigger key placeholder"
+  },
+  "previewCustomKeyTitle": {
+    "message": "Haz clic aquí y pulsa una tecla que no sea modificadora. Pulsa Esc para borrar.",
+    "description": "Popup view custom trigger key title"
+  },
+  "unlimited": {
+    "message": "Sin límite",
+    "description": "Unlimited value label"
+  },
+  "settingsFontSize": {
+    "message": "Tamaño de fuente de la configuración",
+    "description": "Header button: adjust settings font size"
   }
 }
-

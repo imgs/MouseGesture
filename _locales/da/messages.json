@@ -4,7 +4,7 @@
     "description": "The name of the extension"
   },
   "extDesc": {
-    "message": "En Chrome/Edge-udvidelse der understøtter musegestus, super-træk funktionalitet og popup view",
+    "message": "Musebevægelser, supertræk, billed- og linkforhåndsvisning m.m.",
     "description": "The description of the extension"
   },
   "title": {
@@ -35,13 +35,21 @@
     "message": "Træk Venstre",
     "description": "Drag left action"
   },
-  "openInForeground": {
-    "message": "Åbn Link i Forgrunden",
-    "description": "Open link in foreground"
+  "dragUpRight": {
+    "message": "Træk op-højre",
+    "description": "Super drag diagonal direction"
   },
-  "openInBackground": {
-    "message": "Åbn Link i Baggrunden",
-    "description": "Open link in background"
+  "dragDownRight": {
+    "message": "Træk ned-højre",
+    "description": "Super drag diagonal direction"
+  },
+  "dragDownLeft": {
+    "message": "Træk ned-venstre",
+    "description": "Super drag diagonal direction"
+  },
+  "dragUpLeft": {
+    "message": "Træk op-venstre",
+    "description": "Super drag diagonal direction"
   },
   "superDragDescription": {
     "message": "Super-træk virker for links, billeder og valgt tekst. Du kan indstille åbningsmetoden for hver gestretning (op/ned/venstre/højre), inkl. forgrund, baggrund eller splitvisning (venstre/højre/op/ned).",
@@ -64,52 +72,76 @@
     "description": "Down direction"
   },
   "downThenRight": {
-    "message": "Ned Derefter Højre",
-    "description": "Down then right gesture"
+    "message": "Ned derefter højre",
+    "description": "Bevægelse ned derefter højre"
   },
   "leftThenUp": {
-    "message": "Venstre Derefter Op",
-    "description": "Left then up gesture"
+    "message": "Venstre derefter op",
+    "description": "Bevægelse venstre derefter op"
   },
   "rightThenUp": {
-    "message": "Højre Derefter Op",
-    "description": "Right then up gesture"
+    "message": "Højre derefter op",
+    "description": "Bevægelse højre derefter op"
   },
   "rightThenDown": {
-    "message": "Højre Derefter Ned",
-    "description": "Right then down gesture"
+    "message": "Højre derefter ned",
+    "description": "Bevægelse højre derefter ned"
   },
   "upThenLeft": {
-    "message": "Op Derefter Venstre",
-    "description": "Up then left gesture"
+    "message": "Op derefter venstre",
+    "description": "Bevægelse op derefter venstre"
   },
   "upThenRight": {
-    "message": "Op Derefter Højre",
-    "description": "Up then right gesture"
+    "message": "Op derefter højre",
+    "description": "Bevægelse op derefter højre"
   },
   "downThenLeft": {
-    "message": "Ned Derefter Venstre",
-    "description": "Down then left gesture"
+    "message": "Ned derefter venstre",
+    "description": "Bevægelse ned derefter venstre"
   },
   "leftThenDown": {
-    "message": "Venstre Derefter Ned",
-    "description": "Left then down gesture"
+    "message": "Venstre derefter ned",
+    "description": "Bevægelse venstre derefter ned"
   },
   "upThenDown": {
-    "message": "Op Derefter Ned",
-    "description": "Up then down gesture"
+    "message": "Op derefter ned",
+    "description": "Bevægelse op derefter ned"
   },
   "downThenUp": {
-    "message": "Ned Derefter Op",
-    "description": "Down then up gesture"
+    "message": "Ned derefter op",
+    "description": "Bevægelse ned derefter op"
   },
   "leftThenRight": {
-    "message": "Venstre Derefter Højre",
-    "description": "Left then right gesture"
+    "message": "Venstre derefter højre",
+    "description": "Bevægelse venstre derefter højre"
   },
   "rightThenLeft": {
-    "message": "Højre Derefter Venstre",
-    "description": "Right then left gesture"
+    "message": "Højre derefter venstre",
+    "description": "Bevægelse højre derefter venstre"
+  },
+  "rightHoldWheelUp": {
+    "message": "Hold højre + rul op",
+    "description": "Hold højreknap og rul op"
+  },
+  "rightHoldWheelDown": {
+    "message": "Hold højre + rul ned",
+    "description": "Hold højreknap og rul ned"
+  },
+  "leftHoldWheelUp": {
+    "message": "Hold venstre + hjul op",
+    "description": "Venstre knap og hjul op"
+  },
+  "leftHoldWheelDown": {
+    "message": "Hold venstre + hjul ned",
+    "description": "Venstre knap og hjul ned"
+  },
+  "rightHoldLeftClick": {
+    "message": "Hold højre + venstreklik",
+    "description": "Hold højreknap og venstreklik"
+  },
+  "leftHoldRightClick": {
+    "message": "Hold venstre + højreklik",
+    "description": "Hold venstre knap og højreklik"
   },
   "back": {
     "message": "Tilbage",
@@ -158,6 +190,18 @@
   "prevTab": {
     "message": "Forrige Fane",
     "description": "Previous tab action"
+  },
+  "previousActiveTab": {
+    "message": "Forrige aktive fane",
+    "description": "Gestushandling: skift til den tidligere aktive fane"
+  },
+  "goToParentUrl": {
+    "message": "Overordnet URL",
+    "description": "Gestushandling: gå til den overordnede URL-sti"
+  },
+  "goToRootUrl": {
+    "message": "Rod-URL",
+    "description": "Gestushandling: gå til webstedets rod-URL"
   },
   "nextTab": {
     "message": "Næste Fane",
@@ -211,6 +255,14 @@
     "message": "Skift Fuldskærm",
     "description": "Toggle fullscreen action"
   },
+  "zoomIn": {
+    "message": "Zoom ind",
+    "description": "Øg zoom på aktuelle fane"
+  },
+  "zoomOut": {
+    "message": "Zoom ud",
+    "description": "Formindsk zoom på aktuelle fane"
+  },
   "closeTabsToLeft": {
     "message": "Luk Faner til Venstre",
     "description": "Close tabs to left action"
@@ -218,6 +270,474 @@
   "reloadAllTabs": {
     "message": "Genindlæs Alle Faner",
     "description": "Reload all tabs action"
+  },
+  "stopLoadingAllTabs": {
+    "message": "Stop indlæsning af alle faner",
+    "description": "Stop loading in all tabs"
+  },
+  "screenshotRegion": {
+    "message": "Skærmbillede (sporområde)",
+    "description": "Screenshot gesture action"
+  },
+  "screenshotRegionOrLink": {
+    "message": "Skærmbillede eller åbn link",
+    "description": "Trail region hint when links are inside selection"
+  },
+  "trailRegionChooseTitle": {
+    "message": "Links i markeringen — skærmbillede eller åbn",
+    "description": "Trail region chooser dialog title"
+  },
+  "trailRegionLinkSingle": {
+    "message": "1 link",
+    "description": "Trail region link count"
+  },
+  "trailRegionLinkMultiple": {
+    "message": "{count} links",
+    "description": "Trail region link count"
+  },
+  "trailRegionActionScreenshot": {
+    "message": "Skærmbillede (S)",
+    "description": "Trail region chooser button"
+  },
+  "trailRegionActionOpenLink": {
+    "message": "Åbn i ny fane (O)",
+    "description": "Trail region chooser button"
+  },
+  "trailRegionActionOpenLinks": {
+    "message": "Åbn i nye faner (O)",
+    "description": "Trail region chooser button"
+  },
+  "trailRegionActionOpenSelected": {
+    "message": "Åbn {n} i nye faner (O)",
+    "description": "Trail region open checked links"
+  },
+  "trailRegionActionOpenNone": {
+    "message": "Åbn markering (O)",
+    "description": "Trail region open button when none checked"
+  },
+  "trailRegionActionCopy": {
+    "message": "Kopier (C)",
+    "description": "Trail region chooser copy button"
+  },
+  "trailRegionActionCopySelected": {
+    "message": "Kopier {n} (C)",
+    "description": "Trail region copy checked links"
+  },
+  "trailRegionActionCopyNone": {
+    "message": "Kopier (C)",
+    "description": "Trail region copy button when none checked"
+  },
+  "trailRegionCopyFailed": {
+    "message": "Kopiering mislykkedes",
+    "description": "Trail region copy to clipboard failed"
+  },
+  "trailRegionSelectAll": {
+    "message": "Vælg alle",
+    "description": "Trail region link list select all"
+  },
+  "trailRegionNoLinkSelected": {
+    "message": "Vælg mindst ét link",
+    "description": "Trail region no selection hint"
+  },
+  "trailRegionChooseHint": {
+    "message": "Esc annullerer · markér links til kopiering/åbning · træk kanter for at ændre størrelse",
+    "description": "Trail region chooser footer"
+  },
+  "trailRegionLinkOpened": {
+    "message": "Link åbnet i ny fane",
+    "description": "Trail region open link feedback"
+  },
+  "trailRegionLinksOpened": {
+    "message": "Links åbnet i nye faner",
+    "description": "Trail region open links feedback"
+  },
+  "trailRegionLinksTruncated": {
+    "message": "Åbnede kun de første {n} links",
+    "description": "Trail region open links cap"
+  },
+  "screenshotScrollCaptureActive": {
+    "message": "Rul siden manuelt, brug derefter samme genvej eller Esc for at afslutte og sammenføje",
+    "description": "Manual scroll capture in progress"
+  },
+  "screenshotCopied": {
+    "message": "Skærmbillede kopieret til udklipsholder",
+    "description": "Screenshot feedback"
+  },
+  "screenshotFailed": {
+    "message": "Skærmbillede mislykkedes",
+    "description": "Screenshot feedback"
+  },
+  "screenshotNeedTrail": {
+    "message": "Tegn et længere spor for at vælge område",
+    "description": "Screenshot feedback"
+  },
+  "screenshotUnavailable": {
+    "message": "Skærmbillede-modulet er ikke tilgængeligt",
+    "description": "Screenshot feedback"
+  },
+  "screenshotTopFrameOnly": {
+    "message": "Skærmbillede af hele siden virker kun i hovedrammen",
+    "description": "Screenshot feedback"
+  },
+  "screenshotFeature": {
+    "message": "Skærmbillede",
+    "description": "Screenshot settings section title"
+  },
+  "enableScreenshotFeature": {
+    "message": "Aktivér skærmbillede",
+    "description": "Master toggle for screenshot feature"
+  },
+  "enableScreenshotTrailCapture": {
+    "message": "Sporområde (løkke / selvkrydsning)",
+    "description": "Capture when trail loops or crosses; skipped if another gesture action matches"
+  },
+  "enableScreenshotClipboard": {
+    "message": "Kopiér automatisk til udklipsholder",
+    "description": "Copy screenshot to clipboard after capture"
+  },
+  "enableScreenshotPreview": {
+    "message": "Vis forhåndsvisning efter optagelse",
+    "description": "Open preview window when a screenshot is captured"
+  },
+  "enableScreenshotHistory": {
+    "message": "Gem skærmbilledehistorik",
+    "description": "Keep captured screenshots in local history"
+  },
+  "screenshotHistoryMaxCount": {
+    "message": "Historikgrænse",
+    "description": "Maximum screenshot history entries to keep"
+  },
+  "screenshotHistoryMaxCountHint": {
+    "message": "0 = ubegrænset; 1–200 sletter ældste poster ved overskridelse",
+    "description": "Screenshot history limit hint"
+  },
+  "screenshotHistoryUnlimited": {
+    "message": "Ubegrænset",
+    "description": "Label when screenshot history limit is 0"
+  },
+  "screenshotHistoryView": {
+    "message": "Se historik",
+    "description": "Open screenshot history window"
+  },
+  "screenshotHistoryTitle": {
+    "message": "Skærmbilledehistorik",
+    "description": "Screenshot history window title"
+  },
+  "screenshotHistoryEmpty": {
+    "message": "Ingen skærmbilleder endnu",
+    "description": "Empty screenshot history state"
+  },
+  "screenshotHistoryClearAll": {
+    "message": "Ryd alt",
+    "description": "Delete all screenshot history entries"
+  },
+  "screenshotHistoryClearConfirm": {
+    "message": "Slet al skærmbilledehistorik?",
+    "description": "Confirm clearing screenshot history"
+  },
+  "screenshotHistoryDelete": {
+    "message": "Slet",
+    "description": "Delete one screenshot history entry"
+  },
+  "screenshotHistoryPinToPage": {
+    "message": "Fastgør på siden",
+    "description": "Pin history thumbnail onto the web page"
+  },
+  "screenshotHistoryPinFailed": {
+    "message": "Kunne ikke fastgøre (åbn målfanen eller tillad dette websted).",
+    "description": "Error when pinning from screenshot history"
+  },
+  "screenshotHistoryCount": {
+    "message": "$1 elementer",
+    "description": "Number of items in screenshot history",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "screenshotHistoryModeViewport": {
+    "message": "Synligt område",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeFullPage": {
+    "message": "Hele side",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeRegion": {
+    "message": "Område",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeScroll": {
+    "message": "Manuel rulning",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeUnknown": {
+    "message": "Skærmbillede",
+    "description": "Screenshot history capture mode fallback label"
+  },
+  "screenshotDone": {
+    "message": "Skærmbillede klar",
+    "description": "Hint when capture finished without clipboard copy"
+  },
+  "screenshotPreviewTitle": {
+    "message": "Forhåndsvisning af skærmbillede",
+    "description": "Screenshot preview window title"
+  },
+  "screenshotPreviewClose": {
+    "message": "Luk",
+    "description": "Close screenshot preview window"
+  },
+  "screenshotPreviewCopyAgain": {
+    "message": "Kopiér",
+    "description": "Copy screenshot to clipboard from preview window"
+  },
+  "screenshotPreviewSave": {
+    "message": "Gem som fil",
+    "description": "Save annotated screenshot to disk"
+  },
+  "screenshotPreviewSaved": {
+    "message": "Gemt",
+    "description": "Screenshot file save succeeded"
+  },
+  "screenshotPreviewPinToPage": {
+    "message": "Fastgør på siden",
+    "description": "Pin annotated screenshot onto the source web page"
+  },
+  "screenshotPreviewPinned": {
+    "message": "Fastgjort",
+    "description": "Screenshot pin placed on page"
+  },
+  "screenshotPreviewPinning": {
+    "message": "Fastgør…",
+    "description": "Screenshot pin in progress"
+  },
+  "screenshotPinTitle": {
+    "message": "Skærmbillede",
+    "description": "Title on pinned screenshot sticker"
+  },
+  "screenshotPinClose": {
+    "message": "Fjern fastgørelse",
+    "description": "Close button on pinned screenshot"
+  },
+  "screenshotPinResize": {
+    "message": "Tilpas størrelse",
+    "description": "Resize handle on pinned screenshot"
+  },
+  "screenshotPinZoomFit": {
+    "message": "Tilpas",
+    "description": "Fit pinned screenshot to view"
+  },
+  "screenshotPinZoomOriginal": {
+    "message": "1:1",
+    "description": "Show pinned screenshot at original pixel size"
+  },
+  "screenshotPinOrderLabel": {
+    "message": "Fastgørelse $1$",
+    "description": "Pinned screenshot order number",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "screenshotPreviewLoadFailed": {
+    "message": "Kunne ikke indlæse forhåndsvisning",
+    "description": "Screenshot preview load error"
+  },
+  "screenshotPreviewZoomFit": {
+    "message": "Tilpas",
+    "description": "Fit screenshot to preview window"
+  },
+  "screenshotPreviewZoomFitTitle": {
+    "message": "Tilpas til vindue",
+    "description": "Tooltip for fit zoom button"
+  },
+  "screenshotPreviewZoomOneToOne": {
+    "message": "1:1",
+    "description": "Actual-size zoom button label"
+  },
+  "screenshotPreviewZoomOneToOneTitle": {
+    "message": "Faktisk størrelse (1:1)",
+    "description": "Tooltip for 1:1 zoom button"
+  },
+  "screenshotPreviewZoomLevel": {
+    "message": "Zoom $1$%",
+    "description": "Current zoom percentage in preview",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "screenshotAnnotHand": {
+    "message": "Hånd (flyt)",
+    "description": "Pan the preview by dragging"
+  },
+  "screenshotAnnotPen": {
+    "message": "Pen",
+    "description": "Annotation tool: freehand"
+  },
+  "screenshotAnnotArrow": {
+    "message": "Pil (Shift: H/V)",
+    "description": "Annotation tool: arrow; Shift constrains to horizontal or vertical"
+  },
+  "screenshotAnnotLine": {
+    "message": "Linje (Shift: H/V)",
+    "description": "Annotation tool: line; Shift constrains to horizontal or vertical"
+  },
+  "screenshotAnnotRect": {
+    "message": "Rektangel (Shift: kvadrat)",
+    "description": "Annotation tool: rectangle; Shift draws a square"
+  },
+  "screenshotAnnotEllipse": {
+    "message": "Ellipse",
+    "description": "Annotation tool: ellipse"
+  },
+  "screenshotAnnotRoundRect": {
+    "message": "Afrundet rektangel",
+    "description": "Annotation tool: rounded rectangle"
+  },
+  "screenshotAnnotHighlighter": {
+    "message": "Overstregningstusch",
+    "description": "Annotation tool: highlighter marker"
+  },
+  "screenshotAnnotHighlight": {
+    "message": "Fremhævningsramme",
+    "description": "Annotation tool: highlight rectangle"
+  },
+  "screenshotAnnotFillRect": {
+    "message": "Udfyldt rektangel",
+    "description": "Annotation tool: filled rectangle"
+  },
+  "screenshotAnnotFillEllipse": {
+    "message": "Udfyldt ellipse",
+    "description": "Annotation tool: filled ellipse"
+  },
+  "screenshotAnnotBlur": {
+    "message": "Slør",
+    "description": "Annotation tool: blur brush"
+  },
+  "screenshotAnnotArrow2": {
+    "message": "Dobbelt pil (Shift: H/V)",
+    "description": "Annotation tool: line with arrowheads at both ends; Shift constrains H/V"
+  },
+  "screenshotAnnotNumber": {
+    "message": "Nummer",
+    "description": "Annotation tool: sequential number markers"
+  },
+  "screenshotAnnotStampStart": {
+    "message": "Start nr.",
+    "description": "Starting number for sequential stamps"
+  },
+  "screenshotAnnotStampNext": {
+    "message": "Næste nr.: $1$",
+    "description": "Next number stamp to place (tooltip)",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "screenshotAnnotCrop": {
+    "message": "Beskær",
+    "description": "Annotation tool: crop image"
+  },
+  "screenshotAnnotCropApply": {
+    "message": "Anvend beskæring",
+    "description": "Confirm crop selection"
+  },
+  "screenshotAnnotCropCancel": {
+    "message": "Annuller",
+    "description": "Cancel crop selection"
+  },
+  "screenshotAnnotText": {
+    "message": "Tekst",
+    "description": "Annotation tool: text"
+  },
+  "screenshotAnnotMosaic": {
+    "message": "Mosaik",
+    "description": "Annotation tool: mosaic blur"
+  },
+  "screenshotAnnotEraser": {
+    "message": "Viskelæder",
+    "description": "Annotation tool: eraser"
+  },
+  "screenshotAnnotSize": {
+    "message": "Størrelse",
+    "description": "Annotation stroke size"
+  },
+  "screenshotAnnotResetAll": {
+    "message": "Nulstil alle redigeringer",
+    "description": "Clear all annotations and restore original screenshot"
+  },
+  "screenshotAnnotStepCount": {
+    "message": "$1 / $2",
+    "description": "History step indicator: current / total"
+  },
+  "screenshotAnnotStepCountTitle": {
+    "message": "Anvendte trin / total (0 = originalbillede)",
+    "description": "Tooltip for history step indicator"
+  },
+  "screenshotAnnotUndo": {
+    "message": "Fortryd",
+    "description": "Undo annotation"
+  },
+  "screenshotAnnotRedo": {
+    "message": "Annuller fortryd",
+    "description": "Redo annotation"
+  },
+  "screenshotAnnotTextPlaceholder": {
+    "message": "Skriv her…",
+    "description": "Placeholder in inline text editor on screenshot preview"
+  },
+  "screenshotOptRegion": {
+    "message": "Områdevalg",
+    "description": "Screenshot bind row: keyboard drag rectangle region"
+  },
+  "screenshotOptViewport": {
+    "message": "Synligt område",
+    "description": "Screenshot bind row: current visible tab area"
+  },
+  "screenshotOptFullPage": {
+    "message": "Hele side",
+    "description": "Screenshot bind row: full page"
+  },
+  "screenshotOptScrollStitch": {
+    "message": "Manuel rulning",
+    "description": "Screenshot bind row: manual scroll capture"
+  },
+  "screenshotOptOpenHistory": {
+    "message": "Åbn historik",
+    "description": "Screenshot bind row: keyboard shortcut to open screenshot history"
+  },
+  "screenshotHotkeyPressHint": {
+    "message": "Genveje: klik i et felt ovenfor, tryk derefter en kombination (Ctrl / Alt / Meta + bogstav eller tal, eller F1–F12). Esc rydder feltet.",
+    "description": "Screenshot section footer: hotkey binding help"
+  },
+  "screenshotHotkeyPlaceholder": {
+    "message": "Klik for at angive",
+    "description": "Placeholder in empty screenshot hotkey fields"
+  },
+  "screenshotRegionPickHint": {
+    "message": "Træk for at vælge et område. Esc annullerer.",
+    "description": "Hint while keyboard region picker is active"
+  },
+  "screenshotRegionPickFooterHint": {
+    "message": "Områdegenvej: tegn et rektangel og slip. Ved links: skærmbillede eller nye faner. Esc annullerer.",
+    "description": "Screenshot section footer: keyboard region picker help"
+  },
+  "screenshotRegionTooSmall": {
+    "message": "Markering for lille — tegn et større område",
+    "description": "Region picker: minimum size not met"
+  },
+  "screenshotGestureIntersectHint": {
+    "message": "Sporområde: én løkke eller ét selvkryds, slip derefter. Ved links: skærmbillede eller nye faner. Mange løkker = kruseduller.",
+    "description": "Screenshot section footer: trail region capture help"
   },
   "togglePinTab": {
     "message": "Fastgør/Frigør Fane",
@@ -244,16 +764,16 @@
     "description": "Settings title"
   },
   "customizedBehavior": {
-    "message": "Blokeringsliste",
-    "description": "Block list section title"
+    "message": "Deaktiverede websites",
+    "description": "Section title for the per-site disable list"
   },
   "disableMouseGesturesForSites": {
-    "message": "Deaktivér musepatruljer og supertræk for disse websteder",
-    "description": "Label for the list of sites where gestures and super drag are disabled"
+    "message": "Deaktivér udvidelsesfunktioner på angivne domæner",
+    "description": "Subtitle for Disabled sites section"
   },
   "disabledSitesHint": {
-    "message": "Et websted per linje. Domæne (f.eks. youtube.com) eller fuld URL.",
-    "description": "Hint for the disabled sites textarea"
+    "message": "Gælder for: bevægelser, supertræk, link-/billedvisning, skærmbilleder og sideoplåsning. Tilføj det aktuelle websted, eller indtast et domæne/en URL; klik på fjernmærket for at slette.",
+    "description": "Short hint explaining which features the Disabled sites list affects"
   },
   "enableGesture": {
     "message": "Aktiver Musegestus",
@@ -279,6 +799,26 @@
     "message": "Aktiver Super-Træk",
     "description": "Enable super drag option"
   },
+  "superDragCompassPosition": {
+    "message": "8-retnings kompas",
+    "description": "Super drag compass display and position"
+  },
+  "superDragCompassPosCompassAbove": {
+    "message": "Over trækpunkt",
+    "description": "Compass above drag start, centered horizontally"
+  },
+  "superDragCompassPosCompassRight": {
+    "message": "Til højre for trækpunkt",
+    "description": "Compass to the right of drag start, vertically centered"
+  },
+  "superDragCompassPosCompassBelow": {
+    "message": "Under trækpunkt",
+    "description": "Compass below drag start, centered horizontally"
+  },
+  "superDragCompassPosCompassLeft": {
+    "message": "Til venstre for trækpunkt",
+    "description": "Compass to the left of drag start, vertically centered"
+  },
   "enableDragTextSearch": {
     "message": "Aktiver Træk Tekst Søgning",
     "description": "Enable drag text search option"
@@ -287,9 +827,17 @@
     "message": "Auto-download billede/fil ved træk",
     "description": "When the drag target is an image or other downloadable file, start download automatically"
   },
+  "enableImageDrag": {
+    "message": "Aktivér billedtræk",
+    "description": "Control image super drag independently from image preview"
+  },
   "enableImagePreview": {
     "message": "Aktiver Billede Forhåndsvisning",
     "description": "Enable image preview option"
+  },
+  "enableImagePreviewEnhanced": {
+    "message": "Forbedret billede forhåndsvisning",
+    "description": "Support transparent overlay, background-image, parent lookup, etc."
   },
   "enableDuplicateCheck": {
     "message": "Registrer Duplikerede Faner",
@@ -302,10 +850,6 @@
   "enableSmoothScroll": {
     "message": "Aktiver glat rulning",
     "description": "Enable smooth scrolling for gesture actions"
-  },
-  "save": {
-    "message": "Indstillinger Anvendt",
-    "description": "Save settings button"
   },
   "reset": {
     "message": "Nulstil",
@@ -363,14 +907,6 @@
     "message": "Kunne Ikke Nulstille Indstillinger",
     "description": "Reset settings error notification"
   },
-  "themeLight": {
-    "message": "Lys",
-    "description": "Light theme"
-  },
-  "themeDark": {
-    "message": "Mørk",
-    "description": "Dark theme"
-  },
   "buyMeACoffee": {
     "message": "Køb mig en kaffe",
     "description": "Donation button"
@@ -379,17 +915,33 @@
     "message": "Skift tema",
     "description": "Toggle theme button"
   },
-  "toggleLanguage": {
-    "message": "Skift sprog",
-    "description": "Toggle language button"
+  "openDetachedPopupTitle": {
+    "message": "Åbn indstillinger i sidepanelet (ellers separat vindue)",
+    "description": "Knap i overskrift: indstillinger i sidepanel eller separat vindue"
+  },
+  "openDetachedWindowFromSidePanelTitle": {
+    "message": "Åbn i separat vindue (ved siden af browseren)",
+    "description": "Sidepanel: separat vindue og browserlayout"
+  },
+  "openOptionsPageTitle": {
+    "message": "Åbn siden med indstillinger",
+    "description": "Knap i overskrift: åbn udvidelsens indstillingsside"
   },
   "donationTooltip": {
     "message": "Hvis du kan lide dette arbejde, støt venligst. Tak :)",
     "description": "Donation tooltip"
   },
   "rightButtonHint": {
-    "message": "Hold højre museknap nede",
+    "message": "Højre ned (bane, hjul, klik) · venstre (hjul)",
     "description": "Right mouse button hint"
+  },
+  "builtInGesturesListExpandHint": {
+    "message": "Klik for at udvide hele bevægelseslisten",
+    "description": "Tooltip on built-in gestures subtitle when list is collapsed"
+  },
+  "builtInGesturesListCollapseHint": {
+    "message": "Klik for at folde bevægelseslisten sammen",
+    "description": "Tooltip on built-in gestures subtitle when list is expanded"
   },
   "leftButtonHint": {
     "message": "Hold venstre museknap nede",
@@ -403,17 +955,45 @@
     "message": "Åbn i Baggrund",
     "description": "Open in background action"
   },
+  "popupViewAction": {
+    "message": "Popup Forhåndsvisning",
+    "description": "Super drag action: open target in popup view"
+  },
+  "incognitoAction": {
+    "message": "Åbn i Inkognito-vindue",
+    "description": "Open in incognito/private window"
+  },
+  "enableSplitScrollSync": {
+    "message": "Synkroniser lodret og vandret rulning mellem delte vinduer",
+    "description": "Ved delt visning: match begge rulleakser mellem vinduerne"
+  },
   "copyAction": {
     "message": "Kopier",
     "description": "Copy selected text or link URL to clipboard"
+  },
+  "downloadAction": {
+    "message": "Download",
+    "description": "Super drag action: download target"
   },
   "copiedToClipboard": {
     "message": "Kopieret til udklipsholder",
     "description": "Hint after copy action"
   },
-  "dragSearchEngine": {
-    "message": "Træk Søgemaskine URL",
-    "description": "Drag search engine URL setting"
+  "dragSearchEngineSlotLabel": {
+    "message": "Redigeringsmål",
+    "description": "Label for drag search engine slot selector"
+  },
+  "dragSearchSlotDefault": {
+    "message": "Standard (reserve)",
+    "description": "Default search URL slot in drag search editor"
+  },
+  "dragSearchEngineUrlForSlot": {
+    "message": "Søgemaskine-URL",
+    "description": "Label for single drag search URL field"
+  },
+  "dragSearchEnginePerDirectionHelp": {
+    "message": "Vælg «Standard» eller en trækkeretning på listen, og rediger den tilhørende URL. Tomme retninger bruger standard. Gælder kun træk-og-slip-tekstsøgning.",
+    "description": "Help text for unified drag search engine editor"
   },
   "linkPreview": {
     "message": "Popup Forhåndsvisning",
@@ -424,7 +1004,7 @@
     "description": "Quick navigation hover tooltip"
   },
   "linkPreviewHint": {
-    "message": "Hover + Tast for at Vise Popup",
+    "message": "Hold markøren over og brug udløseren for at vise pop op-vinduet",
     "description": "Popup view hint"
   },
   "enableLinkPreview": {
@@ -495,41 +1075,61 @@
     "message": "Brug {q} for søgeterm, eksempel format:",
     "description": "Search engine examples description"
   },
+  "searchExampleUrlClickHint": {
+    "message": "Klik på eksempel-URL for at udfylde feltet ovenfor og gemme",
+    "description": "Tooltip for example search engine URLs (click to fill)"
+  },
+  "searchEngineExamplesUrlClickHint": {
+    "message": "Tip: Klik på eksempel-URL for at udfylde feltet ovenfor og gemme.",
+    "description": "Visible hint under search engine examples (click URL to fill field above and save)"
+  },
   "googleExample": {
-    "message": "Google Søgning: https://www.google.dk/search?q={q}",
+    "message": "Google Søgning:",
+    "description": "Google search example"
+  },
+  "googleExampleUrl": {
+    "message": "https://www.google.dk/search?q={q}",
     "description": "Google search example"
   },
   "googleTranslateExample": {
-    "message": "Google Oversætter: https://translate.google.com/?sl=auto&tl=da&text={q}&op=translate",
+    "message": "Google Oversætter:",
+    "description": "Google translate example"
+  },
+  "googleTranslateExampleUrl": {
+    "message": "https://translate.google.com/?sl=auto&tl=da&text={q}&op=translate",
     "description": "Google translate example"
   },
   "localSearchExample": {
-    "message": "Eksempel: https://www.google.dk/search?q={q}",
+    "message": "Eksempel:",
+    "description": "Local search example"
+  },
+  "localSearchExampleUrl": {
+    "message": "https://www.google.dk/search?q={q}",
     "description": "Local search example"
   },
   "bingExample": {
-    "message": "Bing Søgning: https://www.bing.com/search?q={q}&setlang=da-DK",
+    "message": "Bing Søgning:",
+    "description": "Bing search example"
+  },
+  "bingExampleUrl": {
+    "message": "https://www.bing.com/search?q={q}&setlang=da-DK",
     "description": "Bing search example"
   },
   "wheelTip": {
-    "message": "Brug musehjulet til at justere værdi",
+    "message": "Hold musen over denne række i ~1,5 s, juster derefter med hjulet",
     "description": "Wheel tip"
   },
   "modifierKeyDelayTip": {
-    "message": "Ved brug af aktiveringstast er maksimal forsinkelse begrænset til 300ms",
+    "message": "Forsinkelsen starter, når udløserbetingelsen er opfyldt; øg den for at undgå utilsigtede visninger.",
     "description": "Modifier key delay tip"
   },
   "welcomeTitle": {
-    "message": "Velkommen til Musegestus Udvidelse",
+    "message": "Velkommen til musebevægelses-udvidelsen",
     "description": "Welcome page title"
   },
   "welcomeDescription": {
-    "message": "Tak for at installere Musegestus Udvidelsen! Denne udvidelse leverer rig musegestus funktionalitet, intelligent fanestyring, popup forhåndsvisning kapaciteter og forbedret visuel oplevelse for at hjælpe dig med at navigere på nettet mere effektivt. Vi har optimeret gestus genkendelses algoritmen med større fejltolerance, hvilket tillader gestus at blive genkendt korrekt selv når de ikke er tegnet perfekt. Den nye popup forhåndsvisning funktion lader dig se link indhold i popup vinduer uden at skifte faner. Udvidelsen understøtter også 24 sprog og lyst/mørkt tema for bedre brugeroplevelse.",
+    "message": "Tak fordi du installerede Mouse Gesture! Hold højre knap nede og træk for at navigere, håndtere faner og rulle; hold også højre eller venstre med hjulet (flere kombinationer i indstillinger) for ekstra genveje — genkendelsen forbliver tolerant, også mens sider indlæses. Super Drag åbner links, billeder og tekstsøgning med regler pr. retning (forgrund, baggrund, delt layout, kopier til udklipsholder med mere). Popup View viser linkforhåndsvisninger eller søger i markeret tekst i små vinduer. Valgfrit: billedforhåndsvisning ved hover (udvidet tilstand), registrering af dubletfaner med automatisk lukning, jævn rulning, fanetal-badge på værktøjslinjen og sideoplåsning på restriktive sites. Indstillinger fra værktøjslinjen (popup, sidepanel eller separat vindue); eksport/import; synkronisering med browserkonto. 29 sprog og lyst/mørkt tema.",
     "description": "Welcome page description"
-  },
-  "gesturesDescription": {
-    "message": "Følgende er forudindstillede musegestus du kan bruge ved at trække med højre museknap:",
-    "description": "Gestures description"
   },
   "extensionName": {
     "message": "Musegestus Udvidelse",
@@ -539,88 +1139,48 @@
     "message": "Kernefunktioner",
     "description": "Core features title"
   },
-  "utilitiesFeatures": {
-    "message": "Værktøjer",
-    "description": "Utilities features title"
+  "welcomeCoreGestureBlock": {
+    "message": "Musebevægelser: hold højre og træk for stibevægelser; hjul med højre eller venstre nede og klikkombinationer mens højre holdes nede — kan tilknyttes i indstillinger til mange handlinger; genkendelse er tilgivende, også under indlæsning.",
+    "description": "Welcome page: core features gesture summary"
+  },
+  "welcomeCoreSuperDragBlock": {
+    "message": "Super Drag: træk links og billeder til nye faner, markeret tekst for at søge; retningen styrer, hvordan faner åbnes; standard i baggrunden.",
+    "description": "Welcome page: core features super drag summary"
+  },
+  "welcomeCorePopupViewBlock": {
+    "message": "Popup-visning: hold udløsertasten (standard Skift) over et link for forhåndsvisning i et lille vindue; efter tekstvalg tryk på tasten for øjeblikkelig søgning med din søgemaskine.",
+    "description": "Welcome page: core features popup view summary"
   },
   "usageTips": {
     "message": "Brugstips",
     "description": "Usage tips title"
   },
-  "smartGestureRecognition": {
-    "message": "Intelligent gestus genkendelse: Genkender gestus korrekt selv når uperfekte, virker under sideindlæsning",
-    "description": "Smart gesture recognition description"
-  },
-  "tabManagementTitle": {
-    "message": "Fanestyring",
-    "description": "Tab management title"
-  },
-  "tabManagementDesc": {
-    "message": ": Intelligent duplikat registrering, automatisk lukning, periodisk hukommelse optimering",
-    "description": "Tab management description"
-  },
-  "superDragTitle": {
-    "message": "Super-Træk",
-    "description": "Super drag title"
-  },
-  "superDragDesc": {
-    "message": ": Træk links og billeder til nye faner, træk valgt tekst til søgning",
-    "description": "Super drag description"
-  },
-  "linkPreviewTitle": {
-    "message": "Popup Forhåndsvisning",
-    "description": "Link preview title"
-  },
-  "linkPreviewDesc": {
-    "message": ": Hold aktiveringstasten (standard: Shift) nede mens du hover over links for at forhåndsvise målside i popup vinduer",
-    "description": "Link preview description"
-  },
-  "textSelectionPreview": {
-    "message": "Vælg tekst og tryk aktiveringstasten for at søge øjeblikkeligt i popup vindue, med understøttelse af tilpasset søgemaskine",
-    "description": "Text selection preview description"
-  },
   "previewTip": {
-    "message": "Du kan åbne multiple popup vinduer samtidigt",
+    "message": "Hold flere popup-forhåndsvisninger åbne samtidig til sammenligning.",
     "description": "Preview tip"
-  },
-  "dragDirection": {
-    "message": "Tilpas trækretning for at bestemme fane åbnings metode: åbn i baggrund som standard",
-    "description": "Drag direction description"
   },
   "debugPanelTitle": {
     "message": "Musegestus Debug Information",
     "description": "Debug panel title"
   },
   "debugPanelDesc": {
-    "message": ": Tryk Alt+D for at åbne, analyser gestus information i realtid, bevarer tilstand",
+    "message": "Tryk på Alt+D for at åbne debug-panelet, analysér bevægelser i realtid, og tilstanden bevares.",
     "description": "Debug panel description"
   },
-  "oneClickCopy": {
-    "message": "En-klik kopiering af debug information for nem deling, med flersproget understøttelse",
-    "description": "One click copy description"
-  },
-  "mediaPreview": {
-    "message": "Forbedret medie forhåndsvisning: Forbedrede hover effekter for billeder og optimerede video poster billeder",
-    "description": "Media preview description"
-  },
-  "adaptiveTheme": {
-    "message": "Adaptive temaer: Justerer visuel stil baseret på side baggrund, understøtter lyst/mørkt tilstand",
-    "description": "Adaptive theme description"
-  },
   "gestureTrail": {
-    "message": "Gestus spor vises på skærm med tilpasselig farve og bredde",
+    "message": "Valgfrit spor og gestushint på skærmen; tilpas sporfarve og tykkelse i indstillinger.",
     "description": "Gesture trail description"
   },
   "clickIcon": {
-    "message": "Klik på udvidelse ikon for at aktivere/deaktivere funktioner, sæt sprog, tema og mere",
+    "message": "Værktøjslinje: kompakt popup, sidepanel (Chrome/Edge når understøttet) eller separat indstillingsvindue. Slå funktioner, sprog og tema til/fra og eksportér/importér.",
     "description": "Click icon description"
   },
   "languageSupport": {
-    "message": "Understøtter 24 sprog, tilpasser automatisk til browser sprog",
+    "message": "29 grænsesprog; bruger dit gemte valg eller følger browserens sprog.",
     "description": "Language support description"
   },
   "enableAutoClose": {
-    "message": "Aktiver automatisk lukning af duplikerede faner for at reducere browser ressourceforbrug betydeligt",
+    "message": "Med dubletdetektion kan gentagne URL'er lukkes automatisk (valgfrit).",
     "description": "Enable auto close description"
   },
   "rightClickMacLinux": {
@@ -634,14 +1194,6 @@
   "duplicateTabsDetected": {
     "message": "Fundet $1 duplikerede faner",
     "description": "Duplicate tabs detected notification title"
-  },
-  "duplicateTabsCount": {
-    "message": "Der er $1 duplikerede faner",
-    "description": "Duplicate tabs count message"
-  },
-  "duplicateTabsSingle": {
-    "message": "Der er 1 duplikerede fane",
-    "description": "Single duplicate tab message"
   },
   "autoClosedTabs": {
     "message": "Automatisk lukket $1 duplikerede faner",
@@ -659,61 +1211,9 @@
     "message": "Unavngivet fane",
     "description": "Untitled tab"
   },
-  "morePages": {
-    "message": "...og $1 flere sider",
-    "description": "More pages tip"
-  },
-  "errorShowDuplicateTabs": {
-    "message": "Fejl ved visning af duplikerede faner notifikation:",
-    "description": "Error showing duplicate tabs notification"
-  },
-  "errorSendCloseRequest": {
-    "message": "Fejl ved afsendelse af luk anmodning:",
-    "description": "Error sending close request"
-  },
-  "errorCloseDuplicateTabs": {
-    "message": "Fejl ved lukning af duplikerede faner:",
-    "description": "Error closing duplicate tabs"
-  },
-  "errorSendIgnoreRequest": {
-    "message": "Fejl ved afsendelse af ignorer anmodning:",
-    "description": "Error sending ignore request"
-  },
-  "errorIgnoreDuplicateTabs": {
-    "message": "Fejl ved ignorering af duplikerede faner:",
-    "description": "Error ignoring duplicate tabs"
-  },
-  "errorUpdateDebugPanel": {
-    "message": "Fejl ved opdatering af debug panel:",
-    "description": "Error updating debug panel"
-  },
   "errorDetectBackgroundColor": {
     "message": "Fejl ved registrering af baggrundsfarve:",
     "description": "Error detecting background color"
-  },
-  "errorDetectImageBorder": {
-    "message": "Fejl ved registrering af billede kant radius:",
-    "description": "Error detecting image border radius"
-  },
-  "errorSetMutationObserver": {
-    "message": "Fejl ved indstilling af mutation observer:",
-    "description": "Error setting mutation observer"
-  },
-  "errorCheckElementVisibility": {
-    "message": "Fejl ved kontrol af element synlighed:",
-    "description": "Error checking element visibility"
-  },
-  "errorProcessBorderRadius": {
-    "message": "Fejl ved behandling af kant radius:",
-    "description": "Error processing border radius"
-  },
-  "errorDetectImageBackground": {
-    "message": "Fejl ved registrering af billede baggrund:",
-    "description": "Error detecting image background"
-  },
-  "errorShowAutoCloseNotification": {
-    "message": "Fejl ved visning af automatisk lukning succes notifikation:",
-    "description": "Error showing auto-close success notification"
   },
   "noForwardPage": {
     "message": "Ingen næste side i historik",
@@ -743,10 +1243,6 @@
     "message": "Ugyldig Gestus",
     "description": "Invalid gesture message"
   },
-  "nextPage": {
-    "message": "Næste Side",
-    "description": "Next page action"
-  },
   "errorReadPixel": {
     "message": "Fejl ved læsning af pixel:",
     "description": "Error reading pixel message"
@@ -758,10 +1254,6 @@
   "errorCanvasDraw": {
     "message": "Fejl ved tegning på canvas:",
     "description": "Error drawing on canvas message"
-  },
-  "errorAccessIframe": {
-    "message": "Fejl ved adgang til iframe:",
-    "description": "Error accessing iframe message"
   },
   "errorMutationObserver": {
     "message": "Fejl ved indstilling af mutation observer:",
@@ -791,6 +1283,10 @@
     "message": "System Indstillinger",
     "description": "Debug panel system settings section"
   },
+  "debugConsoleLog": {
+    "message": "Konsollogfiler",
+    "description": "Debug panel console log toggle label"
+  },
   "debugAngleThreshold": {
     "message": "Vinkel Tærskel",
     "description": "Debug panel angle threshold setting"
@@ -810,6 +1306,46 @@
   "debugMinGestureComplexity": {
     "message": "Minimum Gestus Kompleksitet",
     "description": "Debug panel minimum gesture complexity setting"
+  },
+  "debugMinMovementToStartGesture": {
+    "message": "Min. bevægelse for start",
+    "description": "Debugpanelindstilling: mindste bevægelse for at starte gestussporing"
+  },
+  "debugSmoothingFactor": {
+    "message": "Udjævningsfaktor",
+    "description": "Debugpanelindstilling: udjævningsfaktor for spor og genkendelse"
+  },
+  "debugAngleThresholdHelp": {
+    "message": "Styrer hvor strengt bevægelse klassificeres som vandret eller lodret. Højere værdier kræver en mere lige retning; lavere værdier tillader mere diagonal bevægelse.",
+    "description": "Forklaring af vinkelgrænse i debugpanelet"
+  },
+  "debugDirectionChangeThresholdHelp": {
+    "message": "Styrer hvor følsomt retningsskift registreres. Lavere værdier fanger drej lettere; højere værdier ignorerer små rystelser.",
+    "description": "Forklaring af grænse for retningsskift i debugpanelet"
+  },
+  "debugMinGestureDistanceHelp": {
+    "message": "Mindste samlede bevægelsesafstand før en gestus kan genkendes. Øg den for at reducere utilsigtede udløsninger.",
+    "description": "Forklaring af mindste gestusafstand i debugpanelet"
+  },
+  "debugMinDirectionSegmentLengthHelp": {
+    "message": "Mindste længde på et bevægelsessegment brugt til retningsgenkendelse. Øg den for at filtrere korte rystelser, eller sænk den for korte gestusser.",
+    "description": "Forklaring af mindste retningssegmentlængde i debugpanelet"
+  },
+  "debugMinGestureComplexityHelp": {
+    "message": "Tærskel for retningskompleksitet før en sti behandles som skribleri eller ugyldig. Højere værdier tolererer flere drej.",
+    "description": "Forklaring af gestuskompleksitet i debugpanelet"
+  },
+  "debugMinMovementToStartGestureHelp": {
+    "message": "Markøren skal flytte mindst så mange pixels efter knaptryk, før gestussporing starter.",
+    "description": "Forklaring af mindste bevægelse for start i debugpanelet"
+  },
+  "debugSmoothingFactorHelp": {
+    "message": "Styrer udjævning af spor og genkendelsespunkter. Højere værdier reducerer rystelser, men kan blødgøre skarpe drej; lavere værdier reagerer hurtigere.",
+    "description": "Forklaring af udjævningsfaktor i debugpanelet"
+  },
+  "debugConsoleLogHelp": {
+    "message": "Aktiver detaljerede udvidelseslogge i DevTools-konsollen til fejlfinding.",
+    "description": "Forklaring af konsollogge i debugpanelet"
   },
   "debugLatestGestureInfo": {
     "message": "Seneste Gestus Information",
@@ -850,10 +1386,6 @@
   "debugMergedDirections": {
     "message": "Sammenlagte Retninger",
     "description": "Debug panel merged directions"
-  },
-  "debugDirectionDistances": {
-    "message": "Retningsafstande",
-    "description": "Debug panel direction distances"
   },
   "debugFinalResult": {
     "message": "Endelig Resultat",
@@ -927,9 +1459,17 @@
     "message": "Vis Tab Antal",
     "description": "Show tab count badge option"
   },
-  "splitViewAction": {
-    "message": "Opdelt visning",
-    "description": "Åbn i opdelt visningsvindue"
+  "unlockPageRestrictions": {
+    "message": "Lås kopiér/indsæt/højreklik og faneovervågning op",
+    "description": "Setting: unlock page interaction limits"
+  },
+  "unlockPageRestrictionsTitle": {
+    "message": "Fjerner almindelige blokeringer af kopi, indsæt, kontekstmenu og markering; reducerer blur/visibilitychange-sporing. Kører i sidekontekst med iframes og Shadow DOM. Genindlæs siden efter aktivering.",
+    "description": "Tooltip for unlock page restrictions"
+  },
+  "unlockPageRestrictionsOffReloadConfirm": {
+    "message": "Injiceret logik i åbne faner kan blive, indtil du genindlæser.\n\nGenindlæs den aktuelle fane nu?",
+    "description": "Body text for unlock-off confirmation dialog"
   },
   "splitViewLeft": {
     "message": "Opdel - venstre",
@@ -946,5 +1486,165 @@
   "splitViewDown": {
     "message": "Opdel - bund",
     "description": "Opdelt visning, nyt vindue i nederste halvdel"
+  },
+  "unlockPageRestrictionsOffTitle": {
+    "message": "Sideoplåsning slået fra",
+    "description": "Title for unlock-off confirmation dialog"
+  },
+  "unlockPageRestrictionsReloadTab": {
+    "message": "Genindlæs fane",
+    "description": "Reload tab button in unlock-off dialog"
+  },
+  "unlockPageRestrictionsNotNow": {
+    "message": "Ikke nu",
+    "description": "Dismiss unlock-off dialog without reload"
+  },
+  "welcomeBulletImagePreview": {
+    "message": "Billedforhåndsvisning: valgfri forstørret hover-forhåndsvisning og udvidet tilstand for komplekse layouts.",
+    "description": "Welcome page: image hover preview bullet"
+  },
+  "welcomeBulletPageUnlock": {
+    "message": "Sideoplåsning: valgfrit blødgør begrænsninger for kopier, indsæt, højreklik m.m. — slå til i indstillinger og genindlæs siden hvis du bliver bedt om det.",
+    "description": "Welcome page: page unlock bullet"
+  },
+  "welcomeBulletDisabledSites": {
+    "message": "Per website: domæner på listen deaktiverer samtidig bevægelser, Super Drag, popup og oplåsning.",
+    "description": "Welcome page: per-site disable bullet"
+  },
+  "welcomeBulletSplitScroll": {
+    "message": "Delt visning: når et link åbnes i delt layout, kan du synkronisere rulning mellem vinduerne (også vandret).",
+    "description": "Welcome page: split scroll sync bullet"
+  },
+  "welcomeBulletScreenshot": {
+    "message": "Skærmbilleder: synligt område, hele side og manuel rul-sammenføjning; sporområder, genveje, valgfri kopiering til udklipsholder, forhåndsvisning og lokal historik (0 = ubegrænset).",
+    "description": "Welcome page: screenshot feature bullet"
+  },
+  "welcomeTipScreenshot": {
+    "message": "Skærmbilleder er aktiveret som standard; tildel genveje til synligt område, hele side og rulning; sporområde, auto-kopiér, forhåndsvisning og historik er valgfrie.",
+    "description": "Welcome page: screenshot usage tip"
+  },
+  "trailColorPickerPresets": {
+    "message": "Forudindstillinger",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerRecent": {
+    "message": "Seneste",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerEyedropper": {
+    "message": "Pipette",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerEyedropperActive": {
+    "message": "Klik for at tage farve · hjul zoomer lup",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerSyncTrail": {
+    "message": "Gem som sporfarve",
+    "description": "Trail color picker UI"
+  },
+  "superDragCompassPosCompassHub": {
+    "message": "Trækpunkt",
+    "description": "Compass hub aligned to drag start"
+  },
+  "superDragCompassPosCompassScreenCenter": {
+    "message": "Skærmens midte",
+    "description": "Compass fixed at viewport center"
+  },
+  "superDragCompassPosCompassScreenTop": {
+    "message": "Op",
+    "description": "Compass fixed at top of viewport"
+  },
+  "superDragCompassPosCompassScreenRight": {
+    "message": "Højre",
+    "description": "Compass fixed at right of viewport"
+  },
+  "superDragCompassPosCompassScreenBottom": {
+    "message": "Ned",
+    "description": "Compass fixed at bottom of viewport"
+  },
+  "superDragCompassPosCompassScreenLeft": {
+    "message": "Venstre",
+    "description": "Compass fixed at left of viewport"
+  },
+  "superDragCompassPosCompassHidden": {
+    "message": "Skjult",
+    "description": "Do not show compass"
+  },
+  "addCurrentSiteToDisabledSites": {
+    "message": "Tilføj aktuelt websted",
+    "description": "Button: add the active tab domain to disabled sites"
+  },
+  "addCurrentSiteToDisabledSitesTitle": {
+    "message": "Føj den aktuelle fanes domæne til de deaktiverede websteder",
+    "description": "Tooltip for add-current-site button"
+  },
+  "addDisabledSite": {
+    "message": "Tilføj",
+    "description": "Button: add a typed disabled site entry"
+  },
+  "disabledSiteInputPlaceholder": {
+    "message": "Domæne eller fuld URL, f.eks. youtube.com",
+    "description": "Placeholder for the disabled site input"
+  },
+  "disabledSitesEmpty": {
+    "message": "Der er ingen deaktiverede websteder endnu.",
+    "description": "Empty state for disabled sites list"
+  },
+  "removeDisabledSite": {
+    "message": "Fjern dette websted",
+    "description": "Tooltip/aria label for remove disabled site button"
+  },
+  "disabledSiteInvalid": {
+    "message": "Indtast et gyldigt domæne eller en gyldig URL",
+    "description": "Error shown when disabled site input is invalid"
+  },
+  "disabledSiteAlreadyExists": {
+    "message": "Webstedet findes allerede",
+    "description": "Error shown when adding a duplicate disabled site"
+  },
+  "disabledSitesLimitReached": {
+    "message": "Grænsen for deaktiverede websteder er nået",
+    "description": "Error shown when disabled sites list reaches the maximum size"
+  },
+  "currentSiteUnsupported": {
+    "message": "Den aktuelle fane har intet understøttet domæne",
+    "description": "Error shown when current tab URL cannot be added to disabled sites"
+  },
+  "customKey": {
+    "message": "Brugerdefineret tast",
+    "description": "Custom trigger key option"
+  },
+  "previewTriggerMode": {
+    "message": "Udløsertilstand",
+    "description": "Popup view trigger mode setting"
+  },
+  "previewTriggerHold": {
+    "message": "Hold udløsertasten nede",
+    "description": "Hold trigger key option"
+  },
+  "previewTriggerDouble": {
+    "message": "Tryk to gange på udløsertasten",
+    "description": "Double-press trigger key option"
+  },
+  "previewCustomKey": {
+    "message": "Brugerdefineret tast",
+    "description": "Popup view custom trigger key setting"
+  },
+  "previewCustomKeyPlaceholder": {
+    "message": "Klik og tryk på en tast",
+    "description": "Popup view custom trigger key placeholder"
+  },
+  "previewCustomKeyTitle": {
+    "message": "Klik her, og tryk derefter på en tast uden modifikator. Tryk på Esc for at rydde.",
+    "description": "Popup view custom trigger key title"
+  },
+  "unlimited": {
+    "message": "Ubegrænset",
+    "description": "Unlimited value label"
+  },
+  "settingsFontSize": {
+    "message": "Skriftstørrelse i indstillinger",
+    "description": "Header button: adjust settings font size"
   }
 }

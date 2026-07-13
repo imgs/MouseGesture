@@ -4,7 +4,7 @@
     "description": "The name of the extension"
   },
   "extDesc": {
-    "message": "マウスジェスチャー、スーパードラッグ機能、およびポップアップビューをサポートするChrome/Edge拡張機能",
+    "message": "マウスジェスチャー、スーパードラッグ、画像・リンクのプレビューなど。",
     "description": "The description of the extension"
   },
   "title": {
@@ -35,13 +35,21 @@
     "message": "左にドラッグ",
     "description": "Drag left action"
   },
-  "openInForeground": {
-    "message": "フォアグラウンドでリンクを開く",
-    "description": "Open link in foreground"
+  "dragUpRight": {
+    "message": "右上にドラッグ",
+    "description": "Super drag diagonal direction"
   },
-  "openInBackground": {
-    "message": "バックグラウンドでリンクを開く",
-    "description": "Open link in background"
+  "dragDownRight": {
+    "message": "右下にドラッグ",
+    "description": "Super drag diagonal direction"
+  },
+  "dragDownLeft": {
+    "message": "左下にドラッグ",
+    "description": "Super drag diagonal direction"
+  },
+  "dragUpLeft": {
+    "message": "左上にドラッグ",
+    "description": "Super drag diagonal direction"
   },
   "superDragDescription": {
     "message": "スーパードラッグはリンク、画像、選択テキストに対応しています。各ジェスチャー方向（上/下/左/右）ごとに、フォアグラウンド、バックグラウンド、分割表示（左/右/上/下）を含む開き方を設定できます。",
@@ -65,51 +73,75 @@
   },
   "downThenRight": {
     "message": "下から右",
-    "description": "Down then right gesture"
+    "description": "下から右のジェスチャー"
   },
   "leftThenUp": {
     "message": "左から上",
-    "description": "Left then up gesture"
+    "description": "左から上のジェスチャー"
   },
   "rightThenUp": {
     "message": "右から上",
-    "description": "Right then up gesture"
+    "description": "右から上のジェスチャー"
   },
   "rightThenDown": {
     "message": "右から下",
-    "description": "Right then down gesture"
+    "description": "右から下のジェスチャー"
   },
   "upThenLeft": {
     "message": "上から左",
-    "description": "Up then left gesture"
+    "description": "上から左のジェスチャー"
   },
   "upThenRight": {
     "message": "上から右",
-    "description": "Up then right gesture"
+    "description": "上から右のジェスチャー"
   },
   "downThenLeft": {
     "message": "下から左",
-    "description": "Down then left gesture"
+    "description": "下から左のジェスチャー"
   },
   "leftThenDown": {
     "message": "左から下",
-    "description": "Left then down gesture"
+    "description": "左から下のジェスチャー"
   },
   "upThenDown": {
     "message": "上から下",
-    "description": "Up then down gesture"
+    "description": "上から下のジェスチャー"
   },
   "downThenUp": {
     "message": "下から上",
-    "description": "Down then up gesture"
+    "description": "下から上のジェスチャー"
   },
   "leftThenRight": {
     "message": "左から右",
-    "description": "Left then right gesture"
+    "description": "左から右のジェスチャー"
   },
   "rightThenLeft": {
     "message": "右から左",
-    "description": "Right then left gesture"
+    "description": "右から左のジェスチャー"
+  },
+  "rightHoldWheelUp": {
+    "message": "右ボタン押しながらホイール上",
+    "description": "右ボタン押しながらホイール上"
+  },
+  "rightHoldWheelDown": {
+    "message": "右ボタン押しながらホイール下",
+    "description": "右ボタン押しながらホイール下"
+  },
+  "leftHoldWheelUp": {
+    "message": "左ボタン長押し＋ホイール上",
+    "description": "左ボタンを押したままホイール上へ"
+  },
+  "leftHoldWheelDown": {
+    "message": "左ボタン長押し＋ホイール下",
+    "description": "左ボタンを押したままホイール下へ"
+  },
+  "rightHoldLeftClick": {
+    "message": "右ボタン押しながら左クリック",
+    "description": "右ボタン押しながら左クリック"
+  },
+  "leftHoldRightClick": {
+    "message": "左押しながら右クリック",
+    "description": "左ボタンを押したまま右クリック"
   },
   "back": {
     "message": "戻る",
@@ -158,6 +190,18 @@
   "prevTab": {
     "message": "前のタブ",
     "description": "Previous tab action"
+  },
+  "previousActiveTab": {
+    "message": "前回のアクティブタブ",
+    "description": "ジェスチャー操作: 直前にアクティブだったタブへ切り替え"
+  },
+  "goToParentUrl": {
+    "message": "親 URL",
+    "description": "ジェスチャー操作: 親 URL パスへ移動"
+  },
+  "goToRootUrl": {
+    "message": "ルート URL",
+    "description": "ジェスチャー操作: サイトのルート URL へ移動"
   },
   "nextTab": {
     "message": "次のタブ",
@@ -211,6 +255,14 @@
     "message": "フルスクリーン切り替え",
     "description": "Toggle fullscreen action"
   },
+  "zoomIn": {
+    "message": "ページを拡大",
+    "description": "現在のタブのズームを上げる"
+  },
+  "zoomOut": {
+    "message": "ページを縮小",
+    "description": "現在のタブのズームを下げる"
+  },
   "closeTabsToLeft": {
     "message": "左のタブを閉じる",
     "description": "Close tabs to left action"
@@ -218,6 +270,474 @@
   "reloadAllTabs": {
     "message": "すべてのタブを再読み込み",
     "description": "Reload all tabs action"
+  },
+  "stopLoadingAllTabs": {
+    "message": "すべてのタブの読み込みを停止",
+    "description": "Stop loading in all tabs"
+  },
+  "screenshotRegion": {
+    "message": "スクリーンショット（軌跡領域）",
+    "description": "Screenshot gesture action"
+  },
+  "screenshotRegionOrLink": {
+    "message": "スクリーンショットまたはリンクを開く",
+    "description": "Trail region hint when links are inside selection"
+  },
+  "trailRegionChooseTitle": {
+    "message": "選択範囲内のリンク — 撮影または開く",
+    "description": "Trail region chooser dialog title"
+  },
+  "trailRegionLinkSingle": {
+    "message": "リンク 1 件",
+    "description": "Trail region link count"
+  },
+  "trailRegionLinkMultiple": {
+    "message": "リンク {count} 件",
+    "description": "Trail region link count"
+  },
+  "trailRegionActionScreenshot": {
+    "message": "スクリーンショット (S)",
+    "description": "Trail region chooser button"
+  },
+  "trailRegionActionOpenLink": {
+    "message": "新しいタブで開く (O)",
+    "description": "Trail region chooser button"
+  },
+  "trailRegionActionOpenLinks": {
+    "message": "新しいタブで開く (O)",
+    "description": "Trail region chooser button"
+  },
+  "trailRegionActionOpenSelected": {
+    "message": "選択した {n} 件を新しいタブで開く (O)",
+    "description": "Trail region open checked links"
+  },
+  "trailRegionActionOpenNone": {
+    "message": "選択項目を開く (O)",
+    "description": "Trail region open button when none checked"
+  },
+  "trailRegionActionCopy": {
+    "message": "コピー (C)",
+    "description": "Trail region chooser copy button"
+  },
+  "trailRegionActionCopySelected": {
+    "message": "選択した {n} 件をコピー (C)",
+    "description": "Trail region copy checked links"
+  },
+  "trailRegionActionCopyNone": {
+    "message": "コピー (C)",
+    "description": "Trail region copy button when none checked"
+  },
+  "trailRegionCopyFailed": {
+    "message": "コピーに失敗しました",
+    "description": "Trail region copy to clipboard failed"
+  },
+  "trailRegionSelectAll": {
+    "message": "すべて選択",
+    "description": "Trail region link list select all"
+  },
+  "trailRegionNoLinkSelected": {
+    "message": "リンクを 1 つ以上選択してください",
+    "description": "Trail region no selection hint"
+  },
+  "trailRegionChooseHint": {
+    "message": "Esc でキャンセル · コピー/開くリンクにチェック · 端をドラッグしてサイズ変更",
+    "description": "Trail region chooser footer"
+  },
+  "trailRegionLinkOpened": {
+    "message": "リンクを新しいタブで開きました",
+    "description": "Trail region open link feedback"
+  },
+  "trailRegionLinksOpened": {
+    "message": "リンクを新しいタブで開きました",
+    "description": "Trail region open links feedback"
+  },
+  "trailRegionLinksTruncated": {
+    "message": "最初の {n} 件のリンクのみ開きました",
+    "description": "Trail region open links cap"
+  },
+  "screenshotScrollCaptureActive": {
+    "message": "手動でページをスクロールし、同じショートカットまたは Esc で終了して結合",
+    "description": "Manual scroll capture in progress"
+  },
+  "screenshotCopied": {
+    "message": "スクリーンショットをクリップボードにコピーしました",
+    "description": "Screenshot feedback"
+  },
+  "screenshotFailed": {
+    "message": "スクリーンショットに失敗しました",
+    "description": "Screenshot feedback"
+  },
+  "screenshotNeedTrail": {
+    "message": "領域を選択するには、もっと長い軌跡を描いてください",
+    "description": "Screenshot feedback"
+  },
+  "screenshotUnavailable": {
+    "message": "スクリーンショットモジュールを利用できません",
+    "description": "Screenshot feedback"
+  },
+  "screenshotTopFrameOnly": {
+    "message": "ページ全体のスクリーンショットはメインフレームのみ",
+    "description": "Screenshot feedback"
+  },
+  "screenshotFeature": {
+    "message": "スクリーンショット",
+    "description": "Screenshot settings section title"
+  },
+  "enableScreenshotFeature": {
+    "message": "スクリーンショットを有効化",
+    "description": "Master toggle for screenshot feature"
+  },
+  "enableScreenshotTrailCapture": {
+    "message": "軌跡領域（ループ / 自己交差）",
+    "description": "Capture when trail loops or crosses; skipped if another gesture action matches"
+  },
+  "enableScreenshotClipboard": {
+    "message": "自動的にクリップボードへコピー",
+    "description": "Copy screenshot to clipboard after capture"
+  },
+  "enableScreenshotPreview": {
+    "message": "撮影後にプレビューを表示",
+    "description": "Open preview window when a screenshot is captured"
+  },
+  "enableScreenshotHistory": {
+    "message": "スクリーンショット履歴を保存",
+    "description": "Keep captured screenshots in local history"
+  },
+  "screenshotHistoryMaxCount": {
+    "message": "履歴の上限",
+    "description": "Maximum screenshot history entries to keep"
+  },
+  "screenshotHistoryMaxCountHint": {
+    "message": "0 = 無制限；1–200 で上限超過時に古い項目を削除",
+    "description": "Screenshot history limit hint"
+  },
+  "screenshotHistoryUnlimited": {
+    "message": "無制限",
+    "description": "Label when screenshot history limit is 0"
+  },
+  "screenshotHistoryView": {
+    "message": "履歴を表示",
+    "description": "Open screenshot history window"
+  },
+  "screenshotHistoryTitle": {
+    "message": "スクリーンショット履歴",
+    "description": "Screenshot history window title"
+  },
+  "screenshotHistoryEmpty": {
+    "message": "スクリーンショットはまだありません",
+    "description": "Empty screenshot history state"
+  },
+  "screenshotHistoryClearAll": {
+    "message": "すべて削除",
+    "description": "Delete all screenshot history entries"
+  },
+  "screenshotHistoryClearConfirm": {
+    "message": "スクリーンショット履歴をすべて削除しますか？",
+    "description": "Confirm clearing screenshot history"
+  },
+  "screenshotHistoryDelete": {
+    "message": "削除",
+    "description": "Delete one screenshot history entry"
+  },
+  "screenshotHistoryPinToPage": {
+    "message": "ページに固定",
+    "description": "Pin history thumbnail onto the web page"
+  },
+  "screenshotHistoryPinFailed": {
+    "message": "ページに固定できません（対象タブを開くか、このサイトを許可してください）。",
+    "description": "Error when pinning from screenshot history"
+  },
+  "screenshotHistoryCount": {
+    "message": "$1 件",
+    "description": "Number of items in screenshot history",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "screenshotHistoryModeViewport": {
+    "message": "表示領域",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeFullPage": {
+    "message": "ページ全体",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeRegion": {
+    "message": "領域",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeScroll": {
+    "message": "手動スクロール",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeUnknown": {
+    "message": "スクリーンショット",
+    "description": "Screenshot history capture mode fallback label"
+  },
+  "screenshotDone": {
+    "message": "スクリーンショット完了",
+    "description": "Hint when capture finished without clipboard copy"
+  },
+  "screenshotPreviewTitle": {
+    "message": "スクリーンショットプレビュー",
+    "description": "Screenshot preview window title"
+  },
+  "screenshotPreviewClose": {
+    "message": "閉じる",
+    "description": "Close screenshot preview window"
+  },
+  "screenshotPreviewCopyAgain": {
+    "message": "コピー",
+    "description": "Copy screenshot to clipboard from preview window"
+  },
+  "screenshotPreviewSave": {
+    "message": "ファイルに保存",
+    "description": "Save annotated screenshot to disk"
+  },
+  "screenshotPreviewSaved": {
+    "message": "保存しました",
+    "description": "Screenshot file save succeeded"
+  },
+  "screenshotPreviewPinToPage": {
+    "message": "ページに固定",
+    "description": "Pin annotated screenshot onto the source web page"
+  },
+  "screenshotPreviewPinned": {
+    "message": "固定済み",
+    "description": "Screenshot pin placed on page"
+  },
+  "screenshotPreviewPinning": {
+    "message": "固定中…",
+    "description": "Screenshot pin in progress"
+  },
+  "screenshotPinTitle": {
+    "message": "スクリーンショット",
+    "description": "Title on pinned screenshot sticker"
+  },
+  "screenshotPinClose": {
+    "message": "固定を解除",
+    "description": "Close button on pinned screenshot"
+  },
+  "screenshotPinResize": {
+    "message": "サイズ変更",
+    "description": "Resize handle on pinned screenshot"
+  },
+  "screenshotPinZoomFit": {
+    "message": "フィット",
+    "description": "Fit pinned screenshot to view"
+  },
+  "screenshotPinZoomOriginal": {
+    "message": "1:1",
+    "description": "Show pinned screenshot at original pixel size"
+  },
+  "screenshotPinOrderLabel": {
+    "message": "固定 $1$",
+    "description": "Pinned screenshot order number",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "screenshotPreviewLoadFailed": {
+    "message": "プレビューを読み込めませんでした",
+    "description": "Screenshot preview load error"
+  },
+  "screenshotPreviewZoomFit": {
+    "message": "フィット",
+    "description": "Fit screenshot to preview window"
+  },
+  "screenshotPreviewZoomFitTitle": {
+    "message": "ウィンドウに合わせる",
+    "description": "Tooltip for fit zoom button"
+  },
+  "screenshotPreviewZoomOneToOne": {
+    "message": "1:1",
+    "description": "Actual-size zoom button label"
+  },
+  "screenshotPreviewZoomOneToOneTitle": {
+    "message": "実際のサイズ (1:1)",
+    "description": "Tooltip for 1:1 zoom button"
+  },
+  "screenshotPreviewZoomLevel": {
+    "message": "ズーム $1$%",
+    "description": "Current zoom percentage in preview",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "screenshotAnnotHand": {
+    "message": "手のひら（移動）",
+    "description": "Pan the preview by dragging"
+  },
+  "screenshotAnnotPen": {
+    "message": "鉛筆",
+    "description": "Annotation tool: freehand"
+  },
+  "screenshotAnnotArrow": {
+    "message": "矢印（Shift: 水平/垂直）",
+    "description": "Annotation tool: arrow; Shift constrains to horizontal or vertical"
+  },
+  "screenshotAnnotLine": {
+    "message": "直線（Shift: 水平/垂直）",
+    "description": "Annotation tool: line; Shift constrains to horizontal or vertical"
+  },
+  "screenshotAnnotRect": {
+    "message": "長方形（Shift: 正方形）",
+    "description": "Annotation tool: rectangle; Shift draws a square"
+  },
+  "screenshotAnnotEllipse": {
+    "message": "楕円",
+    "description": "Annotation tool: ellipse"
+  },
+  "screenshotAnnotRoundRect": {
+    "message": "角丸長方形",
+    "description": "Annotation tool: rounded rectangle"
+  },
+  "screenshotAnnotHighlighter": {
+    "message": "蛍光ペン",
+    "description": "Annotation tool: highlighter marker"
+  },
+  "screenshotAnnotHighlight": {
+    "message": "ハイライト枠",
+    "description": "Annotation tool: highlight rectangle"
+  },
+  "screenshotAnnotFillRect": {
+    "message": "塗りつぶし長方形",
+    "description": "Annotation tool: filled rectangle"
+  },
+  "screenshotAnnotFillEllipse": {
+    "message": "塗りつぶし楕円",
+    "description": "Annotation tool: filled ellipse"
+  },
+  "screenshotAnnotBlur": {
+    "message": "ぼかし",
+    "description": "Annotation tool: blur brush"
+  },
+  "screenshotAnnotArrow2": {
+    "message": "二重矢印（Shift: 水平/垂直）",
+    "description": "Annotation tool: line with arrowheads at both ends; Shift constrains H/V"
+  },
+  "screenshotAnnotNumber": {
+    "message": "番号スタンプ",
+    "description": "Annotation tool: sequential number markers"
+  },
+  "screenshotAnnotStampStart": {
+    "message": "開始番号",
+    "description": "Starting number for sequential stamps"
+  },
+  "screenshotAnnotStampNext": {
+    "message": "次の番号: $1$",
+    "description": "Next number stamp to place (tooltip)",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "screenshotAnnotCrop": {
+    "message": "切り抜き",
+    "description": "Annotation tool: crop image"
+  },
+  "screenshotAnnotCropApply": {
+    "message": "切り抜きを適用",
+    "description": "Confirm crop selection"
+  },
+  "screenshotAnnotCropCancel": {
+    "message": "キャンセル",
+    "description": "Cancel crop selection"
+  },
+  "screenshotAnnotText": {
+    "message": "テキスト",
+    "description": "Annotation tool: text"
+  },
+  "screenshotAnnotMosaic": {
+    "message": "モザイク",
+    "description": "Annotation tool: mosaic blur"
+  },
+  "screenshotAnnotEraser": {
+    "message": "消しゴム",
+    "description": "Annotation tool: eraser"
+  },
+  "screenshotAnnotSize": {
+    "message": "サイズ",
+    "description": "Annotation stroke size"
+  },
+  "screenshotAnnotResetAll": {
+    "message": "すべての編集をリセット",
+    "description": "Clear all annotations and restore original screenshot"
+  },
+  "screenshotAnnotStepCount": {
+    "message": "$1 / $2",
+    "description": "History step indicator: current / total"
+  },
+  "screenshotAnnotStepCountTitle": {
+    "message": "適用済み / 合計編集ステップ（0 = 元画像）",
+    "description": "Tooltip for history step indicator"
+  },
+  "screenshotAnnotUndo": {
+    "message": "元に戻す",
+    "description": "Undo annotation"
+  },
+  "screenshotAnnotRedo": {
+    "message": "やり直し",
+    "description": "Redo annotation"
+  },
+  "screenshotAnnotTextPlaceholder": {
+    "message": "ここに入力…",
+    "description": "Placeholder in inline text editor on screenshot preview"
+  },
+  "screenshotOptRegion": {
+    "message": "領域選択",
+    "description": "Screenshot bind row: keyboard drag rectangle region"
+  },
+  "screenshotOptViewport": {
+    "message": "表示領域",
+    "description": "Screenshot bind row: current visible tab area"
+  },
+  "screenshotOptFullPage": {
+    "message": "ページ全体",
+    "description": "Screenshot bind row: full page"
+  },
+  "screenshotOptScrollStitch": {
+    "message": "手動スクロール",
+    "description": "Screenshot bind row: manual scroll capture"
+  },
+  "screenshotOptOpenHistory": {
+    "message": "履歴ウィンドウを開く",
+    "description": "Screenshot bind row: keyboard shortcut to open screenshot history"
+  },
+  "screenshotHotkeyPressHint": {
+    "message": "ショートカット: 上の入力欄をクリックし、キー組み合わせを押す（Ctrl / Alt / Meta + 文字または数字、または F1–F12）。Esc でクリア。",
+    "description": "Screenshot section footer: hotkey binding help"
+  },
+  "screenshotHotkeyPlaceholder": {
+    "message": "クリックして設定",
+    "description": "Placeholder in empty screenshot hotkey fields"
+  },
+  "screenshotRegionPickHint": {
+    "message": "ドラッグして領域を選択。Esc でキャンセル。",
+    "description": "Hint while keyboard region picker is active"
+  },
+  "screenshotRegionPickFooterHint": {
+    "message": "領域ショートカット: 矩形をドラッグして離す。リンクがある場合は撮影または新しいタブで開く。Esc でキャンセル。",
+    "description": "Screenshot section footer: keyboard region picker help"
+  },
+  "screenshotRegionTooSmall": {
+    "message": "選択が小さすぎます — もっと大きな領域をドラッグしてください",
+    "description": "Region picker: minimum size not met"
+  },
+  "screenshotGestureIntersectHint": {
+    "message": "軌跡領域: 1 ループまたは 1 回の自己交差で離す。領域にリンクがある場合は撮影または新しいタブで開く。多数のループは落書き扱い。",
+    "description": "Screenshot section footer: trail region capture help"
   },
   "togglePinTab": {
     "message": "タブを固定/固定解除",
@@ -244,16 +764,16 @@
     "description": "Settings title"
   },
   "customizedBehavior": {
-    "message": "ブロックリスト",
-    "description": "Block list section title"
+    "message": "無効化するサイト",
+    "description": "Section title for the per-site disable list"
   },
   "disableMouseGesturesForSites": {
-    "message": "これらのサイトでマウスジェスチャーとスーパードラッグを無効にする",
-    "description": "Label for the list of sites where gestures and super drag are disabled"
+    "message": "一覧のドメインで拡張機能を無効にする",
+    "description": "Subtitle for Disabled sites section"
   },
   "disabledSitesHint": {
-    "message": "1行に1サイト。ドメイン（例：youtube.com）または完全なURL。",
-    "description": "Hint for the disabled sites textarea"
+    "message": "対象: ジェスチャー、スーパードラッグ、リンク/画像プレビュー、スクリーンショット、ページ制限解除。現在のサイトを追加するかドメイン/URLを入力し、削除マークをクリックして削除します。",
+    "description": "Short hint explaining which features the Disabled sites list affects"
   },
   "enableGesture": {
     "message": "マウスジェスチャーを有効化",
@@ -279,6 +799,26 @@
     "message": "スーパードラッグを有効化",
     "description": "Enable super drag option"
   },
+  "superDragCompassPosition": {
+    "message": "8方向コンパス",
+    "description": "Super drag compass display and position"
+  },
+  "superDragCompassPosCompassAbove": {
+    "message": "ドラッグ点の上",
+    "description": "Compass above drag start, centered horizontally"
+  },
+  "superDragCompassPosCompassRight": {
+    "message": "ドラッグ点の右",
+    "description": "Compass to the right of drag start, vertically centered"
+  },
+  "superDragCompassPosCompassBelow": {
+    "message": "ドラッグ点の下",
+    "description": "Compass below drag start, centered horizontally"
+  },
+  "superDragCompassPosCompassLeft": {
+    "message": "ドラッグ点の左",
+    "description": "Compass to the left of drag start, vertically centered"
+  },
   "enableDragTextSearch": {
     "message": "ドラッグテキスト検索を有効化",
     "description": "Enable drag text search option"
@@ -287,9 +827,17 @@
     "message": "ドラッグで画像/ファイルを自動ダウンロード",
     "description": "When the drag target is an image or other downloadable file, start download automatically"
   },
+  "enableImageDrag": {
+    "message": "画像のドラッグを有効にする",
+    "description": "Control image super drag independently from image preview"
+  },
   "enableImagePreview": {
     "message": "画像プレビューを有効化",
     "description": "Enable image preview option"
+  },
+  "enableImagePreviewEnhanced": {
+    "message": "拡張画像プレビュー",
+    "description": "Support transparent overlay, background-image, parent lookup, etc."
   },
   "enableDuplicateCheck": {
     "message": "重複タブを検出",
@@ -302,10 +850,6 @@
   "enableSmoothScroll": {
     "message": "スムーススクロールを有効にする",
     "description": "Enable smooth scrolling for gesture actions"
-  },
-  "save": {
-    "message": "設定が適用されました",
-    "description": "Save settings button"
   },
   "reset": {
     "message": "リセット",
@@ -363,14 +907,6 @@
     "message": "設定のリセットに失敗しました",
     "description": "Reset settings error notification"
   },
-  "themeLight": {
-    "message": "ライト",
-    "description": "Light theme"
-  },
-  "themeDark": {
-    "message": "ダーク",
-    "description": "Dark theme"
-  },
   "buyMeACoffee": {
     "message": "コーヒーをご支援ください",
     "description": "Donation button"
@@ -379,17 +915,33 @@
     "message": "テーマを切り替え",
     "description": "Toggle theme button"
   },
-  "toggleLanguage": {
-    "message": "言語を切り替え",
-    "description": "Toggle language button"
+  "openDetachedPopupTitle": {
+    "message": "設定をサイドパネルで開く（利用不可の場合は別ウィンドウ）",
+    "description": "ヘッダーボタン：サイドパネルまたは切り離したウィンドウで設定を開く"
+  },
+  "openDetachedWindowFromSidePanelTitle": {
+    "message": "別ウィンドウで開く（ブラウザと並べて表示）",
+    "description": "サイドパネル：切り離したウィンドウで開きレイアウト調整"
+  },
+  "openOptionsPageTitle": {
+    "message": "オプションページを開く",
+    "description": "ヘッダーボタン: 拡張機能のオプションページを開く"
   },
   "donationTooltip": {
     "message": "この作品を気に入っていただけましたら、ぜひサポートをお願いします。ありがとうございます :)",
     "description": "Donation tooltip"
   },
   "rightButtonHint": {
-    "message": "マウスの右ボタンを押し続けてください",
+    "message": "右長押し（軌道/ホイール/クリック）· 左長押し（ホイール）",
     "description": "Right mouse button hint"
+  },
+  "builtInGesturesListExpandHint": {
+    "message": "クリックですべてのジェスチャーを表示",
+    "description": "Tooltip on built-in gestures subtitle when list is collapsed"
+  },
+  "builtInGesturesListCollapseHint": {
+    "message": "クリックでジェスチャー一覧を折りたたむ",
+    "description": "Tooltip on built-in gestures subtitle when list is expanded"
   },
   "leftButtonHint": {
     "message": "マウスの左ボタンを押し続けてください",
@@ -403,17 +955,45 @@
     "message": "バックグラウンドで開く",
     "description": "Open in background action"
   },
+  "popupViewAction": {
+    "message": "ポップアップビュー",
+    "description": "Super drag action: open target in popup view"
+  },
+  "incognitoAction": {
+    "message": "シークレットウィンドウで開く",
+    "description": "Open in incognito/private window"
+  },
+  "enableSplitScrollSync": {
+    "message": "分割ウィンドウ間で縦横スクロールを同期",
+    "description": "分割表示中は、両ウィンドウの縦横スクロール位置を揃えます"
+  },
   "copyAction": {
     "message": "コピー",
     "description": "Copy selected text or link URL to clipboard"
+  },
+  "downloadAction": {
+    "message": "ダウンロード",
+    "description": "Super drag action: download target"
   },
   "copiedToClipboard": {
     "message": "クリップボードにコピーしました",
     "description": "Hint after copy action"
   },
-  "dragSearchEngine": {
-    "message": "ドラッグ検索エンジンURL",
-    "description": "Drag search engine URL setting"
+  "dragSearchEngineSlotLabel": {
+    "message": "編集項目",
+    "description": "Label for drag search engine slot selector"
+  },
+  "dragSearchSlotDefault": {
+    "message": "既定（フォールバック）",
+    "description": "Default search URL slot in drag search editor"
+  },
+  "dragSearchEngineUrlForSlot": {
+    "message": "検索エンジン URL",
+    "description": "Label for single drag search URL field"
+  },
+  "dragSearchEnginePerDirectionHelp": {
+    "message": "一覧で「既定」またはドラッグ方向を選び、対応する URL を編集します。方向を空にすると既定を使います。テキストをドラッグした検索のみ対象です。",
+    "description": "Help text for unified drag search engine editor"
   },
   "linkPreview": {
     "message": "ポップアップビュー",
@@ -424,7 +1004,7 @@
     "description": "Quick navigation hover tooltip"
   },
   "linkPreviewHint": {
-    "message": "ホバー + キーでポップアップを表示",
+    "message": "ホバーしてトリガーを使うとポップアップを表示",
     "description": "Popup view hint"
   },
   "enableLinkPreview": {
@@ -495,28 +1075,52 @@
     "message": "検索語に{q}を使用してください。例の形式:",
     "description": "Search engine examples description"
   },
+  "searchExampleUrlClickHint": {
+    "message": "例の URL をクリックすると上の入力欄に入力して保存します",
+    "description": "Tooltip for example search engine URLs (click to fill)"
+  },
+  "searchEngineExamplesUrlClickHint": {
+    "message": "ヒント: 例の URL をクリックすると上の入力欄に入力して保存します。",
+    "description": "Visible hint under search engine examples (click URL to fill field above and save)"
+  },
   "googleExample": {
-    "message": "Google検索: https://www.google.co.jp/search?q={q}",
+    "message": "Google検索:",
+    "description": "Google search example"
+  },
+  "googleExampleUrl": {
+    "message": "https://www.google.co.jp/search?q={q}",
     "description": "Google search example"
   },
   "googleTranslateExample": {
-    "message": "Google翻訳: https://translate.google.co.jp/?sl=auto&tl=ja&text={q}&op=translate",
+    "message": "Google翻訳:",
+    "description": "Google translate example"
+  },
+  "googleTranslateExampleUrl": {
+    "message": "https://translate.google.co.jp/?sl=auto&tl=ja&text={q}&op=translate",
     "description": "Google translate example"
   },
   "localSearchExample": {
-    "message": "Yahoo Japan検索: https://search.yahoo.co.jp/search?p={q}",
+    "message": "Yahoo Japan検索:",
+    "description": "Local search example"
+  },
+  "localSearchExampleUrl": {
+    "message": "https://search.yahoo.co.jp/search?p={q}",
     "description": "Local search example"
   },
   "bingExample": {
-    "message": "Bing検索: https://www.bing.com/search?q={q}&setlang=ja",
+    "message": "Bing検索:",
+    "description": "Bing search example"
+  },
+  "bingExampleUrl": {
+    "message": "https://www.bing.com/search?q={q}&setlang=ja",
     "description": "Bing search example"
   },
   "wheelTip": {
-    "message": "マウスホイールで値を調整してください",
+    "message": "この行に約1.5秒マウスを置いてからホイールで調整",
     "description": "Wheel tip"
   },
   "modifierKeyDelayTip": {
-    "message": "トリガーキー使用時、最大遅延は300ミリ秒に制限されます",
+    "message": "トリガー条件を満たした後に遅延が始まります。誤表示を防ぐには値を大きくしてください。",
     "description": "Modifier key delay tip"
   },
   "welcomeTitle": {
@@ -524,12 +1128,8 @@
     "description": "Welcome page title"
   },
   "welcomeDescription": {
-    "message": "マウスジェスチャー拡張機能をインストールしていただき、ありがとうございます！この拡張機能は、ウェブをより効率的に閲覧できるよう、豊富なマウスジェスチャー機能、インテリジェントなタブ管理、ポップアップ表示機能、そして向上した視覚的体験を提供します。ジェスチャー認識アルゴリズムをエラー耐性を高めて最適化し、ジェスチャーが完璧に描かれていなくても正しく認識されるようにしました。新しいポップアップウィンドウ機能により、タブを切り替えることなくポップアップウィンドウでリンク内容を表示できます。この拡張機能は29言語とライト/ダークテーマにも対応しており、より良いユーザー体験を実現します。",
+    "message": "マウスジェスチャーをインストールいただきありがとうございます。右ボタンを押しながらドラッグで戻る・進む、タブ操作、スクロールなどが行えます。右または左を押したままホイール、および設定で定義できるその他の組み合わせでも追加のショートカットに使えます。認識はやさしく、ページ読み込み中も利用できます。スーパードラッグはリンク・画像・選択テキストに対応し、方向ごとに前面・背面・分割（上下左右）・クリップボードへコピーなどを設定できます。画像やファイルのドラッグでは自動ダウンロードも可能です。テキスト検索は既定の検索URLに加え、方向別URLも設定できます。ポップアップビューは、リンクにカーソルを置いたままトリガーキー（既定はShift）で移動可能なプレビューを開け、選択テキストの即検索にも対応します。画像ホバー拡大プレビュー（拡張モード付き）、ウィンドウ間の重複タブ検出と自動閉じ、スムーズスクロール、ツールバーのタブ数バッジ、コピーや右クリックを制限するサイト向けのページ解除もオプションで利用できます。設定はツールバーのポップアップ、対応ブラウザのサイドパネル、または別ウィンドウから開け、設定のエクスポート／インポート、アカウント同期に対応。29言語とライト／ダークテーマです。",
     "description": "Welcome page description"
-  },
-  "gesturesDescription": {
-    "message": "以下は、マウス右ボタンでドラッグして使用できる事前設定されたマウスジェスチャーです:",
-    "description": "Gestures description"
   },
   "extensionName": {
     "message": "マウスジェスチャー拡張機能",
@@ -539,88 +1139,48 @@
     "message": "コア機能",
     "description": "Core features title"
   },
-  "utilitiesFeatures": {
-    "message": "ユーティリティツール",
-    "description": "Utilities features title"
+  "welcomeCoreGestureBlock": {
+    "message": "マウスジェスチャー：右ボタンを押しながらドラッグでパスジェスチャー。右または左を押したままのホイールと、右を押したままの左右クリックの組み合わせにも対応し、設定でさまざまなアクションに割り当て可能。ストローク認識はやさしく、読み込み中も利用できます。",
+    "description": "Welcome page: core features gesture summary"
+  },
+  "welcomeCoreSuperDragBlock": {
+    "message": "スーパードラッグ：リンクや画像を新しいタブへドラッグ、選択テキストをドラッグして検索。ドラッグ方向の設定でタブの開き方を決められ、既定はバックグラウンドで開きます。",
+    "description": "Welcome page: core features super drag summary"
+  },
+  "welcomeCorePopupViewBlock": {
+    "message": "ポップアップビュー：トリガーキー（既定Shift）を押しながらリンクにホバーすると、小さなウィンドウで先のページをプレビュー。テキスト選択後にトリガーキーを押すと、ポップアップで即座に検索。検索エンジンはカスタム可能です。",
+    "description": "Welcome page: core features popup view summary"
   },
   "usageTips": {
     "message": "使用方法のヒント",
     "description": "Usage tips title"
   },
-  "smartGestureRecognition": {
-    "message": "スマートジェスチャー認識: 不完全でもジェスチャーを正しく識別し、ページ読み込み中でも動作します",
-    "description": "Smart gesture recognition description"
-  },
-  "tabManagementTitle": {
-    "message": "タブ管理",
-    "description": "Tab management title"
-  },
-  "tabManagementDesc": {
-    "message": ": スマート重複検出、オプションの自動クローズ、定期的なメモリ最適化",
-    "description": "Tab management description"
-  },
-  "superDragTitle": {
-    "message": "スーパードラッグ",
-    "description": "Super drag title"
-  },
-  "superDragDesc": {
-    "message": ": リンクと画像を新しいタブにドラッグ、選択したテキストをドラッグして検索",
-    "description": "Super drag description"
-  },
-  "linkPreviewTitle": {
-    "message": "ポップアップビュー",
-    "description": "Link preview title"
-  },
-  "linkPreviewDesc": {
-    "message": ": リンクにマウスオーバーしながら修飾キー（デフォルト: Shift）を押すとポップアップウィンドウでターゲットページをプレビューできます",
-    "description": "Link preview description"
-  },
-  "textSelectionPreview": {
-    "message": "テキストを選択して修飾キーを押すと、ポップアップウィンドウで即座に検索できます。カスタム検索エンジンサポート付き",
-    "description": "Text selection preview description"
-  },
   "previewTip": {
-    "message": "複数のポップアップウィンドウを同時に開くことができます",
+    "message": "比較のため、複数のポップアッププレビューを同時に開いたままにできます。",
     "description": "Preview tip"
-  },
-  "dragDirection": {
-    "message": "タブの開き方を決めるドラッグ方向をカスタマイズ: デフォルトではバックグラウンドで開く",
-    "description": "Drag direction description"
   },
   "debugPanelTitle": {
     "message": "マウスジェスチャーデバッグ情報",
     "description": "Debug panel title"
   },
   "debugPanelDesc": {
-    "message": ": Alt+Dで開く、リアルタイムでジェスチャー情報を分析、状態を維持",
+    "message": "Alt+D でデバッグパネルを開き、ジェスチャ情報をリアルタイムで分析し、状態を保持します。",
     "description": "Debug panel description"
   },
-  "oneClickCopy": {
-    "message": "簡単な共有のためのデバッグ情報のワンクリックコピー、多言語サポート付き",
-    "description": "One click copy description"
-  },
-  "mediaPreview": {
-    "message": "強化されたメディアプレビュー: 改善された画像ホバーエフェクトと最適化されたビデオポスター画像",
-    "description": "Media preview description"
-  },
-  "adaptiveTheme": {
-    "message": "適応型テーマ: ページの背景に基づいて視覚スタイルを調整、ライト/ダークモードをサポート",
-    "description": "Adaptive theme description"
-  },
   "gestureTrail": {
-    "message": "カスタマイズ可能な色と幅で画面に表示されるジェスチャー軌跡",
+    "message": "画面上の軌跡とジェスチャヒント（オプション）。設定で色と太さを変更。",
     "description": "Gesture trail description"
   },
   "clickIcon": {
-    "message": "拡張機能アイコンをクリックして機能を有効/無効化、言語、テーマなどを設定",
+    "message": "ツールバー: コンパクトポップアップ、サイドパネル（Chrome/Edge）、または独立設定ウィンドウ。機能、言語、テーマ、エクスポート/インポート。",
     "description": "Click icon description"
   },
   "languageSupport": {
-    "message": "29言語をサポート、ブラウザ言語に自動適応",
+    "message": "29の表示言語。保存した設定を使うか、ブラウザの言語に合わせます。",
     "description": "Language support description"
   },
   "enableAutoClose": {
-    "message": "ブラウザリソース使用量を大幅に削減するため、重複タブの自動クローズ機能を有効化",
+    "message": "重複検出が有効な場合、繰り返し URL を自動的に閉じる（オプション）。",
     "description": "Enable auto close description"
   },
   "rightClickMacLinux": {
@@ -634,14 +1194,6 @@
   "duplicateTabsDetected": {
     "message": "$1個の重複タブが見つかりました",
     "description": "Duplicate tabs detected notification title"
-  },
-  "duplicateTabsCount": {
-    "message": "$1個の重複タブがあります",
-    "description": "Duplicate tabs count message"
-  },
-  "duplicateTabsSingle": {
-    "message": "1個の重複タブがあります",
-    "description": "Single duplicate tab message"
   },
   "autoClosedTabs": {
     "message": "$1個の重複タブを自動的に閉じました",
@@ -659,61 +1211,9 @@
     "message": "無題のタブ",
     "description": "Untitled tab"
   },
-  "morePages": {
-    "message": "...および他に$1ページ",
-    "description": "More pages tip"
-  },
-  "errorShowDuplicateTabs": {
-    "message": "重複タブ通知の表示エラー:",
-    "description": "Error showing duplicate tabs notification"
-  },
-  "errorSendCloseRequest": {
-    "message": "クローズリクエスト送信エラー:",
-    "description": "Error sending close request"
-  },
-  "errorCloseDuplicateTabs": {
-    "message": "重複タブのクローズエラー:",
-    "description": "Error closing duplicate tabs"
-  },
-  "errorSendIgnoreRequest": {
-    "message": "無視リクエスト送信エラー:",
-    "description": "Error sending ignore request"
-  },
-  "errorIgnoreDuplicateTabs": {
-    "message": "重複タブの無視エラー:",
-    "description": "Error ignoring duplicate tabs"
-  },
-  "errorUpdateDebugPanel": {
-    "message": "デバッグパネル更新エラー:",
-    "description": "Error updating debug panel"
-  },
   "errorDetectBackgroundColor": {
     "message": "背景色検出エラー:",
     "description": "Error detecting background color"
-  },
-  "errorDetectImageBorder": {
-    "message": "画像ボーダー半径検出エラー:",
-    "description": "Error detecting image border radius"
-  },
-  "errorSetMutationObserver": {
-    "message": "ミューテーションオブザーバー設定エラー:",
-    "description": "Error setting mutation observer"
-  },
-  "errorCheckElementVisibility": {
-    "message": "要素可視性チェックエラー:",
-    "description": "Error checking element visibility"
-  },
-  "errorProcessBorderRadius": {
-    "message": "ボーダー半径処理エラー:",
-    "description": "Error processing border radius"
-  },
-  "errorDetectImageBackground": {
-    "message": "画像背景検出エラー:",
-    "description": "Error detecting image background"
-  },
-  "errorShowAutoCloseNotification": {
-    "message": "自動クローズ成功通知表示エラー:",
-    "description": "Error showing auto-close success notification"
   },
   "noForwardPage": {
     "message": "履歴に進むページがありません",
@@ -743,10 +1243,6 @@
     "message": "無効なジェスチャー",
     "description": "Invalid gesture message"
   },
-  "nextPage": {
-    "message": "次のページ",
-    "description": "Next page action"
-  },
   "errorReadPixel": {
     "message": "ピクセル読み取りエラー:",
     "description": "Error reading pixel message"
@@ -758,10 +1254,6 @@
   "errorCanvasDraw": {
     "message": "キャンバス描画エラー:",
     "description": "Error drawing on canvas message"
-  },
-  "errorAccessIframe": {
-    "message": "iframeアクセスエラー:",
-    "description": "Error accessing iframe message"
   },
   "errorMutationObserver": {
     "message": "ミューテーションオブザーバー設定エラー:",
@@ -791,6 +1283,10 @@
     "message": "システム設定",
     "description": "Debug panel system settings section"
   },
+  "debugConsoleLog": {
+    "message": "コンソールログ",
+    "description": "Debug panel console log toggle label"
+  },
   "debugAngleThreshold": {
     "message": "角度しきい値",
     "description": "Debug panel angle threshold setting"
@@ -810,6 +1306,46 @@
   "debugMinGestureComplexity": {
     "message": "最小ジェスチャー複雑度",
     "description": "Debug panel minimum gesture complexity setting"
+  },
+  "debugMinMovementToStartGesture": {
+    "message": "開始までの最小移動量",
+    "description": "デバッグパネル設定: ジェスチャー追跡を開始する最小移動量"
+  },
+  "debugSmoothingFactor": {
+    "message": "スムージング係数",
+    "description": "デバッグパネル設定: 軌跡と認識のスムージング係数"
+  },
+  "debugAngleThresholdHelp": {
+    "message": "移動を水平または垂直として判定する厳しさを調整します。値を大きくするとより直線的な方向が必要になり、小さくすると斜めの動きも許容されます。",
+    "description": "デバッグパネルの角度しきい値ヘルプ"
+  },
+  "debugDirectionChangeThresholdHelp": {
+    "message": "方向変化検出の感度を調整します。値を小さくすると曲がりを検出しやすくなり、大きくすると小さな揺れを無視します。",
+    "description": "デバッグパネルの方向変化しきい値ヘルプ"
+  },
+  "debugMinGestureDistanceHelp": {
+    "message": "ジェスチャーとして認識する前に必要な合計移動距離です。大きくすると誤発動を減らせます。",
+    "description": "デバッグパネルの最小ジェスチャー距離ヘルプ"
+  },
+  "debugMinDirectionSegmentLengthHelp": {
+    "message": "方向認識に使う移動セグメントの最小長です。大きくすると短い揺れを除外し、小さくすると短いジェスチャーに対応します。",
+    "description": "デバッグパネルの最小方向セグメント長ヘルプ"
+  },
+  "debugMinGestureComplexityHelp": {
+    "message": "軌跡を落書きまたは無効として扱う方向複雑度のしきい値です。値を大きくするとより多くの曲がりを許容します。",
+    "description": "デバッグパネルのジェスチャー複雑度ヘルプ"
+  },
+  "debugMinMovementToStartGestureHelp": {
+    "message": "ボタン押下後、ジェスチャー追跡を開始する前にポインターが最低限移動する必要があるピクセル数です。",
+    "description": "デバッグパネルの開始までの最小移動量ヘルプ"
+  },
+  "debugSmoothingFactorHelp": {
+    "message": "軌跡と認識点のスムージングを調整します。値を大きくすると揺れを減らせますが鋭い曲がりが丸くなり、小さくすると反応が速くなります。",
+    "description": "デバッグパネルのスムージング係数ヘルプ"
+  },
+  "debugConsoleLogHelp": {
+    "message": "トラブルシューティング用に DevTools コンソールへ詳細な拡張機能ログを出力します。",
+    "description": "デバッグパネルのコンソールログヘルプ"
   },
   "debugLatestGestureInfo": {
     "message": "最新ジェスチャー情報",
@@ -850,10 +1386,6 @@
   "debugMergedDirections": {
     "message": "マージされた方向",
     "description": "Debug panel merged directions"
-  },
-  "debugDirectionDistances": {
-    "message": "方向距離",
-    "description": "Debug panel direction distances"
   },
   "debugFinalResult": {
     "message": "最終結果",
@@ -927,9 +1459,17 @@
     "message": "タブ数を表示",
     "description": "Show tab count badge option"
   },
-  "splitViewAction": {
-    "message": "分割表示",
-    "description": "分割表示ウィンドウで開く"
+  "unlockPageRestrictions": {
+    "message": "コピー/貼り付け/右クリック・タブ検知の制限を解除",
+    "description": "Setting: unlock page interaction limits"
+  },
+  "unlockPageRestrictionsTitle": {
+    "message": "よくある制限を緩和。ページ環境で動作。iframe・Shadow DOM 対応。オンにしたら再読み込み。",
+    "description": "Tooltip for unlock page restrictions"
+  },
+  "unlockPageRestrictionsOffReloadConfirm": {
+    "message": "開いているタブは再読み込みまで影響が残る場合があります。\n\n現在のタブを再読み込みしますか？",
+    "description": "Body text for unlock-off confirmation dialog"
   },
   "splitViewLeft": {
     "message": "分割 - 左",
@@ -946,6 +1486,165 @@
   "splitViewDown": {
     "message": "分割 - 下",
     "description": "分割表示、下半分に新しいウィンドウ"
+  },
+  "unlockPageRestrictionsOffTitle": {
+    "message": "ページの制限解除をオフにしました",
+    "description": "Title for unlock-off confirmation dialog"
+  },
+  "unlockPageRestrictionsReloadTab": {
+    "message": "タブを再読み込み",
+    "description": "Reload tab button in unlock-off dialog"
+  },
+  "unlockPageRestrictionsNotNow": {
+    "message": "しない",
+    "description": "Dismiss unlock-off dialog without reload"
+  },
+  "welcomeBulletImagePreview": {
+    "message": "画像プレビュー：オプションのホバー拡大プレビューと、複雑なレイアウト向けの拡張モード。",
+    "description": "Welcome page: image hover preview bullet"
+  },
+  "welcomeBulletPageUnlock": {
+    "message": "ページ制限の解除：コピー・貼り付け・右クリックなどの制限を緩和（オプション）。設定で有効にし、表示されたらページを再読み込みしてください。",
+    "description": "Welcome page: page unlock bullet"
+  },
+  "welcomeBulletDisabledSites": {
+    "message": "サイト単位の無効化：リストしたドメインでは、ジェスチャー・スーパードラッグ・ポップアップビュー・ページ解除をまとめて無効にします。",
+    "description": "Welcome page: per-site disable bullet"
+  },
+  "welcomeBulletSplitScroll": {
+    "message": "分割表示：リンクを分割レイアウトで開いたとき、2つのウィンドウ間でスクロールを同期（横方向を含む）できます。",
+    "description": "Welcome page: split scroll sync bullet"
+  },
+  "welcomeBulletScreenshot": {
+    "message": "スクリーンショット: 表示領域、ページ全体、手動スクロール結合；軌跡領域、ショートカット、クリップボード、プレビュー、ローカル履歴（0 = 無制限）。",
+    "description": "Welcome page: screenshot feature bullet"
+  },
+  "welcomeTipScreenshot": {
+    "message": "スクリーンショットは既定で有効。表示領域・全ページ・スクロールのショートカットを設定し、軌跡領域、自動コピー、プレビュー、履歴も利用可能。",
+    "description": "Welcome page: screenshot usage tip"
+  },
+  "trailColorPickerPresets": {
+    "message": "プリセット",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerRecent": {
+    "message": "最近使った色",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerEyedropper": {
+    "message": "画像から取得",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerEyedropperActive": {
+    "message": "クリックで取得 · ホイールでルーペ拡大",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerSyncTrail": {
+    "message": "軌跡の色として保存",
+    "description": "Trail color picker UI"
+  },
+  "superDragCompassPosCompassHub": {
+    "message": "ドラッグ点",
+    "description": "Compass hub aligned to drag start"
+  },
+  "superDragCompassPosCompassScreenCenter": {
+    "message": "画面中央",
+    "description": "Compass fixed at viewport center"
+  },
+  "superDragCompassPosCompassScreenTop": {
+    "message": "上",
+    "description": "Compass fixed at top of viewport"
+  },
+  "superDragCompassPosCompassScreenRight": {
+    "message": "右",
+    "description": "Compass fixed at right of viewport"
+  },
+  "superDragCompassPosCompassScreenBottom": {
+    "message": "下",
+    "description": "Compass fixed at bottom of viewport"
+  },
+  "superDragCompassPosCompassScreenLeft": {
+    "message": "左",
+    "description": "Compass fixed at left of viewport"
+  },
+  "superDragCompassPosCompassHidden": {
+    "message": "非表示",
+    "description": "Do not show compass"
+  },
+  "addCurrentSiteToDisabledSites": {
+    "message": "現在のサイトを追加",
+    "description": "Button: add the active tab domain to disabled sites"
+  },
+  "addCurrentSiteToDisabledSitesTitle": {
+    "message": "現在のタブのドメインを無効なサイトに追加",
+    "description": "Tooltip for add-current-site button"
+  },
+  "addDisabledSite": {
+    "message": "追加",
+    "description": "Button: add a typed disabled site entry"
+  },
+  "disabledSiteInputPlaceholder": {
+    "message": "ドメインまたは完全なURL（例: youtube.com）",
+    "description": "Placeholder for the disabled site input"
+  },
+  "disabledSitesEmpty": {
+    "message": "無効なサイトはまだありません。",
+    "description": "Empty state for disabled sites list"
+  },
+  "removeDisabledSite": {
+    "message": "このサイトを削除",
+    "description": "Tooltip/aria label for remove disabled site button"
+  },
+  "disabledSiteInvalid": {
+    "message": "有効なドメインまたはURLを入力してください",
+    "description": "Error shown when disabled site input is invalid"
+  },
+  "disabledSiteAlreadyExists": {
+    "message": "サイトは既に存在します",
+    "description": "Error shown when adding a duplicate disabled site"
+  },
+  "disabledSitesLimitReached": {
+    "message": "無効なサイトの上限に達しました",
+    "description": "Error shown when disabled sites list reaches the maximum size"
+  },
+  "currentSiteUnsupported": {
+    "message": "現在のタブには対応するドメインがありません",
+    "description": "Error shown when current tab URL cannot be added to disabled sites"
+  },
+  "customKey": {
+    "message": "カスタムキー",
+    "description": "Custom trigger key option"
+  },
+  "previewTriggerMode": {
+    "message": "トリガーモード",
+    "description": "Popup view trigger mode setting"
+  },
+  "previewTriggerHold": {
+    "message": "トリガーキーを押し続ける",
+    "description": "Hold trigger key option"
+  },
+  "previewTriggerDouble": {
+    "message": "トリガーキーを2回押す",
+    "description": "Double-press trigger key option"
+  },
+  "previewCustomKey": {
+    "message": "カスタムキー",
+    "description": "Popup view custom trigger key setting"
+  },
+  "previewCustomKeyPlaceholder": {
+    "message": "クリックしてキーを押す",
+    "description": "Popup view custom trigger key placeholder"
+  },
+  "previewCustomKeyTitle": {
+    "message": "ここをクリックして修飾キー以外のキーを押します。Escで消去します。",
+    "description": "Popup view custom trigger key title"
+  },
+  "unlimited": {
+    "message": "無制限",
+    "description": "Unlimited value label"
+  },
+  "settingsFontSize": {
+    "message": "設定画面の文字サイズ",
+    "description": "Header button: adjust settings font size"
   }
-} 
-
+}

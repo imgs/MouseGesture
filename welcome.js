@@ -7,32 +7,28 @@ console.debug = function() {};
 
 // 获取i18n消息
 function getI18nMessage(messageName, fallback = '') {
-  try {
-    const message = chrome.i18n.getMessage(messageName);
-    return message || fallback;
-  } catch (error) {
-    console.error('获取i18n消息失败:', error.message);
-    return fallback;
-  }
+  return chrome.i18n.getMessage(messageName) || fallback;
 }
 
 // 获取浏览器语言
 function getBrowserLanguage() {
   // 获取浏览器语言设置
-  const browserLang = navigator.language.toLowerCase();
+  const browserLang = chrome.i18n.getUILanguage().replace('-', '_').toLowerCase();
   
   // 支持的语言列表及其对应的locale映射
   const languageMap = {
-    'zh_CN': 'zh_CN',
-    'zh_TW': 'zh_TW',
-    'zh_HK': 'zh_TW',
-    'zh_MO': 'zh_TW',
+    'zh_cn': 'zh_CN',
+    'zh_tw': 'zh_TW',
+    'zh_hk': 'zh_TW',
+    'zh_mo': 'zh_TW',
     'zh': 'zh_CN',
-    'en_US': 'en_US',
+    'en_us': 'en_US',
+    'en': 'en_US',
     'es': 'es',
     'fr': 'fr',
     'de': 'de',
-    'pt_BR': 'pt_BR',
+    'pt_br': 'pt_BR',
+    'pt': 'pt_BR',
     'ru': 'ru',
     'ko': 'ko',
     'hi': 'hi',
@@ -63,7 +59,7 @@ function getBrowserLanguage() {
   }
   
   // 匹配语言代码前缀
-  const langPrefix = browserLang.split('-')[0];
+  const langPrefix = browserLang.split('_')[0];
   if (languageMap[langPrefix]) {
     return languageMap[langPrefix];
   }
@@ -75,8 +71,15 @@ function getBrowserLanguage() {
 // 当前语言
 let currentLang = getBrowserLanguage();
 
+const initialUiLanguage = chrome.i18n.getUILanguage() || 'en';
+document.documentElement.lang = initialUiLanguage.replace(/_/g, '-');
+document.documentElement.dir = /^(ar|fa|he|ps|ur)(-|_|$)/i.test(initialUiLanguage) ? 'rtl' : 'ltr';
+
 // 更新界面文本
 function updateUIText(lang) {
+  const uiLanguage = chrome.i18n.getUILanguage() || 'en';
+  document.documentElement.lang = uiLanguage.replace(/_/g, '-');
+  document.documentElement.dir = /^(ar|fa|he|ps|ur)(-|_|$)/i.test(uiLanguage) ? 'rtl' : 'ltr';
   document.querySelectorAll('[data-i18n]').forEach(element => {
     const key = element.getAttribute('data-i18n');
     element.textContent = getI18nMessage(key, element.textContent);
@@ -88,69 +91,14 @@ function updateUIText(lang) {
   // 更新当前语言
   currentLang = lang;
   
-  // 尝试保存语言设置到存储中
-  try {
-    if (typeof chrome !== 'undefined' && chrome.storage && chrome.storage.sync) {
-      chrome.storage.sync.set({ language: lang }, () => {
-        if (chrome.runtime.lastError) {
-          console.log('Save language setting error:', chrome.runtime.lastError.message);
-        }
-      });
-    } else {
-      // 如果Chrome API不可用，则使用localStorage作为备选
-      localStorage.setItem('mouseGestureLanguage', lang);
-    }
-  } catch (e) {
-          console.log('Save language setting exception:', e.message);
-    // 恢复使用localStorage
-    try {
-      localStorage.setItem('mouseGestureLanguage', lang);
-    } catch (e2) {
-              console.log('localStorage storage failed:', e2.message);
-    }
-  }
+  chrome.storage.sync.set({ language: lang });
 }
 
 // 加载语言设置
 function loadLanguage() {
-  try {
-    // 首先尝试从Chrome存储加载
-    if (typeof chrome !== 'undefined' && chrome.storage && chrome.storage.sync) {
-      chrome.storage.sync.get(['language'], (result) => {
-        try {
-          if (chrome.runtime.lastError) {
-            fallbackLoadLanguage();
-            return;
-          }
-          
-          const lang = result.language || getBrowserLanguage();
-          updateUIText(lang);
-        } catch (e) {
-          console.log('加载语言设置异常:', e.message);
-          fallbackLoadLanguage();
-        }
-      });
-    } else {
-      // 如果Chrome API不可用，则回退
-      fallbackLoadLanguage();
-    }
-  } catch (e) {
-    console.log('Chrome API访问异常:', e.message);
-    fallbackLoadLanguage();
-  }
-}
-
-// 回退方案：从localStorage加载或使用浏览器语言
-function fallbackLoadLanguage() {
-  try {
-    const savedLang = localStorage.getItem('mouseGestureLanguage');
-    const lang = savedLang || getBrowserLanguage();
-    updateUIText(lang);
-  } catch (e) {
-    console.log('回退加载语言异常:', e.message);
-    // 如果一切都失败了，至少使用浏览器语言
-    updateUIText(getBrowserLanguage());
-  }
+  chrome.storage.sync.get({ language: getBrowserLanguage() }, (result) => {
+    updateUIText(result.language);
+  });
 }
 
 // 显示扩展版本号
@@ -158,38 +106,15 @@ function displayExtensionVersion() {
   const versionText = document.getElementById('version-text');
   const iconContainer = document.getElementById('icon-container');
   
-  // 从manifest获取版本号
-  if (typeof chrome !== 'undefined' && chrome.runtime) {
-    try {
-      const manifest = chrome.runtime.getManifest();
-      
-      // 设置版本号
-      if (versionText && manifest && manifest.version) {
-        versionText.textContent = `v${manifest.version}`;
-      }
-      
-      // 设置图标
-      if (iconContainer) {
-        const iconUrl = chrome.runtime.getURL('images/icon16.png');
-        iconContainer.innerHTML = `<img src="${iconUrl}" class="footer-icon" alt="icon">`;
-      }
-    } catch (e) {
-      console.log('获取版本号或图标异常:', e.message);
-      // 如果无法获取版本号，不显示版本信息
-      if (versionText) {
-        versionText.textContent = '';
-      }
-      
-      // 使用相对路径作为备选
-      if (iconContainer) {
-        iconContainer.innerHTML = '<img src="images/icon16.png" class="footer-icon" alt="icon">';
-      }
-    }
-  } else {
-    // 备选方案：直接使用相对路径
-    if (iconContainer) {
-      iconContainer.innerHTML = '<img src="images/icon16.png" class="footer-icon" alt="icon">';
-    }
+  const manifest = chrome.runtime.getManifest();
+  if (versionText) versionText.textContent = `v${manifest.version}`;
+  if (iconContainer) {
+    iconContainer.replaceChildren();
+    const img = document.createElement('img');
+    img.src = chrome.runtime.getURL('images/icon16.png');
+    img.className = 'footer-icon';
+    img.alt = 'icon';
+    iconContainer.appendChild(img);
   }
 }
 

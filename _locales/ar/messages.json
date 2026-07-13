@@ -4,7 +4,7 @@
     "description": "The name of the extension"
   },
   "extDesc": {
-    "message": "إضافة Chrome/Edge تدعم إيماءات الماوس ووظيفة السحب الفائق والنظرة الموجودة في الفتحة",
+    "message": "إيماءات الماوس، السحب المتقدم، معاينة الصور والروابط والمزيد.",
     "description": "The description of the extension"
   },
   "title": {
@@ -35,13 +35,21 @@
     "message": "سحب لليسار",
     "description": "Drag left action"
   },
-  "openInForeground": {
-    "message": "فتح الرابط في المقدمة",
-    "description": "Open link in foreground"
+  "dragUpRight": {
+    "message": "سحب لأعلى اليمين",
+    "description": "Super drag diagonal direction"
   },
-  "openInBackground": {
-    "message": "فتح الرابط في الخلفية",
-    "description": "Open link in background"
+  "dragDownRight": {
+    "message": "سحب لأسفل اليمين",
+    "description": "Super drag diagonal direction"
+  },
+  "dragDownLeft": {
+    "message": "سحب لأسفل اليسار",
+    "description": "Super drag diagonal direction"
+  },
+  "dragUpLeft": {
+    "message": "سحب لأعلى اليسار",
+    "description": "Super drag diagonal direction"
   },
   "superDragDescription": {
     "message": "يعمل السحب الفائق مع الروابط والصور والنص المحدد. يمكنك تعيين طريقة الفتح لكل اتجاه إيماءة (أعلى/أسفل/يسار/يمين)، بما في ذلك المقدمة أو الخلفية أو عرض التقسيم (يسار/يمين/أعلى/أسفل).",
@@ -65,51 +73,75 @@
   },
   "downThenRight": {
     "message": "أسفل ثم يمين",
-    "description": "Down then right gesture"
+    "description": "إيماءة أسفل ثم يمين"
   },
   "leftThenUp": {
     "message": "يسار ثم أعلى",
-    "description": "Left then up gesture"
+    "description": "إيماءة يسار ثم أعلى"
   },
   "rightThenUp": {
     "message": "يمين ثم أعلى",
-    "description": "Right then up gesture"
+    "description": "إيماءة يمين ثم أعلى"
   },
   "rightThenDown": {
     "message": "يمين ثم أسفل",
-    "description": "Right then down gesture"
+    "description": "إيماءة يمين ثم أسفل"
   },
   "upThenLeft": {
     "message": "أعلى ثم يسار",
-    "description": "Up then left gesture"
+    "description": "إيماءة أعلى ثم يسار"
   },
   "upThenRight": {
     "message": "أعلى ثم يمين",
-    "description": "Up then right gesture"
+    "description": "إيماءة أعلى ثم يمين"
   },
   "downThenLeft": {
     "message": "أسفل ثم يسار",
-    "description": "Down then left gesture"
+    "description": "إيماءة أسفل ثم يسار"
   },
   "leftThenDown": {
     "message": "يسار ثم أسفل",
-    "description": "Left then down gesture"
+    "description": "إيماءة يسار ثم أسفل"
   },
   "upThenDown": {
     "message": "أعلى ثم أسفل",
-    "description": "Up then down gesture"
+    "description": "إيماءة أعلى ثم أسفل"
   },
   "downThenUp": {
     "message": "أسفل ثم أعلى",
-    "description": "Down then up gesture"
+    "description": "إيماءة أسفل ثم أعلى"
   },
   "leftThenRight": {
     "message": "يسار ثم يمين",
-    "description": "Left then right gesture"
+    "description": "إيماءة يسار ثم يمين"
   },
   "rightThenLeft": {
     "message": "يمين ثم يسار",
-    "description": "Right then left gesture"
+    "description": "إيماءة يمين ثم يسار"
+  },
+  "rightHoldWheelUp": {
+    "message": "اضغط يمين + عجلة لأعلى",
+    "description": "اضغط الزر الأيمن وعجلة لأعلى"
+  },
+  "rightHoldWheelDown": {
+    "message": "اضغط يمين + عجلة لأسفل",
+    "description": "اضغط الزر الأيمن وعجلة لأسفل"
+  },
+  "leftHoldWheelUp": {
+    "message": "اضغط يسار + عجلة لأعلى",
+    "description": "الزر الأيسر وعجلة لأعلى"
+  },
+  "leftHoldWheelDown": {
+    "message": "اضغط يسار + عجلة لأسفل",
+    "description": "الزر الأيسر وعجلة لأسفل"
+  },
+  "rightHoldLeftClick": {
+    "message": "اضغط يمين + نقرة يسار",
+    "description": "اضغط الزر الأيمن ونقرة يسار"
+  },
+  "leftHoldRightClick": {
+    "message": "اضغط يسار + انقر يمين",
+    "description": "اضغط الزر الأيسر وانقر بالزر الأيمن"
   },
   "back": {
     "message": "الرجوع",
@@ -158,6 +190,18 @@
   "prevTab": {
     "message": "علامة التبويب السابقة",
     "description": "Previous tab action"
+  },
+  "previousActiveTab": {
+    "message": "علامة التبويب النشطة السابقة",
+    "description": "إجراء الإيماءة: التبديل إلى علامة التبويب التي كانت نشطة سابقًا"
+  },
+  "goToParentUrl": {
+    "message": "عنوان URL الأصل",
+    "description": "إجراء الإيماءة: الانتقال إلى مسار عنوان URL الأصل"
+  },
+  "goToRootUrl": {
+    "message": "عنوان URL الجذر",
+    "description": "إجراء الإيماءة: الانتقال إلى عنوان URL الجذر للموقع"
   },
   "nextTab": {
     "message": "علامة التبويب التالية",
@@ -211,6 +255,14 @@
     "message": "تبديل ملء الشاشة",
     "description": "Toggle fullscreen action"
   },
+  "zoomIn": {
+    "message": "تكبير",
+    "description": "زيادة تكبير الصفحة في علامة التبويب الحالية"
+  },
+  "zoomOut": {
+    "message": "تصغير",
+    "description": "تقليل تكبير الصفحة في علامة التبويب الحالية"
+  },
   "closeTabsToLeft": {
     "message": "إغلاق علامات التبويب إلى اليسار",
     "description": "Close tabs to left action"
@@ -218,6 +270,474 @@
   "reloadAllTabs": {
     "message": "إعادة تحميل جميع علامات التبويب",
     "description": "Reload all tabs action"
+  },
+  "stopLoadingAllTabs": {
+    "message": "إيقاف تحميل جميع علامات التبويب",
+    "description": "Stop loading in all tabs"
+  },
+  "screenshotRegion": {
+    "message": "لقطة شاشة (منطقة المسار)",
+    "description": "Screenshot gesture action"
+  },
+  "screenshotRegionOrLink": {
+    "message": "لقطة شاشة أو فتح الرابط",
+    "description": "Trail region hint when links are inside selection"
+  },
+  "trailRegionChooseTitle": {
+    "message": "روابط في التحديد — لقطة أو فتح",
+    "description": "Trail region chooser dialog title"
+  },
+  "trailRegionLinkSingle": {
+    "message": "رابط واحد",
+    "description": "Trail region link count"
+  },
+  "trailRegionLinkMultiple": {
+    "message": "{count} روابط",
+    "description": "Trail region link count"
+  },
+  "trailRegionActionScreenshot": {
+    "message": "لقطة (S)",
+    "description": "Trail region chooser button"
+  },
+  "trailRegionActionOpenLink": {
+    "message": "فتح في تبويب جديد (O)",
+    "description": "Trail region chooser button"
+  },
+  "trailRegionActionOpenLinks": {
+    "message": "فتح في تبويبات جديدة (O)",
+    "description": "Trail region chooser button"
+  },
+  "trailRegionActionOpenSelected": {
+    "message": "فتح {n} في تبويبات جديدة (O)",
+    "description": "Trail region open checked links"
+  },
+  "trailRegionActionOpenNone": {
+    "message": "فتح المحدد (O)",
+    "description": "Trail region open button when none checked"
+  },
+  "trailRegionActionCopy": {
+    "message": "نسخ (C)",
+    "description": "Trail region chooser copy button"
+  },
+  "trailRegionActionCopySelected": {
+    "message": "نسخ {n} (C)",
+    "description": "Trail region copy checked links"
+  },
+  "trailRegionActionCopyNone": {
+    "message": "نسخ (C)",
+    "description": "Trail region copy button when none checked"
+  },
+  "trailRegionCopyFailed": {
+    "message": "فشل النسخ",
+    "description": "Trail region copy to clipboard failed"
+  },
+  "trailRegionSelectAll": {
+    "message": "تحديد الكل",
+    "description": "Trail region link list select all"
+  },
+  "trailRegionNoLinkSelected": {
+    "message": "حدد رابطاً واحداً على الأقل",
+    "description": "Trail region no selection hint"
+  },
+  "trailRegionChooseHint": {
+    "message": "Esc للإلغاء · حدد الروابط للنسخ/الفتح · اسحب الحواف لتغيير الحجم",
+    "description": "Trail region chooser footer"
+  },
+  "trailRegionLinkOpened": {
+    "message": "تم فتح الرابط في تبويب جديد",
+    "description": "Trail region open link feedback"
+  },
+  "trailRegionLinksOpened": {
+    "message": "تم فتح الروابط في تبويبات جديدة",
+    "description": "Trail region open links feedback"
+  },
+  "trailRegionLinksTruncated": {
+    "message": "فُتحت أول {n} روابط فقط",
+    "description": "Trail region open links cap"
+  },
+  "screenshotScrollCaptureActive": {
+    "message": "مرر الصفحة يدوياً ثم نفس الاختصار أو Esc للإنهاء والدمج",
+    "description": "Manual scroll capture in progress"
+  },
+  "screenshotCopied": {
+    "message": "نُسخت اللقطة إلى الحافظة",
+    "description": "Screenshot feedback"
+  },
+  "screenshotFailed": {
+    "message": "فشلت اللقطة",
+    "description": "Screenshot feedback"
+  },
+  "screenshotNeedTrail": {
+    "message": "ارسم مساراً أطول لتحديد المنطقة",
+    "description": "Screenshot feedback"
+  },
+  "screenshotUnavailable": {
+    "message": "وحدة اللقطة غير متاحة",
+    "description": "Screenshot feedback"
+  },
+  "screenshotTopFrameOnly": {
+    "message": "لقطة الصفحة كاملة في الإطار الرئيسي فقط",
+    "description": "Screenshot feedback"
+  },
+  "screenshotFeature": {
+    "message": "لقطة شاشة",
+    "description": "Screenshot settings section title"
+  },
+  "enableScreenshotFeature": {
+    "message": "تفعيل لقطة الشاشة",
+    "description": "Master toggle for screenshot feature"
+  },
+  "enableScreenshotTrailCapture": {
+    "message": "منطقة المسار (حلقة / تقاطع ذاتي)",
+    "description": "Capture when trail loops or crosses; skipped if another gesture action matches"
+  },
+  "enableScreenshotClipboard": {
+    "message": "نسخ تلقائي إلى الحافظة",
+    "description": "Copy screenshot to clipboard after capture"
+  },
+  "enableScreenshotPreview": {
+    "message": "عرض المعاينة بعد الالتقاط",
+    "description": "Open preview window when a screenshot is captured"
+  },
+  "enableScreenshotHistory": {
+    "message": "حفظ سجل اللقطات",
+    "description": "Keep captured screenshots in local history"
+  },
+  "screenshotHistoryMaxCount": {
+    "message": "حد السجل",
+    "description": "Maximum screenshot history entries to keep"
+  },
+  "screenshotHistoryMaxCountHint": {
+    "message": "0 = غير محدود؛ 1–200 يحذف الأقدم عند تجاوز الحد",
+    "description": "Screenshot history limit hint"
+  },
+  "screenshotHistoryUnlimited": {
+    "message": "غير محدود",
+    "description": "Label when screenshot history limit is 0"
+  },
+  "screenshotHistoryView": {
+    "message": "عرض السجل",
+    "description": "Open screenshot history window"
+  },
+  "screenshotHistoryTitle": {
+    "message": "سجل اللقطات",
+    "description": "Screenshot history window title"
+  },
+  "screenshotHistoryEmpty": {
+    "message": "لا لقطات بعد",
+    "description": "Empty screenshot history state"
+  },
+  "screenshotHistoryClearAll": {
+    "message": "مسح الكل",
+    "description": "Delete all screenshot history entries"
+  },
+  "screenshotHistoryClearConfirm": {
+    "message": "حذف سجل اللقطات بالكامل؟",
+    "description": "Confirm clearing screenshot history"
+  },
+  "screenshotHistoryDelete": {
+    "message": "حذف",
+    "description": "Delete one screenshot history entry"
+  },
+  "screenshotHistoryPinToPage": {
+    "message": "تثبيت في الصفحة",
+    "description": "Pin history thumbnail onto the web page"
+  },
+  "screenshotHistoryPinFailed": {
+    "message": "تعذر التثبيت (افتح التبويب أو اسمح بهذا الموقع).",
+    "description": "Error when pinning from screenshot history"
+  },
+  "screenshotHistoryCount": {
+    "message": "$1 عناصر",
+    "description": "Number of items in screenshot history",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "screenshotHistoryModeViewport": {
+    "message": "المنطقة المرئية",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeFullPage": {
+    "message": "الصفحة كاملة",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeRegion": {
+    "message": "منطقة",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeScroll": {
+    "message": "تمرير يدوي",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeUnknown": {
+    "message": "لقطة",
+    "description": "Screenshot history capture mode fallback label"
+  },
+  "screenshotDone": {
+    "message": "اللقطة جاهزة",
+    "description": "Hint when capture finished without clipboard copy"
+  },
+  "screenshotPreviewTitle": {
+    "message": "معاينة اللقطة",
+    "description": "Screenshot preview window title"
+  },
+  "screenshotPreviewClose": {
+    "message": "إغلاق",
+    "description": "Close screenshot preview window"
+  },
+  "screenshotPreviewCopyAgain": {
+    "message": "نسخ",
+    "description": "Copy screenshot to clipboard from preview window"
+  },
+  "screenshotPreviewSave": {
+    "message": "حفظ كملف",
+    "description": "Save annotated screenshot to disk"
+  },
+  "screenshotPreviewSaved": {
+    "message": "تم الحفظ",
+    "description": "Screenshot file save succeeded"
+  },
+  "screenshotPreviewPinToPage": {
+    "message": "تثبيت في الصفحة",
+    "description": "Pin annotated screenshot onto the source web page"
+  },
+  "screenshotPreviewPinned": {
+    "message": "مثبت",
+    "description": "Screenshot pin placed on page"
+  },
+  "screenshotPreviewPinning": {
+    "message": "جاري التثبيت…",
+    "description": "Screenshot pin in progress"
+  },
+  "screenshotPinTitle": {
+    "message": "لقطة",
+    "description": "Title on pinned screenshot sticker"
+  },
+  "screenshotPinClose": {
+    "message": "إزالة التثبيت",
+    "description": "Close button on pinned screenshot"
+  },
+  "screenshotPinResize": {
+    "message": "تغيير الحجم",
+    "description": "Resize handle on pinned screenshot"
+  },
+  "screenshotPinZoomFit": {
+    "message": "ملاءمة",
+    "description": "Fit pinned screenshot to view"
+  },
+  "screenshotPinZoomOriginal": {
+    "message": "1:1",
+    "description": "Show pinned screenshot at original pixel size"
+  },
+  "screenshotPinOrderLabel": {
+    "message": "تثبيت $1$",
+    "description": "Pinned screenshot order number",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "screenshotPreviewLoadFailed": {
+    "message": "تعذر تحميل المعاينة",
+    "description": "Screenshot preview load error"
+  },
+  "screenshotPreviewZoomFit": {
+    "message": "ملاءمة",
+    "description": "Fit screenshot to preview window"
+  },
+  "screenshotPreviewZoomFitTitle": {
+    "message": "ملاءمة النافذة",
+    "description": "Tooltip for fit zoom button"
+  },
+  "screenshotPreviewZoomOneToOne": {
+    "message": "1:1",
+    "description": "Actual-size zoom button label"
+  },
+  "screenshotPreviewZoomOneToOneTitle": {
+    "message": "الحجم الفعلي (1:1)",
+    "description": "Tooltip for 1:1 zoom button"
+  },
+  "screenshotPreviewZoomLevel": {
+    "message": "تكبير $1$%",
+    "description": "Current zoom percentage in preview",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "screenshotAnnotHand": {
+    "message": "يد (تحريك)",
+    "description": "Pan the preview by dragging"
+  },
+  "screenshotAnnotPen": {
+    "message": "قلم",
+    "description": "Annotation tool: freehand"
+  },
+  "screenshotAnnotArrow": {
+    "message": "سهم (Shift: أفقي/عمودي)",
+    "description": "Annotation tool: arrow; Shift constrains to horizontal or vertical"
+  },
+  "screenshotAnnotLine": {
+    "message": "خط (Shift: أفقي/عمودي)",
+    "description": "Annotation tool: line; Shift constrains to horizontal or vertical"
+  },
+  "screenshotAnnotRect": {
+    "message": "مستطيل (Shift: مربع)",
+    "description": "Annotation tool: rectangle; Shift draws a square"
+  },
+  "screenshotAnnotEllipse": {
+    "message": "قطع ناقص",
+    "description": "Annotation tool: ellipse"
+  },
+  "screenshotAnnotRoundRect": {
+    "message": "مستطيل مستدير",
+    "description": "Annotation tool: rounded rectangle"
+  },
+  "screenshotAnnotHighlighter": {
+    "message": "قلم تمييز",
+    "description": "Annotation tool: highlighter marker"
+  },
+  "screenshotAnnotHighlight": {
+    "message": "إطار تمييز",
+    "description": "Annotation tool: highlight rectangle"
+  },
+  "screenshotAnnotFillRect": {
+    "message": "مستطيل ممتلئ",
+    "description": "Annotation tool: filled rectangle"
+  },
+  "screenshotAnnotFillEllipse": {
+    "message": "قطع ناقص ممتلئ",
+    "description": "Annotation tool: filled ellipse"
+  },
+  "screenshotAnnotBlur": {
+    "message": "ضبابية",
+    "description": "Annotation tool: blur brush"
+  },
+  "screenshotAnnotArrow2": {
+    "message": "سهم مزدوج (Shift: أفقي/عمودي)",
+    "description": "Annotation tool: line with arrowheads at both ends; Shift constrains H/V"
+  },
+  "screenshotAnnotNumber": {
+    "message": "رقم",
+    "description": "Annotation tool: sequential number markers"
+  },
+  "screenshotAnnotStampStart": {
+    "message": "بداية الرقم",
+    "description": "Starting number for sequential stamps"
+  },
+  "screenshotAnnotStampNext": {
+    "message": "التالي: $1$",
+    "description": "Next number stamp to place (tooltip)",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "screenshotAnnotCrop": {
+    "message": "قص",
+    "description": "Annotation tool: crop image"
+  },
+  "screenshotAnnotCropApply": {
+    "message": "تطبيق القص",
+    "description": "Confirm crop selection"
+  },
+  "screenshotAnnotCropCancel": {
+    "message": "إلغاء",
+    "description": "Cancel crop selection"
+  },
+  "screenshotAnnotText": {
+    "message": "نص",
+    "description": "Annotation tool: text"
+  },
+  "screenshotAnnotMosaic": {
+    "message": "فسيفساء",
+    "description": "Annotation tool: mosaic blur"
+  },
+  "screenshotAnnotEraser": {
+    "message": "ممحاة",
+    "description": "Annotation tool: eraser"
+  },
+  "screenshotAnnotSize": {
+    "message": "الحجم",
+    "description": "Annotation stroke size"
+  },
+  "screenshotAnnotResetAll": {
+    "message": "إعادة تعيين كل التعديلات",
+    "description": "Clear all annotations and restore original screenshot"
+  },
+  "screenshotAnnotStepCount": {
+    "message": "$1 / $2",
+    "description": "History step indicator: current / total"
+  },
+  "screenshotAnnotStepCountTitle": {
+    "message": "خطوات مطبقة / الإجمالي (0 = الصورة الأصلية)",
+    "description": "Tooltip for history step indicator"
+  },
+  "screenshotAnnotUndo": {
+    "message": "تراجع",
+    "description": "Undo annotation"
+  },
+  "screenshotAnnotRedo": {
+    "message": "إعادة",
+    "description": "Redo annotation"
+  },
+  "screenshotAnnotTextPlaceholder": {
+    "message": "اكتب هنا…",
+    "description": "Placeholder in inline text editor on screenshot preview"
+  },
+  "screenshotOptRegion": {
+    "message": "تحديد منطقة",
+    "description": "Screenshot bind row: keyboard drag rectangle region"
+  },
+  "screenshotOptViewport": {
+    "message": "المنطقة المرئية",
+    "description": "Screenshot bind row: current visible tab area"
+  },
+  "screenshotOptFullPage": {
+    "message": "الصفحة كاملة",
+    "description": "Screenshot bind row: full page"
+  },
+  "screenshotOptScrollStitch": {
+    "message": "تمرير يدوي",
+    "description": "Screenshot bind row: manual scroll capture"
+  },
+  "screenshotOptOpenHistory": {
+    "message": "فتح السجل",
+    "description": "Screenshot bind row: keyboard shortcut to open screenshot history"
+  },
+  "screenshotHotkeyPressHint": {
+    "message": "اختصارات: انقر الحقل أعلاه ثم مجموعة مفاتيح (Ctrl / Alt / Meta + حرف أو رقم، أو F1–F12). Esc يمسح الحقل.",
+    "description": "Screenshot section footer: hotkey binding help"
+  },
+  "screenshotHotkeyPlaceholder": {
+    "message": "انقر للتعيين",
+    "description": "Placeholder in empty screenshot hotkey fields"
+  },
+  "screenshotRegionPickHint": {
+    "message": "اسحب لتحديد منطقة. Esc للإلغاء.",
+    "description": "Hint while keyboard region picker is active"
+  },
+  "screenshotRegionPickFooterHint": {
+    "message": "اختصار المنطقة: ارسم مستطيلاً ثم ارفع. إن وُجدت روابط، لقطة أو فتح في تبويبات جديدة. Esc يلغي.",
+    "description": "Screenshot section footer: keyboard region picker help"
+  },
+  "screenshotRegionTooSmall": {
+    "message": "التحديد صغير جداً — ارسم منطقة أكبر",
+    "description": "Region picker: minimum size not met"
+  },
+  "screenshotGestureIntersectHint": {
+    "message": "منطقة المسار: حلقة أو تقاطع ذاتي واحد، ثم ارفع. إن احتوت على روابط، لقطة أو تبويبات جديدة. حلقات كثيرة = خطوط عشوائية.",
+    "description": "Screenshot section footer: trail region capture help"
   },
   "togglePinTab": {
     "message": "تثبيت/إلغاء تثبيت علامة التبويب",
@@ -244,16 +764,16 @@
     "description": "Settings title"
   },
   "customizedBehavior": {
-    "message": "قائمة الحظر",
-    "description": "Block list section title"
+    "message": "المواقع المعطّلة",
+    "description": "Section title for the per-site disable list"
   },
   "disableMouseGesturesForSites": {
-    "message": "تعطيل إيماءات الماوس والسحب الفائق لهذه المواقع",
-    "description": "Label for the list of sites where gestures and super drag are disabled"
+    "message": "تعطيل ميزات الإضافة في النطاقات المدرجة",
+    "description": "Subtitle for Disabled sites section"
   },
   "disabledSitesHint": {
-    "message": "موقع واحد في كل سطر. النطاق (مثل youtube.com) أو الرابط الكامل.",
-    "description": "Hint for the disabled sites textarea"
+    "message": "ينطبق على: الإيماءات، والسحب الفائق، ومعاينة الروابط/الصور، ولقطات الشاشة، وإلغاء قيود الصفحة. أضف الموقع الحالي أو أدخل نطاقًا/عنوان URL؛ انقر علامة الإزالة للحذف.",
+    "description": "Short hint explaining which features the Disabled sites list affects"
   },
   "enableGesture": {
     "message": "تمكين إيماءة الماوس",
@@ -279,6 +799,26 @@
     "message": "تمكين السحب الفائق",
     "description": "Enable super drag option"
   },
+  "superDragCompassPosition": {
+    "message": "بوصلة 8 اتجاهات",
+    "description": "Super drag compass display and position"
+  },
+  "superDragCompassPosCompassAbove": {
+    "message": "فوق نقطة السحب",
+    "description": "Compass above drag start, centered horizontally"
+  },
+  "superDragCompassPosCompassRight": {
+    "message": "يمين نقطة السحب",
+    "description": "Compass to the right of drag start, vertically centered"
+  },
+  "superDragCompassPosCompassBelow": {
+    "message": "تحت نقطة السحب",
+    "description": "Compass below drag start, centered horizontally"
+  },
+  "superDragCompassPosCompassLeft": {
+    "message": "يسار نقطة السحب",
+    "description": "Compass to the left of drag start, vertically centered"
+  },
   "enableDragTextSearch": {
     "message": "تمكين البحث بسحب النص",
     "description": "Enable drag text search option"
@@ -287,9 +827,17 @@
     "message": "تحميل تلقائي للصورة/الملف عند السحب",
     "description": "When the drag target is an image or other downloadable file, start download automatically"
   },
+  "enableImageDrag": {
+    "message": "تمكين سحب الصور",
+    "description": "Control image super drag independently from image preview"
+  },
   "enableImagePreview": {
     "message": "تمكين معاينة الصورة",
     "description": "Enable image preview option"
+  },
+  "enableImagePreviewEnhanced": {
+    "message": "معاينة الصورة المحسّنة",
+    "description": "Support transparent overlay, background-image, parent lookup, etc."
   },
   "enableDuplicateCheck": {
     "message": "اكتشاف علامات التبويب المكررة",
@@ -302,10 +850,6 @@
   "enableSmoothScroll": {
     "message": "تمكين التمرير السلس",
     "description": "Enable smooth scrolling for gesture actions"
-  },
-  "save": {
-    "message": "تم تطبيق الإعدادات",
-    "description": "Save settings button"
   },
   "reset": {
     "message": "إعادة تعيين",
@@ -363,14 +907,6 @@
     "message": "فشل في إعادة تعيين الإعدادات",
     "description": "Reset settings error notification"
   },
-  "themeLight": {
-    "message": "فاتح",
-    "description": "Light theme"
-  },
-  "themeDark": {
-    "message": "داكن",
-    "description": "Dark theme"
-  },
   "buyMeACoffee": {
     "message": "اشترِ لي قهوة",
     "description": "Donation button"
@@ -379,17 +915,33 @@
     "message": "تبديل المظهر",
     "description": "Toggle theme button"
   },
-  "toggleLanguage": {
-    "message": "تبديل اللغة",
-    "description": "Toggle language button"
+  "openDetachedPopupTitle": {
+    "message": "افتح الإعدادات في الشريط الجانبي (أو نافذة منفصلة إن لم يكن متاحًا)",
+    "description": "زر العنوان: الشريط الجانبي أو نافذة منفصلة للإعدادات"
+  },
+  "openDetachedWindowFromSidePanelTitle": {
+    "message": "فتح في نافذة منفصلة (بجانب المتصفح)",
+    "description": "الشريط الجانبي: نافذة منفصلة وتخطيط المتصفح"
+  },
+  "openOptionsPageTitle": {
+    "message": "افتح صفحة الخيارات",
+    "description": "زر الرأس: فتح صفحة خيارات الإضافة"
   },
   "donationTooltip": {
     "message": "إذا أعجبك هذا العمل، يرجى دعمي. شكرًا :)",
     "description": "Donation tooltip"
   },
   "rightButtonHint": {
-    "message": "اضغط مع الاستمرار على زر الماوس الأيمن",
+    "message": "اضغط باستمرار: يمين (مسار، عجلة، نقرات) · يسار (عجلة)",
     "description": "Right mouse button hint"
+  },
+  "builtInGesturesListExpandHint": {
+    "message": "انقر لتوسيع قائمة الإيماءات بالكامل",
+    "description": "Tooltip on built-in gestures subtitle when list is collapsed"
+  },
+  "builtInGesturesListCollapseHint": {
+    "message": "انقر لطي قائمة الإيماءات",
+    "description": "Tooltip on built-in gestures subtitle when list is expanded"
   },
   "leftButtonHint": {
     "message": "اضغط مع الاستمرار على زر الماوس الأيسر",
@@ -403,17 +955,45 @@
     "message": "فتح في الخلفية",
     "description": "Open in background action"
   },
+  "popupViewAction": {
+    "message": "العرض المنبثق",
+    "description": "Super drag action: open target in popup view"
+  },
+  "incognitoAction": {
+    "message": "فتح في نافذة التصفح المخفي",
+    "description": "Open in incognito/private window"
+  },
+  "enableSplitScrollSync": {
+    "message": "مزامنة التمرير العمودي والأفقي بين النوافذ المنقسمة",
+    "description": "عند تفعيل العرض المنقسم، مطابقة كلا محوري التمرير بين النافذتين"
+  },
   "copyAction": {
     "message": "نسخ",
     "description": "Copy selected text or link URL to clipboard"
+  },
+  "downloadAction": {
+    "message": "تنزيل",
+    "description": "Super drag action: download target"
   },
   "copiedToClipboard": {
     "message": "تم النسخ إلى الحافظة",
     "description": "Hint after copy action"
   },
-  "dragSearchEngine": {
-    "message": "رابط محرك البحث للسحب",
-    "description": "Drag search engine URL setting"
+  "dragSearchEngineSlotLabel": {
+    "message": "عنصر التحرير",
+    "description": "Label for drag search engine slot selector"
+  },
+  "dragSearchSlotDefault": {
+    "message": "افتراضي (احتياطي)",
+    "description": "Default search URL slot in drag search editor"
+  },
+  "dragSearchEngineUrlForSlot": {
+    "message": "عنوان محرك البحث",
+    "description": "Label for single drag search URL field"
+  },
+  "dragSearchEnginePerDirectionHelp": {
+    "message": "اختر «افتراضي» أو اتجاه السحب من القائمة، ثم عدّل الرابط المقابل. الاتجاهات الفارغة تستخدم الافتراضي. يخص بحث النص بالسحب فقط.",
+    "description": "Help text for unified drag search engine editor"
   },
   "linkPreview": {
     "message": "العرض المنبثق",
@@ -424,7 +1004,7 @@
     "description": "Quick navigation hover tooltip"
   },
   "linkPreviewHint": {
-    "message": "التمرير + المفتاح لإظهار النافذة المنبثقة",
+    "message": "مرّر المؤشر واستخدم المشغّل لإظهار النافذة المنبثقة",
     "description": "Popup view hint"
   },
   "enableLinkPreview": {
@@ -495,41 +1075,61 @@
     "message": "استخدم {q} لمصطلح البحث، مثال على التنسيق:",
     "description": "Search engine examples description"
   },
+  "searchExampleUrlClickHint": {
+    "message": "انقر عنوان URL المثال لملء الحقل أعلاه والحفظ",
+    "description": "Tooltip for example search engine URLs (click to fill)"
+  },
+  "searchEngineExamplesUrlClickHint": {
+    "message": "نصيحة: انقر على عنوان URL في المثال لملء الحقل أعلاه والحفظ.",
+    "description": "Visible hint under search engine examples (click URL to fill field above and save)"
+  },
   "googleExample": {
-    "message": "بحث Google: https://www.google.com.sa/search?q={q}",
+    "message": "بحث Google:",
+    "description": "Google search example"
+  },
+  "googleExampleUrl": {
+    "message": "https://www.google.com.sa/search?q={q}",
     "description": "Google search example"
   },
   "googleTranslateExample": {
-    "message": "ترجمة Google: https://translate.google.com.sa/?sl=auto&tl=ar&text={q}&op=translate",
+    "message": "ترجمة Google:",
+    "description": "Google translate example"
+  },
+  "googleTranslateExampleUrl": {
+    "message": "https://translate.google.com.sa/?sl=auto&tl=ar&text={q}&op=translate",
     "description": "Google translate example"
   },
   "localSearchExample": {
-    "message": "بحث Ayna: https://www.ayna.com/search?q={q}",
+    "message": "بحث Ayna:",
+    "description": "Local search example"
+  },
+  "localSearchExampleUrl": {
+    "message": "https://www.ayna.com/search?q={q}",
     "description": "Local search example"
   },
   "bingExample": {
-    "message": "بحث Bing: https://www.bing.com/search?q={q}&setlang=ar",
+    "message": "بحث Bing:",
+    "description": "Bing search example"
+  },
+  "bingExampleUrl": {
+    "message": "https://www.bing.com/search?q={q}&setlang=ar",
     "description": "Bing search example"
   },
   "wheelTip": {
-    "message": "استخدم عجلة الماوس لضبط القيمة",
+    "message": "مرّر المؤشر على هذا الصف لمدة ~1.5 ث، ثم اضبط بعجلة الماوس",
     "description": "Wheel tip"
   },
   "modifierKeyDelayTip": {
-    "message": "عند استخدام مفتاح تشغيل، الحد الأقصى للتأخير محدود بـ 300 ملي ثانية",
+    "message": "يبدأ التأخير بعد تحقق شرط التشغيل؛ زِده لتجنب المعاينات غير المقصودة.",
     "description": "Modifier key delay tip"
   },
   "welcomeTitle": {
-    "message": "مرحبًا بك في إضافة إيماءات الماوس",
+    "message": "مرحبًا بك في امتداد إيماءات الفأرة",
     "description": "Welcome page title"
   },
   "welcomeDescription": {
-    "message": "شكراً لك على تثبيت إضافة إيماءات الماوس! توفر هذه الإضافة وظائف غنية لإيماءات الماوس، وإدارة ذكية للتبويبات، وقدرات عرض منبثق، وتجربة بصرية محسنة لمساعدتك في تصفح الويب بكفاءة أكبر. لقد حسّنا خوارزمية التعرف على الإيماءات مع تحمل أعلى للأخطاء، مما يسمح بالإيماءات بالتعرف عليها بشكل صحيح حتى عندما لا يتم رسمها بشكل مثالي. تتيح لك ميزة النافذة المنبثقة الجديدة عرض محتوى الروابط في النوافذ المنبثقة دون تبديل علامات التبويب. تدعم الإضافة أيضًا 29 لغة وسمات فاتحة/داكنة لتجربة مستخدم أفضل.",
+    "message": "شكرًا لتثبيت Mouse Gesture! اضغط باستمرار على الزر الأيمن واسحب للتنقّل وإدارة علامات التبويب والتمرير؛ واضغط باستمرار على الزر الأيمن أو الأيسر مع العجلة (ومزيد من الاختصارات في الإعدادات) لمزيد من الاختصارات — يبقى التعرّف متسامحًا حتى أثناء تحميل الصفحات. Super Drag الروابط والصور وبحث النص بقواعد لكل اتجاه (المقدّمة، الخلفية، تخطيط مقسّم، نسخ إلى الحافظة وغير ذلك). يعرض Popup View معاينات الروابط أو يبحث في النص المحدد في نوافذ صغيرة. اختياري: معاينة الصور عند التمرير (وضع موسّع)، اكتشاف علامات التبويب المكررة مع الإغلاق التلقائي، تمرير سلس، شارة عدد التبويبات في شريط الأدوات، وفك قفل الصفحات في المواقع المقيّدة. الإعدادات من شريط الأدوات (منبثق، لوحة جانبية أو نافذة منفصلة)؛ تصدير/استيراد؛ مزامنة مع حساب المتصفح. 29 لغة وسمات فاتحة/داكنة.",
     "description": "Welcome page description"
-  },
-  "gesturesDescription": {
-    "message": "فيما يلي إيماءات الماوس المحددة مسبقًا التي يمكنك استخدامها بالسحب بزر الماوس الأيمن:",
-    "description": "Gestures description"
   },
   "extensionName": {
     "message": "إضافة إيماءات الماوس",
@@ -539,88 +1139,48 @@
     "message": "الميزات الأساسية",
     "description": "Core features title"
   },
-  "utilitiesFeatures": {
-    "message": "أدوات المساعدة",
-    "description": "Utilities features title"
+  "welcomeCoreGestureBlock": {
+    "message": "إيماءات الفأرة: اضغط الأيمن واسحب لإيماءات المسار؛ العجلة مع الأيمن أو الأيسر مضغوطًا وتوليفات النقر مع الأيمن مضغوطًا — قابلة لإعادة التعيين في الإعدادات؛ تعرف متسامح، حتى أثناء التحميل.",
+    "description": "Welcome page: core features gesture summary"
+  },
+  "welcomeCoreSuperDragBlock": {
+    "message": "سحب فائق: اسحب الروابط والصور إلى علامات تبويب جديدة، والنص المحدد للبحث؛ الاتجاه يحدد كيف تُفتح العلامات؛ الافتراضي في الخلفية.",
+    "description": "Welcome page: core features super drag summary"
+  },
+  "welcomeCorePopupViewBlock": {
+    "message": "عرض منبثق: اضغط مفتاح التشغيل (Shift افتراضيًا) فوق رابط لمعاينة الصفحة في نافذة صغيرة؛ بعد تحديد النص اضغط المفتاح للبحث فورًا بمحرك البحث المخصّص.",
+    "description": "Welcome page: core features popup view summary"
   },
   "usageTips": {
     "message": "نصائح الاستخدام",
     "description": "Usage tips title"
   },
-  "smartGestureRecognition": {
-    "message": "التعرف الذكي على الإيماءات: يحدد الإيماءات بشكل صحيح حتى عندما تكون غير مثالية، يعمل أثناء تحميل الصفحة",
-    "description": "Smart gesture recognition description"
-  },
-  "tabManagementTitle": {
-    "message": "إدارة علامات التبويب",
-    "description": "Tab management title"
-  },
-  "tabManagementDesc": {
-    "message": ": اكتشاف ذكي للتكرارات، إغلاق تلقائي اختياري، تحسين دوري للذاكرة",
-    "description": "Tab management description"
-  },
-  "superDragTitle": {
-    "message": "السحب الفائق",
-    "description": "Super drag title"
-  },
-  "superDragDesc": {
-    "message": ": سحب الروابط والصور إلى علامات تبويب جديدة، سحب النص المحدد للبحث",
-    "description": "Super drag description"
-  },
-  "linkPreviewTitle": {
-    "message": "العرض المنبثق",
-    "description": "Link preview title"
-  },
-  "linkPreviewDesc": {
-    "message": ": اضغط مع الاستمرار على مفتاح التعديل (افتراضي: Shift) أثناء التمرير فوق الروابط لمعاينة الصفحات المستهدفة في نوافذ منبثقة",
-    "description": "Link preview description"
-  },
-  "textSelectionPreview": {
-    "message": "حدد النص واضغط على مفتاح التعديل للبحث عنه فورًا في نافذة منبثقة، مع دعم محرك البحث المخصص",
-    "description": "Text selection preview description"
-  },
   "previewTip": {
-    "message": "يمكنك فتح عدة نوافذ منبثقة في نفس الوقت",
+    "message": "أبقِ عدة معاينات مفتوحة للمقارنة.",
     "description": "Preview tip"
-  },
-  "dragDirection": {
-    "message": "خصص اتجاه السحب لتحديد طريقة فتح علامة التبويب: الفتح في الخلفية افتراضيًا",
-    "description": "Drag direction description"
   },
   "debugPanelTitle": {
     "message": "معلومات تشخيص إيماءات الماوس",
     "description": "Debug panel title"
   },
   "debugPanelDesc": {
-    "message": ": اضغط Alt+D للفتح، تحليل معلومات الإيماءات في الوقت الفعلي، يحافظ على الحالة",
+    "message": "اضغط Alt+D لفتح لوحة التصحيح، وحلل معلومات الإيماءات في الوقت الفعلي، مع الحفاظ على الحالة.",
     "description": "Debug panel description"
   },
-  "oneClickCopy": {
-    "message": "نسخ بنقرة واحدة لمعلومات التشخيص لسهولة المشاركة، مع دعم متعدد اللغات",
-    "description": "One click copy description"
-  },
-  "mediaPreview": {
-    "message": "معاينة وسائط محسنة: تأثيرات تمرير صور محسنة وصور ملصقات فيديو محسنة",
-    "description": "Media preview description"
-  },
-  "adaptiveTheme": {
-    "message": "مظاهر تكيفية: يضبط النمط البصري بناءً على خلفية الصفحة، يدعم الوضع الفاتح/الداكن",
-    "description": "Adaptive theme description"
-  },
   "gestureTrail": {
-    "message": "مسارات الإيماءات معروضة على الشاشة مع لون وعرض قابل للتخصيص",
+    "message": "مسار وإرشادات الإيماءات اختيارية؛ اللون والسماكة في الإعدادات.",
     "description": "Gesture trail description"
   },
   "clickIcon": {
-    "message": "انقر على أيقونة الإضافة لتمكين/تعطيل الميزات، تعيين اللغة والمظهر والمزيد",
+    "message": "شريط الأدوات: نافذة منبثقة أو لوحة جانبية (Chrome/Edge) أو إعدادات منفصلة. الميزات واللغة والسمة والاستيراد/التصدير.",
     "description": "Click icon description"
   },
   "languageSupport": {
-    "message": "يدعم 29 لغة، يتكيف تلقائيًا مع لغة المتصفح",
+    "message": "29 لغة للواجهة؛ يستخدم اختيارك المحفوظ أو يتبع لغة المتصفح.",
     "description": "Language support description"
   },
   "enableAutoClose": {
-    "message": "تمكين ميزة الإغلاق التلقائي لعلامات التبويب المكررة لتقليل استخدام موارد المتصفح بشكل كبير",
+    "message": "مع كشف التكرار، إغلاق عناوين URL المكررة اختيارياً.",
     "description": "Enable auto close description"
   },
   "rightClickMacLinux": {
@@ -634,14 +1194,6 @@
   "duplicateTabsDetected": {
     "message": "تم العثور على $1 علامة تبويب مكررة",
     "description": "Duplicate tabs detected notification title"
-  },
-  "duplicateTabsCount": {
-    "message": "يوجد $1 علامة تبويب مكررة",
-    "description": "Duplicate tabs count message"
-  },
-  "duplicateTabsSingle": {
-    "message": "يوجد علامة تبويب مكررة واحدة",
-    "description": "Single duplicate tab message"
   },
   "autoClosedTabs": {
     "message": "تم إغلاق $1 علامة تبويب مكررة تلقائيًا",
@@ -659,61 +1211,9 @@
     "message": "علامة تبويب بلا عنوان",
     "description": "Untitled tab"
   },
-  "morePages": {
-    "message": "...و $1 صفحة أخرى",
-    "description": "More pages tip"
-  },
-  "errorShowDuplicateTabs": {
-    "message": "خطأ في إظهار إشعار علامات التبويب المكررة:",
-    "description": "Error showing duplicate tabs notification"
-  },
-  "errorSendCloseRequest": {
-    "message": "خطأ في إرسال طلب الإغلاق:",
-    "description": "Error sending close request"
-  },
-  "errorCloseDuplicateTabs": {
-    "message": "خطأ في إغلاق علامات التبويب المكررة:",
-    "description": "Error closing duplicate tabs"
-  },
-  "errorSendIgnoreRequest": {
-    "message": "خطأ في إرسال طلب التجاهل:",
-    "description": "Error sending ignore request"
-  },
-  "errorIgnoreDuplicateTabs": {
-    "message": "خطأ في تجاهل علامات التبويب المكررة:",
-    "description": "Error ignoring duplicate tabs"
-  },
-  "errorUpdateDebugPanel": {
-    "message": "خطأ في تحديث لوحة التشخيص:",
-    "description": "Error updating debug panel"
-  },
   "errorDetectBackgroundColor": {
     "message": "خطأ في اكتشاف لون الخلفية:",
     "description": "Error detecting background color"
-  },
-  "errorDetectImageBorder": {
-    "message": "خطأ في اكتشاف نصف قطر حدود الصورة:",
-    "description": "Error detecting image border radius"
-  },
-  "errorSetMutationObserver": {
-    "message": "خطأ في تعيين مراقب التغيير:",
-    "description": "Error setting mutation observer"
-  },
-  "errorCheckElementVisibility": {
-    "message": "خطأ في فحص رؤية العنصر:",
-    "description": "Error checking element visibility"
-  },
-  "errorProcessBorderRadius": {
-    "message": "خطأ في معالجة نصف قطر الحدود:",
-    "description": "Error processing border radius"
-  },
-  "errorDetectImageBackground": {
-    "message": "خطأ في اكتشاف خلفية الصورة:",
-    "description": "Error detecting image background"
-  },
-  "errorShowAutoCloseNotification": {
-    "message": "خطأ في إظهار إشعار نجاح الإغلاق التلقائي:",
-    "description": "Error showing auto-close success notification"
   },
   "noForwardPage": {
     "message": "لا توجد صفحة تالية في السجل",
@@ -743,10 +1243,6 @@
     "message": "إيماءة غير صالحة",
     "description": "Invalid gesture message"
   },
-  "nextPage": {
-    "message": "الصفحة التالية",
-    "description": "Next page action"
-  },
   "errorReadPixel": {
     "message": "خطأ في قراءة البكسل:",
     "description": "Error reading pixel message"
@@ -758,10 +1254,6 @@
   "errorCanvasDraw": {
     "message": "خطأ في الرسم على اللوحة:",
     "description": "Error drawing on canvas message"
-  },
-  "errorAccessIframe": {
-    "message": "خطأ في الوصول إلى iframe:",
-    "description": "Error accessing iframe message"
   },
   "errorMutationObserver": {
     "message": "خطأ في تعيين مراقب التغيير:",
@@ -791,6 +1283,10 @@
     "message": "إعدادات النظام",
     "description": "Debug panel system settings section"
   },
+  "debugConsoleLog": {
+    "message": "سجلات وحدة التحكم",
+    "description": "Debug panel console log toggle label"
+  },
   "debugAngleThreshold": {
     "message": "عتبة الزاوية",
     "description": "Debug panel angle threshold setting"
@@ -810,6 +1306,46 @@
   "debugMinGestureComplexity": {
     "message": "الحد الأدنى لتعقيد الإيماءة",
     "description": "Debug panel minimum gesture complexity setting"
+  },
+  "debugMinMovementToStartGesture": {
+    "message": "أدنى حركة للبدء",
+    "description": "إعداد لوحة التصحيح: أدنى حركة لبدء تتبع الإيماءة"
+  },
+  "debugSmoothingFactor": {
+    "message": "عامل التنعيم",
+    "description": "إعداد لوحة التصحيح: عامل تنعيم المسار والتعرّف"
+  },
+  "debugAngleThresholdHelp": {
+    "message": "يتحكم في مدى صرامة تصنيف الحركة كأفقية أو عمودية. القيم الأعلى تتطلب اتجاهًا أكثر استقامة؛ والقيم الأقل تسمح بميل أكبر.",
+    "description": "شرح عتبة الزاوية في لوحة التصحيح"
+  },
+  "debugDirectionChangeThresholdHelp": {
+    "message": "يتحكم في حساسية اكتشاف تغيّر الاتجاه. القيم الأقل تلتقط الانعطافات بسهولة أكبر؛ والقيم الأعلى تتجاهل الاهتزازات الصغيرة.",
+    "description": "شرح عتبة تغيّر الاتجاه في لوحة التصحيح"
+  },
+  "debugMinGestureDistanceHelp": {
+    "message": "أقل مسافة حركة إجمالية مطلوبة قبل التعرف على الإيماءة. زدها لتقليل التشغيل غير المقصود.",
+    "description": "شرح أقل مسافة للإيماءة في لوحة التصحيح"
+  },
+  "debugMinDirectionSegmentLengthHelp": {
+    "message": "أقل طول لمقطع الحركة المستخدم في التعرف على الاتجاه. زدها لتصفية الاهتزاز القصير، أو قللها للإيماءات القصيرة.",
+    "description": "شرح أقل طول لمقطع الاتجاه في لوحة التصحيح"
+  },
+  "debugMinGestureComplexityHelp": {
+    "message": "عتبة تعقيد الاتجاه قبل اعتبار المسار خربشة أو غير صالح. القيم الأعلى تسمح بمزيد من الانعطافات.",
+    "description": "شرح تعقيد الإيماءة في لوحة التصحيح"
+  },
+  "debugMinMovementToStartGestureHelp": {
+    "message": "يجب أن يتحرك المؤشر بهذا العدد من البكسلات على الأقل بعد الضغط قبل بدء تتبع الإيماءة.",
+    "description": "شرح أقل حركة لبدء الإيماءة في لوحة التصحيح"
+  },
+  "debugSmoothingFactorHelp": {
+    "message": "يتحكم في تنعيم المسار ونقاط التعرف. القيم الأعلى تقلل الاهتزاز لكنها قد تضعف الزوايا الحادة؛ والقيم الأقل تستجيب أسرع.",
+    "description": "شرح عامل التنعيم في لوحة التصحيح"
+  },
+  "debugConsoleLogHelp": {
+    "message": "فعّل سجلات تفصيلية للإضافة في وحدة تحكم أدوات المطوّر للمساعدة في استكشاف الأخطاء.",
+    "description": "شرح سجلات وحدة التحكم في لوحة التصحيح"
   },
   "debugLatestGestureInfo": {
     "message": "معلومات أحدث إيماءة",
@@ -850,10 +1386,6 @@
   "debugMergedDirections": {
     "message": "الاتجاهات المدمجة",
     "description": "Debug panel merged directions"
-  },
-  "debugDirectionDistances": {
-    "message": "مسافات الاتجاهات",
-    "description": "Debug panel direction distances"
   },
   "debugFinalResult": {
     "message": "النتيجة النهائية",
@@ -927,9 +1459,17 @@
     "message": "عرض عدد الألسنة",
     "description": "Show tab count badge option"
   },
-  "splitViewAction": {
-    "message": "عرض مقسوم",
-    "description": "فتح في نافذة العرض المقسوم"
+  "unlockPageRestrictions": {
+    "message": "إلغاء قيود النسخ واللصق وزر الماوس الأيمن ومراقبة التبويب",
+    "description": "Setting: unlock page interaction limits"
+  },
+  "unlockPageRestrictionsTitle": {
+    "message": "يزيل قيود النسخ واللصق والقائمة والتحديد، ويقلل تتبع blur/visibilitychange. يعمل في سياق الصفحة مع iframes وShadow DOM. أعد تحميل الصفحة بعد التفعيل.",
+    "description": "Tooltip for unlock page restrictions"
+  },
+  "unlockPageRestrictionsOffReloadConfirm": {
+    "message": "قد يبقى المنطق المحقون في التبويبات المفتوحة حتى إعادة التحميل.\n\nإعادة تحميل التبويب الحالي الآن؟",
+    "description": "Body text for unlock-off confirmation dialog"
   },
   "splitViewLeft": {
     "message": "قسم - يسار",
@@ -946,5 +1486,165 @@
   "splitViewDown": {
     "message": "قسم - أسفل",
     "description": "عرض مقسوم، نافذة جديدة في النصف السفلي"
+  },
+  "unlockPageRestrictionsOffTitle": {
+    "message": "تم إيقاف فتح القيود",
+    "description": "Title for unlock-off confirmation dialog"
+  },
+  "unlockPageRestrictionsReloadTab": {
+    "message": "إعادة تحميل التبويب",
+    "description": "Reload tab button in unlock-off dialog"
+  },
+  "unlockPageRestrictionsNotNow": {
+    "message": "ليس الآن",
+    "description": "Dismiss unlock-off dialog without reload"
+  },
+  "welcomeBulletImagePreview": {
+    "message": "معاينة الصورة: تكبير اختياري عند التمرير ووضع موسّع للتخطيطات المعقّدة.",
+    "description": "Welcome page: image hover preview bullet"
+  },
+  "welcomeBulletPageUnlock": {
+    "message": "فك قفل الصفحة: خفّف اختياريًا قيود النسخ واللصق والنقر الأيمن وغيرها — فعّل في الإعدادات وأعد تحميل الصفحة عند الطلب.",
+    "description": "Welcome page: page unlock bullet"
+  },
+  "welcomeBulletDisabledSites": {
+    "message": "حسب الموقع: النطاقات المدرجة تعطّل معًا الإيماءات والسحب الفائق والعرض المنبثق وفك القفل.",
+    "description": "Welcome page: per-site disable bullet"
+  },
+  "welcomeBulletSplitScroll": {
+    "message": "عرض مقسّم: عند فتح الرابط مقسّمًا يمكن مزامنة التمرير بين النافذتين (بما في ذلك أفقيًا).",
+    "description": "Welcome page: split scroll sync bullet"
+  },
+  "welcomeBulletScreenshot": {
+    "message": "لقطات: منطقة مرئية، صفحة كاملة، تمرير يدوي؛ مناطق مسار، اختصارات، حافظة، معاينة وسجل محلي (0 = غير محدود).",
+    "description": "Welcome page: screenshot feature bullet"
+  },
+  "welcomeTipScreenshot": {
+    "message": "اللقطات مفعلة افتراضياً؛ عيّن اختصارات للمنطقة المرئية والصفحة كاملة والتمرير؛ منطقة المسار والنسخ التلقائي والمعاينة والسجل اختياري.",
+    "description": "Welcome page: screenshot usage tip"
+  },
+  "trailColorPickerPresets": {
+    "message": "إعدادات مسبقة",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerRecent": {
+    "message": "حديثة",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerEyedropper": {
+    "message": "قطارة ألوان",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerEyedropperActive": {
+    "message": "انقر للقطارة · عجلة لتكبير العدسة",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerSyncTrail": {
+    "message": "حفظ كلون المسار",
+    "description": "Trail color picker UI"
+  },
+  "superDragCompassPosCompassHub": {
+    "message": "نقطة السحب",
+    "description": "Compass hub aligned to drag start"
+  },
+  "superDragCompassPosCompassScreenCenter": {
+    "message": "وسط الشاشة",
+    "description": "Compass fixed at viewport center"
+  },
+  "superDragCompassPosCompassScreenTop": {
+    "message": "أعلى",
+    "description": "Compass fixed at top of viewport"
+  },
+  "superDragCompassPosCompassScreenRight": {
+    "message": "يمين",
+    "description": "Compass fixed at right of viewport"
+  },
+  "superDragCompassPosCompassScreenBottom": {
+    "message": "أسفل",
+    "description": "Compass fixed at bottom of viewport"
+  },
+  "superDragCompassPosCompassScreenLeft": {
+    "message": "يسار",
+    "description": "Compass fixed at left of viewport"
+  },
+  "superDragCompassPosCompassHidden": {
+    "message": "مخفي",
+    "description": "Do not show compass"
+  },
+  "addCurrentSiteToDisabledSites": {
+    "message": "إضافة الموقع الحالي",
+    "description": "Button: add the active tab domain to disabled sites"
+  },
+  "addCurrentSiteToDisabledSitesTitle": {
+    "message": "إضافة نطاق علامة التبويب الحالية إلى المواقع المعطلة",
+    "description": "Tooltip for add-current-site button"
+  },
+  "addDisabledSite": {
+    "message": "إضافة",
+    "description": "Button: add a typed disabled site entry"
+  },
+  "disabledSiteInputPlaceholder": {
+    "message": "نطاق أو عنوان URL كامل، مثل youtube.com",
+    "description": "Placeholder for the disabled site input"
+  },
+  "disabledSitesEmpty": {
+    "message": "لا توجد مواقع معطلة بعد.",
+    "description": "Empty state for disabled sites list"
+  },
+  "removeDisabledSite": {
+    "message": "إزالة هذا الموقع",
+    "description": "Tooltip/aria label for remove disabled site button"
+  },
+  "disabledSiteInvalid": {
+    "message": "أدخل نطاقًا أو عنوان URL صالحًا",
+    "description": "Error shown when disabled site input is invalid"
+  },
+  "disabledSiteAlreadyExists": {
+    "message": "الموقع موجود بالفعل",
+    "description": "Error shown when adding a duplicate disabled site"
+  },
+  "disabledSitesLimitReached": {
+    "message": "تم بلوغ الحد الأقصى للمواقع المعطلة",
+    "description": "Error shown when disabled sites list reaches the maximum size"
+  },
+  "currentSiteUnsupported": {
+    "message": "علامة التبويب الحالية لا تحتوي على نطاق مدعوم",
+    "description": "Error shown when current tab URL cannot be added to disabled sites"
+  },
+  "customKey": {
+    "message": "مفتاح مخصص",
+    "description": "Custom trigger key option"
+  },
+  "previewTriggerMode": {
+    "message": "وضع التشغيل",
+    "description": "Popup view trigger mode setting"
+  },
+  "previewTriggerHold": {
+    "message": "الضغط المستمر على مفتاح التشغيل",
+    "description": "Hold trigger key option"
+  },
+  "previewTriggerDouble": {
+    "message": "الضغط المزدوج على مفتاح التشغيل",
+    "description": "Double-press trigger key option"
+  },
+  "previewCustomKey": {
+    "message": "مفتاح مخصص",
+    "description": "Popup view custom trigger key setting"
+  },
+  "previewCustomKeyPlaceholder": {
+    "message": "انقر واضغط مفتاحًا",
+    "description": "Popup view custom trigger key placeholder"
+  },
+  "previewCustomKeyTitle": {
+    "message": "انقر هنا، ثم اضغط مفتاحًا غير مُعدِّل. اضغط Esc للمسح.",
+    "description": "Popup view custom trigger key title"
+  },
+  "unlimited": {
+    "message": "بلا حدود",
+    "description": "Unlimited value label"
+  },
+  "settingsFontSize": {
+    "message": "حجم خط الإعدادات",
+    "description": "Header button: adjust settings font size"
   }
 }

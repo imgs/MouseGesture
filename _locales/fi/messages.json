@@ -4,7 +4,7 @@
     "description": "The name of the extension"
   },
   "extDesc": {
-    "message": "Chrome/Edge-laajennos, joka tukee hiiren eleitä, super-raahausta ja popup-näkymää",
+    "message": "Hiiren eleet, superraahaus, kuva- ja linkkien esikatselu ja lisää.",
     "description": "The description of the extension"
   },
   "title": {
@@ -35,13 +35,21 @@
     "message": "Raahaa Vasemmalle",
     "description": "Drag left action"
   },
-  "openInForeground": {
-    "message": "Avaa Linkki Etualalla",
-    "description": "Open link in foreground"
+  "dragUpRight": {
+    "message": "Vedä ylös-oikealle",
+    "description": "Super drag diagonal direction"
   },
-  "openInBackground": {
-    "message": "Avaa Linkki Taustalla",
-    "description": "Open link in background"
+  "dragDownRight": {
+    "message": "Vedä alas-oikealle",
+    "description": "Super drag diagonal direction"
+  },
+  "dragDownLeft": {
+    "message": "Vedä alas-vasemmalle",
+    "description": "Super drag diagonal direction"
+  },
+  "dragUpLeft": {
+    "message": "Vedä ylös-vasemmalle",
+    "description": "Super drag diagonal direction"
   },
   "superDragDescription": {
     "message": "Super-raahaus toimii linkeille, kuville ja valitulle tekstille. Voit asettaa avausmenetelmän jokaiselle eleen suunnalle (ylös/alas/vasen/oikea), mukaan lukien etualalla, taustalla tai jaketun näkymän (vasen/oikea/ylös/alas).",
@@ -64,52 +72,76 @@
     "description": "Down direction"
   },
   "downThenRight": {
-    "message": "Alas Sitten Oikea",
-    "description": "Down then right gesture"
+    "message": "Alas sitten oikea",
+    "description": "Ele alas sitten oikea"
   },
   "leftThenUp": {
-    "message": "Vasen Sitten Ylös",
-    "description": "Left then up gesture"
+    "message": "Vasen sitten ylös",
+    "description": "Ele vasen sitten ylös"
   },
   "rightThenUp": {
-    "message": "Oikea Sitten Ylös",
-    "description": "Right then up gesture"
+    "message": "Oikea sitten ylös",
+    "description": "Ele oikea sitten ylös"
   },
   "rightThenDown": {
-    "message": "Oikea Sitten Alas",
-    "description": "Right then down gesture"
+    "message": "Oikea sitten alas",
+    "description": "Ele oikea sitten alas"
   },
   "upThenLeft": {
-    "message": "Ylös Sitten Vasen",
-    "description": "Up then left gesture"
+    "message": "Ylös sitten vasen",
+    "description": "Ele ylös sitten vasen"
   },
   "upThenRight": {
-    "message": "Ylös Sitten Oikea",
-    "description": "Up then right gesture"
+    "message": "Ylös sitten oikea",
+    "description": "Ele ylös sitten oikea"
   },
   "downThenLeft": {
-    "message": "Alas Sitten Vasen",
-    "description": "Down then left gesture"
+    "message": "Alas sitten vasen",
+    "description": "Ele alas sitten vasen"
   },
   "leftThenDown": {
-    "message": "Vasen Sitten Alas",
-    "description": "Left then down gesture"
+    "message": "Vasen sitten alas",
+    "description": "Ele vasen sitten alas"
   },
   "upThenDown": {
-    "message": "Ylös Sitten Alas",
-    "description": "Up then down gesture"
+    "message": "Ylös sitten alas",
+    "description": "Ele ylös sitten alas"
   },
   "downThenUp": {
-    "message": "Alas Sitten Ylös",
-    "description": "Down then up gesture"
+    "message": "Alas sitten ylös",
+    "description": "Ele alas sitten ylös"
   },
   "leftThenRight": {
-    "message": "Vasen Sitten Oikea",
-    "description": "Left then right gesture"
+    "message": "Vasen sitten oikea",
+    "description": "Ele vasen sitten oikea"
   },
   "rightThenLeft": {
-    "message": "Oikea Sitten Vasen",
-    "description": "Right then left gesture"
+    "message": "Oikea sitten vasen",
+    "description": "Ele oikea sitten vasen"
+  },
+  "rightHoldWheelUp": {
+    "message": "Pidä oikea pohjassa + rullaa ylös",
+    "description": "Pidä oikea painike pohjassa ja rullaa ylös"
+  },
+  "rightHoldWheelDown": {
+    "message": "Pidä oikea pohjassa + rullaa alas",
+    "description": "Pidä oikea painike pohjassa ja rullaa alas"
+  },
+  "leftHoldWheelUp": {
+    "message": "Pidä vasen + rulla ylös",
+    "description": "Vasen painike ja rulla ylös"
+  },
+  "leftHoldWheelDown": {
+    "message": "Pidä vasen + rulla alas",
+    "description": "Vasen painike ja rulla alas"
+  },
+  "rightHoldLeftClick": {
+    "message": "Pidä oikea pohjassa + vasen klikkaus",
+    "description": "Pidä oikea painike pohjassa ja vasen klikkaus"
+  },
+  "leftHoldRightClick": {
+    "message": "Pidä vasenta + oikea naps",
+    "description": "Pidä vasenta painiketta ja napsauta oikeaa"
   },
   "back": {
     "message": "Takaisin",
@@ -158,6 +190,18 @@
   "prevTab": {
     "message": "Edellinen Välilehti",
     "description": "Previous tab action"
+  },
+  "previousActiveTab": {
+    "message": "Edellinen aktiivinen välilehti",
+    "description": "Eletoiminto: vaihda aiemmin aktiiviseen välilehteen"
+  },
+  "goToParentUrl": {
+    "message": "Ylätason URL",
+    "description": "Eletoiminto: siirry ylätason URL-polkuun"
+  },
+  "goToRootUrl": {
+    "message": "Juuriosoite",
+    "description": "Eletoiminto: siirry sivuston juuriosoitteeseen"
   },
   "nextTab": {
     "message": "Seuraava Välilehti",
@@ -211,6 +255,14 @@
     "message": "Vaihda Koko Näyttö",
     "description": "Toggle fullscreen action"
   },
+  "zoomIn": {
+    "message": "Lähennä",
+    "description": "Suurenna nykyisen välilehden zoomausta"
+  },
+  "zoomOut": {
+    "message": "Loitonna",
+    "description": "Pienennä nykyisen välilehden zoomausta"
+  },
   "closeTabsToLeft": {
     "message": "Sulje Välilehdet Vasemmalle",
     "description": "Close tabs to left action"
@@ -218,6 +270,474 @@
   "reloadAllTabs": {
     "message": "Lataa Kaikki Välilehdet Uudelleen",
     "description": "Reload all tabs action"
+  },
+  "stopLoadingAllTabs": {
+    "message": "Pysäytä kaikkien välilehtien lataus",
+    "description": "Stop loading in all tabs"
+  },
+  "screenshotRegion": {
+    "message": "Kuvakaappaus (sporområde)",
+    "description": "Screenshot gesture action"
+  },
+  "screenshotRegionOrLink": {
+    "message": "Kuvakaappaus eller avaa linkki",
+    "description": "Trail region hint when links are inside selection"
+  },
+  "trailRegionChooseTitle": {
+    "message": "Linkit valinnassa — kuvakaappaus tai avaa",
+    "description": "Trail region chooser dialog title"
+  },
+  "trailRegionLinkSingle": {
+    "message": "1 linkki",
+    "description": "Trail region link count"
+  },
+  "trailRegionLinkMultiple": {
+    "message": "{count} linkkis",
+    "description": "Trail region link count"
+  },
+  "trailRegionActionScreenshot": {
+    "message": "Kuvakaappaus (S)",
+    "description": "Trail region chooser button"
+  },
+  "trailRegionActionOpenLink": {
+    "message": "Avaa i ny välilehti (O)",
+    "description": "Trail region chooser button"
+  },
+  "trailRegionActionOpenLinks": {
+    "message": "Avaa i nye välilehdet (O)",
+    "description": "Trail region chooser button"
+  },
+  "trailRegionActionOpenSelected": {
+    "message": "Avaa {n} i nye välilehdet (O)",
+    "description": "Trail region open checked links"
+  },
+  "trailRegionActionOpenNone": {
+    "message": "Avaa markering (O)",
+    "description": "Trail region open button when none checked"
+  },
+  "trailRegionActionCopy": {
+    "message": "Kopioi (C)",
+    "description": "Trail region chooser copy button"
+  },
+  "trailRegionActionCopySelected": {
+    "message": "Kopioi {n} (C)",
+    "description": "Trail region copy checked links"
+  },
+  "trailRegionActionCopyNone": {
+    "message": "Kopioi (C)",
+    "description": "Trail region copy button when none checked"
+  },
+  "trailRegionCopyFailed": {
+    "message": "Kopiointi epäonnistui",
+    "description": "Trail region copy to clipboard failed"
+  },
+  "trailRegionSelectAll": {
+    "message": "Vælg alle",
+    "description": "Trail region link list select all"
+  },
+  "trailRegionNoLinkSelected": {
+    "message": "Vælg mindst ét linkki",
+    "description": "Trail region no selection hint"
+  },
+  "trailRegionChooseHint": {
+    "message": "Esc peruuttaa · valitse kopioitavat/avattavat linkit · vedä reunoja koon muuttamiseksi",
+    "description": "Trail region chooser footer"
+  },
+  "trailRegionLinkOpened": {
+    "message": "Linkki avaaet i ny välilehti",
+    "description": "Trail region open link feedback"
+  },
+  "trailRegionLinksOpened": {
+    "message": "Linkit avaaet i nye välilehdet",
+    "description": "Trail region open links feedback"
+  },
+  "trailRegionLinksTruncated": {
+    "message": "Avaaede kun de første {n} linkkis",
+    "description": "Trail region open links cap"
+  },
+  "screenshotScrollCaptureActive": {
+    "message": "Vieritä sivua manuaalisesti, sitten sama pikanäppäin tai Esc lopettaaksesi ja yhdistääksesi",
+    "description": "Manual scroll capture in progress"
+  },
+  "screenshotCopied": {
+    "message": "Kuvakaappaus kopioitu leikepöytä",
+    "description": "Screenshot feedback"
+  },
+  "screenshotFailed": {
+    "message": "Kuvakaappaus epäonnistui",
+    "description": "Screenshot feedback"
+  },
+  "screenshotNeedTrail": {
+    "message": "Tegn et pidempi polku for at valita alue",
+    "description": "Screenshot feedback"
+  },
+  "screenshotUnavailable": {
+    "message": "Kuvakaappaus-modulet er ei saatavilla",
+    "description": "Screenshot feedback"
+  },
+  "screenshotTopFrameOnly": {
+    "message": "Kuvakaappaus af koko sivu virker kun i pääkehys",
+    "description": "Screenshot feedback"
+  },
+  "screenshotFeature": {
+    "message": "Kuvakaappaus",
+    "description": "Screenshot settings section title"
+  },
+  "enableScreenshotFeature": {
+    "message": "Ota käyttöön kuvakaappaus",
+    "description": "Master toggle for screenshot feature"
+  },
+  "enableScreenshotTrailCapture": {
+    "message": "Sporområde (silmukka / risteysning)",
+    "description": "Capture when trail loops or crosses; skipped if another gesture action matches"
+  },
+  "enableScreenshotClipboard": {
+    "message": "Kopioi automatisk til leikepöytä",
+    "description": "Copy screenshot to clipboard after capture"
+  },
+  "enableScreenshotPreview": {
+    "message": "Vis forhåndsvisning efter optagelse",
+    "description": "Open preview window when a screenshot is captured"
+  },
+  "enableScreenshotHistory": {
+    "message": "Tallenna kuvakaappaushistoria",
+    "description": "Keep captured screenshots in local history"
+  },
+  "screenshotHistoryMaxCount": {
+    "message": "Historiagrænse",
+    "description": "Maximum screenshot history entries to keep"
+  },
+  "screenshotHistoryMaxCountHint": {
+    "message": "0 = ubegrænset; 1–200 sletter ældste poster ved overskridelse",
+    "description": "Screenshot history limit hint"
+  },
+  "screenshotHistoryUnlimited": {
+    "message": "Ubegrænset",
+    "description": "Label when screenshot history limit is 0"
+  },
+  "screenshotHistoryView": {
+    "message": "Se historia",
+    "description": "Open screenshot history window"
+  },
+  "screenshotHistoryTitle": {
+    "message": "Kuvakaappaushistoria",
+    "description": "Screenshot history window title"
+  },
+  "screenshotHistoryEmpty": {
+    "message": "Ei kuvakaappausr vielä",
+    "description": "Empty screenshot history state"
+  },
+  "screenshotHistoryClearAll": {
+    "message": "Tyhjennä kaikki",
+    "description": "Delete all screenshot history entries"
+  },
+  "screenshotHistoryClearConfirm": {
+    "message": "Poista koko kuvakaappaushistoria?",
+    "description": "Confirm clearing screenshot history"
+  },
+  "screenshotHistoryDelete": {
+    "message": "Poista",
+    "description": "Delete one screenshot history entry"
+  },
+  "screenshotHistoryPinToPage": {
+    "message": "Kiinnitä på siden",
+    "description": "Pin history thumbnail onto the web page"
+  },
+  "screenshotHistoryPinFailed": {
+    "message": "Ei voitu fastgøre (avaa kohdevälilehti eller tillad dette sivusto).",
+    "description": "Error when pinning from screenshot history"
+  },
+  "screenshotHistoryCount": {
+    "message": "$1 kohdetta",
+    "description": "Number of items in screenshot history",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "screenshotHistoryModeViewport": {
+    "message": "Näkyvä alue",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeFullPage": {
+    "message": "Koko sivu",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeRegion": {
+    "message": "Område",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeScroll": {
+    "message": "Manuaalinen vieritys",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeUnknown": {
+    "message": "Kuvakaappaus",
+    "description": "Screenshot history capture mode fallback label"
+  },
+  "screenshotDone": {
+    "message": "Kuvakaappaus klar",
+    "description": "Hint when capture finished without clipboard copy"
+  },
+  "screenshotPreviewTitle": {
+    "message": "Esikatselu kuvakaappaus",
+    "description": "Screenshot preview window title"
+  },
+  "screenshotPreviewClose": {
+    "message": "Sulje",
+    "description": "Close screenshot preview window"
+  },
+  "screenshotPreviewCopyAgain": {
+    "message": "Kopioi",
+    "description": "Copy screenshot to clipboard from preview window"
+  },
+  "screenshotPreviewSave": {
+    "message": "Tallenna tiedostona",
+    "description": "Save annotated screenshot to disk"
+  },
+  "screenshotPreviewSaved": {
+    "message": "Tallennettu",
+    "description": "Screenshot file save succeeded"
+  },
+  "screenshotPreviewPinToPage": {
+    "message": "Kiinnitä på siden",
+    "description": "Pin annotated screenshot onto the source web page"
+  },
+  "screenshotPreviewPinned": {
+    "message": "Kiinnitetty",
+    "description": "Screenshot pin placed on page"
+  },
+  "screenshotPreviewPinning": {
+    "message": "Kiinnitä…",
+    "description": "Screenshot pin in progress"
+  },
+  "screenshotPinTitle": {
+    "message": "Kuvakaappaus",
+    "description": "Title on pinned screenshot sticker"
+  },
+  "screenshotPinClose": {
+    "message": "Poista kiinnitys",
+    "description": "Close button on pinned screenshot"
+  },
+  "screenshotPinResize": {
+    "message": "Muuta kokoa",
+    "description": "Resize handle on pinned screenshot"
+  },
+  "screenshotPinZoomFit": {
+    "message": "Sovita",
+    "description": "Fit pinned screenshot to view"
+  },
+  "screenshotPinZoomOriginal": {
+    "message": "1:1",
+    "description": "Show pinned screenshot at original pixel size"
+  },
+  "screenshotPinOrderLabel": {
+    "message": "Kiinnitys $1$",
+    "description": "Pinned screenshot order number",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "screenshotPreviewLoadFailed": {
+    "message": "Ei voitu ladata esikatselua",
+    "description": "Screenshot preview load error"
+  },
+  "screenshotPreviewZoomFit": {
+    "message": "Sovita",
+    "description": "Fit screenshot to preview window"
+  },
+  "screenshotPreviewZoomFitTitle": {
+    "message": "Sovita ikkunaan",
+    "description": "Tooltip for fit zoom button"
+  },
+  "screenshotPreviewZoomOneToOne": {
+    "message": "1:1",
+    "description": "Actual-size zoom button label"
+  },
+  "screenshotPreviewZoomOneToOneTitle": {
+    "message": "Todellinen koko (1:1)",
+    "description": "Tooltip for 1:1 zoom button"
+  },
+  "screenshotPreviewZoomLevel": {
+    "message": "Zoom $1$%",
+    "description": "Current zoom percentage in preview",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "screenshotAnnotHand": {
+    "message": "Hånd (flyt)",
+    "description": "Pan the preview by dragging"
+  },
+  "screenshotAnnotPen": {
+    "message": "Pen",
+    "description": "Annotation tool: freehand"
+  },
+  "screenshotAnnotArrow": {
+    "message": "Pil (Shift: H/V)",
+    "description": "Annotation tool: arrow; Shift constrains to horizontal or vertical"
+  },
+  "screenshotAnnotLine": {
+    "message": "Linje (Shift: H/V)",
+    "description": "Annotation tool: line; Shift constrains to horizontal or vertical"
+  },
+  "screenshotAnnotRect": {
+    "message": "Rektangel (Shift: kvadrat)",
+    "description": "Annotation tool: rectangle; Shift draws a square"
+  },
+  "screenshotAnnotEllipse": {
+    "message": "Ellipse",
+    "description": "Annotation tool: ellipse"
+  },
+  "screenshotAnnotRoundRect": {
+    "message": "Pyöristetty suorakulmio",
+    "description": "Annotation tool: rounded rectangle"
+  },
+  "screenshotAnnotHighlighter": {
+    "message": "Korostuskynä",
+    "description": "Annotation tool: highlighter marker"
+  },
+  "screenshotAnnotHighlight": {
+    "message": "Korostuskehys",
+    "description": "Annotation tool: highlight rectangle"
+  },
+  "screenshotAnnotFillRect": {
+    "message": "Täytetty rektangel",
+    "description": "Annotation tool: filled rectangle"
+  },
+  "screenshotAnnotFillEllipse": {
+    "message": "Täytetty ellipse",
+    "description": "Annotation tool: filled ellipse"
+  },
+  "screenshotAnnotBlur": {
+    "message": "Sumennus",
+    "description": "Annotation tool: blur brush"
+  },
+  "screenshotAnnotArrow2": {
+    "message": "Kaksoisnuoli (Shift: H/V)",
+    "description": "Annotation tool: line with arrowheads at both ends; Shift constrains H/V"
+  },
+  "screenshotAnnotNumber": {
+    "message": "Nummer",
+    "description": "Annotation tool: sequential number markers"
+  },
+  "screenshotAnnotStampStart": {
+    "message": "Start nr.",
+    "description": "Starting number for sequential stamps"
+  },
+  "screenshotAnnotStampNext": {
+    "message": "Næste nr.: $1$",
+    "description": "Next number stamp to place (tooltip)",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "screenshotAnnotCrop": {
+    "message": "Rajaa",
+    "description": "Annotation tool: crop image"
+  },
+  "screenshotAnnotCropApply": {
+    "message": "Käytä rajausta",
+    "description": "Confirm crop selection"
+  },
+  "screenshotAnnotCropCancel": {
+    "message": "Peruuta",
+    "description": "Cancel crop selection"
+  },
+  "screenshotAnnotText": {
+    "message": "Tekst",
+    "description": "Annotation tool: text"
+  },
+  "screenshotAnnotMosaic": {
+    "message": "Mosaik",
+    "description": "Annotation tool: mosaic blur"
+  },
+  "screenshotAnnotEraser": {
+    "message": "Pyyhekumi",
+    "description": "Annotation tool: eraser"
+  },
+  "screenshotAnnotSize": {
+    "message": "Størrelse",
+    "description": "Annotation stroke size"
+  },
+  "screenshotAnnotResetAll": {
+    "message": "Nollaa kaikki muokkaukset",
+    "description": "Clear all annotations and restore original screenshot"
+  },
+  "screenshotAnnotStepCount": {
+    "message": "$1 / $2",
+    "description": "History step indicator: current / total"
+  },
+  "screenshotAnnotStepCountTitle": {
+    "message": "Käytetyt vaiheet / total (0 = alkuperäiskuva)",
+    "description": "Tooltip for history step indicator"
+  },
+  "screenshotAnnotUndo": {
+    "message": "Kumoa",
+    "description": "Undo annotation"
+  },
+  "screenshotAnnotRedo": {
+    "message": "Tee uudelleen",
+    "description": "Redo annotation"
+  },
+  "screenshotAnnotTextPlaceholder": {
+    "message": "Kirjoita tähän…",
+    "description": "Placeholder in inline text editor on screenshot preview"
+  },
+  "screenshotOptRegion": {
+    "message": "Aluevalinta",
+    "description": "Screenshot bind row: keyboard drag rectangle region"
+  },
+  "screenshotOptViewport": {
+    "message": "Näkyvä alue",
+    "description": "Screenshot bind row: current visible tab area"
+  },
+  "screenshotOptFullPage": {
+    "message": "Koko sivu",
+    "description": "Screenshot bind row: full page"
+  },
+  "screenshotOptScrollStitch": {
+    "message": "Manuaalinen vieritys",
+    "description": "Screenshot bind row: manual scroll capture"
+  },
+  "screenshotOptOpenHistory": {
+    "message": "Avaa historia",
+    "description": "Screenshot bind row: keyboard shortcut to open screenshot history"
+  },
+  "screenshotHotkeyPressHint": {
+    "message": "Pikanäppäimet: napsauta yllä olevaa kenttää, paina sitten yhdistelmää (Ctrl / Alt / Meta + kirjain tai numero, tai F1–F12). Esc tyhjentää kentän.",
+    "description": "Screenshot section footer: hotkey binding help"
+  },
+  "screenshotHotkeyPlaceholder": {
+    "message": "Napsauta angive",
+    "description": "Placeholder in empty screenshot hotkey fields"
+  },
+  "screenshotRegionPickHint": {
+    "message": "Vedä for at valitaksesi alueen. Esc peruuttaa.",
+    "description": "Hint while keyboard region picker is active"
+  },
+  "screenshotRegionPickFooterHint": {
+    "message": "Alueen pikanäppäin: piirrä suorakulmio ja vapauta. Linkeissä: kuvakaappaus tai uudet välilehdet. Esc peruuttaa.",
+    "description": "Screenshot section footer: keyboard region picker help"
+  },
+  "screenshotRegionTooSmall": {
+    "message": "Valinta liian pieni — piirrä suurempi område",
+    "description": "Region picker: minimum size not met"
+  },
+  "screenshotGestureIntersectHint": {
+    "message": "Polkualue: yksi silmukka tai yksi risteys, sitten vapauta. Linkeissä: kuvakaappaus tai uudet välilehdet. Monta silmukkaa = raapustusta.",
+    "description": "Screenshot section footer: trail region capture help"
   },
   "togglePinTab": {
     "message": "Kiinnitä/Poista Kiinnitys Välilehti",
@@ -244,16 +764,16 @@
     "description": "Settings title"
   },
   "customizedBehavior": {
-    "message": "Estolista",
-    "description": "Block list section title"
+    "message": "Poistetut sivustot käytöstä",
+    "description": "Section title for the per-site disable list"
   },
   "disableMouseGesturesForSites": {
-    "message": "Poista hiirellä tehdyt eleet ja superveto käytöstä näillä sivustoilla",
-    "description": "Label for the list of sites where gestures and super drag are disabled"
+    "message": "Poista laajennuksen ominaisuudet käytöstä luetelluissa verkkotunnuksissa",
+    "description": "Subtitle for Disabled sites section"
   },
   "disabledSitesHint": {
-    "message": "Yksi sivusto per rivi. Verkkotunnus (esim. youtube.com) tai täysi URL.",
-    "description": "Hint for the disabled sites textarea"
+    "message": "Koskee seuraavia: eleet, superveto, linkkien/kuvien esikatselu, kuvakaappaukset ja sivun rajoitusten poisto. Lisää nykyinen sivusto tai anna verkkotunnus/URL; poista napsauttamalla poistomerkkiä.",
+    "description": "Short hint explaining which features the Disabled sites list affects"
   },
   "enableGesture": {
     "message": "Ota Hiiren Eleet Käyttöön",
@@ -279,6 +799,26 @@
     "message": "Ota Super-raahaus Käyttöön",
     "description": "Enable super drag option"
   },
+  "superDragCompassPosition": {
+    "message": "8-suuntainen kompassi",
+    "description": "Super drag compass display and position"
+  },
+  "superDragCompassPosCompassAbove": {
+    "message": "Vetopisteen yläpuolella",
+    "description": "Compass above drag start, centered horizontally"
+  },
+  "superDragCompassPosCompassRight": {
+    "message": "Vetopisteen oikealla",
+    "description": "Compass to the right of drag start, vertically centered"
+  },
+  "superDragCompassPosCompassBelow": {
+    "message": "Vetopisteen alapuolella",
+    "description": "Compass below drag start, centered horizontally"
+  },
+  "superDragCompassPosCompassLeft": {
+    "message": "Vetopisteen vasemmalla",
+    "description": "Compass to the left of drag start, vertically centered"
+  },
   "enableDragTextSearch": {
     "message": "Ota Raahaa Teksti Haku Käyttöön",
     "description": "Enable drag text search option"
@@ -287,9 +827,17 @@
     "message": "Lataa kuva/tiedosto raahaamalla",
     "description": "When the drag target is an image or other downloadable file, start download automatically"
   },
+  "enableImageDrag": {
+    "message": "Ota kuvien vetäminen käyttöön",
+    "description": "Control image super drag independently from image preview"
+  },
   "enableImagePreview": {
     "message": "Ota Kuva Esikatselu Käyttöön",
     "description": "Enable image preview option"
+  },
+  "enableImagePreviewEnhanced": {
+    "message": "Parannettu kuvan esikatselu",
+    "description": "Support transparent overlay, background-image, parent lookup, etc."
   },
   "enableDuplicateCheck": {
     "message": "Havaitse Duplikaatti Välilehdet",
@@ -302,10 +850,6 @@
   "enableSmoothScroll": {
     "message": "Ota käyttöön sujuva vieritys",
     "description": "Enable smooth scrolling for gesture actions"
-  },
-  "save": {
-    "message": "Asetukset Sovellettu",
-    "description": "Save settings button"
   },
   "reset": {
     "message": "Palauta",
@@ -363,14 +907,6 @@
     "message": "Ei Voinut Palauttaa Asetuksia",
     "description": "Reset settings error notification"
   },
-  "themeLight": {
-    "message": "Vaalea",
-    "description": "Light theme"
-  },
-  "themeDark": {
-    "message": "Tumma",
-    "description": "Dark theme"
-  },
   "buyMeACoffee": {
     "message": "Osta minulle kahvi",
     "description": "Donation button"
@@ -379,17 +915,33 @@
     "message": "Vaihda teemaa",
     "description": "Toggle theme button"
   },
-  "toggleLanguage": {
-    "message": "Vaihda kieltä",
-    "description": "Toggle language button"
+  "openDetachedPopupTitle": {
+    "message": "Avaa asetukset sivupaneelissa (muuten erillisessä ikkunassa)",
+    "description": "Otsikon painike: asetukset sivupaneelissa tai erillisessä ikkunassa"
+  },
+  "openDetachedWindowFromSidePanelTitle": {
+    "message": "Avaa erillisessä ikkunassa (vierekkäin selaimen kanssa)",
+    "description": "Sivupaneeli: erillinen ikkuna ja selaimen asettelu"
+  },
+  "openOptionsPageTitle": {
+    "message": "Avaa asetussivu",
+    "description": "Otsakepainike: avaa laajennuksen asetussivu"
   },
   "donationTooltip": {
     "message": "Jos pidät tästä työstä, tue kiitos. Kiitos :)",
     "description": "Donation tooltip"
   },
   "rightButtonHint": {
-    "message": "Pidä oikea hiiren nappi pohjassa",
+    "message": "Pidä oikea (polku, rulla, napsautukset) · vasen (rulla)",
     "description": "Right mouse button hint"
+  },
+  "builtInGesturesListExpandHint": {
+    "message": "Napsauta laajentaaksesi koko eleluettelon",
+    "description": "Tooltip on built-in gestures subtitle when list is collapsed"
+  },
+  "builtInGesturesListCollapseHint": {
+    "message": "Napsauta supistaaksesi eleluettelon",
+    "description": "Tooltip on built-in gestures subtitle when list is expanded"
   },
   "leftButtonHint": {
     "message": "Pidä vasen hiiren nappi pohjassa",
@@ -403,17 +955,45 @@
     "message": "Avaa Taustalla",
     "description": "Open in background action"
   },
+  "popupViewAction": {
+    "message": "Popup Esikatselu",
+    "description": "Super drag action: open target in popup view"
+  },
+  "incognitoAction": {
+    "message": "Avaa yksityisessä ikkunassa",
+    "description": "Open in incognito/private window"
+  },
+  "enableSplitScrollSync": {
+    "message": "Synkronoi pysty- ja vaakavieritys jaettujen ikkunoiden välillä",
+    "description": "Jaetussa näkymässä sovita molemmat vieritysakselit ikkunoiden välillä"
+  },
   "copyAction": {
     "message": "Kopioi",
     "description": "Copy selected text or link URL to clipboard"
+  },
+  "downloadAction": {
+    "message": "Lataa",
+    "description": "Super drag action: download target"
   },
   "copiedToClipboard": {
     "message": "Kopioitu leikepöydälle",
     "description": "Hint after copy action"
   },
-  "dragSearchEngine": {
-    "message": "Raahaa Hakukone URL",
-    "description": "Drag search engine URL setting"
+  "dragSearchEngineSlotLabel": {
+    "message": "Muokattava kohde",
+    "description": "Label for drag search engine slot selector"
+  },
+  "dragSearchSlotDefault": {
+    "message": "Oletus (varalla)",
+    "description": "Default search URL slot in drag search editor"
+  },
+  "dragSearchEngineUrlForSlot": {
+    "message": "Hakukoneen URL",
+    "description": "Label for single drag search URL field"
+  },
+  "dragSearchEnginePerDirectionHelp": {
+    "message": "Valitse luettelosta «Oletus» tai vetosuunta ja muokkaa vastaavaa URL-osoitetta. Tyhjät suunnat käyttävät oletusta. Koskee vain vedettävän tekstin hakua.",
+    "description": "Help text for unified drag search engine editor"
   },
   "linkPreview": {
     "message": "Popup Esikatselu",
@@ -424,7 +1004,7 @@
     "description": "Quick navigation hover tooltip"
   },
   "linkPreviewHint": {
-    "message": "Hover + Näppäin Näyttääksesi Popup",
+    "message": "Näytä ponnahdusikkuna viemällä osoitin kohteen päälle ja käyttämällä laukaisinta",
     "description": "Popup view hint"
   },
   "enableLinkPreview": {
@@ -495,41 +1075,61 @@
     "message": "Käytä {q} hakutermille, esimerkki muoto:",
     "description": "Search engine examples description"
   },
+  "searchExampleUrlClickHint": {
+    "message": "Napsauta esimerkki-URL:ää täyttääksesi yllä olevan kentän ja tallentaaksesi",
+    "description": "Tooltip for example search engine URLs (click to fill)"
+  },
+  "searchEngineExamplesUrlClickHint": {
+    "message": "Vinkki: napsauta esimerkki-URL:ää täyttääksesi yllä olevan kentän ja tallentaaksesi.",
+    "description": "Visible hint under search engine examples (click URL to fill field above and save)"
+  },
   "googleExample": {
-    "message": "Google Haku: https://www.google.fi/search?q={q}",
+    "message": "Google Haku:",
+    "description": "Google search example"
+  },
+  "googleExampleUrl": {
+    "message": "https://www.google.fi/search?q={q}",
     "description": "Google search example"
   },
   "googleTranslateExample": {
-    "message": "Google Kääntäjä: https://translate.google.com/?sl=auto&tl=fi&text={q}&op=translate",
+    "message": "Google Kääntäjä:",
+    "description": "Google translate example"
+  },
+  "googleTranslateExampleUrl": {
+    "message": "https://translate.google.com/?sl=auto&tl=fi&text={q}&op=translate",
     "description": "Google translate example"
   },
   "localSearchExample": {
-    "message": "Esimerkki: https://www.google.fi/search?q={q}",
+    "message": "Esimerkki:",
+    "description": "Local search example"
+  },
+  "localSearchExampleUrl": {
+    "message": "https://www.google.fi/search?q={q}",
     "description": "Local search example"
   },
   "bingExample": {
-    "message": "Bing Haku: https://www.bing.com/search?q={q}&setlang=fi-FI",
+    "message": "Bing Haku:",
+    "description": "Bing search example"
+  },
+  "bingExampleUrl": {
+    "message": "https://www.bing.com/search?q={q}&setlang=fi-FI",
     "description": "Bing search example"
   },
   "wheelTip": {
-    "message": "Käytä hiiren pyörää säätääksesi arvoa",
+    "message": "Vie hiiri tälle riville ~1,5 s, säädä sitten hiiren pyörällä",
     "description": "Wheel tip"
   },
   "modifierKeyDelayTip": {
-    "message": "Laukaisunäppäimen käytössä maksimi viive on rajoitettu 300ms",
+    "message": "Viive alkaa, kun laukaisuehto täyttyy; pidennä sitä tahattomien esikatselujen välttämiseksi.",
     "description": "Modifier key delay tip"
   },
   "welcomeTitle": {
-    "message": "Tervetuloa Hiiren Elet Laajennokseen",
+    "message": "Tervetuloa hiiriele-laajennukseen",
     "description": "Welcome page title"
   },
   "welcomeDescription": {
-    "message": "Kiitos Hiiren Elet Laajennoksen asentamisesta! Tämä laajennos tarjoaa rikkaan hiiren elet toiminnallisuuden, älykkään välilehtien hallinnan, popup esikatselu kapasiteetin ja parannellun visuaalisen kokemuksen auttaaksesi sinua navigoimaan verkossa tehokkaammin. Olemme optimoineet elet tunnistus algoritmin suuremmalla virhe toleranssilla, mikä sallii elet tunnistetaan oikein vaikka niitä ei piirretä täydellisesti. Uusi popup esikatselu toiminto antaa sinun nähdä linkin sisällön popup ikkunoissa vaihtamatta välilehtiä. Laajennos tukee myös 24 kieltä ja vaalea/tumma teemaa paremman käyttökokemuksen vuoksi.",
+    "message": "Kiitos, että asensit Mouse Gesture -laajennuksen! Pidä oikeaa painiketta painettuna ja vedä navigoidaksesi, hallitaksesi välilehtiä ja vierittääksesi; pidä myös oikeaa tai vasenta rullaamalla (lisää yhdistelmiä asetuksissa) pikanäppäimiä varten — tunnistus pysyy anteeksiantavana myös sivujen latautuessa. Super Drag avaa linkkejä, kuvia ja tekstihaun eri säännöillä suunnittain (etusuunnassa, taustalla, jaettu asettelu, leikepöydälle kopiointi jne.). Popup View näyttää linkkien esikatseluja tai hakee valittua tekstiä pienissä ikkunoissa. Valinnainen: kuvan esikatselu hoverilla (laajennettu tila), kaksoisvälihakujen tunnistus automaattisella sulkemisella, pehmeä vieritys, välilehtimäärän merkki työkalupalkissa ja sivun lukituksen avaus rajoittavilla sivustoilla. Asetukset työkalupalkista (ponnahdus, sivupaneeli tai erillinen ikkuna); vienti/tuonti; synkronointi selaintilin kanssa. 29 kieltä ja vaalea/tumma teema.",
     "description": "Welcome page description"
-  },
-  "gesturesDescription": {
-    "message": "Seuraavat ovat esiasetettu hiiren elet, joita voit käyttää raahaamalla oikealla hiiren napalla:",
-    "description": "Gestures description"
   },
   "extensionName": {
     "message": "Hiiren Elet Laajennos",
@@ -539,88 +1139,48 @@
     "message": "Ydin Toiminnot",
     "description": "Core features title"
   },
-  "utilitiesFeatures": {
-    "message": "Työkalut",
-    "description": "Utilities features title"
+  "welcomeCoreGestureBlock": {
+    "message": "Hiiren eleet: pidä oikeaa ja vedä polkuesteitä; rulla oikea tai vasen pohjassa ja napsautuskombinaatiot oikea pohjassa — määritettävissä uudelleen asetuksissa; anteeksiantava tunnistus, myös latauksen aikana.",
+    "description": "Welcome page: core features gesture summary"
+  },
+  "welcomeCoreSuperDragBlock": {
+    "message": "Super Drag: vedä linkit ja kuvat uusiin välilehtiin, valittu teksti hakuun; suunta määrittää välilehtien avautumisen; oletuksena taustalla.",
+    "description": "Welcome page: core features super drag summary"
+  },
+  "welcomeCorePopupViewBlock": {
+    "message": "Ponnahdusnäkymä: pidä laukaisunäppäintä (oletus Vaihto) linkin päällä esikatsellaksesi pienessä ikkunassa; valitse teksti ja paina näppäintä heti hakuun omalla hakukoneella.",
+    "description": "Welcome page: core features popup view summary"
   },
   "usageTips": {
     "message": "Käyttövinkit",
     "description": "Usage tips title"
   },
-  "smartGestureRecognition": {
-    "message": "Älykäs elet tunnistus: Tunnistaa elet oikein vaikka epätäydellisiä, toimii sivun latauksen aikana",
-    "description": "Smart gesture recognition description"
-  },
-  "tabManagementTitle": {
-    "message": "Välilehtien Hallinta",
-    "description": "Tab management title"
-  },
-  "tabManagementDesc": {
-    "message": ": Älykäs duplikaatti tunnistus, automaattinen sulkeminen, jaksollinen muisti optimointi",
-    "description": "Tab management description"
-  },
-  "superDragTitle": {
-    "message": "Super-raahaus",
-    "description": "Super drag title"
-  },
-  "superDragDesc": {
-    "message": ": Raahaa linkkejä ja kuvia uusille välilehdille, raahaa valittua tekstiä hakuun",
-    "description": "Super drag description"
-  },
-  "linkPreviewTitle": {
-    "message": "Popup Esikatselu",
-    "description": "Link preview title"
-  },
-  "linkPreviewDesc": {
-    "message": ": Pidä laukaisunäppäin (oletus: Shift) pohjassa kun hoveraat linkkien päällä esikatsellaksesi kohdesivun popup ikkunoissa",
-    "description": "Link preview description"
-  },
-  "textSelectionPreview": {
-    "message": "Valitse teksti ja paina laukaisunäppäin hakeaksesi heti popup ikkunassa, mukautetun hakukoneen tuella",
-    "description": "Text selection preview description"
-  },
   "previewTip": {
-    "message": "Voit avata useita popup ikkunoita samanaikaisesti",
+    "message": "Hold flere popup-forhåndsvisninger avaae samtidig til sammenligning.",
     "description": "Preview tip"
-  },
-  "dragDirection": {
-    "message": "Mukauta raahaussuuntaa määrittääksesi välilehden avaus menetelmän: avaa taustalla oletuksena",
-    "description": "Drag direction description"
   },
   "debugPanelTitle": {
     "message": "Hiiren Elet Debug Tiedot",
     "description": "Debug panel title"
   },
   "debugPanelDesc": {
-    "message": ": Paina Alt+D avataksesi, analysoi elet tiedot reaaliajassa, säilyttää tilan",
+    "message": "Paina Alt+D avataksesi vianjäljityspaneelin, analysoi eleiden tietoja reaaliajassa, tila säilyy.",
     "description": "Debug panel description"
   },
-  "oneClickCopy": {
-    "message": "Yhden klikkauksen kopiointi debug tiedoista helppoa jakamista varten, monikielisellä tuella",
-    "description": "One click copy description"
-  },
-  "mediaPreview": {
-    "message": "Paranneltu media esikatselu: Parannellut hover efektit kuville ja optimoidut video poster kuvat",
-    "description": "Media preview description"
-  },
-  "adaptiveTheme": {
-    "message": "Adaptiiviset teemat: Säätää visuaalista tyyliä sivun taustan perusteella, tukee vaalea/tumma tilaa",
-    "description": "Adaptive theme description"
-  },
   "gestureTrail": {
-    "message": "Elet jälki näytetään näytöllä mukautettavalla värillä ja leveydellä",
+    "message": "Valgfrit spor og eleohje på skærmen; tilpas polun väri og paksuus i asetukset.",
     "description": "Gesture trail description"
   },
   "clickIcon": {
-    "message": "Klikkaa laajennoksen ikonia ottaaksesi toiminnat käyttöön/pois, asettaaksesi kielen, teeman ja enemmän",
+    "message": "Työkalupalkki: kompakt popup, sidepanel (Chrome/Edge når understøttet) eller separat indstillingsvindue. Slå funktioner, sprog og tema til/fra og eksportér/importér.",
     "description": "Click icon description"
   },
   "languageSupport": {
-    "message": "Tukee 24 kieltä, mukautuu automaattisesti selaimen kieleen",
+    "message": "29 käyttöliittymän kieltä; käyttää tallennettua valintaa tai selaimen kieltä.",
     "description": "Language support description"
   },
   "enableAutoClose": {
-    "message": "Ota automaattinen duplikaatti välilehtien sulkeminen käyttöön vähentääksesi selaimen resurssien käyttöä merkittävästi",
+    "message": "Med kaksoiskappaleiden tunnistus kan gentagne URL'er lukkes automatisk (valgfrit).",
     "description": "Enable auto close description"
   },
   "rightClickMacLinux": {
@@ -634,14 +1194,6 @@
   "duplicateTabsDetected": {
     "message": "Löydetty $1 duplikaatti välilehtiä",
     "description": "Duplicate tabs detected notification title"
-  },
-  "duplicateTabsCount": {
-    "message": "On $1 duplikaatti välilehtiä",
-    "description": "Duplicate tabs count message"
-  },
-  "duplicateTabsSingle": {
-    "message": "On 1 duplikaatti välilehti",
-    "description": "Single duplicate tab message"
   },
   "autoClosedTabs": {
     "message": "Automaattisesti suljettu $1 duplikaatti välilehtiä",
@@ -659,61 +1211,9 @@
     "message": "Nimeämätön välilehti",
     "description": "Untitled tab"
   },
-  "morePages": {
-    "message": "...ja $1 muuta sivua",
-    "description": "More pages tip"
-  },
-  "errorShowDuplicateTabs": {
-    "message": "Virhe näytettäessä duplikaatti välilehtien ilmoitusta:",
-    "description": "Error showing duplicate tabs notification"
-  },
-  "errorSendCloseRequest": {
-    "message": "Virhe lähetettäessä sulkemis pyyntöä:",
-    "description": "Error sending close request"
-  },
-  "errorCloseDuplicateTabs": {
-    "message": "Virhe suljettaessa duplikaatti välilehtiä:",
-    "description": "Error closing duplicate tabs"
-  },
-  "errorSendIgnoreRequest": {
-    "message": "Virhe lähetettäessä jätä huomiotta pyyntöä:",
-    "description": "Error sending ignore request"
-  },
-  "errorIgnoreDuplicateTabs": {
-    "message": "Virhe jätettäessä duplikaatti välilehtiä huomiotta:",
-    "description": "Error ignoring duplicate tabs"
-  },
-  "errorUpdateDebugPanel": {
-    "message": "Virhe päivitettäessä debug paneelia:",
-    "description": "Error updating debug panel"
-  },
   "errorDetectBackgroundColor": {
     "message": "Virhe havaittaessa taustaväriä:",
     "description": "Error detecting background color"
-  },
-  "errorDetectImageBorder": {
-    "message": "Virhe havaittaessa kuvan reunan säde:",
-    "description": "Error detecting image border radius"
-  },
-  "errorSetMutationObserver": {
-    "message": "Virhe asetettaessa mutation observer:",
-    "description": "Error setting mutation observer"
-  },
-  "errorCheckElementVisibility": {
-    "message": "Virhe tarkistettaessa elementin näkyvyyttä:",
-    "description": "Error checking element visibility"
-  },
-  "errorProcessBorderRadius": {
-    "message": "Virhe käsiteltäessä reunan säde:",
-    "description": "Error processing border radius"
-  },
-  "errorDetectImageBackground": {
-    "message": "Virhe havaittaessa kuvan taustaa:",
-    "description": "Error detecting image background"
-  },
-  "errorShowAutoCloseNotification": {
-    "message": "Virhe näytettäessä automaattisen sulkemisen onnistumis ilmoitusta:",
-    "description": "Error showing auto-close success notification"
   },
   "noForwardPage": {
     "message": "Ei seuraavaa sivua historiassa",
@@ -743,10 +1243,6 @@
     "message": "Virheellinen Ele",
     "description": "Invalid gesture message"
   },
-  "nextPage": {
-    "message": "Seuraava Sivu",
-    "description": "Next page action"
-  },
   "errorReadPixel": {
     "message": "Virhe luettaessa pikseliä:",
     "description": "Error reading pixel message"
@@ -758,10 +1254,6 @@
   "errorCanvasDraw": {
     "message": "Virhe piirrettäessä canvas:",
     "description": "Error drawing on canvas message"
-  },
-  "errorAccessIframe": {
-    "message": "Virhe päästäessä iframe:",
-    "description": "Error accessing iframe message"
   },
   "errorMutationObserver": {
     "message": "Virhe asetettaessa mutation observer:",
@@ -791,6 +1283,10 @@
     "message": "Järjestelmä Asetukset",
     "description": "Debug panel system settings section"
   },
+  "debugConsoleLog": {
+    "message": "Konsolilokit",
+    "description": "Debug panel console log toggle label"
+  },
   "debugAngleThreshold": {
     "message": "Kulma Kynnys",
     "description": "Debug panel angle threshold setting"
@@ -810,6 +1306,46 @@
   "debugMinGestureComplexity": {
     "message": "Minimi Ele Monimutkaisuus",
     "description": "Debug panel minimum gesture complexity setting"
+  },
+  "debugMinMovementToStartGesture": {
+    "message": "Vähimmäisliike aloitukseen",
+    "description": "Virheenkorjauspaneelin asetus: vähimmäisliike eleen seurannan aloittamiseen"
+  },
+  "debugSmoothingFactor": {
+    "message": "Tasoituskerroin",
+    "description": "Virheenkorjauspaneelin asetus: jäljen ja tunnistuksen tasoituskerroin"
+  },
+  "debugAngleThresholdHelp": {
+    "message": "Määrittää, kuinka tarkasti liike luokitellaan vaaka- tai pystysuuntaiseksi. Suurempi arvo vaatii suoremman suunnan; pienempi sallii enemmän vinoliikettä.",
+    "description": "Virheenkorjauspaneelin kulmakynnyksen ohje"
+  },
+  "debugDirectionChangeThresholdHelp": {
+    "message": "Määrittää suunnanmuutosten tunnistusherkkyyden. Pienempi arvo havaitsee käännökset helpommin; suurempi ohittaa pienet tärinät.",
+    "description": "Virheenkorjauspaneelin suunnanmuutoskynnyksen ohje"
+  },
+  "debugMinGestureDistanceHelp": {
+    "message": "Vähimmäiskokonaisliike ennen kuin ele voidaan tunnistaa. Kasvata arvoa vähentääksesi vahinkokäynnistyksiä.",
+    "description": "Virheenkorjauspaneelin eleen vähimmäisetäisyyden ohje"
+  },
+  "debugMinDirectionSegmentLengthHelp": {
+    "message": "Suunnantunnistuksessa käytettävän liikesegmentin vähimmäispituus. Kasvata arvoa lyhyen tärinän suodattamiseen tai pienennä lyhyille eleille.",
+    "description": "Virheenkorjauspaneelin suuntasegmentin vähimmäispituuden ohje"
+  },
+  "debugMinGestureComplexityHelp": {
+    "message": "Suuntamonimutkaisuuden kynnys, jonka jälkeen polku katsotaan tuherteluksi tai virheelliseksi. Suurempi arvo sallii enemmän käännöksiä.",
+    "description": "Virheenkorjauspaneelin eleen monimutkaisuuden ohje"
+  },
+  "debugMinMovementToStartGestureHelp": {
+    "message": "Osoittimen on liikuttava painikkeen painamisen jälkeen vähintään näin monta pikseliä ennen eleen seurannan alkamista.",
+    "description": "Virheenkorjauspaneelin aloitusliikkeen ohje"
+  },
+  "debugSmoothingFactorHelp": {
+    "message": "Ohjaa jäljen ja tunnistuspisteiden tasoitusta. Suurempi arvo vähentää tärinää mutta voi pehmentää teräviä käännöksiä; pienempi reagoi nopeammin.",
+    "description": "Virheenkorjauspaneelin tasoituskertoimen ohje"
+  },
+  "debugConsoleLogHelp": {
+    "message": "Ottaa käyttöön yksityiskohtaiset laajennuslokit DevTools-konsolissa vianmääritystä varten.",
+    "description": "Virheenkorjauspaneelin konsolilokien ohje"
   },
   "debugLatestGestureInfo": {
     "message": "Viimeisin Ele Tiedot",
@@ -850,10 +1386,6 @@
   "debugMergedDirections": {
     "message": "Yhdistetyt Suunnat",
     "description": "Debug panel merged directions"
-  },
-  "debugDirectionDistances": {
-    "message": "Suunta Etäisyydet",
-    "description": "Debug panel direction distances"
   },
   "debugFinalResult": {
     "message": "Lopullinen Tulos",
@@ -927,9 +1459,17 @@
     "message": "Näytä Välilehtien Luku",
     "description": "Show tab count badge option"
   },
-  "splitViewAction": {
-    "message": "Jaettu näkymä",
-    "description": "Ava jaetun näkymän ikkunassa"
+  "unlockPageRestrictions": {
+    "message": "Poista kopiointi/liittäminen/oikea painike ja välilehtiseurannan rajat",
+    "description": "Setting: unlock page interaction limits"
+  },
+  "unlockPageRestrictionsTitle": {
+    "message": "Poistaa yleiset kopiointi-, liittämis-, kontekstivalikko- ja valintarajoitukset; heikentää blur/visibilitychange-seurantaa. Toimii sivukontekstissa, tukee iframeja ja Shadow DOMia. Lataa sivu uudelleen käyttöönoton jälkeen.",
+    "description": "Tooltip for unlock page restrictions"
+  },
+  "unlockPageRestrictionsOffReloadConfirm": {
+    "message": "Avoimissa välilehdissä injektoitu logiikka voi pysyä kunnes lataat uudelleen.\n\nLadataanko nykyinen välilehti nyt uudelleen?",
+    "description": "Body text for unlock-off confirmation dialog"
   },
   "splitViewLeft": {
     "message": "Jaa - vasen",
@@ -946,5 +1486,165 @@
   "splitViewDown": {
     "message": "Jaa - ala",
     "description": "Jaettu näkymä, uusi ikkuna alapuoliskolla"
+  },
+  "unlockPageRestrictionsOffTitle": {
+    "message": "Sivun avaus pois päältä",
+    "description": "Title for unlock-off confirmation dialog"
+  },
+  "unlockPageRestrictionsReloadTab": {
+    "message": "Lataa välilehti uudelleen",
+    "description": "Reload tab button in unlock-off dialog"
+  },
+  "unlockPageRestrictionsNotNow": {
+    "message": "Ei nyt",
+    "description": "Dismiss unlock-off dialog without reload"
+  },
+  "welcomeBulletImagePreview": {
+    "message": "Kuvan esikatselu: valinnainen suurennettu hover-esikatselu ja laajennettu tila monimutkaisille asetteluille.",
+    "description": "Welcome page: image hover preview bullet"
+  },
+  "welcomeBulletPageUnlock": {
+    "message": "Sivun avaus: valinnainen kopioinnin, liittämisen, oikean napin jne. rajoitusten lieventäminen — ota käyttöön asetuksissa ja lataa sivu uudelleen tarvittaessa.",
+    "description": "Welcome page: page unlock bullet"
+  },
+  "welcomeBulletDisabledSites": {
+    "message": "Sivustoittain: listatuilla verkkotunnuksilla eleet, Super Drag, ponnahdus ja avaus poistetaan käytöstä yhdessä.",
+    "description": "Welcome page: per-site disable bullet"
+  },
+  "welcomeBulletSplitScroll": {
+    "message": "Jaettu näkymä: jaetussa asettelussa voit synkronoida vierityksen ikkunoiden välillä (myös vaakasuunnassa).",
+    "description": "Welcome page: split scroll sync bullet"
+  },
+  "welcomeBulletScreenshot": {
+    "message": "Kuvakaappausr: synligt område, hele side og manuel rul-sammenføjning; sporområder, pikanäppäine, valgfri kopiering til leikepöytä, forhåndsvisning og lokal historia (0 = ubegrænset).",
+    "description": "Welcome page: screenshot feature bullet"
+  },
+  "welcomeTipScreenshot": {
+    "message": "Kuvakaappausr er aktiveret som standard; tildel pikanäppäine til synligt område, hele side og rulning; sporområde, auto-kopiér, forhåndsvisning og historia er valgfrie.",
+    "description": "Welcome page: screenshot usage tip"
+  },
+  "trailColorPickerPresets": {
+    "message": "Esiasetukset",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerRecent": {
+    "message": "Viimeisimmät",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerEyedropper": {
+    "message": "Pipetti",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerEyedropperActive": {
+    "message": "Napsauta tage farve · hjul zoomer lup",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerSyncTrail": {
+    "message": "Tallenna som polun väri",
+    "description": "Trail color picker UI"
+  },
+  "superDragCompassPosCompassHub": {
+    "message": "Trækpunkt",
+    "description": "Compass hub aligned to drag start"
+  },
+  "superDragCompassPosCompassScreenCenter": {
+    "message": "Näytön keskus",
+    "description": "Compass fixed at viewport center"
+  },
+  "superDragCompassPosCompassScreenTop": {
+    "message": "Ylös",
+    "description": "Compass fixed at top of viewport"
+  },
+  "superDragCompassPosCompassScreenRight": {
+    "message": "Oikea",
+    "description": "Compass fixed at right of viewport"
+  },
+  "superDragCompassPosCompassScreenBottom": {
+    "message": "Alas",
+    "description": "Compass fixed at bottom of viewport"
+  },
+  "superDragCompassPosCompassScreenLeft": {
+    "message": "Vasen",
+    "description": "Compass fixed at left of viewport"
+  },
+  "superDragCompassPosCompassHidden": {
+    "message": "Piilotettu",
+    "description": "Do not show compass"
+  },
+  "addCurrentSiteToDisabledSites": {
+    "message": "Lisää nykyinen sivusto",
+    "description": "Button: add the active tab domain to disabled sites"
+  },
+  "addCurrentSiteToDisabledSitesTitle": {
+    "message": "Lisää nykyisen välilehden verkkotunnus poistettuihin sivustoihin",
+    "description": "Tooltip for add-current-site button"
+  },
+  "addDisabledSite": {
+    "message": "Lisää",
+    "description": "Button: add a typed disabled site entry"
+  },
+  "disabledSiteInputPlaceholder": {
+    "message": "Verkkotunnus tai täydellinen URL, esim. youtube.com",
+    "description": "Placeholder for the disabled site input"
+  },
+  "disabledSitesEmpty": {
+    "message": "Poistettuja sivustoja ei vielä ole.",
+    "description": "Empty state for disabled sites list"
+  },
+  "removeDisabledSite": {
+    "message": "Poista tämä sivusto",
+    "description": "Tooltip/aria label for remove disabled site button"
+  },
+  "disabledSiteInvalid": {
+    "message": "Anna kelvollinen verkkotunnus tai URL",
+    "description": "Error shown when disabled site input is invalid"
+  },
+  "disabledSiteAlreadyExists": {
+    "message": "Sivusto on jo olemassa",
+    "description": "Error shown when adding a duplicate disabled site"
+  },
+  "disabledSitesLimitReached": {
+    "message": "Poistettujen sivustojen raja saavutettu",
+    "description": "Error shown when disabled sites list reaches the maximum size"
+  },
+  "currentSiteUnsupported": {
+    "message": "Nykyisellä välilehdellä ei ole tuettua verkkotunnusta",
+    "description": "Error shown when current tab URL cannot be added to disabled sites"
+  },
+  "customKey": {
+    "message": "Mukautettu näppäin",
+    "description": "Custom trigger key option"
+  },
+  "previewTriggerMode": {
+    "message": "Laukaisutila",
+    "description": "Popup view trigger mode setting"
+  },
+  "previewTriggerHold": {
+    "message": "Pidä laukaisunäppäintä painettuna",
+    "description": "Hold trigger key option"
+  },
+  "previewTriggerDouble": {
+    "message": "Paina laukaisunäppäintä kahdesti",
+    "description": "Double-press trigger key option"
+  },
+  "previewCustomKey": {
+    "message": "Mukautettu näppäin",
+    "description": "Popup view custom trigger key setting"
+  },
+  "previewCustomKeyPlaceholder": {
+    "message": "Napsauta ja paina näppäintä",
+    "description": "Popup view custom trigger key placeholder"
+  },
+  "previewCustomKeyTitle": {
+    "message": "Napsauta tähän ja paina muuta kuin muuntonäppäintä. Tyhjennä painamalla Esc.",
+    "description": "Popup view custom trigger key title"
+  },
+  "unlimited": {
+    "message": "Rajoittamaton",
+    "description": "Unlimited value label"
+  },
+  "settingsFontSize": {
+    "message": "Asetusten fonttikoko",
+    "description": "Header button: adjust settings font size"
   }
 }

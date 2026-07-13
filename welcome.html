@@ -2,299 +2,338 @@
 <html>
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title data-i18n="welcomeTitle">欢迎使用鼠标手势扩展</title>
   <style>
+    :root {
+      --welcome-coral: #ff6b6b;
+      --welcome-coral-deep: #e85555;
+      --welcome-accent: #5c6bc0;
+      --welcome-bg-top: #faf7f8;
+      --welcome-bg-mid: #f0f4ff;
+      --welcome-surface: rgba(255, 255, 255, 0.92);
+      --welcome-text: #1a1d26;
+      --welcome-text-muted: #5c6378;
+      --welcome-border: rgba(92, 107, 192, 0.12);
+      --welcome-shadow: 0 24px 64px rgba(26, 29, 38, 0.08), 0 8px 24px rgba(255, 107, 107, 0.06);
+      --welcome-shadow-hover: 0 28px 72px rgba(26, 29, 38, 0.12), 0 12px 32px rgba(255, 107, 107, 0.1);
+      --welcome-radius-lg: 20px;
+      --welcome-radius-md: 14px;
+      --welcome-max: 920px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --welcome-bg-top: #12141a;
+        --welcome-bg-mid: #1a1d28;
+        --welcome-surface: rgba(30, 33, 44, 0.88);
+        --welcome-text: #eceef4;
+        --welcome-text-muted: #9aa3b8;
+        --welcome-border: rgba(255, 255, 255, 0.08);
+        --welcome-shadow: 0 24px 64px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(255, 255, 255, 0.06);
+        --welcome-shadow-hover: 0 32px 80px rgba(0, 0, 0, 0.55), 0 0 0 1px rgba(255, 255, 255, 0.08);
+      }
+    }
+
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-    
+
+    html {
+      -webkit-text-size-adjust: 100%;
+      min-height: 100%;
+    }
+
     body {
-      background-color: #f5f5f5;
-      color: #333;
-      line-height: 1.6;
-      padding: 20px;
-      font-size: 14px;
-    }
-    
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      background-color: #fff;
-      border-radius: 12px;
-      padding: 24px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    }
-    
-    .header {
-      margin-bottom: 10px;
-      padding-bottom: 2px;
-      border-bottom: 1px solid #eaecef;
-      text-align: center;
-    }
-    
-    h1 {
-      font-size: 28px;
-      color: #2c3e50;
-      text-align: center;
-    }
-    
-    h2 {
-      font-size: 20px;
-      color: #3498db;
-      margin: 35px 0 15px;
-      border-bottom: 1px solid #eaecef;
-      padding-bottom: 10px;
-    }
-    
-    p {
-      margin-bottom: 5px;
-      color: #555;
-      font-size: 14px;
-    }
-    
-    .section {
-      background-color: white;
-      border-radius: 8px;
-      padding: 2px;
-      transition: all 0.3s ease;
-    }
-    
-    .section-title {
-      color: #2c3e50;
+      min-height: 100vh;
+      min-height: 100dvh;
+      color: var(--welcome-text);
+      line-height: 1.58;
       font-size: 16px;
-      margin-bottom: 15px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      padding-bottom: 10px;
-      border-bottom: 1px solid #eaecef;
-    }
-    
-    .section-title .emoji {
-      font-size: 18px;
-    }
-    
-    .gesture-list {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 15px;
-      margin: 20px 0;
-    }
-    
-    .gesture-item {
-      display: flex;
-      justify-content: space-between;
-      background-color: #f8f9fa;
-      padding: 12px 15px;
-      border-radius: 5px;
-      border-left: 3px solid #3498db;
-      transition: transform 0.2s ease;
-    }
-    
-    .gesture-item:hover {
-      transform: translateX(3px);
-    }
-    
-    .gesture-name {
-      font-weight: bold;
-      color: #2c3e50;
-    }
-    
-    .gesture-action {
-      color: #7f8c8d;
-    }
-    
-    ul {
-      margin-left: 20px;
-      margin-bottom: 15px;
-    }
-    
-    li {
-      margin-bottom: 10px;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "PingFang SC", "Microsoft YaHei", sans-serif;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
       position: relative;
-      list-style-type: none;
-      padding-left: 20px;
+      overflow-x: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: stretch;
     }
-    
-    li:before {
-      content: "•";
-      color: #3498db;
-      font-weight: bold;
+
+    .welcome-bg {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      background:
+        radial-gradient(ellipse 120% 80% at 50% -20%, rgba(255, 107, 107, 0.18), transparent 55%),
+        radial-gradient(ellipse 90% 60% at 100% 40%, rgba(92, 107, 192, 0.14), transparent 50%),
+        radial-gradient(ellipse 70% 50% at 0% 80%, rgba(255, 138, 138, 0.1), transparent 45%),
+        linear-gradient(165deg, var(--welcome-bg-top) 0%, var(--welcome-bg-mid) 45%, var(--welcome-bg-top) 100%);
+      pointer-events: none;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .welcome-bg {
+        background:
+          radial-gradient(ellipse 120% 80% at 50% -20%, rgba(255, 107, 107, 0.12), transparent 55%),
+          radial-gradient(ellipse 90% 60% at 100% 35%, rgba(92, 107, 192, 0.2), transparent 50%),
+          radial-gradient(ellipse 70% 50% at 0% 75%, rgba(255, 107, 107, 0.06), transparent 45%),
+          linear-gradient(165deg, var(--welcome-bg-top) 0%, var(--welcome-bg-mid) 50%, #0f1117 100%);
+      }
+    }
+
+    .welcome-main {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      padding: clamp(18px, 3.5vw, 40px) clamp(16px, 3.5vw, 36px) clamp(24px, 4.5vw, 48px);
+    }
+
+    .container {
+      max-width: var(--welcome-max);
+      margin: 0 auto;
+      background: var(--welcome-surface);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-radius: var(--welcome-radius-lg);
+      padding: clamp(20px, 3vw, 36px) clamp(20px, 3.5vw, 40px);
+      box-shadow: var(--welcome-shadow);
+      border: 1px solid var(--welcome-border);
+    }
+
+    .hero {
+      text-align: center;
+      padding-bottom: clamp(16px, 2.2vw, 24px);
+    }
+
+    h1 {
+      font-size: clamp(1.75rem, 4vw, 2.35rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.22;
+      text-wrap: balance;
+      max-width: 22em;
+      margin-inline: auto;
+      background: linear-gradient(120deg, var(--welcome-coral) 0%, #ff8a8a 35%, var(--welcome-accent) 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 0;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      h1 {
+        background: linear-gradient(120deg, #ff8a8a 0%, #ffb4b4 40%, #9fa8da 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+
+    .welcome-intro {
+      margin-top: clamp(14px, 2.2vw, 20px);
+      width: 100%;
+      text-align: start;
+      font-size: clamp(0.9375rem, 1.45vw, 1.0625rem);
+      color: var(--welcome-text-muted);
+      line-height: 1.62;
+      letter-spacing: 0.01em;
+      text-wrap: pretty;
+      overflow-wrap: break-word;
+      word-break: break-word;
+    }
+
+    h2 {
+      font-size: 1.125rem;
+      font-weight: 700;
+      color: var(--welcome-text);
+      margin: 0 0 12px;
+      letter-spacing: -0.015em;
+      line-height: 1.35;
+      text-wrap: balance;
+    }
+
+    .section {
+      border-radius: var(--welcome-radius-md);
+      padding: clamp(12px, 2vw, 18px) clamp(14px, 2.5vw, 20px);
+      margin-bottom: clamp(10px, 1.8vw, 16px);
+    }
+
+    .section-title {
+      color: var(--welcome-text);
+      font-size: clamp(1rem, 1.85vw, 1.125rem);
+      font-weight: 700;
+      margin-bottom: clamp(10px, 1.5vw, 14px);
+      display: flex;
+      align-items: flex-start;
+      gap: 10px 12px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--welcome-border);
+      line-height: 1.45;
+      text-wrap: pretty;
+    }
+
+    .section-title .emoji {
+      font-size: 1.35rem;
+      line-height: 1.15;
+      flex-shrink: 0;
+      margin-top: 0.12em;
+      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.08));
+    }
+
+    .section-title > span:last-child {
+      min-width: 0;
+      flex: 1;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .section ul li {
+      margin-bottom: 0.58em;
+      position: relative;
+      padding-inline-start: 1.15rem;
+      color: var(--welcome-text-muted);
+      font-size: 0.9375rem;
+      line-height: 1.58;
+      text-wrap: pretty;
+      overflow-wrap: break-word;
+      word-break: break-word;
+    }
+
+    .section ul li:last-child {
+      margin-bottom: 0;
+    }
+
+    .section ul li::before {
+      content: "";
       position: absolute;
-      left: 0;
+      inset-inline-start: 0;
+      top: 0.62em;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--welcome-coral), var(--welcome-accent));
+      box-shadow: 0 0 0 2px rgba(255, 107, 107, 0.18);
     }
-    
+
+    .section ul li strong {
+      color: var(--welcome-text);
+      font-weight: 600;
+    }
+
     .footer {
       text-align: center;
-      margin-top: 10px;
-      padding-top: 10px;
-      color: #7f8c8d;
-      font-size: 14px;
+      margin-top: clamp(16px, 2.5vw, 24px);
+      padding-top: clamp(14px, 2.2vw, 20px);
+    }
+
+    .footer p {
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
       align-items: center;
-      gap: 15px;
-      border-top: 1px solid #eaecef;
+      gap: 10px 14px;
+      color: var(--welcome-text-muted);
+      font-size: 0.9375rem;
     }
-    
+
     .about-link {
-      color: #3498db;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--welcome-coral-deep);
       text-decoration: none;
-      font-weight: 500;
+      font-weight: 700;
+      font-size: 1rem;
       transition: color 0.2s ease;
     }
-    
+
+    @media (prefers-color-scheme: dark) {
+      .about-link {
+        color: #ffb4b4;
+      }
+    }
+
     .about-link:hover {
-      color: #2980b9;
+      color: var(--welcome-coral);
       text-decoration: underline;
+      text-underline-offset: 0.2em;
     }
-    
+
     .footer-icon {
-      width: 16px;
-      height: 16px;
+      width: 20px;
+      height: 20px;
       vertical-align: middle;
-      margin-right: 4px;
-      margin-top: -2px;
-      transition: all 0.2s ease;
+      border-radius: 4px;
+      transition: transform 0.25s ease;
     }
-    
-    .footer:hover .footer-icon {
-      transform: rotate(10deg);
+
+    .about-link:hover .footer-icon {
+      transform: scale(1.08) rotate(-6deg);
     }
-    
-    @media (max-width: 600px) {
-      .gesture-list {
-        grid-template-columns: 1fr;
-      }
-      
-      .container {
-        padding: 20px;
-      }
+
+    #version-text {
+      font-weight: 600;
+      opacity: 0.85;
+      font-variant-numeric: tabular-nums;
     }
+
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="header">
-      <h1 data-i18n="welcomeTitle">欢迎使用鼠标手势扩展</h1>
-    </div>
-    
-    <p data-i18n="welcomeDescription">感谢您安装鼠标手势扩展！本扩展提供丰富的鼠标手势功能、智能标签页管理、小窗视图功能和增强的视觉体验，帮助您更高效地浏览网页。我们优化了手势识别算法，提高了容错性，即使手势绘制不够完美也能正确识别。新增的小窗视图功能通过弹出窗口让您直接查看链接内容，无需切换标签页。同时支持29种语言和明暗主题切换，为您提供更好的使用体验。</p>
-    
-    <div class="section">
-      <div class="section-title"><span class="emoji">👆</span> <span data-i18n="gesturesDescription">以下是预设的鼠标手势，您可以通过右键拖动来使用这些手势：</span></div>
-      <div class="gesture-list">
-        <div class="gesture-item">
-          <div class="gesture-name" data-i18n="left">左</div>
-          <div class="gesture-action" data-i18n="back">后退</div>
-        </div>
-        <div class="gesture-item">
-          <div class="gesture-name" data-i18n="right">右</div>
-          <div class="gesture-action" data-i18n="forward">前进</div>
-        </div>
-        <div class="gesture-item">
-          <div class="gesture-name" data-i18n="up">上</div>
-          <div class="gesture-action" data-i18n="scrollUp">向上滚动</div>
-        </div>
-        <div class="gesture-item">
-          <div class="gesture-name" data-i18n="down">下</div>
-          <div class="gesture-action" data-i18n="scrollDown">向下滚动</div>
-        </div>
-        <div class="gesture-item">
-          <div class="gesture-name" data-i18n="downThenRight">下然后右</div>
-          <div class="gesture-action" data-i18n="closeTab">关闭标签页</div>
-        </div>
-        <div class="gesture-item">
-          <div class="gesture-name" data-i18n="leftThenUp">左然后上</div>
-          <div class="gesture-action" data-i18n="reopenTab">重新打开关闭的标签页</div>
-        </div>
-        <div class="gesture-item">
-          <div class="gesture-name" data-i18n="rightThenUp">右然后上</div>
-          <div class="gesture-action" data-i18n="newTab">打开新标签页</div>
-        </div>
-        <div class="gesture-item">
-          <div class="gesture-name" data-i18n="rightThenDown">右然后下</div>
-          <div class="gesture-action" data-i18n="refresh">刷新</div>
-        </div>
-        <div class="gesture-item">
-          <div class="gesture-name" data-i18n="upThenLeft">上然后左</div>
-          <div class="gesture-action" data-i18n="prevTab">切换到左侧标签页</div>
-        </div>
-        <div class="gesture-item">
-          <div class="gesture-name" data-i18n="upThenRight">上然后右</div>
-          <div class="gesture-action" data-i18n="nextTab">切换到右侧标签页</div>
-        </div>
-        <div class="gesture-item">
-          <div class="gesture-name" data-i18n="downThenLeft">下然后左</div>
-          <div class="gesture-action" data-i18n="stopLoading">停止加载</div>
-        </div>
-        <div class="gesture-item">
-          <div class="gesture-name" data-i18n="leftThenDown">左然后下</div>
-          <div class="gesture-action" data-i18n="forceRefresh">强制刷新</div>
-        </div>
-        <div class="gesture-item">
-          <div class="gesture-name" data-i18n="upThenDown">上然后下</div>
-          <div class="gesture-action" data-i18n="scrollToBottom">滚动到底部</div>
-        </div>
-        <div class="gesture-item">
-          <div class="gesture-name" data-i18n="downThenUp">下然后上</div>
-          <div class="gesture-action" data-i18n="scrollToTop">滚动到顶部</div>
-        </div>
-        <div class="gesture-item">
-          <div class="gesture-name" data-i18n="leftThenRight">左然后右</div>
-          <div class="gesture-action" data-i18n="closeTab">关闭标签页</div>
-        </div>
-        <div class="gesture-item">
-          <div class="gesture-name" data-i18n="rightThenLeft">右然后左</div>
-          <div class="gesture-action" data-i18n="reopenTab">重新打开关闭的标签页</div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="section">
-      <div class="section-title"><span class="emoji">🌟</span> <span data-i18n="coreFeatures">核心功能</span></div>
-      <ul>
-        <li data-i18n="smartGestureRecognition">智能手势识别：支持自定义手势动作选择，即使手势不够精确也能正确识别</li>
-        <li><strong data-i18n="tabManagementTitle">标签页管理</strong><span data-i18n="tabManagementDesc">：智能检测重复标签页，可选自动关闭，定期内存优化</span></li>
-        <li><strong data-i18n="superDragTitle">超级拖拽</strong><span data-i18n="superDragDesc">：拖拽链接、图片到新标签页，选中文本拖拽搜索</span></li>
-        <li data-i18n="dragDirection">自定义拖拽方向决定标签页打开方式：默认后台打开</li>
-        <li><strong data-i18n="linkPreviewTitle">小窗视图</strong><span data-i18n="linkPreviewDesc">：按住触发按键(默认Shift)同时鼠标悬停在链接上，通过小窗预览目标页面内容</span></li>
-        <li data-i18n="textSelectionPreview">选中文本后按触发按键，将在弹出窗口中即时搜索内容，支持自定义搜索引擎</li>
-        
-      </ul>
-    </div>
-        
-    <div class="section">
-      <div class="section-title"><span class="emoji">💡</span> <span data-i18n="usageTips">使用小贴士</span></div>
-      <ul>
-        <li><strong data-i18n="rightClickMacLinux">在 Linux 和 macOS 系统中，双击右键可以显示浏览器的上下文菜单</strong></li>
-        <li data-i18n="gestureTrail">手势轨迹会显示在屏幕上，可自定义轨迹颜色和宽度</li>
-        <li data-i18n="clickIcon">点击扩展图标开启/关闭功能，设置界面语言、主题等</li>
-        <li data-i18n="previewTip">可同时打开多个小窗口浏览不同内容</li>
-        <li data-i18n="languageSupport">支持29种语言，自动适配浏览器语言</li>
-        <li data-i18n="enableAutoClose">开启自动关闭重复标签页功能可大幅减少浏览器资源占用</li>
-        <li data-i18n="syncInfo">设置会自动同步到您的 Google 账户（Chrome）或 Microsoft 账户（Edge）</li>
-      </ul>
-    </div>
-    
-    <div class="section">
-      <div class="section-title"><span class="emoji">✨</span> <span data-i18n="utilitiesFeatures">实用工具</span></div>
-      <ul>
-        <li><strong data-i18n="debugPanelTitle">调试面板</strong><span data-i18n="debugPanelDesc">：按Alt+D快速打开，实时分析手势信息，自动保持状态</span></li>
-        <li data-i18n="oneClickCopy">一键复制调试信息，方便分享问题报告，多语言支持</li>
-        <li data-i18n="mediaPreview">优化的媒体预览：改进图片悬停效果，优化视频封面图</li>
-        <li data-i18n="adaptiveTheme">自适应主题：根据页面背景调整视觉风格，支持明暗主题切换</li>
-      </ul>
-    </div>
+  <main class="welcome-main">
+    <div class="welcome-bg" aria-hidden="true"></div>
+    <div class="container">
+      <header class="hero">
+        <h1 data-i18n="welcomeTitle">欢迎使用鼠标手势扩展</h1>
+        <p class="welcome-intro" data-i18n="welcomeDescription">感谢安装鼠标手势扩展！按住右键拖动可完成前进后退、标签与滚动等操作，另支持按住右键或左键配合滚轮等组合键（均可在设置中自定义），轨迹识别带有容错，页面加载过程中也可使用。超级拖拽支持链接、图片与选中文本，八个方向可分别设为前台、后台、分屏（上下左右）、复制到剪贴板等；拖拽图片/文件时可选择自动下载；文本搜索支持默认搜索引擎 URL 与按方向的独立 URL。小窗视图可在悬停链接时按住触发键（默认 Shift）打开可移动预览，也可对选中文字即时搜索。另提供可选的截图（可见区域/整页/滚动拼接、历史与预览）、图片悬停预览（含增强模式）、跨窗口重复标签检测与可选自动关闭、平滑滚动、工具栏标签数量徽章，以及可选的网页复制/右键等限制解除。设置可从工具栏以弹出面板、浏览器侧边栏（支持时）或独立窗口打开，支持导出/导入；选项随浏览器账户同步。界面支持 29 种语言及浅色/深色主题。</p>
+      </header>
 
-    <div class="footer">
-      <p><a href="https://abcrk.com/420.html" target="_blank" class="about-link" data-i18n="extensionName"><span id="icon-container"></span> Mouse Gesture Extension</a> <span id="version-text"></span></p>
+      <section class="section" aria-labelledby="core-heading">
+        <h2 id="core-heading" class="section-title"><span class="emoji" aria-hidden="true">🌟</span> <span data-i18n="coreFeatures">核心功能</span></h2>
+        <ul>
+          <li data-i18n="welcomeCoreGestureBlock">鼠标手势：按住右键拖动为路径手势；另支持按住右键滚轮、按住左键滚轮，以及按住右键时的左右键点击组合，均可在设置中改绑为多种动作；轨迹识别具备容错，页面加载过程中也可使用。</li>
+          <li data-i18n="welcomeCoreSuperDragBlock">超级拖拽：拖拽链接、图片与文件；选中文本拖拽搜索。八个方向可分别设为前台/后台打开、四向分屏、复制到剪贴板等；拖拽图片/文件时可选择自动下载；支持默认与按方向的独立搜索引擎 URL。</li>
+          <li data-i18n="welcomeCorePopupViewBlock">小窗视图：按住触发按键（默认 Shift）同时鼠标悬停在链接上，通过小窗预览目标页面内容；选中文本后按触发按键，将在弹出窗口中即时搜索内容，支持自定义搜索引擎。</li>
+          <li data-i18n="welcomeBulletScreenshot">截图：可见区域、整页与手动滚动拼接；可用手势轨迹框选区域，支持自定义快捷键、自动复制到剪贴板、预览窗口与本地历史（0 为不限制条数）。</li>
+          <li data-i18n="welcomeBulletImagePreview">图片预览：可选的图片悬停放大预览，并提供增强模式以适配复杂页面布局。</li>
+          <li data-i18n="welcomeBulletPageUnlock">网页限制解除：可选弱化部分站点对复制、粘贴、右键等的限制；关闭该功能时会提示是否重新加载当前标签页。</li>
+          <li data-i18n="welcomeBulletDisabledSites">按站点停用：列表中的域名将同时禁用手势、超级拖拽、小窗预览与网页限制解除。</li>
+          <li data-i18n="welcomeBulletSplitScroll">分屏视图：链接以分屏打开时，可在两个窗口之间同步滚动（含横向）。</li>
+        </ul>
+      </section>
+
+      <section class="section" aria-labelledby="tips-heading">
+        <h2 id="tips-heading" class="section-title"><span class="emoji" aria-hidden="true">💡</span> <span data-i18n="usageTips">使用小贴士</span></h2>
+        <ul>
+          <li><strong data-i18n="rightClickMacLinux">在 Linux 和 macOS 系统中，双击右键可以显示浏览器的上下文菜单</strong></li>
+          <li data-i18n="gestureTrail">可显示手势轨迹与操作提示；轨迹颜色与粗细可在设置中调整。</li>
+          <li data-i18n="clickIcon">工具栏入口：紧凑型弹出面板、浏览器侧边栏（Chrome/Edge 等支持时）或独立设置窗口。可开关各功能、切换语言/主题，并导出或导入设置。</li>
+          <li data-i18n="previewTip">可同时保留多个小窗预览，便于对照浏览。</li>
+          <li data-i18n="welcomeTipScreenshot">截图功能默认关闭；在设置中启用后，可为可见区域、整页与手动滚动拼接指定快捷键，并可选轨迹框选、自动复制、预览与本地历史。</li>
+          <li data-i18n="languageSupport">界面支持 29 种语言；优先使用您在扩展中保存的语言，否则跟随浏览器语言。</li>
+          <li data-i18n="enableAutoClose">开启重复检测后，可选用自动关闭相同地址的标签页以节省内存。</li>
+          <li data-i18n="syncInfo">设置会自动同步到您的 Google 账户（Chrome）或 Microsoft 账户（Edge）</li>
+          <li data-i18n="debugPanelDesc">按 Alt+D 快速打开调试面板，实时分析手势信息，自动保持状态</li>
+        </ul>
+      </section>
+
+      <footer class="footer">
+        <p>
+          <a href="https://abcrk.com/420.html" target="_blank" rel="noopener noreferrer" class="about-link"><span id="icon-container"></span><span data-i18n="extensionName">Mouse Gesture Extension</span></a>
+          <span id="version-text"></span>
+        </p>
+      </footer>
     </div>
-  </div>
-  
-  <script src="utils.js"></script>
+  </main>
+
   <script src="welcome.js"></script>
 </body>
-</html> 
+</html>

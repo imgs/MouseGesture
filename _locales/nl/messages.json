@@ -4,7 +4,7 @@
     "description": "De naam van de extensie"
   },
   "extDesc": {
-    "message": "Een Chrome/Edge extensie die muisgebaren, super drag functionaliteit en popup view ondersteunt",
+    "message": "Muisgebaren, super slepen, voorbeeld van afbeeldingen en links en meer.",
     "description": "De beschrijving van de extensie"
   },
   "title": {
@@ -35,13 +35,21 @@
     "message": "Sleep Links",
     "description": "Sleep links actie"
   },
-  "openInForeground": {
-    "message": "Open Link op Voorgrond",
-    "description": "Open link op voorgrond"
+  "dragUpRight": {
+    "message": "Omhoog-rechts slepen",
+    "description": "Super drag diagonal direction"
   },
-  "openInBackground": {
-    "message": "Open Link op Achtergrond",
-    "description": "Open link op achtergrond"
+  "dragDownRight": {
+    "message": "Omlaag-rechts slepen",
+    "description": "Super drag diagonal direction"
+  },
+  "dragDownLeft": {
+    "message": "Omlaag-links slepen",
+    "description": "Super drag diagonal direction"
+  },
+  "dragUpLeft": {
+    "message": "Omhoog-links slepen",
+    "description": "Super drag diagonal direction"
   },
   "superDragDescription": {
     "message": "Super Sleep werkt voor links, afbeeldingen en geselecteerde tekst. U kunt de openmethode instellen voor elke gebaarrichting (omhoog/omlaag/links/rechts), inclusief voorgrond, achtergrond of gesplitste weergave (links/rechts/omhoog/omlaag).",
@@ -64,52 +72,76 @@
     "description": "Richting omlaag"
   },
   "downThenRight": {
-    "message": "Omlaag dan Rechts",
+    "message": "Omlaag dan rechts",
     "description": "Gebaar omlaag dan rechts"
   },
   "leftThenUp": {
-    "message": "Links dan Omhoog",
+    "message": "Links dan omhoog",
     "description": "Gebaar links dan omhoog"
   },
   "rightThenUp": {
-    "message": "Rechts dan Omhoog",
+    "message": "Rechts dan omhoog",
     "description": "Gebaar rechts dan omhoog"
   },
   "rightThenDown": {
-    "message": "Rechts dan Omlaag",
+    "message": "Rechts dan omlaag",
     "description": "Gebaar rechts dan omlaag"
   },
   "upThenLeft": {
-    "message": "Omhoog dan Links",
+    "message": "Omhoog dan links",
     "description": "Gebaar omhoog dan links"
   },
   "upThenRight": {
-    "message": "Omhoog dan Rechts",
+    "message": "Omhoog dan rechts",
     "description": "Gebaar omhoog dan rechts"
   },
   "downThenLeft": {
-    "message": "Omlaag dan Links",
+    "message": "Omlaag dan links",
     "description": "Gebaar omlaag dan links"
   },
   "leftThenDown": {
-    "message": "Links dan Omlaag",
+    "message": "Links dan omlaag",
     "description": "Gebaar links dan omlaag"
   },
   "upThenDown": {
-    "message": "Omhoog dan Omlaag",
+    "message": "Omhoog dan omlaag",
     "description": "Gebaar omhoog dan omlaag"
   },
   "downThenUp": {
-    "message": "Omlaag dan Omhoog",
+    "message": "Omlaag dan omhoog",
     "description": "Gebaar omlaag dan omhoog"
   },
   "leftThenRight": {
-    "message": "Links dan Rechts",
+    "message": "Links dan rechts",
     "description": "Gebaar links dan rechts"
   },
   "rightThenLeft": {
-    "message": "Rechts dan Links",
+    "message": "Rechts dan links",
     "description": "Gebaar rechts dan links"
+  },
+  "rightHoldWheelUp": {
+    "message": "Rechts ingedrukt houden + wiel omhoog",
+    "description": "Rechts ingedrukt houden en wiel omhoog"
+  },
+  "rightHoldWheelDown": {
+    "message": "Rechts ingedrukt houden + wiel omlaag",
+    "description": "Rechts ingedrukt houden en wiel omlaag"
+  },
+  "leftHoldWheelUp": {
+    "message": "Linkermuisknop ingedrukt + wiel omhoog",
+    "description": "Linkerknop vast en wiel omhoog"
+  },
+  "leftHoldWheelDown": {
+    "message": "Linkermuisknop ingedrukt + wiel omlaag",
+    "description": "Linkerknop vast en wiel omlaag"
+  },
+  "rightHoldLeftClick": {
+    "message": "Rechts ingedrukt houden + linkerklick",
+    "description": "Rechts ingedrukt houden en linkerklick"
+  },
+  "leftHoldRightClick": {
+    "message": "Links ingedrukt houden + rechtsklik",
+    "description": "Linkerknop ingedrukt houden en rechts klikken"
   },
   "back": {
     "message": "Ga Terug",
@@ -158,6 +190,18 @@
   "prevTab": {
     "message": "Vorig Tabblad",
     "description": "Vorig tabblad actie"
+  },
+  "previousActiveTab": {
+    "message": "Vorige actieve tab",
+    "description": "Gebaaractie: schakel naar de eerder actieve tab"
+  },
+  "goToParentUrl": {
+    "message": "Bovenliggende URL",
+    "description": "Gebaaractie: ga naar het bovenliggende URL-pad"
+  },
+  "goToRootUrl": {
+    "message": "Hoofd-URL",
+    "description": "Gebaaractie: ga naar de hoofd-URL van de site"
   },
   "nextTab": {
     "message": "Volgend Tabblad",
@@ -211,6 +255,14 @@
     "message": "Volledig Scherm Schakelen",
     "description": "Toggle fullscreen action"
   },
+  "zoomIn": {
+    "message": "Inzoomen",
+    "description": "Zoom van huidige tab vergroten"
+  },
+  "zoomOut": {
+    "message": "Uitzoomen",
+    "description": "Zoom van huidige tab verkleinen"
+  },
   "closeTabsToLeft": {
     "message": "Tabbladen Links Sluiten",
     "description": "Close tabs to left action"
@@ -218,6 +270,474 @@
   "reloadAllTabs": {
     "message": "Alle Tabbladen Herladen",
     "description": "Reload all tabs action"
+  },
+  "stopLoadingAllTabs": {
+    "message": "Laden van alle tabbladen stoppen",
+    "description": "Stop loading in all tabs"
+  },
+  "screenshotRegion": {
+    "message": "Schermafbeelding (trajectgebied)",
+    "description": "Screenshot gesture action"
+  },
+  "screenshotRegionOrLink": {
+    "message": "Schermafbeelding of link openen",
+    "description": "Trail region hint when links are inside selection"
+  },
+  "trailRegionChooseTitle": {
+    "message": "Links in selectie — schermafbeelding of openen",
+    "description": "Trail region chooser dialog title"
+  },
+  "trailRegionLinkSingle": {
+    "message": "1 koppeling",
+    "description": "Trail region link count"
+  },
+  "trailRegionLinkMultiple": {
+    "message": "{count} koppelingen",
+    "description": "Trail region link count"
+  },
+  "trailRegionActionScreenshot": {
+    "message": "Schermafbeelding (S)",
+    "description": "Trail region chooser button"
+  },
+  "trailRegionActionOpenLink": {
+    "message": "Openen in nieuw tabblad (O)",
+    "description": "Trail region chooser button"
+  },
+  "trailRegionActionOpenLinks": {
+    "message": "Openen in nieuwe tabbladen (O)",
+    "description": "Trail region chooser button"
+  },
+  "trailRegionActionOpenSelected": {
+    "message": "{n} openen in nieuwe tabbladen (O)",
+    "description": "Trail region open checked links"
+  },
+  "trailRegionActionOpenNone": {
+    "message": "Selectie openen (O)",
+    "description": "Trail region open button when none checked"
+  },
+  "trailRegionActionCopy": {
+    "message": "Kopiëren (C)",
+    "description": "Trail region chooser copy button"
+  },
+  "trailRegionActionCopySelected": {
+    "message": "{n} kopiëren (C)",
+    "description": "Trail region copy checked links"
+  },
+  "trailRegionActionCopyNone": {
+    "message": "Kopiëren (C)",
+    "description": "Trail region copy button when none checked"
+  },
+  "trailRegionCopyFailed": {
+    "message": "Kopiëren mislukt",
+    "description": "Trail region copy to clipboard failed"
+  },
+  "trailRegionSelectAll": {
+    "message": "Alles selecteren",
+    "description": "Trail region link list select all"
+  },
+  "trailRegionNoLinkSelected": {
+    "message": "Selecteer minstens één link",
+    "description": "Trail region no selection hint"
+  },
+  "trailRegionChooseHint": {
+    "message": "Esc om te annuleren · links aanvinken om te kopiëren/openen · sleep randen om te vergroten",
+    "description": "Trail region chooser footer"
+  },
+  "trailRegionLinkOpened": {
+    "message": "Link geopend in nieuw tabblad",
+    "description": "Trail region open link feedback"
+  },
+  "trailRegionLinksOpened": {
+    "message": "Links geopend in nieuwe tabbladen",
+    "description": "Trail region open links feedback"
+  },
+  "trailRegionLinksTruncated": {
+    "message": "Alleen de eerste {n} links geopend",
+    "description": "Trail region open links cap"
+  },
+  "screenshotScrollCaptureActive": {
+    "message": "Scroll handmatig, dan dezelfde sneltoets of Esc om te stoppen en samen te voegen",
+    "description": "Manual scroll capture in progress"
+  },
+  "screenshotCopied": {
+    "message": "Schermafbeelding gekopieerd naar klembord",
+    "description": "Screenshot feedback"
+  },
+  "screenshotFailed": {
+    "message": "Schermafbeelding mislukt",
+    "description": "Screenshot feedback"
+  },
+  "screenshotNeedTrail": {
+    "message": "Teken een langer traject om het gebied te kiezen",
+    "description": "Screenshot feedback"
+  },
+  "screenshotUnavailable": {
+    "message": "Schermafbeeldingmodule niet beschikbaar",
+    "description": "Screenshot feedback"
+  },
+  "screenshotTopFrameOnly": {
+    "message": "Schermafbeelding volledige pagina alleen in hoofdframe",
+    "description": "Screenshot feedback"
+  },
+  "screenshotFeature": {
+    "message": "Schermafbeelding",
+    "description": "Screenshot settings section title"
+  },
+  "enableScreenshotFeature": {
+    "message": "Schermafbeelding inschakelen",
+    "description": "Master toggle for screenshot feature"
+  },
+  "enableScreenshotTrailCapture": {
+    "message": "Trajectgebied (lus / zelfkruising)",
+    "description": "Capture when trail loops or crosses; skipped if another gesture action matches"
+  },
+  "enableScreenshotClipboard": {
+    "message": "Automatisch naar klembord kopiëren",
+    "description": "Copy screenshot to clipboard after capture"
+  },
+  "enableScreenshotPreview": {
+    "message": "Voorbeeld na vastleggen tonen",
+    "description": "Open preview window when a screenshot is captured"
+  },
+  "enableScreenshotHistory": {
+    "message": "Schermafbeeldinggeschiedenis opslaan",
+    "description": "Keep captured screenshots in local history"
+  },
+  "screenshotHistoryMaxCount": {
+    "message": "Geschiedenislimiet",
+    "description": "Maximum screenshot history entries to keep"
+  },
+  "screenshotHistoryMaxCountHint": {
+    "message": "0 = onbeperkt; 1–200 verwijdert oudste bij overschrijding",
+    "description": "Screenshot history limit hint"
+  },
+  "screenshotHistoryUnlimited": {
+    "message": "Onbeperkt",
+    "description": "Label when screenshot history limit is 0"
+  },
+  "screenshotHistoryView": {
+    "message": "Geschiedenis tonen",
+    "description": "Open screenshot history window"
+  },
+  "screenshotHistoryTitle": {
+    "message": "Schermafbeeldinggeschiedenis",
+    "description": "Screenshot history window title"
+  },
+  "screenshotHistoryEmpty": {
+    "message": "Nog geen schermafbeeldingen",
+    "description": "Empty screenshot history state"
+  },
+  "screenshotHistoryClearAll": {
+    "message": "Alles wissen",
+    "description": "Delete all screenshot history entries"
+  },
+  "screenshotHistoryClearConfirm": {
+    "message": "Volledige schermafbeeldinggeschiedenis wissen?",
+    "description": "Confirm clearing screenshot history"
+  },
+  "screenshotHistoryDelete": {
+    "message": "Verwijderen",
+    "description": "Delete one screenshot history entry"
+  },
+  "screenshotHistoryPinToPage": {
+    "message": "Op pagina vastzetten",
+    "description": "Pin history thumbnail onto the web page"
+  },
+  "screenshotHistoryPinFailed": {
+    "message": "Vastzetten mislukt (open doeltab of sta deze site toe).",
+    "description": "Error when pinning from screenshot history"
+  },
+  "screenshotHistoryCount": {
+    "message": "$1 items",
+    "description": "Number of items in screenshot history",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "screenshotHistoryModeViewport": {
+    "message": "Zichtbaar gebied",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeFullPage": {
+    "message": "Volledige pagina",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeRegion": {
+    "message": "Gebied",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeScroll": {
+    "message": "Handmatig scrollen",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeUnknown": {
+    "message": "Schermafbeelding",
+    "description": "Screenshot history capture mode fallback label"
+  },
+  "screenshotDone": {
+    "message": "Schermafbeelding gereed",
+    "description": "Hint when capture finished without clipboard copy"
+  },
+  "screenshotPreviewTitle": {
+    "message": "Voorbeeld schermafbeelding",
+    "description": "Screenshot preview window title"
+  },
+  "screenshotPreviewClose": {
+    "message": "Sluiten",
+    "description": "Close screenshot preview window"
+  },
+  "screenshotPreviewCopyAgain": {
+    "message": "Kopiëren",
+    "description": "Copy screenshot to clipboard from preview window"
+  },
+  "screenshotPreviewSave": {
+    "message": "Opslaan als bestand",
+    "description": "Save annotated screenshot to disk"
+  },
+  "screenshotPreviewSaved": {
+    "message": "Opgeslagen",
+    "description": "Screenshot file save succeeded"
+  },
+  "screenshotPreviewPinToPage": {
+    "message": "Op pagina vastzetten",
+    "description": "Pin annotated screenshot onto the source web page"
+  },
+  "screenshotPreviewPinned": {
+    "message": "Vastgezet",
+    "description": "Screenshot pin placed on page"
+  },
+  "screenshotPreviewPinning": {
+    "message": "Bezig met vastzetten…",
+    "description": "Screenshot pin in progress"
+  },
+  "screenshotPinTitle": {
+    "message": "Schermafbeelding",
+    "description": "Title on pinned screenshot sticker"
+  },
+  "screenshotPinClose": {
+    "message": "Vastzetting verwijderen",
+    "description": "Close button on pinned screenshot"
+  },
+  "screenshotPinResize": {
+    "message": "Formaat wijzigen",
+    "description": "Resize handle on pinned screenshot"
+  },
+  "screenshotPinZoomFit": {
+    "message": "Passend maken",
+    "description": "Fit pinned screenshot to view"
+  },
+  "screenshotPinZoomOriginal": {
+    "message": "1:1",
+    "description": "Show pinned screenshot at original pixel size"
+  },
+  "screenshotPinOrderLabel": {
+    "message": "Vastzetting $1$",
+    "description": "Pinned screenshot order number",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "screenshotPreviewLoadFailed": {
+    "message": "Voorbeeld kon niet worden geladen",
+    "description": "Screenshot preview load error"
+  },
+  "screenshotPreviewZoomFit": {
+    "message": "Passend maken",
+    "description": "Fit screenshot to preview window"
+  },
+  "screenshotPreviewZoomFitTitle": {
+    "message": "Passend in venster",
+    "description": "Tooltip for fit zoom button"
+  },
+  "screenshotPreviewZoomOneToOne": {
+    "message": "1:1",
+    "description": "Actual-size zoom button label"
+  },
+  "screenshotPreviewZoomOneToOneTitle": {
+    "message": "Werkelijke grootte (1:1)",
+    "description": "Tooltip for 1:1 zoom button"
+  },
+  "screenshotPreviewZoomLevel": {
+    "message": "Zoom $1$%",
+    "description": "Current zoom percentage in preview",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "screenshotAnnotHand": {
+    "message": "Hand (verplaatsen)",
+    "description": "Pan the preview by dragging"
+  },
+  "screenshotAnnotPen": {
+    "message": "Pen",
+    "description": "Annotation tool: freehand"
+  },
+  "screenshotAnnotArrow": {
+    "message": "Pijl (Shift: H/V)",
+    "description": "Annotation tool: arrow; Shift constrains to horizontal or vertical"
+  },
+  "screenshotAnnotLine": {
+    "message": "Lijn (Shift: H/V)",
+    "description": "Annotation tool: line; Shift constrains to horizontal or vertical"
+  },
+  "screenshotAnnotRect": {
+    "message": "Rechthoek (Shift: vierkant)",
+    "description": "Annotation tool: rectangle; Shift draws a square"
+  },
+  "screenshotAnnotEllipse": {
+    "message": "Ellips",
+    "description": "Annotation tool: ellipse"
+  },
+  "screenshotAnnotRoundRect": {
+    "message": "Afgeronde rechthoek",
+    "description": "Annotation tool: rounded rectangle"
+  },
+  "screenshotAnnotHighlighter": {
+    "message": "Markeerstift",
+    "description": "Annotation tool: highlighter marker"
+  },
+  "screenshotAnnotHighlight": {
+    "message": "Highlightkader",
+    "description": "Annotation tool: highlight rectangle"
+  },
+  "screenshotAnnotFillRect": {
+    "message": "Gevulde rechthoek",
+    "description": "Annotation tool: filled rectangle"
+  },
+  "screenshotAnnotFillEllipse": {
+    "message": "Gevulde ellips",
+    "description": "Annotation tool: filled ellipse"
+  },
+  "screenshotAnnotBlur": {
+    "message": "Vervagen",
+    "description": "Annotation tool: blur brush"
+  },
+  "screenshotAnnotArrow2": {
+    "message": "Dubbele pijl (Shift: H/V)",
+    "description": "Annotation tool: line with arrowheads at both ends; Shift constrains H/V"
+  },
+  "screenshotAnnotNumber": {
+    "message": "Nummer",
+    "description": "Annotation tool: sequential number markers"
+  },
+  "screenshotAnnotStampStart": {
+    "message": "Startnr.",
+    "description": "Starting number for sequential stamps"
+  },
+  "screenshotAnnotStampNext": {
+    "message": "Volgende #: $1$",
+    "description": "Next number stamp to place (tooltip)",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "screenshotAnnotCrop": {
+    "message": "Bijsnijden",
+    "description": "Annotation tool: crop image"
+  },
+  "screenshotAnnotCropApply": {
+    "message": "Bijsnijden toepassen",
+    "description": "Confirm crop selection"
+  },
+  "screenshotAnnotCropCancel": {
+    "message": "Annuleren",
+    "description": "Cancel crop selection"
+  },
+  "screenshotAnnotText": {
+    "message": "Tekst",
+    "description": "Annotation tool: text"
+  },
+  "screenshotAnnotMosaic": {
+    "message": "Mozaïek",
+    "description": "Annotation tool: mosaic blur"
+  },
+  "screenshotAnnotEraser": {
+    "message": "Gum",
+    "description": "Annotation tool: eraser"
+  },
+  "screenshotAnnotSize": {
+    "message": "Grootte",
+    "description": "Annotation stroke size"
+  },
+  "screenshotAnnotResetAll": {
+    "message": "Alle bewerkingen resetten",
+    "description": "Clear all annotations and restore original screenshot"
+  },
+  "screenshotAnnotStepCount": {
+    "message": "$1 / $2",
+    "description": "History step indicator: current / total"
+  },
+  "screenshotAnnotStepCountTitle": {
+    "message": "Toegepaste / totale stappen (0 = originele afbeelding)",
+    "description": "Tooltip for history step indicator"
+  },
+  "screenshotAnnotUndo": {
+    "message": "Ongedaan maken",
+    "description": "Undo annotation"
+  },
+  "screenshotAnnotRedo": {
+    "message": "Opnieuw",
+    "description": "Redo annotation"
+  },
+  "screenshotAnnotTextPlaceholder": {
+    "message": "Typ hier…",
+    "description": "Placeholder in inline text editor on screenshot preview"
+  },
+  "screenshotOptRegion": {
+    "message": "Gebied selecteren",
+    "description": "Screenshot bind row: keyboard drag rectangle region"
+  },
+  "screenshotOptViewport": {
+    "message": "Zichtbaar gebied",
+    "description": "Screenshot bind row: current visible tab area"
+  },
+  "screenshotOptFullPage": {
+    "message": "Volledige pagina",
+    "description": "Screenshot bind row: full page"
+  },
+  "screenshotOptScrollStitch": {
+    "message": "Handmatig scrollen",
+    "description": "Screenshot bind row: manual scroll capture"
+  },
+  "screenshotOptOpenHistory": {
+    "message": "Geschiedenis openen",
+    "description": "Screenshot bind row: keyboard shortcut to open screenshot history"
+  },
+  "screenshotHotkeyPressHint": {
+    "message": "Sneltoetsen: klik een veld hierboven, druk een combinatie (Ctrl / Alt / Meta + letter/cijfer of F1–F12). Esc wist het veld.",
+    "description": "Screenshot section footer: hotkey binding help"
+  },
+  "screenshotHotkeyPlaceholder": {
+    "message": "Klik om in te stellen",
+    "description": "Placeholder in empty screenshot hotkey fields"
+  },
+  "screenshotRegionPickHint": {
+    "message": "Sleep om een gebied te kiezen. Esc om te annuleren.",
+    "description": "Hint while keyboard region picker is active"
+  },
+  "screenshotRegionPickFooterHint": {
+    "message": "Gebiedssneltoets: teken een rechthoek en laat los. Bij links: schermafbeelding of openen in nieuwe tabbladen. Esc annuleert.",
+    "description": "Screenshot section footer: keyboard region picker help"
+  },
+  "screenshotRegionTooSmall": {
+    "message": "Selectie te klein — teken een groter gebied",
+    "description": "Region picker: minimum size not met"
+  },
+  "screenshotGestureIntersectHint": {
+    "message": "Trajectgebied: één lus of één zelfkruising, dan loslaten. Bevat het gebied links, schermafbeelding of nieuwe tabbladen. Veel lussen = krabbel.",
+    "description": "Screenshot section footer: trail region capture help"
   },
   "togglePinTab": {
     "message": "Tabblad Vastzetten/Losmaken",
@@ -244,16 +764,16 @@
     "description": "Instellingen titel"
   },
   "customizedBehavior": {
-    "message": "Blokkeerlijst",
-    "description": "Block list section title"
+    "message": "Uitgeschakelde sites",
+    "description": "Section title for the per-site disable list"
   },
   "disableMouseGesturesForSites": {
-    "message": "Schakel muisgebaren en superslepen uit op deze sites",
-    "description": "Label for the list of sites where gestures and super drag are disabled"
+    "message": "Extensiefuncties uitschakelen op vermelde domeinen",
+    "description": "Subtitle for Disabled sites section"
   },
   "disabledSitesHint": {
-    "message": "Eén site per regel. Domein (bijv. youtube.com) of volledige URL.",
-    "description": "Hint for the disabled sites textarea"
+    "message": "Van toepassing op: gebaren, super slepen, link-/afbeeldingsvoorbeeld, schermafbeeldingen en pagina-ontgrendeling. Voeg de huidige site toe of voer een domein/URL in; klik op het verwijderteken om te wissen.",
+    "description": "Short hint explaining which features the Disabled sites list affects"
   },
   "enableGesture": {
     "message": "Muisgebaren Inschakelen",
@@ -279,6 +799,26 @@
     "message": "Super Drag Inschakelen",
     "description": "Super drag inschakelen optie"
   },
+  "superDragCompassPosition": {
+    "message": "Kompas met 8 richtingen",
+    "description": "Super drag compass display and position"
+  },
+  "superDragCompassPosCompassAbove": {
+    "message": "Boven sleeppunt",
+    "description": "Compass above drag start, centered horizontally"
+  },
+  "superDragCompassPosCompassRight": {
+    "message": "Rechts van sleeppunt",
+    "description": "Compass to the right of drag start, vertically centered"
+  },
+  "superDragCompassPosCompassBelow": {
+    "message": "Onder sleeppunt",
+    "description": "Compass below drag start, centered horizontally"
+  },
+  "superDragCompassPosCompassLeft": {
+    "message": "Links van sleeppunt",
+    "description": "Compass to the left of drag start, vertically centered"
+  },
   "enableDragTextSearch": {
     "message": "Tekst Slepen Zoeken Inschakelen",
     "description": "Tekst slepen zoeken inschakelen optie"
@@ -287,9 +827,17 @@
     "message": "Afbeelding/bestand bij slepen downloaden",
     "description": "When the drag target is an image or other downloadable file, start download automatically"
   },
+  "enableImageDrag": {
+    "message": "Afbeeldingen slepen inschakelen",
+    "description": "Control image super drag independently from image preview"
+  },
   "enableImagePreview": {
     "message": "Afbeeldingsvoorbeeld Inschakelen",
     "description": "Afbeeldingsvoorbeeld inschakelen optie"
+  },
+  "enableImagePreviewEnhanced": {
+    "message": "Uitgebreid afbeeldingsvoorbeeld",
+    "description": "Support transparent overlay, background-image, parent lookup, etc."
   },
   "enableDuplicateCheck": {
     "message": "Dubbele Tabbladen Detecteren",
@@ -302,10 +850,6 @@
   "enableSmoothScroll": {
     "message": "Vloeiend scrollen inschakelen",
     "description": "Enable smooth scrolling for gesture actions"
-  },
-  "save": {
-    "message": "Instellingen Toegepast",
-    "description": "Instellingen opslaan knop"
   },
   "reset": {
     "message": "Herstellen",
@@ -363,14 +907,6 @@
     "message": "Instellingen Herstellen Mislukt",
     "description": "Instellingen herstellen foutmelding"
   },
-  "themeLight": {
-    "message": "Licht",
-    "description": "Licht thema"
-  },
-  "themeDark": {
-    "message": "Donker",
-    "description": "Donker thema"
-  },
   "buyMeACoffee": {
     "message": "Koop mij een koffie",
     "description": "Donatie knop"
@@ -379,17 +915,33 @@
     "message": "Thema Wisselen",
     "description": "Thema wissel knop"
   },
-  "toggleLanguage": {
-    "message": "Taal Wisselen",
-    "description": "Taal wissel knop"
+  "openDetachedPopupTitle": {
+    "message": "Instellingen in zijpaneel openen (anders apart venster)",
+    "description": "Koptekstknop: zijpaneel of los venster voor instellingen"
+  },
+  "openDetachedWindowFromSidePanelTitle": {
+    "message": "Open in apart venster (naast de browser)",
+    "description": "Zijpaneel: los venster en browservenster-indeling"
+  },
+  "openOptionsPageTitle": {
+    "message": "Optiepagina openen",
+    "description": "Kopknop: optiepagina van de extensie openen"
   },
   "donationTooltip": {
     "message": "Als je dit werk leuk vindt, steun me alsjeblieft. Bedankt :)",
     "description": "Donatie tooltip"
   },
   "rightButtonHint": {
-    "message": "Houd rechtermuisknop ingedrukt",
+    "message": "Rechts (pad, wiel, klikken) · links (wiel) ingedrukt houden",
     "description": "Rechtermuisknop hint"
+  },
+  "builtInGesturesListExpandHint": {
+    "message": "Klik om de volledige gebarenlijst te tonen",
+    "description": "Tooltip on built-in gestures subtitle when list is collapsed"
+  },
+  "builtInGesturesListCollapseHint": {
+    "message": "Klik om de gebarenlijst in te klappen",
+    "description": "Tooltip on built-in gestures subtitle when list is expanded"
   },
   "leftButtonHint": {
     "message": "Houd linkermuisknop ingedrukt",
@@ -403,17 +955,45 @@
     "message": "Open op Achtergrond",
     "description": "Open op achtergrond actie"
   },
+  "popupViewAction": {
+    "message": "Popup Weergave",
+    "description": "Super drag action: open target in popup view"
+  },
+  "incognitoAction": {
+    "message": "Openen in incognitovenster",
+    "description": "Open in incognito/private window"
+  },
+  "enableSplitScrollSync": {
+    "message": "Verticale en horizontale scroll tussen gesplitste vensters synchroniseren",
+    "description": "Bij gesplitste weergave: beide scrollassen tussen vensters gelijk trekken"
+  },
   "copyAction": {
     "message": "Kopiëren",
     "description": "Copy selected text or link URL to clipboard"
+  },
+  "downloadAction": {
+    "message": "Downloaden",
+    "description": "Super drag action: download target"
   },
   "copiedToClipboard": {
     "message": "Gekopieerd naar klembord",
     "description": "Hint after copy action"
   },
-  "dragSearchEngine": {
-    "message": "Sleep Zoekmachine URL",
-    "description": "Instelling sleep zoekmachine URL"
+  "dragSearchEngineSlotLabel": {
+    "message": "Te bewerken item",
+    "description": "Label for drag search engine slot selector"
+  },
+  "dragSearchSlotDefault": {
+    "message": "Standaard (terugval)",
+    "description": "Default search URL slot in drag search editor"
+  },
+  "dragSearchEngineUrlForSlot": {
+    "message": "Zoekmachine-URL",
+    "description": "Label for single drag search URL field"
+  },
+  "dragSearchEnginePerDirectionHelp": {
+    "message": "Kies in de lijst «Standaard» of een sleeprichting en bewerk de bijbehorende URL. Lege richtingen gebruiken de standaard. Alleen voor zoeken met gesleepte tekst.",
+    "description": "Help text for unified drag search engine editor"
   },
   "linkPreview": {
     "message": "Popup Weergave",
@@ -424,8 +1004,8 @@
     "description": "Quick navigation hover tooltip"
   },
   "linkPreviewHint": {
-    "message": "Zweef + Toets om Popup te Tonen",
-    "description": "Hint popup weergave"
+    "message": "Beweeg erover en gebruik de trigger om de pop-up te tonen",
+    "description": "Popup view hint"
   },
   "enableLinkPreview": {
     "message": "Popup Weergave Inschakelen",
@@ -495,41 +1075,61 @@
     "message": "Gebruik {q} voor zoekterm, voorbeeldformaat:",
     "description": "Beschrijving zoekmachine voorbeelden"
   },
+  "searchExampleUrlClickHint": {
+    "message": "Klik op de voorbeeld-URL om het veld hierboven in te vullen en op te slaan",
+    "description": "Tooltip for example search engine URLs (click to fill)"
+  },
+  "searchEngineExamplesUrlClickHint": {
+    "message": "Tip: klik op een voorbeeld-URL om het veld hierboven in te vullen en op te slaan.",
+    "description": "Visible hint under search engine examples (click URL to fill field above and save)"
+  },
   "googleExample": {
-    "message": "Google Zoeken: https://www.google.nl/search?q={q}",
+    "message": "Google Zoeken:",
+    "description": "Google zoeken voorbeeld"
+  },
+  "googleExampleUrl": {
+    "message": "https://www.google.nl/search?q={q}",
     "description": "Google zoeken voorbeeld"
   },
   "googleTranslateExample": {
-    "message": "Google Vertalen: https://translate.google.nl/?sl=auto&tl=nl&text={q}&op=translate",
+    "message": "Google Vertalen:",
+    "description": "Google Vertalen voorbeeld"
+  },
+  "googleTranslateExampleUrl": {
+    "message": "https://translate.google.nl/?sl=auto&tl=nl&text={q}&op=translate",
     "description": "Google Vertalen voorbeeld"
   },
   "localSearchExample": {
-    "message": "Startpagina Zoeken: https://www.startpagina.nl/zoeken/?q={q}",
+    "message": "Startpagina Zoeken:",
+    "description": "Voorbeeld van lokale zoek URL"
+  },
+  "localSearchExampleUrl": {
+    "message": "https://www.startpagina.nl/zoeken/?q={q}",
     "description": "Voorbeeld van lokale zoek URL"
   },
   "bingExample": {
-    "message": "Bing Zoeken: https://www.bing.com/search?q={q}&setlang=nl",
+    "message": "Bing Zoeken:",
+    "description": "Bing zoeken voorbeeld"
+  },
+  "bingExampleUrl": {
+    "message": "https://www.bing.com/search?q={q}&setlang=nl",
     "description": "Bing zoeken voorbeeld"
   },
   "wheelTip": {
-    "message": "Gebruik muiswiel om waarde aan te passen",
+    "message": "Houd de muis ~1,5 s boven deze rij, pas daarna met het wiel aan",
     "description": "Wiel tip"
   },
   "modifierKeyDelayTip": {
-    "message": "Bij gebruik van een trigger toets is de maximale vertraging beperkt tot 300ms",
-    "description": "Modifier toets vertraging tip"
+    "message": "De vertraging begint nadat aan de triggervoorwaarde is voldaan; verhoog deze om onbedoelde voorbeelden te voorkomen.",
+    "description": "Modifier key delay tip"
   },
   "welcomeTitle": {
-    "message": "Welkom bij Muisgebaren Extensie",
+    "message": "Welkom bij de muisgebaren-extensie",
     "description": "Welkomstpagina titel"
   },
   "welcomeDescription": {
-    "message": "Bedankt voor het installeren van de Muisgebaar Extensie! Deze extensie biedt rijke muisgebaar functionaliteit, intelligente tabbladenbeheer, popup weergave mogelijkheden en verbeterde visuele ervaring om u te helpen efficiënter te browsen op het web. We hebben het gebaarherkenningsalgoritme geoptimaliseerd met verhoogde fouttolerantie, waardoor gebaren correct kunnen worden herkend, zelfs wanneer ze niet perfect zijn getekend. De nieuwe popup venster functie stelt u in staat om linkinhoud in popup vensters te bekijken zonder van tabbladen te wisselen. De extensie ondersteunt ook 29 talen en lichte/donkere thema's voor een betere gebruikerservaring.",
+    "message": "Bedankt voor het installeren van Mouse Gesture! Houd de rechtermuisknop ingedrukt en sleep om te navigeren, tabbladen te beheren en te scrollen; houd ook rechts of links met het wiel (en meer combinaties in instellingen) voor extra snelkoppelingen — herkenning blijft vergevingsgezind, ook tijdens het laden. Super Drag opent links, afbeeldingen en tekstzoekopdrachten met regels per richting (voorgrond, achtergrond, gesplitste layout, kopiëren naar klembord en meer). Popup View toont linkvoorbeelden of zoekt geselecteerde tekst in kleine vensters. Optioneel: afbeeldingsvoorbeeld bij zweven (uitgebreide modus), dubbele tabbladen detecteren en automatisch sluiten, vloeiend scrollen, tabbladteller op de werkbalk en pagina-deblokkering op restrictieve sites. Instellingen via de werkbalk (popup, zijpaneel of los venster); exporteren/importeren; synchronisatie met uw browseraccount. 29 talen en licht/donker thema.",
     "description": "Welkomstpagina beschrijving"
-  },
-  "gesturesDescription": {
-    "message": "De volgende zijn vooraf ingestelde muisgebaren die je kunt gebruiken door te slepen met de rechtermuisknop:",
-    "description": "Gebaren beschrijving"
   },
   "extensionName": {
     "message": "Muisgebaren Extensie",
@@ -539,88 +1139,48 @@
     "message": "Kernfuncties",
     "description": "Kernfuncties titel"
   },
-  "utilitiesFeatures": {
-    "message": "Hulpprogramma's",
-    "description": "Hulpprogramma's titel"
+  "welcomeCoreGestureBlock": {
+    "message": "Muisgebaren: houd rechts ingedrukt en sleep voor padgebaren; scrollwiel met rechts of links ingedrukt en klikcombinaties met rechts ingedrukt — opnieuw toewijsbaar in instellingen; herkenning is vergevingsgezind, ook tijdens het laden.",
+    "description": "Welcome page: core features gesture summary"
+  },
+  "welcomeCoreSuperDragBlock": {
+    "message": "Super Drag: sleep links en afbeeldingen naar nieuwe tabbladen, sleep geselecteerde tekst om te zoeken; richting bepaalt hoe tabbladen openen; standaard op de achtergrond.",
+    "description": "Welcome page: core features super drag summary"
+  },
+  "welcomeCorePopupViewBlock": {
+    "message": "Pop-upweergave: houd de triggertoets (standaard Shift) bij een link ingedrukt om de pagina in een klein venster te bekijken; selecteer tekst en druk op de toets voor direct zoeken met uw eigen zoekmachine.",
+    "description": "Welcome page: core features popup view summary"
   },
   "usageTips": {
     "message": "Gebruikstips",
     "description": "Gebruikstips titel"
   },
-  "smartGestureRecognition": {
-    "message": "Slimme gebaarherkenning: Herkent gebaren correct zelfs als ze onvolmaakt zijn, werkt tijdens het laden van pagina's",
-    "description": "Beschrijving slimme gebaarherkenning"
-  },
-  "tabManagementTitle": {
-    "message": "Tabbladbeheer",
-    "description": "Titel tabbladbeheer"
-  },
-  "tabManagementDesc": {
-    "message": ": Slimme detectie van duplicaten, optioneel automatisch sluiten, periodieke geheugenoptimalisatie",
-    "description": "Beschrijving tabbladbeheer"
-  },
-  "superDragTitle": {
-    "message": "Super Slepen",
-    "description": "Titel super slepen"
-  },
-  "superDragDesc": {
-    "message": ": Sleep links en afbeeldingen naar nieuwe tabbladen, sleep geselecteerde tekst om te zoeken",
-    "description": "Beschrijving super slepen"
-  },
-  "linkPreviewTitle": {
-    "message": "Popup Weergave",
-    "description": "Titel linkvoorvertoning"
-  },
-  "linkPreviewDesc": {
-    "message": ": Houd modificatietoets (standaard: Shift) ingedrukt terwijl je over links zweeft om doelpagina's te bekijken in popup vensters",
-    "description": "Beschrijving linkvoorvertoning"
-  },
-  "textSelectionPreview": {
-    "message": "Selecteer tekst en druk op de modificatietoets om deze direct te zoeken in een popup venster, met ondersteuning voor aangepaste zoekmachines",
-    "description": "Beschrijving tekstselectie voorvertoning"
-  },
   "previewTip": {
-    "message": "Je kunt meerdere popup vensters tegelijkertijd openen",
+    "message": "Houd meerdere voorbeelden open om te vergelijken.",
     "description": "Voorvertoning tip"
-  },
-  "dragDirection": {
-    "message": "Pas de sleeprichting aan om de tabblad openmethode te bepalen: standaard op achtergrond openen",
-    "description": "Beschrijving sleeprichting"
   },
   "debugPanelTitle": {
     "message": "Muisgebaar Debug Informatie",
     "description": "Titel debug paneel"
   },
   "debugPanelDesc": {
-    "message": ": Druk op Alt+D om te openen, analyseer gebaar informatie in real-time, behoudt status",
+    "message": "Druk op Alt+D om het debugpaneel te openen, analyseer gebaarinformatie in realtime, de status blijft behouden.",
     "description": "Beschrijving debug paneel"
   },
-  "oneClickCopy": {
-    "message": "Eén-klik kopiëren van debug informatie voor eenvoudig delen, met ondersteuning voor meerdere talen",
-    "description": "Beschrijving één-klik kopiëren"
-  },
-  "mediaPreview": {
-    "message": "Verbeterde media voorvertoning: Verbeterde afbeelding zweef effecten en geoptimaliseerde video poster afbeeldingen",
-    "description": "Beschrijving media voorvertoning"
-  },
-  "adaptiveTheme": {
-    "message": "Adaptieve thema's: Past visuele stijl aan op basis van pagina achtergrond, ondersteunt licht/donker modus",
-    "description": "Beschrijving adaptief thema"
-  },
   "gestureTrail": {
-    "message": "Gebarensporen weergegeven op scherm met aanpasbare kleur en breedte",
+    "message": "Optioneel traject en gebaarhints; kleur en dikte in instellingen.",
     "description": "Beschrijving gebarenspoor"
   },
   "clickIcon": {
-    "message": "Klik op het extensie icoon om functies in/uit te schakelen, taal in te stellen, thema en meer",
+    "message": "Werkbalk: compacte pop-up, zijpaneel (Chrome/Edge) of apart instellingenvenster. Functies, taal, thema, export/import.",
     "description": "Beschrijving klik icoon"
   },
   "languageSupport": {
-    "message": "Ondersteunt 29 talen, past automatisch aan aan browser taal",
+    "message": "29 interfacetalen; gebruikt uw opgeslagen keuze of volgt de browsertaal.",
     "description": "Beschrijving taalondersteuning"
   },
   "enableAutoClose": {
-    "message": "Schakel automatisch sluiten van dubbele tabbladen in om browser brongebruik aanzienlijk te verminderen",
+    "message": "Bij duplicaatherkenning optioneel herhaalde URL's automatisch sluiten.",
     "description": "Beschrijving automatisch sluiten inschakelen"
   },
   "rightClickMacLinux": {
@@ -634,14 +1194,6 @@
   "duplicateTabsDetected": {
     "message": "$1 dubbele tabbladen gevonden",
     "description": "Titel melding dubbele tabbladen gedetecteerd"
-  },
-  "duplicateTabsCount": {
-    "message": "Er zijn $1 dubbele tabbladen",
-    "description": "Bericht aantal dubbele tabbladen"
-  },
-  "duplicateTabsSingle": {
-    "message": "Er is 1 dubbel tabblad",
-    "description": "Bericht enkel dubbel tabblad"
   },
   "autoClosedTabs": {
     "message": "Automatisch $1 dubbele tabbladen gesloten",
@@ -659,61 +1211,9 @@
     "message": "Naamloos tabblad",
     "description": "Naamloos tabblad"
   },
-  "morePages": {
-    "message": "...en $1 meer pagina's",
-    "description": "Tip meer pagina's"
-  },
-  "errorShowDuplicateTabs": {
-    "message": "Fout bij tonen van dubbele tabbladen melding:",
-    "description": "Foutmelding tonen dubbele tabbladen"
-  },
-  "errorSendCloseRequest": {
-    "message": "Fout bij verzenden van sluit verzoek:",
-    "description": "Foutmelding verzenden sluit verzoek"
-  },
-  "errorCloseDuplicateTabs": {
-    "message": "Fout bij sluiten van dubbele tabbladen:",
-    "description": "Foutmelding sluiten dubbele tabbladen"
-  },
-  "errorSendIgnoreRequest": {
-    "message": "Fout bij verzenden van negeer verzoek:",
-    "description": "Foutmelding verzenden negeer verzoek"
-  },
-  "errorIgnoreDuplicateTabs": {
-    "message": "Fout bij negeren van dubbele tabbladen:",
-    "description": "Foutmelding negeren dubbele tabbladen"
-  },
-  "errorUpdateDebugPanel": {
-    "message": "Fout bij bijwerken van debug paneel:",
-    "description": "Foutmelding bijwerken debug paneel"
-  },
   "errorDetectBackgroundColor": {
     "message": "Fout bij detecteren van achtergrondkleur:",
     "description": "Foutmelding detecteren achtergrondkleur"
-  },
-  "errorDetectImageBorder": {
-    "message": "Fout bij detecteren van afbeelding randradius:",
-    "description": "Foutmelding detecteren afbeelding randradius"
-  },
-  "errorSetMutationObserver": {
-    "message": "Fout bij instellen van mutatie observer:",
-    "description": "Foutmelding instellen mutatie observer"
-  },
-  "errorCheckElementVisibility": {
-    "message": "Fout bij controleren van element zichtbaarheid:",
-    "description": "Foutmelding controleren element zichtbaarheid"
-  },
-  "errorProcessBorderRadius": {
-    "message": "Fout bij verwerken van randradius:",
-    "description": "Foutmelding verwerken randradius"
-  },
-  "errorDetectImageBackground": {
-    "message": "Fout bij detecteren van afbeelding achtergrond:",
-    "description": "Foutmelding detecteren afbeelding achtergrond"
-  },
-  "errorShowAutoCloseNotification": {
-    "message": "Fout bij tonen van automatisch sluiten succes melding:",
-    "description": "Foutmelding tonen automatisch sluiten succes"
   },
   "noForwardPage": {
     "message": "Geen volgende pagina in geschiedenis",
@@ -743,10 +1243,6 @@
     "message": "Ongeldig Gebaar",
     "description": "Bericht ongeldig gebaar"
   },
-  "nextPage": {
-    "message": "Volgende Pagina",
-    "description": "Actie volgende pagina"
-  },
   "errorReadPixel": {
     "message": "Fout bij lezen van pixel:",
     "description": "Foutmelding lezen pixel"
@@ -758,10 +1254,6 @@
   "errorCanvasDraw": {
     "message": "Fout bij tekenen op canvas:",
     "description": "Foutmelding tekenen canvas"
-  },
-  "errorAccessIframe": {
-    "message": "Fout bij toegang tot iframe:",
-    "description": "Foutmelding toegang iframe"
   },
   "errorMutationObserver": {
     "message": "Fout bij instellen van mutatie observer:",
@@ -791,6 +1283,10 @@
     "message": "Systeeminstellingen",
     "description": "Debug paneel systeeminstellingen sectie"
   },
+  "debugConsoleLog": {
+    "message": "Consolelogboeken",
+    "description": "Debug panel console log toggle label"
+  },
   "debugAngleThreshold": {
     "message": "Hoekdrempel",
     "description": "Debug paneel hoekdrempel instelling"
@@ -810,6 +1306,46 @@
   "debugMinGestureComplexity": {
     "message": "Minimale Gebaar Complexiteit",
     "description": "Debug paneel minimale gebaar complexiteit instelling"
+  },
+  "debugMinMovementToStartGesture": {
+    "message": "Min. beweging om te starten",
+    "description": "Debugpaneelinstelling: minimale beweging om gebaartracking te starten"
+  },
+  "debugSmoothingFactor": {
+    "message": "Vloeiendheidsfactor",
+    "description": "Debugpaneelinstelling: vloeiendheidsfactor voor spoor en herkenning"
+  },
+  "debugAngleThresholdHelp": {
+    "message": "Bepaalt hoe strikt beweging als horizontaal of verticaal wordt geclassificeerd. Hogere waarden vereisen een rechtere richting; lagere waarden staan meer diagonale beweging toe.",
+    "description": "Hulp voor hoekdrempel in debugpaneel"
+  },
+  "debugDirectionChangeThresholdHelp": {
+    "message": "Bepaalt hoe gevoelig richtingsveranderingen worden gedetecteerd. Lagere waarden herkennen bochten sneller; hogere waarden negeren kleine trillingen.",
+    "description": "Hulp voor drempel richtingsverandering in debugpaneel"
+  },
+  "debugMinGestureDistanceHelp": {
+    "message": "Minimale totale bewegingsafstand voordat een gebaar kan worden herkend. Verhoog dit om onbedoelde triggers te verminderen.",
+    "description": "Hulp voor minimale gebaarafstand in debugpaneel"
+  },
+  "debugMinDirectionSegmentLengthHelp": {
+    "message": "Minimale lengte van een bewegingssegment voor richtingsherkenning. Verhoog dit om korte trillingen te filteren; verlaag het voor kortere gebaren.",
+    "description": "Hulp voor minimale richtingssegmentlengte in debugpaneel"
+  },
+  "debugMinGestureComplexityHelp": {
+    "message": "Drempel voor richtingscomplexiteit voordat een pad als gekrabbel of ongeldig wordt behandeld. Hogere waarden tolereren meer bochten.",
+    "description": "Hulp voor gebaarcomplexiteit in debugpaneel"
+  },
+  "debugMinMovementToStartGestureHelp": {
+    "message": "De aanwijzer moet na het indrukken van de knop minstens zoveel pixels bewegen voordat gebaartracking start.",
+    "description": "Hulp voor minimale startbeweging in debugpaneel"
+  },
+  "debugSmoothingFactorHelp": {
+    "message": "Bepaalt de vloeiendheid van spoor en herkenningspunten. Hogere waarden verminderen trillingen maar kunnen scherpe bochten verzachten; lagere reageren sneller.",
+    "description": "Hulp voor vloeiendheidsfactor in debugpaneel"
+  },
+  "debugConsoleLogHelp": {
+    "message": "Schakel gedetailleerde extensielogboeken in de DevTools-console in voor probleemoplossing.",
+    "description": "Hulp voor consolelogs in debugpaneel"
   },
   "debugLatestGestureInfo": {
     "message": "Laatste Gebaar Informatie",
@@ -850,10 +1386,6 @@
   "debugMergedDirections": {
     "message": "Samengevoegde Richtingen",
     "description": "Debug paneel samengevoegde richtingen"
-  },
-  "debugDirectionDistances": {
-    "message": "Richting Afstanden",
-    "description": "Debug paneel richting afstanden"
   },
   "debugFinalResult": {
     "message": "Eindresultaat",
@@ -927,9 +1459,17 @@
     "message": "Toon Tab Aantal",
     "description": "Show tab count badge option"
   },
-  "splitViewAction": {
-    "message": "Gesplitste weergave",
-    "description": "Openen in gesplitst weergavevenster"
+  "unlockPageRestrictions": {
+    "message": "Ontgrendel kopiëren/plakken/rechtermuisknop en tabvolging",
+    "description": "Setting: unlock page interaction limits"
+  },
+  "unlockPageRestrictionsTitle": {
+    "message": "Verwijdert veelvoorkomende blokkades voor kopiëren, plakken, contextmenu en selectie; vermindert blur/visibilitychange-tracking. Draait in paginacontext; ondersteunt iframes en Shadow DOM. Herlaad de pagina na inschakelen.",
+    "description": "Tooltip for unlock page restrictions"
+  },
+  "unlockPageRestrictionsOffReloadConfirm": {
+    "message": "Geïnjecteerde logica in open tabbladen kan blijven tot herladen.\n\nHet huidige tabblad nu herladen?",
+    "description": "Body text for unlock-off confirmation dialog"
   },
   "splitViewLeft": {
     "message": "Splitsen - links",
@@ -946,5 +1486,165 @@
   "splitViewDown": {
     "message": "Splitsen - onder",
     "description": "Gesplitste weergave, nieuw venster onder"
+  },
+  "unlockPageRestrictionsOffTitle": {
+    "message": "Pagina-ontgrendeling uit",
+    "description": "Title for unlock-off confirmation dialog"
+  },
+  "unlockPageRestrictionsReloadTab": {
+    "message": "Tabblad herladen",
+    "description": "Reload tab button in unlock-off dialog"
+  },
+  "unlockPageRestrictionsNotNow": {
+    "message": "Niet nu",
+    "description": "Dismiss unlock-off dialog without reload"
+  },
+  "welcomeBulletImagePreview": {
+    "message": "Afbeeldingsvoorbeeld: optioneel vergroot voorbeeld bij zweven en een uitgebreide modus voor complexe lay-outs.",
+    "description": "Welcome page: image hover preview bullet"
+  },
+  "welcomeBulletPageUnlock": {
+    "message": "Pagina deblokkeren: optioneel beperkingen voor kopiëren, plakken, rechtsklikken enz. versoepelen — inschakelen in instellingen en pagina vernieuwen indien gevraagd.",
+    "description": "Welcome page: page unlock bullet"
+  },
+  "welcomeBulletDisabledSites": {
+    "message": "Per site: vermelde domeinen schakelen gebaren, Super Drag, pop-up en deblokkering tegelijk uit.",
+    "description": "Welcome page: per-site disable bullet"
+  },
+  "welcomeBulletSplitScroll": {
+    "message": "Gesplitste weergave: bij openen in split-layout scrollen tussen beide vensters synchroniseren (ook horizontaal).",
+    "description": "Welcome page: split scroll sync bullet"
+  },
+  "welcomeBulletScreenshot": {
+    "message": "Schermafbeeldingen: zichtbaar gebied, volledige pagina, handmatig scrollen; trajectgebieden, sneltoetsen, klembord, voorbeeld en lokale geschiedenis (0 = onbeperkt).",
+    "description": "Welcome page: screenshot feature bullet"
+  },
+  "welcomeTipScreenshot": {
+    "message": "Schermafbeeldingen standaard aan; sneltoetsen voor zichtbaar gebied, volledige pagina en scrollen; optioneel trajectgebied, auto-kopiëren, voorbeeld en geschiedenis.",
+    "description": "Welcome page: screenshot usage tip"
+  },
+  "trailColorPickerPresets": {
+    "message": "Voorinstellingen",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerRecent": {
+    "message": "Recent gebruikt",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerEyedropper": {
+    "message": "Kleur uit afbeelding",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerEyedropperActive": {
+    "message": "Klik om te pakken · wiel zoomt loep",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerSyncTrail": {
+    "message": "Opslaan als trajectkleur",
+    "description": "Trail color picker UI"
+  },
+  "superDragCompassPosCompassHub": {
+    "message": "Sleeppunt",
+    "description": "Compass hub aligned to drag start"
+  },
+  "superDragCompassPosCompassScreenCenter": {
+    "message": "Midden van scherm",
+    "description": "Compass fixed at viewport center"
+  },
+  "superDragCompassPosCompassScreenTop": {
+    "message": "Boven",
+    "description": "Compass fixed at top of viewport"
+  },
+  "superDragCompassPosCompassScreenRight": {
+    "message": "Rechts",
+    "description": "Compass fixed at right of viewport"
+  },
+  "superDragCompassPosCompassScreenBottom": {
+    "message": "Onder",
+    "description": "Compass fixed at bottom of viewport"
+  },
+  "superDragCompassPosCompassScreenLeft": {
+    "message": "Links",
+    "description": "Compass fixed at left of viewport"
+  },
+  "superDragCompassPosCompassHidden": {
+    "message": "Verbergen",
+    "description": "Do not show compass"
+  },
+  "addCurrentSiteToDisabledSites": {
+    "message": "Huidige site toevoegen",
+    "description": "Button: add the active tab domain to disabled sites"
+  },
+  "addCurrentSiteToDisabledSitesTitle": {
+    "message": "Domein van het huidige tabblad toevoegen aan uitgeschakelde sites",
+    "description": "Tooltip for add-current-site button"
+  },
+  "addDisabledSite": {
+    "message": "Toevoegen",
+    "description": "Button: add a typed disabled site entry"
+  },
+  "disabledSiteInputPlaceholder": {
+    "message": "Domein of volledige URL, bijv. youtube.com",
+    "description": "Placeholder for the disabled site input"
+  },
+  "disabledSitesEmpty": {
+    "message": "Nog geen uitgeschakelde sites.",
+    "description": "Empty state for disabled sites list"
+  },
+  "removeDisabledSite": {
+    "message": "Deze site verwijderen",
+    "description": "Tooltip/aria label for remove disabled site button"
+  },
+  "disabledSiteInvalid": {
+    "message": "Voer een geldig domein of geldige URL in",
+    "description": "Error shown when disabled site input is invalid"
+  },
+  "disabledSiteAlreadyExists": {
+    "message": "Site bestaat al",
+    "description": "Error shown when adding a duplicate disabled site"
+  },
+  "disabledSitesLimitReached": {
+    "message": "Limiet voor uitgeschakelde sites bereikt",
+    "description": "Error shown when disabled sites list reaches the maximum size"
+  },
+  "currentSiteUnsupported": {
+    "message": "Het huidige tabblad heeft geen ondersteund domein",
+    "description": "Error shown when current tab URL cannot be added to disabled sites"
+  },
+  "customKey": {
+    "message": "Aangepaste toets",
+    "description": "Custom trigger key option"
+  },
+  "previewTriggerMode": {
+    "message": "Triggermodus",
+    "description": "Popup view trigger mode setting"
+  },
+  "previewTriggerHold": {
+    "message": "Triggertoets ingedrukt houden",
+    "description": "Hold trigger key option"
+  },
+  "previewTriggerDouble": {
+    "message": "Triggertoets tweemaal indrukken",
+    "description": "Double-press trigger key option"
+  },
+  "previewCustomKey": {
+    "message": "Aangepaste toets",
+    "description": "Popup view custom trigger key setting"
+  },
+  "previewCustomKeyPlaceholder": {
+    "message": "Klik en druk op een toets",
+    "description": "Popup view custom trigger key placeholder"
+  },
+  "previewCustomKeyTitle": {
+    "message": "Klik hier en druk vervolgens op een toets die geen modificatietoets is. Druk op Esc om te wissen.",
+    "description": "Popup view custom trigger key title"
+  },
+  "unlimited": {
+    "message": "Onbeperkt",
+    "description": "Unlimited value label"
+  },
+  "settingsFontSize": {
+    "message": "Lettergrootte van instellingen",
+    "description": "Header button: adjust settings font size"
   }
 }

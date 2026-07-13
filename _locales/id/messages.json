@@ -4,7 +4,7 @@
     "description": "The name of the extension"
   },
   "extDesc": {
-    "message": "Ekstensi Chrome/Edge yang mendukung gerakan mouse, fitur seret super dan tampilan popup",
+    "message": "Gestur mouse, seret super, pratinjau gambar & tautan, dan lainnya.",
     "description": "The description of the extension"
   },
   "title": {
@@ -35,13 +35,21 @@
     "message": "Seret Ke Kiri",
     "description": "Drag left action"
   },
-  "openInForeground": {
-    "message": "Buka Tautan di Latar Depan",
-    "description": "Open link in foreground"
+  "dragUpRight": {
+    "message": "Seret ke atas-kanan",
+    "description": "Super drag diagonal direction"
   },
-  "openInBackground": {
-    "message": "Buka Tautan di Latar Belakang",
-    "description": "Open link in background"
+  "dragDownRight": {
+    "message": "Seret ke bawah-kanan",
+    "description": "Super drag diagonal direction"
+  },
+  "dragDownLeft": {
+    "message": "Seret ke bawah-kiri",
+    "description": "Super drag diagonal direction"
+  },
+  "dragUpLeft": {
+    "message": "Seret ke atas-kiri",
+    "description": "Super drag diagonal direction"
   },
   "superDragDescription": {
     "message": "Super Drag bekerja untuk tautan, gambar, dan teks yang dipilih. Anda dapat mengatur metode pembukaan untuk setiap arah gestur (atas/bawah/kiri/kanan), termasuk foreground, background, atau tampilan terpisah (kiri/kanan/atas/bawah).",
@@ -64,52 +72,76 @@
     "description": "Down direction"
   },
   "downThenRight": {
-    "message": "Bawah lalu Kanan",
-    "description": "Down then right gesture"
+    "message": "Bawah lalu kanan",
+    "description": "Gestur bawah lalu kanan"
   },
   "leftThenUp": {
-    "message": "Kiri lalu Atas",
-    "description": "Left then up gesture"
+    "message": "Kiri lalu atas",
+    "description": "Gestur kiri lalu atas"
   },
   "rightThenUp": {
-    "message": "Kanan lalu Atas",
-    "description": "Right then up gesture"
+    "message": "Kanan lalu atas",
+    "description": "Gestur kanan lalu atas"
   },
   "rightThenDown": {
-    "message": "Kanan lalu Bawah",
-    "description": "Right then down gesture"
+    "message": "Kanan lalu bawah",
+    "description": "Gestur kanan lalu bawah"
   },
   "upThenLeft": {
-    "message": "Atas lalu Kiri",
-    "description": "Up then left gesture"
+    "message": "Atas lalu kiri",
+    "description": "Gestur atas lalu kiri"
   },
   "upThenRight": {
-    "message": "Atas lalu Kanan",
-    "description": "Up then right gesture"
+    "message": "Atas lalu kanan",
+    "description": "Gestur atas lalu kanan"
   },
   "downThenLeft": {
-    "message": "Bawah lalu Kiri",
-    "description": "Down then left gesture"
+    "message": "Bawah lalu kiri",
+    "description": "Gestur bawah lalu kiri"
   },
   "leftThenDown": {
-    "message": "Kiri lalu Bawah",
-    "description": "Left then down gesture"
+    "message": "Kiri lalu bawah",
+    "description": "Gestur kiri lalu bawah"
   },
   "upThenDown": {
-    "message": "Atas lalu Bawah",
-    "description": "Up then down gesture"
+    "message": "Atas lalu bawah",
+    "description": "Gestur atas lalu bawah"
   },
   "downThenUp": {
-    "message": "Bawah lalu Atas",
-    "description": "Down then up gesture"
+    "message": "Bawah lalu atas",
+    "description": "Gestur bawah lalu atas"
   },
   "leftThenRight": {
-    "message": "Kiri lalu Kanan",
-    "description": "Left then right gesture"
+    "message": "Kiri lalu kanan",
+    "description": "Gestur kiri lalu kanan"
   },
   "rightThenLeft": {
-    "message": "Kanan lalu Kiri",
-    "description": "Right then left gesture"
+    "message": "Kanan lalu kiri",
+    "description": "Gestur kanan lalu kiri"
+  },
+  "rightHoldWheelUp": {
+    "message": "Tahan kanan + gulir ke atas",
+    "description": "Tahan tombol kanan dan gulir ke atas"
+  },
+  "rightHoldWheelDown": {
+    "message": "Tahan kanan + gulir ke bawah",
+    "description": "Tahan tombol kanan dan gulir ke bawah"
+  },
+  "leftHoldWheelUp": {
+    "message": "Tahan kiri + scroll ke atas",
+    "description": "Tombol kiri dan scroll ke atas"
+  },
+  "leftHoldWheelDown": {
+    "message": "Tahan kiri + scroll ke bawah",
+    "description": "Tombol kiri dan scroll ke bawah"
+  },
+  "rightHoldLeftClick": {
+    "message": "Tahan kanan + klik kiri",
+    "description": "Tahan tombol kanan dan klik kiri"
+  },
+  "leftHoldRightClick": {
+    "message": "Tahan kiri + klik kanan",
+    "description": "Tahan tombol kiri dan klik kanan"
   },
   "back": {
     "message": "Kembali",
@@ -158,6 +190,18 @@
   "prevTab": {
     "message": "Tab Sebelumnya",
     "description": "Previous tab action"
+  },
+  "previousActiveTab": {
+    "message": "Tab aktif sebelumnya",
+    "description": "Aksi gestur: beralih ke tab yang sebelumnya aktif"
+  },
+  "goToParentUrl": {
+    "message": "URL induk",
+    "description": "Aksi gestur: buka jalur URL induk"
+  },
+  "goToRootUrl": {
+    "message": "URL root",
+    "description": "Aksi gestur: buka URL root situs"
   },
   "nextTab": {
     "message": "Tab Berikutnya",
@@ -211,6 +255,14 @@
     "message": "Beralih Layar Penuh",
     "description": "Toggle fullscreen action"
   },
+  "zoomIn": {
+    "message": "Perbesar",
+    "description": "Perbesar zoom tab saat ini"
+  },
+  "zoomOut": {
+    "message": "Perkecil",
+    "description": "Perkecil zoom tab saat ini"
+  },
   "closeTabsToLeft": {
     "message": "Tutup Tab ke Kiri",
     "description": "Close tabs to left action"
@@ -218,6 +270,474 @@
   "reloadAllTabs": {
     "message": "Muat Ulang Semua Tab",
     "description": "Reload all tabs action"
+  },
+  "stopLoadingAllTabs": {
+    "message": "Hentikan pemuatan semua tab",
+    "description": "Stop loading in all tabs"
+  },
+  "screenshotRegion": {
+    "message": "Tangkapan layar (area jejak)",
+    "description": "Screenshot gesture action"
+  },
+  "screenshotRegionOrLink": {
+    "message": "Tangkapan atau buka tautan",
+    "description": "Trail region hint when links are inside selection"
+  },
+  "trailRegionChooseTitle": {
+    "message": "Tautan dalam pilihan — tangkap atau buka",
+    "description": "Trail region chooser dialog title"
+  },
+  "trailRegionLinkSingle": {
+    "message": "1 tautan",
+    "description": "Trail region link count"
+  },
+  "trailRegionLinkMultiple": {
+    "message": "{count} tautan",
+    "description": "Trail region link count"
+  },
+  "trailRegionActionScreenshot": {
+    "message": "Tangkap (S)",
+    "description": "Trail region chooser button"
+  },
+  "trailRegionActionOpenLink": {
+    "message": "Buka di tab baru (O)",
+    "description": "Trail region chooser button"
+  },
+  "trailRegionActionOpenLinks": {
+    "message": "Buka di tab baru (O)",
+    "description": "Trail region chooser button"
+  },
+  "trailRegionActionOpenSelected": {
+    "message": "Buka {n} di tab baru (O)",
+    "description": "Trail region open checked links"
+  },
+  "trailRegionActionOpenNone": {
+    "message": "Buka pilihan (O)",
+    "description": "Trail region open button when none checked"
+  },
+  "trailRegionActionCopy": {
+    "message": "Salin (C)",
+    "description": "Trail region chooser copy button"
+  },
+  "trailRegionActionCopySelected": {
+    "message": "Salin {n} (C)",
+    "description": "Trail region copy checked links"
+  },
+  "trailRegionActionCopyNone": {
+    "message": "Salin (C)",
+    "description": "Trail region copy button when none checked"
+  },
+  "trailRegionCopyFailed": {
+    "message": "Gagal menyalin",
+    "description": "Trail region copy to clipboard failed"
+  },
+  "trailRegionSelectAll": {
+    "message": "Pilih semua",
+    "description": "Trail region link list select all"
+  },
+  "trailRegionNoLinkSelected": {
+    "message": "Pilih setidaknya satu tautan",
+    "description": "Trail region no selection hint"
+  },
+  "trailRegionChooseHint": {
+    "message": "Esc batal · centang tautan untuk salin/buka · seret tepi untuk ubah ukuran",
+    "description": "Trail region chooser footer"
+  },
+  "trailRegionLinkOpened": {
+    "message": "Tautan dibuka di tab baru",
+    "description": "Trail region open link feedback"
+  },
+  "trailRegionLinksOpened": {
+    "message": "Tautan dibuka di tab baru",
+    "description": "Trail region open links feedback"
+  },
+  "trailRegionLinksTruncated": {
+    "message": "Hanya {n} tautan pertama yang dibuka",
+    "description": "Trail region open links cap"
+  },
+  "screenshotScrollCaptureActive": {
+    "message": "Gulir halaman manual, lalu pintasan sama atau Esc untuk selesai dan gabung",
+    "description": "Manual scroll capture in progress"
+  },
+  "screenshotCopied": {
+    "message": "Tangkapan disalin ke papan klip",
+    "description": "Screenshot feedback"
+  },
+  "screenshotFailed": {
+    "message": "Tangkapan gagal",
+    "description": "Screenshot feedback"
+  },
+  "screenshotNeedTrail": {
+    "message": "Gambar jejak lebih panjang untuk memilih area",
+    "description": "Screenshot feedback"
+  },
+  "screenshotUnavailable": {
+    "message": "Modul tangkapan tidak tersedia",
+    "description": "Screenshot feedback"
+  },
+  "screenshotTopFrameOnly": {
+    "message": "Tangkapan halaman penuh hanya di frame utama",
+    "description": "Screenshot feedback"
+  },
+  "screenshotFeature": {
+    "message": "Tangkapan layar",
+    "description": "Screenshot settings section title"
+  },
+  "enableScreenshotFeature": {
+    "message": "Aktifkan tangkapan layar",
+    "description": "Master toggle for screenshot feature"
+  },
+  "enableScreenshotTrailCapture": {
+    "message": "Area jejak (loop / persilangan sendiri)",
+    "description": "Capture when trail loops or crosses; skipped if another gesture action matches"
+  },
+  "enableScreenshotClipboard": {
+    "message": "Salin otomatis ke papan klip",
+    "description": "Copy screenshot to clipboard after capture"
+  },
+  "enableScreenshotPreview": {
+    "message": "Tampilkan pratinjau setelah tangkap",
+    "description": "Open preview window when a screenshot is captured"
+  },
+  "enableScreenshotHistory": {
+    "message": "Simpan riwayat tangkapan",
+    "description": "Keep captured screenshots in local history"
+  },
+  "screenshotHistoryMaxCount": {
+    "message": "Batas riwayat",
+    "description": "Maximum screenshot history entries to keep"
+  },
+  "screenshotHistoryMaxCountHint": {
+    "message": "0 = tak terbatas; 1–200 hapus yang lama saat melebihi batas",
+    "description": "Screenshot history limit hint"
+  },
+  "screenshotHistoryUnlimited": {
+    "message": "Tak terbatas",
+    "description": "Label when screenshot history limit is 0"
+  },
+  "screenshotHistoryView": {
+    "message": "Lihat riwayat",
+    "description": "Open screenshot history window"
+  },
+  "screenshotHistoryTitle": {
+    "message": "Riwayat tangkapan",
+    "description": "Screenshot history window title"
+  },
+  "screenshotHistoryEmpty": {
+    "message": "Belum ada tangkapan",
+    "description": "Empty screenshot history state"
+  },
+  "screenshotHistoryClearAll": {
+    "message": "Hapus semua",
+    "description": "Delete all screenshot history entries"
+  },
+  "screenshotHistoryClearConfirm": {
+    "message": "Hapus semua riwayat tangkapan?",
+    "description": "Confirm clearing screenshot history"
+  },
+  "screenshotHistoryDelete": {
+    "message": "Hapus",
+    "description": "Delete one screenshot history entry"
+  },
+  "screenshotHistoryPinToPage": {
+    "message": "Sematkan ke halaman",
+    "description": "Pin history thumbnail onto the web page"
+  },
+  "screenshotHistoryPinFailed": {
+    "message": "Tidak bisa menyematkan (buka tab target atau izinkan situs ini).",
+    "description": "Error when pinning from screenshot history"
+  },
+  "screenshotHistoryCount": {
+    "message": "$1 item",
+    "description": "Number of items in screenshot history",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "screenshotHistoryModeViewport": {
+    "message": "Area terlihat",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeFullPage": {
+    "message": "Halaman penuh",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeRegion": {
+    "message": "Wilayah",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeScroll": {
+    "message": "Gulir manual",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeUnknown": {
+    "message": "Tangkapan",
+    "description": "Screenshot history capture mode fallback label"
+  },
+  "screenshotDone": {
+    "message": "Tangkapan siap",
+    "description": "Hint when capture finished without clipboard copy"
+  },
+  "screenshotPreviewTitle": {
+    "message": "Pratinjau tangkapan",
+    "description": "Screenshot preview window title"
+  },
+  "screenshotPreviewClose": {
+    "message": "Tutup",
+    "description": "Close screenshot preview window"
+  },
+  "screenshotPreviewCopyAgain": {
+    "message": "Salin",
+    "description": "Copy screenshot to clipboard from preview window"
+  },
+  "screenshotPreviewSave": {
+    "message": "Simpan sebagai berkas",
+    "description": "Save annotated screenshot to disk"
+  },
+  "screenshotPreviewSaved": {
+    "message": "Disimpan",
+    "description": "Screenshot file save succeeded"
+  },
+  "screenshotPreviewPinToPage": {
+    "message": "Sematkan ke halaman",
+    "description": "Pin annotated screenshot onto the source web page"
+  },
+  "screenshotPreviewPinned": {
+    "message": "Tersemat",
+    "description": "Screenshot pin placed on page"
+  },
+  "screenshotPreviewPinning": {
+    "message": "Menyematkan…",
+    "description": "Screenshot pin in progress"
+  },
+  "screenshotPinTitle": {
+    "message": "Tangkapan",
+    "description": "Title on pinned screenshot sticker"
+  },
+  "screenshotPinClose": {
+    "message": "Lepas sematan",
+    "description": "Close button on pinned screenshot"
+  },
+  "screenshotPinResize": {
+    "message": "Ubah ukuran",
+    "description": "Resize handle on pinned screenshot"
+  },
+  "screenshotPinZoomFit": {
+    "message": "Sesuaikan",
+    "description": "Fit pinned screenshot to view"
+  },
+  "screenshotPinZoomOriginal": {
+    "message": "1:1",
+    "description": "Show pinned screenshot at original pixel size"
+  },
+  "screenshotPinOrderLabel": {
+    "message": "Sematan $1$",
+    "description": "Pinned screenshot order number",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "screenshotPreviewLoadFailed": {
+    "message": "Pratinjau gagal dimuat",
+    "description": "Screenshot preview load error"
+  },
+  "screenshotPreviewZoomFit": {
+    "message": "Sesuaikan",
+    "description": "Fit screenshot to preview window"
+  },
+  "screenshotPreviewZoomFitTitle": {
+    "message": "Sesuaikan jendela",
+    "description": "Tooltip for fit zoom button"
+  },
+  "screenshotPreviewZoomOneToOne": {
+    "message": "1:1",
+    "description": "Actual-size zoom button label"
+  },
+  "screenshotPreviewZoomOneToOneTitle": {
+    "message": "Ukuran asli (1:1)",
+    "description": "Tooltip for 1:1 zoom button"
+  },
+  "screenshotPreviewZoomLevel": {
+    "message": "Zoom $1$%",
+    "description": "Current zoom percentage in preview",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "screenshotAnnotHand": {
+    "message": "Tangan (geser)",
+    "description": "Pan the preview by dragging"
+  },
+  "screenshotAnnotPen": {
+    "message": "Pena",
+    "description": "Annotation tool: freehand"
+  },
+  "screenshotAnnotArrow": {
+    "message": "Panah (Shift: H/V)",
+    "description": "Annotation tool: arrow; Shift constrains to horizontal or vertical"
+  },
+  "screenshotAnnotLine": {
+    "message": "Garis (Shift: H/V)",
+    "description": "Annotation tool: line; Shift constrains to horizontal or vertical"
+  },
+  "screenshotAnnotRect": {
+    "message": "Persegi panjang (Shift: persegi)",
+    "description": "Annotation tool: rectangle; Shift draws a square"
+  },
+  "screenshotAnnotEllipse": {
+    "message": "Elips",
+    "description": "Annotation tool: ellipse"
+  },
+  "screenshotAnnotRoundRect": {
+    "message": "Persegi membulat",
+    "description": "Annotation tool: rounded rectangle"
+  },
+  "screenshotAnnotHighlighter": {
+    "message": "Penyorot",
+    "description": "Annotation tool: highlighter marker"
+  },
+  "screenshotAnnotHighlight": {
+    "message": "Bingkai sorot",
+    "description": "Annotation tool: highlight rectangle"
+  },
+  "screenshotAnnotFillRect": {
+    "message": "Persegi penuh",
+    "description": "Annotation tool: filled rectangle"
+  },
+  "screenshotAnnotFillEllipse": {
+    "message": "Elips penuh",
+    "description": "Annotation tool: filled ellipse"
+  },
+  "screenshotAnnotBlur": {
+    "message": "Buram",
+    "description": "Annotation tool: blur brush"
+  },
+  "screenshotAnnotArrow2": {
+    "message": "Panah ganda (Shift: H/V)",
+    "description": "Annotation tool: line with arrowheads at both ends; Shift constrains H/V"
+  },
+  "screenshotAnnotNumber": {
+    "message": "Angka",
+    "description": "Annotation tool: sequential number markers"
+  },
+  "screenshotAnnotStampStart": {
+    "message": "Awal #",
+    "description": "Starting number for sequential stamps"
+  },
+  "screenshotAnnotStampNext": {
+    "message": "Berikutnya #: $1$",
+    "description": "Next number stamp to place (tooltip)",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "screenshotAnnotCrop": {
+    "message": "Pangkas",
+    "description": "Annotation tool: crop image"
+  },
+  "screenshotAnnotCropApply": {
+    "message": "Terapkan pangkas",
+    "description": "Confirm crop selection"
+  },
+  "screenshotAnnotCropCancel": {
+    "message": "Batal",
+    "description": "Cancel crop selection"
+  },
+  "screenshotAnnotText": {
+    "message": "Teks",
+    "description": "Annotation tool: text"
+  },
+  "screenshotAnnotMosaic": {
+    "message": "Mosaik",
+    "description": "Annotation tool: mosaic blur"
+  },
+  "screenshotAnnotEraser": {
+    "message": "Penghapus",
+    "description": "Annotation tool: eraser"
+  },
+  "screenshotAnnotSize": {
+    "message": "Ukuran",
+    "description": "Annotation stroke size"
+  },
+  "screenshotAnnotResetAll": {
+    "message": "Atur ulang semua edit",
+    "description": "Clear all annotations and restore original screenshot"
+  },
+  "screenshotAnnotStepCount": {
+    "message": "$1 / $2",
+    "description": "History step indicator: current / total"
+  },
+  "screenshotAnnotStepCountTitle": {
+    "message": "Langkah diterapkan / total (0 = gambar asli)",
+    "description": "Tooltip for history step indicator"
+  },
+  "screenshotAnnotUndo": {
+    "message": "Urungkan",
+    "description": "Undo annotation"
+  },
+  "screenshotAnnotRedo": {
+    "message": "Ulangi",
+    "description": "Redo annotation"
+  },
+  "screenshotAnnotTextPlaceholder": {
+    "message": "Ketik di sini…",
+    "description": "Placeholder in inline text editor on screenshot preview"
+  },
+  "screenshotOptRegion": {
+    "message": "Pilih wilayah",
+    "description": "Screenshot bind row: keyboard drag rectangle region"
+  },
+  "screenshotOptViewport": {
+    "message": "Area terlihat",
+    "description": "Screenshot bind row: current visible tab area"
+  },
+  "screenshotOptFullPage": {
+    "message": "Halaman penuh",
+    "description": "Screenshot bind row: full page"
+  },
+  "screenshotOptScrollStitch": {
+    "message": "Gulir manual",
+    "description": "Screenshot bind row: manual scroll capture"
+  },
+  "screenshotOptOpenHistory": {
+    "message": "Buka riwayat",
+    "description": "Screenshot bind row: keyboard shortcut to open screenshot history"
+  },
+  "screenshotHotkeyPressHint": {
+    "message": "Pintasan: klik bidang di atas, lalu kombinasi tombol (Ctrl / Alt / Meta + huruf atau angka, atau F1–F12). Esc menghapus bidang.",
+    "description": "Screenshot section footer: hotkey binding help"
+  },
+  "screenshotHotkeyPlaceholder": {
+    "message": "Klik untuk mengatur",
+    "description": "Placeholder in empty screenshot hotkey fields"
+  },
+  "screenshotRegionPickHint": {
+    "message": "Seret untuk memilih area. Esc untuk batal.",
+    "description": "Hint while keyboard region picker is active"
+  },
+  "screenshotRegionPickFooterHint": {
+    "message": "Pintasan wilayah: gambar persegi lalu lepas. Jika ada tautan, tangkap atau buka tab baru. Esc batal.",
+    "description": "Screenshot section footer: keyboard region picker help"
+  },
+  "screenshotRegionTooSmall": {
+    "message": "Pilihan terlalu kecil — gambar area lebih besar",
+    "description": "Region picker: minimum size not met"
+  },
+  "screenshotGestureIntersectHint": {
+    "message": "Area jejak: satu loop atau satu persilangan, lalu lepas. Jika ada tautan, tangkap atau tab baru. Banyak loop = coretan.",
+    "description": "Screenshot section footer: trail region capture help"
   },
   "togglePinTab": {
     "message": "Sematkan/Lepas Sematan Tab",
@@ -244,16 +764,16 @@
     "description": "Settings title"
   },
   "customizedBehavior": {
-    "message": "Daftar blokir",
-    "description": "Block list section title"
+    "message": "Situs yang dinonaktifkan",
+    "description": "Section title for the per-site disable list"
   },
   "disableMouseGesturesForSites": {
-    "message": "Nonaktifkan gestur mouse dan super seret untuk situs ini",
-    "description": "Label for the list of sites where gestures and super drag are disabled"
+    "message": "Nonaktifkan fitur ekstensi pada domain yang tercantum",
+    "description": "Subtitle for Disabled sites section"
   },
   "disabledSitesHint": {
-    "message": "Satu situs per baris. Domain (mis. youtube.com) atau URL lengkap.",
-    "description": "Hint for the disabled sites textarea"
+    "message": "Berlaku untuk: gestur, super drag, pratinjau tautan/gambar, tangkapan layar, dan pembukaan kunci halaman. Tambahkan situs saat ini atau masukkan domain/URL; klik tanda hapus untuk menghapus.",
+    "description": "Short hint explaining which features the Disabled sites list affects"
   },
   "enableGesture": {
     "message": "Aktifkan Gerakan Mouse",
@@ -279,6 +799,26 @@
     "message": "Aktifkan Seret Super",
     "description": "Enable super drag option"
   },
+  "superDragCompassPosition": {
+    "message": "Kompas 8 arah",
+    "description": "Super drag compass display and position"
+  },
+  "superDragCompassPosCompassAbove": {
+    "message": "Di atas titik seret",
+    "description": "Compass above drag start, centered horizontally"
+  },
+  "superDragCompassPosCompassRight": {
+    "message": "Di kanan titik seret",
+    "description": "Compass to the right of drag start, vertically centered"
+  },
+  "superDragCompassPosCompassBelow": {
+    "message": "Di bawah titik seret",
+    "description": "Compass below drag start, centered horizontally"
+  },
+  "superDragCompassPosCompassLeft": {
+    "message": "Di kiri titik seret",
+    "description": "Compass to the left of drag start, vertically centered"
+  },
   "enableDragTextSearch": {
     "message": "Aktifkan Pencarian Teks Seret",
     "description": "Enable drag text search option"
@@ -287,9 +827,17 @@
     "message": "Unduh otomatis gambar/file saat seret",
     "description": "When the drag target is an image or other downloadable file, start download automatically"
   },
+  "enableImageDrag": {
+    "message": "Aktifkan seret gambar",
+    "description": "Control image super drag independently from image preview"
+  },
   "enableImagePreview": {
     "message": "Aktifkan Pratinjau Gambar",
     "description": "Enable image preview option"
+  },
+  "enableImagePreviewEnhanced": {
+    "message": "Pratinjau gambar ditingkatkan",
+    "description": "Support transparent overlay, background-image, parent lookup, etc."
   },
   "enableDuplicateCheck": {
     "message": "Deteksi Tab Duplikat",
@@ -302,10 +850,6 @@
   "enableSmoothScroll": {
     "message": "Aktifkan Gulir Halus",
     "description": "Enable smooth scrolling for gesture actions"
-  },
-  "save": {
-    "message": "Terapkan Pengaturan",
-    "description": "Save settings button"
   },
   "reset": {
     "message": "Atur Ulang",
@@ -363,14 +907,6 @@
     "message": "Gagal Mengatur Ulang Pengaturan",
     "description": "Reset settings error notification"
   },
-  "themeLight": {
-    "message": "Terang",
-    "description": "Light theme"
-  },
-  "themeDark": {
-    "message": "Gelap",
-    "description": "Dark theme"
-  },
   "buyMeACoffee": {
     "message": "Beli saya kopi",
     "description": "Donation button"
@@ -379,17 +915,33 @@
     "message": "Ubah Tema",
     "description": "Toggle theme button"
   },
-  "toggleLanguage": {
-    "message": "Ubah Bahasa",
-    "description": "Toggle language button"
+  "openDetachedPopupTitle": {
+    "message": "Buka pengaturan di panel samping (jika tidak tersedia, jendela terpisah)",
+    "description": "Tombol header: pengaturan di panel samping atau jendela terpisah"
+  },
+  "openDetachedWindowFromSidePanelTitle": {
+    "message": "Buka di jendela terpisah (sejajar dengan browser)",
+    "description": "Panel samping: jendela terpisah dan tata letak browser"
+  },
+  "openOptionsPageTitle": {
+    "message": "Buka halaman opsi",
+    "description": "Tombol header: buka halaman opsi ekstensi"
   },
   "donationTooltip": {
     "message": "Jika Anda menyukai karya ini, silakan dukung saya. Terima kasih :)",
     "description": "Donation tooltip"
   },
   "rightButtonHint": {
-    "message": "Tahan tombol mouse kanan",
+    "message": "Tahan kanan (jalur, roda, klik) · kiri (roda)",
     "description": "Right mouse button hint"
+  },
+  "builtInGesturesListExpandHint": {
+    "message": "Klik untuk memperluas daftar gestur lengkap",
+    "description": "Tooltip on built-in gestures subtitle when list is collapsed"
+  },
+  "builtInGesturesListCollapseHint": {
+    "message": "Klik untuk menutup daftar gestur",
+    "description": "Tooltip on built-in gestures subtitle when list is expanded"
   },
   "leftButtonHint": {
     "message": "Tahan tombol mouse kiri",
@@ -403,17 +955,45 @@
     "message": "Buka di Latar Belakang",
     "description": "Open in background action"
   },
+  "popupViewAction": {
+    "message": "Pratinjau",
+    "description": "Super drag action: open target in popup view"
+  },
+  "incognitoAction": {
+    "message": "Buka di Jendela Penyamaran",
+    "description": "Open in incognito/private window"
+  },
+  "enableSplitScrollSync": {
+    "message": "Sinkronkan gulir vertikal & horizontal antar jendela terpisah",
+    "description": "Saat tampilan terpisah, samakan kedua sumbu gulir antar jendela"
+  },
   "copyAction": {
     "message": "Salin",
     "description": "Copy selected text or link URL to clipboard"
+  },
+  "downloadAction": {
+    "message": "Unduh",
+    "description": "Super drag action: download target"
   },
   "copiedToClipboard": {
     "message": "Disalin ke papan klip",
     "description": "Hint after copy action"
   },
-  "dragSearchEngine": {
-    "message": "URL Mesin Pencari untuk Seret",
-    "description": "Drag search engine URL setting"
+  "dragSearchEngineSlotLabel": {
+    "message": "Item yang diedit",
+    "description": "Label for drag search engine slot selector"
+  },
+  "dragSearchSlotDefault": {
+    "message": "Bawaan (cadangan)",
+    "description": "Default search URL slot in drag search editor"
+  },
+  "dragSearchEngineUrlForSlot": {
+    "message": "URL mesin pencari",
+    "description": "Label for single drag search URL field"
+  },
+  "dragSearchEnginePerDirectionHelp": {
+    "message": "Pilih «Bawaan» atau arah seret di daftar, lalu sunting URL-nya. Arah kosong memakai bawaan. Hanya untuk pencarian teks yang diseret.",
+    "description": "Help text for unified drag search engine editor"
   },
   "linkPreview": {
     "message": "Pratinjau",
@@ -424,7 +1004,7 @@
     "description": "Quick navigation hover tooltip"
   },
   "linkPreviewHint": {
-    "message": "Arahkan + Tombol untuk Menampilkan Jendela",
+    "message": "Arahkan kursor dan gunakan pemicu untuk menampilkan popup",
     "description": "Popup view hint"
   },
   "enableLinkPreview": {
@@ -495,41 +1075,61 @@
     "message": "Gunakan {q} untuk kata kunci pencarian, contoh:",
     "description": "Search engine examples description"
   },
+  "searchExampleUrlClickHint": {
+    "message": "Klik URL contoh untuk mengisi kolom di atas dan menyimpan",
+    "description": "Tooltip for example search engine URLs (click to fill)"
+  },
+  "searchEngineExamplesUrlClickHint": {
+    "message": "Tips: klik URL contoh untuk mengisi kolom di atas dan menyimpan.",
+    "description": "Visible hint under search engine examples (click URL to fill field above and save)"
+  },
   "googleExample": {
-    "message": "Pencarian Google: https://www.google.co.id/search?q={q}",
+    "message": "Pencarian Google:",
+    "description": "Google search example"
+  },
+  "googleExampleUrl": {
+    "message": "https://www.google.co.id/search?q={q}",
     "description": "Google search example"
   },
   "googleTranslateExample": {
-    "message": "Google Terjemahan: https://translate.google.co.id/?sl=auto&tl=id&text={q}&op=translate",
+    "message": "Google Terjemahan:",
+    "description": "Google translate example"
+  },
+  "googleTranslateExampleUrl": {
+    "message": "https://translate.google.co.id/?sl=auto&tl=id&text={q}&op=translate",
     "description": "Google translate example"
   },
   "localSearchExample": {
-    "message": "Pencarian Kaskus: https://www.kaskus.co.id/search?q={q}",
+    "message": "Pencarian Kaskus:",
+    "description": "Local search example"
+  },
+  "localSearchExampleUrl": {
+    "message": "https://www.kaskus.co.id/search?q={q}",
     "description": "Local search example"
   },
   "bingExample": {
-    "message": "Pencarian Bing: https://www.bing.com/search?q={q}&setlang=id",
+    "message": "Pencarian Bing:",
+    "description": "Bing search example"
+  },
+  "bingExampleUrl": {
+    "message": "https://www.bing.com/search?q={q}&setlang=id",
     "description": "Bing search example"
   },
   "wheelTip": {
-    "message": "Gunakan roda mouse untuk menyesuaikan nilai",
+    "message": "Arahkan mouse ke baris ini ~1,5 dtk, lalu sesuaikan dengan roda",
     "description": "Wheel tip"
   },
   "modifierKeyDelayTip": {
-    "message": "Saat menggunakan tombol pengubah, tunda maksimum dibatasi hingga 300ms",
+    "message": "Penundaan dimulai setelah kondisi pemicu terpenuhi; tingkatkan untuk mencegah pratinjau yang tidak disengaja.",
     "description": "Modifier key delay tip"
   },
   "welcomeTitle": {
-    "message": "Selamat Datang di Ekstensi Gerakan Mouse",
+    "message": "Selamat datang di ekstensi gestur mouse",
     "description": "Welcome page title"
   },
   "welcomeDescription": {
-    "message": "Terima kasih telah menginstal Ekstensi Gerakan Mouse! Ekstensi ini menyediakan fungsi gerakan mouse yang kaya, manajemen tab pintar, kemampuan tampilan popup, dan pengalaman visual yang ditingkatkan untuk membantu Anda menjelajah web dengan lebih efisien. Kami telah mengoptimalkan algoritma pengenalan gerakan dengan toleransi kesalahan yang lebih tinggi, memungkinkan gerakan dikenali dengan benar bahkan ketika tidak digambar dengan sempurna. Fitur tampilan popup baru memungkinkan Anda melihat konten tautan di jendela popup tanpa harus beralih tab. Ekstensi ini juga mendukung 29 bahasa dan tema terang/gelap untuk pengalaman pengguna yang lebih baik.",
+    "message": "Terima kasih telah memasang Mouse Gesture! Tahan tombol kanan dan seret untuk menavigasi, mengelola tab, dan menggulir; tahan juga kanan atau kiri dengan roda (dan kombinasi lain di pengaturan) untuk pintasan ekstra — pengenalan tetap toleran bahkan saat halaman memuat. Super Drag membuka tautan, gambar, dan pencarian teks dengan aturan per arah (latar depan, latar belakang, tata letak terpisah, salin ke papan klip, dll.). Popup View menampilkan pratinjau tautan atau mencari teks yang dipilih di jendela kecil. Opsional: pratinjau gambar saat hover (mode diperluas), deteksi tab duplikat dengan penutupan otomatis, gulir halus, lencana jumlah tab di bilah alat, dan buka kunci halaman di situs restriktif. Pengaturan dari bilah alat (popup, panel samping, atau jendela terpisah); ekspor/impor; sinkronisasi akun browser. 29 bahasa dan tema terang/gelap.",
     "description": "Welcome page description"
-  },
-  "gesturesDescription": {
-    "message": "Berikut adalah gerakan mouse bawaan yang dapat Anda gunakan dengan menyeret menggunakan tombol mouse kanan:",
-    "description": "Gestures description"
   },
   "extensionName": {
     "message": "Ekstensi Gerakan Mouse",
@@ -539,88 +1139,48 @@
     "message": "Fitur Utama",
     "description": "Core features title"
   },
-  "utilitiesFeatures": {
-    "message": "Fitur Utilitas",
-    "description": "Utilities features title"
+  "welcomeCoreGestureBlock": {
+    "message": "Gestur mouse: tahan kanan dan seret untuk gestur jalur; roda dengan kanan atau kiri ditahan dan kombinasi klik saat kanan ditahan — dapat dipetakan ulang di pengaturan; pengenalan toleran, termasuk saat memuat.",
+    "description": "Welcome page: core features gesture summary"
+  },
+  "welcomeCoreSuperDragBlock": {
+    "message": "Super Drag: seret tautan dan gambar ke tab baru, seret teks yang dipilih untuk mencari; arah menentukan cara tab dibuka; default di latar belakang.",
+    "description": "Welcome page: core features super drag summary"
+  },
+  "welcomeCorePopupViewBlock": {
+    "message": "Tampilan popup: tahan tombol pemicu (default Shift) di atas tautan untuk pratinjau di jendela kecil; setelah memilih tekan tombol untuk pencarian instan dengan mesin pencari kustom.",
+    "description": "Welcome page: core features popup view summary"
   },
   "usageTips": {
     "message": "Tips Penggunaan",
     "description": "Usage tips title"
   },
-  "smartGestureRecognition": {
-    "message": "Pengenalan gerakan pintar: Mengenali gerakan dengan akurat bahkan ketika tidak sempurna, bekerja saat memuat halaman",
-    "description": "Smart gesture recognition description"
-  },
-  "tabManagementTitle": {
-    "message": "Manajemen Tab",
-    "description": "Tab management title"
-  },
-  "tabManagementDesc": {
-    "message": ": Deteksi duplikat pintar, penutupan otomatis opsional, optimasi memori berkala",
-    "description": "Tab management description"
-  },
-  "superDragTitle": {
-    "message": "Seret Super",
-    "description": "Super drag title"
-  },
-  "superDragDesc": {
-    "message": ": Seret tautan dan gambar ke tab baru, seret teks yang dipilih untuk mencari",
-    "description": "Super drag description"
-  },
-  "linkPreviewTitle": {
-    "message": "Pratinjau",
-    "description": "Link preview title"
-  },
-  "linkPreviewDesc": {
-    "message": ": Tahan tombol pengubah (default: Shift) saat mengarahkan mouse ke tautan untuk melihat pratinjau halaman tujuan dalam jendela popup",
-    "description": "Link preview description"
-  },
-  "textSelectionPreview": {
-    "message": "Pilih teks dan tekan tombol pengubah untuk mencari secara instan dalam jendela popup, mendukung mesin pencari kustom",
-    "description": "Text selection preview description"
-  },
   "previewTip": {
-    "message": "Anda dapat membuka beberapa jendela popup secara bersamaan",
+    "message": "Biarkan beberapa pratinjau terbuka untuk membandingkan.",
     "description": "Preview tip"
-  },
-  "dragDirection": {
-    "message": "Sesuaikan arah seret untuk menentukan cara membuka tab: default membuka di latar belakang",
-    "description": "Drag direction description"
   },
   "debugPanelTitle": {
     "message": "Informasi Debug Gerakan Mouse",
     "description": "Debug panel title"
   },
   "debugPanelDesc": {
-    "message": ": Tekan Alt+D untuk membuka, analisis informasi gerakan secara real-time, pertahankan status",
+    "message": "Tekan Alt+D untuk membuka panel debug, menganalisis informasi gestur secara real-time, status tetap dipertahankan.",
     "description": "Debug panel description"
   },
-  "oneClickCopy": {
-    "message": "Salin informasi debug dengan satu klik untuk berbagi dengan mudah, mendukung banyak bahasa",
-    "description": "One click copy description"
-  },
-  "mediaPreview": {
-    "message": "Pratinjau media yang ditingkatkan: Meningkatkan efek hover gambar dan mengoptimalkan gambar poster video",
-    "description": "Media preview description"
-  },
-  "adaptiveTheme": {
-    "message": "Tema adaptif: Menyesuaikan gaya visual berdasarkan latar belakang halaman, mendukung mode terang/gelap",
-    "description": "Adaptive theme description"
-  },
   "gestureTrail": {
-    "message": "Jejak gerakan ditampilkan di layar dengan warna dan lebar yang dapat disesuaikan",
+    "message": "Jejak dan petunjuk gestur opsional; warna dan ketebalan di pengaturan.",
     "description": "Gesture trail description"
   },
   "clickIcon": {
-    "message": "Klik ikon ekstensi untuk mengaktifkan/menonaktifkan fitur, mengatur bahasa, tema, dan lainnya",
+    "message": "Bilah alat: popup ringkas, panel samping (Chrome/Edge), atau jendela pengaturan. Fitur, bahasa, tema, ekspor/impor.",
     "description": "Click icon description"
   },
   "languageSupport": {
-    "message": "Mendukung 29 bahasa, beradaptasi secara otomatis dengan bahasa browser",
+    "message": "29 bahasa antarmuka; memakai pilihan tersimpan atau mengikuti bahasa peramban.",
     "description": "Language support description"
   },
   "enableAutoClose": {
-    "message": "Aktifkan fitur penutupan otomatis tab duplikat untuk mengurangi penggunaan sumber daya browser secara signifikan",
+    "message": "Dengan deteksi duplikat, dapat menutup URL berulang otomatis (opsional).",
     "description": "Enable auto close description"
   },
   "rightClickMacLinux": {
@@ -634,14 +1194,6 @@
   "duplicateTabsDetected": {
     "message": "Ditemukan $1 tab duplikat",
     "description": "Duplicate tabs detected notification title"
-  },
-  "duplicateTabsCount": {
-    "message": "Ada $1 tab duplikat",
-    "description": "Duplicate tabs count message"
-  },
-  "duplicateTabsSingle": {
-    "message": "Ada 1 tab duplikat",
-    "description": "Single duplicate tab message"
   },
   "autoClosedTabs": {
     "message": "Menutup $1 tab duplikat secara otomatis",
@@ -659,61 +1211,9 @@
     "message": "Tab tanpa judul",
     "description": "Untitled tab"
   },
-  "morePages": {
-    "message": "...dan $1 halaman lagi",
-    "description": "More pages tip"
-  },
-  "errorShowDuplicateTabs": {
-    "message": "Gagal menampilkan notifikasi tab duplikat:",
-    "description": "Error showing duplicate tabs notification"
-  },
-  "errorSendCloseRequest": {
-    "message": "Gagal mengirim permintaan penutupan:",
-    "description": "Error sending close request"
-  },
-  "errorCloseDuplicateTabs": {
-    "message": "Gagal menutup tab duplikat:",
-    "description": "Error closing duplicate tabs"
-  },
-  "errorSendIgnoreRequest": {
-    "message": "Gagal mengirim permintaan pengabaian:",
-    "description": "Error sending ignore request"
-  },
-  "errorIgnoreDuplicateTabs": {
-    "message": "Gagal mengabaikan tab duplikat:",
-    "description": "Error ignoring duplicate tabs"
-  },
-  "errorUpdateDebugPanel": {
-    "message": "Gagal memperbarui panel debug:",
-    "description": "Error updating debug panel"
-  },
   "errorDetectBackgroundColor": {
     "message": "Gagal mendeteksi warna latar belakang:",
     "description": "Error detecting background color"
-  },
-  "errorDetectImageBorder": {
-    "message": "Gagal mendeteksi sudut melengkung gambar:",
-    "description": "Error detecting image border radius"
-  },
-  "errorSetMutationObserver": {
-    "message": "Gagal mengatur mutation observer:",
-    "description": "Error setting mutation observer"
-  },
-  "errorCheckElementVisibility": {
-    "message": "Gagal memeriksa visibilitas elemen:",
-    "description": "Error checking element visibility"
-  },
-  "errorProcessBorderRadius": {
-    "message": "Gagal memproses sudut melengkung:",
-    "description": "Error processing border radius"
-  },
-  "errorDetectImageBackground": {
-    "message": "Gagal mendeteksi latar belakang gambar:",
-    "description": "Error detecting image background"
-  },
-  "errorShowAutoCloseNotification": {
-    "message": "Gagal menampilkan notifikasi penutupan otomatis yang berhasil:",
-    "description": "Error showing auto-close success notification"
   },
   "noForwardPage": {
     "message": "Tidak ada halaman berikutnya dalam riwayat",
@@ -743,10 +1243,6 @@
     "message": "Gerakan Tidak Valid",
     "description": "Invalid gesture message"
   },
-  "nextPage": {
-    "message": "Halaman Berikutnya",
-    "description": "Next page action"
-  },
   "errorReadPixel": {
     "message": "Gagal membaca pixel:",
     "description": "Error reading pixel message"
@@ -758,10 +1254,6 @@
   "errorCanvasDraw": {
     "message": "Gagal menggambar pada canvas:",
     "description": "Error drawing on canvas message"
-  },
-  "errorAccessIframe": {
-    "message": "Gagal mengakses iframe:",
-    "description": "Error accessing iframe message"
   },
   "errorMutationObserver": {
     "message": "Gagal mengatur mutation observer:",
@@ -791,6 +1283,10 @@
     "message": "Pengaturan Sistem",
     "description": "Debug panel system settings section"
   },
+  "debugConsoleLog": {
+    "message": "Log konsol",
+    "description": "Debug panel console log toggle label"
+  },
   "debugAngleThreshold": {
     "message": "Ambang Sudut",
     "description": "Debug panel angle threshold setting"
@@ -810,6 +1306,46 @@
   "debugMinGestureComplexity": {
     "message": "Kompleksitas Gerakan Minimum",
     "description": "Debug panel minimum gesture complexity setting"
+  },
+  "debugMinMovementToStartGesture": {
+    "message": "Gerakan minimum untuk mulai",
+    "description": "Pengaturan panel debug: gerakan minimum untuk memulai pelacakan gestur"
+  },
+  "debugSmoothingFactor": {
+    "message": "Faktor penghalusan",
+    "description": "Pengaturan panel debug: faktor penghalusan jejak dan pengenalan"
+  },
+  "debugAngleThresholdHelp": {
+    "message": "Mengatur seberapa ketat gerakan diklasifikasikan sebagai horizontal atau vertikal. Nilai lebih tinggi membutuhkan arah lebih lurus; nilai lebih rendah mengizinkan gerakan diagonal.",
+    "description": "Bantuan ambang sudut di panel debug"
+  },
+  "debugDirectionChangeThresholdHelp": {
+    "message": "Mengatur sensitivitas deteksi perubahan arah. Nilai lebih rendah lebih mudah menangkap belokan; nilai lebih tinggi mengabaikan jitter kecil.",
+    "description": "Bantuan ambang perubahan arah di panel debug"
+  },
+  "debugMinGestureDistanceHelp": {
+    "message": "Jarak gerakan total minimum sebelum gestur dapat dikenali. Naikkan untuk mengurangi pemicu tidak sengaja.",
+    "description": "Bantuan jarak minimum gestur di panel debug"
+  },
+  "debugMinDirectionSegmentLengthHelp": {
+    "message": "Panjang segmen gerakan minimum yang digunakan untuk pengenalan arah. Naikkan untuk menyaring jitter pendek; turunkan untuk gestur pendek.",
+    "description": "Bantuan panjang segmen arah minimum di panel debug"
+  },
+  "debugMinGestureComplexityHelp": {
+    "message": "Ambang kompleksitas arah sebelum jalur dianggap coretan atau tidak valid. Nilai lebih tinggi menoleransi lebih banyak belokan.",
+    "description": "Bantuan kompleksitas gestur di panel debug"
+  },
+  "debugMinMovementToStartGestureHelp": {
+    "message": "Pointer harus bergerak setidaknya sejumlah piksel ini setelah tombol ditekan sebelum pelacakan gestur dimulai.",
+    "description": "Bantuan gerakan minimum untuk mulai di panel debug"
+  },
+  "debugSmoothingFactorHelp": {
+    "message": "Mengatur penghalusan jejak dan titik pengenalan. Nilai lebih tinggi mengurangi jitter tetapi dapat melembutkan belokan tajam; nilai lebih rendah merespons lebih cepat.",
+    "description": "Bantuan faktor penghalusan di panel debug"
+  },
+  "debugConsoleLogHelp": {
+    "message": "Aktifkan log ekstensi terperinci di konsol DevTools untuk pemecahan masalah.",
+    "description": "Bantuan log konsol di panel debug"
   },
   "debugLatestGestureInfo": {
     "message": "Informasi Gerakan Terbaru",
@@ -850,10 +1386,6 @@
   "debugMergedDirections": {
     "message": "Arah yang Digabungkan",
     "description": "Debug panel merged directions"
-  },
-  "debugDirectionDistances": {
-    "message": "Jarak Arah",
-    "description": "Debug panel direction distances"
   },
   "debugFinalResult": {
     "message": "Hasil Akhir",
@@ -927,9 +1459,17 @@
     "message": "Tampilkan Jumlah Tab",
     "description": "Show tab count badge option"
   },
-  "splitViewAction": {
-    "message": "Tampilan terbagi",
-    "description": "Buka di jendela tampilan terbagi"
+  "unlockPageRestrictions": {
+    "message": "Buka batasan salin/tempel/klik kanan & pelacakan tab",
+    "description": "Setting: unlock page interaction limits"
+  },
+  "unlockPageRestrictionsTitle": {
+    "message": "Menghapus pemblokiran salin, tempel, menu konteks, dan seleksi; mengurangi pelacakan blur/visibilitychange. Berjalan di konteks halaman; mendukung iframe dan Shadow DOM. Muat ulang halaman setelah diaktifkan.",
+    "description": "Tooltip for unlock page restrictions"
+  },
+  "unlockPageRestrictionsOffReloadConfirm": {
+    "message": "Logika yang disuntikkan di tab terbuka mungkin tetap ada hingga dimuat ulang.\n\nMuat ulang tab saat ini sekarang?",
+    "description": "Body text for unlock-off confirmation dialog"
   },
   "splitViewLeft": {
     "message": "Bagi - kiri",
@@ -946,5 +1486,165 @@
   "splitViewDown": {
     "message": "Bagi - bawah",
     "description": "Tampilan terbagi, jendela baru di setengah bawah"
+  },
+  "unlockPageRestrictionsOffTitle": {
+    "message": "Buka kunci halaman dimatikan",
+    "description": "Title for unlock-off confirmation dialog"
+  },
+  "unlockPageRestrictionsReloadTab": {
+    "message": "Muat ulang tab",
+    "description": "Reload tab button in unlock-off dialog"
+  },
+  "unlockPageRestrictionsNotNow": {
+    "message": "Nanti saja",
+    "description": "Dismiss unlock-off dialog without reload"
+  },
+  "welcomeBulletImagePreview": {
+    "message": "Pratinjau gambar: pembesaran hover opsional dan mode diperluas untuk tata letak kompleks.",
+    "description": "Welcome page: image hover preview bullet"
+  },
+  "welcomeBulletPageUnlock": {
+    "message": "Buka kunci halaman: opsional longgarkan blok salin, tempel, klik kanan, dll. — aktifkan di pengaturan dan muat ulang jika diminta.",
+    "description": "Welcome page: page unlock bullet"
+  },
+  "welcomeBulletDisabledSites": {
+    "message": "Per situs: domain yang dicantumkan menonaktifkan gestur, Super Drag, popup, dan buka kunci sekaligus.",
+    "description": "Welcome page: per-site disable bullet"
+  },
+  "welcomeBulletSplitScroll": {
+    "message": "Tampilan terpisah: saat tautan dibuka terpisah, sinkronkan gulir antara dua jendela (termasuk horizontal).",
+    "description": "Welcome page: split scroll sync bullet"
+  },
+  "welcomeBulletScreenshot": {
+    "message": "Tangkapan: area terlihat, halaman penuh, gulir manual; area jejak, pintasan, papan klip, pratinjau, riwayat lokal (0 = tak terbatas).",
+    "description": "Welcome page: screenshot feature bullet"
+  },
+  "welcomeTipScreenshot": {
+    "message": "Tangkapan aktif secara default; atur pintasan area terlihat, halaman penuh, gulir; area jejak, salin otomatis, pratinjau, riwayat opsional.",
+    "description": "Welcome page: screenshot usage tip"
+  },
+  "trailColorPickerPresets": {
+    "message": "Prasetel",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerRecent": {
+    "message": "Terbaru",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerEyedropper": {
+    "message": "Ambil warna dari gambar",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerEyedropperActive": {
+    "message": "Klik untuk ambil · roda untuk zoom kaca pembesar",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerSyncTrail": {
+    "message": "Simpan sebagai warna jejak",
+    "description": "Trail color picker UI"
+  },
+  "superDragCompassPosCompassHub": {
+    "message": "Titik seret",
+    "description": "Compass hub aligned to drag start"
+  },
+  "superDragCompassPosCompassScreenCenter": {
+    "message": "Tengah layar",
+    "description": "Compass fixed at viewport center"
+  },
+  "superDragCompassPosCompassScreenTop": {
+    "message": "Atas",
+    "description": "Compass fixed at top of viewport"
+  },
+  "superDragCompassPosCompassScreenRight": {
+    "message": "Kanan",
+    "description": "Compass fixed at right of viewport"
+  },
+  "superDragCompassPosCompassScreenBottom": {
+    "message": "Bawah",
+    "description": "Compass fixed at bottom of viewport"
+  },
+  "superDragCompassPosCompassScreenLeft": {
+    "message": "Kiri",
+    "description": "Compass fixed at left of viewport"
+  },
+  "superDragCompassPosCompassHidden": {
+    "message": "Tersembunyi",
+    "description": "Do not show compass"
+  },
+  "addCurrentSiteToDisabledSites": {
+    "message": "Tambahkan situs saat ini",
+    "description": "Button: add the active tab domain to disabled sites"
+  },
+  "addCurrentSiteToDisabledSitesTitle": {
+    "message": "Tambahkan domain tab saat ini ke Situs yang dinonaktifkan",
+    "description": "Tooltip for add-current-site button"
+  },
+  "addDisabledSite": {
+    "message": "Tambah",
+    "description": "Button: add a typed disabled site entry"
+  },
+  "disabledSiteInputPlaceholder": {
+    "message": "Domain atau URL lengkap, mis. youtube.com",
+    "description": "Placeholder for the disabled site input"
+  },
+  "disabledSitesEmpty": {
+    "message": "Belum ada situs yang dinonaktifkan.",
+    "description": "Empty state for disabled sites list"
+  },
+  "removeDisabledSite": {
+    "message": "Hapus situs ini",
+    "description": "Tooltip/aria label for remove disabled site button"
+  },
+  "disabledSiteInvalid": {
+    "message": "Masukkan domain atau URL yang valid",
+    "description": "Error shown when disabled site input is invalid"
+  },
+  "disabledSiteAlreadyExists": {
+    "message": "Situs sudah ada",
+    "description": "Error shown when adding a duplicate disabled site"
+  },
+  "disabledSitesLimitReached": {
+    "message": "Batas situs yang dinonaktifkan tercapai",
+    "description": "Error shown when disabled sites list reaches the maximum size"
+  },
+  "currentSiteUnsupported": {
+    "message": "Tab saat ini tidak memiliki domain yang didukung",
+    "description": "Error shown when current tab URL cannot be added to disabled sites"
+  },
+  "customKey": {
+    "message": "Tombol khusus",
+    "description": "Custom trigger key option"
+  },
+  "previewTriggerMode": {
+    "message": "Mode pemicu",
+    "description": "Popup view trigger mode setting"
+  },
+  "previewTriggerHold": {
+    "message": "Tahan tombol pemicu",
+    "description": "Hold trigger key option"
+  },
+  "previewTriggerDouble": {
+    "message": "Tekan tombol pemicu dua kali",
+    "description": "Double-press trigger key option"
+  },
+  "previewCustomKey": {
+    "message": "Tombol khusus",
+    "description": "Popup view custom trigger key setting"
+  },
+  "previewCustomKeyPlaceholder": {
+    "message": "Klik dan tekan sebuah tombol",
+    "description": "Popup view custom trigger key placeholder"
+  },
+  "previewCustomKeyTitle": {
+    "message": "Klik di sini, lalu tekan tombol non-pengubah. Tekan Esc untuk menghapus.",
+    "description": "Popup view custom trigger key title"
+  },
+  "unlimited": {
+    "message": "Tanpa batas",
+    "description": "Unlimited value label"
+  },
+  "settingsFontSize": {
+    "message": "Ukuran font pengaturan",
+    "description": "Header button: adjust settings font size"
   }
 }

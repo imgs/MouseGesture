@@ -4,7 +4,7 @@
     "description": "The name of the extension"
   },
   "extDesc": {
-    "message": "Chrome/Edge laiend, mis toetab hiire žeste, super-halvimist ja popup-näkymä",
+    "message": "Hiirežestid, superlohistamine, pildi- ja lingi eelvaade ja muud.",
     "description": "The description of the extension"
   },
   "title": {
@@ -35,13 +35,21 @@
     "message": "Halvi Vasakule",
     "description": "Drag left action"
   },
-  "openInForeground": {
-    "message": "Avaa Link Eesplaanil",
-    "description": "Open link in foreground"
+  "dragUpRight": {
+    "message": "Lohista üles-paremale",
+    "description": "Super drag diagonal direction"
   },
-  "openInBackground": {
-    "message": "Avaa Link Taustal",
-    "description": "Open link in background"
+  "dragDownRight": {
+    "message": "Lohista alla-paremale",
+    "description": "Super drag diagonal direction"
+  },
+  "dragDownLeft": {
+    "message": "Lohista alla-vasakule",
+    "description": "Super drag diagonal direction"
+  },
+  "dragUpLeft": {
+    "message": "Lohista üles-vasakule",
+    "description": "Super drag diagonal direction"
   },
   "superDragDescription": {
     "message": "Super-halvimine töötab linkide, piltide ja valitud teksti jaoks. Saate iga žesti suuna (üles/alla/vasakule/paremale) jaoks seada avamise meetodi, sealhulgas esiplaani, tausta või poolitatud vaadet (vasakule/paremale/üles/alla).",
@@ -64,52 +72,76 @@
     "description": "Down direction"
   },
   "downThenRight": {
-    "message": "Alla Siis Paremale",
-    "description": "Down then right gesture"
+    "message": "Alla siis paremale",
+    "description": "žest alla siis paremale"
   },
   "leftThenUp": {
-    "message": "Vasakule Siis Üles",
-    "description": "Left then up gesture"
+    "message": "Vasakule siis üles",
+    "description": "žest vasakule siis üles"
   },
   "rightThenUp": {
-    "message": "Paremale Siis Üles",
-    "description": "Right then up gesture"
+    "message": "Paremale siis üles",
+    "description": "žest paremale siis üles"
   },
   "rightThenDown": {
-    "message": "Paremale Siis Alla",
-    "description": "Right then down gesture"
+    "message": "Paremale siis alla",
+    "description": "žest paremale siis alla"
   },
   "upThenLeft": {
-    "message": "Üles Siis Vasakule",
-    "description": "Up then left gesture"
+    "message": "Üles siis vasakule",
+    "description": "žest üles siis vasakule"
   },
   "upThenRight": {
-    "message": "Üles Siis Paremale",
-    "description": "Up then right gesture"
+    "message": "Üles siis paremale",
+    "description": "žest üles siis paremale"
   },
   "downThenLeft": {
-    "message": "Alla Siis Vasakule",
-    "description": "Down then left gesture"
+    "message": "Alla siis vasakule",
+    "description": "žest alla siis vasakule"
   },
   "leftThenDown": {
-    "message": "Vasakule Siis Alla",
-    "description": "Left then down gesture"
+    "message": "Vasakule siis alla",
+    "description": "žest vasakule siis alla"
   },
   "upThenDown": {
-    "message": "Üles Siis Alla",
-    "description": "Up then down gesture"
+    "message": "Üles siis alla",
+    "description": "žest üles siis alla"
   },
   "downThenUp": {
-    "message": "Alla Siis Üles",
-    "description": "Down then up gesture"
+    "message": "Alla siis üles",
+    "description": "žest alla siis üles"
   },
   "leftThenRight": {
-    "message": "Vasakule Siis Paremale",
-    "description": "Left then right gesture"
+    "message": "Vasakule siis paremale",
+    "description": "žest vasakule siis paremale"
   },
   "rightThenLeft": {
-    "message": "Paremale Siis Vasakule",
-    "description": "Right then left gesture"
+    "message": "Paremale siis vasakule",
+    "description": "žest paremale siis vasakule"
+  },
+  "rightHoldWheelUp": {
+    "message": "Hoia parem + keri üles",
+    "description": "Hoia parem nupp ja keri üles"
+  },
+  "rightHoldWheelDown": {
+    "message": "Hoia parem + keri alla",
+    "description": "Hoia parem nupp ja keri alla"
+  },
+  "leftHoldWheelUp": {
+    "message": "Hoia vasak + ratas üles",
+    "description": "Vasak nupp ja ratas üles"
+  },
+  "leftHoldWheelDown": {
+    "message": "Hoia vasak + ratas alla",
+    "description": "Vasak nupp ja ratas alla"
+  },
+  "rightHoldLeftClick": {
+    "message": "Hoia parem + vasak klikk",
+    "description": "Hoia parem nupp ja vasak klikk"
+  },
+  "leftHoldRightClick": {
+    "message": "Hoia vasakut + paremklõps",
+    "description": "Hoia vasakut nuppu ja klõpsa paremat"
   },
   "back": {
     "message": "Tagasi",
@@ -158,6 +190,18 @@
   "prevTab": {
     "message": "Eelmine Kaart",
     "description": "Previous tab action"
+  },
+  "previousActiveTab": {
+    "message": "Eelmine aktiivne vahekaart",
+    "description": "Žesti toiming: lülitu varem aktiivsele vahekaardile"
+  },
+  "goToParentUrl": {
+    "message": "Ülem-URL",
+    "description": "Žesti toiming: liigu URL-i ülemteele"
+  },
+  "goToRootUrl": {
+    "message": "Juur-URL",
+    "description": "Žesti toiming: liigu saidi juur-URL-ile"
   },
   "nextTab": {
     "message": "Järgmine Kaart",
@@ -211,6 +255,14 @@
     "message": "Vaheta Täisekraani",
     "description": "Toggle fullscreen action"
   },
+  "zoomIn": {
+    "message": "Suumi sisse",
+    "description": "Suurenda praeguse kaardi suumi"
+  },
+  "zoomOut": {
+    "message": "Suumi välja",
+    "description": "Vähenda praeguse kaardi suumi"
+  },
   "closeTabsToLeft": {
     "message": "Sulge Kaardid Vasakule",
     "description": "Close tabs to left action"
@@ -218,6 +270,474 @@
   "reloadAllTabs": {
     "message": "Laadi Kõik Kaardid Uuesti",
     "description": "Reload all tabs action"
+  },
+  "stopLoadingAllTabs": {
+    "message": "Peata kõikide kaartide laadimine",
+    "description": "Stop loading in all tabs"
+  },
+  "screenshotRegion": {
+    "message": "Ekraanipilt (sporområde)",
+    "description": "Screenshot gesture action"
+  },
+  "screenshotRegionOrLink": {
+    "message": "Ekraanipilt eller ava link",
+    "description": "Trail region hint when links are inside selection"
+  },
+  "trailRegionChooseTitle": {
+    "message": "Lingid valikus — ekraanipilt või ava",
+    "description": "Trail region chooser dialog title"
+  },
+  "trailRegionLinkSingle": {
+    "message": "1 link",
+    "description": "Trail region link count"
+  },
+  "trailRegionLinkMultiple": {
+    "message": "{count} links",
+    "description": "Trail region link count"
+  },
+  "trailRegionActionScreenshot": {
+    "message": "Ekraanipilt (S)",
+    "description": "Trail region chooser button"
+  },
+  "trailRegionActionOpenLink": {
+    "message": "Ava i ny kaart (O)",
+    "description": "Trail region chooser button"
+  },
+  "trailRegionActionOpenLinks": {
+    "message": "Ava i nye kaardid (O)",
+    "description": "Trail region chooser button"
+  },
+  "trailRegionActionOpenSelected": {
+    "message": "Ava {n} i nye kaardid (O)",
+    "description": "Trail region open checked links"
+  },
+  "trailRegionActionOpenNone": {
+    "message": "Ava markering (O)",
+    "description": "Trail region open button when none checked"
+  },
+  "trailRegionActionCopy": {
+    "message": "Kopeeri (C)",
+    "description": "Trail region chooser copy button"
+  },
+  "trailRegionActionCopySelected": {
+    "message": "Kopeeri {n} (C)",
+    "description": "Trail region copy checked links"
+  },
+  "trailRegionActionCopyNone": {
+    "message": "Kopeeri (C)",
+    "description": "Trail region copy button when none checked"
+  },
+  "trailRegionCopyFailed": {
+    "message": "Kopeerimine ebaõnnestus",
+    "description": "Trail region copy to clipboard failed"
+  },
+  "trailRegionSelectAll": {
+    "message": "Vælg alle",
+    "description": "Trail region link list select all"
+  },
+  "trailRegionNoLinkSelected": {
+    "message": "Vælg mindst ét link",
+    "description": "Trail region no selection hint"
+  },
+  "trailRegionChooseHint": {
+    "message": "Esc tühistab · märgi lingid kopeerimiseks/avamiseks · lohista servi suuruse muutmiseks",
+    "description": "Trail region chooser footer"
+  },
+  "trailRegionLinkOpened": {
+    "message": "Link avaet i ny kaart",
+    "description": "Trail region open link feedback"
+  },
+  "trailRegionLinksOpened": {
+    "message": "Links avaet i nye kaardid",
+    "description": "Trail region open links feedback"
+  },
+  "trailRegionLinksTruncated": {
+    "message": "Avaede kun de første {n} links",
+    "description": "Trail region open links cap"
+  },
+  "screenshotScrollCaptureActive": {
+    "message": "Kerige lehte käsitsi, seejärel sama otsetee või Esc lõpetamiseks ja ühendamiseks",
+    "description": "Manual scroll capture in progress"
+  },
+  "screenshotCopied": {
+    "message": "Ekraanipilt kopieret til lõikelaud",
+    "description": "Screenshot feedback"
+  },
+  "screenshotFailed": {
+    "message": "Ekraanipilt ebaõnnestus",
+    "description": "Screenshot feedback"
+  },
+  "screenshotNeedTrail": {
+    "message": "Tegn et længere spor for at vælge område",
+    "description": "Screenshot feedback"
+  },
+  "screenshotUnavailable": {
+    "message": "Ekraanipilt-modulet er ikke tilgængeligt",
+    "description": "Screenshot feedback"
+  },
+  "screenshotTopFrameOnly": {
+    "message": "Ekraanipilt af hele siden virker kun i hovedrammen",
+    "description": "Screenshot feedback"
+  },
+  "screenshotFeature": {
+    "message": "Ekraanipilt",
+    "description": "Screenshot settings section title"
+  },
+  "enableScreenshotFeature": {
+    "message": "Luba ekraanipilt",
+    "description": "Master toggle for screenshot feature"
+  },
+  "enableScreenshotTrailCapture": {
+    "message": "Sporområde (løkke / selvkrydsning)",
+    "description": "Capture when trail loops or crosses; skipped if another gesture action matches"
+  },
+  "enableScreenshotClipboard": {
+    "message": "Kopeeri automatisk til lõikelaud",
+    "description": "Copy screenshot to clipboard after capture"
+  },
+  "enableScreenshotPreview": {
+    "message": "Vis forhåndsvisning efter optagelse",
+    "description": "Open preview window when a screenshot is captured"
+  },
+  "enableScreenshotHistory": {
+    "message": "Salvesta ekraanipiltajalugu",
+    "description": "Keep captured screenshots in local history"
+  },
+  "screenshotHistoryMaxCount": {
+    "message": "Ajalugugrænse",
+    "description": "Maximum screenshot history entries to keep"
+  },
+  "screenshotHistoryMaxCountHint": {
+    "message": "0 = ubegrænset; 1–200 sletter ældste poster ved overskridelse",
+    "description": "Screenshot history limit hint"
+  },
+  "screenshotHistoryUnlimited": {
+    "message": "Ubegrænset",
+    "description": "Label when screenshot history limit is 0"
+  },
+  "screenshotHistoryView": {
+    "message": "Se ajalugu",
+    "description": "Open screenshot history window"
+  },
+  "screenshotHistoryTitle": {
+    "message": "Ekraanipiltajalugu",
+    "description": "Screenshot history window title"
+  },
+  "screenshotHistoryEmpty": {
+    "message": "Ingen ekraanipiltr endnu",
+    "description": "Empty screenshot history state"
+  },
+  "screenshotHistoryClearAll": {
+    "message": "Tühjenda kõik",
+    "description": "Delete all screenshot history entries"
+  },
+  "screenshotHistoryClearConfirm": {
+    "message": "Kustuta kogu ekraanipiltajalugu?",
+    "description": "Confirm clearing screenshot history"
+  },
+  "screenshotHistoryDelete": {
+    "message": "Kustuta",
+    "description": "Delete one screenshot history entry"
+  },
+  "screenshotHistoryPinToPage": {
+    "message": "Kinnita på siden",
+    "description": "Pin history thumbnail onto the web page"
+  },
+  "screenshotHistoryPinFailed": {
+    "message": "Ei saanud fastgøre (ava sihtkaart eller tillad dette veebisait).",
+    "description": "Error when pinning from screenshot history"
+  },
+  "screenshotHistoryCount": {
+    "message": "$1 üksust",
+    "description": "Number of items in screenshot history",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "screenshotHistoryModeViewport": {
+    "message": "Nähtav ala",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeFullPage": {
+    "message": "Kogu leht",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeRegion": {
+    "message": "Område",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeScroll": {
+    "message": "Käsitsi kerimine",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeUnknown": {
+    "message": "Ekraanipilt",
+    "description": "Screenshot history capture mode fallback label"
+  },
+  "screenshotDone": {
+    "message": "Ekraanipilt klar",
+    "description": "Hint when capture finished without clipboard copy"
+  },
+  "screenshotPreviewTitle": {
+    "message": "Eelvaade ekraanipilt",
+    "description": "Screenshot preview window title"
+  },
+  "screenshotPreviewClose": {
+    "message": "Sulge",
+    "description": "Close screenshot preview window"
+  },
+  "screenshotPreviewCopyAgain": {
+    "message": "Kopeeri",
+    "description": "Copy screenshot to clipboard from preview window"
+  },
+  "screenshotPreviewSave": {
+    "message": "Salvesta som fil",
+    "description": "Save annotated screenshot to disk"
+  },
+  "screenshotPreviewSaved": {
+    "message": "Salvestatud",
+    "description": "Screenshot file save succeeded"
+  },
+  "screenshotPreviewPinToPage": {
+    "message": "Kinnita på siden",
+    "description": "Pin annotated screenshot onto the source web page"
+  },
+  "screenshotPreviewPinned": {
+    "message": "Kinnitatud",
+    "description": "Screenshot pin placed on page"
+  },
+  "screenshotPreviewPinning": {
+    "message": "Kinnita…",
+    "description": "Screenshot pin in progress"
+  },
+  "screenshotPinTitle": {
+    "message": "Ekraanipilt",
+    "description": "Title on pinned screenshot sticker"
+  },
+  "screenshotPinClose": {
+    "message": "Fjern fastgørelse",
+    "description": "Close button on pinned screenshot"
+  },
+  "screenshotPinResize": {
+    "message": "Sobita størrelse",
+    "description": "Resize handle on pinned screenshot"
+  },
+  "screenshotPinZoomFit": {
+    "message": "Sobita",
+    "description": "Fit pinned screenshot to view"
+  },
+  "screenshotPinZoomOriginal": {
+    "message": "1:1",
+    "description": "Show pinned screenshot at original pixel size"
+  },
+  "screenshotPinOrderLabel": {
+    "message": "Kinnitaelse $1$",
+    "description": "Pinned screenshot order number",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "screenshotPreviewLoadFailed": {
+    "message": "Ei saanud indlæse forhåndsvisning",
+    "description": "Screenshot preview load error"
+  },
+  "screenshotPreviewZoomFit": {
+    "message": "Sobita",
+    "description": "Fit screenshot to preview window"
+  },
+  "screenshotPreviewZoomFitTitle": {
+    "message": "Sobita til vindue",
+    "description": "Tooltip for fit zoom button"
+  },
+  "screenshotPreviewZoomOneToOne": {
+    "message": "1:1",
+    "description": "Actual-size zoom button label"
+  },
+  "screenshotPreviewZoomOneToOneTitle": {
+    "message": "Faktisk størrelse (1:1)",
+    "description": "Tooltip for 1:1 zoom button"
+  },
+  "screenshotPreviewZoomLevel": {
+    "message": "Zoom $1$%",
+    "description": "Current zoom percentage in preview",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "screenshotAnnotHand": {
+    "message": "Hånd (flyt)",
+    "description": "Pan the preview by dragging"
+  },
+  "screenshotAnnotPen": {
+    "message": "Pen",
+    "description": "Annotation tool: freehand"
+  },
+  "screenshotAnnotArrow": {
+    "message": "Pil (Shift: H/V)",
+    "description": "Annotation tool: arrow; Shift constrains to horizontal or vertical"
+  },
+  "screenshotAnnotLine": {
+    "message": "Linje (Shift: H/V)",
+    "description": "Annotation tool: line; Shift constrains to horizontal or vertical"
+  },
+  "screenshotAnnotRect": {
+    "message": "Rektangel (Shift: kvadrat)",
+    "description": "Annotation tool: rectangle; Shift draws a square"
+  },
+  "screenshotAnnotEllipse": {
+    "message": "Ellipse",
+    "description": "Annotation tool: ellipse"
+  },
+  "screenshotAnnotRoundRect": {
+    "message": "Afrundet rektangel",
+    "description": "Annotation tool: rounded rectangle"
+  },
+  "screenshotAnnotHighlighter": {
+    "message": "Overstregningstusch",
+    "description": "Annotation tool: highlighter marker"
+  },
+  "screenshotAnnotHighlight": {
+    "message": "Fremhævningsramme",
+    "description": "Annotation tool: highlight rectangle"
+  },
+  "screenshotAnnotFillRect": {
+    "message": "Udfyldt rektangel",
+    "description": "Annotation tool: filled rectangle"
+  },
+  "screenshotAnnotFillEllipse": {
+    "message": "Udfyldt ellipse",
+    "description": "Annotation tool: filled ellipse"
+  },
+  "screenshotAnnotBlur": {
+    "message": "Hägusus",
+    "description": "Annotation tool: blur brush"
+  },
+  "screenshotAnnotArrow2": {
+    "message": "Dobbelt pil (Shift: H/V)",
+    "description": "Annotation tool: line with arrowheads at both ends; Shift constrains H/V"
+  },
+  "screenshotAnnotNumber": {
+    "message": "Nummer",
+    "description": "Annotation tool: sequential number markers"
+  },
+  "screenshotAnnotStampStart": {
+    "message": "Start nr.",
+    "description": "Starting number for sequential stamps"
+  },
+  "screenshotAnnotStampNext": {
+    "message": "Næste nr.: $1$",
+    "description": "Next number stamp to place (tooltip)",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "screenshotAnnotCrop": {
+    "message": "Beskær",
+    "description": "Annotation tool: crop image"
+  },
+  "screenshotAnnotCropApply": {
+    "message": "Anvend beskæring",
+    "description": "Confirm crop selection"
+  },
+  "screenshotAnnotCropCancel": {
+    "message": "Tühista",
+    "description": "Cancel crop selection"
+  },
+  "screenshotAnnotText": {
+    "message": "Tekst",
+    "description": "Annotation tool: text"
+  },
+  "screenshotAnnotMosaic": {
+    "message": "Mosaik",
+    "description": "Annotation tool: mosaic blur"
+  },
+  "screenshotAnnotEraser": {
+    "message": "Kustutuskumm",
+    "description": "Annotation tool: eraser"
+  },
+  "screenshotAnnotSize": {
+    "message": "Størrelse",
+    "description": "Annotation stroke size"
+  },
+  "screenshotAnnotResetAll": {
+    "message": "Nulstil alle redigeringer",
+    "description": "Clear all annotations and restore original screenshot"
+  },
+  "screenshotAnnotStepCount": {
+    "message": "$1 / $2",
+    "description": "History step indicator: current / total"
+  },
+  "screenshotAnnotStepCountTitle": {
+    "message": "Anvendte trin / total (0 = originalbillede)",
+    "description": "Tooltip for history step indicator"
+  },
+  "screenshotAnnotUndo": {
+    "message": "Võta tagasi",
+    "description": "Undo annotation"
+  },
+  "screenshotAnnotRedo": {
+    "message": "Tee uuesti",
+    "description": "Redo annotation"
+  },
+  "screenshotAnnotTextPlaceholder": {
+    "message": "Skriv her…",
+    "description": "Placeholder in inline text editor on screenshot preview"
+  },
+  "screenshotOptRegion": {
+    "message": "Områdevalg",
+    "description": "Screenshot bind row: keyboard drag rectangle region"
+  },
+  "screenshotOptViewport": {
+    "message": "Nähtav ala",
+    "description": "Screenshot bind row: current visible tab area"
+  },
+  "screenshotOptFullPage": {
+    "message": "Kogu leht",
+    "description": "Screenshot bind row: full page"
+  },
+  "screenshotOptScrollStitch": {
+    "message": "Käsitsi kerimine",
+    "description": "Screenshot bind row: manual scroll capture"
+  },
+  "screenshotOptOpenHistory": {
+    "message": "Ava ajalugu",
+    "description": "Screenshot bind row: keyboard shortcut to open screenshot history"
+  },
+  "screenshotHotkeyPressHint": {
+    "message": "Otseteed: klõpsake ülal väljal, seejärel vajutage kombinatsiooni (Ctrl / Alt / Meta + täht või number või F1–F12). Esc tühjendab välja.",
+    "description": "Screenshot section footer: hotkey binding help"
+  },
+  "screenshotHotkeyPlaceholder": {
+    "message": "Klik for at angive",
+    "description": "Placeholder in empty screenshot hotkey fields"
+  },
+  "screenshotRegionPickHint": {
+    "message": "Lohista for at vælge et område. Esc tühistab.",
+    "description": "Hint while keyboard region picker is active"
+  },
+  "screenshotRegionPickFooterHint": {
+    "message": "Piirkonna otsetee: joonistage ristkülik ja vabastage. Linkide korral: ekraanipilt või uued kaardid. Esc tühistab.",
+    "description": "Screenshot section footer: keyboard region picker help"
+  },
+  "screenshotRegionTooSmall": {
+    "message": "Markering for lille — tegn et større område",
+    "description": "Region picker: minimum size not met"
+  },
+  "screenshotGestureIntersectHint": {
+    "message": "Jooneala: üks silmus või üks ristumine, siis vabastage. Linkide korral: ekraanipilt või uued kaardid. Palju silmuseid = kritseldus.",
+    "description": "Screenshot section footer: trail region capture help"
   },
   "togglePinTab": {
     "message": "Kinnita/Vabasta Kaart",
@@ -244,16 +764,16 @@
     "description": "Settings title"
   },
   "customizedBehavior": {
-    "message": "Blokeerimisloend",
-    "description": "Block list section title"
+    "message": "Keelatud saidid",
+    "description": "Section title for the per-site disable list"
   },
   "disableMouseGesturesForSites": {
-    "message": "Keela hiirežestid ja üli lohistamine nendel saiditel",
-    "description": "Label for the list of sites where gestures and super drag are disabled"
+    "message": "Keela laienduse funktsioonid loetletud domeenidel",
+    "description": "Subtitle for Disabled sites section"
   },
   "disabledSitesHint": {
-    "message": "Üks sait rea kohta. Domeen (nt youtube.com) või täielik URL.",
-    "description": "Hint for the disabled sites textarea"
+    "message": "Kehtib järgmistele: žestid, superlohistamine, lingi-/pildieelvaade, kuvatõmmised ja lehe avamine. Lisa praegune sait või sisesta domeen/URL; kustutamiseks klõpsa eemaldamismärki.",
+    "description": "Short hint explaining which features the Disabled sites list affects"
   },
   "enableGesture": {
     "message": "Luba Hiire Žestid",
@@ -279,6 +799,26 @@
     "message": "Luba Super-halvimine",
     "description": "Enable super drag option"
   },
+  "superDragCompassPosition": {
+    "message": "8-suunaline kompass",
+    "description": "Super drag compass display and position"
+  },
+  "superDragCompassPosCompassAbove": {
+    "message": "Loetuspunkti kohal",
+    "description": "Compass above drag start, centered horizontally"
+  },
+  "superDragCompassPosCompassRight": {
+    "message": "Loetuspunktist paremal",
+    "description": "Compass to the right of drag start, vertically centered"
+  },
+  "superDragCompassPosCompassBelow": {
+    "message": "Loetuspunkti all",
+    "description": "Compass below drag start, centered horizontally"
+  },
+  "superDragCompassPosCompassLeft": {
+    "message": "Loetuspunktist vasakul",
+    "description": "Compass to the left of drag start, vertically centered"
+  },
   "enableDragTextSearch": {
     "message": "Luba Halvi Teksti Otsing",
     "description": "Enable drag text search option"
@@ -287,9 +827,17 @@
     "message": "Laadi pilt/fail alla tõmbamisel",
     "description": "When the drag target is an image or other downloadable file, start download automatically"
   },
+  "enableImageDrag": {
+    "message": "Luba piltide lohistamine",
+    "description": "Control image super drag independently from image preview"
+  },
   "enableImagePreview": {
     "message": "Luba Pildi Eelvaade",
     "description": "Enable image preview option"
+  },
+  "enableImagePreviewEnhanced": {
+    "message": "Täiustatud pildi eelvaade",
+    "description": "Support transparent overlay, background-image, parent lookup, etc."
   },
   "enableDuplicateCheck": {
     "message": "Tuvasta Duplikaat Kaardid",
@@ -302,10 +850,6 @@
   "enableSmoothScroll": {
     "message": "Luba sujuv kerimine",
     "description": "Enable smooth scrolling for gesture actions"
-  },
-  "save": {
-    "message": "Seaded Rakendatud",
-    "description": "Save settings button"
   },
   "reset": {
     "message": "Lähtesta",
@@ -363,14 +907,6 @@
     "message": "Ei Õnnestunud Lähtestada Seadeid",
     "description": "Reset settings error notification"
   },
-  "themeLight": {
-    "message": "Hele",
-    "description": "Light theme"
-  },
-  "themeDark": {
-    "message": "Tume",
-    "description": "Dark theme"
-  },
   "buyMeACoffee": {
     "message": "Osta mulle kohvi",
     "description": "Donation button"
@@ -379,17 +915,33 @@
     "message": "Vaheta teemat",
     "description": "Toggle theme button"
   },
-  "toggleLanguage": {
-    "message": "Vaheta keelt",
-    "description": "Toggle language button"
+  "openDetachedPopupTitle": {
+    "message": "Ava sätted külgpaneelis (kui pole, eraldi aken)",
+    "description": "Päise nupp: sätted külgpaneelis või eraldi aknas"
+  },
+  "openDetachedWindowFromSidePanelTitle": {
+    "message": "Ava eraldi aknas (brauseri kõrval)",
+    "description": "Külgpaneel: eraldi aken ja brauseri paigutus"
+  },
+  "openOptionsPageTitle": {
+    "message": "Ava valikute leht",
+    "description": "Päise nupp: ava laienduse valikute leht"
   },
   "donationTooltip": {
     "message": "Kui sulle meeldib see töö, toeta palun. Aitäh :)",
     "description": "Donation tooltip"
   },
   "rightButtonHint": {
-    "message": "Hoia paremat hiire nuppu all",
+    "message": "Hoia paremat (rada, ratas, klõps) · vasakut (ratas)",
     "description": "Right mouse button hint"
+  },
+  "builtInGesturesListExpandHint": {
+    "message": "Klõpsa täieliku žestide loendi avamiseks",
+    "description": "Tooltip on built-in gestures subtitle when list is collapsed"
+  },
+  "builtInGesturesListCollapseHint": {
+    "message": "Klõpsa žestide loendi sulgemiseks",
+    "description": "Tooltip on built-in gestures subtitle when list is expanded"
   },
   "leftButtonHint": {
     "message": "Hoia vasakut hiire nuppu all",
@@ -403,17 +955,45 @@
     "message": "Avaa Taustal",
     "description": "Open in background action"
   },
+  "popupViewAction": {
+    "message": "Popup Eelvaade",
+    "description": "Super drag action: open target in popup view"
+  },
+  "incognitoAction": {
+    "message": "Avaa anonüümses aknas",
+    "description": "Open in incognito/private window"
+  },
+  "enableSplitScrollSync": {
+    "message": "Sünkrooni vertikaal- ja horisontaalne kerimine jaotatud akende vahel",
+    "description": "Jagatud vaates ühtista mõlemad kerimissuunad akende vahel"
+  },
   "copyAction": {
     "message": "Kopeeri",
     "description": "Copy selected text or link URL to clipboard"
+  },
+  "downloadAction": {
+    "message": "Laadi alla",
+    "description": "Super drag action: download target"
   },
   "copiedToClipboard": {
     "message": "Kopeeritud lõikelauale",
     "description": "Hint after copy action"
   },
-  "dragSearchEngine": {
-    "message": "Halvi Otsimootori URL",
-    "description": "Drag search engine URL setting"
+  "dragSearchEngineSlotLabel": {
+    "message": "Muudetav rida",
+    "description": "Label for drag search engine slot selector"
+  },
+  "dragSearchSlotDefault": {
+    "message": "Vaikimisi (varu)",
+    "description": "Default search URL slot in drag search editor"
+  },
+  "dragSearchEngineUrlForSlot": {
+    "message": "Otsingumootori URL",
+    "description": "Label for single drag search URL field"
+  },
+  "dragSearchEnginePerDirectionHelp": {
+    "message": "Vali loendis «Vaikimisi» või lohistamise suund ja muuda vastavat URL-i. Tühjad suunad kasutavad vaikimisi. Ainult lohistatud teksti otsinguks.",
+    "description": "Help text for unified drag search engine editor"
   },
   "linkPreview": {
     "message": "Popup Eelvaade",
@@ -424,7 +1004,7 @@
     "description": "Quick navigation hover tooltip"
   },
   "linkPreviewHint": {
-    "message": "Hover + Klahv Näitamaks Popup",
+    "message": "Hüpikakna kuvamiseks hõljuta ja kasuta päästikut",
     "description": "Popup view hint"
   },
   "enableLinkPreview": {
@@ -495,41 +1075,61 @@
     "message": "Kasuta {q} otsingutermini jaoks, näide vorming:",
     "description": "Search engine examples description"
   },
+  "searchExampleUrlClickHint": {
+    "message": "Klõpsake näidis-URL-i, et täita ülemine väli ja salvestada",
+    "description": "Tooltip for example search engine URLs (click to fill)"
+  },
+  "searchEngineExamplesUrlClickHint": {
+    "message": "Vihje: klõpsake näidis-URL-i, et täita ülemine väli ja salvestada.",
+    "description": "Visible hint under search engine examples (click URL to fill field above and save)"
+  },
   "googleExample": {
-    "message": "Google Otsing: https://www.google.ee/search?q={q}",
+    "message": "Google Otsing:",
+    "description": "Google search example"
+  },
+  "googleExampleUrl": {
+    "message": "https://www.google.ee/search?q={q}",
     "description": "Google search example"
   },
   "googleTranslateExample": {
-    "message": "Google Tõlge: https://translate.google.com/?sl=auto&tl=et&text={q}&op=translate",
+    "message": "Google Tõlge:",
+    "description": "Google translate example"
+  },
+  "googleTranslateExampleUrl": {
+    "message": "https://translate.google.com/?sl=auto&tl=et&text={q}&op=translate",
     "description": "Google translate example"
   },
   "localSearchExample": {
-    "message": "Näide: https://www.google.ee/search?q={q}",
+    "message": "Näide:",
+    "description": "Local search example"
+  },
+  "localSearchExampleUrl": {
+    "message": "https://www.google.ee/search?q={q}",
     "description": "Local search example"
   },
   "bingExample": {
-    "message": "Bing Otsing: https://www.bing.com/search?q={q}&setlang=et-EE",
+    "message": "Bing Otsing:",
+    "description": "Bing search example"
+  },
+  "bingExampleUrl": {
+    "message": "https://www.bing.com/search?q={q}&setlang=et-EE",
     "description": "Bing search example"
   },
   "wheelTip": {
-    "message": "Kasuta hiire ratta väärtuse reguleerimiseks",
+    "message": "Hõljuta seda rida ~1,5 s, seejärel reguleeri hiirerattaga",
     "description": "Wheel tip"
   },
   "modifierKeyDelayTip": {
-    "message": "Käivitamise klahvi kasutamisel on maksimaalne viivis piiratud 300ms",
+    "message": "Viivitus algab pärast päästikutingimuse täitumist; juhuslike eelvaadete vältimiseks suurenda seda.",
     "description": "Modifier key delay tip"
   },
   "welcomeTitle": {
-    "message": "Tere tulemast Hiire Žestid Laiendisse",
+    "message": "Tere tulemast hiirežestide laiendusse",
     "description": "Welcome page title"
   },
   "welcomeDescription": {
-    "message": "Täname Hiire Žestid Laiendi installimise eest! See laiend pakub rikkalikku hiire žesti funktsionaalsust, intelligentset kaartide haldamist, popup eelvaate võimalusi ja parandatud visuaalset kogemust, et aidata teil navigeerida veebis tõhusamalt. Oleme optimeerinud žesti tuvastamise algoritmi suurema vea tolerantsiga, mis võimaldab žestidel olla õigesti tuvastatud isegi siis, kui neid ei joonistata täiuslikult. Uus popup eelvaate funktsioon võimaldab teil näha lingi sisu popup akendes ilma kaartide vahetamata. Laiend toetab ka 24 keelt ja hele/tume teemat parema kasutajakogemuse jaoks.",
+    "message": "Aitäh, et installisite Mouse Gesture! Hoidke paremat nuppu all ja lohistage navigeerimiseks, kaartide haldamiseks ja kerimiseks; hoidke ka paremat või vasakut rulliga (rohkem kombinatsioone seadetes) lisakiirklahvide jaoks — tuvastus jääb leebeks ka lehtede laadimise ajal. Super Drag avab linke, pilte ja tekstiotsinguid suunareeglitega (eesplaan, taust, jaotatud paigutus, lõikelauale kopeerimine jne). Popup View näitab linkide eelvaateid või otsib valitud teksti väikestes akendes. Valikuliselt: pildi eelvaade hõljumisel (laiendatud režiim), duplikaatkaartide tuvastus automaatse sulgemisega, sujuv kerimine, kaartide arvu märk tööriistaribal ja lehe lukust vabastamine piiravatel saitidel. Seaded tööriistaribast (hüpik, külgpaneel või eraldi aken); eksport/import; sünkroonimine brauserikontoga. 29 keelt ja hele/tume teema.",
     "description": "Welcome page description"
-  },
-  "gesturesDescription": {
-    "message": "Järgmised on eelseadistatud hiire žestid, mida saate kasutada parema hiire nupuga hoides:",
-    "description": "Gestures description"
   },
   "extensionName": {
     "message": "Hiire Žestid Laiend",
@@ -539,88 +1139,48 @@
     "message": "Põhifunktsioonid",
     "description": "Core features title"
   },
-  "utilitiesFeatures": {
-    "message": "Utiliidid",
-    "description": "Utilities features title"
+  "welcomeCoreGestureBlock": {
+    "message": "Hiirežestid: hoia paremat ja tõmba rajažestideks; ratas parem või vasak all ja klõpsukombinatsioonid parem all — seadistatav uuesti; leebe tuvastus, ka laadimise ajal.",
+    "description": "Welcome page: core features gesture summary"
+  },
+  "welcomeCoreSuperDragBlock": {
+    "message": "Super Drag: lohistage lingid ja pildid uutesse kaartidesse, valitud tekst otsinguks; suund määrab, kuidas kaardid avanevad; vaikimisi taustal.",
+    "description": "Welcome page: core features super drag summary"
+  },
+  "welcomeCorePopupViewBlock": {
+    "message": "Hüpikvaade: hoidke päästikklahvi (vaikimisi Shift) lingi kohal, et eelvaadata väikeses aknas; pärast teksti valikut vajutage klahvi koheseks otsinguks oma otsingumootoriga.",
+    "description": "Welcome page: core features popup view summary"
   },
   "usageTips": {
     "message": "Kasutamise Näpunäited",
     "description": "Usage tips title"
   },
-  "smartGestureRecognition": {
-    "message": "Intelligentne žesti tuvastamine: Tuvastab žestid õigesti isegi ebatäiuslikud, töötab lehe laadimise ajal",
-    "description": "Smart gesture recognition description"
-  },
-  "tabManagementTitle": {
-    "message": "Kaartide Haldamine",
-    "description": "Tab management title"
-  },
-  "tabManagementDesc": {
-    "message": ": Intelligentne duplikaat tuvastamine, automaatne sulgemine, perioodiline mälu optimeerimine",
-    "description": "Tab management description"
-  },
-  "superDragTitle": {
-    "message": "Super-halvimine",
-    "description": "Super drag title"
-  },
-  "superDragDesc": {
-    "message": ": Halvi linke ja pilte uutele kaartidele, halvi valitud teksti otsingusse",
-    "description": "Super drag description"
-  },
-  "linkPreviewTitle": {
-    "message": "Popup Eelvaade",
-    "description": "Link preview title"
-  },
-  "linkPreviewDesc": {
-    "message": ": Hoia käivitamise klahvi (vaikimisi: Shift) all, kui hõljud linkide kohal, et eelvaadata sihtlehte popup akendes",
-    "description": "Link preview description"
-  },
-  "textSelectionPreview": {
-    "message": "Vali tekst ja vajuta käivitamise klahvi, et otsida kohe popup aknas, kohandatud otsimootori toega",
-    "description": "Text selection preview description"
-  },
   "previewTip": {
-    "message": "Saate avada mitu popup akent samaaegselt",
+    "message": "Hold flere popup-forhåndsvisninger avae samtidig til sammenligning.",
     "description": "Preview tip"
-  },
-  "dragDirection": {
-    "message": "Kohanda halvimise suunda, et määrata kaardi avamise meetod: ava taustal vaikimisi",
-    "description": "Drag direction description"
   },
   "debugPanelTitle": {
     "message": "Hiire Žestid Debug Info",
     "description": "Debug panel title"
   },
   "debugPanelDesc": {
-    "message": ": Vajuta Alt+D avamiseks, analüüsi žesti infot reaalajas, säilitab oleku",
+    "message": "Vajutage Alt+D silumispaneeli avamiseks, analüüsige žeste reaalajas, olek säilib.",
     "description": "Debug panel description"
   },
-  "oneClickCopy": {
-    "message": "Ühe klõpsuga kopeerimine debug infost lihtsa jagamise jaoks, mitmekeelse toega",
-    "description": "One click copy description"
-  },
-  "mediaPreview": {
-    "message": "Parandatud meedia eelvaade: Parandatud hover efektid piltidele ja optimeeritud video poster pildid",
-    "description": "Media preview description"
-  },
-  "adaptiveTheme": {
-    "message": "Adaptiivsed teemad: Reguleerib visuaalset stiili lehe tausta põhjal, toetab hele/tume režiimi",
-    "description": "Adaptive theme description"
-  },
   "gestureTrail": {
-    "message": "Žesti jälg kuvatakse ekraanil kohandatava värviga ja laiusega",
+    "message": "Valgfrit spor og gestushint på skærmen; tilpas sporfarve og tykkelse i seaded.",
     "description": "Gesture trail description"
   },
   "clickIcon": {
-    "message": "Klõpsa laiendi ikoonil funktsioonide lubamiseks/keelamiseks, keele seadistamiseks, teema ja rohkem",
+    "message": "Værktøjslinje: kompakt popup, sidepanel (Chrome/Edge når understøttet) eller separat indstillingsvindue. Slå funktioner, sprog og tema til/fra og eksportér/importér.",
     "description": "Click icon description"
   },
   "languageSupport": {
-    "message": "Toetab 24 keelt, kohandub automaatselt brauseri keelele",
+    "message": "29 liidese keelt; kasutab salvestatud valikut või järgib brauseri keelt.",
     "description": "Language support description"
   },
   "enableAutoClose": {
-    "message": "Luba automaatne duplikaat kaartide sulgemine, et vähendada oluliselt brauseri ressursikasutust",
+    "message": "Med dubletdetektion kan gentagne URL'er lukkes automatisk (valgfrit).",
     "description": "Enable auto close description"
   },
   "rightClickMacLinux": {
@@ -634,14 +1194,6 @@
   "duplicateTabsDetected": {
     "message": "Leitud $1 duplikaat kaarti",
     "description": "Duplicate tabs detected notification title"
-  },
-  "duplicateTabsCount": {
-    "message": "On $1 duplikaat kaarti",
-    "description": "Duplicate tabs count message"
-  },
-  "duplicateTabsSingle": {
-    "message": "On 1 duplikaat kaart",
-    "description": "Single duplicate tab message"
   },
   "autoClosedTabs": {
     "message": "Automaatselt suletud $1 duplikaat kaarti",
@@ -659,61 +1211,9 @@
     "message": "Nimetu kaart",
     "description": "Untitled tab"
   },
-  "morePages": {
-    "message": "...ja $1 muud lehte",
-    "description": "More pages tip"
-  },
-  "errorShowDuplicateTabs": {
-    "message": "Viga duplikaat kaartide teate kuvamisel:",
-    "description": "Error showing duplicate tabs notification"
-  },
-  "errorSendCloseRequest": {
-    "message": "Viga sulgemise päringu saatmisel:",
-    "description": "Error sending close request"
-  },
-  "errorCloseDuplicateTabs": {
-    "message": "Viga duplikaat kaartide sulgemisel:",
-    "description": "Error closing duplicate tabs"
-  },
-  "errorSendIgnoreRequest": {
-    "message": "Viga eira päringu saatmisel:",
-    "description": "Error sending ignore request"
-  },
-  "errorIgnoreDuplicateTabs": {
-    "message": "Viga duplikaat kaartide eirata:",
-    "description": "Error ignoring duplicate tabs"
-  },
-  "errorUpdateDebugPanel": {
-    "message": "Viga debug paneeli uuendamisel:",
-    "description": "Error updating debug panel"
-  },
   "errorDetectBackgroundColor": {
     "message": "Viga tausta värvi tuvastamisel:",
     "description": "Error detecting background color"
-  },
-  "errorDetectImageBorder": {
-    "message": "Viga pildi äärise raadiuse tuvastamisel:",
-    "description": "Error detecting image border radius"
-  },
-  "errorSetMutationObserver": {
-    "message": "Viga mutation observer seadistamisel:",
-    "description": "Error setting mutation observer"
-  },
-  "errorCheckElementVisibility": {
-    "message": "Viga elemendi nähtavuse kontrollimisel:",
-    "description": "Error checking element visibility"
-  },
-  "errorProcessBorderRadius": {
-    "message": "Viga äärise raadiuse töötlemisel:",
-    "description": "Error processing border radius"
-  },
-  "errorDetectImageBackground": {
-    "message": "Viga pildi tausta tuvastamisel:",
-    "description": "Error detecting image background"
-  },
-  "errorShowAutoCloseNotification": {
-    "message": "Viga automaatse sulgemise õnnestumise teate kuvamisel:",
-    "description": "Error showing auto-close success notification"
   },
   "noForwardPage": {
     "message": "Ei järgmist lehte ajaloos",
@@ -743,10 +1243,6 @@
     "message": "Vigane Žest",
     "description": "Invalid gesture message"
   },
-  "nextPage": {
-    "message": "Järgmine Leht",
-    "description": "Next page action"
-  },
   "errorReadPixel": {
     "message": "Viga pikseli lugemisel:",
     "description": "Error reading pixel message"
@@ -758,10 +1254,6 @@
   "errorCanvasDraw": {
     "message": "Viga canvas joonistamisel:",
     "description": "Error drawing on canvas message"
-  },
-  "errorAccessIframe": {
-    "message": "Viga iframe juurdepääsul:",
-    "description": "Error accessing iframe message"
   },
   "errorMutationObserver": {
     "message": "Viga mutation observer seadistamisel:",
@@ -791,6 +1283,10 @@
     "message": "Süsteemi Seaded",
     "description": "Debug panel system settings section"
   },
+  "debugConsoleLog": {
+    "message": "Konsoolilogid",
+    "description": "Debug panel console log toggle label"
+  },
   "debugAngleThreshold": {
     "message": "Nurga Lävi",
     "description": "Debug panel angle threshold setting"
@@ -810,6 +1306,46 @@
   "debugMinGestureComplexity": {
     "message": "Minimaalne Žesti Keerukus",
     "description": "Debug panel minimum gesture complexity setting"
+  },
+  "debugMinMovementToStartGesture": {
+    "message": "Min liikumine alustamiseks",
+    "description": "Silumispaneeli säte: minimaalne liikumine žesti jälgimise alustamiseks"
+  },
+  "debugSmoothingFactor": {
+    "message": "Silumistegur",
+    "description": "Silumispaneeli säte: raja ja tuvastuse silumistegur"
+  },
+  "debugAngleThresholdHelp": {
+    "message": "Määrab, kui rangelt liikumine liigitatakse horisontaalseks või vertikaalseks. Suurem väärtus nõuab sirgemat suunda; väiksem lubab rohkem diagonaalset liikumist.",
+    "description": "Silumispaneeli nurga läve abi"
+  },
+  "debugDirectionChangeThresholdHelp": {
+    "message": "Määrab suunamuutuse tuvastamise tundlikkuse. Väiksem väärtus tuvastab pöördeid kergemini; suurem eirab väikest värinat.",
+    "description": "Silumispaneeli suunamuutuse läve abi"
+  },
+  "debugMinGestureDistanceHelp": {
+    "message": "Vähim koguliikumise kaugus, enne kui žesti saab tuvastada. Suurenda seda juhuslike käivituste vähendamiseks.",
+    "description": "Silumispaneeli minimaalse žestikauguse abi"
+  },
+  "debugMinDirectionSegmentLengthHelp": {
+    "message": "Vähim liikumissegmendi pikkus suuna tuvastamiseks. Suurenda lühikese värina filtreerimiseks või vähenda lühemate žestide jaoks.",
+    "description": "Silumispaneeli minimaalse suunasegmendi pikkuse abi"
+  },
+  "debugMinGestureComplexityHelp": {
+    "message": "Suunakeerukuse lävi, mille järel käsitletakse rada kritselduse või kehtetuna. Suurem väärtus talub rohkem pöördeid.",
+    "description": "Silumispaneeli žesti keerukuse abi"
+  },
+  "debugMinMovementToStartGestureHelp": {
+    "message": "Pärast nupu vajutamist peab kursor liikuma vähemalt nii mitu pikslit, enne kui žesti jälgimine algab.",
+    "description": "Silumispaneeli alustamise minimaalse liikumise abi"
+  },
+  "debugSmoothingFactorHelp": {
+    "message": "Juhib raja ja tuvastuspunktide silumist. Suurem väärtus vähendab värinat, kuid võib teravaid pöördeid pehmendada; väiksem reageerib kiiremini.",
+    "description": "Silumispaneeli silumisteguri abi"
+  },
+  "debugConsoleLogHelp": {
+    "message": "Lülitab tõrkeotsinguks DevToolsi konsoolis sisse laienduse üksikasjalikud logid.",
+    "description": "Silumispaneeli konsoolilogide abi"
   },
   "debugLatestGestureInfo": {
     "message": "Viimane Žesti Info",
@@ -850,10 +1386,6 @@
   "debugMergedDirections": {
     "message": "Ühendatud Suunad",
     "description": "Debug panel merged directions"
-  },
-  "debugDirectionDistances": {
-    "message": "Suuna Kaugused",
-    "description": "Debug panel direction distances"
   },
   "debugFinalResult": {
     "message": "Lõplik Tulemus",
@@ -927,9 +1459,17 @@
     "message": "Näita Kaartide Arvu",
     "description": "Show tab count badge option"
   },
-  "splitViewAction": {
-    "message": "Jagatud vaade",
-    "description": "Ava jagatud vaate aknas"
+  "unlockPageRestrictions": {
+    "message": "Eemalda kopeerimise/kleepimise/paremklõpsu ja vahelehe jälgimise piirangud",
+    "description": "Setting: unlock page interaction limits"
+  },
+  "unlockPageRestrictionsTitle": {
+    "message": "Eemaldab tavalised kopeerimise, kleepimise, kontekstimenüü ja valiku piirangud; vähendab blur/visibilitychange jälgimist. Töötab lehe kontekstis, toetab iframes ja Shadow DOM. Pärast sisselülitamist laadi leht uuesti.",
+    "description": "Tooltip for unlock page restrictions"
+  },
+  "unlockPageRestrictionsOffReloadConfirm": {
+    "message": "Avatud vahelehtedel võib süstitud loogika kehtida kuni uuestilaadimiseni.\n\nLaadida praegune vaheleht kohe uuesti?",
+    "description": "Body text for unlock-off confirmation dialog"
   },
   "splitViewLeft": {
     "message": "Jaga - vasak",
@@ -946,5 +1486,165 @@
   "splitViewDown": {
     "message": "Jaga - alla",
     "description": "Jagatud vaade, uus aken alumisel poolel"
+  },
+  "unlockPageRestrictionsOffTitle": {
+    "message": "Lehe avamine väljas",
+    "description": "Title for unlock-off confirmation dialog"
+  },
+  "unlockPageRestrictionsReloadTab": {
+    "message": "Laadi vaheleht uuesti",
+    "description": "Reload tab button in unlock-off dialog"
+  },
+  "unlockPageRestrictionsNotNow": {
+    "message": "Mitte praegu",
+    "description": "Dismiss unlock-off dialog without reload"
+  },
+  "welcomeBulletImagePreview": {
+    "message": "Pildi eelvaade: valikuline suurendatud hõljumise eelvaade ja laiendatud režiim keerukate paigutuste jaoks.",
+    "description": "Welcome page: image hover preview bullet"
+  },
+  "welcomeBulletPageUnlock": {
+    "message": "Lehe avamine: valikuliselt leevendage kopeerimise, kleepimise, paremklõpsu jms piiranguid — lülitage seadetes sisse ja vajadusel laadige leht uuesti.",
+    "description": "Welcome page: page unlock bullet"
+  },
+  "welcomeBulletDisabledSites": {
+    "message": "Saiditi: loendis olevad domeenid keelavad korraga žestid, Super Dragi, hüpikvaate ja avamise.",
+    "description": "Welcome page: per-site disable bullet"
+  },
+  "welcomeBulletSplitScroll": {
+    "message": "Jagatud vaade: kui link avaneb jaotatud paigutuses, saate sünkroonida kerimist kahe akna vahel (ka horisontaalselt).",
+    "description": "Welcome page: split scroll sync bullet"
+  },
+  "welcomeBulletScreenshot": {
+    "message": "Ekraanipiltr: synligt område, hele side og manuel rul-sammenføjning; sporområder, otseteee, valgfri kopiering til lõikelaud, forhåndsvisning og lokal ajalugu (0 = ubegrænset).",
+    "description": "Welcome page: screenshot feature bullet"
+  },
+  "welcomeTipScreenshot": {
+    "message": "Ekraanipiltr er aktiveret som standard; tildel otseteee til synligt område, hele side og rulning; sporområde, auto-kopiér, forhåndsvisning og ajalugu er valgfrie.",
+    "description": "Welcome page: screenshot usage tip"
+  },
+  "trailColorPickerPresets": {
+    "message": "Forudseaded",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerRecent": {
+    "message": "Seneste",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerEyedropper": {
+    "message": "Pipette",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerEyedropperActive": {
+    "message": "Klik for at tage farve · hjul zoomer lup",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerSyncTrail": {
+    "message": "Salvesta som sporfarve",
+    "description": "Trail color picker UI"
+  },
+  "superDragCompassPosCompassHub": {
+    "message": "Trækpunkt",
+    "description": "Compass hub aligned to drag start"
+  },
+  "superDragCompassPosCompassScreenCenter": {
+    "message": "Ekraani keskus",
+    "description": "Compass fixed at viewport center"
+  },
+  "superDragCompassPosCompassScreenTop": {
+    "message": "Üles",
+    "description": "Compass fixed at top of viewport"
+  },
+  "superDragCompassPosCompassScreenRight": {
+    "message": "Parem",
+    "description": "Compass fixed at right of viewport"
+  },
+  "superDragCompassPosCompassScreenBottom": {
+    "message": "Alla",
+    "description": "Compass fixed at bottom of viewport"
+  },
+  "superDragCompassPosCompassScreenLeft": {
+    "message": "Vasak",
+    "description": "Compass fixed at left of viewport"
+  },
+  "superDragCompassPosCompassHidden": {
+    "message": "Peidetud",
+    "description": "Do not show compass"
+  },
+  "addCurrentSiteToDisabledSites": {
+    "message": "Lisa praegune sait",
+    "description": "Button: add the active tab domain to disabled sites"
+  },
+  "addCurrentSiteToDisabledSitesTitle": {
+    "message": "Lisa praeguse vahekaardi domeen keelatud saitide hulka",
+    "description": "Tooltip for add-current-site button"
+  },
+  "addDisabledSite": {
+    "message": "Lisa",
+    "description": "Button: add a typed disabled site entry"
+  },
+  "disabledSiteInputPlaceholder": {
+    "message": "Domeen või täielik URL, nt youtube.com",
+    "description": "Placeholder for the disabled site input"
+  },
+  "disabledSitesEmpty": {
+    "message": "Keelatud saite pole veel.",
+    "description": "Empty state for disabled sites list"
+  },
+  "removeDisabledSite": {
+    "message": "Eemalda see sait",
+    "description": "Tooltip/aria label for remove disabled site button"
+  },
+  "disabledSiteInvalid": {
+    "message": "Sisesta kehtiv domeen või URL",
+    "description": "Error shown when disabled site input is invalid"
+  },
+  "disabledSiteAlreadyExists": {
+    "message": "Sait on juba olemas",
+    "description": "Error shown when adding a duplicate disabled site"
+  },
+  "disabledSitesLimitReached": {
+    "message": "Keelatud saitide piirang on saavutatud",
+    "description": "Error shown when disabled sites list reaches the maximum size"
+  },
+  "currentSiteUnsupported": {
+    "message": "Praegusel vahekaardil pole toetatud domeeni",
+    "description": "Error shown when current tab URL cannot be added to disabled sites"
+  },
+  "customKey": {
+    "message": "Kohandatud klahv",
+    "description": "Custom trigger key option"
+  },
+  "previewTriggerMode": {
+    "message": "Päästikurežiim",
+    "description": "Popup view trigger mode setting"
+  },
+  "previewTriggerHold": {
+    "message": "Hoia päästikuklahvi all",
+    "description": "Hold trigger key option"
+  },
+  "previewTriggerDouble": {
+    "message": "Vajuta päästikuklahvi kaks korda",
+    "description": "Double-press trigger key option"
+  },
+  "previewCustomKey": {
+    "message": "Kohandatud klahv",
+    "description": "Popup view custom trigger key setting"
+  },
+  "previewCustomKeyPlaceholder": {
+    "message": "Klõpsa ja vajuta klahvi",
+    "description": "Popup view custom trigger key placeholder"
+  },
+  "previewCustomKeyTitle": {
+    "message": "Klõpsa siin ja vajuta muuteklahvita klahvi. Tühjendamiseks vajuta Esc.",
+    "description": "Popup view custom trigger key title"
+  },
+  "unlimited": {
+    "message": "Piiramatu",
+    "description": "Unlimited value label"
+  },
+  "settingsFontSize": {
+    "message": "Seadete fondi suurus",
+    "description": "Header button: adjust settings font size"
   }
 }

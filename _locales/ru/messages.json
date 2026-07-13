@@ -4,7 +4,7 @@
     "description": "The name of the extension"
   },
   "extDesc": {
-    "message": "Расширение Chrome/Edge, поддерживающее жесты мыши, функцию супер-перетаскивания и функцию предварительного просмотра",
+    "message": "Жесты мыши, супер-перетаскивание, предпросмотр изображений и ссылок и другое.",
     "description": "The description of the extension"
   },
   "title": {
@@ -35,13 +35,21 @@
     "message": "Перетащить влево",
     "description": "Drag left action"
   },
-  "openInForeground": {
-    "message": "Открыть ссылку на переднем плане",
-    "description": "Open link in foreground"
+  "dragUpRight": {
+    "message": "Перетащить вверх-вправо",
+    "description": "Super drag diagonal direction"
   },
-  "openInBackground": {
-    "message": "Открыть ссылку в фоне",
-    "description": "Open link in background"
+  "dragDownRight": {
+    "message": "Перетащить вниз-вправо",
+    "description": "Super drag diagonal direction"
+  },
+  "dragDownLeft": {
+    "message": "Перетащить вниз-влево",
+    "description": "Super drag diagonal direction"
+  },
+  "dragUpLeft": {
+    "message": "Перетащить вверх-влево",
+    "description": "Super drag diagonal direction"
   },
   "superDragDescription": {
     "message": "Супер-перетаскивание работает со ссылками, изображениями и выделенным текстом. Вы можете задать способ открытия для каждого направления жеста (вверх/вниз/влево/вправо), включая передний план, фон или разделённый вид (влево/вправо/вверх/вниз).",
@@ -65,51 +73,75 @@
   },
   "downThenRight": {
     "message": "Вниз затем вправо",
-    "description": "Down then right gesture"
+    "description": "Жест вниз затем вправо"
   },
   "leftThenUp": {
     "message": "Влево затем вверх",
-    "description": "Left then up gesture"
+    "description": "Жест влево затем вверх"
   },
   "rightThenUp": {
     "message": "Вправо затем вверх",
-    "description": "Right then up gesture"
+    "description": "Жест вправо затем вверх"
   },
   "rightThenDown": {
     "message": "Вправо затем вниз",
-    "description": "Right then down gesture"
+    "description": "Жест вправо затем вниз"
   },
   "upThenLeft": {
     "message": "Вверх затем влево",
-    "description": "Up then left gesture"
+    "description": "Жест вверх затем влево"
   },
   "upThenRight": {
     "message": "Вверх затем вправо",
-    "description": "Up then right gesture"
+    "description": "Жест вверх затем вправо"
   },
   "downThenLeft": {
     "message": "Вниз затем влево",
-    "description": "Down then left gesture"
+    "description": "Жест вниз затем влево"
   },
   "leftThenDown": {
     "message": "Влево затем вниз",
-    "description": "Left then down gesture"
+    "description": "Жест влево затем вниз"
   },
   "upThenDown": {
     "message": "Вверх затем вниз",
-    "description": "Up then down gesture"
+    "description": "Жест вверх затем вниз"
   },
   "downThenUp": {
     "message": "Вниз затем вверх",
-    "description": "Down then up gesture"
+    "description": "Жест вниз затем вверх"
   },
   "leftThenRight": {
     "message": "Влево затем вправо",
-    "description": "Left then right gesture"
+    "description": "Жест влево затем вправо"
   },
   "rightThenLeft": {
     "message": "Вправо затем влево",
-    "description": "Right then left gesture"
+    "description": "Жест вправо затем влево"
+  },
+  "rightHoldWheelUp": {
+    "message": "Удерживать правую + колёсико вверх",
+    "description": "Удерживать правую кнопку и колёсико вверх"
+  },
+  "rightHoldWheelDown": {
+    "message": "Удерживать правую + колёсико вниз",
+    "description": "Удерживать правую кнопку и колёсико вниз"
+  },
+  "leftHoldWheelUp": {
+    "message": "Удержать левую + колесо вверх",
+    "description": "Левая кнопка и прокрутка вверх"
+  },
+  "leftHoldWheelDown": {
+    "message": "Удержать левую + колесо вниз",
+    "description": "Левая кнопка и прокрутка вниз"
+  },
+  "rightHoldLeftClick": {
+    "message": "Удерживать правую + левый клик",
+    "description": "Удерживать правую кнопку и левый клик"
+  },
+  "leftHoldRightClick": {
+    "message": "Удерживать левую + ПКМ",
+    "description": "Удерживать левую кнопку и щёлкнуть правой"
   },
   "back": {
     "message": "Назад",
@@ -158,6 +190,18 @@
   "prevTab": {
     "message": "Предыдущая вкладка",
     "description": "Previous tab action"
+  },
+  "previousActiveTab": {
+    "message": "Предыдущая активная вкладка",
+    "description": "Действие жеста: переключиться на ранее активную вкладку"
+  },
+  "goToParentUrl": {
+    "message": "Родительский URL",
+    "description": "Действие жеста: перейти к родительскому пути URL"
+  },
+  "goToRootUrl": {
+    "message": "Корневой URL",
+    "description": "Действие жеста: перейти к корневому URL сайта"
   },
   "nextTab": {
     "message": "Следующая вкладка",
@@ -211,6 +255,14 @@
     "message": "Переключить Полноэкранный Режим",
     "description": "Toggle fullscreen action"
   },
+  "zoomIn": {
+    "message": "Увеличить",
+    "description": "Увеличить масштаб текущей вкладки"
+  },
+  "zoomOut": {
+    "message": "Уменьшить",
+    "description": "Уменьшить масштаб текущей вкладки"
+  },
   "closeTabsToLeft": {
     "message": "Закрыть Вкладки Слева",
     "description": "Close tabs to left action"
@@ -218,6 +270,474 @@
   "reloadAllTabs": {
     "message": "Перезагрузить Все Вкладки",
     "description": "Reload all tabs action"
+  },
+  "stopLoadingAllTabs": {
+    "message": "Остановить загрузку всех вкладок",
+    "description": "Stop loading in all tabs"
+  },
+  "screenshotRegion": {
+    "message": "Снимок экрана (область по траектории)",
+    "description": "Screenshot gesture action"
+  },
+  "screenshotRegionOrLink": {
+    "message": "Снимок или открыть ссылку",
+    "description": "Trail region hint when links are inside selection"
+  },
+  "trailRegionChooseTitle": {
+    "message": "Ссылки в выделении — снимок или открыть",
+    "description": "Trail region chooser dialog title"
+  },
+  "trailRegionLinkSingle": {
+    "message": "1 ссылка",
+    "description": "Trail region link count"
+  },
+  "trailRegionLinkMultiple": {
+    "message": "{count} ссылок",
+    "description": "Trail region link count"
+  },
+  "trailRegionActionScreenshot": {
+    "message": "Снимок (S)",
+    "description": "Trail region chooser button"
+  },
+  "trailRegionActionOpenLink": {
+    "message": "Открыть в новой вкладке (O)",
+    "description": "Trail region chooser button"
+  },
+  "trailRegionActionOpenLinks": {
+    "message": "Открыть в новых вкладках (O)",
+    "description": "Trail region chooser button"
+  },
+  "trailRegionActionOpenSelected": {
+    "message": "Открыть {n} в новых вкладках (O)",
+    "description": "Trail region open checked links"
+  },
+  "trailRegionActionOpenNone": {
+    "message": "Открыть выбранное (O)",
+    "description": "Trail region open button when none checked"
+  },
+  "trailRegionActionCopy": {
+    "message": "Копировать (C)",
+    "description": "Trail region chooser copy button"
+  },
+  "trailRegionActionCopySelected": {
+    "message": "Копировать {n} (C)",
+    "description": "Trail region copy checked links"
+  },
+  "trailRegionActionCopyNone": {
+    "message": "Копировать (C)",
+    "description": "Trail region copy button when none checked"
+  },
+  "trailRegionCopyFailed": {
+    "message": "Не удалось скопировать",
+    "description": "Trail region copy to clipboard failed"
+  },
+  "trailRegionSelectAll": {
+    "message": "Выбрать все",
+    "description": "Trail region link list select all"
+  },
+  "trailRegionNoLinkSelected": {
+    "message": "Выберите хотя бы одну ссылку",
+    "description": "Trail region no selection hint"
+  },
+  "trailRegionChooseHint": {
+    "message": "Esc — отмена · отметьте ссылки для копирования/открытия · тяните края для изменения размера",
+    "description": "Trail region chooser footer"
+  },
+  "trailRegionLinkOpened": {
+    "message": "Ссылка открыта в новой вкладке",
+    "description": "Trail region open link feedback"
+  },
+  "trailRegionLinksOpened": {
+    "message": "Ссылки открыты в новых вкладках",
+    "description": "Trail region open links feedback"
+  },
+  "trailRegionLinksTruncated": {
+    "message": "Открыты только первые {n} ссылок",
+    "description": "Trail region open links cap"
+  },
+  "screenshotScrollCaptureActive": {
+    "message": "Прокрутите страницу вручную, затем та же клавиша или Esc для завершения и склейки",
+    "description": "Manual scroll capture in progress"
+  },
+  "screenshotCopied": {
+    "message": "Снимок скопирован в буфер обмена",
+    "description": "Screenshot feedback"
+  },
+  "screenshotFailed": {
+    "message": "Не удалось сделать снимок",
+    "description": "Screenshot feedback"
+  },
+  "screenshotNeedTrail": {
+    "message": "Нарисуйте более длинную траекторию для выбора области",
+    "description": "Screenshot feedback"
+  },
+  "screenshotUnavailable": {
+    "message": "Модуль снимков экрана недоступен",
+    "description": "Screenshot feedback"
+  },
+  "screenshotTopFrameOnly": {
+    "message": "Снимок всей страницы только в основном фрейме",
+    "description": "Screenshot feedback"
+  },
+  "screenshotFeature": {
+    "message": "Снимок экрана",
+    "description": "Screenshot settings section title"
+  },
+  "enableScreenshotFeature": {
+    "message": "Включить снимки экрана",
+    "description": "Master toggle for screenshot feature"
+  },
+  "enableScreenshotTrailCapture": {
+    "message": "Область по траектории (петля / самопересечение)",
+    "description": "Capture when trail loops or crosses; skipped if another gesture action matches"
+  },
+  "enableScreenshotClipboard": {
+    "message": "Автоматически копировать в буфер",
+    "description": "Copy screenshot to clipboard after capture"
+  },
+  "enableScreenshotPreview": {
+    "message": "Показывать предпросмотр после съёмки",
+    "description": "Open preview window when a screenshot is captured"
+  },
+  "enableScreenshotHistory": {
+    "message": "Сохранять историю снимков",
+    "description": "Keep captured screenshots in local history"
+  },
+  "screenshotHistoryMaxCount": {
+    "message": "Лимит истории",
+    "description": "Maximum screenshot history entries to keep"
+  },
+  "screenshotHistoryMaxCountHint": {
+    "message": "0 = без лимита; 1–200 — удаление старых при превышении",
+    "description": "Screenshot history limit hint"
+  },
+  "screenshotHistoryUnlimited": {
+    "message": "Без лимита",
+    "description": "Label when screenshot history limit is 0"
+  },
+  "screenshotHistoryView": {
+    "message": "Просмотр истории",
+    "description": "Open screenshot history window"
+  },
+  "screenshotHistoryTitle": {
+    "message": "История снимков",
+    "description": "Screenshot history window title"
+  },
+  "screenshotHistoryEmpty": {
+    "message": "Снимков пока нет",
+    "description": "Empty screenshot history state"
+  },
+  "screenshotHistoryClearAll": {
+    "message": "Очистить всё",
+    "description": "Delete all screenshot history entries"
+  },
+  "screenshotHistoryClearConfirm": {
+    "message": "Удалить всю историю снимков?",
+    "description": "Confirm clearing screenshot history"
+  },
+  "screenshotHistoryDelete": {
+    "message": "Удалить",
+    "description": "Delete one screenshot history entry"
+  },
+  "screenshotHistoryPinToPage": {
+    "message": "Закрепить на странице",
+    "description": "Pin history thumbnail onto the web page"
+  },
+  "screenshotHistoryPinFailed": {
+    "message": "Не удалось закрепить (откройте вкладку или разрешите сайт).",
+    "description": "Error when pinning from screenshot history"
+  },
+  "screenshotHistoryCount": {
+    "message": "$1 элементов",
+    "description": "Number of items in screenshot history",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "screenshotHistoryModeViewport": {
+    "message": "Видимая область",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeFullPage": {
+    "message": "Вся страница",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeRegion": {
+    "message": "Область",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeScroll": {
+    "message": "Ручная прокрутка",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeUnknown": {
+    "message": "Снимок",
+    "description": "Screenshot history capture mode fallback label"
+  },
+  "screenshotDone": {
+    "message": "Снимок готов",
+    "description": "Hint when capture finished without clipboard copy"
+  },
+  "screenshotPreviewTitle": {
+    "message": "Предпросмотр снимка",
+    "description": "Screenshot preview window title"
+  },
+  "screenshotPreviewClose": {
+    "message": "Закрыть",
+    "description": "Close screenshot preview window"
+  },
+  "screenshotPreviewCopyAgain": {
+    "message": "Копировать",
+    "description": "Copy screenshot to clipboard from preview window"
+  },
+  "screenshotPreviewSave": {
+    "message": "Сохранить в файл",
+    "description": "Save annotated screenshot to disk"
+  },
+  "screenshotPreviewSaved": {
+    "message": "Сохранено",
+    "description": "Screenshot file save succeeded"
+  },
+  "screenshotPreviewPinToPage": {
+    "message": "Закрепить на странице",
+    "description": "Pin annotated screenshot onto the source web page"
+  },
+  "screenshotPreviewPinned": {
+    "message": "Закреплено",
+    "description": "Screenshot pin placed on page"
+  },
+  "screenshotPreviewPinning": {
+    "message": "Закрепление…",
+    "description": "Screenshot pin in progress"
+  },
+  "screenshotPinTitle": {
+    "message": "Снимок",
+    "description": "Title on pinned screenshot sticker"
+  },
+  "screenshotPinClose": {
+    "message": "Снять закрепление",
+    "description": "Close button on pinned screenshot"
+  },
+  "screenshotPinResize": {
+    "message": "Изменить размер",
+    "description": "Resize handle on pinned screenshot"
+  },
+  "screenshotPinZoomFit": {
+    "message": "По размеру",
+    "description": "Fit pinned screenshot to view"
+  },
+  "screenshotPinZoomOriginal": {
+    "message": "1:1",
+    "description": "Show pinned screenshot at original pixel size"
+  },
+  "screenshotPinOrderLabel": {
+    "message": "Закрепление $1$",
+    "description": "Pinned screenshot order number",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "screenshotPreviewLoadFailed": {
+    "message": "Не удалось загрузить предпросмотр",
+    "description": "Screenshot preview load error"
+  },
+  "screenshotPreviewZoomFit": {
+    "message": "По размеру",
+    "description": "Fit screenshot to preview window"
+  },
+  "screenshotPreviewZoomFitTitle": {
+    "message": "По размеру окна",
+    "description": "Tooltip for fit zoom button"
+  },
+  "screenshotPreviewZoomOneToOne": {
+    "message": "1:1",
+    "description": "Actual-size zoom button label"
+  },
+  "screenshotPreviewZoomOneToOneTitle": {
+    "message": "Реальный размер (1:1)",
+    "description": "Tooltip for 1:1 zoom button"
+  },
+  "screenshotPreviewZoomLevel": {
+    "message": "Масштаб $1$%",
+    "description": "Current zoom percentage in preview",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "screenshotAnnotHand": {
+    "message": "Рука (перемещение)",
+    "description": "Pan the preview by dragging"
+  },
+  "screenshotAnnotPen": {
+    "message": "Карандаш",
+    "description": "Annotation tool: freehand"
+  },
+  "screenshotAnnotArrow": {
+    "message": "Стрелка (Shift: Г/В)",
+    "description": "Annotation tool: arrow; Shift constrains to horizontal or vertical"
+  },
+  "screenshotAnnotLine": {
+    "message": "Линия (Shift: Г/В)",
+    "description": "Annotation tool: line; Shift constrains to horizontal or vertical"
+  },
+  "screenshotAnnotRect": {
+    "message": "Прямоугольник (Shift: квадрат)",
+    "description": "Annotation tool: rectangle; Shift draws a square"
+  },
+  "screenshotAnnotEllipse": {
+    "message": "Эллипс",
+    "description": "Annotation tool: ellipse"
+  },
+  "screenshotAnnotRoundRect": {
+    "message": "Скруглённый прямоугольник",
+    "description": "Annotation tool: rounded rectangle"
+  },
+  "screenshotAnnotHighlighter": {
+    "message": "Маркер",
+    "description": "Annotation tool: highlighter marker"
+  },
+  "screenshotAnnotHighlight": {
+    "message": "Рамка выделения",
+    "description": "Annotation tool: highlight rectangle"
+  },
+  "screenshotAnnotFillRect": {
+    "message": "Залитый прямоугольник",
+    "description": "Annotation tool: filled rectangle"
+  },
+  "screenshotAnnotFillEllipse": {
+    "message": "Залитый эллипс",
+    "description": "Annotation tool: filled ellipse"
+  },
+  "screenshotAnnotBlur": {
+    "message": "Размытие",
+    "description": "Annotation tool: blur brush"
+  },
+  "screenshotAnnotArrow2": {
+    "message": "Двойная стрелка (Shift: Г/В)",
+    "description": "Annotation tool: line with arrowheads at both ends; Shift constrains H/V"
+  },
+  "screenshotAnnotNumber": {
+    "message": "Нумерация",
+    "description": "Annotation tool: sequential number markers"
+  },
+  "screenshotAnnotStampStart": {
+    "message": "Начальный №",
+    "description": "Starting number for sequential stamps"
+  },
+  "screenshotAnnotStampNext": {
+    "message": "Следующий №: $1$",
+    "description": "Next number stamp to place (tooltip)",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "screenshotAnnotCrop": {
+    "message": "Обрезка",
+    "description": "Annotation tool: crop image"
+  },
+  "screenshotAnnotCropApply": {
+    "message": "Применить обрезку",
+    "description": "Confirm crop selection"
+  },
+  "screenshotAnnotCropCancel": {
+    "message": "Отмена",
+    "description": "Cancel crop selection"
+  },
+  "screenshotAnnotText": {
+    "message": "Текст",
+    "description": "Annotation tool: text"
+  },
+  "screenshotAnnotMosaic": {
+    "message": "Мозаика",
+    "description": "Annotation tool: mosaic blur"
+  },
+  "screenshotAnnotEraser": {
+    "message": "Ластик",
+    "description": "Annotation tool: eraser"
+  },
+  "screenshotAnnotSize": {
+    "message": "Размер",
+    "description": "Annotation stroke size"
+  },
+  "screenshotAnnotResetAll": {
+    "message": "Сбросить все правки",
+    "description": "Clear all annotations and restore original screenshot"
+  },
+  "screenshotAnnotStepCount": {
+    "message": "$1 / $2",
+    "description": "History step indicator: current / total"
+  },
+  "screenshotAnnotStepCountTitle": {
+    "message": "Применено / всего шагов (0 = исходное изображение)",
+    "description": "Tooltip for history step indicator"
+  },
+  "screenshotAnnotUndo": {
+    "message": "Отменить",
+    "description": "Undo annotation"
+  },
+  "screenshotAnnotRedo": {
+    "message": "Повторить",
+    "description": "Redo annotation"
+  },
+  "screenshotAnnotTextPlaceholder": {
+    "message": "Введите текст…",
+    "description": "Placeholder in inline text editor on screenshot preview"
+  },
+  "screenshotOptRegion": {
+    "message": "Выбор области",
+    "description": "Screenshot bind row: keyboard drag rectangle region"
+  },
+  "screenshotOptViewport": {
+    "message": "Видимая область",
+    "description": "Screenshot bind row: current visible tab area"
+  },
+  "screenshotOptFullPage": {
+    "message": "Вся страница",
+    "description": "Screenshot bind row: full page"
+  },
+  "screenshotOptScrollStitch": {
+    "message": "Ручная прокрутка",
+    "description": "Screenshot bind row: manual scroll capture"
+  },
+  "screenshotOptOpenHistory": {
+    "message": "Открыть историю",
+    "description": "Screenshot bind row: keyboard shortcut to open screenshot history"
+  },
+  "screenshotHotkeyPressHint": {
+    "message": "Сочетания: нажмите поле выше, затем комбинацию (Ctrl / Alt / Meta + буква или цифра, или F1–F12). Esc очищает поле.",
+    "description": "Screenshot section footer: hotkey binding help"
+  },
+  "screenshotHotkeyPlaceholder": {
+    "message": "Нажмите для назначения",
+    "description": "Placeholder in empty screenshot hotkey fields"
+  },
+  "screenshotRegionPickHint": {
+    "message": "Перетащите для выбора области. Esc — отмена.",
+    "description": "Hint while keyboard region picker is active"
+  },
+  "screenshotRegionPickFooterHint": {
+    "message": "Область: нарисуйте прямоугольник и отпустите. При ссылках — снимок или новые вкладки. Esc — отмена.",
+    "description": "Screenshot section footer: keyboard region picker help"
+  },
+  "screenshotRegionTooSmall": {
+    "message": "Выделение слишком мало — выберите большую область",
+    "description": "Region picker: minimum size not met"
+  },
+  "screenshotGestureIntersectHint": {
+    "message": "Область по траектории: одна петля или одно самопересечение, затем отпустите. При ссылках — снимок или новые вкладки. Много петель = каракули.",
+    "description": "Screenshot section footer: trail region capture help"
   },
   "togglePinTab": {
     "message": "Закрепить/Открепить Вкладку",
@@ -244,16 +764,16 @@
     "description": "Settings title"
   },
   "customizedBehavior": {
-    "message": "Чёрный список",
-    "description": "Block list section title"
+    "message": "Отключённые сайты",
+    "description": "Section title for the per-site disable list"
   },
   "disableMouseGesturesForSites": {
-    "message": "Отключить жесты мыши и супер перетаскивание на этих сайтах",
-    "description": "Label for the list of sites where gestures and super drag are disabled"
+    "message": "Отключить функции расширения на указанных доменах",
+    "description": "Subtitle for Disabled sites section"
   },
   "disabledSitesHint": {
-    "message": "Один сайт в строке. Домен (напр. youtube.com) или полный URL.",
-    "description": "Hint for the disabled sites textarea"
+    "message": "Применяется к жестам, суперперетаскиванию, предпросмотру ссылок/изображений, снимкам экрана и снятию ограничений страницы. Добавьте текущий сайт или введите домен/URL; для удаления нажмите значок удаления.",
+    "description": "Short hint explaining which features the Disabled sites list affects"
   },
   "enableGesture": {
     "message": "Включить жесты мыши",
@@ -279,6 +799,26 @@
     "message": "Включить супер-перетаскивание",
     "description": "Enable super drag option"
   },
+  "superDragCompassPosition": {
+    "message": "Компас 8 направлений",
+    "description": "Super drag compass display and position"
+  },
+  "superDragCompassPosCompassAbove": {
+    "message": "Над точкой перетаскивания",
+    "description": "Compass above drag start, centered horizontally"
+  },
+  "superDragCompassPosCompassRight": {
+    "message": "Справа от точки перетаскивания",
+    "description": "Compass to the right of drag start, vertically centered"
+  },
+  "superDragCompassPosCompassBelow": {
+    "message": "Под точкой перетаскивания",
+    "description": "Compass below drag start, centered horizontally"
+  },
+  "superDragCompassPosCompassLeft": {
+    "message": "Слева от точки перетаскивания",
+    "description": "Compass to the left of drag start, vertically centered"
+  },
   "enableDragTextSearch": {
     "message": "Включить поиск перетаскиваемого текста",
     "description": "Enable drag text search option"
@@ -287,9 +827,17 @@
     "message": "Автозагрузка изображения/файла при перетаскивании",
     "description": "When the drag target is an image or other downloadable file, start download automatically"
   },
+  "enableImageDrag": {
+    "message": "Включить перетаскивание изображений",
+    "description": "Control image super drag independently from image preview"
+  },
   "enableImagePreview": {
     "message": "Включить предварительный просмотр изображений",
     "description": "Enable image preview option"
+  },
+  "enableImagePreviewEnhanced": {
+    "message": "Расширенный предварительный просмотр изображений",
+    "description": "Support transparent overlay, background-image, parent lookup, etc."
   },
   "enableDuplicateCheck": {
     "message": "Обнаруживать дублирующие вкладки",
@@ -302,10 +850,6 @@
   "enableSmoothScroll": {
     "message": "Включить плавную прокрутку",
     "description": "Enable smooth scrolling for gesture actions"
-  },
-  "save": {
-    "message": "Настройки применены",
-    "description": "Save settings button"
   },
   "reset": {
     "message": "Сбросить",
@@ -363,14 +907,6 @@
     "message": "Ошибка сброса настроек",
     "description": "Reset settings error notification"
   },
-  "themeLight": {
-    "message": "Светлая",
-    "description": "Light theme"
-  },
-  "themeDark": {
-    "message": "Темная",
-    "description": "Dark theme"
-  },
   "buyMeACoffee": {
     "message": "Купи мне кофе",
     "description": "Donation button"
@@ -379,17 +915,33 @@
     "message": "Переключить тему",
     "description": "Toggle theme button"
   },
-  "toggleLanguage": {
-    "message": "Переключить язык",
-    "description": "Toggle language button"
+  "openDetachedPopupTitle": {
+    "message": "Открыть настройки в боковой панели (иначе — отдельное окно)",
+    "description": "Кнопка заголовка: боковая панель или отдельное окно"
+  },
+  "openDetachedWindowFromSidePanelTitle": {
+    "message": "Открыть в отдельном окне (рядом с браузером)",
+    "description": "Боковая панель: отдельное окно и размеры браузера"
+  },
+  "openOptionsPageTitle": {
+    "message": "Открыть страницу параметров",
+    "description": "Кнопка в заголовке: открыть страницу параметров расширения"
   },
   "donationTooltip": {
     "message": "Если вам нравится эта работа, пожалуйста, поддержите меня. Спасибо :)",
     "description": "Donation tooltip"
   },
   "rightButtonHint": {
-    "message": "Удерживайте правую кнопку мыши",
+    "message": "Правую (жест, колёсико, клики) · левую (колёсико) — удерживайте",
     "description": "Right mouse button hint"
+  },
+  "builtInGesturesListExpandHint": {
+    "message": "Нажмите, чтобы развернуть полный список жестов",
+    "description": "Tooltip on built-in gestures subtitle when list is collapsed"
+  },
+  "builtInGesturesListCollapseHint": {
+    "message": "Нажмите, чтобы свернуть список жестов",
+    "description": "Tooltip on built-in gestures subtitle when list is expanded"
   },
   "leftButtonHint": {
     "message": "Удерживайте левую кнопку мыши",
@@ -403,17 +955,45 @@
     "message": "Открыть в фоне",
     "description": "Open in background action"
   },
+  "popupViewAction": {
+    "message": "Всплывающий просмотр",
+    "description": "Super drag action: open target in popup view"
+  },
+  "incognitoAction": {
+    "message": "Открыть в режиме инкогнито",
+    "description": "Open in incognito/private window"
+  },
+  "enableSplitScrollSync": {
+    "message": "Синхронизировать вертикальную и горизонтальную прокрутку между окнами разделения",
+    "description": "При разделённом виде выравнивать обе оси прокрутки между окнами"
+  },
   "copyAction": {
     "message": "Копировать",
     "description": "Copy selected text or link URL to clipboard"
+  },
+  "downloadAction": {
+    "message": "Скачать",
+    "description": "Super drag action: download target"
   },
   "copiedToClipboard": {
     "message": "Скопировано в буфер обмена",
     "description": "Hint after copy action"
   },
-  "dragSearchEngine": {
-    "message": "URL поисковой системы для перетаскивания",
-    "description": "Drag search engine URL setting"
+  "dragSearchEngineSlotLabel": {
+    "message": "Что редактировать",
+    "description": "Label for drag search engine slot selector"
+  },
+  "dragSearchSlotDefault": {
+    "message": "По умолчанию (запасной)",
+    "description": "Default search URL slot in drag search editor"
+  },
+  "dragSearchEngineUrlForSlot": {
+    "message": "URL поисковой системы",
+    "description": "Label for single drag search URL field"
+  },
+  "dragSearchEnginePerDirectionHelp": {
+    "message": "В списке выберите «По умолчанию» или направление перетаскивания и отредактируйте соответствующий URL. Пустые направления используют значение по умолчанию. Только для поиска при перетаскивании выделенного текста.",
+    "description": "Help text for unified drag search engine editor"
   },
   "linkPreview": {
     "message": "Всплывающий просмотр",
@@ -424,7 +1004,7 @@
     "description": "Quick navigation hover tooltip"
   },
   "linkPreviewHint": {
-    "message": "Наведение + клавиша для показа всплывающего окна",
+    "message": "Наведите указатель и используйте триггер, чтобы показать всплывающее окно",
     "description": "Popup view hint"
   },
   "enableLinkPreview": {
@@ -495,41 +1075,61 @@
     "message": "Используйте {q} для поискового запроса, пример формата:",
     "description": "Search engine examples description"
   },
+  "searchExampleUrlClickHint": {
+    "message": "Нажмите пример URL, чтобы заполнить поле выше и сохранить",
+    "description": "Tooltip for example search engine URLs (click to fill)"
+  },
+  "searchEngineExamplesUrlClickHint": {
+    "message": "Подсказка: нажмите на пример URL, чтобы заполнить поле выше и сохранить.",
+    "description": "Visible hint under search engine examples (click URL to fill field above and save)"
+  },
   "googleExample": {
-    "message": "Поиск Google: https://www.google.ru/search?q={q}",
+    "message": "Поиск Google:",
+    "description": "Google search example"
+  },
+  "googleExampleUrl": {
+    "message": "https://www.google.ru/search?q={q}",
     "description": "Google search example"
   },
   "googleTranslateExample": {
-    "message": "Google Переводчик: https://translate.google.ru/?sl=auto&tl=ru&text={q}&op=translate",
+    "message": "Google Переводчик:",
+    "description": "Google translate example"
+  },
+  "googleTranslateExampleUrl": {
+    "message": "https://translate.google.ru/?sl=auto&tl=ru&text={q}&op=translate",
     "description": "Google translate example"
   },
   "localSearchExample": {
-    "message": "Поиск Яндекс: https://yandex.ru/search?text={q}",
+    "message": "Поиск Яндекс:",
+    "description": "Local search example"
+  },
+  "localSearchExampleUrl": {
+    "message": "https://yandex.ru/search?text={q}",
     "description": "Local search example"
   },
   "bingExample": {
-    "message": "Поиск Bing: https://www.bing.com/search?q={q}&setlang=ru",
+    "message": "Поиск Bing:",
+    "description": "Bing search example"
+  },
+  "bingExampleUrl": {
+    "message": "https://www.bing.com/search?q={q}&setlang=ru",
     "description": "Bing search example"
   },
   "wheelTip": {
-    "message": "Используйте колесо мыши для настройки значения",
+    "message": "Наведите курсор на эту строку ~1,5 с, затем крутите колесо для настройки",
     "description": "Wheel tip"
   },
   "modifierKeyDelayTip": {
-    "message": "При использовании клавиши-модификатора максимальная задержка ограничена 300мс",
+    "message": "Задержка начинается после выполнения условия запуска; увеличьте её, чтобы избежать случайного предпросмотра.",
     "description": "Modifier key delay tip"
   },
   "welcomeTitle": {
-    "message": "Добро пожаловать в расширение жестов мыши",
+    "message": "Добро пожаловать в расширение «Жесты мыши»",
     "description": "Welcome page title"
   },
   "welcomeDescription": {
-    "message": "Спасибо за установку расширения Жесты Мыши! Это расширение предоставляет богатую функциональность жестов мыши, интеллектуальное управление вкладками, возможности просмотра во всплывающих окнах и улучшенный визуальный опыт, чтобы помочь вам более эффективно просматривать веб. Мы оптимизировали алгоритм распознавания жестов с повышенной устойчивостью к ошибкам, позволяя жестам быть правильно распознанными даже когда они не нарисованы идеально. Новая функция всплывающего окна позволяет вам просматривать содержимое ссылок во всплывающих окнах без переключения вкладок. Расширение также поддерживает 29 языков и светлую/тёмную темы для лучшего пользовательского опыта.",
+    "message": "Спасибо, что установили Mouse Gesture! Удерживайте правую кнопку и перетаскивайте для навигации, работы с вкладками и прокрутки; также удерживайте правую или левую с колёсиком (дополнительные комбинации в настройках) для дополнительных сочетаний — распознавание остаётся устойчивым к погрешностям, в том числе во время загрузки страниц. Super Drag открывает ссылки, изображения и поиск текста с отдельными правилами по направлению (передний план, фон, разделённая вёрстка, копирование в буфер и другое). Popup View показывает предпросмотр ссылок или ищет выделенный текст в небольших окнах. Дополнительно: предпросмотр изображения при наведении (расширенный режим), поиск дубликатов вкладок с авто‑закрытием, плавная прокрутка, значок числа вкладок на панели и снятие ограничений страниц на «жёстких» сайтах. Настройки из панели (всплывающее окно, боковая панель или отдельное окно); экспорт/импорт; синхронизация с аккаунтом браузера. 29 языков и светлая/тёмная тема.",
     "description": "Welcome page description"
-  },
-  "gesturesDescription": {
-    "message": "Ниже приведены предустановленные жесты мыши, которые вы можете использовать, перетаскивая правой кнопкой мыши:",
-    "description": "Gestures description"
   },
   "extensionName": {
     "message": "Расширение жестов мыши",
@@ -539,88 +1139,48 @@
     "message": "Основные функции",
     "description": "Core features title"
   },
-  "utilitiesFeatures": {
-    "message": "Инструменты",
-    "description": "Utilities features title"
+  "welcomeCoreGestureBlock": {
+    "message": "Жесты мыши: удерживайте правую и ведите для жестов по траектории; колёсико с правой или левой кнопкой и комбинации кликов при зажатой правой — переназначаются в настройках на множество действий; распознавание терпимое, в том числе при загрузке страниц.",
+    "description": "Welcome page: core features gesture summary"
+  },
+  "welcomeCoreSuperDragBlock": {
+    "message": "Super Drag: перетаскивайте ссылки и изображения в новые вкладки, выделенный текст — для поиска; направление задаёт способ открытия вкладок; по умолчанию в фоне.",
+    "description": "Welcome page: core features super drag summary"
+  },
+  "welcomeCorePopupViewBlock": {
+    "message": "Всплывающий просмотр: удерживайте клавишу-триггер (по умолчанию Shift) над ссылкой для предпросмотра в маленьком окне; после выделения текста нажмите клавишу для мгновенного поиска в своей поисковой системе.",
+    "description": "Welcome page: core features popup view summary"
   },
   "usageTips": {
     "message": "Советы по использованию",
     "description": "Usage tips title"
   },
-  "smartGestureRecognition": {
-    "message": "Умное распознавание жестов: правильно определяет жесты даже при неточном исполнении, работает во время загрузки страницы",
-    "description": "Smart gesture recognition description"
-  },
-  "tabManagementTitle": {
-    "message": "Управление вкладками",
-    "description": "Tab management title"
-  },
-  "tabManagementDesc": {
-    "message": ": умное обнаружение дубликатов, опциональное автозакрытие, периодическая оптимизация памяти",
-    "description": "Tab management description"
-  },
-  "superDragTitle": {
-    "message": "Супер-перетаскивание",
-    "description": "Super drag title"
-  },
-  "superDragDesc": {
-    "message": ": перетащите ссылки и изображения в новые вкладки, перетащите выделенный текст для поиска",
-    "description": "Super drag description"
-  },
-  "linkPreviewTitle": {
-    "message": "Всплывающий просмотр",
-    "description": "Link preview title"
-  },
-  "linkPreviewDesc": {
-    "message": ": удерживайте клавишу-модификатор (по умолчанию: Shift) при наведении на ссылки для предварительного просмотра целевых страниц во всплывающих окнах",
-    "description": "Link preview description"
-  },
-  "textSelectionPreview": {
-    "message": "Выделите текст и нажмите клавишу-модификатор, чтобы мгновенно найти его во всплывающем окне, с поддержкой пользовательских поисковых систем",
-    "description": "Text selection preview description"
-  },
   "previewTip": {
-    "message": "Вы можете открыть несколько всплывающих окон одновременно",
+    "message": "Держите несколько окон предпросмотра открытыми для сравнения.",
     "description": "Preview tip"
-  },
-  "dragDirection": {
-    "message": "Настройте направление перетаскивания для определения метода открытия вкладок: по умолчанию открывать в фоне",
-    "description": "Drag direction description"
   },
   "debugPanelTitle": {
     "message": "Отладочная информация жестов мыши",
     "description": "Debug panel title"
   },
   "debugPanelDesc": {
-    "message": ": нажмите Alt+D для открытия, анализируйте информацию о жестах в реальном времени, сохраняет состояние",
+    "message": "Нажмите Alt+D, чтобы открыть панель отладки: анализ информации о жестах в реальном времени, состояние сохраняется.",
     "description": "Debug panel description"
   },
-  "oneClickCopy": {
-    "message": "Копирование отладочной информации одним кликом для легкого обмена, с поддержкой нескольких языков",
-    "description": "One click copy description"
-  },
-  "mediaPreview": {
-    "message": "Улучшенный предварительный просмотр медиа: улучшенные эффекты наведения на изображения и оптимизированные постеры видео",
-    "description": "Media preview description"
-  },
-  "adaptiveTheme": {
-    "message": "Адаптивные темы: настраивает визуальный стиль на основе фона страницы, поддерживает светлый/темный режим",
-    "description": "Adaptive theme description"
-  },
   "gestureTrail": {
-    "message": "Следы жестов отображаются на экране с настраиваемым цветом и шириной",
+    "message": "Опциональная траектория и подсказки жестов; цвет и толщина в настройках.",
     "description": "Gesture trail description"
   },
   "clickIcon": {
-    "message": "Нажмите на иконку расширения для включения/отключения функций, настройки языка, темы и многого другого",
+    "message": "Панель: компактное окно, боковая панель (Chrome/Edge) или отдельное окно настроек. Функции, язык, тема, экспорт/импорт.",
     "description": "Click icon description"
   },
   "languageSupport": {
-    "message": "Поддерживает 29 языков, автоматически адаптируется к языку браузера",
+    "message": "29 языков интерфейса; используется сохранённый выбор или язык браузера.",
     "description": "Language support description"
   },
   "enableAutoClose": {
-    "message": "Включите функцию автозакрытия дублирующих вкладок для значительного снижения использования ресурсов браузера",
+    "message": "При обнаружении дубликатов — опционально закрывать повторяющиеся URL.",
     "description": "Enable auto close description"
   },
   "rightClickMacLinux": {
@@ -634,14 +1194,6 @@
   "duplicateTabsDetected": {
     "message": "Найдено $1 дублирующих вкладок",
     "description": "Duplicate tabs detected notification title"
-  },
-  "duplicateTabsCount": {
-    "message": "Имеется $1 дублирующих вкладок",
-    "description": "Duplicate tabs count message"
-  },
-  "duplicateTabsSingle": {
-    "message": "Имеется 1 дублирующая вкладка",
-    "description": "Single duplicate tab message"
   },
   "autoClosedTabs": {
     "message": "Автоматически закрыто $1 дублирующих вкладок",
@@ -659,61 +1211,9 @@
     "message": "Безымянная вкладка",
     "description": "Untitled tab"
   },
-  "morePages": {
-    "message": "...и еще $1 страниц",
-    "description": "More pages tip"
-  },
-  "errorShowDuplicateTabs": {
-    "message": "Ошибка показа уведомления о дублирующих вкладках:",
-    "description": "Error showing duplicate tabs notification"
-  },
-  "errorSendCloseRequest": {
-    "message": "Ошибка отправки запроса на закрытие:",
-    "description": "Error sending close request"
-  },
-  "errorCloseDuplicateTabs": {
-    "message": "Ошибка закрытия дублирующих вкладок:",
-    "description": "Error closing duplicate tabs"
-  },
-  "errorSendIgnoreRequest": {
-    "message": "Ошибка отправки запроса на игнорирование:",
-    "description": "Error sending ignore request"
-  },
-  "errorIgnoreDuplicateTabs": {
-    "message": "Ошибка игнорирования дублирующих вкладок:",
-    "description": "Error ignoring duplicate tabs"
-  },
-  "errorUpdateDebugPanel": {
-    "message": "Ошибка обновления отладочной панели:",
-    "description": "Error updating debug panel"
-  },
   "errorDetectBackgroundColor": {
     "message": "Ошибка определения цвета фона:",
     "description": "Error detecting background color"
-  },
-  "errorDetectImageBorder": {
-    "message": "Ошибка определения радиуса границы изображения:",
-    "description": "Error detecting image border radius"
-  },
-  "errorSetMutationObserver": {
-    "message": "Ошибка установки наблюдателя мутаций:",
-    "description": "Error setting mutation observer"
-  },
-  "errorCheckElementVisibility": {
-    "message": "Ошибка проверки видимости элемента:",
-    "description": "Error checking element visibility"
-  },
-  "errorProcessBorderRadius": {
-    "message": "Ошибка обработки радиуса границы:",
-    "description": "Error processing border radius"
-  },
-  "errorDetectImageBackground": {
-    "message": "Ошибка определения фона изображения:",
-    "description": "Error detecting image background"
-  },
-  "errorShowAutoCloseNotification": {
-    "message": "Ошибка показа уведомления об успешном автозакрытии:",
-    "description": "Error showing auto-close success notification"
   },
   "noForwardPage": {
     "message": "Нет следующей страницы в истории",
@@ -743,10 +1243,6 @@
     "message": "Недопустимый жест",
     "description": "Invalid gesture message"
   },
-  "nextPage": {
-    "message": "Следующая страница",
-    "description": "Next page action"
-  },
   "errorReadPixel": {
     "message": "Ошибка чтения пикселя:",
     "description": "Error reading pixel message"
@@ -758,10 +1254,6 @@
   "errorCanvasDraw": {
     "message": "Ошибка рисования на холсте:",
     "description": "Error drawing on canvas message"
-  },
-  "errorAccessIframe": {
-    "message": "Ошибка доступа к iframe:",
-    "description": "Error accessing iframe message"
   },
   "errorMutationObserver": {
     "message": "Ошибка установки наблюдателя мутаций:",
@@ -791,6 +1283,10 @@
     "message": "Системные настройки",
     "description": "Debug panel system settings section"
   },
+  "debugConsoleLog": {
+    "message": "Журналы консоли",
+    "description": "Debug panel console log toggle label"
+  },
   "debugAngleThreshold": {
     "message": "Порог угла",
     "description": "Debug panel angle threshold setting"
@@ -810,6 +1306,46 @@
   "debugMinGestureComplexity": {
     "message": "Мин. сложность жеста",
     "description": "Debug panel minimum gesture complexity setting"
+  },
+  "debugMinMovementToStartGesture": {
+    "message": "Мин. движение для старта",
+    "description": "Настройка панели отладки: минимальное движение для начала отслеживания жеста"
+  },
+  "debugSmoothingFactor": {
+    "message": "Коэффициент сглаживания",
+    "description": "Настройка панели отладки: коэффициент сглаживания траектории и распознавания"
+  },
+  "debugAngleThresholdHelp": {
+    "message": "Задает, насколько строго движение считается горизонтальным или вертикальным. Более высокие значения требуют более прямого направления; более низкие допускают больше диагонального движения.",
+    "description": "Подсказка порога угла в панели отладки"
+  },
+  "debugDirectionChangeThresholdHelp": {
+    "message": "Задает чувствительность обнаружения смены направления. Более низкие значения легче распознают повороты; более высокие игнорируют мелкое дрожание.",
+    "description": "Подсказка порога смены направления в панели отладки"
+  },
+  "debugMinGestureDistanceHelp": {
+    "message": "Минимальная суммарная дистанция движения, необходимая для распознавания жеста. Увеличьте ее, чтобы уменьшить случайные срабатывания.",
+    "description": "Подсказка минимальной дистанции жеста в панели отладки"
+  },
+  "debugMinDirectionSegmentLengthHelp": {
+    "message": "Минимальная длина сегмента движения для распознавания направления. Увеличьте ее, чтобы фильтровать короткое дрожание; уменьшите для коротких жестов.",
+    "description": "Подсказка минимальной длины сегмента направления в панели отладки"
+  },
+  "debugMinGestureComplexityHelp": {
+    "message": "Порог сложности направлений, после которого траектория считается каракулями или недействительной. Более высокие значения допускают больше поворотов.",
+    "description": "Подсказка сложности жеста в панели отладки"
+  },
+  "debugMinMovementToStartGestureHelp": {
+    "message": "После нажатия кнопки указатель должен сместиться минимум на это число пикселей, прежде чем начнется отслеживание жеста.",
+    "description": "Подсказка минимального движения для старта в панели отладки"
+  },
+  "debugSmoothingFactorHelp": {
+    "message": "Управляет сглаживанием траектории и точек распознавания. Более высокие значения уменьшают дрожание, но могут сгладить резкие повороты; более низкие реагируют быстрее.",
+    "description": "Подсказка коэффициента сглаживания в панели отладки"
+  },
+  "debugConsoleLogHelp": {
+    "message": "Включает подробные журналы расширения в консоли DevTools для устранения неполадок.",
+    "description": "Подсказка журналов консоли в панели отладки"
   },
   "debugLatestGestureInfo": {
     "message": "Информация о последнем жесте",
@@ -850,10 +1386,6 @@
   "debugMergedDirections": {
     "message": "Объединенные направления",
     "description": "Debug panel merged directions"
-  },
-  "debugDirectionDistances": {
-    "message": "Расстояния направлений",
-    "description": "Debug panel direction distances"
   },
   "debugFinalResult": {
     "message": "Финальный результат",
@@ -927,9 +1459,17 @@
     "message": "Показать количество вкладок",
     "description": "Show tab count badge option"
   },
-  "splitViewAction": {
-    "message": "Разделённый вид",
-    "description": "Открыть в окне с разделённым видом"
+  "unlockPageRestrictions": {
+    "message": "Снять ограничения копирования/вставки/ПКМ и отслеживания вкладки",
+    "description": "Setting: unlock page interaction limits"
+  },
+  "unlockPageRestrictionsTitle": {
+    "message": "Снимает типичные блокировки и ослабляет blur/visibility. Контекст страницы, iframe, Shadow DOM. Обновите страницу.",
+    "description": "Tooltip for unlock page restrictions"
+  },
+  "unlockPageRestrictionsOffReloadConfirm": {
+    "message": "В открытых вкладках эффект может сохраняться до перезагрузки.\n\nПерезагрузить текущую вкладку?",
+    "description": "Body text for unlock-off confirmation dialog"
   },
   "splitViewLeft": {
     "message": "Разделить - слева",
@@ -946,5 +1486,165 @@
   "splitViewDown": {
     "message": "Разделить - снизу",
     "description": "Разделённый вид, новое окно в нижней половине"
+  },
+  "unlockPageRestrictionsOffTitle": {
+    "message": "Разблокировка выключена",
+    "description": "Title for unlock-off confirmation dialog"
+  },
+  "unlockPageRestrictionsReloadTab": {
+    "message": "Перезагрузить вкладку",
+    "description": "Reload tab button in unlock-off dialog"
+  },
+  "unlockPageRestrictionsNotNow": {
+    "message": "Не сейчас",
+    "description": "Dismiss unlock-off dialog without reload"
+  },
+  "welcomeBulletImagePreview": {
+    "message": "Предпросмотр изображений: необязательное увеличение при наведении и расширенный режим для сложных вёрсток.",
+    "description": "Welcome page: image hover preview bullet"
+  },
+  "welcomeBulletPageUnlock": {
+    "message": "Снятие ограничений страницы: по желанию ослабить блокировки копирования, вставки, ПКМ и т. п. — включите в настройках и при необходимости перезагрузите страницу.",
+    "description": "Welcome page: page unlock bullet"
+  },
+  "welcomeBulletDisabledSites": {
+    "message": "По сайтам: для указанных доменов отключаются жесты, Super Drag, всплывающий просмотр и снятие ограничений.",
+    "description": "Welcome page: per-site disable bullet"
+  },
+  "welcomeBulletSplitScroll": {
+    "message": "Разделённый вид: при открытии ссылки в разделённом режиме можно синхронизировать прокрутку двух окон (включая горизонтальную).",
+    "description": "Welcome page: split scroll sync bullet"
+  },
+  "welcomeBulletScreenshot": {
+    "message": "Снимки: видимая область, вся страница, ручная прокрутка; области по траектории, горячие клавиши, буфер, предпросмотр и локальная история (0 = без лимита).",
+    "description": "Welcome page: screenshot feature bullet"
+  },
+  "welcomeTipScreenshot": {
+    "message": "Снимки включены по умолчанию; назначьте клавиши для видимой области, всей страницы и прокрутки; опционально области по траектории, автокопия, предпросмотр и история.",
+    "description": "Welcome page: screenshot usage tip"
+  },
+  "trailColorPickerPresets": {
+    "message": "Пресеты",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerRecent": {
+    "message": "Недавние",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerEyedropper": {
+    "message": "Взять с изображения",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerEyedropperActive": {
+    "message": "Клик — выбор · колесо — лупа",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerSyncTrail": {
+    "message": "Сохранить как цвет траектории",
+    "description": "Trail color picker UI"
+  },
+  "superDragCompassPosCompassHub": {
+    "message": "Точка перетаскивания",
+    "description": "Compass hub aligned to drag start"
+  },
+  "superDragCompassPosCompassScreenCenter": {
+    "message": "Центр экрана",
+    "description": "Compass fixed at viewport center"
+  },
+  "superDragCompassPosCompassScreenTop": {
+    "message": "Вверху",
+    "description": "Compass fixed at top of viewport"
+  },
+  "superDragCompassPosCompassScreenRight": {
+    "message": "Справа",
+    "description": "Compass fixed at right of viewport"
+  },
+  "superDragCompassPosCompassScreenBottom": {
+    "message": "Внизу",
+    "description": "Compass fixed at bottom of viewport"
+  },
+  "superDragCompassPosCompassScreenLeft": {
+    "message": "Слева",
+    "description": "Compass fixed at left of viewport"
+  },
+  "superDragCompassPosCompassHidden": {
+    "message": "Скрыть",
+    "description": "Do not show compass"
+  },
+  "addCurrentSiteToDisabledSites": {
+    "message": "Добавить текущий сайт",
+    "description": "Button: add the active tab domain to disabled sites"
+  },
+  "addCurrentSiteToDisabledSitesTitle": {
+    "message": "Добавить домен текущей вкладки в отключённые сайты",
+    "description": "Tooltip for add-current-site button"
+  },
+  "addDisabledSite": {
+    "message": "Добавить",
+    "description": "Button: add a typed disabled site entry"
+  },
+  "disabledSiteInputPlaceholder": {
+    "message": "Домен или полный URL, например youtube.com",
+    "description": "Placeholder for the disabled site input"
+  },
+  "disabledSitesEmpty": {
+    "message": "Отключённых сайтов пока нет.",
+    "description": "Empty state for disabled sites list"
+  },
+  "removeDisabledSite": {
+    "message": "Удалить этот сайт",
+    "description": "Tooltip/aria label for remove disabled site button"
+  },
+  "disabledSiteInvalid": {
+    "message": "Введите допустимый домен или URL",
+    "description": "Error shown when disabled site input is invalid"
+  },
+  "disabledSiteAlreadyExists": {
+    "message": "Сайт уже существует",
+    "description": "Error shown when adding a duplicate disabled site"
+  },
+  "disabledSitesLimitReached": {
+    "message": "Достигнут лимит отключённых сайтов",
+    "description": "Error shown when disabled sites list reaches the maximum size"
+  },
+  "currentSiteUnsupported": {
+    "message": "У текущей вкладки нет поддерживаемого домена",
+    "description": "Error shown when current tab URL cannot be added to disabled sites"
+  },
+  "customKey": {
+    "message": "Пользовательская клавиша",
+    "description": "Custom trigger key option"
+  },
+  "previewTriggerMode": {
+    "message": "Режим запуска",
+    "description": "Popup view trigger mode setting"
+  },
+  "previewTriggerHold": {
+    "message": "Удерживать клавишу запуска",
+    "description": "Hold trigger key option"
+  },
+  "previewTriggerDouble": {
+    "message": "Дважды нажать клавишу запуска",
+    "description": "Double-press trigger key option"
+  },
+  "previewCustomKey": {
+    "message": "Пользовательская клавиша",
+    "description": "Popup view custom trigger key setting"
+  },
+  "previewCustomKeyPlaceholder": {
+    "message": "Нажмите и введите клавишу",
+    "description": "Popup view custom trigger key placeholder"
+  },
+  "previewCustomKeyTitle": {
+    "message": "Нажмите здесь, затем нажмите клавишу, не являющуюся модификатором. Нажмите Esc для очистки.",
+    "description": "Popup view custom trigger key title"
+  },
+  "unlimited": {
+    "message": "Без ограничений",
+    "description": "Unlimited value label"
+  },
+  "settingsFontSize": {
+    "message": "Размер шрифта настроек",
+    "description": "Header button: adjust settings font size"
   }
 }

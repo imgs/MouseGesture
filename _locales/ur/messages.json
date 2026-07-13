@@ -4,7 +4,7 @@
     "description": "توسیع کا نام"
   },
   "extDesc": {
-    "message": "کروم/ایج توسیع جو ماؤس جیسچرز اور سپر ڈریگ فنکشنلٹی اور پاپ اپ وڈو جی حمایت کرتی ہے",
+    "message": "ماؤس اشارے، سپر ڈریگ، تصویر اور لنک کا پیش منظر اور مزید۔",
     "description": "توسیع کی تفصیل"
   },
   "title": {
@@ -35,13 +35,21 @@
     "message": "بائیں کھینچیں",
     "description": "بائیں کھینچنے کا عمل"
   },
-  "openInForeground": {
-    "message": "لنک کو فارگراؤنڈ میں کھولیں",
-    "description": "لنک کو فارگراؤنڈ میں کھولنے کا عمل"
+  "dragUpRight": {
+    "message": "اوپر دائیں گھسیٹیں",
+    "description": "Super drag diagonal direction"
   },
-  "openInBackground": {
-    "message": "لنک کو بیک گراؤنڈ میں کھولیں",
-    "description": "لنک کو بیک گراؤنڈ میں کھولنے کا عمل"
+  "dragDownRight": {
+    "message": "نیچے دائیں گھسیٹیں",
+    "description": "Super drag diagonal direction"
+  },
+  "dragDownLeft": {
+    "message": "نیچے بائیں گھسیٹیں",
+    "description": "Super drag diagonal direction"
+  },
+  "dragUpLeft": {
+    "message": "اوپر بائیں گھسیٹیں",
+    "description": "Super drag diagonal direction"
   },
   "superDragDescription": {
     "message": "سپر ڈریگ لنکس، تصاویر اور منتخب متن کے لیے کام کرتا ہے۔ آپ ہر اشارہ سمت (اوپر/نیچے/بائیں/دائیں) کے لیے کھولنے کا طریقہ سیٹ کر سکتے ہیں، بشمول فار گراؤنڈ، بیک گراؤنڈ یا تقسیم شدہ منظر (بائیں/دائیں/اوپر/نیچے)۔",
@@ -111,6 +119,30 @@
     "message": "دائیں پھر بائیں",
     "description": "دائیں پھر بائیں جیسچر"
   },
+  "rightHoldWheelUp": {
+    "message": "دائیں دبائے رکھیں + وہیل اوپر",
+    "description": "دائیں بٹن دبائے رکھیں اور وہیل اوپر"
+  },
+  "rightHoldWheelDown": {
+    "message": "دائیں دبائے رکھیں + وہیل نیچے",
+    "description": "دائیں بٹن دبائے رکھیں اور وہیل نیچے"
+  },
+  "leftHoldWheelUp": {
+    "message": "بائیں دبا کر + وہیل اوپر",
+    "description": "بائیں بٹن اور وہیل اوپر"
+  },
+  "leftHoldWheelDown": {
+    "message": "بائیں دبا کر + وہیل نیچے",
+    "description": "بائیں بٹن اور وہیل نیچے"
+  },
+  "rightHoldLeftClick": {
+    "message": "دائیں دبائے رکھیں + بائیں کلک",
+    "description": "دائیں بٹن دبائے رکھیں اور بائیں کلک"
+  },
+  "leftHoldRightClick": {
+    "message": "بائیں دبائے رکھیں + دائیں کلک",
+    "description": "بائیں بٹن دبائے رکھیں اور دائیں کلک کریں"
+  },
   "back": {
     "message": "واپس",
     "description": "واپس جانے کا عمل"
@@ -158,6 +190,18 @@
   "prevTab": {
     "message": "پچھلا ٹیب",
     "description": "پچھلے ٹیب پر جانے کا عمل"
+  },
+  "previousActiveTab": {
+    "message": "پچھلا فعال ٹیب",
+    "description": "اشارے کی کارروائی: پہلے فعال رہنے والے ٹیب پر جائیں"
+  },
+  "goToParentUrl": {
+    "message": "والد URL",
+    "description": "اشارے کی کارروائی: والد URL کے راستے پر جائیں"
+  },
+  "goToRootUrl": {
+    "message": "روٹ URL",
+    "description": "اشارے کی کارروائی: سائٹ کے روٹ URL پر جائیں"
   },
   "nextTab": {
     "message": "اگلا ٹیب",
@@ -211,6 +255,14 @@
     "message": "فل سکرین ٹوگل کریں",
     "description": "Toggle fullscreen action"
   },
+  "zoomIn": {
+    "message": "زوم اِن",
+    "description": "موجودہ ٹیب پر زوم بڑھائیں"
+  },
+  "zoomOut": {
+    "message": "زوم آؤٹ",
+    "description": "موجودہ ٹیب پر زوم کم کریں"
+  },
   "closeTabsToLeft": {
     "message": "بائیں طرف کے ٹیبز بند کریں",
     "description": "Close tabs to left action"
@@ -218,6 +270,474 @@
   "reloadAllTabs": {
     "message": "تمام ٹیبز دوبارہ لوڈ کریں",
     "description": "Reload all tabs action"
+  },
+  "stopLoadingAllTabs": {
+    "message": "تمام ٹیبز کی لوڈنگ روکیں",
+    "description": "Stop loading in all tabs"
+  },
+  "screenshotRegion": {
+    "message": "اسکرین شاٹ (ٹریل علاقہ)",
+    "description": "Screenshot gesture action"
+  },
+  "screenshotRegionOrLink": {
+    "message": "اسکرین شاٹ یا لنک کھولیں",
+    "description": "Trail region hint when links are inside selection"
+  },
+  "trailRegionChooseTitle": {
+    "message": "منتخب میں لنکس — اسکرین شاٹ یا کھولیں",
+    "description": "Trail region chooser dialog title"
+  },
+  "trailRegionLinkSingle": {
+    "message": "1 لنک",
+    "description": "Trail region link count"
+  },
+  "trailRegionLinkMultiple": {
+    "message": "{count} لنکس",
+    "description": "Trail region link count"
+  },
+  "trailRegionActionScreenshot": {
+    "message": "اسکرین شاٹ (S)",
+    "description": "Trail region chooser button"
+  },
+  "trailRegionActionOpenLink": {
+    "message": "نئی ٹیب میں کھولیں (O)",
+    "description": "Trail region chooser button"
+  },
+  "trailRegionActionOpenLinks": {
+    "message": "نئی ٹیبز میں کھولیں (O)",
+    "description": "Trail region chooser button"
+  },
+  "trailRegionActionOpenSelected": {
+    "message": "منتخب {n} نئی ٹیبز میں کھولیں (O)",
+    "description": "Trail region open checked links"
+  },
+  "trailRegionActionOpenNone": {
+    "message": "منتخب کھولیں (O)",
+    "description": "Trail region open button when none checked"
+  },
+  "trailRegionActionCopy": {
+    "message": "کاپی کریں (C)",
+    "description": "Trail region chooser copy button"
+  },
+  "trailRegionActionCopySelected": {
+    "message": "منتخب {n} کاپی کریں (C)",
+    "description": "Trail region copy checked links"
+  },
+  "trailRegionActionCopyNone": {
+    "message": "کاپی کریں (C)",
+    "description": "Trail region copy button when none checked"
+  },
+  "trailRegionCopyFailed": {
+    "message": "کاپی ناکام",
+    "description": "Trail region copy to clipboard failed"
+  },
+  "trailRegionSelectAll": {
+    "message": "سب منتخب",
+    "description": "Trail region link list select all"
+  },
+  "trailRegionNoLinkSelected": {
+    "message": "کم از کم ایک لنک منتخب کریں",
+    "description": "Trail region no selection hint"
+  },
+  "trailRegionChooseHint": {
+    "message": "Esc منسوخ · کاپی/کھولنے کے لیے لنکس چیک کریں · کنارے کھینچ کر سائز بدلیں",
+    "description": "Trail region chooser footer"
+  },
+  "trailRegionLinkOpened": {
+    "message": "لنک نئی ٹیب میں کھولا گیا",
+    "description": "Trail region open link feedback"
+  },
+  "trailRegionLinksOpened": {
+    "message": "لنکس نئی ٹیبز میں کھولے گئے",
+    "description": "Trail region open links feedback"
+  },
+  "trailRegionLinksTruncated": {
+    "message": "صرف پہلے {n} لنکس کھولے گئے",
+    "description": "Trail region open links cap"
+  },
+  "screenshotScrollCaptureActive": {
+    "message": "صفحہ دستی اسکرول کریں، پھر وہی شارٹ کٹ یا Esc سے ختم کر کے جوڑیں",
+    "description": "Manual scroll capture in progress"
+  },
+  "screenshotCopied": {
+    "message": "اسکرین شاٹ کلپ بورڈ میں کاپی",
+    "description": "Screenshot feedback"
+  },
+  "screenshotFailed": {
+    "message": "اسکرین شاٹ ناکام",
+    "description": "Screenshot feedback"
+  },
+  "screenshotNeedTrail": {
+    "message": "علاقہ منتخب کرنے کے لیے لمبی ٹریل بنائیں",
+    "description": "Screenshot feedback"
+  },
+  "screenshotUnavailable": {
+    "message": "اسکرین شاٹ ماڈیول دستیاب نہیں",
+    "description": "Screenshot feedback"
+  },
+  "screenshotTopFrameOnly": {
+    "message": "مکمل صفحہ شاٹ صرف مرکزی فریم میں",
+    "description": "Screenshot feedback"
+  },
+  "screenshotFeature": {
+    "message": "اسکرین شاٹ",
+    "description": "Screenshot settings section title"
+  },
+  "enableScreenshotFeature": {
+    "message": "اسکرین شاٹ فعال کریں",
+    "description": "Master toggle for screenshot feature"
+  },
+  "enableScreenshotTrailCapture": {
+    "message": "ٹریل علاقہ (لوپ / خود تقاطع)",
+    "description": "Capture when trail loops or crosses; skipped if another gesture action matches"
+  },
+  "enableScreenshotClipboard": {
+    "message": "خودکار کلپ بورڈ میں کاپی",
+    "description": "Copy screenshot to clipboard after capture"
+  },
+  "enableScreenshotPreview": {
+    "message": "کیپچر کے بعد پیش نظارہ",
+    "description": "Open preview window when a screenshot is captured"
+  },
+  "enableScreenshotHistory": {
+    "message": "اسکرین شاٹ تاریخچہ محفوظ",
+    "description": "Keep captured screenshots in local history"
+  },
+  "screenshotHistoryMaxCount": {
+    "message": "تاریخچہ حد",
+    "description": "Maximum screenshot history entries to keep"
+  },
+  "screenshotHistoryMaxCountHint": {
+    "message": "0 = لامحدود؛ 1–200 حد سے زیادہ پرانے حذف",
+    "description": "Screenshot history limit hint"
+  },
+  "screenshotHistoryUnlimited": {
+    "message": "لامحدود",
+    "description": "Label when screenshot history limit is 0"
+  },
+  "screenshotHistoryView": {
+    "message": "تاریخچہ دیکھیں",
+    "description": "Open screenshot history window"
+  },
+  "screenshotHistoryTitle": {
+    "message": "اسکرین شاٹ تاریخچہ",
+    "description": "Screenshot history window title"
+  },
+  "screenshotHistoryEmpty": {
+    "message": "ابھی کوئی اسکرین شاٹ نہیں",
+    "description": "Empty screenshot history state"
+  },
+  "screenshotHistoryClearAll": {
+    "message": "سب صاف",
+    "description": "Delete all screenshot history entries"
+  },
+  "screenshotHistoryClearConfirm": {
+    "message": "تمام اسکرین شاٹ تاریخچہ حذف کریں؟",
+    "description": "Confirm clearing screenshot history"
+  },
+  "screenshotHistoryDelete": {
+    "message": "حذف",
+    "description": "Delete one screenshot history entry"
+  },
+  "screenshotHistoryPinToPage": {
+    "message": "صفحہ پر پن",
+    "description": "Pin history thumbnail onto the web page"
+  },
+  "screenshotHistoryPinFailed": {
+    "message": "پن نہیں ہوا (ہدف ٹیب کھولیں یا اس سائٹ کی اجازت دیں)۔",
+    "description": "Error when pinning from screenshot history"
+  },
+  "screenshotHistoryCount": {
+    "message": "$1 آئٹمز",
+    "description": "Number of items in screenshot history",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "screenshotHistoryModeViewport": {
+    "message": "نظر آنے والا علاقہ",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeFullPage": {
+    "message": "مکمل صفحہ",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeRegion": {
+    "message": "علاقہ",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeScroll": {
+    "message": "دستی اسکرول",
+    "description": "Screenshot history capture mode label"
+  },
+  "screenshotHistoryModeUnknown": {
+    "message": "اسکرین شاٹ",
+    "description": "Screenshot history capture mode fallback label"
+  },
+  "screenshotDone": {
+    "message": "اسکرین شاٹ تیار",
+    "description": "Hint when capture finished without clipboard copy"
+  },
+  "screenshotPreviewTitle": {
+    "message": "اسکرین شاٹ پیش نظارہ",
+    "description": "Screenshot preview window title"
+  },
+  "screenshotPreviewClose": {
+    "message": "بند",
+    "description": "Close screenshot preview window"
+  },
+  "screenshotPreviewCopyAgain": {
+    "message": "کاپی",
+    "description": "Copy screenshot to clipboard from preview window"
+  },
+  "screenshotPreviewSave": {
+    "message": "فائل کے طور پر محفوظ",
+    "description": "Save annotated screenshot to disk"
+  },
+  "screenshotPreviewSaved": {
+    "message": "محفوظ",
+    "description": "Screenshot file save succeeded"
+  },
+  "screenshotPreviewPinToPage": {
+    "message": "صفحہ پر پن",
+    "description": "Pin annotated screenshot onto the source web page"
+  },
+  "screenshotPreviewPinned": {
+    "message": "پن شدہ",
+    "description": "Screenshot pin placed on page"
+  },
+  "screenshotPreviewPinning": {
+    "message": "پن ہو رہا ہے…",
+    "description": "Screenshot pin in progress"
+  },
+  "screenshotPinTitle": {
+    "message": "اسکرین شاٹ",
+    "description": "Title on pinned screenshot sticker"
+  },
+  "screenshotPinClose": {
+    "message": "پن ہٹائیں",
+    "description": "Close button on pinned screenshot"
+  },
+  "screenshotPinResize": {
+    "message": "سائز بدلیں",
+    "description": "Resize handle on pinned screenshot"
+  },
+  "screenshotPinZoomFit": {
+    "message": "فٹ",
+    "description": "Fit pinned screenshot to view"
+  },
+  "screenshotPinZoomOriginal": {
+    "message": "1:1",
+    "description": "Show pinned screenshot at original pixel size"
+  },
+  "screenshotPinOrderLabel": {
+    "message": "پن $1$",
+    "description": "Pinned screenshot order number",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "screenshotPreviewLoadFailed": {
+    "message": "پیش نظارہ لوڈ نہیں ہوا",
+    "description": "Screenshot preview load error"
+  },
+  "screenshotPreviewZoomFit": {
+    "message": "فٹ",
+    "description": "Fit screenshot to preview window"
+  },
+  "screenshotPreviewZoomFitTitle": {
+    "message": "ونڈو میں فٹ",
+    "description": "Tooltip for fit zoom button"
+  },
+  "screenshotPreviewZoomOneToOne": {
+    "message": "1:1",
+    "description": "Actual-size zoom button label"
+  },
+  "screenshotPreviewZoomOneToOneTitle": {
+    "message": "اصل سائز (1:1)",
+    "description": "Tooltip for 1:1 zoom button"
+  },
+  "screenshotPreviewZoomLevel": {
+    "message": "زوم $1$%",
+    "description": "Current zoom percentage in preview",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "screenshotAnnotHand": {
+    "message": "ہاتھ (منتقل)",
+    "description": "Pan the preview by dragging"
+  },
+  "screenshotAnnotPen": {
+    "message": "قلم",
+    "description": "Annotation tool: freehand"
+  },
+  "screenshotAnnotArrow": {
+    "message": "تیر (Shift: H/V)",
+    "description": "Annotation tool: arrow; Shift constrains to horizontal or vertical"
+  },
+  "screenshotAnnotLine": {
+    "message": "لکیر (Shift: H/V)",
+    "description": "Annotation tool: line; Shift constrains to horizontal or vertical"
+  },
+  "screenshotAnnotRect": {
+    "message": "مستطیل (Shift: مربع)",
+    "description": "Annotation tool: rectangle; Shift draws a square"
+  },
+  "screenshotAnnotEllipse": {
+    "message": "بیضوی",
+    "description": "Annotation tool: ellipse"
+  },
+  "screenshotAnnotRoundRect": {
+    "message": "گول کونے مستطیل",
+    "description": "Annotation tool: rounded rectangle"
+  },
+  "screenshotAnnotHighlighter": {
+    "message": "ہائی لائٹر",
+    "description": "Annotation tool: highlighter marker"
+  },
+  "screenshotAnnotHighlight": {
+    "message": "ہائی لائٹ فریم",
+    "description": "Annotation tool: highlight rectangle"
+  },
+  "screenshotAnnotFillRect": {
+    "message": "بھرا مستطیل",
+    "description": "Annotation tool: filled rectangle"
+  },
+  "screenshotAnnotFillEllipse": {
+    "message": "بھرا بیضوی",
+    "description": "Annotation tool: filled ellipse"
+  },
+  "screenshotAnnotBlur": {
+    "message": "دھندلا",
+    "description": "Annotation tool: blur brush"
+  },
+  "screenshotAnnotArrow2": {
+    "message": "دوہری تیر (Shift: H/V)",
+    "description": "Annotation tool: line with arrowheads at both ends; Shift constrains H/V"
+  },
+  "screenshotAnnotNumber": {
+    "message": "نمبر",
+    "description": "Annotation tool: sequential number markers"
+  },
+  "screenshotAnnotStampStart": {
+    "message": "شروع نمبر",
+    "description": "Starting number for sequential stamps"
+  },
+  "screenshotAnnotStampNext": {
+    "message": "اگلا نمبر: $1$",
+    "description": "Next number stamp to place (tooltip)",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "screenshotAnnotCrop": {
+    "message": "کراپ",
+    "description": "Annotation tool: crop image"
+  },
+  "screenshotAnnotCropApply": {
+    "message": "کراپ لاگو",
+    "description": "Confirm crop selection"
+  },
+  "screenshotAnnotCropCancel": {
+    "message": "منسوخ",
+    "description": "Cancel crop selection"
+  },
+  "screenshotAnnotText": {
+    "message": "متن",
+    "description": "Annotation tool: text"
+  },
+  "screenshotAnnotMosaic": {
+    "message": "موزیک",
+    "description": "Annotation tool: mosaic blur"
+  },
+  "screenshotAnnotEraser": {
+    "message": "ربڑ",
+    "description": "Annotation tool: eraser"
+  },
+  "screenshotAnnotSize": {
+    "message": "سائز",
+    "description": "Annotation stroke size"
+  },
+  "screenshotAnnotResetAll": {
+    "message": "تمام ترامیم ری سیٹ",
+    "description": "Clear all annotations and restore original screenshot"
+  },
+  "screenshotAnnotStepCount": {
+    "message": "$1 / $2",
+    "description": "History step indicator: current / total"
+  },
+  "screenshotAnnotStepCountTitle": {
+    "message": "لاگو مراحل / کل (0 = اصل تصویر)",
+    "description": "Tooltip for history step indicator"
+  },
+  "screenshotAnnotUndo": {
+    "message": "واپس",
+    "description": "Undo annotation"
+  },
+  "screenshotAnnotRedo": {
+    "message": "دوبارہ",
+    "description": "Redo annotation"
+  },
+  "screenshotAnnotTextPlaceholder": {
+    "message": "یہاں لکھیں…",
+    "description": "Placeholder in inline text editor on screenshot preview"
+  },
+  "screenshotOptRegion": {
+    "message": "علاقہ منتخب",
+    "description": "Screenshot bind row: keyboard drag rectangle region"
+  },
+  "screenshotOptViewport": {
+    "message": "نظر آنے والا علاقہ",
+    "description": "Screenshot bind row: current visible tab area"
+  },
+  "screenshotOptFullPage": {
+    "message": "مکمل صفحہ",
+    "description": "Screenshot bind row: full page"
+  },
+  "screenshotOptScrollStitch": {
+    "message": "دستی اسکرول",
+    "description": "Screenshot bind row: manual scroll capture"
+  },
+  "screenshotOptOpenHistory": {
+    "message": "تاریخچہ کھولیں",
+    "description": "Screenshot bind row: keyboard shortcut to open screenshot history"
+  },
+  "screenshotHotkeyPressHint": {
+    "message": "شارٹ کٹ: اوپر فیلڈ کلک، پھر کلیدی مجموعہ (Ctrl / Alt / Meta + حرف یا عدد، یا F1–F12)۔ Esc صاف کرتا ہے۔",
+    "description": "Screenshot section footer: hotkey binding help"
+  },
+  "screenshotHotkeyPlaceholder": {
+    "message": "سیٹ کرنے کے لیے کلک",
+    "description": "Placeholder in empty screenshot hotkey fields"
+  },
+  "screenshotRegionPickHint": {
+    "message": "علاقہ منتخب کرنے کے لیے کھینچیں۔ منسوخ Esc۔",
+    "description": "Hint while keyboard region picker is active"
+  },
+  "screenshotRegionPickFooterHint": {
+    "message": "علاقہ شارٹ کٹ: مستطیل بنائیں اور چھوڑیں۔ لنک ہوں تو شاٹ یا نئی ٹیبز میں کھولیں۔ Esc منسوخ۔",
+    "description": "Screenshot section footer: keyboard region picker help"
+  },
+  "screenshotRegionTooSmall": {
+    "message": "انتخاب بہت چھوٹا — بڑا علاقہ بنائیں",
+    "description": "Region picker: minimum size not met"
+  },
+  "screenshotGestureIntersectHint": {
+    "message": "ٹریل علاقہ: ایک لوپ یا ایک خود تقاطع، پھر چھوڑیں۔ لنک ہوں تو شاٹ یا نئی ٹیبز۔ بہت لوپ = خراب خط۔",
+    "description": "Screenshot section footer: trail region capture help"
   },
   "togglePinTab": {
     "message": "ٹیب پن/انپن کریں",
@@ -244,16 +764,16 @@
     "description": "ترتیبات کا عنوان"
   },
   "customizedBehavior": {
-    "message": "بلاک فہرست",
-    "description": "Block list section title"
+    "message": "غیر فعال سائٹس",
+    "description": "Section title for the per-site disable list"
   },
   "disableMouseGesturesForSites": {
-    "message": "ان سائٹس پر ماؤس جسچر اور سوپر ڈریگ غیر فعال کریں",
-    "description": "Label for the list of sites where gestures and super drag are disabled"
+    "message": "فہرست شدہ ڈومینز پر ایکسٹینشن کی خصوصیات بند کریں",
+    "description": "Subtitle for Disabled sites section"
   },
   "disabledSitesHint": {
-    "message": "ہر سطر پر ایک سائٹ۔ ڈومین (مثلاً youtube.com) یا مکمل URL۔",
-    "description": "Hint for the disabled sites textarea"
+    "message": "اس پر لاگو ہوتا ہے: اشارے، سپر ڈریگ، لنک/تصویر پیش منظر، اسکرین شاٹس اور صفحہ ان لاک۔ موجودہ سائٹ شامل کریں یا ڈومین/URL درج کریں؛ حذف کرنے کے لیے ہٹانے کے نشان پر کلک کریں۔",
+    "description": "Short hint explaining which features the Disabled sites list affects"
   },
   "enableGesture": {
     "message": "ماؤس جیسچرز فعال کریں",
@@ -279,6 +799,26 @@
     "message": "سپر ڈریگ فعال کریں",
     "description": "سپر ڈریگ فعال کرنے کا آپشن"
   },
+  "superDragCompassPosition": {
+    "message": "8 سمتی قطب نما",
+    "description": "Super drag compass display and position"
+  },
+  "superDragCompassPosCompassAbove": {
+    "message": "کھینچ نقطہ کے اوپر",
+    "description": "Compass above drag start, centered horizontally"
+  },
+  "superDragCompassPosCompassRight": {
+    "message": "کھینچ نقطہ کے دائیں",
+    "description": "Compass to the right of drag start, vertically centered"
+  },
+  "superDragCompassPosCompassBelow": {
+    "message": "کھینچ نقطہ کے نیچے",
+    "description": "Compass below drag start, centered horizontally"
+  },
+  "superDragCompassPosCompassLeft": {
+    "message": "کھینچ نقطہ کے بائیں",
+    "description": "Compass to the left of drag start, vertically centered"
+  },
   "enableDragTextSearch": {
     "message": "ڈریگ ٹیکسٹ سرچ فعال کریں",
     "description": "ڈریگ ٹیکسٹ سرچ فعال کرنے کا آپشن"
@@ -287,9 +827,17 @@
     "message": "ڈریگ پر تصویر/فائل خود ڈاؤن لوڈ",
     "description": "When the drag target is an image or other downloadable file, start download automatically"
   },
+  "enableImageDrag": {
+    "message": "تصویر ڈریگ فعال کریں",
+    "description": "Control image super drag independently from image preview"
+  },
   "enableImagePreview": {
     "message": "تصویر پریویو فعال کریں",
     "description": "تصویر پریویو فعال کرنے کا آپشن"
+  },
+  "enableImagePreviewEnhanced": {
+    "message": "بہتر تصویر پریویو",
+    "description": "Support transparent overlay, background-image, parent lookup, etc."
   },
   "enableDuplicateCheck": {
     "message": "ڈپلیکیٹ ٹیبز کا پتہ لگائیں",
@@ -302,10 +850,6 @@
   "enableSmoothScroll": {
     "message": "ہموار سکرول کو فعال کریں",
     "description": "Enable smooth scrolling for gesture actions"
-  },
-  "save": {
-    "message": "محفوظ کریں",
-    "description": "محفوظ کرنے کا بٹن"
   },
   "reset": {
     "message": "ری سیٹ",
@@ -340,7 +884,7 @@
     "description": "Auto-sync information"
   },
   "settingsSaved": {
-    "message": "ترتیبات محفوظ ہو گئیں",
+    "message": "ترتیبات لاگو ہو گئیں",
     "description": "ترتیبات کے محفوظ ہونے کی اطلاع"
   },
   "settingsReset": {
@@ -363,14 +907,6 @@
     "message": "ترتیبات ری سیٹ نہیں ہو سکیں",
     "description": "ترتیبات کے ری سیٹ نہ ہونے کی خرابی کا پیغام"
   },
-  "themeLight": {
-    "message": "لائٹ",
-    "description": "لائٹ تھیم"
-  },
-  "themeDark": {
-    "message": "ڈارک",
-    "description": "ڈارک تھیم"
-  },
   "buyMeACoffee": {
     "message": "مجھے ایک کافی خریدیں",
     "description": "عطیہ دینے کا بٹن"
@@ -379,17 +915,33 @@
     "message": "تھیم تبدیل کریں",
     "description": "تھیم تبدیل کرنے کا بٹن"
   },
-  "toggleLanguage": {
-    "message": "زبان تبدیل کریں",
-    "description": "زبان تبدیل کرنے کا بٹن"
+  "openDetachedPopupTitle": {
+    "message": "ترتیبات سائیڈ پینل میں کھولیں (ورنہ الگ ونڈو)",
+    "description": "ہیڈر بٹن: سائیڈ پینل یا الگ ونڈو میں ترتیبات"
+  },
+  "openDetachedWindowFromSidePanelTitle": {
+    "message": "الگ ونڈو میں کھولیں (براؤزر کے ساتھ)",
+    "description": "سائیڈ پینل: الگ ونڈو اور براؤزر کی ترتیب"
+  },
+  "openOptionsPageTitle": {
+    "message": "اختیارات کا صفحہ کھولیں",
+    "description": "ہیڈر بٹن: ایکسٹینشن کے اختیارات کا صفحہ کھولیں"
   },
   "donationTooltip": {
     "message": "اگر آپ کو یہ کام پسند آیا تو، براہ کرم میری حمایت کریں۔ شکریہ :)",
     "description": "عطیہ دینے کا ٹول ٹپ"
   },
   "rightButtonHint": {
-    "message": "ماؤس کا دایاں بٹن دبائے رکھیں",
+    "message": "دائیں دبائے رکھیں (راستہ، وہیل، کلکس) · بائیں (وہیل)",
     "description": "دائیں بٹن کا ہنٹ"
+  },
+  "builtInGesturesListExpandHint": {
+    "message": "مکمل اشاروں کی فہرست کھولنے کے لیے کلک کریں",
+    "description": "Tooltip on built-in gestures subtitle when list is collapsed"
+  },
+  "builtInGesturesListCollapseHint": {
+    "message": "اشاروں کی فہرست سکیڑنے کے لیے کلک کریں",
+    "description": "Tooltip on built-in gestures subtitle when list is expanded"
   },
   "leftButtonHint": {
     "message": "ماؤس کا بایاں بٹن دبائے رکھیں",
@@ -403,17 +955,45 @@
     "message": "بیک گراؤنڈ میں کھولیں",
     "description": "بیک گراؤنڈ میں کھولنے کا عمل"
   },
+  "popupViewAction": {
+    "message": "پاپ اپ ویو",
+    "description": "Super drag action: open target in popup view"
+  },
+  "incognitoAction": {
+    "message": "پرائیویٹ ونڈو میں کھولیں",
+    "description": "Open in incognito/private window"
+  },
+  "enableSplitScrollSync": {
+    "message": "تقسیم شدہ ونڈوز کے درمیان عمودی اور افقی سکرول ہم آہنگ کریں",
+    "description": "تقسیم شدہ منظر میں دونوں ونڈوز کے سکرول محور میل کریں"
+  },
   "copyAction": {
     "message": "کاپی کریں",
     "description": "Copy selected text or link URL to clipboard"
+  },
+  "downloadAction": {
+    "message": "ڈاؤن لوڈ",
+    "description": "Super drag action: download target"
   },
   "copiedToClipboard": {
     "message": "کلپ بورڈ میں کاپی ہو گیا",
     "description": "Hint after copy action"
   },
-  "dragSearchEngine": {
-    "message": "ڈریگ سرچ انجن URL",
-    "description": "ڈریگ سرچ انجن URL کی ترتیب"
+  "dragSearchEngineSlotLabel": {
+    "message": "ترمیم کا اندراج",
+    "description": "Label for drag search engine slot selector"
+  },
+  "dragSearchSlotDefault": {
+    "message": "طے شدہ (متبادل)",
+    "description": "Default search URL slot in drag search editor"
+  },
+  "dragSearchEngineUrlForSlot": {
+    "message": "سرچ انجن URL",
+    "description": "Label for single drag search URL field"
+  },
+  "dragSearchEnginePerDirectionHelp": {
+    "message": "فہرست میں «طے شدہ» یا گھسیٹنے کی سمت منتخب کریں، پھر متعلقہ URL درست کریں۔ خالی سمتیں طے شدہ استعمال کرتی ہیں۔ صرف گھسیٹے گئے متن کی تلاش پر لاگو۔",
+    "description": "Help text for unified drag search engine editor"
   },
   "linkPreview": {
     "message": "پاپ اپ ویو",
@@ -424,8 +1004,8 @@
     "description": "Quick navigation hover tooltip"
   },
   "linkPreviewHint": {
-    "message": "ہوور + موڈیفائر کی کے ساتھ پاپ اپ دکھائیں",
-    "description": "پاپ اپ ویو کا ہنٹ"
+    "message": "پاپ اپ دکھانے کے لیے ہوور کریں اور ٹرگر استعمال کریں",
+    "description": "Popup view hint"
   },
   "enableLinkPreview": {
     "message": "پاپ اپ ویو فعال کریں",
@@ -495,41 +1075,61 @@
     "message": "سرچ ٹرم کے لیے {q} استعمال کریں، مثال فارمیٹ:",
     "description": "سرچ انجن مثالوں کی تفصیل"
   },
+  "searchExampleUrlClickHint": {
+    "message": "اوپر والا خانہ بھرنے اور محفوظ کرنے کے لیے مثال URL پر کلک کریں",
+    "description": "Tooltip for example search engine URLs (click to fill)"
+  },
+  "searchEngineExamplesUrlClickHint": {
+    "message": "مشورہ: اوپر والا خانہ بھرنے اور محفوظ کرنے کے لیے مثال URL پر کلک کریں۔",
+    "description": "Visible hint under search engine examples (click URL to fill field above and save)"
+  },
   "googleExample": {
-    "message": "گوگل سرچ: https://www.google.com/search?q={q}",
+    "message": "گوگل سرچ:",
+    "description": "گوگل سرچ کی مثال"
+  },
+  "googleExampleUrl": {
+    "message": "https://www.google.com/search?q={q}",
     "description": "گوگل سرچ کی مثال"
   },
   "googleTranslateExample": {
-    "message": "گوگل ٹرانسلیٹ: https://translate.google.com/?sl=auto&tl=ur&text={q}&op=translate",
+    "message": "گوگل ٹرانسلیٹ:",
+    "description": "گوگل ٹرانسلیٹ کی مثال"
+  },
+  "googleTranslateExampleUrl": {
+    "message": "https://translate.google.com/?sl=auto&tl=ur&text={q}&op=translate",
     "description": "گوگل ٹرانسلیٹ کی مثال"
   },
   "localSearchExample": {
-    "message": "مثال: https://www.google.com.pk/search?q={q}",
+    "message": "مثال:",
+    "description": "لوکل سرچ URL کی مثال"
+  },
+  "localSearchExampleUrl": {
+    "message": "https://www.google.com.pk/search?q={q}",
     "description": "لوکل سرچ URL کی مثال"
   },
   "bingExample": {
-    "message": "بنگ سرچ: https://www.bing.com/search?q={q}",
+    "message": "بنگ سرچ:",
+    "description": "بنگ سرچ کی مثال"
+  },
+  "bingExampleUrl": {
+    "message": "https://www.bing.com/search?q={q}",
     "description": "بنگ سرچ کی مثال"
   },
   "wheelTip": {
-    "message": "ویلیو ایڈجسٹ کرنے کے لیے ماؤس وہیل استعمال کریں",
+    "message": "اس قطار پر تقریباً 1.5 سیکنڈ ہوور کریں، پھر وہیل سے ایڈجسٹ کریں",
     "description": "وہیل کا ٹپ"
   },
   "modifierKeyDelayTip": {
-    "message": "موڈیفائر کی استعمال کرتے وقت، زیادہ سے زیادہ ڈیلے 300ms پر سیٹ ہوتا ہے",
-    "description": "موڈیفائر کی ڈیلے کا ٹپ"
+    "message": "ٹرگر کی شرط پوری ہونے کے بعد تاخیر شروع ہوتی ہے؛ غیر ارادی پیش منظر سے بچنے کے لیے اسے بڑھائیں۔",
+    "description": "Modifier key delay tip"
   },
   "welcomeTitle": {
-    "message": "ماؤس جیسچرز توسیع میں خوش آمدید",
+    "message": "ماؤس اشاروں کی توسیع میں خوش آمدید",
     "description": "خوش آمدید پیج کا عنوان"
   },
   "welcomeDescription": {
-    "message": "ماؤس جیسچرز توسیع انسٹال کرنے کے لیے شکریہ! یہ توسیع ماؤس جیسچرز کی بھرپور فعالیت، ذہین ٹیب مینجمنٹ، پاپ اپ ونڈو کی صلاحیتیں اور بہتر بصری تجربہ فراہم کرتی ہے تاکہ آپ ویب کو زیادہ مؤثر طریقے سے براؤز کر سکیں۔ ہم نے جیسچر ریکگنیشن الگورتھم کو زیادہ ایرر ٹالرنس کے ساتھ بہتر بنایا ہے، جس سے جیسچرز کو درست طور پر پہچانا جا سکتا ہے چاہے وہ مکمل طور پر درست نہ ہوں۔ نیا پاپ اپ ونڈو فیچر آپ کو ٹیبز سوئچ کیے بغیر لنک مواد پاپ اپ ونڈوز میں دیکھنے کی اجازت دیتا ہے۔ توسیع 29 زبانوں اور لائٹ/ڈارک تھیمز کی بھی حمایت کرتی ہے تاکہ صارف کا تجربہ مزید بہتر ہو سکے۔",
+    "message": "Mouse Gesture انسٹال کرنے کا شکریہ! نیویگیشن، ٹیبز اور سکرول کے لیے دایاں بٹن دبا کر کھینچیں; دائیں یا بائیں کے ساتھ وہیل (ترتیبات میں مزید مجموعے) اضافی شارٹ کٹس کے لیے — شناخت برداشت کار رہتی ہے، صفحہ لوڈ کے دوران بھی۔ Super Drag لنکس، تصاویر اور متن تلاش کو سمت کے حساب سے کھولتا ہے (پیش منظر، پس منظر، تقسیم شدہ ترتیب، کلپ بورڈ پر کاپی وغیرہ)۔ Popup View لنک پیش نظارہ یا منتخب متن کو چھوٹی ونڈوز میں تلاش کرتا ہے۔ اختیاری: ہوور پر تصویر پیش نظارہ (توسیعی موڈ)، ڈپلیکیٹ ٹیبز کی شناخت اور خودکار بند، ہموار سکرول، ٹول بار پر ٹیب گنتی بیج، اور محدود سائٹس پر صفحہ ان لاک۔ ٹول بار سے ترتیبات (پاپ اپ، سائیڈ پینل یا علیحدہ ونڈو); برآمد/درآمد; براؤزر اکاؤنٹ سے ہم آہنگی۔ 29 زبانیں اور روشن/گہرا تھیم۔",
     "description": "خوش آمدید پیج کی تفصیل"
-  },
-  "gesturesDescription": {
-    "message": "ذیل میں، ماؤس کے دائیں بٹن سے ڈریگ کر کے استعمال کرنے کے لیے پہلے سے سیٹ ماؤس جیسچرز ہیں:",
-    "description": "جیسچرز کی تفصیل"
   },
   "extensionName": {
     "message": "ماؤس جیسچرز توسیع",
@@ -539,88 +1139,48 @@
     "message": "کور فیچرز",
     "description": "کور فیچرز کا عنوان"
   },
-  "utilitiesFeatures": {
-    "message": "یوٹیلیٹیز",
-    "description": "یوٹیلیٹیز کا عنوان"
+  "welcomeCoreGestureBlock": {
+    "message": "ماؤس کے اشارے: دائیں دبا کر کھینچیں؛ دائیں یا بائیں دبائے وہیل اور دائیں دبائے کلک کے مجموعے — ترتیبات میں دوبارہ تفویض؛ بردبار پہچان، لوڈ کے دوران بھی۔",
+    "description": "Welcome page: core features gesture summary"
+  },
+  "welcomeCoreSuperDragBlock": {
+    "message": "سپر ڈریگ: لنکس اور تصاویر نئی ٹیبز میں کھینچیں، منتخب متن تلاش کے لیے؛ سمت ٹیب کھولنے کا طریقہ طے کرتی ہے؛ طے شدہ پس منظر۔",
+    "description": "Welcome page: core features super drag summary"
+  },
+  "welcomeCorePopupViewBlock": {
+    "message": "پاپ اپ منظر: لنک پر ٹرگر کلید (طے شدہ Shift) دبائے رکھیں چھوٹی ونڈو میں پیش نظارہ؛ متن منتخب کرنے کے بعد فوری تلاش اپنی تلاش انجن سے۔",
+    "description": "Welcome page: core features popup view summary"
   },
   "usageTips": {
     "message": "استعمال کے ٹپس",
     "description": "استعمال کے ٹپس کا عنوان"
   },
-  "smartGestureRecognition": {
-    "message": "سمارٹ جیسچر ریکگنیشن: جیسچرز بالکل مکمل نہ ہونے پر بھی درست طریقے سے پہچانے جاتے ہیں، پیج لوڈ ہوتے وقت کام کرتا ہے",
-    "description": "سمارٹ جیسچر ریکگنیشن کی تفصیل"
-  },
-  "tabManagementTitle": {
-    "message": "ٹیب مینجمنٹ",
-    "description": "ٹیب مینجمنٹ کا عنوان"
-  },
-  "tabManagementDesc": {
-    "message": ": ڈپلیکیٹ ٹیب ڈٹیکشن، آپشنل آٹو کلوزنگ، پیریڈک میموری آپٹیمائزیشن",
-    "description": "ٹیب مینجمنٹ کی تفصیل"
-  },
-  "superDragTitle": {
-    "message": "سپر ڈریگ",
-    "description": "سپر ڈریگ کا عنوان"
-  },
-  "superDragDesc": {
-    "message": ": لنکس اور تصاویر کو نئے ٹیبز میں ڈریگ کریں، منتخب متن کو سرچ کے لیے ڈریگ کریں",
-    "description": "سپر ڈریگ کی تفصیل"
-  },
-  "linkPreviewTitle": {
-    "message": "پاپ اپ ویو",
-    "description": "لنک پریویو کا عنوان"
-  },
-  "linkPreviewDesc": {
-    "message": ": لنکس پر ہوور کرتے وقت موڈیفائر کی (ڈیفالٹ: شفٹ) دبائے رکھیں تاکہ ٹارگٹ پیجز کو پاپ اپ ونڈوز میں دیکھ سکیں",
-    "description": "لنک پریویو کی تفصیل"
-  },
-  "textSelectionPreview": {
-    "message": "متن منتخب کریں اور موڈیفائر کی دبا کر کسٹم سرچ انجن سپورٹ کے ساتھ پاپ اپ ونڈو میں فوری طور پر سرچ کریں",
-    "description": "ٹیکسٹ سلیکشن پریویو کی تفصیل"
-  },
   "previewTip": {
-    "message": "آپ ایک ہی وقت میں متعدد پاپ اپ ونڈوز کھول سکتے ہیں",
+    "message": "موازنہ کے لیے کئی پیش نظارے کھلے رکھ سکتے ہیں۔",
     "description": "پریویو کا ٹپ"
-  },
-  "dragDirection": {
-    "message": "ٹیب کھلنے کے طریقے کا تعین کرنے کے لیے ڈریگ کی سمت کسٹمائز کریں: ڈیفالٹ طور پر بیک گراؤنڈ میں کھولیں",
-    "description": "ڈریگ کی سمت کی تفصیل"
   },
   "debugPanelTitle": {
     "message": "ماؤس جیسچرز ڈیبگ معلومات",
     "description": "ڈیبگ پینل کا عنوان"
   },
   "debugPanelDesc": {
-    "message": ": کھولنے کے لیے Alt+D دبائیں، ریل ٹائم جیسچر معلومات کا تجزیہ کریں، حالت برقرار رکھیں",
+    "message": "ڈیبگ پینل کھولنے کے لیے Alt+D دبائیں، اشاروں کی معلومات حقیقی وقت میں تجزیہ، حالت برقرار رہتی ہے۔",
     "description": "ڈیبگ پینل کی تفصیل"
   },
-  "oneClickCopy": {
-    "message": "آسان شیئرنگ کے لیے ڈیبگ معلومات کو ایک کلک میں کاپی کریں، ملٹی لینگویج سپورٹ کے ساتھ",
-    "description": "ایک کلک کاپی کی تفصیل"
-  },
-  "mediaPreview": {
-    "message": "بہتر میڈیا پریویو: بہتر تصویر ہوور افیکٹس اور آپٹیمائزڈ ویڈیو تھمب نیلز",
-    "description": "میڈیا پریویو کی تفصیل"
-  },
-  "adaptiveTheme": {
-    "message": "ایڈیپٹیو تھیمز: پیج بیک گراؤنڈ کے مطابق ویژوئل سٹائل ایڈجسٹ کرتا ہے، لائٹ/ڈارک موڈ سپورٹ",
-    "description": "ایڈیپٹیو تھیم کی تفصیل"
-  },
   "gestureTrail": {
-    "message": "جیسچر ٹریلز اسکرین پر کسٹمائز ایبل رنگ اور چوڑائی کے ساتھ دکھائی جاتی ہیں",
+    "message": "اختیاری ٹریل اور اشارے؛ ترتیبات میں رنگ اور موٹائی۔",
     "description": "جیسچر ٹریل کی تفصیل"
   },
   "clickIcon": {
-    "message": "فیچرز کو فعال/غیرفعال کرنے، زبان سیٹ کرنے، تھیم اور مزید کے لیے توسیع آئیکن پر کلک کریں",
+    "message": "ٹول بار: کمپیکٹ پاپ اپ، سائیڈ پینل (Chrome/Edge)، یا الگ ترتیبات۔ خصوصیات، زبان، تھیم، برآمد/درآمد۔",
     "description": "آئیکن کلک کی تفصیل"
   },
   "languageSupport": {
-    "message": "29 زبان سپورٹ کرتا ہے، براؤزر کی زبان کے مطابق خودکار طور پر ایڈجسٹ ہوتا ہے",
+    "message": "29 انٹرفیس زبانیں؛ محفوظ کردہ انتخاب استعمال کرتی ہیں یا براؤزر کی زبان پر چلتی ہیں۔",
     "description": "زبان کی سپورٹ کی تفصیل"
   },
   "enableAutoClose": {
-    "message": "براؤزر ریسورس استعمال کو نمایاں طور پر کم کرنے کے لیے ڈپلیکیٹ ٹیبز کو خودکار بند کرنے کا فیچر فعال کریں",
+    "message": "ڈپلیکیٹ پر دہرائے URL خود بند (اختیاری)۔",
     "description": "آٹو کلوز فعال کرنے کی تفصیل"
   },
   "rightClickMacLinux": {
@@ -634,14 +1194,6 @@
   "duplicateTabsDetected": {
     "message": "$1 ڈپلیکیٹ ٹیبز ملیں",
     "description": "ڈپلیکیٹ ٹیبز کی ڈٹیکشن کی اطلاع کا عنوان"
-  },
-  "duplicateTabsCount": {
-    "message": "$1 ڈپلیکیٹ ٹیبز ہیں",
-    "description": "ڈپلیکیٹ ٹیبز کی تعداد کا پیغام"
-  },
-  "duplicateTabsSingle": {
-    "message": "1 ڈپلیکیٹ ٹیب ہے",
-    "description": "ایک ڈپلیکیٹ ٹیب کا پیغام"
   },
   "autoClosedTabs": {
     "message": "$1 ڈپلیکیٹ ٹیبز خودکار طور پر بند ہو گئے",
@@ -659,61 +1211,9 @@
     "message": "بے عنوان ٹیب",
     "description": "بے عنوان ٹیب"
   },
-  "morePages": {
-    "message": "...اور $1 مزید پیجز",
-    "description": "مزید پیجز کا ٹپ"
-  },
-  "errorShowDuplicateTabs": {
-    "message": "ڈپلیکیٹ ٹیبز کی اطلاع دکھانے میں خرابی:",
-    "description": "ڈپلیکیٹ ٹیبز کی اطلاع دکھانے میں خرابی کا پیغام"
-  },
-  "errorSendCloseRequest": {
-    "message": "کلوز ریکویسٹ بھیجنے میں خرابی:",
-    "description": "کلوز ریکویسٹ بھیجنے میں خرابی کا پیغام"
-  },
-  "errorCloseDuplicateTabs": {
-    "message": "ڈپلیکیٹ ٹیبز بند کرنے میں خرابی:",
-    "description": "ڈپلیکیٹ ٹیبز بند کرنے میں خرابی کا پیغام"
-  },
-  "errorSendIgnoreRequest": {
-    "message": "انور ریکویسٹ بھیجنے میں خرابی:",
-    "description": "انور ریکویسٹ بھیجنے میں خرابی کا پیغام"
-  },
-  "errorIgnoreDuplicateTabs": {
-    "message": "ڈپلیکیٹ ٹیبز نظر انداز کرنے میں خرابی:",
-    "description": "ڈپلیکیٹ ٹیبز نظر انداز کرنے میں خرابی کا پیغام"
-  },
-  "errorUpdateDebugPanel": {
-    "message": "ڈیبگ پینل اپڈیٹ کرنے میں خرابی:",
-    "description": "ڈیبگ پینل اپڈیٹ کرنے میں خرابی کا پیغام"
-  },
   "errorDetectBackgroundColor": {
     "message": "بیک گراؤنڈ کلر ڈٹیکٹ کرنے میں خرابی:",
     "description": "بیک گراؤنڈ کلر ڈٹیکٹ کرنے میں خرابی کا پیغام"
-  },
-  "errorDetectImageBorder": {
-    "message": "تصویر بارڈر ریڈیس ڈٹیکٹ کرنے میں خرابی:",
-    "description": "تصویر بارڈر ریڈیس ڈٹیکٹ کرنے میں خرابی کا پیغام"
-  },
-  "errorSetMutationObserver": {
-    "message": "میوٹیشن آبزرور سیٹ کرنے میں خرابی:",
-    "description": "میوٹیشن آبزرور سیٹ کرنے میں خرابی کا پیغام"
-  },
-  "errorCheckElementVisibility": {
-    "message": "ایلیمنٹ وزیبلٹی چیک کرنے میں خرابی:",
-    "description": "ایلیمنٹ وزیبلٹی چیک کرنے میں خرابی کا پیغام"
-  },
-  "errorProcessBorderRadius": {
-    "message": "بارڈر ریڈیس پروسیس کرنے میں خرابی:",
-    "description": "بارڈر ریڈیس پروسیس کرنے میں خرابی کا پیغام"
-  },
-  "errorDetectImageBackground": {
-    "message": "تصویر بیک گراؤنڈ ڈٹیکٹ کرنے میں خرابی:",
-    "description": "تصویر بیک گراؤنڈ ڈٹیکٹ کرنے میں خرابی کا پیغام"
-  },
-  "errorShowAutoCloseNotification": {
-    "message": "آٹو کلوز کامیابی کی اطلاع دکھانے میں خرابی:",
-    "description": "آٹو کلوز کامیابی کی اطلاع دکھانے میں خرابی کا پیغام"
   },
   "noForwardPage": {
     "message": "ہسٹری میں آگے کا پیج نہیں ہے",
@@ -743,10 +1243,6 @@
     "message": "غلط جیسچر",
     "description": "غلط جیسچر کا پیغام"
   },
-  "nextPage": {
-    "message": "اگلا پیج",
-    "description": "اگلے پیج کا عمل"
-  },
   "errorReadPixel": {
     "message": "پکسل پڑھنے میں خرابی:",
     "description": "پکسل پڑھنے میں خرابی کا پیغام"
@@ -758,10 +1254,6 @@
   "errorCanvasDraw": {
     "message": "کینوس پر ڈرا کرنے میں خرابی:",
     "description": "کینوس پر ڈرا کرنے میں خرابی کا پیغام"
-  },
-  "errorAccessIframe": {
-    "message": "iframe تک رسائی میں خرابی:",
-    "description": "iframe تک رسائی میں خرابی کا پیغام"
   },
   "errorMutationObserver": {
     "message": "میوٹیشن آبزرور سیٹ کرنے میں خرابی:",
@@ -791,6 +1283,10 @@
     "message": "سسٹم سیٹنگز",
     "description": "ڈیبگ پینل سسٹم سیٹنگز سیکشن"
   },
+  "debugConsoleLog": {
+    "message": "کنسول لاگز",
+    "description": "Debug panel console log toggle label"
+  },
   "debugAngleThreshold": {
     "message": "اینگل تھریشولڈ",
     "description": "ڈیبگ پینل اینگل تھریشولڈ سیٹنگ"
@@ -810,6 +1306,46 @@
   "debugMinGestureComplexity": {
     "message": "مینیمم جیسچر کمپلیکسٹی",
     "description": "ڈیبگ پینل مینیمم جیسچر کمپلیکسٹی سیٹنگ"
+  },
+  "debugMinMovementToStartGesture": {
+    "message": "شروع کے لیے کم از کم حرکت",
+    "description": "ڈیبگ پینل سیٹنگ: اشارے کی ٹریکنگ شروع کرنے کے لیے کم از کم حرکت"
+  },
+  "debugSmoothingFactor": {
+    "message": "ہمواری کا عامل",
+    "description": "ڈیبگ پینل سیٹنگ: راستے اور شناخت کی ہمواری کا عامل"
+  },
+  "debugAngleThresholdHelp": {
+    "message": "یہ کنٹرول کرتا ہے کہ حرکت کو افقی یا عمودی کتنی سختی سے سمجھا جائے۔ زیادہ قدر زیادہ سیدھی سمت چاہتی ہے؛ کم قدر زیادہ ترچھی حرکت قبول کرتی ہے۔",
+    "description": "ڈیبگ پینل زاویہ حد کی وضاحت"
+  },
+  "debugDirectionChangeThresholdHelp": {
+    "message": "سمت کی تبدیلی کی شناخت کی حساسیت کنٹرول کرتا ہے۔ کم قدر موڑ آسانی سے پکڑتی ہے؛ زیادہ قدر چھوٹی لرزش کو نظر انداز کرتی ہے۔",
+    "description": "ڈیبگ پینل سمت تبدیلی حد کی وضاحت"
+  },
+  "debugMinGestureDistanceHelp": {
+    "message": "اشارے کی شناخت سے پہلے مطلوب کم از کم کل حرکت کا فاصلہ۔ غیر ارادی ٹرگر کم کرنے کے لیے اسے بڑھائیں۔",
+    "description": "ڈیبگ پینل کم از کم اشارہ فاصلہ وضاحت"
+  },
+  "debugMinDirectionSegmentLengthHelp": {
+    "message": "سمت کی شناخت میں استعمال ہونے والے حرکت کے حصے کی کم از کم لمبائی۔ چھوٹی لرزش فلٹر کرنے کے لیے بڑھائیں، مختصر اشاروں کے لیے کم کریں۔",
+    "description": "ڈیبگ پینل کم از کم سمت حصہ لمبائی وضاحت"
+  },
+  "debugMinGestureComplexityHelp": {
+    "message": "سمت کی پیچیدگی کی حد جس کے بعد راستہ scribbling یا غلط سمجھا جاتا ہے۔ زیادہ قدر زیادہ موڑ برداشت کرتی ہے۔",
+    "description": "ڈیبگ پینل اشارہ پیچیدگی وضاحت"
+  },
+  "debugMinMovementToStartGestureHelp": {
+    "message": "بٹن دبانے کے بعد اشارے کی ٹریکنگ شروع ہونے سے پہلے پوائنٹر کو کم از کم اتنے پکسل حرکت کرنا ہوگی۔",
+    "description": "ڈیبگ پینل شروع کرنے کی کم از کم حرکت وضاحت"
+  },
+  "debugSmoothingFactorHelp": {
+    "message": "راستے اور شناختی نقاط کی ہمواری کنٹرول کرتا ہے۔ زیادہ قدر لرزش کم کرتی ہے مگر تیز موڑ نرم کر سکتی ہے؛ کم قدر تیز ردعمل دیتی ہے۔",
+    "description": "ڈیبگ پینل ہمواری عامل وضاحت"
+  },
+  "debugConsoleLogHelp": {
+    "message": "مسائل حل کرنے کے لیے DevTools کنسول میں ایکسٹینشن کے تفصیلی لاگ فعال کریں۔",
+    "description": "ڈیبگ پینل کنسول لاگ وضاحت"
   },
   "debugLatestGestureInfo": {
     "message": "تازہ ترین جیسچر معلومات",
@@ -850,10 +1386,6 @@
   "debugMergedDirections": {
     "message": "مرجڈ ڈائریکشنز",
     "description": "ڈیبگ پینل مرجڈ ڈائریکشنز"
-  },
-  "debugDirectionDistances": {
-    "message": "ڈائریکشن ڈسٹنسز",
-    "description": "ڈیبگ پینل ڈائریکشن ڈسٹنسز"
   },
   "debugFinalResult": {
     "message": "فائنل ریزلٹ",
@@ -927,9 +1459,17 @@
     "message": "ٹیب کا ڈیگر لکھیں",
     "description": "Show tab count badge option"
   },
-  "splitViewAction": {
-    "message": "تقسیم شدہ منظر",
-    "description": "تقسیم شدہ منظر کی ونڈو میں کھولیں"
+  "unlockPageRestrictions": {
+    "message": "کاپی/پیسٹ/دائیں کلک اور ٹیب ٹریکنگ کی پابندیاں ہٹائیں",
+    "description": "Setting: unlock page interaction limits"
+  },
+  "unlockPageRestrictionsTitle": {
+    "message": "کاپی، پیسٹ، سیاق مینو اور متن کی منتخبی رکاوٹیں کم کرتا ہے؛ blur/visibilitychange ٹریکنگ کم کرتا ہے۔ صفحے کے سیاق میں چلتا ہے؛ iframes اور Shadow DOM۔ چالو کرنے کے بعد صفحہ ری لوڈ کریں۔",
+    "description": "Tooltip for unlock page restrictions"
+  },
+  "unlockPageRestrictionsOffReloadConfirm": {
+    "message": "کھلے ٹیبز میں انجیکٹڈ منطق ری لوڈ تک رہ سکتی ہے۔\n\nابھی موجودہ ٹیب ری لوڈ کریں؟",
+    "description": "Body text for unlock-off confirmation dialog"
   },
   "splitViewLeft": {
     "message": "تقسیم - بائیں",
@@ -946,5 +1486,165 @@
   "splitViewDown": {
     "message": "تقسیم - نیچے",
     "description": "تقسیم شدہ منظر، نیچے والے نصف میں نئی ونڈو"
+  },
+  "unlockPageRestrictionsOffTitle": {
+    "message": "صفحہ ان لاک بند",
+    "description": "Title for unlock-off confirmation dialog"
+  },
+  "unlockPageRestrictionsReloadTab": {
+    "message": "ٹیب ری لوڈ",
+    "description": "Reload tab button in unlock-off dialog"
+  },
+  "unlockPageRestrictionsNotNow": {
+    "message": "ابھی نہیں",
+    "description": "Dismiss unlock-off dialog without reload"
+  },
+  "welcomeBulletImagePreview": {
+    "message": "تصویر پیش نظارہ: اختیاری ہوور زوم اور پیچیدہ ترتیب کے لیے توسیعی موڈ۔",
+    "description": "Welcome page: image hover preview bullet"
+  },
+  "welcomeBulletPageUnlock": {
+    "message": "صفحہ ان لاک: اختیاری طور پر کاپی، پیسٹ، دایاں کلک وغیرہ کی پابندیاں نرم کریں — ترتیبات میں چالو کریں اور اشارہ پر صفحہ دوبارہ لوڈ کریں۔",
+    "description": "Welcome page: page unlock bullet"
+  },
+  "welcomeBulletDisabledSites": {
+    "message": "فی سائٹ: فہرست شدہ ڈومینز پر اشارے، سپر ڈریگ، پاپ اپ اور ان لاک ایک ساتھ بند۔",
+    "description": "Welcome page: per-site disable bullet"
+  },
+  "welcomeBulletSplitScroll": {
+    "message": "تقسیم شدہ منظر: لنک تقسیم شدہ ترتیب میں کھلے تو دونوں ونڈوز کے درمیان سکرول ہم آہنگ (افقی سمیت)۔",
+    "description": "Welcome page: split scroll sync bullet"
+  },
+  "welcomeBulletScreenshot": {
+    "message": "اسکرین شاٹ: نظر آنے والا علاقہ، مکمل صفحہ، دستی اسکرول؛ ٹریل علاقہ، شارٹ کٹ، کلپ بورڈ، پیش نظارہ، مقامی تاریخچہ (0 = لامحدود)۔",
+    "description": "Welcome page: screenshot feature bullet"
+  },
+  "welcomeTipScreenshot": {
+    "message": "شاٹ ڈیفالٹ پر؛ علاقے، مکمل صفحہ، اسکرول کے شارٹ کٹ؛ ٹریل علاقہ، خود کاپی، پیش نظارہ، تاریخچہ اختیاری۔",
+    "description": "Welcome page: screenshot usage tip"
+  },
+  "trailColorPickerPresets": {
+    "message": "پری سیٹ",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerRecent": {
+    "message": "حالیہ",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerEyedropper": {
+    "message": "تصویر سے رنگ",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerEyedropperActive": {
+    "message": "چننے کلک · پہیہ سے لوپا زوم",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerSyncTrail": {
+    "message": "ٹریل رنگ کے طور پر محفوظ",
+    "description": "Trail color picker UI"
+  },
+  "superDragCompassPosCompassHub": {
+    "message": "کھینچ نقطہ",
+    "description": "Compass hub aligned to drag start"
+  },
+  "superDragCompassPosCompassScreenCenter": {
+    "message": "اسکرین مرکز",
+    "description": "Compass fixed at viewport center"
+  },
+  "superDragCompassPosCompassScreenTop": {
+    "message": "اوپر",
+    "description": "Compass fixed at top of viewport"
+  },
+  "superDragCompassPosCompassScreenRight": {
+    "message": "دائیں",
+    "description": "Compass fixed at right of viewport"
+  },
+  "superDragCompassPosCompassScreenBottom": {
+    "message": "نیچے",
+    "description": "Compass fixed at bottom of viewport"
+  },
+  "superDragCompassPosCompassScreenLeft": {
+    "message": "بائیں",
+    "description": "Compass fixed at left of viewport"
+  },
+  "superDragCompassPosCompassHidden": {
+    "message": "پوشیدہ",
+    "description": "Do not show compass"
+  },
+  "addCurrentSiteToDisabledSites": {
+    "message": "موجودہ سائٹ شامل کریں",
+    "description": "Button: add the active tab domain to disabled sites"
+  },
+  "addCurrentSiteToDisabledSitesTitle": {
+    "message": "موجودہ ٹیب کا ڈومین غیر فعال سائٹس میں شامل کریں",
+    "description": "Tooltip for add-current-site button"
+  },
+  "addDisabledSite": {
+    "message": "شامل کریں",
+    "description": "Button: add a typed disabled site entry"
+  },
+  "disabledSiteInputPlaceholder": {
+    "message": "ڈومین یا مکمل URL، مثلاً youtube.com",
+    "description": "Placeholder for the disabled site input"
+  },
+  "disabledSitesEmpty": {
+    "message": "ابھی کوئی غیر فعال سائٹ نہیں۔",
+    "description": "Empty state for disabled sites list"
+  },
+  "removeDisabledSite": {
+    "message": "یہ سائٹ ہٹائیں",
+    "description": "Tooltip/aria label for remove disabled site button"
+  },
+  "disabledSiteInvalid": {
+    "message": "درست ڈومین یا URL درج کریں",
+    "description": "Error shown when disabled site input is invalid"
+  },
+  "disabledSiteAlreadyExists": {
+    "message": "سائٹ پہلے سے موجود ہے",
+    "description": "Error shown when adding a duplicate disabled site"
+  },
+  "disabledSitesLimitReached": {
+    "message": "غیر فعال سائٹس کی حد پوری ہو گئی",
+    "description": "Error shown when disabled sites list reaches the maximum size"
+  },
+  "currentSiteUnsupported": {
+    "message": "موجودہ ٹیب میں معاون ڈومین نہیں ہے",
+    "description": "Error shown when current tab URL cannot be added to disabled sites"
+  },
+  "customKey": {
+    "message": "حسب ضرورت کلید",
+    "description": "Custom trigger key option"
+  },
+  "previewTriggerMode": {
+    "message": "ٹرگر موڈ",
+    "description": "Popup view trigger mode setting"
+  },
+  "previewTriggerHold": {
+    "message": "ٹرگر کلید دبائے رکھیں",
+    "description": "Hold trigger key option"
+  },
+  "previewTriggerDouble": {
+    "message": "ٹرگر کلید دو بار دبائیں",
+    "description": "Double-press trigger key option"
+  },
+  "previewCustomKey": {
+    "message": "حسب ضرورت کلید",
+    "description": "Popup view custom trigger key setting"
+  },
+  "previewCustomKeyPlaceholder": {
+    "message": "کلک کریں اور ایک کلید دبائیں",
+    "description": "Popup view custom trigger key placeholder"
+  },
+  "previewCustomKeyTitle": {
+    "message": "یہاں کلک کریں، پھر غیر ترمیمی کلید دبائیں۔ صاف کرنے کے لیے Esc دبائیں۔",
+    "description": "Popup view custom trigger key title"
+  },
+  "unlimited": {
+    "message": "لامحدود",
+    "description": "Unlimited value label"
+  },
+  "settingsFontSize": {
+    "message": "ترتیبات کے فونٹ کا سائز",
+    "description": "Header button: adjust settings font size"
   }
 }

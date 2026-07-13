@@ -4,7 +4,7 @@
     "description": "The name of the extension"
   },
   "extDesc": {
-    "message": "支援滑鼠手勢、超級拖曳功能和小窗視圖的 Chrome/Edge 擴充功能",
+    "message": "滑鼠手勢、超級拖曳、圖片與連結預覽等。",
     "description": "The description of the extension"
   },
   "title": {
@@ -35,16 +35,24 @@
     "message": "向左拖曳",
     "description": "Drag left action"
   },
-  "openInForeground": {
-    "message": "在前景開啟連結",
-    "description": "Open link in foreground"
+  "dragUpRight": {
+    "message": "向右上拖曳",
+    "description": "Super drag diagonal direction"
   },
-  "openInBackground": {
-    "message": "在背景開啟連結",
-    "description": "Open link in background"
+  "dragDownRight": {
+    "message": "向右下拖曳",
+    "description": "Super drag diagonal direction"
+  },
+  "dragDownLeft": {
+    "message": "向左下拖曳",
+    "description": "Super drag diagonal direction"
+  },
+  "dragUpLeft": {
+    "message": "向左上拖曳",
+    "description": "Super drag diagonal direction"
   },
   "superDragDescription": {
-    "message": "超級拖曳功能適用於連結、圖片和選取的文字。可為上/下/左/右各方向分別設定開啟方式（前景、背景或分屏左/右/上/下）。",
+    "message": "超級拖曳功能適用於連結、圖片和選取的文字。八個方向（含四個斜向）可分別設定開啟方式（前景、背景或分屏左/右/上/下）。選取文字搜尋時，用下拉選擇「預設」或某一方向後編輯對應 URL；方向留空則使用預設。",
     "description": "Super drag feature description"
   },
   "left": {
@@ -65,51 +73,75 @@
   },
   "downThenRight": {
     "message": "下然後右",
-    "description": "Down then right gesture"
+    "description": "下然後右手勢"
   },
   "leftThenUp": {
     "message": "左然後上",
-    "description": "Left then up gesture"
+    "description": "左然後上手勢"
   },
   "rightThenUp": {
     "message": "右然後上",
-    "description": "Right then up gesture"
+    "description": "右然後上手勢"
   },
   "rightThenDown": {
     "message": "右然後下",
-    "description": "Right then down gesture"
+    "description": "右然後下手勢"
   },
   "upThenLeft": {
     "message": "上然後左",
-    "description": "Up then left gesture"
+    "description": "上然後左手勢"
   },
   "upThenRight": {
     "message": "上然後右",
-    "description": "Up then right gesture"
+    "description": "上然後右手勢"
   },
   "downThenLeft": {
     "message": "下然後左",
-    "description": "Down then left gesture"
+    "description": "下然後左手勢"
   },
   "leftThenDown": {
     "message": "左然後下",
-    "description": "Left then down gesture"
+    "description": "左然後下手勢"
   },
   "upThenDown": {
     "message": "上然後下",
-    "description": "Up then down gesture"
+    "description": "上然後下手勢"
   },
   "downThenUp": {
     "message": "下然後上",
-    "description": "Down then up gesture"
+    "description": "下然後上手勢"
   },
   "leftThenRight": {
     "message": "左然後右",
-    "description": "Left then right gesture"
+    "description": "左然後右手勢"
   },
   "rightThenLeft": {
     "message": "右然後左",
-    "description": "Right then left gesture"
+    "description": "右然後左手勢"
+  },
+  "rightHoldWheelUp": {
+    "message": "按住右鍵，向上滾輪",
+    "description": "按住右鍵向上滾輪手勢"
+  },
+  "rightHoldWheelDown": {
+    "message": "按住右鍵，向下滾輪",
+    "description": "按住右鍵向下滾輪手勢"
+  },
+  "leftHoldWheelUp": {
+    "message": "按住左鍵，向上滾輪",
+    "description": "按住左鍵向上滾輪手勢"
+  },
+  "leftHoldWheelDown": {
+    "message": "按住左鍵，向下滾輪",
+    "description": "按住左鍵向下滾輪手勢"
+  },
+  "rightHoldLeftClick": {
+    "message": "按住右鍵，單擊左鍵",
+    "description": "按住右鍵單擊左鍵手勢"
+  },
+  "leftHoldRightClick": {
+    "message": "按住左鍵，按一下右鍵",
+    "description": "按住滑鼠左鍵並按一下右鍵"
   },
   "back": {
     "message": "返回",
@@ -158,6 +190,18 @@
   "prevTab": {
     "message": "上一個分頁",
     "description": "Previous tab action"
+  },
+  "previousActiveTab": {
+    "message": "上一個活動分頁",
+    "description": "手勢動作：切換到上一個活動分頁"
+  },
+  "goToParentUrl": {
+    "message": "上一層 URL",
+    "description": "手勢動作：導覽到上一層 URL 路徑"
+  },
+  "goToRootUrl": {
+    "message": "根 URL",
+    "description": "手勢動作：導覽到網站根 URL"
   },
   "nextTab": {
     "message": "下一個分頁",
@@ -211,6 +255,14 @@
     "message": "切換全螢幕",
     "description": "Toggle fullscreen action"
   },
+  "zoomIn": {
+    "message": "頁面放大",
+    "description": "放大目前分頁"
+  },
+  "zoomOut": {
+    "message": "頁面縮小",
+    "description": "縮小目前分頁"
+  },
   "closeTabsToLeft": {
     "message": "關閉左側分頁",
     "description": "Close tabs to left action"
@@ -218,6 +270,474 @@
   "reloadAllTabs": {
     "message": "全部重新載入",
     "description": "Reload all tabs action"
+  },
+  "stopLoadingAllTabs": {
+    "message": "停止所有分頁載入",
+    "description": "Stop loading in all tabs"
+  },
+  "screenshotRegion": {
+    "message": "截圖（軌跡選區）",
+    "description": "Screenshot gesture action"
+  },
+  "screenshotRegionOrLink": {
+    "message": "截圖或開啟連結",
+    "description": "選區內有連結時的軌跡提示"
+  },
+  "trailRegionChooseTitle": {
+    "message": "選區內連結 — 截圖或勾選開啟",
+    "description": "軌跡選區操作選擇標題"
+  },
+  "trailRegionLinkSingle": {
+    "message": "1 個連結",
+    "description": "軌跡選區連結數量"
+  },
+  "trailRegionLinkMultiple": {
+    "message": "{count} 個連結",
+    "description": "軌跡選區連結數量"
+  },
+  "trailRegionActionScreenshot": {
+    "message": "截圖 (S)",
+    "description": "軌跡選區選擇按鈕"
+  },
+  "trailRegionActionOpenLink": {
+    "message": "新分頁開啟 (O)",
+    "description": "軌跡選區選擇按鈕"
+  },
+  "trailRegionActionOpenLinks": {
+    "message": "新分頁開啟全部 (O)",
+    "description": "軌跡選區選擇按鈕"
+  },
+  "trailRegionActionOpenSelected": {
+    "message": "新分頁開啟已選 {n} 項 (O)",
+    "description": "軌跡選區開啟已勾選連結"
+  },
+  "trailRegionActionOpenNone": {
+    "message": "開啟已選 (O)",
+    "description": "軌跡選區無勾選時開啟按鈕"
+  },
+  "trailRegionActionCopy": {
+    "message": "複製 (C)",
+    "description": "軌跡選區複製按鈕"
+  },
+  "trailRegionActionCopySelected": {
+    "message": "複製已選 {n} 項 (C)",
+    "description": "軌跡選區複製已勾選連結"
+  },
+  "trailRegionActionCopyNone": {
+    "message": "複製 (C)",
+    "description": "軌跡選區無勾選時複製按鈕"
+  },
+  "trailRegionCopyFailed": {
+    "message": "複製失敗",
+    "description": "軌跡選區複製到剪貼簿失敗"
+  },
+  "trailRegionSelectAll": {
+    "message": "全選",
+    "description": "軌跡選區連結列表全選"
+  },
+  "trailRegionNoLinkSelected": {
+    "message": "請至少勾選一個連結",
+    "description": "未勾選連結時提示"
+  },
+  "trailRegionChooseHint": {
+    "message": "Esc 取消 · 勾選要複製/開啟的連結 · 拖曳邊緣調整大小",
+    "description": "軌跡選區選擇底部提示"
+  },
+  "trailRegionLinkOpened": {
+    "message": "已在新分頁開啟連結",
+    "description": "開啟連結回饋"
+  },
+  "trailRegionLinksOpened": {
+    "message": "已在新分頁開啟連結",
+    "description": "開啟多個連結回饋"
+  },
+  "trailRegionLinksTruncated": {
+    "message": "僅開啟前 {n} 個連結",
+    "description": "開啟連結數量上限提示"
+  },
+  "screenshotScrollCaptureActive": {
+    "message": "請手動捲動頁面，再按同一快捷鍵或 Esc 結束並拼接",
+    "description": "Manual scroll capture in progress"
+  },
+  "screenshotCopied": {
+    "message": "截圖已複製到剪貼簿",
+    "description": "Screenshot feedback"
+  },
+  "screenshotFailed": {
+    "message": "截圖失敗",
+    "description": "Screenshot feedback"
+  },
+  "screenshotNeedTrail": {
+    "message": "請畫更長軌跡以選定區域",
+    "description": "Screenshot feedback"
+  },
+  "screenshotUnavailable": {
+    "message": "截圖模組不可用",
+    "description": "Screenshot feedback"
+  },
+  "screenshotTopFrameOnly": {
+    "message": "整頁截圖請在網頁主框架使用",
+    "description": "Screenshot feedback"
+  },
+  "screenshotFeature": {
+    "message": "截圖",
+    "description": "截圖設定分區標題"
+  },
+  "enableScreenshotFeature": {
+    "message": "啟用截圖",
+    "description": "截圖功能總開關"
+  },
+  "enableScreenshotTrailCapture": {
+    "message": "軌跡選區（畫圈/自交）",
+    "description": "畫圈或自交形成軌跡選區；可截圖或開啟選區內連結；已識別為其他手勢時不會觸發"
+  },
+  "enableScreenshotClipboard": {
+    "message": "自動複製到剪貼簿",
+    "description": "截圖後自動複製到剪貼簿"
+  },
+  "enableScreenshotPreview": {
+    "message": "截圖後顯示預覽",
+    "description": "截圖後開啟預覽視窗"
+  },
+  "enableScreenshotHistory": {
+    "message": "儲存截圖歷史",
+    "description": "將截圖儲存到本機歷史記錄"
+  },
+  "screenshotHistoryMaxCount": {
+    "message": "歷史保留條數",
+    "description": "截圖歷史最多保留條數"
+  },
+  "screenshotHistoryMaxCountHint": {
+    "message": "0 為不限制；1–200 條超出後自動刪除最舊記錄",
+    "description": "截圖歷史條數說明"
+  },
+  "screenshotHistoryUnlimited": {
+    "message": "不限制",
+    "description": "截圖歷史條數為 0 時的顯示"
+  },
+  "screenshotHistoryView": {
+    "message": "查看歷史",
+    "description": "開啟截圖歷史視窗"
+  },
+  "screenshotHistoryTitle": {
+    "message": "截圖歷史",
+    "description": "截圖歷史視窗標題"
+  },
+  "screenshotHistoryEmpty": {
+    "message": "尚無截圖記錄",
+    "description": "截圖歷史為空"
+  },
+  "screenshotHistoryClearAll": {
+    "message": "清空全部",
+    "description": "刪除全部截圖歷史"
+  },
+  "screenshotHistoryClearConfirm": {
+    "message": "確定清空全部截圖歷史？",
+    "description": "確認清空截圖歷史"
+  },
+  "screenshotHistoryDelete": {
+    "message": "刪除",
+    "description": "刪除單筆截圖歷史"
+  },
+  "screenshotHistoryPinToPage": {
+    "message": "貼到頁面",
+    "description": "將歷史縮圖貼在網頁上"
+  },
+  "screenshotHistoryPinFailed": {
+    "message": "無法貼圖（請先開啟目標分頁或允許此網站）。",
+    "description": "從截圖歷史貼圖失敗時的提示"
+  },
+  "screenshotHistoryCount": {
+    "message": "共 $1 條",
+    "description": "截圖歷史條數",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "screenshotHistoryModeViewport": {
+    "message": "可見區域",
+    "description": "截圖歷史類型標籤"
+  },
+  "screenshotHistoryModeFullPage": {
+    "message": "整頁",
+    "description": "截圖歷史類型標籤"
+  },
+  "screenshotHistoryModeRegion": {
+    "message": "區域",
+    "description": "截圖歷史類型標籤"
+  },
+  "screenshotHistoryModeScroll": {
+    "message": "手動捲動",
+    "description": "截圖歷史類型標籤"
+  },
+  "screenshotHistoryModeUnknown": {
+    "message": "截圖",
+    "description": "截圖歷史類型標籤"
+  },
+  "screenshotDone": {
+    "message": "截圖完成",
+    "description": "未複製到剪貼簿時的完成提示"
+  },
+  "screenshotPreviewTitle": {
+    "message": "截圖預覽",
+    "description": "截圖預覽視窗標題"
+  },
+  "screenshotPreviewClose": {
+    "message": "關閉",
+    "description": "關閉截圖預覽視窗"
+  },
+  "screenshotPreviewCopyAgain": {
+    "message": "複製",
+    "description": "從預覽視窗複製到剪貼簿"
+  },
+  "screenshotPreviewSave": {
+    "message": "儲存為檔案",
+    "description": "將標註後的截圖儲存到本機"
+  },
+  "screenshotPreviewSaved": {
+    "message": "已儲存",
+    "description": "截圖檔案儲存成功"
+  },
+  "screenshotPreviewPinToPage": {
+    "message": "貼到頁面",
+    "description": "將標註後的截圖固定到來源網頁"
+  },
+  "screenshotPreviewPinned": {
+    "message": "已貼上",
+    "description": "截圖已固定到頁面"
+  },
+  "screenshotPreviewPinning": {
+    "message": "貼上中…",
+    "description": "正在將截圖貼到頁面"
+  },
+  "screenshotPinTitle": {
+    "message": "截圖",
+    "description": "頁面貼紙標題"
+  },
+  "screenshotPinClose": {
+    "message": "移除貼紙",
+    "description": "關閉頁面上的截圖貼紙"
+  },
+  "screenshotPinResize": {
+    "message": "調整大小",
+    "description": "縮放頁面截圖貼紙"
+  },
+  "screenshotPinZoomFit": {
+    "message": "適合",
+    "description": "貼圖適應可視區域"
+  },
+  "screenshotPinZoomOriginal": {
+    "message": "原圖",
+    "description": "貼圖按原始像素尺寸顯示"
+  },
+  "screenshotPinOrderLabel": {
+    "message": "貼圖 $1$",
+    "description": "Pinned screenshot order number",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "screenshotPreviewLoadFailed": {
+    "message": "無法載入預覽",
+    "description": "截圖預覽載入失敗"
+  },
+  "screenshotPreviewZoomFit": {
+    "message": "適應",
+    "description": "適應視窗顯示截圖"
+  },
+  "screenshotPreviewZoomFitTitle": {
+    "message": "適應視窗",
+    "description": "適應縮放按鈕提示"
+  },
+  "screenshotPreviewZoomOneToOne": {
+    "message": "1:1",
+    "description": "1:1 實際尺寸按鈕"
+  },
+  "screenshotPreviewZoomOneToOneTitle": {
+    "message": "實際尺寸 (1:1)",
+    "description": "1:1 縮放按鈕提示"
+  },
+  "screenshotPreviewZoomLevel": {
+    "message": "縮放 $1$%",
+    "description": "預覽目前縮放比例",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "screenshotAnnotHand": {
+    "message": "抓手",
+    "description": "拖動畫布平移預覽"
+  },
+  "screenshotAnnotPen": {
+    "message": "鉛筆",
+    "description": "標註工具：鉛筆"
+  },
+  "screenshotAnnotArrow": {
+    "message": "箭頭（Shift：水平/垂直）",
+    "description": "標註工具：箭頭；按住 Shift 約束水平或垂直"
+  },
+  "screenshotAnnotLine": {
+    "message": "直線（Shift：水平/垂直）",
+    "description": "標註工具：直線；按住 Shift 約束水平或垂直"
+  },
+  "screenshotAnnotRect": {
+    "message": "矩形（Shift：正方形）",
+    "description": "標註工具：矩形；按住 Shift 畫正方形"
+  },
+  "screenshotAnnotEllipse": {
+    "message": "橢圓",
+    "description": "標註工具：橢圓"
+  },
+  "screenshotAnnotRoundRect": {
+    "message": "圓角矩形",
+    "description": "標註工具：圓角矩形"
+  },
+  "screenshotAnnotHighlighter": {
+    "message": "螢光筆",
+    "description": "標註工具：螢光筆"
+  },
+  "screenshotAnnotHighlight": {
+    "message": "高亮框",
+    "description": "標註工具：半透明高亮矩形"
+  },
+  "screenshotAnnotFillRect": {
+    "message": "實心矩形",
+    "description": "標註工具：實心矩形"
+  },
+  "screenshotAnnotFillEllipse": {
+    "message": "實心橢圓",
+    "description": "標註工具：實心橢圓"
+  },
+  "screenshotAnnotBlur": {
+    "message": "模糊",
+    "description": "標註工具：模糊筆刷"
+  },
+  "screenshotAnnotArrow2": {
+    "message": "雙端箭頭（Shift：水平/垂直）",
+    "description": "標註工具：兩端箭頭直線；按住 Shift 約束水平或垂直"
+  },
+  "screenshotAnnotNumber": {
+    "message": "序號",
+    "description": "標註工具：順序序號標記"
+  },
+  "screenshotAnnotStampStart": {
+    "message": "起始序號",
+    "description": "序號標註的起始數字"
+  },
+  "screenshotAnnotStampNext": {
+    "message": "下一個編號：$1$",
+    "description": "Next number stamp to place (tooltip)",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "screenshotAnnotCrop": {
+    "message": "裁剪",
+    "description": "標註工具：裁剪圖片"
+  },
+  "screenshotAnnotCropApply": {
+    "message": "套用裁剪",
+    "description": "確認裁剪區域"
+  },
+  "screenshotAnnotCropCancel": {
+    "message": "取消",
+    "description": "取消裁剪選區"
+  },
+  "screenshotAnnotText": {
+    "message": "文字",
+    "description": "標註工具：文字"
+  },
+  "screenshotAnnotMosaic": {
+    "message": "馬賽克",
+    "description": "標註工具：馬賽克"
+  },
+  "screenshotAnnotEraser": {
+    "message": "橡皮擦",
+    "description": "標註工具：橡皮擦"
+  },
+  "screenshotAnnotSize": {
+    "message": "粗細",
+    "description": "標註線寬"
+  },
+  "screenshotAnnotResetAll": {
+    "message": "清空全部標註",
+    "description": "清除所有編輯並恢復為原始截圖"
+  },
+  "screenshotAnnotStepCount": {
+    "message": "$1 / $2",
+    "description": "歷史步驟：目前 / 總數"
+  },
+  "screenshotAnnotStepCountTitle": {
+    "message": "已編輯步數 / 總編輯步數（0 為原始截圖）",
+    "description": "步驟數提示"
+  },
+  "screenshotAnnotUndo": {
+    "message": "復原",
+    "description": "復原標註"
+  },
+  "screenshotAnnotRedo": {
+    "message": "重做",
+    "description": "重做標註"
+  },
+  "screenshotAnnotTextPlaceholder": {
+    "message": "在此輸入文字…",
+    "description": "截圖預覽頁內文字框占位符"
+  },
+  "screenshotOptRegion": {
+    "message": "按鍵選區",
+    "description": "Screenshot bind row: keyboard drag rectangle region"
+  },
+  "screenshotOptViewport": {
+    "message": "可視區域",
+    "description": "截圖綁定列：目前可見區域"
+  },
+  "screenshotOptFullPage": {
+    "message": "整頁捲動",
+    "description": "截圖綁定列：整頁捲動"
+  },
+  "screenshotOptScrollStitch": {
+    "message": "手動捲動",
+    "description": "截圖綁定列：手動捲動截屏"
+  },
+  "screenshotOptOpenHistory": {
+    "message": "開啟歷史記錄視窗",
+    "description": "截圖綁定列：開啟截圖歷史快捷鍵"
+  },
+  "screenshotHotkeyPressHint": {
+    "message": "快捷鍵：點擊上方輸入框後按鍵（需含 Ctrl / Alt / Meta 之一 + 字母或數字，或 F1–F12），按 Esc 清空。",
+    "description": "截圖分區底部：快捷鍵說明"
+  },
+  "screenshotHotkeyPlaceholder": {
+    "message": "點擊設定",
+    "description": "未綁定快捷鍵時輸入框占位提示"
+  },
+  "screenshotRegionPickHint": {
+    "message": "拖曳以框選區域，Esc 取消",
+    "description": "按鍵選區進行中提示"
+  },
+  "screenshotRegionPickFooterHint": {
+    "message": "按鍵選區：拖出矩形後鬆手；選區內有連結可截圖或新分頁開啟；Esc 取消",
+    "description": "截圖分區底部：按鍵選區說明"
+  },
+  "screenshotRegionTooSmall": {
+    "message": "選區太小，請拖大一些",
+    "description": "按鍵選區：未達最小尺寸"
+  },
+  "screenshotGestureIntersectHint": {
+    "message": "軌跡選區：畫一圈或自交一次後鬆手。選區內有連結時可選擇截圖或新分頁開啟；多次閉合或多次自交視為亂畫。",
+    "description": "截圖分區底部：軌跡選區說明"
   },
   "togglePinTab": {
     "message": "釘選/取消釘選分頁",
@@ -244,16 +764,16 @@
     "description": "Settings title"
   },
   "customizedBehavior": {
-    "message": "黑名單",
-    "description": "黑名單區塊標題"
+    "message": "停用網站",
+    "description": "Section title for the per-site disable list"
   },
   "disableMouseGesturesForSites": {
-    "message": "在以下網站停用滑鼠手勢與超級拖曳",
-    "description": "Label for the list of sites where gestures and super drag are disabled"
+    "message": "在清單網域上停用擴充功能",
+    "description": "Subtitle for Disabled sites section"
   },
   "disabledSitesHint": {
-    "message": "每行一個，可填網域（如 youtube.com）或完整網址。",
-    "description": "Hint for the disabled sites textarea"
+    "message": "作用於：滑鼠手勢、超級拖曳、連結/圖片預覽、截圖、網頁限制解除。可加入目前網站或輸入網域/網址，點擊刪除標記移除。",
+    "description": "Short hint explaining which features the Disabled sites list affects"
   },
   "enableGesture": {
     "message": "啟用滑鼠手勢",
@@ -279,6 +799,26 @@
     "message": "啟用超級拖曳",
     "description": "Enable super drag option"
   },
+  "superDragCompassPosition": {
+    "message": "八向示意圖",
+    "description": "超級拖曳八向示意圖顯示與位置"
+  },
+  "superDragCompassPosCompassAbove": {
+    "message": "拖曳點上方",
+    "description": "示意圖在拖曳點上方、水平置中"
+  },
+  "superDragCompassPosCompassRight": {
+    "message": "拖曳點右方",
+    "description": "示意圖在拖曳點右側、垂直置中"
+  },
+  "superDragCompassPosCompassBelow": {
+    "message": "拖曳點下方",
+    "description": "示意圖在拖曳點下方、水平置中"
+  },
+  "superDragCompassPosCompassLeft": {
+    "message": "拖曳點左方",
+    "description": "示意圖在拖曳點左側、垂直置中"
+  },
   "enableDragTextSearch": {
     "message": "啟用拖曳文字搜尋",
     "description": "Enable drag text search option"
@@ -287,9 +827,17 @@
     "message": "拖曳圖片/檔案自動下載",
     "description": "當檢測到拖曳對象為圖片或其它可下載檔案時自動開始下載"
   },
+  "enableImageDrag": {
+    "message": "啟用圖片拖曳",
+    "description": "單獨控制圖片超級拖曳，不受圖片預覽開關影響"
+  },
   "enableImagePreview": {
     "message": "啟用圖片預覽",
     "description": "Enable image preview option"
+  },
+  "enableImagePreviewEnhanced": {
+    "message": "增強圖片預覽",
+    "description": "支援透明層覆蓋、background-image、父級查找等增強識別"
   },
   "enableDuplicateCheck": {
     "message": "檢測重複分頁",
@@ -302,10 +850,6 @@
   "enableSmoothScroll": {
     "message": "啟用平滑滾動",
     "description": "Enable smooth scrolling for gesture actions"
-  },
-  "save": {
-    "message": "設定已套用",
-    "description": "Save settings button"
   },
   "reset": {
     "message": "重設",
@@ -363,14 +907,6 @@
     "message": "重設設定失敗",
     "description": "Reset settings error notification"
   },
-  "themeLight": {
-    "message": "淺色",
-    "description": "Light theme"
-  },
-  "themeDark": {
-    "message": "深色",
-    "description": "Dark theme"
-  },
   "buyMeACoffee": {
     "message": "請我喝咖啡",
     "description": "Donation button"
@@ -379,17 +915,33 @@
     "message": "切換主題",
     "description": "Toggle theme button"
   },
-  "toggleLanguage": {
-    "message": "切換語言",
-    "description": "Toggle language button"
+  "openDetachedPopupTitle": {
+    "message": "在瀏覽器側邊欄開啟設定（不支援時改為獨立視窗）",
+    "description": "標題列按鈕：側邊欄或獨立視窗開啟設定"
+  },
+  "openDetachedWindowFromSidePanelTitle": {
+    "message": "在獨立小視窗開啟（與主視窗並排填滿螢幕）",
+    "description": "側邊欄：以獨立彈窗開啟設定並調整主視窗版面"
+  },
+  "openOptionsPageTitle": {
+    "message": "開啟選項頁面",
+    "description": "標題列按鈕：開啟擴充功能選項頁面"
   },
   "donationTooltip": {
     "message": "如果您喜歡這個作品，請支持我。謝謝 :)",
     "description": "Donation tooltip"
   },
   "rightButtonHint": {
-    "message": "按住滑鼠右鍵",
-    "description": "Right mouse button hint"
+    "message": "按住右鍵（軌跡/滾輪/點擊）· 按住左鍵（滾輪）",
+    "description": "內建手勢副標題：右鍵軌跡與滾輪/點擊組合、左鍵滾輪組合"
+  },
+  "builtInGesturesListExpandHint": {
+    "message": "按一下展開完整手勢清單",
+    "description": "Tooltip on built-in gestures subtitle when list is collapsed"
+  },
+  "builtInGesturesListCollapseHint": {
+    "message": "按一下收合手勢清單",
+    "description": "Tooltip on built-in gestures subtitle when list is expanded"
   },
   "leftButtonHint": {
     "message": "按住滑鼠左鍵",
@@ -403,17 +955,45 @@
     "message": "在背景開啟",
     "description": "Open in background action"
   },
+  "popupViewAction": {
+    "message": "以彈出視窗開啟",
+    "description": "Super drag action: open target in popup view"
+  },
+  "incognitoAction": {
+    "message": "在隱私視窗開啟",
+    "description": "Open in incognito/private window"
+  },
+  "enableSplitScrollSync": {
+    "message": "分屏時兩視窗同步捲動（含橫向）",
+    "description": "分屏時兩個視窗的縱向與橫向捲動位置保持一致"
+  },
   "copyAction": {
     "message": "複製",
     "description": "Copy selected text or link URL to clipboard"
+  },
+  "downloadAction": {
+    "message": "下載",
+    "description": "Super drag action: download target"
   },
   "copiedToClipboard": {
     "message": "已複製到剪貼簿",
     "description": "Hint after copy action"
   },
-  "dragSearchEngine": {
-    "message": "拖曳搜尋引擎 URL",
-    "description": "Drag search engine URL setting"
+  "dragSearchEngineSlotLabel": {
+    "message": "編輯項",
+    "description": "Label for drag search engine slot selector"
+  },
+  "dragSearchSlotDefault": {
+    "message": "預設（回退）",
+    "description": "Default search URL slot in drag search editor"
+  },
+  "dragSearchEngineUrlForSlot": {
+    "message": "搜尋引擎 URL",
+    "description": "Label for single drag search URL field"
+  },
+  "dragSearchEnginePerDirectionHelp": {
+    "message": "先在下拉選單中選擇「預設」或某一拖曳方向，再編輯對應 URL；方向留空則使用預設。僅影響拖曳選取文字後的搜尋。",
+    "description": "Help text for unified drag search engine editor"
   },
   "linkPreview": {
     "message": "彈出視窗",
@@ -424,7 +1004,7 @@
     "description": "Quick navigation hover tooltip"
   },
   "linkPreviewHint": {
-    "message": "懸停 + 按鍵顯示彈出視窗",
+    "message": "懸停 + 觸發條件顯示彈出視窗",
     "description": "Popup view hint"
   },
   "enableLinkPreview": {
@@ -495,28 +1075,52 @@
     "message": "使用 {q} 表示搜尋詞位置，範例格式：",
     "description": "Search engine examples description"
   },
+  "searchExampleUrlClickHint": {
+    "message": "按一下範例 URL 可自動填入上方輸入框並儲存",
+    "description": "Tooltip for example search engine URLs (click to fill)"
+  },
+  "searchEngineExamplesUrlClickHint": {
+    "message": "提示：按一下範例網址即可填入上方輸入框並儲存。",
+    "description": "Visible hint under search engine examples (click URL to fill field above and save)"
+  },
   "googleExample": {
-    "message": "Google 搜尋：https://www.google.com/search?q={q}",
+    "message": "Google 搜尋：",
+    "description": "Google search example"
+  },
+  "googleExampleUrl": {
+    "message": "https://www.google.com/search?q={q}",
     "description": "Google search example"
   },
   "googleTranslateExample": {
-    "message": "Google 翻譯：https://translate.google.com/?sl=auto&tl=zh-TW&text={q}&op=translate",
+    "message": "Google 翻譯：",
+    "description": "Google translate example"
+  },
+  "googleTranslateExampleUrl": {
+    "message": "https://translate.google.com/?sl=auto&tl=zh-TW&text={q}&op=translate",
     "description": "Google translate example"
   },
   "localSearchExample": {
-    "message": "Google 台灣搜尋：https://www.google.com.tw/search?q={q}",
+    "message": "Google 台灣搜尋：",
+    "description": "Local search example"
+  },
+  "localSearchExampleUrl": {
+    "message": "https://www.google.com.tw/search?q={q}",
     "description": "Local search example"
   },
   "bingExample": {
-    "message": "Bing 搜尋：https://www.bing.com/search?q={q}",
+    "message": "Bing 搜尋：",
+    "description": "Bing search example"
+  },
+  "bingExampleUrl": {
+    "message": "https://www.bing.com/search?q={q}",
     "description": "Bing search example"
   },
   "wheelTip": {
-    "message": "使用滑鼠滾輪調整數值",
+    "message": "在此列懸停約 1.5 秒後，可用滾輪調整數值",
     "description": "Wheel tip"
   },
   "modifierKeyDelayTip": {
-    "message": "使用觸發按鍵時，最大延遲限制為 300 毫秒",
+    "message": "延遲會在觸發條件成立後開始計時；調高可減少誤觸。",
     "description": "Modifier key delay tip"
   },
   "welcomeTitle": {
@@ -524,12 +1128,8 @@
     "description": "Welcome page title"
   },
   "welcomeDescription": {
-    "message": "感謝您安裝滑鼠手勢擴充功能！本擴充功能提供豐富的滑鼠手勢功能、智慧分頁管理、彈出視窗功能和增強的視覺體驗，幫助您更高效地瀏覽網頁。我們優化了手勢識別演算法，提高了容錯性，即使手勢繪製不夠完美也能正確識別。新的彈出視窗功能讓您可以在彈出視窗中檢視連結內容，無需切換分頁。同時支援29種語言以及明暗主題切換，為您提供更好的使用體驗。",
+    "message": "感謝安裝滑鼠手勢擴充功能！按住右鍵拖曳可進行上一頁/下一頁、分頁與捲動等操作，另支援按住右鍵或左鍵配合滾輪等組合鍵（皆可在設定中自訂），辨識具容錯，頁面載入中亦可使用。超級拖曳支援連結、圖片與選取文字，八個方向可分別設為前景、背景、分割畫面（上下左右）、複製到剪貼簿等；拖曳圖片/檔案時可選擇自動下載；文字搜尋支援預設引擎 URL 與各方向獨立 URL。小窗檢視可在游標懸停連結時按住觸發鍵（預設 Shift）開啟可移動預覽，亦可對選取文字即時搜尋。另提供可選的截圖（可見區域/整頁/捲動拼接、歷史與預覽）、圖片懸停預覽（含增強模式）、跨視窗重複分頁偵測與可選自動關閉、平滑捲動、工具列分頁數量徽章，以及可選的網頁複製/右鍵等限制解除。設定可從工具列以彈出面板、瀏覽器側邊欄（支援時）或獨立視窗開啟，支援匯出/匯入；選項會隨瀏覽器帳戶同步。介面支援 29 種語言及淺色/深色主題。",
     "description": "Welcome page description"
-  },
-  "gesturesDescription": {
-    "message": "以下是預設的滑鼠手勢，您可以透過右鍵拖曳來使用這些手勢：",
-    "description": "Gestures description"
   },
   "extensionName": {
     "message": "滑鼠手勢擴充功能",
@@ -539,88 +1139,48 @@
     "message": "核心功能",
     "description": "Core features title"
   },
-  "utilitiesFeatures": {
-    "message": "實用工具",
-    "description": "Utilities features title"
+  "welcomeCoreGestureBlock": {
+    "message": "滑鼠手勢：按住右鍵拖曳為路徑手勢；另支援按住右鍵滾輪、按住左鍵滾輪，以及按住右鍵時的左右鍵點擊組合，均可在設定中改綁為多種動作；路徑辨識具容錯，頁面載入過程中亦可使用。",
+    "description": "Welcome page: core features gesture summary"
+  },
+  "welcomeCoreSuperDragBlock": {
+    "message": "超級拖曳：拖曳連結、圖片與檔案；選取文字拖曳搜尋。八個方向可分別設為前景/背景開啟、四向分割畫面、複製到剪貼簿等；拖曳圖片/檔案時可選擇自動下載；支援預設與各方向的獨立搜尋引擎 URL。",
+    "description": "Welcome page: core features super drag summary"
+  },
+  "welcomeCorePopupViewBlock": {
+    "message": "小窗檢視：按住觸發按鍵（預設 Shift）同時游標懸停在連結上，透過小窗預覽目標頁面內容；選取文字後按觸發按鍵，將在彈出視窗中即時搜尋內容，支援自訂搜尋引擎。",
+    "description": "Welcome page: core features popup view summary"
   },
   "usageTips": {
     "message": "使用技巧",
     "description": "Usage tips title"
   },
-  "smartGestureRecognition": {
-    "message": "智慧手勢識別：即使手勢不夠精確也能正確識別，頁面載入中也可使用",
-    "description": "Smart gesture recognition description"
-  },
-  "tabManagementTitle": {
-    "message": "分頁管理",
-    "description": "Tab management title"
-  },
-  "tabManagementDesc": {
-    "message": "：智慧重複檢測，可選自動關閉，定期記憶體優化",
-    "description": "Tab management description"
-  },
-  "superDragTitle": {
-    "message": "超級拖曳",
-    "description": "Super drag title"
-  },
-  "superDragDesc": {
-    "message": "：拖曳連結和圖片到新分頁，拖曳選取文字進行搜尋",
-    "description": "Super drag description"
-  },
-  "linkPreviewTitle": {
-    "message": "彈出視窗",
-    "description": "Link preview title"
-  },
-  "linkPreviewDesc": {
-    "message": "：按住修飾鍵（預設：Shift）並懸停在連結上，在彈出視窗中預覽目標頁面",
-    "description": "Link preview description"
-  },
-  "textSelectionPreview": {
-    "message": "選取文字並按下修飾鍵，立即在彈出視窗中搜尋，支援自訂搜尋引擎",
-    "description": "Text selection preview description"
-  },
   "previewTip": {
-    "message": "您可以同時開啟多個彈出視窗",
+    "message": "可同時保留多個小窗預覽，便於對照瀏覽。",
     "description": "Preview tip"
-  },
-  "dragDirection": {
-    "message": "自訂拖曳方向來決定分頁開啟方式：預設在背景開啟",
-    "description": "Drag direction description"
   },
   "debugPanelTitle": {
     "message": "滑鼠手勢除錯資訊",
     "description": "Debug panel title"
   },
   "debugPanelDesc": {
-    "message": "：按 Alt+D 開啟，即時分析手勢資訊，保持狀態",
+    "message": "按 Alt+D 快速開啟偵錯面板，即時分析手勢資訊，自動保持狀態",
     "description": "Debug panel description"
   },
-  "oneClickCopy": {
-    "message": "一鍵複製除錯資訊便於分享，支援多語言",
-    "description": "One click copy description"
-  },
-  "mediaPreview": {
-    "message": "增強媒體預覽：改善圖片懸停效果並優化影片縮圖",
-    "description": "Media preview description"
-  },
-  "adaptiveTheme": {
-    "message": "自適應主題：根據頁面背景調整視覺樣式，支援明暗模式",
-    "description": "Adaptive theme description"
-  },
   "gestureTrail": {
-    "message": "手勢軌跡顯示在螢幕上，可自訂軌跡顏色和寬度",
+    "message": "可顯示手勢軌跡與操作提示；軌跡顏色與粗細可在設定中調整。",
     "description": "Gesture trail description"
   },
   "clickIcon": {
-    "message": "點擊擴充功能圖示啟用/停用功能，設定語言、主題等",
+    "message": "工具列入口：精簡彈出面板、瀏覽器側邊欄（Chrome/Edge 等支援時）或獨立設定視窗。可開關各功能、切換語言/主題，並匯出或匯入設定。",
     "description": "Click icon description"
   },
   "languageSupport": {
-    "message": "支援 29 種語言，自動適配瀏覽器語言",
+    "message": "介面支援 29 種語言；優先使用您在擴充功能中儲存的語言，否則跟隨瀏覽器語言。",
     "description": "Language support description"
   },
   "enableAutoClose": {
-    "message": "啟用自動關閉重複分頁功能可大幅減少瀏覽器資源使用",
+    "message": "開啟重複偵測後，可選用自動關閉相同網址的分頁以節省記憶體。",
     "description": "Enable auto close description"
   },
   "rightClickMacLinux": {
@@ -634,14 +1194,6 @@
   "duplicateTabsDetected": {
     "message": "發現 $1 個重複分頁",
     "description": "Duplicate tabs detected notification title"
-  },
-  "duplicateTabsCount": {
-    "message": "有 $1 個重複分頁",
-    "description": "Duplicate tabs count message"
-  },
-  "duplicateTabsSingle": {
-    "message": "有 1 個重複分頁",
-    "description": "Single duplicate tab message"
   },
   "autoClosedTabs": {
     "message": "已自動關閉 $1 個重複分頁",
@@ -659,61 +1211,9 @@
     "message": "未命名分頁",
     "description": "Untitled tab"
   },
-  "morePages": {
-    "message": "...還有 $1 個頁面",
-    "description": "More pages tip"
-  },
-  "errorShowDuplicateTabs": {
-    "message": "顯示重複分頁通知錯誤：",
-    "description": "Error showing duplicate tabs notification"
-  },
-  "errorSendCloseRequest": {
-    "message": "發送關閉請求錯誤：",
-    "description": "Error sending close request"
-  },
-  "errorCloseDuplicateTabs": {
-    "message": "關閉重複分頁錯誤：",
-    "description": "Error closing duplicate tabs"
-  },
-  "errorSendIgnoreRequest": {
-    "message": "發送忽略請求錯誤：",
-    "description": "Error sending ignore request"
-  },
-  "errorIgnoreDuplicateTabs": {
-    "message": "忽略重複分頁錯誤：",
-    "description": "Error ignoring duplicate tabs"
-  },
-  "errorUpdateDebugPanel": {
-    "message": "更新除錯面板錯誤：",
-    "description": "Error updating debug panel"
-  },
   "errorDetectBackgroundColor": {
     "message": "檢測背景顏色錯誤：",
     "description": "Error detecting background color"
-  },
-  "errorDetectImageBorder": {
-    "message": "檢測圖片圓角錯誤：",
-    "description": "Error detecting image border radius"
-  },
-  "errorSetMutationObserver": {
-    "message": "設定變異觀察器錯誤：",
-    "description": "Error setting mutation observer"
-  },
-  "errorCheckElementVisibility": {
-    "message": "檢查元素可見性錯誤：",
-    "description": "Error checking element visibility"
-  },
-  "errorProcessBorderRadius": {
-    "message": "處理圓角錯誤：",
-    "description": "Error processing border radius"
-  },
-  "errorDetectImageBackground": {
-    "message": "檢測圖片背景錯誤：",
-    "description": "Error detecting image background"
-  },
-  "errorShowAutoCloseNotification": {
-    "message": "顯示自動關閉成功通知錯誤：",
-    "description": "Error showing auto-close success notification"
   },
   "noForwardPage": {
     "message": "歷史記錄中沒有可前進的頁面",
@@ -743,10 +1243,6 @@
     "message": "無效手勢",
     "description": "Invalid gesture message"
   },
-  "nextPage": {
-    "message": "下一頁",
-    "description": "Next page action"
-  },
   "errorReadPixel": {
     "message": "讀取像素錯誤：",
     "description": "Error reading pixel message"
@@ -758,10 +1254,6 @@
   "errorCanvasDraw": {
     "message": "在畫布上繪製錯誤：",
     "description": "Error drawing on canvas message"
-  },
-  "errorAccessIframe": {
-    "message": "存取 iframe 錯誤：",
-    "description": "Error accessing iframe message"
   },
   "errorMutationObserver": {
     "message": "設定變異觀察器錯誤：",
@@ -791,6 +1283,10 @@
     "message": "系統設定",
     "description": "Debug panel system settings section"
   },
+  "debugConsoleLog": {
+    "message": "主控台記錄",
+    "description": "Debug panel console log toggle label"
+  },
   "debugAngleThreshold": {
     "message": "角度閾值",
     "description": "Debug panel angle threshold setting"
@@ -810,6 +1306,46 @@
   "debugMinGestureComplexity": {
     "message": "最小手勢複雜度",
     "description": "Debug panel minimum gesture complexity setting"
+  },
+  "debugMinMovementToStartGesture": {
+    "message": "啟動手勢最小移動",
+    "description": "偵錯面板啟動手勢最小移動設定"
+  },
+  "debugSmoothingFactor": {
+    "message": "平滑係數",
+    "description": "偵錯面板軌跡與辨識平滑係數設定"
+  },
+  "debugAngleThresholdHelp": {
+    "message": "控制移動方向被判定為水平或垂直的嚴格程度。值越大越要求方向筆直；值越小越允許斜向移動。",
+    "description": "偵錯面板角度閾值說明"
+  },
+  "debugDirectionChangeThresholdHelp": {
+    "message": "控制方向變化偵測的敏感度。值越小越容易辨識轉向；值越大越會忽略輕微抖動。",
+    "description": "偵錯面板方向變化閾值說明"
+  },
+  "debugMinGestureDistanceHelp": {
+    "message": "手勢被辨識前需要達到的最小總移動距離。增大可減少誤觸發。",
+    "description": "偵錯面板最小手勢距離說明"
+  },
+  "debugMinDirectionSegmentLengthHelp": {
+    "message": "用於方向辨識的最小移動段長度。增大可過濾短距離抖動；減小可更容易辨識短手勢。",
+    "description": "偵錯面板最小方向段長度說明"
+  },
+  "debugMinGestureComplexityHelp": {
+    "message": "方向複雜度閾值，超過後軌跡可能被視為亂畫或無效。值越大越能容忍更多轉向。",
+    "description": "偵錯面板手勢複雜度說明"
+  },
+  "debugMinMovementToStartGestureHelp": {
+    "message": "按下按鍵後，指標至少移動這麼多像素才開始進入手勢追蹤。",
+    "description": "偵錯面板啟動手勢最小移動說明"
+  },
+  "debugSmoothingFactorHelp": {
+    "message": "控制軌跡與辨識點的平滑程度。值越大越能減少抖動，但可能削弱急轉彎；值越小反應越直接。",
+    "description": "偵錯面板平滑係數說明"
+  },
+  "debugConsoleLogHelp": {
+    "message": "在 DevTools 主控台輸出更詳細的擴充功能日誌，便於排查問題。",
+    "description": "偵錯面板主控台日誌說明"
   },
   "debugLatestGestureInfo": {
     "message": "最新手勢資訊",
@@ -850,10 +1386,6 @@
   "debugMergedDirections": {
     "message": "合併方向",
     "description": "Debug panel merged directions"
-  },
-  "debugDirectionDistances": {
-    "message": "方向距離",
-    "description": "Debug panel direction distances"
   },
   "debugFinalResult": {
     "message": "最終結果",
@@ -927,9 +1459,17 @@
     "message": "顯示分頁數量徽章",
     "description": "Show tab count badge option"
   },
-  "splitViewAction": {
-    "message": "分屏視圖",
-    "description": "在分屏視窗中開啟"
+  "unlockPageRestrictions": {
+    "message": "解除網頁複製/貼上/右鍵與切屏限制",
+    "description": "Setting: unlock page interaction limits"
+  },
+  "unlockPageRestrictionsTitle": {
+    "message": "解除複製、貼上、右鍵、選取等限制，並削弱頁面以失焦、visibilitychange 等方式偵測切屏/離開分頁；於頁面環境執行，支援各 iframe 獨立注入與 Shadow DOM。開啟後請重新整理頁面。",
+    "description": "Tooltip for unlock page restrictions"
+  },
+  "unlockPageRestrictionsOffReloadConfirm": {
+    "message": "已開啟分頁中的注入邏輯在重新整理前可能仍會生效。\n\n是否立即重新整理目前分頁？",
+    "description": "Body text for unlock-off confirmation dialog"
   },
   "splitViewLeft": {
     "message": "分屏-左側",
@@ -946,5 +1486,165 @@
   "splitViewDown": {
     "message": "分屏-下方",
     "description": "分屏視圖，新視窗在下方半屏"
+  },
+  "unlockPageRestrictionsOffTitle": {
+    "message": "已關閉網頁解鎖",
+    "description": "Title for unlock-off confirmation dialog"
+  },
+  "unlockPageRestrictionsReloadTab": {
+    "message": "重新整理",
+    "description": "Reload tab button in unlock-off dialog"
+  },
+  "unlockPageRestrictionsNotNow": {
+    "message": "稍後",
+    "description": "Dismiss unlock-off dialog without reload"
+  },
+  "welcomeBulletImagePreview": {
+    "message": "圖片預覽：可選的圖片懸停放大預覽，並提供增強模式以適配複雜頁面版面。",
+    "description": "Welcome page: image hover preview bullet"
+  },
+  "welcomeBulletPageUnlock": {
+    "message": "網頁限制解除：可選弱化部分網站對複製、貼上、右鍵等的限制；關閉此功能時會提示是否重新載入目前分頁。",
+    "description": "Welcome page: page unlock bullet"
+  },
+  "welcomeBulletDisabledSites": {
+    "message": "依網站停用：清單中的網域將同時停用手勢、超級拖曳、小窗檢視與網頁限制解除。",
+    "description": "Welcome page: per-site disable bullet"
+  },
+  "welcomeBulletSplitScroll": {
+    "message": "分割畫面：連結以分割方式開啟時，可在兩個視窗之間同步捲動（含橫向）。",
+    "description": "Welcome page: split scroll sync bullet"
+  },
+  "welcomeBulletScreenshot": {
+    "message": "截圖：可見區域、整頁與手動捲動拼接；可用手勢軌跡框選區域，支援自訂快速鍵、自動複製到剪貼簿、預覽視窗與本機歷史（0 為不限制筆數）。",
+    "description": "Welcome page: screenshot feature bullet"
+  },
+  "welcomeTipScreenshot": {
+    "message": "截圖功能預設開啟；可於設定中為可見區域、整頁與手動捲動拼接指定快速鍵，並可選軌跡框選、自動複製、預覽與本機歷史。",
+    "description": "Welcome page: screenshot usage tip"
+  },
+  "trailColorPickerPresets": {
+    "message": "預設",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerRecent": {
+    "message": "最近",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerEyedropper": {
+    "message": "從圖片取色",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerEyedropperActive": {
+    "message": "點擊圖片吸取顏色…",
+    "description": "Trail color picker UI"
+  },
+  "trailColorPickerSyncTrail": {
+    "message": "同步為軌跡顏色",
+    "description": "Trail color picker UI"
+  },
+  "superDragCompassPosCompassHub": {
+    "message": "拖曳點",
+    "description": "圓心對準拖曳起點"
+  },
+  "superDragCompassPosCompassScreenCenter": {
+    "message": "螢幕正中",
+    "description": "固定在視埠中央"
+  },
+  "superDragCompassPosCompassScreenTop": {
+    "message": "螢幕上方",
+    "description": "固定在視埠上方"
+  },
+  "superDragCompassPosCompassScreenRight": {
+    "message": "螢幕右側",
+    "description": "固定在視埠右側"
+  },
+  "superDragCompassPosCompassScreenBottom": {
+    "message": "螢幕下方",
+    "description": "固定在視埠下方"
+  },
+  "superDragCompassPosCompassScreenLeft": {
+    "message": "螢幕左側",
+    "description": "固定在視埠左側"
+  },
+  "superDragCompassPosCompassHidden": {
+    "message": "不顯示",
+    "description": "不顯示八向示意圖"
+  },
+  "addCurrentSiteToDisabledSites": {
+    "message": "加入目前網站",
+    "description": "Button: add the active tab domain to disabled sites"
+  },
+  "addCurrentSiteToDisabledSitesTitle": {
+    "message": "將目前分頁網域加入停用網站清單",
+    "description": "Tooltip for add-current-site button"
+  },
+  "addDisabledSite": {
+    "message": "加入",
+    "description": "Button: add a typed disabled site entry"
+  },
+  "disabledSiteInputPlaceholder": {
+    "message": "網域或完整網址，例如 youtube.com",
+    "description": "Placeholder for the disabled site input"
+  },
+  "disabledSitesEmpty": {
+    "message": "尚無停用網站",
+    "description": "Empty state for disabled sites list"
+  },
+  "removeDisabledSite": {
+    "message": "刪除此網站",
+    "description": "Tooltip/aria label for remove disabled site button"
+  },
+  "disabledSiteInvalid": {
+    "message": "請輸入有效的網域或網址",
+    "description": "Error shown when disabled site input is invalid"
+  },
+  "disabledSiteAlreadyExists": {
+    "message": "此網站已在清單中",
+    "description": "Error shown when adding a duplicate disabled site"
+  },
+  "disabledSitesLimitReached": {
+    "message": "停用網站數量已達上限",
+    "description": "Error shown when disabled sites list reaches the maximum size"
+  },
+  "currentSiteUnsupported": {
+    "message": "目前分頁沒有可加入的網域",
+    "description": "Error shown when current tab URL cannot be added to disabled sites"
+  },
+  "customKey": {
+    "message": "自訂按鍵",
+    "description": "Custom trigger key option"
+  },
+  "previewTriggerMode": {
+    "message": "觸發方式",
+    "description": "Popup view trigger mode setting"
+  },
+  "previewTriggerHold": {
+    "message": "按住觸發鍵",
+    "description": "Hold trigger key option"
+  },
+  "previewTriggerDouble": {
+    "message": "連按兩下觸發鍵",
+    "description": "Double-press trigger key option"
+  },
+  "previewCustomKey": {
+    "message": "自訂按鍵",
+    "description": "Popup view custom trigger key setting"
+  },
+  "previewCustomKeyPlaceholder": {
+    "message": "點擊後按下一個按鍵",
+    "description": "Popup view custom trigger key placeholder"
+  },
+  "previewCustomKeyTitle": {
+    "message": "點擊這裡，然後按下一個非修飾鍵。按 Esc 清空。",
+    "description": "Popup view custom trigger key title"
+  },
+  "unlimited": {
+    "message": "無限制",
+    "description": "Unlimited value label"
+  },
+  "settingsFontSize": {
+    "message": "設定項目字體大小",
+    "description": "Header button: adjust settings font size"
   }
-} 
+}

@@ -1,6 +1,6 @@
 # Mouse Gesture Extension
 
-A powerful Chrome/Edge extension that enhances browsing efficiency through mouse gestures, super drag functionality, intelligent tab management, and link preview capabilities.
+A powerful browser extension for **Chrome**, **Edge**, and **Firefox** that enhances browsing efficiency through mouse gestures, super drag, intelligent tab management, link preview, and settings in a popup or side panel.
 
 ## Features
 
